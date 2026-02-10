@@ -412,6 +412,30 @@
     [
       "d1a31f26-03e0-43e1-89c1-031fe31befc5",
       "Root"
+    ],
+    [
+      "19a2634a-eca3-4c2c-b35f-9c69362f2888",
+      "Voltage regulation"
+    ],
+    [
+      "2dc5047f-e6b9-4c1e-8ac3-300835122eb4",
+      "Power Supply & Charge"
+    ],
+    [
+      "e7c408c3-7bc5-47c0-a90d-18a385ee9c4c",
+      "Peripherals (Sensors & Audio)"
+    ],
+    [
+      "bae822f9-c188-4212-9c8c-b50c99d73590",
+      "STM32 Microcontroller Core"
+    ],
+    [
+      "e996aba6-741c-4e73-a7c7-e6548b7ec52f",
+      "Raspberry Pi Interface"
+    ],
+    [
+      "65907df6-508b-450c-8c31-d637ad608dec",
+      "Servomotor Control"
     ]
   ],
   "text_variables": {}
