@@ -251,7 +251,7 @@
 	)
 	(text_box "USB Charger"
 		(exclude_from_sim no)
-		(at 87.63 13.97 0)
+		(at 149.86 13.97 0)
 		(size 64.77 49.53)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -291,7 +291,7 @@
 	)
 	(text_box "Battery Protection Module"
 		(exclude_from_sim no)
-		(at 165.1 13.97 0)
+		(at 82.55 13.97 0)
 		(size 64.77 49.53)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
