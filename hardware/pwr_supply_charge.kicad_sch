@@ -399,7 +399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19f4ca8d-ca99-481b-a4b3-8324d1733120")
-		(property "Reference" "J1"
+		(property "Reference" "J?"
 			(at 39.37 49.5299 0)
 			(effects
 				(font
@@ -457,6 +457,12 @@
 					(unit 1)
 				)
 			)
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -469,7 +475,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e6ad56e-c853-4abc-955a-6c929002dfe9")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR09"
 			(at 30.48 36.83 0)
 			(effects
 				(font
@@ -541,7 +547,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e75d4398-510b-4fdc-bcd9-eee54651f874")
-		(property "Reference" "J?"
+		(property "Reference" "J1"
 			(at 39.37 26.6699 0)
 			(effects
 				(font
