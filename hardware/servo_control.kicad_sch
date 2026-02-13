@@ -4,5 +4,11 @@
 	(generator_version "9.0")
 	(uuid "ba1b2439-3d30-46a9-b9d2-7d159ecfd964")
 	(paper "A4")
+	(title_block
+		(title "Chromapi's Servomotor Control")
+		(rev "v1.0.0")
+		(company "Chroma")
+		(comment 1 "Ousmane THIONGANE")
+	)
 	(lib_symbols)
 )

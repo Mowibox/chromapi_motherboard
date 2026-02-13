@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "9ba6af6b-81aa-476e-9d0a-d24f5ce854e1")
 	(paper "A4")
+	(title_block
+		(title "Chromapi's Voltage Regulation")
+		(rev "v1.0.0")
+		(company "Chroma")
+		(comment 1 "Ousmane THIONGANE")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers

@@ -4,5 +4,11 @@
 	(generator_version "9.0")
 	(uuid "0f49deee-443e-4c41-b309-ea7782cc8734")
 	(paper "A4")
+	(title_block
+		(title "Chromapi's STM32 MCU Core")
+		(rev "v1.0.0")
+		(company "Chroma")
+		(comment 1 "Ousmane THIONGANE")
+	)
 	(lib_symbols)
 )

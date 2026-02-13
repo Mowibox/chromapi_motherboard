@@ -4,5 +4,11 @@
 	(generator_version "9.0")
 	(uuid "c678aa19-b319-430f-a66a-3fd8a1e75df2")
 	(paper "A4")
+	(title_block
+		(title "Chromapi's Raspberry Pi Interface")
+		(rev "v1.0.0")
+		(company "Chroma")
+		(comment 1 "Ousmane THIONGANE")
+	)
 	(lib_symbols)
 )
