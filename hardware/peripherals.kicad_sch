@@ -16986,7 +16986,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1µF"
+		(property "Value" "100nF"
 			(at 55.88 36.8299 0)
 			(effects
 				(font
@@ -17079,7 +17079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
+		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/SK6812+LED+datasheet+.pdf"
 			(at 162.56 155.575 0)
 			(effects
 				(font
@@ -17578,7 +17578,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
+		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/SK6812+LED+datasheet+.pdf"
 			(at 162.56 120.015 0)
 			(effects
 				(font
