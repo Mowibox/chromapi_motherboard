@@ -107,3 +107,20 @@ ctrlp.root
 
 #html
 *.html
+
+# Drivers
+Drivers/
+Middlewares/
+
+# CubeMX metadata
+*.mxproject
+.mxproject
+
+# CMake build files
+build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+*.cmake

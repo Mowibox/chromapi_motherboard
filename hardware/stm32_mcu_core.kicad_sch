@@ -1306,7 +1306,7 @@
 		(uuid "4ec50e17-da64-4b81-89d5-612b8cd819f3")
 	)
 	(junction
-		(at 39.37 80.01)
+		(at 31.75 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "528ffc53-a980-491c-920c-9dfcd87346d2")
@@ -1335,7 +1335,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 90.17) (xy 39.37 91.44)
+			(xy 31.75 90.17) (xy 31.75 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1375,7 +1375,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 80.01) (xy 52.07 80.01)
+			(xy 31.75 80.01) (xy 52.07 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1415,7 +1415,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 80.01) (xy 39.37 80.01)
+			(xy 24.13 80.01) (xy 31.75 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1435,7 +1435,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 82.55) (xy 39.37 80.01)
+			(xy 31.75 82.55) (xy 31.75 80.01)
 		)
 		(stroke
 			(width 0)
@@ -9699,16 +9699,6 @@
 		)
 		(uuid "5127bfbd-5391-470e-9f77-1c8b0df192bf")
 	)
-	(label "NRST"
-		(at 31.75 80.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9e6032d0-1f2b-4c96-b696-7290baef2f1b")
-	)
 	(label "SWCLK"
 		(at 77.47 115.57 0)
 		(effects
@@ -9718,6 +9708,127 @@
 			(justify left bottom)
 		)
 		(uuid "bf34dbcc-71bd-4be7-80ba-44f02153852e")
+	)
+	(hierarchical_label "FSR_TopLeft"
+		(shape input)
+		(at 77.47 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "01cd55c0-dc66-4a34-8890-c022bdaa1ef1")
+	)
+	(hierarchical_label "FSR_BotLeft"
+		(shape input)
+		(at 77.47 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0733415d-501f-478b-bc56-a7f58dd07487")
+	)
+	(hierarchical_label "SPI_MOSI"
+		(shape input)
+		(at 77.47 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1696bd77-ff89-4797-bc5b-4441db314a59")
+	)
+	(hierarchical_label "SPI_NSS"
+		(shape input)
+		(at 77.47 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "19b6a06b-44ee-40eb-8719-9214b102afcc")
+	)
+	(hierarchical_label "RGB_LED"
+		(shape input)
+		(at 45.72 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3bc0461f-683e-4f89-b71b-edb5c265133d")
+	)
+	(hierarchical_label "SPI_MISO"
+		(shape input)
+		(at 77.47 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3f83ac61-bcda-4dba-a9d6-0cb12c11463e")
+	)
+	(hierarchical_label "FSR_BotRight"
+		(shape input)
+		(at 77.47 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "406c5e4f-2110-4f7a-abdb-6e35bc463690")
+	)
+	(hierarchical_label "IMU_SDA"
+		(shape input)
+		(at 52.07 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5f34693a-f6c6-49bc-bcf1-64a67afb6149")
+	)
+	(hierarchical_label "NRST"
+		(shape input)
+		(at 24.13 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6d3270c7-3d33-4a79-9e0c-08638b410218")
+	)
+	(hierarchical_label "IMU_SCL"
+		(shape input)
+		(at 52.07 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7965df30-7f72-46e7-b0c3-ea6f20a72c76")
+	)
+	(hierarchical_label "FSR_TopRight"
+		(shape input)
+		(at 52.07 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "de95292b-3771-4b7e-a326-7d03c96505a5")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -9787,7 +9898,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 39.37 91.44 0)
+		(at 31.75 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9796,7 +9907,7 @@
 		(fields_autoplaced yes)
 		(uuid "83ed5b35-b7e1-4207-8f49-35e8260968be")
 		(property "Reference" "#PWR053"
-			(at 39.37 97.79 0)
+			(at 31.75 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9805,7 +9916,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 96.52 0)
+			(at 31.75 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9813,7 +9924,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 91.44 0)
+			(at 31.75 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9822,7 +9933,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 91.44 0)
+			(at 31.75 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9831,7 +9942,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 91.44 0)
+			(at 31.75 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10080,7 +10191,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 39.37 86.36 0)
+		(at 31.75 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10089,7 +10200,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec906023-00cb-4ad8-8e14-e1b749abfc71")
 		(property "Reference" "C27"
-			(at 43.18 85.0899 0)
+			(at 35.56 85.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10098,7 +10209,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 43.18 87.6299 0)
+			(at 35.56 87.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10107,7 +10218,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.3352 90.17 0)
+			(at 32.7152 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10116,7 +10227,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 39.37 86.36 0)
+			(at 31.75 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10125,7 +10236,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 39.37 86.36 0)
+			(at 31.75 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
