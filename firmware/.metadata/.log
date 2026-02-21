@@ -16,3 +16,18 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/mowibox/Docu
 
 !ENTRY org.eclipse.cdt.core 1 0 2026-02-20 01:16:56.762
 !MESSAGE Indexed 'chromapi_stm32_core' (19 sources, 81 headers) in 5.99 sec: 4,752 declarations; 19,365 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0083%)
+!SESSION 2026-02-20 20:37:48.265 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-02-20 20:37:56.990
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-20 20:37:56.991
+!MESSAGE Log4j2 initialized with config file /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-20 20:38:03.025
+!MESSAGE Started RMI Server, listening on port 41337

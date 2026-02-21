@@ -3244,6 +3244,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 62.23) (xy 48.26 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46d52c68-4f5f-4b54-a324-445e07cd0a33")
+	)
+	(wire
+		(pts
 			(xy 78.74 102.87) (xy 73.66 102.87)
 		)
 		(stroke
@@ -3361,6 +3371,16 @@
 			(type default)
 		)
 		(uuid "6ba13dc2-c542-4d17-8f5f-b82be05a6688")
+	)
+	(wire
+		(pts
+			(xy 48.26 62.23) (xy 48.26 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c64e19a-87d3-4f97-88f3-e30180eed6a1")
 	)
 	(wire
 		(pts
@@ -12471,17 +12491,6 @@
 		)
 		(uuid "1d6ec89a-32b9-4e0d-8970-0d02baf6cc35")
 	)
-	(hierarchical_label "GAIN"
-		(shape input)
-		(at 49.53 62.23 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "236ba6bb-d797-4f75-96f0-f985c8011e2c")
-	)
 	(hierarchical_label "FSR_BotLeft"
 		(shape input)
 		(at 199.39 139.7 180)
@@ -12802,6 +12811,72 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 48.26 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17fe9b7f-fbec-4187-ba05-242d94326d70")
+		(property "Reference" "#PWR0105"
+			(at 48.26 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.26 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 48.26 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ac0a131-4254-4f59-9f4d-d3c2cb3a3d62")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)

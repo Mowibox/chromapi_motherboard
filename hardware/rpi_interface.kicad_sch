@@ -10081,6 +10081,17 @@
 		)
 		(uuid "2a57a616-95cb-4110-93cf-313f88b5cf33")
 	)
+	(hierarchical_label "GAIN"
+		(shape input)
+		(at 170.18 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2b0027ac-02a9-4d71-848c-5c961b74cd14")
+	)
 	(hierarchical_label "DIN"
 		(shape input)
 		(at 148.59 104.14 0)
