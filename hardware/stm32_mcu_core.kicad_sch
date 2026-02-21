@@ -2553,7 +2553,7 @@
 	)
 	(text "VCC"
 		(exclude_from_sim no)
-		(at 147.32 164.338 0)
+		(at 147.32 163.322 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2564,7 +2564,7 @@
 	)
 	(text "VCCB"
 		(exclude_from_sim no)
-		(at 128.27 164.338 0)
+		(at 128.27 163.322 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2586,7 +2586,7 @@
 	)
 	(text "VCCA\n"
 		(exclude_from_sim no)
-		(at 107.95 164.338 0)
+		(at 107.95 163.322 0)
 		(effects
 			(font
 				(size 1.27 1.27)
