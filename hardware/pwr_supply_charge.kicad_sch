@@ -13834,7 +13834,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4aa9ff01-67a2-4f9d-af12-60229c3d0515")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG02"
 			(at 80.01 36.195 0)
 			(effects
 				(font
@@ -13884,7 +13884,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "#FLG01")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -14313,7 +14313,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63865d7b-8c3f-44a5-bf7b-1a373195d6a1")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG03"
 			(at 80.01 42.545 0)
 			(effects
 				(font
@@ -14363,7 +14363,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "#FLG02")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -14449,7 +14449,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a6ecddf-1e98-4ab7-a177-5d3676a80301")
-		(property "Reference" "#FLG06"
+		(property "Reference" "#FLG07"
 			(at 181.61 29.845 0)
 			(effects
 				(font
@@ -14499,7 +14499,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "#FLG06")
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -15205,7 +15205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c56f23b4-0519-4845-9ef5-d5c5e049d010")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG04"
 			(at 80.01 53.975 0)
 			(effects
 				(font
@@ -15255,7 +15255,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "#FLG03")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -15441,7 +15441,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8391fe2-8c29-45f6-8098-8b131ab0cfb6")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG06"
 			(at 97.79 95.885 0)
 			(effects
 				(font
@@ -15491,7 +15491,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "#FLG05")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -15865,7 +15865,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb2a9f79-ad87-42df-9bd1-6ecc33673b2f")
-		(property "Reference" "#FLG09"
+		(property "Reference" "#FLG05"
 			(at 80.01 60.325 0)
 			(effects
 				(font
@@ -15915,7 +15915,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "#FLG09")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)

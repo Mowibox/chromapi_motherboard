@@ -11963,7 +11963,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f616cc7-b0bc-4edf-b7b7-e0bc51968960")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR016"
 			(at 124.46 87.63 0)
 			(effects
 				(font
@@ -12013,7 +12013,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR015")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -12369,7 +12369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b141782-5faf-4fb2-bf96-97dc5ae75593")
-		(property "Reference" "#FLG08"
+		(property "Reference" "#FLG09"
 			(at 187.325 127 0)
 			(effects
 				(font
@@ -12420,7 +12420,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#FLG08")
+					(reference "#FLG09")
 					(unit 1)
 				)
 			)
@@ -12436,7 +12436,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4cbac2e6-bb5a-4fd2-b537-c1e04b384497")
-		(property "Reference" "#FLG07"
+		(property "Reference" "#FLG08"
 			(at 117.475 127 0)
 			(effects
 				(font
@@ -12487,7 +12487,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#FLG07")
+					(reference "#FLG08")
 					(unit 1)
 				)
 			)
@@ -12572,7 +12572,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "512e1d8a-ad25-4231-9d57-7e7d422cabff")
-		(property "Reference" "TP2"
+		(property "Reference" "TP4"
 			(at 236.22 49.0219 0)
 			(effects
 				(font
@@ -12623,7 +12623,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "TP2")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -13169,7 +13169,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90c1a336-b89c-4e00-9eed-6af7fc3cfdd2")
-		(property "Reference" "TP1"
+		(property "Reference" "TP2"
 			(at 82.55 28.4479 0)
 			(effects
 				(font
@@ -13220,7 +13220,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "TP1")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -13923,7 +13923,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b48df8bf-d484-4329-a7ab-29f3d55b03ce")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR015"
 			(at 119.38 127 0)
 			(effects
 				(font
@@ -13973,7 +13973,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR016")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
