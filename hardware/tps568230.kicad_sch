@@ -12428,8 +12428,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 119.888 133.096 0)
+		(property "Value" "1µF"
+			(at 121.92 132.842 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13299,7 +13299,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "1µF"
 			(at 179.07 133.3499 0)
 			(effects
 				(font
