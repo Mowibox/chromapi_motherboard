@@ -3668,7 +3668,7 @@
 		)
 		(uuid "6f69679f-4105-4d37-95e8-f5b8dcd07a7c")
 	)
-	(text_box "Battery Protection Module"
+	(text_box "Battery Protection Module (2S BMS)"
 		(exclude_from_sim no)
 		(at 123.19 15.24 0)
 		(size 129.54 63.5)
@@ -4460,16 +4460,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 55.88) (xy 88.9 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aeb1bd8c-bd28-428a-9ede-653e4deb1fbb")
-	)
-	(wire
-		(pts
 			(xy 148.59 128.27) (xy 148.59 133.35)
 		)
 		(stroke
@@ -4577,6 +4567,16 @@
 			(type default)
 		)
 		(uuid "dc0cab31-70f0-4aad-90f0-f21ea461b96f")
+	)
+	(wire
+		(pts
+			(xy 80.01 55.88) (xy 88.9 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de9ce963-525e-468c-b4b9-da14dfe6090a")
 	)
 	(wire
 		(pts
