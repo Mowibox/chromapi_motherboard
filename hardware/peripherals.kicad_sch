@@ -2949,6 +2949,10 @@
 		(uuid "f7c97605-cbe1-4f92-bd50-9928142543bf")
 	)
 	(no_connect
+		(at 60.96 124.46)
+		(uuid "787009a7-0113-44d8-a248-e23e8e238938")
+	)
+	(no_connect
 		(at 167.64 146.05)
 		(uuid "e8ffba59-95e0-476e-81b5-fb92a9a46437")
 	)
@@ -14259,73 +14263,6 @@
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
 					(reference "#PWR075")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 60.96 124.46 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "470e37e8-855f-4551-b714-1241ca6f36c2")
-		(property "Reference" "#PWR069"
-			(at 54.61 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 57.15 124.4599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1395e297-8630-4fe7-97e7-5bf9ec1b44d3")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR069")
 					(unit 1)
 				)
 			)
