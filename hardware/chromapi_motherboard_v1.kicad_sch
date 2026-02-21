@@ -688,7 +688,7 @@
 			(xy 160.02 85.09) (xy 165.1 85.09)
 		)
 		(stroke
-			(width 0)
+			(width 0.381)
 			(type default)
 		)
 		(uuid "01e5e09a-0353-4459-80d9-0467938b6b63")
@@ -698,7 +698,7 @@
 			(xy 160.02 106.68) (xy 160.02 85.09)
 		)
 		(stroke
-			(width 0)
+			(width 0.381)
 			(type default)
 		)
 		(uuid "1ac5d4d2-2cef-41d6-a58e-70e9f0ea9b83")
@@ -818,7 +818,7 @@
 			(xy 153.67 85.09) (xy 160.02 85.09)
 		)
 		(stroke
-			(width 0)
+			(width 0.381)
 			(type default)
 		)
 		(uuid "538bcce0-5e66-4ec4-8358-5778b20320fa")
@@ -1038,7 +1038,7 @@
 			(xy 153.67 106.68) (xy 160.02 106.68)
 		)
 		(stroke
-			(width 0)
+			(width 0.381)
 			(type default)
 		)
 		(uuid "911b8853-002c-4086-baaf-47e7cf09c88d")
