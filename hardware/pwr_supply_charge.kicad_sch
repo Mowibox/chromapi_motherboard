@@ -13335,7 +13335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "P-Channel 30 V 10.5A (Ta) 3.1W (Ta) Surface Mount 8-SOIC"
 			(at 185.42 97.79 0)
 			(effects
 				(font
@@ -14953,7 +14953,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "2-Cell Lithium-ion/Lithium Polymer Battery Packs Protection ICs"
 			(at 198.12 39.37 0)
 			(effects
 				(font
@@ -15377,7 +15377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "30V N-Channel MOSFET"
 			(at 208.28 113.03 0)
 			(effects
 				(font
@@ -15743,7 +15743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PFM Step-up 2-cell Lithium Battery Charger IC"
 			(at 161.29 139.7 0)
 			(effects
 				(font
@@ -15956,7 +15956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/usb_type-c.zip"
 			(at 80.01 113.03 0)
 			(effects
 				(font

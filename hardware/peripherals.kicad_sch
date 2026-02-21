@@ -13157,7 +13157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "I2S Microphone MEMS"
 			(at 210.82 50.8 0)
 			(effects
 				(font
