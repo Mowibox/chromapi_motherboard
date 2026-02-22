@@ -726,29 +726,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LD39050PU33R:LD39050PU33R"
+		(symbol "ld39050pu33r:LD39050PU33R"
 			(pin_names
 				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -10.16 8.62 0)
+			(property "Reference" "U4"
+				(at 0 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Value" "LD39050PU33R"
-				(at -10.16 -11.62 0)
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
 			(property "Footprint" "LD39050PU33R:SON95P300X300X100-7N"
@@ -761,7 +759,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/ld39050.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -770,7 +768,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "500 mA low quiescent current and low noise voltage regulator"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1018,479 +1016,6 @@
 								(size 1.016 1.016)
 							)
 						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Regulator_Switching:TPS568230"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -7.62 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "TPS568230"
-				(at -3.81 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_DFN_QFN:Texas_RJE0020A_VQFN-20-1EP_3x3mm_P0.45mm_EP0.675x0.76mm"
-				(at 0 -16.51 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/gpn/tps568230"
-				(at 0 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "4.5V to 18V Input, 8A Synchronous Step-Down Voltage Regulator, VQFN-20"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switching DC-DC-converter"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Texas*RJE0020A*VQFN*1EP*3x3mm*P0.45mm*EP0.675x0.76mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TPS568230_0_0"
-				(pin power_in line
-					(at -10.16 10.16 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "EN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(name "PGOOD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -10.16 -7.62 0)
-					(length 2.54)
-					(name "MODE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "FB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "TPS568230_1_0"
-				(pin passive line
-					(at -10.16 10.16 0)
-					(length 2.54)
-					(hide yes)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 10.16 0)
-					(length 2.54)
-					(hide yes)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 10.16 0)
-					(length 2.54)
-					(hide yes)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at -10.16 -2.54 0)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "17"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -10.16 0)
-					(length 2.54)
-					(name "SS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -17.78 90)
-					(length 2.54)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -17.78 90)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "18"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 -17.78 90)
-					(length 2.54)
-					(name "AGND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 10.16 180)
-					(length 2.54)
-					(hide yes)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "19"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 10.16 180)
-					(length 2.54)
-					(hide yes)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 10.16 10.16 180)
-					(length 2.54)
-					(name "SW"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 2.54 180)
-					(length 2.54)
-					(name "BST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "TPS568230_1_1"
-				(rectangle
-					(start -7.62 12.7)
-					(end 7.62 -15.24)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type background)
 					)
 				)
 			)
@@ -1943,6 +1468,477 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "tps568230:TPS568230"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U3"
+				(at 0 17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TPS568230"
+				(at 0 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DFN_QFN:Texas_RJE0020A_VQFN-20-1EP_3x3mm_P0.45mm_EP0.675x0.76mm"
+				(at 0 -16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/tps568230.pdf"
+				(at 0 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "4.5V to 18V Input, 8A Synchronous Step-Down Voltage Regulator, VQFN-20"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switching DC-DC-converter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Texas*RJE0020A*VQFN*1EP*3x3mm*P0.45mm*EP0.675x0.76mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS568230_0_0"
+				(pin power_in line
+					(at -10.16 10.16 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "PGOOD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "MODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TPS568230_1_0"
+				(pin passive line
+					(at -10.16 10.16 0)
+					(length 2.54)
+					(hide yes)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 10.16 0)
+					(length 2.54)
+					(hide yes)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 10.16 0)
+					(length 2.54)
+					(hide yes)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -10.16 0)
+					(length 2.54)
+					(name "SS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -17.78 90)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -17.78 90)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -17.78 90)
+					(length 2.54)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(hide yes)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(hide yes)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "BST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TPS568230_1_1"
+				(rectangle
+					(start -7.62 12.7)
+					(end 7.62 -15.24)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
 					)
 				)
 			)
@@ -11723,207 +11719,6 @@
 		(uuid "e9176a39-6133-4e97-ac25-7c64fafbc393")
 	)
 	(symbol
-		(lib_id "LD39050PU33R:LD39050PU33R")
-		(at 201.93 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0e94a164-fbf0-4c88-8806-192ea93e1c1e")
-		(property "Reference" "U4"
-			(at 201.93 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LD39050PU33R"
-			(at 201.93 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LD39050PU33R:SON95P300X300X100-7N"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/ld39050.pdf"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "500 mA low quiescent current and low noise voltage regulator"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" "STMicroelectronics"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "DIGI-KEY_PURCHASE_URL" "https://www.digikey.ph/product-detail/en/stmicroelectronics/LD39050PU33R/497-8716-1-ND/2039901?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "Linear Voltage Regulator IC Positive Fixed 1 Output  500mA 6-DFN (3x3)"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PACKAGE" "DFN-6 STMicroelectronics"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "DFN-6 STMicroelectronics"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC7351B"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/LD39050PU33R/STMicroelectronics/view-part/?ref=snap"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "LD39050PU33R"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "DIGI-KEY_PART_NUMBER" "497-8716-1-ND"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/LD39050PU33R/STMicroelectronics/view-part/?ref=eda"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "0fbf978c-659f-4d59-94c5-8e39e1b7a90a")
-		)
-		(pin "3"
-			(uuid "1f0da5f4-aa79-4312-91b7-08eb690a691a")
-		)
-		(pin "4"
-			(uuid "da8e5d9f-de6b-42ac-afe5-53fd0e94f52b")
-		)
-		(pin "1"
-			(uuid "7a0de5ac-4ff3-4f68-93d3-787aa1c425a0")
-		)
-		(pin "7"
-			(uuid "7b388489-7431-4d06-8e14-60fa7b2a7418")
-		)
-		(pin "2"
-			(uuid "0f2f48c0-fc45-427d-970a-303f0661b15b")
-		)
-		(instances
-			(project ""
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "U4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 161.29 46.99 90)
 		(unit 1)
@@ -12001,7 +11796,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14133420-a77e-4bdc-b837-85d43575844b")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR025"
 			(at 81.28 153.67 0)
 			(effects
 				(font
@@ -12051,7 +11846,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR012")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -12067,7 +11862,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14420a2c-c351-4f9a-b1f8-09b1604b2d27")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR011"
 			(at 95.25 53.34 0)
 			(effects
 				(font
@@ -12117,7 +11912,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR013")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -12198,7 +11993,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e16b02f-9a33-4053-a91a-30a1489c2d68")
-		(property "Reference" "C5"
+		(property "Reference" "C16"
 			(at 77.978 58.166 90)
 			(effects
 				(font
@@ -12250,7 +12045,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C5")
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -12266,7 +12061,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f616cc7-b0bc-4edf-b7b7-e0bc51968960")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR017"
 			(at 124.46 87.63 0)
 			(effects
 				(font
@@ -12316,7 +12111,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR020")
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -12331,7 +12126,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2bd5c0af-f7c2-4a1a-b391-fc626f6f2038")
-		(property "Reference" "C8"
+		(property "Reference" "C6"
 			(at 91.44 37.084 0)
 			(effects
 				(font
@@ -12385,7 +12180,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C8")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -12400,7 +12195,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2d22342b-8738-43a2-9b38-ee0f08eea029")
-		(property "Reference" "R16"
+		(property "Reference" "R19"
 			(at 105.918 127 0)
 			(effects
 				(font
@@ -12454,7 +12249,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R16")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -12470,7 +12265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "341d2c78-4493-414e-bc30-fbb1753b23b8")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR024"
 			(at 223.52 147.32 0)
 			(effects
 				(font
@@ -12520,7 +12315,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR025")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -12535,7 +12330,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "37af10d1-9660-451b-ba69-e2dd6db62c7e")
-		(property "Reference" "R9"
+		(property "Reference" "R14"
 			(at 66.04 69.85 90)
 			(effects
 				(font
@@ -12587,7 +12382,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R9")
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -12602,7 +12397,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3892f0f6-fc61-4ebb-aa37-77bf7da74a64")
-		(property "Reference" "R10"
+		(property "Reference" "R16"
 			(at 65.532 81.28 0)
 			(effects
 				(font
@@ -12656,7 +12451,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R10")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -12807,7 +12602,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "41cdb28f-244e-4205-9ac4-582e3217e948")
-		(property "Reference" "R11"
+		(property "Reference" "R17"
 			(at 75.438 127 0)
 			(effects
 				(font
@@ -12861,7 +12656,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R11")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -12876,7 +12671,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "47d9f01f-4644-4ceb-aaf7-338a624a1b53")
-		(property "Reference" "R14"
+		(property "Reference" "R18"
 			(at 90.678 127 0)
 			(effects
 				(font
@@ -12930,7 +12725,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R14")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -13012,7 +12807,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "511d0227-6571-4d1a-9a4c-04e2904c0788")
-		(property "Reference" "C15"
+		(property "Reference" "C9"
 			(at 194.31 49.784 0)
 			(effects
 				(font
@@ -13066,7 +12861,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C15")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -13146,7 +12941,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "569cd128-9a2a-42fc-9867-8ef2c36aec86")
-		(property "Reference" "R18"
+		(property "Reference" "R13"
 			(at 173.99 67.3099 0)
 			(effects
 				(font
@@ -13200,7 +12995,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R18")
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -13215,7 +13010,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "59704ebd-42c4-47aa-925a-3f1a4d6c2ac1")
-		(property "Reference" "C13"
+		(property "Reference" "C19"
 			(at 170.18 130.556 0)
 			(effects
 				(font
@@ -13269,7 +13064,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C13")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -13363,7 +13158,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7099f516-3d9b-4927-9ed1-74d7bd671044")
-		(property "Reference" "R17"
+		(property "Reference" "R10"
 			(at 139.7 49.53 90)
 			(effects
 				(font
@@ -13415,7 +13210,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R17")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -13431,7 +13226,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75794c26-2a98-4116-b214-0ed1b3a91a4b")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR013"
 			(at 209.55 66.04 0)
 			(effects
 				(font
@@ -13481,7 +13276,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR024")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -13497,7 +13292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c2870c2-5267-469b-8e9a-0fee133f4dc1")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR015"
 			(at 97.79 87.63 0)
 			(effects
 				(font
@@ -13547,132 +13342,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Switching:TPS568230")
-		(at 124.46 57.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80b8dd13-778b-43c3-bd95-3d1fad75e06e")
-		(property "Reference" "U3"
-			(at 124.46 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TPS568230"
-			(at 124.46 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DFN_QFN:Texas_RJE0020A_VQFN-20-1EP_3x3mm_P0.45mm_EP0.675x0.76mm"
-			(at 124.46 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/tps568230.pdf"
-			(at 124.46 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "4.5V to 18V Input, 8A Synchronous Step-Down Voltage Regulator, VQFN-20"
-			(at 124.46 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "18"
-			(uuid "bb48fe2b-a400-490c-aa5f-9a7e8ac0f3aa")
-		)
-		(pin "3"
-			(uuid "8f8eab6e-4fa6-42b2-98d4-8cd86949c40f")
-		)
-		(pin "16"
-			(uuid "de524498-9f51-4d1f-99b6-5ab55968a55c")
-		)
-		(pin "4"
-			(uuid "0c4806e2-b156-4a1f-a207-cd1f40dafc92")
-		)
-		(pin "19"
-			(uuid "7a463bc0-f148-4aeb-963b-33bfdbe950d2")
-		)
-		(pin "11"
-			(uuid "14eb0a42-4a1c-46c0-80b5-6bbead32af51")
-		)
-		(pin "13"
-			(uuid "53815ae9-77e0-4cbf-ab44-ec3c3cd60b42")
-		)
-		(pin "5"
-			(uuid "11bb2074-d6aa-4939-a397-a3974f7d0a9c")
-		)
-		(pin "1"
-			(uuid "4097da5d-175b-4dc1-94e6-2fa6d36f607f")
-		)
-		(pin "6"
-			(uuid "69ad784d-49ef-4943-bd50-6b490c9872f4")
-		)
-		(pin "9"
-			(uuid "3b3c8ecf-a288-43c0-9275-320d6111802b")
-		)
-		(pin "12"
-			(uuid "feb1c6d9-9c2f-4cbf-9748-de9e025ab582")
-		)
-		(pin "8"
-			(uuid "466c1420-7d09-44cf-989d-838438b9c369")
-		)
-		(pin "15"
-			(uuid "f11416d5-7964-4ac0-8e73-26ed9c217333")
-		)
-		(pin "10"
-			(uuid "454e8d26-8ca4-414f-ab75-1bc0e0e495b8")
-		)
-		(pin "21"
-			(uuid "82d90dce-b65e-45b3-9615-ebbce680bdef")
-		)
-		(pin "20"
-			(uuid "e78d08a1-8029-4761-9fe3-e8ae4d62ea83")
-		)
-		(pin "17"
-			(uuid "755473f9-2eac-4524-907b-ea3296c01048")
-		)
-		(pin "7"
-			(uuid "40732114-1a26-4ec8-8e19-38d6ee8be759")
-		)
-		(pin "2"
-			(uuid "faaf532f-88be-47aa-8d19-68ece8b76678")
-		)
-		(pin "14"
-			(uuid "146ae360-6257-4ef1-b124-fac508a4507c")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "U3")
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -13687,7 +13357,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8de78450-5e4c-460e-9bb5-982c7c2f49df")
-		(property "Reference" "R12"
+		(property "Reference" "R9"
 			(at 88.9 49.53 90)
 			(effects
 				(font
@@ -13739,7 +13409,208 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R12")
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ld39050pu33r:LD39050PU33R")
+		(at 201.93 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fd24d91-69b6-4efe-a8fd-d58f91dd1c56")
+		(property "Reference" "U4"
+			(at 201.93 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LD39050PU33R"
+			(at 201.93 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Chromapi_FP:ld39050PU33R_SON95P300X300X100-7N"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/ld39050.pdf"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "500 mA low quiescent current and low noise voltage regulator"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "STMicroelectronics"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DIGI-KEY_PURCHASE_URL" "https://www.digikey.ph/product-detail/en/stmicroelectronics/LD39050PU33R/497-8716-1-ND/2039901?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Linear Voltage Regulator IC Positive Fixed 1 Output  500mA 6-DFN (3x3)"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PACKAGE" "DFN-6 STMicroelectronics"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "DFN-6 STMicroelectronics"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "IPC7351B"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/LD39050PU33R/STMicroelectronics/view-part/?ref=snap"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "LD39050PU33R"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "DIGI-KEY_PART_NUMBER" "497-8716-1-ND"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/LD39050PU33R/STMicroelectronics/view-part/?ref=eda"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "a6b7f10c-101b-4ca7-b94f-e09169b02e4b")
+		)
+		(pin "1"
+			(uuid "b153e0ed-8e79-43ed-bb56-5877f32315d5")
+		)
+		(pin "6"
+			(uuid "6ce8517c-462a-452a-b0e5-fade4a6d4c4b")
+		)
+		(pin "3"
+			(uuid "ccea1383-9ef3-4c0b-a19e-9f7db9abceb8")
+		)
+		(pin "7"
+			(uuid "cd427c9e-1ad7-4005-8278-8f96d78a5704")
+		)
+		(pin "2"
+			(uuid "c3bfc8d3-3b86-4a27-9d6a-6fc8d52e5ba1")
+		)
+		(instances
+			(project ""
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -13897,7 +13768,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9885e410-c99d-4bbb-9ddf-7dec429fa801")
-		(property "Reference" "C7"
+		(property "Reference" "C5"
 			(at 85.09 37.084 0)
 			(effects
 				(font
@@ -13951,7 +13822,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C7")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -13966,7 +13837,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9a27f486-b552-4faa-a16c-3f3d8cfac9fd")
-		(property "Reference" "C12"
+		(property "Reference" "C15"
 			(at 161.798 52.324 0)
 			(effects
 				(font
@@ -14020,7 +13891,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C12")
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -14100,7 +13971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c7428da-691f-44e3-9534-4b0546383051")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR027"
 			(at 111.76 153.67 0)
 			(effects
 				(font
@@ -14150,7 +14021,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR019")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -14165,7 +14036,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a706e890-8eb5-4808-8e7f-74732b2b3621")
-		(property "Reference" "C6"
+		(property "Reference" "C18"
 			(at 81.534 81.534 0)
 			(effects
 				(font
@@ -14219,7 +14090,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C6")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -14235,7 +14106,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9116ded-66b4-4c9b-805e-fb8e00b1606b")
-		(property "Reference" "R19"
+		(property "Reference" "R11"
 			(at 179.07 53.3399 0)
 			(effects
 				(font
@@ -14289,7 +14160,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R19")
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -14305,7 +14176,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9e75973-bc80-44aa-8362-3cda4327f80d")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR022"
 			(at 233.68 127 0)
 			(effects
 				(font
@@ -14355,7 +14226,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR026")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -14370,7 +14241,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aaa8ab8a-8e52-42bc-a19b-db8492777ff3")
-		(property "Reference" "R13"
+		(property "Reference" "R12"
 			(at 88.9 67.818 90)
 			(effects
 				(font
@@ -14422,7 +14293,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R13")
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -14438,7 +14309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ae5afb9a-323b-4661-b924-e6e3969f8b7d")
-		(property "Reference" "C19"
+		(property "Reference" "C20"
 			(at 227.33 130.8099 0)
 			(effects
 				(font
@@ -14492,7 +14363,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C19")
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -14507,7 +14378,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aeea3585-a45c-4ab6-82b4-863be198c8b2")
-		(property "Reference" "C16"
+		(property "Reference" "C10"
 			(at 201.93 49.784 0)
 			(effects
 				(font
@@ -14561,7 +14432,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C16")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -14576,7 +14447,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b003aa49-96ea-47bd-8ef9-4630ac63ea5d")
-		(property "Reference" "C9"
+		(property "Reference" "C7"
 			(at 97.79 37.084 0)
 			(effects
 				(font
@@ -14630,7 +14501,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C9")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -14645,7 +14516,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2dfb224-2337-4243-abfd-447ed440bd71")
-		(property "Reference" "C18"
+		(property "Reference" "C12"
 			(at 217.17 49.784 0)
 			(effects
 				(font
@@ -14699,7 +14570,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C18")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -14781,7 +14652,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b87d714d-47bc-4f16-91d7-0ce590bf50f0")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR010"
 			(at 237.49 48.26 0)
 			(effects
 				(font
@@ -14831,7 +14702,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR027")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -14847,7 +14718,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b9af73d7-c421-4185-99f8-b6cf67fb2a5f")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR020"
 			(at 111.76 121.92 0)
 			(effects
 				(font
@@ -14897,7 +14768,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR018")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -14992,7 +14863,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be9ef2f4-493f-4927-878f-41b19661f2e1")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR019"
 			(at 96.52 121.92 0)
 			(effects
 				(font
@@ -15042,7 +14913,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR014")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -15058,7 +14929,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1ca0577-dd44-416f-857c-a33ed37aaf6d")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR016"
 			(at 110.49 87.63 0)
 			(effects
 				(font
@@ -15108,7 +14979,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR017")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -15123,7 +14994,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c5fa2d93-d03a-4e98-b702-971d96134481")
-		(property "Reference" "C11"
+		(property "Reference" "C14"
 			(at 151.638 53.086 90)
 			(effects
 				(font
@@ -15175,7 +15046,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C11")
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -15191,7 +15062,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d03d732d-972d-4e55-acbc-6a51d6dfeab4")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR012"
 			(at 62.23 59.69 0)
 			(effects
 				(font
@@ -15242,7 +15113,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR010")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -15258,7 +15129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d1da5d08-6491-4b52-8d7f-8633e0aa86e1")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR026"
 			(at 96.52 153.67 0)
 			(effects
 				(font
@@ -15308,7 +15179,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR015")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -15323,7 +15194,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "da8cd0c3-8421-4e4c-a4a4-5a5017d9321f")
-		(property "Reference" "C14"
+		(property "Reference" "C8"
 			(at 186.69 49.784 0)
 			(effects
 				(font
@@ -15377,7 +15248,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C14")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -15392,7 +15263,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dce2798c-1325-4ab6-99d9-60859db33a16")
-		(property "Reference" "C20"
+		(property "Reference" "C13"
 			(at 224.79 49.784 0)
 			(effects
 				(font
@@ -15446,7 +15317,132 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C20")
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "tps568230:TPS568230")
+		(at 124.46 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4cd4311-7fc9-49b1-b8e1-11a12d55ffd3")
+		(property "Reference" "U3"
+			(at 124.46 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS568230"
+			(at 124.46 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DFN_QFN:Texas_RJE0020A_VQFN-20-1EP_3x3mm_P0.45mm_EP0.675x0.76mm"
+			(at 124.46 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/tps568230.pdf"
+			(at 124.46 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.5V to 18V Input, 8A Synchronous Step-Down Voltage Regulator, VQFN-20"
+			(at 124.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "babcd45f-073c-4d11-a4ac-03878917aaa9")
+		)
+		(pin "1"
+			(uuid "2f43c72b-f106-4e12-b0d5-aa98f3d30d54")
+		)
+		(pin "8"
+			(uuid "f93a1109-3374-4dc2-8b52-d2a99cb19985")
+		)
+		(pin "15"
+			(uuid "e23990f9-fe01-43e4-b600-da58ced8f2a3")
+		)
+		(pin "20"
+			(uuid "c783b0a0-95d1-4d26-ad66-e0977630df61")
+		)
+		(pin "5"
+			(uuid "9acc56b8-3971-43b8-992f-770fffb3554e")
+		)
+		(pin "4"
+			(uuid "a50a5733-4e6f-4204-ba07-50b96976ce74")
+		)
+		(pin "12"
+			(uuid "46d29a85-db20-4761-97a6-f2b65244130c")
+		)
+		(pin "9"
+			(uuid "cdf1e0d2-fb42-4200-b159-e5ee69cc9749")
+		)
+		(pin "10"
+			(uuid "f04ad043-7c67-4e59-bc9f-35689de79afd")
+		)
+		(pin "13"
+			(uuid "f7a0002d-c367-4feb-98a5-8b8d19616750")
+		)
+		(pin "16"
+			(uuid "a4580d0e-0e9c-401c-aece-e6885e71e199")
+		)
+		(pin "17"
+			(uuid "f473caea-85c0-4bd8-b223-57e2bec22ac6")
+		)
+		(pin "11"
+			(uuid "03f8f903-9cab-41ae-9bbf-ea56d89b1f4f")
+		)
+		(pin "7"
+			(uuid "8212f6f7-cdec-410c-9afa-c9266c5c891b")
+		)
+		(pin "21"
+			(uuid "28b79263-ae3c-448d-bd44-91d3838ec3cd")
+		)
+		(pin "18"
+			(uuid "df32bf8f-726e-41a9-b84d-a32c818b7c64")
+		)
+		(pin "19"
+			(uuid "cfa79961-cb07-4869-9efa-e40537df2c31")
+		)
+		(pin "6"
+			(uuid "0c12b0e1-d5ee-4137-9863-96ed80c1efc5")
+		)
+		(pin "3"
+			(uuid "4c5f83f7-151f-4068-a8a0-71f9b12eff09")
+		)
+		(pin "14"
+			(uuid "044cf838-790c-4962-ba0c-3a04fb240502")
+		)
+		(instances
+			(project ""
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -15461,7 +15457,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f0eb0f00-02f7-4456-82b1-f9df2466ce78")
-		(property "Reference" "C10"
+		(property "Reference" "C17"
 			(at 106.68 71.374 0)
 			(effects
 				(font
@@ -15515,7 +15511,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C10")
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -15531,7 +15527,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9a33f35-0818-49d7-ade5-a8dff816639c")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR014"
 			(at 171.45 81.28 0)
 			(effects
 				(font
@@ -15581,7 +15577,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR022")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -15597,7 +15593,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fdd84d47-7989-4115-ab4a-59bb83e21aef")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR018"
 			(at 74.93 95.25 0)
 			(effects
 				(font
@@ -15647,7 +15643,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR011")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -15662,7 +15658,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ffcd7f3a-be70-428b-8a7f-c5a4da9a9cb2")
-		(property "Reference" "C17"
+		(property "Reference" "C11"
 			(at 209.55 49.784 0)
 			(effects
 				(font
@@ -15716,7 +15712,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "C17")
+					(reference "C11")
 					(unit 1)
 				)
 			)

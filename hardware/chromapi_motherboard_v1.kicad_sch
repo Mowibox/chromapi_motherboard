@@ -9605,7 +9605,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47bfa4ac-3a31-4cd3-b83c-6624b759d1d1")
-		(property "Reference" "FID3"
+		(property "Reference" "FID2"
 			(at 128.27 175.2599 0)
 			(effects
 				(font
@@ -9655,7 +9655,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5"
-					(reference "FID3")
+					(reference "FID2")
 					(unit 1)
 				)
 			)
@@ -9740,7 +9740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67b91abb-4cf4-4b27-8155-83d51b423e8f")
-		(property "Reference" "FID2"
+		(property "Reference" "FID3"
 			(at 123.19 182.8799 0)
 			(effects
 				(font
@@ -9790,7 +9790,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5"
-					(reference "FID2")
+					(reference "FID3")
 					(unit 1)
 				)
 			)

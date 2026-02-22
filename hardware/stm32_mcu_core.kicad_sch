@@ -12184,7 +12184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "026d2632-a953-4f5f-9616-7bb03d493a2a")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR050"
 			(at 78.74 175.26 0)
 			(effects
 				(font
@@ -12234,7 +12234,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR041")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -12250,7 +12250,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04f79ba2-bb5a-4276-9e0b-75640222f8f0")
-		(property "Reference" "TP6"
+		(property "Reference" "TP7"
 			(at 243.84 130.8099 90)
 			(effects
 				(font
@@ -12301,7 +12301,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "TP6")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -12317,7 +12317,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09401955-d1ab-4c88-8c6d-0af6a5c857b5")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR028"
 			(at 240.03 34.29 0)
 			(effects
 				(font
@@ -12367,7 +12367,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR057")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -12533,7 +12533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c7f7bc6-79d5-4028-b20a-632ec956ac60")
-		(property "Reference" "C26"
+		(property "Reference" "C27"
 			(at 110.49 177.7999 0)
 			(effects
 				(font
@@ -12587,7 +12587,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "C26")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -12603,7 +12603,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22704bdd-fd0c-4fa1-ac0b-c583b944369d")
-		(property "Reference" "C25"
+		(property "Reference" "C26"
 			(at 93.98 177.7999 0)
 			(effects
 				(font
@@ -12657,7 +12657,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "C25")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -12673,7 +12673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24e237f4-d0c0-44f9-a97b-f3cbaa62b915")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR048"
 			(at 238.76 139.7 0)
 			(effects
 				(font
@@ -12723,7 +12723,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR056")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -12739,7 +12739,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d325267-be91-4423-8a02-57c1742be72e")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR037"
 			(at 58.42 91.44 0)
 			(effects
 				(font
@@ -12789,7 +12789,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR035")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -12980,7 +12980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38af13ce-4109-40c1-9c09-928cda077864")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR029"
 			(at 57.15 58.42 0)
 			(effects
 				(font
@@ -13030,7 +13030,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR034")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -13046,7 +13046,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "39377e72-63e3-4c4f-9d11-3220b4ba3a0a")
-		(property "Reference" "TP5"
+		(property "Reference" "TP6"
 			(at 222.25 127.7619 0)
 			(effects
 				(font
@@ -13097,7 +13097,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "TP5")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -13113,7 +13113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3987e135-1a86-4af0-9668-52e9aef86f06")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR047"
 			(at 58.42 139.7 0)
 			(effects
 				(font
@@ -13163,7 +13163,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR037")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -13283,7 +13283,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ef7e5f6-d52a-434b-97ed-4c0a32c14ab0")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR054"
 			(at 48.26 191.77 0)
 			(effects
 				(font
@@ -13333,7 +13333,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR032")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -13349,7 +13349,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45d6aa40-42a4-405e-ab35-69a8401773f8")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR055"
 			(at 83.82 191.77 0)
 			(effects
 				(font
@@ -13399,7 +13399,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR042")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -13415,7 +13415,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "550c5cc6-df21-4135-8ed8-f75dbd1c0ca5")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR056"
 			(at 106.68 191.77 0)
 			(effects
 				(font
@@ -13465,7 +13465,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR045")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -13481,7 +13481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5845507c-2864-4ad3-9c6c-9549a178e5e8")
-		(property "Reference" "C22"
+		(property "Reference" "C23"
 			(at 52.07 177.7999 0)
 			(effects
 				(font
@@ -13535,7 +13535,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "C22")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -13551,7 +13551,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a59b3cf-f908-4a88-bce6-c5860e31666b")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR052"
 			(at 127 175.26 0)
 			(effects
 				(font
@@ -13601,7 +13601,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR047")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -13617,7 +13617,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5af27b19-4c90-4354-87aa-475660696ac8")
-		(property "Reference" "TP7"
+		(property "Reference" "TP5"
 			(at 255.27 122.6819 0)
 			(effects
 				(font
@@ -13668,7 +13668,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "TP7")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -13684,7 +13684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e3a1912-a678-4fbf-b67f-4ad962167410")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR041"
 			(at 86.36 91.44 0)
 			(effects
 				(font
@@ -13734,7 +13734,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR043")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -13750,7 +13750,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "630c43b4-008f-4ace-a2b6-80c02cbb54ab")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR030"
 			(at 158.75 58.42 0)
 			(effects
 				(font
@@ -13800,7 +13800,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR052")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -13816,7 +13816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66e4b6bf-b229-403f-b66a-d2b97b133bfc")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR033"
 			(at 30.48 91.44 0)
 			(effects
 				(font
@@ -13866,7 +13866,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR028")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -13948,7 +13948,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73e6e16d-660a-4cf7-bc39-1b9f519412d7")
-		(property "Reference" "C23"
+		(property "Reference" "C24"
 			(at 66.04 177.7999 0)
 			(effects
 				(font
@@ -14002,7 +14002,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "C23")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -14018,7 +14018,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "752ae227-e50c-42b3-9bdc-04ca370da8dd")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR035"
 			(at 45.72 91.44 0)
 			(effects
 				(font
@@ -14068,7 +14068,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR031")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -14188,7 +14188,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "767d90e9-8609-4554-92e3-f531d3b004c8")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR043"
 			(at 236.22 111.76 0)
 			(effects
 				(font
@@ -14238,7 +14238,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR054")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -14360,7 +14360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82735743-d9dd-434b-bc03-64f92cb9c854")
-		(property "Reference" "C24"
+		(property "Reference" "C25"
 			(at 82.55 177.7999 0)
 			(effects
 				(font
@@ -14414,7 +14414,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "C24")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -14430,7 +14430,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83ed5b35-b7e1-4207-8f49-35e8260968be")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR032"
 			(at 123.19 83.82 0)
 			(effects
 				(font
@@ -14480,7 +14480,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR046")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -14496,7 +14496,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "889a2b52-a2e3-4693-9f28-35038d520980")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR036"
 			(at 50.8 91.44 0)
 			(effects
 				(font
@@ -14546,7 +14546,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR033")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -14628,7 +14628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93938147-9f9b-4c7a-ab3d-07195094c383")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR057"
 			(at 127 191.77 0)
 			(effects
 				(font
@@ -14678,7 +14678,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR048")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -14694,7 +14694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "956e5f65-7d1c-4464-a8da-3a939936c290")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR046"
 			(at 162.56 120.65 0)
 			(effects
 				(font
@@ -14744,7 +14744,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR053")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -14866,7 +14866,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a412ad04-a17e-41bc-9a15-8784e7607581")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR058"
 			(at 146.05 191.77 0)
 			(effects
 				(font
@@ -14916,7 +14916,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR051")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -15002,7 +15002,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aca12b70-494b-4f82-933a-33763fd02479")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR051"
 			(at 106.68 175.26 0)
 			(effects
 				(font
@@ -15052,7 +15052,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR044")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -15068,7 +15068,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b5b37cc0-e7b4-463b-9ccd-13f6d41186c2")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR053"
 			(at 146.05 175.26 0)
 			(effects
 				(font
@@ -15118,7 +15118,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR050")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -15134,7 +15134,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca6855b5-7e4f-4e25-beba-1f24e2969e67")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR031"
 			(at 238.76 76.2 0)
 			(effects
 				(font
@@ -15184,7 +15184,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR055")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -15200,7 +15200,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca7af834-44d3-42fd-9503-1f1a903b4cca")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR044"
 			(at 241.3 111.76 0)
 			(effects
 				(font
@@ -15250,7 +15250,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR058")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -15266,7 +15266,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2e1460c-4dc0-4e05-b9e9-6560bb7b9537")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR045"
 			(at 139.7 120.65 0)
 			(effects
 				(font
@@ -15316,7 +15316,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR049")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -15332,7 +15332,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4ec9a0d-0d93-469f-a84e-4a22f130aa0c")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR042"
 			(at 58.42 109.22 0)
 			(effects
 				(font
@@ -15382,7 +15382,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR036")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -15559,7 +15559,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db67966b-8e49-485a-9831-93ea6f5737f9")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR049"
 			(at 34.29 175.26 0)
 			(effects
 				(font
@@ -15609,7 +15609,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR029")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -15794,7 +15794,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec906023-00cb-4ad8-8e14-e1b749abfc71")
-		(property "Reference" "C27"
+		(property "Reference" "C21"
 			(at 127 71.1199 0)
 			(effects
 				(font
@@ -15848,7 +15848,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "C27")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -15864,7 +15864,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3d64fab-ebe8-4223-bfd2-db836fb5c5a2")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR034"
 			(at 38.1 91.44 0)
 			(effects
 				(font
@@ -15914,7 +15914,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR030")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -15930,7 +15930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8a16d48-21d9-4803-a451-b20ce2030a69")
-		(property "Reference" "C21"
+		(property "Reference" "C22"
 			(at 38.1 177.7999 0)
 			(effects
 				(font
@@ -15984,7 +15984,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "C21")
+					(reference "C22")
 					(unit 1)
 				)
 			)

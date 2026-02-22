@@ -1,0 +1,10 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ao4406a")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/ao4406a.kicad_sym")(options "")(descr ""))
+  (lib (name "ao4435")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/ao4435.kicad_sym")(options "")(descr ""))
+  (lib (name "cn3302")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/cn3302.kicad_sym")(options "")(descr ""))
+  (lib (name "hy2120")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/hy2120.kicad_sym")(options "")(descr ""))
+  (lib (name "inmp441acez-r7")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/inmp441acez-r7.kicad_sym")(options "")(descr ""))
+  (lib (name "ld39050pu33r")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/ld39050pu33r.kicad_sym")(options "")(descr ""))
+  (lib (name "tps568230")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/tps568230.kicad_sym")(options "")(descr ""))
+)
