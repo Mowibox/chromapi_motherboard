@@ -13095,7 +13095,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 140.97 128.27 0)
 			(effects
 				(font
@@ -13462,7 +13462,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 150.368 137.16 90)
 			(effects
 				(font
@@ -13947,7 +13947,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 131.318 124.46 90)
 			(effects
 				(font
@@ -14288,7 +14288,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 94.742 115.57 90)
 			(effects
 				(font
@@ -15186,7 +15186,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 103.632 115.57 90)
 			(effects
 				(font
@@ -15256,7 +15256,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Chromapi_FP:ao4435_SOIC127P600X175-8N"
 			(at 213.36 110.49 0)
 			(effects
 				(font
@@ -15945,7 +15945,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
 			(at 80.01 113.03 0)
 			(effects
 				(font
@@ -16054,7 +16054,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 148.59 147.32 0)
 			(effects
 				(font
