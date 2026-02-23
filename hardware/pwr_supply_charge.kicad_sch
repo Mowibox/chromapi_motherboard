@@ -2044,7 +2044,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q2"
+			(property "Reference" "Q1"
 				(at 10.16 2.54 90)
 				(effects
 					(font
@@ -2064,7 +2064,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "AO4406A:SOIC-8_3.9x4.9x1.75mm_P1.27mm"
+			(property "Footprint" "Chromapi_FP:ao4406a_SOIC-8_3.9x4.9x1.75mm_P1.27mm"
 				(at 13.97 -6.35 0)
 				(effects
 					(font
@@ -2508,7 +2508,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q1"
+			(property "Reference" "Q3"
 				(at 6.35 0 90)
 				(effects
 					(font
@@ -2524,7 +2524,7 @@
 					)
 				)
 			)
-			(property "Footprint" "AO4435:SOIC127P600X175-8N"
+			(property "Footprint" "Chromapi_FP:ao4435_SOIC127P600X175-8N"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13172,7 +13172,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
 			(at 198.12 39.37 0)
 			(effects
 				(font
@@ -14529,144 +14529,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ao4406a:AO4406A")
-		(at 207.01 55.88 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8a1b47f6-9ac0-49d4-b878-8c33dc132619")
-		(property "Reference" "Q2"
-			(at 204.47 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "AO4406A"
-			(at 210.82 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Chromapi_FP:ao4406a_SOIC-8_3.9x4.9x1.75mm_P1.27mm"
-			(at 213.36 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/AO4406A.pdf"
-			(at 215.9 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power MOSFET, N Channel, 30 V, 13 A, 0.015ohm, SOIC-8, Surface Mount"
-			(at 226.06 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AO4406A"
-			(at 204.47 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-					(color 0 100 100 1)
-				)
-			)
-		)
-		(property "Manufacturer" "AOSMD"
-			(at 218.44 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Author" "Antmicro"
-			(at 220.98 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "License" "Apache-2.0"
-			(at 223.52 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "dc8667a1-d652-4a38-bada-67afe22e8c01")
-		)
-		(pin "8"
-			(uuid "a0115548-51ca-4f3d-a363-cb82fe6eb0fa")
-		)
-		(pin "1"
-			(uuid "483afe5b-cfbd-46c2-bccb-4be4ba004b76")
-		)
-		(pin "2"
-			(uuid "96f9a37a-d0b7-4157-bced-24992d60bfff")
-		)
-		(pin "6"
-			(uuid "0f335778-b3bc-4d2d-ac12-04f2bb57be31")
-		)
-		(pin "4"
-			(uuid "b8934e9c-d3ca-4e06-8212-57a770105896")
-		)
-		(pin "3"
-			(uuid "57d570b9-db7a-4d6d-9ed9-acf9222d35bb")
-		)
-		(pin "5"
-			(uuid "96c97d00-ae5f-4a21-95d6-219f954356bd")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "cn3302:CN3302")
 		(at 161.29 139.7 0)
 		(unit 1)
@@ -14692,7 +14554,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOP-8_3.76x4.96mm_P1.27mm"
 			(at 161.29 139.7 0)
 			(effects
 				(font
@@ -14813,6 +14675,144 @@
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ao4406a:AO4406A")
+		(at 207.01 55.88 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93f38c17-cfc6-468c-a4f8-1721922a36c5")
+		(property "Reference" "Q2"
+			(at 204.47 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "AO4406A"
+			(at 210.82 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Chromapi_FP:ao4406a_SOIC-8_3.9x4.9x1.75mm_P1.27mm"
+			(at 213.36 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/AO4406A.pdf"
+			(at 215.9 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power MOSFET, N Channel, 30 V, 13 A, 0.015ohm, SOIC-8, Surface Mount"
+			(at 226.06 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AO4406A"
+			(at 204.47 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+					(color 0 100 100 1)
+				)
+			)
+		)
+		(property "Manufacturer" "AOSMD"
+			(at 218.44 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Author" "Antmicro"
+			(at 220.98 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "License" "Apache-2.0"
+			(at 223.52 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "f4da0a46-1a4b-40ac-bceb-770276cbc6ce")
+		)
+		(pin "8"
+			(uuid "dde96680-631f-4b12-be78-b893a4b8b3a1")
+		)
+		(pin "1"
+			(uuid "f2033c4c-f7c9-42ad-88c8-73f18b8512f0")
+		)
+		(pin "2"
+			(uuid "640872c9-8001-4e32-83dd-213fccd40256")
+		)
+		(pin "6"
+			(uuid "8cf15ab4-b511-4491-a70e-3c1ffc5c5c4d")
+		)
+		(pin "4"
+			(uuid "f65af870-02c3-4daf-b058-87ed2f3e75ec")
+		)
+		(pin "3"
+			(uuid "30d88f8e-a04e-4dba-929f-aaa677d3f796")
+		)
+		(pin "5"
+			(uuid "ad038792-6cc6-4bf8-8f1b-472494ca03c1")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
+					(reference "Q2")
 					(unit 1)
 				)
 			)

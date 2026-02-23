@@ -8600,29 +8600,7 @@
 			"h61KGgAAAABJRU5ErkJggg=="
 		)
 	)
-	(hierarchical_label "SERVO_DATA"
-		(shape input)
-		(at 129.54 109.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1eda1e4a-31b8-44ca-bfbb-f04a3bd76b2c")
-	)
-	(hierarchical_label "SERVO_DATA"
-		(shape input)
-		(at 165.1 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2d22a3fe-333d-41d0-9757-905ddc4a0182")
-	)
-	(hierarchical_label "SERVO_DATA"
+	(hierarchical_label "V_BATT"
 		(shape input)
 		(at 129.54 90.17 180)
 		(effects
@@ -8631,31 +8609,20 @@
 			)
 			(justify right)
 		)
-		(uuid "4ffc77dd-7d9f-4ad3-978f-105cd8a7e2d7")
+		(uuid "01ceb6f1-5ab1-47af-a655-8be9bf55c82f")
 	)
 	(hierarchical_label "V_BATT"
 		(shape input)
-		(at 165.1 87.63 180)
+		(at 129.54 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "6e938491-9834-4f7d-9d77-a55940f34af1")
+		(uuid "6a086add-e185-4fcc-83ea-4f970f2df548")
 	)
 	(hierarchical_label "SERVO_DATA"
-		(shape input)
-		(at 165.1 109.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b9b673f8-c489-42f5-9db4-d41f39de0bb5")
-	)
-	(hierarchical_label "V_BATT"
 		(shape input)
 		(at 129.54 106.68 180)
 		(effects
@@ -8664,9 +8631,9 @@
 			)
 			(justify right)
 		)
-		(uuid "c601c13d-4061-4342-b66e-bdda1c4a558a")
+		(uuid "9d4e8658-92aa-4bc3-8282-9ebf7f5f5548")
 	)
-	(hierarchical_label "V_BATT"
+	(hierarchical_label "SERVO_DATA"
 		(shape input)
 		(at 129.54 87.63 180)
 		(effects
@@ -8675,9 +8642,42 @@
 			)
 			(justify right)
 		)
-		(uuid "d191b06e-9ea8-4663-bb0e-c5250732f846")
+		(uuid "a088fc3f-779d-4c52-a44c-27789fd3833d")
 	)
 	(hierarchical_label "V_BATT"
+		(shape input)
+		(at 165.1 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c0d4e0cb-5aa7-42cd-a990-52acb5e6927e")
+	)
+	(hierarchical_label "V_BATT"
+		(shape input)
+		(at 165.1 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dc1ebde8-906c-418f-a3d9-17f3bdc6a81d")
+	)
+	(hierarchical_label "SERVO_DATA"
+		(shape input)
+		(at 165.1 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f281fa1e-14f2-4eec-a24b-376e9fcfb8c2")
+	)
+	(hierarchical_label "SERVO_DATA"
 		(shape input)
 		(at 165.1 106.68 180)
 		(effects
@@ -8686,7 +8686,7 @@
 			)
 			(justify right)
 		)
-		(uuid "f7c8774b-ae1a-4a26-b85d-bf0358cf050b")
+		(uuid "fff3e01c-601b-4e10-af14-122f4789516e")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -8848,7 +8848,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical"
 			(at 134.62 109.22 0)
 			(effects
 				(font
@@ -8987,7 +8987,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical"
 			(at 170.18 109.22 0)
 			(effects
 				(font
@@ -9126,7 +9126,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical"
 			(at 170.18 90.17 0)
 			(effects
 				(font
@@ -9199,7 +9199,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical"
 			(at 134.62 90.17 0)
 			(effects
 				(font

@@ -10,7 +10,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "MK1"
-			(at 3.81 15.24 0)
+			(at 4.318 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18,7 +18,7 @@
 			)
 		)
 		(property "Value" "INMP441ACEZ-R7"
-			(at 3.81 12.7 0)
+			(at 4.318 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -175,8 +175,8 @@
 		)
 		(symbol "INMP441ACEZ-R7_0_0"
 			(rectangle
-				(start -12.7 10.16)
-				(end 12.7 -10.16)
+				(start -12.7 -10.16)
+				(end 12.7 10.16)
 				(stroke
 					(width 0.254)
 					(type default)

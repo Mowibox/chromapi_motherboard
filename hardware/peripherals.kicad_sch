@@ -2103,7 +2103,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "MK1"
-				(at 3.81 15.24 0)
+				(at 4.318 15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2111,14 +2111,14 @@
 				)
 			)
 			(property "Value" "INMP441ACEZ-R7"
-				(at 3.81 12.7 0)
+				(at 4.318 12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "INMP441ACEZ-R7:MIC_INMP441ACEZ-R7"
+			(property "Footprint" "Chromapi_FP:MIC_INMP441ACEZ-R7"
 				(at 0 0 0)
 				(effects
 					(font

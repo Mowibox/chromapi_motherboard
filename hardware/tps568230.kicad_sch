@@ -749,7 +749,7 @@
 					)
 				)
 			)
-			(property "Footprint" "LD39050PU33R:SON95P300X300X100-7N"
+			(property "Footprint" "Chromapi_FP:ld39050PU33R_SON95P300X300X100-7N"
 				(at 0 0 0)
 				(effects
 					(font
@@ -13028,7 +13028,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 178.7652 135.89 0)
 			(effects
 				(font
@@ -13610,6 +13610,10 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
+					(reference "U4")
+					(unit 1)
+				)
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
 					(reference "U4")
 					(unit 1)
 				)
@@ -14327,7 +14331,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 224.4852 135.89 0)
 			(effects
 				(font

@@ -9,7 +9,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "Q2"
+		(property "Reference" "Q1"
 			(at 10.16 2.54 90)
 			(effects
 				(font
