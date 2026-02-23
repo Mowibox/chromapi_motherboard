@@ -13028,7 +13028,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 168.91 33.528 90)
 			(effects
 				(font
@@ -13320,7 +13320,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 93.98 55.88 0)
 			(effects
 				(font
@@ -13532,7 +13532,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 228.2952 113.03 0)
 			(effects
 				(font
@@ -13600,7 +13600,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 135.89 99.568 90)
 			(effects
 				(font
@@ -13670,7 +13670,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
 			(at 93.98 38.1 0)
 			(effects
 				(font
@@ -14014,7 +14014,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 161.29 39.878 90)
 			(effects
 				(font
@@ -14084,7 +14084,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 214.122 50.8 90)
 			(effects
 				(font
@@ -14844,7 +14844,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
 			(at 204.47 97.79 0)
 			(effects
 				(font
@@ -14914,7 +14914,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 117.8052 107.95 0)
 			(effects
 				(font
@@ -15554,7 +15554,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 177.4952 44.45 0)
 			(effects
 				(font
@@ -15811,7 +15811,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 167.3352 46.99 0)
 			(effects
 				(font

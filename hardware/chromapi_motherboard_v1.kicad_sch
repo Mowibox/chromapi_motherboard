@@ -9556,7 +9556,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom"
 			(at 156.21 177.8 0)
 			(effects
 				(font
@@ -9625,7 +9625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 125.73 176.53 0)
 			(effects
 				(font
@@ -9691,7 +9691,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom"
 			(at 149.86 177.8 0)
 			(effects
 				(font
@@ -9760,7 +9760,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 120.65 184.15 0)
 			(effects
 				(font
@@ -9826,7 +9826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 115.57 176.53 0)
 			(effects
 				(font
@@ -9892,7 +9892,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom"
 			(at 143.51 177.8 0)
 			(effects
 				(font
@@ -10023,7 +10023,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 140.97 177.8 0)
 			(effects
 				(font
@@ -10092,7 +10092,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom"
 			(at 162.56 177.8 0)
 			(effects
 				(font
