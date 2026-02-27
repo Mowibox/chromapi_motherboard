@@ -8839,7 +8839,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "Conn_BotLeft"
 			(at 137.16 110.4899 0)
 			(effects
 				(font
@@ -8996,7 +8996,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "Conn_BotRight"
 			(at 172.72 110.4899 0)
 			(effects
 				(font
@@ -9153,7 +9153,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "Conn_TopRight"
 			(at 172.72 91.4399 0)
 			(effects
 				(font
@@ -9244,7 +9244,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "Conn_TopLeft"
 			(at 137.16 91.4399 0)
 			(effects
 				(font
