@@ -2114,109 +2114,51 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "ao4406a:AO4406A"
+		(symbol "Transistor_FET:PSMN5R2-60YL"
 			(pin_names
-				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q1"
-				(at 10.16 2.54 90)
+			(property "Reference" "Q"
+				(at 5.715 1.905 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(thickness 0.15)
 					)
 				)
 			)
-			(property "Value" "AO4406A"
-				(at 13.97 -3.81 0)
+			(property "Value" "PSMN5R2-60YL"
+				(at 12.7 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(thickness 0.15)
 					)
-					(justify left bottom)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:LFPAK56"
+				(at 5.08 -1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Footprint" "Chromapi_FP:ao4406a_SOIC-8_3.9x4.9x1.75mm_P1.27mm"
-				(at 13.97 -6.35 0)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PSMN5R2-60YL.pdf"
+				(at 5.08 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(thickness 0.15)
 					)
-					(justify left bottom)
+					(justify left)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/AO4406A.pdf"
-				(at 13.97 -8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.15)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power MOSFET, N Channel, 30 V, 13 A, 0.015ohm, SOIC-8, Surface Mount"
-				(at 13.97 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "MPN" "AO4406A"
-				(at 12.7 2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.15)
-						(color 0 100 100 1)
-					)
-				)
-			)
-			(property "Manufacturer" "AOSMD"
-				(at 13.97 -11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.15)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Author" "Antmicro"
-				(at 13.97 -13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.15)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "License" "Apache-2.0"
-				(at 13.97 -16.51 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(thickness 0.15)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "SMT, TRANSISTOR, SEMICONDUCTOR"
+			(property "Description" "100A, 60V Vds, N-Channel MOSFET, 5.2mOhm Ron, LFPAK56"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2225,10 +2167,28 @@
 					(hide yes)
 				)
 			)
-			(symbol "AO4406A_1_1"
+			(property "ki_keywords" "N-Channel MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LFPAK56*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PSMN5R2-60YL_0_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 3.302 0) (xy 3.302 3.937)
+						(xy 0.254 1.905) (xy 0.254 -1.905)
 					)
 					(stroke
 						(width 0.254)
@@ -2240,70 +2200,70 @@
 				)
 				(polyline
 					(pts
-						(xy 3.81 4.445) (xy 3.81 3.429)
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy 3.81 2.54) (xy 3.81 3.048)
+						(xy 0.762 0.508) (xy 0.762 -0.508)
 					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy 3.81 2.54) (xy 3.81 2.032)
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
 					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy 3.81 1.143) (xy 3.81 1.651)
+						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy 3.81 1.143) (xy 3.81 0.635)
+						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
 					)
 					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.445 2.54) (xy 5.207 2.032) (xy 5.207 3.048) (xy 4.445 2.54)
-					)
-					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -2311,89 +2271,8 @@
 					)
 				)
 				(circle
-					(center 5.08 2.54)
-					(radius 3.302)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.223 0.635) (xy 7.366 0.635) (xy 7.366 3.937) (xy 7.366 4.445) (xy 6.223 4.445)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 6.35) (xy 6.35 3.937) (xy 3.81 3.937)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 6.35 4.445)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 1.143) (xy 3.81 1.143)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center 6.35 1.143)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center 6.35 0.635)
-					(radius 0.127)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 -1.27) (xy 6.35 2.54) (xy 3.81 2.54)
-					)
+					(center 1.651 0)
+					(radius 2.794)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -2404,30 +2283,78 @@
 				)
 				(polyline
 					(pts
-						(xy 6.858 3.048) (xy 7.874 3.048)
+						(xy 2.54 2.54) (xy 2.54 1.778)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 7.366 2.9972) (xy 7.874 2.2352) (xy 6.858 2.2352) (xy 7.366 2.9972)
-					)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type outline)
 					)
 				)
-				(pin input line
-					(at -1.27 0 0)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PSMN5R2-60YL_1_1"
+				(pin passive line
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "G"
 						(effects
@@ -2445,7 +2372,7 @@
 					)
 				)
 				(pin passive line
-					(at 6.35 8.89 270)
+					(at 2.54 5.08 270)
 					(length 2.54)
 					(name "D"
 						(effects
@@ -2463,64 +2390,7 @@
 					)
 				)
 				(pin passive line
-					(at 6.35 8.89 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 8.89 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 8.89 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -3.81 90)
+					(at 2.54 -5.08 90)
 					(length 2.54)
 					(name "S"
 						(effects
@@ -2538,7 +2408,7 @@
 					)
 				)
 				(pin passive line
-					(at 6.35 -3.81 90)
+					(at 2.54 -5.08 90)
 					(length 2.54)
 					(hide yes)
 					(name "S"
@@ -2557,7 +2427,7 @@
 					)
 				)
 				(pin passive line
-					(at 6.35 -3.81 90)
+					(at 2.54 -5.08 90)
 					(length 2.54)
 					(hide yes)
 					(name "S"
@@ -4155,16 +4025,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 54.61) (xy 193.04 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "467acb60-2c4f-4ba8-bfb4-9d011c16a6f9")
-	)
-	(wire
-		(pts
 			(xy 153.67 49.53) (xy 166.37 49.53)
 		)
 		(stroke
@@ -4235,7 +4095,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 62.23) (xy 185.42 62.23)
+			(xy 182.88 62.23) (xy 187.96 62.23)
 		)
 		(stroke
 			(width 0.381)
@@ -4395,6 +4255,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 62.23) (xy 215.9 62.23)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "8926bf7f-c133-483d-9153-90988ef0a676")
+	)
+	(wire
+		(pts
 			(xy 182.88 102.87) (xy 182.88 106.68)
 		)
 		(stroke
@@ -4442,16 +4312,6 @@
 			(type default)
 		)
 		(uuid "961a0029-9735-41e6-9faf-0a3653b1a2c8")
-	)
-	(wire
-		(pts
-			(xy 210.82 62.23) (xy 215.9 62.23)
-		)
-		(stroke
-			(width 0.381)
-			(type default)
-		)
-		(uuid "970e2649-41fe-4699-8630-5a2039ed201c")
 	)
 	(wire
 		(pts
@@ -4622,16 +4482,6 @@
 			(type default)
 		)
 		(uuid "d59f0dc5-669d-4fd6-8a3f-7e11b9513216")
-	)
-	(wire
-		(pts
-			(xy 203.2 54.61) (xy 207.01 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d62fb4e7-cce9-45a8-b864-4003998f131c")
 	)
 	(wire
 		(pts
@@ -13672,6 +13522,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:PSMN5R2-60YL")
+		(at 203.2 59.69 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2fb7ebc5-43c7-4a9a-a762-2e403c4e1905")
+		(property "Reference" "Q2"
+			(at 203.2 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PSMN1R5-30YL"
+			(at 203.2 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:LFPAK56"
+			(at 205.105 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/PSMN1R5-30YLC.pdf"
+			(at 207.01 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100A, 30V Vds, N-Channel MOSFET, 1.55mOhm Ron, LFPAK56"
+			(at 203.2 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "733c0e4b-86b6-49aa-8179-c7785dabb4b4")
+		)
+		(pin "2"
+			(uuid "00fa0899-40ce-4812-9c62-4ae15f0fd699")
+		)
+		(pin "5"
+			(uuid "b73eca60-1ddf-4c17-bb5f-7f6229ac034c")
+		)
+		(pin "4"
+			(uuid "0a3a7224-423d-40dc-96cf-ab368e8084de")
+		)
+		(pin "1"
+			(uuid "61d5b676-eaf9-4d78-9ea4-4f29002c2e5b")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 227.33 109.22 0)
 		(unit 1)
@@ -13873,7 +13804,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_MR30PW-M_1x03_P3.50mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-AM_1x03_P2.50mm_Vertical"
 			(at 93.98 38.1 0)
 			(effects
 				(font
@@ -13931,162 +13862,6 @@
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "ao4406a:AO4406A")
-		(at 189.23 55.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48ea6505-3ded-41db-a6b8-c88a13902029")
-		(property "Reference" "Q1"
-			(at 191.77 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "AO4406A"
-			(at 185.42 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Chromapi_FP:ao4406a_SOIC-8_3.9x4.9x1.75mm_P1.27mm"
-			(at 182.88 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/AO4406A.pdf"
-			(at 180.34 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power MOSFET, N Channel, 30 V, 13 A, 0.015ohm, SOIC-8, Surface Mount"
-			(at 170.18 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AO4406A"
-			(at 191.77 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-					(color 0 100 100 1)
-				)
-			)
-		)
-		(property "Manufacturer" "AOSMD"
-			(at 177.8 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Author" "Antmicro"
-			(at 175.26 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "License" "Apache-2.0"
-			(at 172.72 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 189.23 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 189.23 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "e0f4f18d-460a-4ea4-9d8a-18116057fa0b")
-		)
-		(pin "8"
-			(uuid "99cb6c39-b68e-4d29-851b-e7cb32b4a729")
-		)
-		(pin "1"
-			(uuid "3a8fcc0e-3015-462b-b637-2e4c7511cb6b")
-		)
-		(pin "2"
-			(uuid "e6badb30-229f-4e74-939e-91b2d9f61698")
-		)
-		(pin "6"
-			(uuid "aa7afa4b-e27b-4cb6-8f5b-077498d7be06")
-		)
-		(pin "4"
-			(uuid "74e0d5f3-8a8d-4075-b8ff-3bd75ced9f90")
-		)
-		(pin "3"
-			(uuid "f4a07f65-481d-47d7-ba10-ea4998b15f9c")
-		)
-		(pin "5"
-			(uuid "2445817c-d561-4787-8cd6-77ecc806d04e")
-		)
-		(instances
-			(project ""
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -15028,162 +14803,6 @@
 		)
 	)
 	(symbol
-		(lib_id "ao4406a:AO4406A")
-		(at 207.01 55.88 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "93f38c17-cfc6-468c-a4f8-1721922a36c5")
-		(property "Reference" "Q2"
-			(at 204.47 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "AO4406A"
-			(at 210.82 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Chromapi_FP:ao4406a_SOIC-8_3.9x4.9x1.75mm_P1.27mm"
-			(at 213.36 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/AO4406A.pdf"
-			(at 215.9 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power MOSFET, N Channel, 30 V, 13 A, 0.015ohm, SOIC-8, Surface Mount"
-			(at 226.06 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AO4406A"
-			(at 204.47 68.58 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-					(color 0 100 100 1)
-				)
-			)
-		)
-		(property "Manufacturer" "AOSMD"
-			(at 218.44 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Author" "Antmicro"
-			(at 220.98 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "License" "Apache-2.0"
-			(at 223.52 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 207.01 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 207.01 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "f4da0a46-1a4b-40ac-bceb-770276cbc6ce")
-		)
-		(pin "8"
-			(uuid "dde96680-631f-4b12-be78-b893a4b8b3a1")
-		)
-		(pin "1"
-			(uuid "f2033c4c-f7c9-42ad-88c8-73f18b8512f0")
-		)
-		(pin "2"
-			(uuid "640872c9-8001-4e32-83dd-213fccd40256")
-		)
-		(pin "6"
-			(uuid "8cf15ab4-b511-4491-a70e-3c1ffc5c5c4d")
-		)
-		(pin "4"
-			(uuid "f65af870-02c3-4daf-b058-87ed2f3e75ec")
-		)
-		(pin "3"
-			(uuid "30d88f8e-a04e-4dba-929f-aaa677d3f796")
-		)
-		(pin "5"
-			(uuid "ad038792-6cc6-4bf8-8f1b-472494ca03c1")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
 		(at 204.47 97.79 90)
 		(unit 1)
@@ -15660,6 +15279,85 @@
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:PSMN5R2-60YL")
+		(at 193.04 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cafd3577-df15-4e3a-a0a5-d194d0c18ef9")
+		(property "Reference" "Q1"
+			(at 193.04 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PSMN1R5-30YL"
+			(at 198.374 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:LFPAK56"
+			(at 191.135 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/PSMN1R5-30YLC.pdf"
+			(at 189.23 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100A, 30V Vds, N-Channel MOSFET, 1.55mOhm Ron, LFPAK56"
+			(at 193.04 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "eab39d14-b7cd-45db-8fd4-36b41bb4be9f")
+		)
+		(pin "2"
+			(uuid "cae16ffa-cd19-44b6-b77d-cae3f925defc")
+		)
+		(pin "5"
+			(uuid "d7d87a82-2d23-444e-9b3a-d5262a9c7152")
+		)
+		(pin "4"
+			(uuid "f4f7737a-ee33-4ff0-aed0-4497ccb89b4c")
+		)
+		(pin "1"
+			(uuid "cb8a3b02-ddea-4a85-9eba-521c07b3edb3")
+		)
+		(instances
+			(project ""
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
