@@ -305,6 +305,104 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "chromapi_logo:Chromapi_Logo"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H1"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "~"
+				(at 1.27 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Chromapi_FP:chromapi_logo"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Chromapi_Logo_0_1"
+				(rectangle
+					(start -8.89 2.54)
+					(end 10.16 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 2.54) (xy -7.62 3.81) (xy 11.43 3.81) (xy 10.16 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -2.54) (xy 11.43 -1.27) (xy 11.43 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Chromapi_Logo_1_1"
+				(text "Chromapi logo"
+					(at 0.762 0 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -589,7 +687,7 @@
 	)
 	(text "Fiducials"
 		(exclude_from_sim no)
-		(at 120.904 169.926 0)
+		(at 120.904 175.006 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -644,7 +742,7 @@
 	)
 	(text "Mounting Holes"
 		(exclude_from_sim no)
-		(at 152.654 170.434 0)
+		(at 152.654 175.514 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -660,25 +758,25 @@
 		(uuid "36988adc-cf41-468c-bc55-8de3a751b795")
 	)
 	(junction
-		(at 156.21 182.88)
+		(at 156.21 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4577d083-2657-4bd6-ad09-53a2cd991b1e")
 	)
 	(junction
-		(at 149.86 182.88)
+		(at 149.86 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c87ce82-292c-407d-a605-efea6a586fea")
 	)
 	(junction
-		(at 143.51 182.88)
+		(at 143.51 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7d634a1d-6321-4e0e-b5a3-1eff982a233c")
 	)
 	(junction
-		(at 162.56 182.88)
+		(at 162.56 187.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d723183e-cfde-4193-8228-5123a5cd1a54")
@@ -725,7 +823,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 180.34) (xy 162.56 182.88)
+			(xy 162.56 185.42) (xy 162.56 187.96)
 		)
 		(stroke
 			(width 0)
@@ -785,7 +883,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 182.88) (xy 156.21 182.88)
+			(xy 162.56 187.96) (xy 156.21 187.96)
 		)
 		(stroke
 			(width 0)
@@ -855,7 +953,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 182.88) (xy 149.86 180.34)
+			(xy 149.86 187.96) (xy 149.86 185.42)
 		)
 		(stroke
 			(width 0)
@@ -865,7 +963,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 182.88) (xy 162.56 184.15)
+			(xy 162.56 187.96) (xy 162.56 189.23)
 		)
 		(stroke
 			(width 0)
@@ -885,7 +983,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 182.88) (xy 156.21 180.34)
+			(xy 156.21 187.96) (xy 156.21 185.42)
 		)
 		(stroke
 			(width 0)
@@ -905,7 +1003,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 182.88) (xy 149.86 182.88)
+			(xy 143.51 187.96) (xy 149.86 187.96)
 		)
 		(stroke
 			(width 0)
@@ -935,7 +1033,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 182.88) (xy 143.51 182.88)
+			(xy 140.97 187.96) (xy 143.51 187.96)
 		)
 		(stroke
 			(width 0)
@@ -1105,7 +1203,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 182.88) (xy 149.86 182.88)
+			(xy 156.21 187.96) (xy 149.86 187.96)
 		)
 		(stroke
 			(width 0)
@@ -1155,7 +1253,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 180.34) (xy 143.51 182.88)
+			(xy 143.51 185.42) (xy 143.51 187.96)
 		)
 		(stroke
 			(width 0)
@@ -1235,7 +1333,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 182.88) (xy 143.51 184.15)
+			(xy 143.51 187.96) (xy 143.51 189.23)
 		)
 		(stroke
 			(width 0)
@@ -9461,7 +9559,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 162.56 184.15 180)
+		(at 162.56 189.23 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9470,7 +9568,7 @@
 		(fields_autoplaced yes)
 		(uuid "057bb61f-cd89-48e7-9344-41c5e4c20e9f")
 		(property "Reference" "#FLG01"
-			(at 162.56 186.055 0)
+			(at 162.56 191.135 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9479,7 +9577,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 165.1 185.4199 0)
+			(at 165.1 190.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9488,7 +9586,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 184.15 0)
+			(at 162.56 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9497,7 +9595,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 184.15 0)
+			(at 162.56 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9506,7 +9604,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 162.56 184.15 0)
+			(at 162.56 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9528,7 +9626,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 156.21 177.8 0)
+		(at 156.21 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9536,8 +9634,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24ec6c0c-8b88-45cd-bf55-0a13c8106f4c")
-		(property "Reference" "H3"
-			(at 154.9399 173.99 90)
+		(property "Reference" "H4"
+			(at 154.9399 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9547,7 +9645,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 156.2099 173.99 90)
+			(at 156.2099 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9557,7 +9655,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom"
-			(at 156.21 177.8 0)
+			(at 156.21 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9566,7 +9664,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 156.21 177.8 0)
+			(at 156.21 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9575,7 +9673,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 156.21 177.8 0)
+			(at 156.21 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9584,7 +9682,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 156.21 177.8 90)
+			(at 156.21 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9593,7 +9691,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 156.21 177.8 90)
+			(at 156.21 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9607,7 +9705,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5"
-					(reference "H3")
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -9615,7 +9713,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 125.73 176.53 0)
+		(at 125.73 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9624,7 +9722,7 @@
 		(fields_autoplaced yes)
 		(uuid "47bfa4ac-3a31-4cd3-b83c-6624b759d1d1")
 		(property "Reference" "FID2"
-			(at 128.27 175.2599 0)
+			(at 128.27 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9634,7 +9732,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 128.27 176.5299 0)
+			(at 128.27 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9644,7 +9742,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 125.73 176.53 0)
+			(at 125.73 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9653,7 +9751,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 125.73 176.53 0)
+			(at 125.73 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9662,7 +9760,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 125.73 176.53 0)
+			(at 125.73 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9671,7 +9769,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 125.73 176.53 0)
+			(at 125.73 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9680,7 +9778,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 125.73 176.53 0)
+			(at 125.73 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9699,7 +9797,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 149.86 177.8 0)
+		(at 149.86 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9707,8 +9805,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64e21482-14f7-4d04-a917-4a1bbb473278")
-		(property "Reference" "H2"
-			(at 148.5899 173.99 90)
+		(property "Reference" "H3"
+			(at 148.5899 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9718,7 +9816,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 149.8599 173.99 90)
+			(at 149.8599 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9728,7 +9826,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom"
-			(at 149.86 177.8 0)
+			(at 149.86 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9737,7 +9835,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 177.8 0)
+			(at 149.86 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9746,7 +9844,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 149.86 177.8 0)
+			(at 149.86 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9755,7 +9853,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 149.86 177.8 90)
+			(at 149.86 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9764,7 +9862,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 149.86 177.8 90)
+			(at 149.86 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9778,7 +9876,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5"
-					(reference "H2")
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -9786,7 +9884,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 120.65 184.15 0)
+		(at 120.65 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9795,7 +9893,7 @@
 		(fields_autoplaced yes)
 		(uuid "67b91abb-4cf4-4b27-8155-83d51b423e8f")
 		(property "Reference" "FID3"
-			(at 123.19 182.8799 0)
+			(at 123.19 187.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9805,7 +9903,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 123.19 184.1499 0)
+			(at 123.19 189.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9815,7 +9913,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 120.65 184.15 0)
+			(at 120.65 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9824,7 +9922,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 184.15 0)
+			(at 120.65 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9833,7 +9931,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 120.65 184.15 0)
+			(at 120.65 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9842,7 +9940,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 120.65 184.15 0)
+			(at 120.65 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9851,7 +9949,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 120.65 184.15 0)
+			(at 120.65 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9870,7 +9968,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Fiducial")
-		(at 115.57 176.53 0)
+		(at 115.57 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9879,7 +9977,7 @@
 		(fields_autoplaced yes)
 		(uuid "69021b70-9c6a-4b0a-a237-d615963f5451")
 		(property "Reference" "FID1"
-			(at 118.11 175.2599 0)
+			(at 118.11 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9889,7 +9987,7 @@
 			)
 		)
 		(property "Value" "Fiducial"
-			(at 118.11 176.5299 0)
+			(at 118.11 181.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9899,7 +9997,7 @@
 			)
 		)
 		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
-			(at 115.57 176.53 0)
+			(at 115.57 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9908,7 +10006,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 115.57 176.53 0)
+			(at 115.57 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9917,7 +10015,7 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
-			(at 115.57 176.53 0)
+			(at 115.57 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9926,7 +10024,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 115.57 176.53 0)
+			(at 115.57 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9935,7 +10033,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 115.57 176.53 0)
+			(at 115.57 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9954,7 +10052,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 143.51 177.8 0)
+		(at 143.51 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9962,8 +10060,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87de86eb-2e27-42ca-bfd9-5cf50a5dfe44")
-		(property "Reference" "H1"
-			(at 142.2399 173.99 90)
+		(property "Reference" "H2"
+			(at 142.2399 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9973,7 +10071,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 143.5099 173.99 90)
+			(at 143.5099 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9983,7 +10081,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom"
-			(at 143.51 177.8 0)
+			(at 143.51 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9992,7 +10090,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 143.51 177.8 0)
+			(at 143.51 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10001,7 +10099,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 143.51 177.8 0)
+			(at 143.51 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10010,7 +10108,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 143.51 177.8 90)
+			(at 143.51 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10019,7 +10117,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 143.51 177.8 90)
+			(at 143.51 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10033,24 +10131,24 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5"
-					(reference "H1")
+					(reference "H2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 143.51 184.15 0)
+		(lib_id "chromapi_logo:Chromapi_Logo")
+		(at 134.62 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a846a9b8-65e5-4bb1-8b1f-53229417a268")
-		(property "Reference" "#PWR01"
-			(at 143.51 190.5 0)
+		(uuid "88530f1d-d90a-4989-bd57-db2594f2ef26")
+		(property "Reference" "H1"
+			(at 134.62 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10058,16 +10156,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 143.51 189.23 0)
+		(property "Value" "~"
+			(at 135.89 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 143.51 184.15 0)
+		(property "Footprint" "Chromapi_FP:chromapi_logo"
+			(at 134.62 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10076,7 +10175,70 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 143.51 184.15 0)
+			(at 134.62 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a846a9b8-65e5-4bb1-8b1f-53229417a268")
+		(property "Reference" "#PWR01"
+			(at 143.51 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10085,7 +10247,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 143.51 184.15 0)
+			(at 143.51 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10107,7 +10269,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 140.97 182.88 90)
+		(at 140.97 187.96 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10116,7 +10278,7 @@
 		(fields_autoplaced yes)
 		(uuid "db503603-c586-4627-be0c-9b32a72d15a8")
 		(property "Reference" "TP1"
-			(at 137.668 177.8 90)
+			(at 137.668 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10124,7 +10286,7 @@
 			)
 		)
 		(property "Value" "TP_GND"
-			(at 137.668 180.34 90)
+			(at 137.668 185.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10132,24 +10294,6 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 140.97 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
 			(at 140.97 182.88 0)
 			(effects
 				(font
@@ -10158,8 +10302,26 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet" "~"
+			(at 140.97 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 140.97 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Sim.Device" ""
-			(at 140.97 182.88 90)
+			(at 140.97 187.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10168,7 +10330,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 140.97 182.88 90)
+			(at 140.97 187.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10190,7 +10352,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 162.56 177.8 0)
+		(at 162.56 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10198,8 +10360,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb8e1758-d072-4594-97fd-3e223299f4be")
-		(property "Reference" "H4"
-			(at 161.2899 173.99 90)
+		(property "Reference" "H5"
+			(at 161.2899 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10209,7 +10371,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 162.5599 173.99 90)
+			(at 162.5599 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10219,7 +10381,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom"
-			(at 162.56 177.8 0)
+			(at 162.56 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10228,7 +10390,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 177.8 0)
+			(at 162.56 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10237,7 +10399,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 162.56 177.8 0)
+			(at 162.56 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10246,7 +10408,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 162.56 177.8 90)
+			(at 162.56 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10255,7 +10417,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 162.56 177.8 90)
+			(at 162.56 182.88 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10269,7 +10431,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5"
-					(reference "H4")
+					(reference "H5")
 					(unit 1)
 				)
 			)

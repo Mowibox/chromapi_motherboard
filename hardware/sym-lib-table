@@ -6,4 +6,5 @@
   (lib (name "inmp441acez-r7")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/inmp441acez-r7.kicad_sym")(options "")(descr ""))
   (lib (name "ld39050pu33r")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/ld39050pu33r.kicad_sym")(options "")(descr ""))
   (lib (name "tps568230")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/tps568230.kicad_sym")(options "")(descr ""))
+  (lib (name "chromapi_logo")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/chromapi_logo.kicad_sym")(options "")(descr ""))
 )
