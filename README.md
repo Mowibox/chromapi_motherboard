@@ -2,6 +2,7 @@
 
 This repo contains  a dedicated control shield designed to manage the high-speed motion, power distribution, and sensor fusion required for the quadruped robot Chromapi.
 
+![Chromapi](https://custom-icon-badges.demolab.com/badge/Chromapi-motherboard-489648?logo=chromapi)
 ![KiCad](https://img.shields.io/badge/KiCad-9.0+-2849bf?logo=kicad)
 ![STM32](https://img.shields.io/badge/STM32-G431-3cb4e6?)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)](https://github.com/Mowibox/adelight/blob/main/LICENSE)
