@@ -1710,6 +1710,17 @@
 			(uuid "511019d0-f77e-407d-bcf6-b7e4645fd1be")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3d_models/INMP441ACEZ_R7.3dshapes/INMP441ACEZ-R7.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "LED_SMD:LED_0402_1005Metric"
 		(layer "F.Cu")
@@ -2784,7 +2795,7 @@
 			(uuid "18fc7a2a-77cb-487d-8040-42895e113999")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/Texas_RJE0020A_VQFN-20-1EP_3x3mm_P0.45mm_EP0.675x0.76mm.step"
+		(model "${KIPRJMOD}/3d_models/TPS568230RJER.3dshapes/RJE0020B.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8943,15 +8954,15 @@
 			(uuid "946dc552-ea4e-41ba-ba89-a016b6f791f0")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step"
+		(model "${KIPRJMOD}/3d_models/TYPE_C_31_M_12.3dshapes/TYPE-C-31-M-12--3DModel-STEP-56544.STEP"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 -1 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -10089,14 +10100,14 @@
 			)
 		)
 	)
-	(footprint "Connector_JST:JST_XH_B3B-XH-AM_1x03_P2.50mm_Vertical"
+	(footprint "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
 		(layer "F.Cu")
 		(uuid "4948e5cb-7ff8-4f50-8199-fb97e1aadca5")
 		(at 24 31 -90)
-		(descr "JST XH series connector, B3B-XH-AM, with boss (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator")
-		(tags "connector JST XH vertical boss")
+		(descr "JST XH series connector, B3B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator")
+		(tags "connector JST XH vertical")
 		(property "Reference" "J1"
-			(at 2.5 -3.55 90)
+			(at 2.5 -3.55 270)
 			(layer "F.SilkS")
 			(uuid "72a25dab-c3b3-4ad2-974c-e1f3898b34d6")
 			(effects
@@ -10107,7 +10118,7 @@
 			)
 		)
 		(property "Value" "Battery Input"
-			(at 2.5 4.6 90)
+			(at 2.5 4.6 270)
 			(layer "F.Fab")
 			(uuid "0b64aec6-06d5-43fa-94fd-c91ad2a07b15")
 			(effects
@@ -10118,7 +10129,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4ec2196c-8a96-4715-865f-b03363a06e02")
@@ -10130,7 +10141,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ccd38ee4-4a56-4686-8d7c-2645ca8ae7ec")
@@ -10146,7 +10157,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f4e8dd64-bd10-4ec3-a135-eb32aedcba83")
+			(uuid "b78c6043-5c01-42f1-ab6f-e490798fef34")
 			(effects
 				(font
 					(size 1 1)
@@ -10159,7 +10170,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a14d9cce-4403-42f3-8409-8d8067bcaaf7")
+			(uuid "d7468dc9-1ead-4ba3-9185-5f0d800e3f2f")
 			(effects
 				(font
 					(size 1 1)
@@ -10173,14 +10184,14 @@
 		(sheetfile "pwr_supply_charge.kicad_sch")
 		(attr through_hole)
 		(fp_line
-			(start 2.5 2.75)
-			(end -0.74 2.75)
+			(start -1.8 2.75)
+			(end 2.5 2.75)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "fb7b236b-ed5d-48b5-95d2-a4d75970e49e")
+			(uuid "eacc5c1e-8bd1-4a66-a40d-53a5c7cc228c")
 		)
 		(fp_line
 			(start 6.8 2.75)
@@ -10190,7 +10201,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "f78dc4a7-9cf6-416f-9a65-606895f77c8c")
+			(uuid "10e8c3d5-ad69-4f86-a8b7-65b236033426")
 		)
 		(fp_line
 			(start -2.55 -0.2)
@@ -10200,17 +10211,17 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "beb7f089-0d9c-48dc-9bfa-58465838d628")
+			(uuid "863de3ff-07a4-4bb5-a0cd-7d7b6777c1fa")
 		)
 		(fp_line
 			(start -1.8 -0.2)
-			(end -1.8 1.14)
+			(end -1.8 2.75)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "ebcc8a8c-036c-40a8-833e-f75ac823349e")
+			(uuid "5ec2405c-9c90-4015-9339-f08c7feb697b")
 		)
 		(fp_line
 			(start 6.8 -0.2)
@@ -10220,7 +10231,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "24d88595-98ec-406f-b08c-35fdc02dbd7d")
+			(uuid "c431fa66-a65a-4693-b5b0-e89319ceace4")
 		)
 		(fp_line
 			(start 7.55 -0.2)
@@ -10230,7 +10241,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "a0654094-d046-4db0-af5e-872d2dd0739c")
+			(uuid "867c95fa-0360-4e5e-b058-093e7f19e119")
 		)
 		(fp_line
 			(start -2.85 -2.75)
@@ -10240,7 +10251,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "ba4f7a10-04a8-4fd5-ace3-d97be5e228c9")
+			(uuid "6fa69368-4a80-4e43-8e07-b2edc1d64391")
 		)
 		(fp_line
 			(start -1.6 -2.75)
@@ -10250,7 +10261,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "8ab0703c-34ef-4491-9be2-430a8feec83e")
+			(uuid "7582303d-49ee-43cc-8092-d847064b2455")
 		)
 		(fp_rect
 			(start -2.55 -2.45)
@@ -10261,7 +10272,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "bb096d38-a0de-4495-a038-5ae6fd4b652d")
+			(uuid "52039d11-3ee7-4524-9479-5607b05d5070")
 		)
 		(fp_rect
 			(start 0.75 -2.45)
@@ -10272,7 +10283,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "5ed0a229-cd2c-47e4-b4d4-27c3d55b9a80")
+			(uuid "4ab4e869-4eba-4647-a29c-6aab6fe6bda9")
 		)
 		(fp_rect
 			(start 5.75 -2.45)
@@ -10283,7 +10294,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "f3f1873f-f855-49a0-b467-9cb1fdac87a9")
+			(uuid "503f9534-29fd-4296-94f8-9399e7be2188")
 		)
 		(fp_rect
 			(start -2.56 -2.46)
@@ -10294,7 +10305,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "50635a01-c3ad-4d4b-8646-fc1cbcedb60e")
+			(uuid "5d8a3d69-ba46-4872-a085-b97f14ab8b1d")
 		)
 		(fp_rect
 			(start -2.95 -2.85)
@@ -10305,7 +10316,7 @@
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "091dd431-c3f9-4b3d-9911-d81d0f36f2ea")
+			(uuid "f9ac0149-00e4-4d52-87bf-7ddd02121d36")
 		)
 		(fp_line
 			(start 0 -1.35)
@@ -10315,7 +10326,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "fb998c0e-19ca-4cc0-b3b7-52ae4a0c8128")
+			(uuid "0b22944e-162d-465a-bb07-c3030eac9177")
 		)
 		(fp_line
 			(start -0.625 -2.35)
@@ -10325,7 +10336,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "0f84023d-f5cf-4c2c-918d-38b0dd25e7c1")
+			(uuid "0a4aa73e-c031-4895-a946-a6ea13b94d9f")
 		)
 		(fp_rect
 			(start -2.45 -2.35)
@@ -10336,10 +10347,10 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "fc852b98-a11f-478d-a710-634f537454e0")
+			(uuid "a7f0be72-5f51-4945-9710-21baaa1f3a50")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 2.7 90)
+			(at 2.5 2.7 270)
 			(layer "F.Fab")
 			(uuid "85d094c1-3ea5-45a7-a0e5-49a2193d9d6f")
 			(effects
@@ -10348,13 +10359,6 @@
 					(thickness 0.15)
 				)
 			)
-		)
-		(pad "" np_thru_hole circle
-			(at -1.6 2 270)
-			(size 1.2 1.2)
-			(drill 1.2)
-			(layers "*.Cu" "*.Mask")
-			(uuid "8306eedd-3fda-4dc4-b512-a332f7865b4a")
 		)
 		(pad "1" thru_hole roundrect
 			(at 0 0 270)
@@ -10391,7 +10395,7 @@
 			(uuid "494a10e0-b39f-4258-8503-8add2b09a387")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_JST.3dshapes/JST_XH_B3B-XH-AM_1x03_P2.50mm_Vertical.step"
+		(model "${KICAD9_3DMODEL_DIR}/Connector_JST.3dshapes/JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11352,15 +11356,15 @@
 			(uuid "e3e4e9fe-2e23-466f-91c2-ff7aa36b0b03")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical.step"
+		(model "${KIPRJMOD}/3d_models/5267_03A_X.3dshapes/5267-03A-X--3DModel-STEP-269445.STEP"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -12555,15 +12559,15 @@
 			(uuid "6f5de892-e9da-4f11-afe4-7a054882ae8e")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical.step"
+		(model "${KIPRJMOD}/3d_models/5267_03A_X.3dshapes/5267-03A-X--3DModel-STEP-269445.STEP"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -17879,15 +17883,15 @@
 			(uuid "413b3ee2-8b9d-47fe-8e5f-357b52ef88b1")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical.step"
+		(model "${KIPRJMOD}/3d_models/5267_03A_X.3dshapes/5267-03A-X--3DModel-STEP-269445.STEP"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0.5 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -19728,6 +19732,17 @@
 			(uuid "75180703-8d11-4b74-b068-1862767641e0")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3d_models/FTSH_107.3dshapes/FTSH-107-01-L-DV-K-A-TR.stp"
+			(offset
+				(xyz 0 0 0.4)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
@@ -21751,7 +21766,7 @@
 			(uuid "09a37eb5-2088-4875-bd13-8a22c1cf1b3a")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm.step"
+		(model "${KIPRJMOD}/3d_models/MAX98357A.3dshapes/MAX98357AETE+T.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -21759,7 +21774,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -24180,7 +24195,7 @@
 			)
 		)
 		(property ki_fp_filters "DIP*W7.62mm* SO14* SSOP?14* TSSOP?14* SOIC*3.9x8.7mm*P1.27mm*")
-		(path "/bae822f9-c188-4212-9c8c-b50c99d73590/9cf9de4b-5cfa-4fb4-bc18-2b2d4f6537ab")
+		(path "/bae822f9-c188-4212-9c8c-b50c99d73590/ddaa5752-369b-4446-8c04-fb537d7ee1fc")
 		(sheetname "/STM32 Microcontroller Core/")
 		(sheetfile "stm32_mcu_core.kicad_sch")
 		(attr smd)
@@ -26001,15 +26016,15 @@
 			(uuid "921672cf-5a61-496d-985e-0e68b03aa143")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/SOP-8_3.76x4.96mm_P1.27mm.step"
+		(model "${KIPRJMOD}/3d_models/SOP8.3dshapes/User Library-sop8_model.STEP"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 0 1.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 90)
 			)
 		)
 	)
@@ -27621,6 +27636,17 @@
 			(uuid "9201fdba-b496-490b-bb55-443348af347c")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3d_models/AO4435.3dshapes/AO4435.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
@@ -30174,6 +30200,17 @@
 			(uuid "901f5907-9561-44fd-b491-42a5c03b8860")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3d_models/AO4435.3dshapes/AO4435.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Package_TO_SOT_SMD:SOT-23-6"
 		(layer "F.Cu")
@@ -31125,6 +31162,17 @@
 			(uuid "ff62f21b-3059-43d4-bf48-6b1010aff417")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3d_models/LD39050PU33R.3Dshapes/LD39050PU33R.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Inductor_SMD:L_7.3x7.3_H3.5"
 		(layer "F.Cu")
@@ -31423,7 +31471,7 @@
 			(uuid "b67e6473-dd82-40a8-9cc1-01ae25fd5db9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_7.3x7.3_H3.5.step"
+		(model "${KIPRJMOD}/3d_models/Inductor_SMD.3dshapes/L_7.3x7.3.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31431,7 +31479,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -31732,7 +31780,7 @@
 			(uuid "c8eb8527-3fce-431a-a05b-31b6d66e8339")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_7.3x7.3_H3.5.step"
+		(model "${KIPRJMOD}/3d_models/Inductor_SMD.3dshapes/L_7.3x7.3.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -31740,7 +31788,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -32230,7 +32278,18 @@
 			(uuid "a9079c36-2128-49d0-8c56-fc1a8cc77719")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Molex.3dshapes/Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical.step"
+		(model "${KIPRJMOD}/3d_models/5267_03A_X.3dshapes/5267-03A-X--3DModel-STEP-269445.STEP"
+			(offset
+				(xyz 2.5 0.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
+		(model " ${KIPRJMOD}/3d_models/5267_03A_X.3dshapes/5267-03A-X--3DModel-STEP-269445.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
