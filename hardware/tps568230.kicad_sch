@@ -11744,7 +11744,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_7.3x7.3_H3.5"
+		(property "Footprint" "Chromapi_FP:INDM6864X300N"
 			(at 161.29 46.99 0)
 			(effects
 				(font
