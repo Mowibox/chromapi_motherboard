@@ -14,8 +14,10 @@
 		(comment 1 "Ousmane THIONGANE")
 	)
 	(layers
-		(0 "F.Cu" signal)
-		(2 "B.Cu" signal)
+		(0 "F.Cu" signal "F.Cu-SIGNAL")
+		(4 "In1.Cu" signal "In1.Cu-GND")
+		(6 "In2.Cu" signal "In2.Cu-PWR")
+		(2 "B.Cu" signal "B.Cu-SIGNAL")
 		(9 "F.Adhes" user "F.Adhesive")
 		(11 "B.Adhes" user "B.Adhesive")
 		(13 "F.Paste" user)
@@ -40,7 +42,69 @@
 		(45 "User.4" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "prepreg")
+				(thickness 0.1)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In1.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 2"
+				(type "core")
+				(thickness 1.24)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In2.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 3"
+				(type "prepreg")
+				(thickness 0.1)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
+		(pad_to_paste_clearance_ratio -0.1)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
 		(pcbplotparams
@@ -3311,7 +3375,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "0dd3e0da-29f0-4ea6-8ddd-e6bec9beae3e")
-		(at 139 28.5 180)
+		(at 130.1 77.825 180)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C23"
@@ -4463,7 +4527,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "19311380-7bf0-4d9b-b18b-177b95d35d90")
-		(at 146.52 40.5)
+		(at 137.62 89.825)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C26"
@@ -7632,7 +7696,7 @@
 	(footprint "Package_QFP:LQFP-32_7x7mm_P0.8mm"
 		(layer "F.Cu")
 		(uuid "35ba4e98-87e6-4994-8e17-e4c8d82b010c")
-		(at 144 34.5)
+		(at 135.1 83.825)
 		(descr "LQFP, 32 Pin (https://www.nxp.com/docs/en/package-information/SOT358-1.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "LQFP QFP")
 		(property "Reference" "U6"
@@ -9303,7 +9367,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "41f5a988-8f49-4b0e-b2ea-b438dada433c")
-		(at 139.02 30 180)
+		(at 130.12 79.325 180)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C22"
@@ -11040,7 +11104,7 @@
 	(footprint "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical"
 		(layer "F.Cu")
 		(uuid "4cce6e43-f860-430b-a79f-416c2beaa8ab")
-		(at 123.5 84.5 180)
+		(at 208 73.5 180)
 		(descr "Molex SPOX Connector System, 5267-03A, 3 Pins per row (http://www.molex.com/pdm_docs/sd/022035035_sd.pdf), generated with kicad-footprint-generator")
 		(tags "connector Molex SPOX vertical")
 		(property "Reference" "J5"
@@ -11872,7 +11936,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23-6"
 		(layer "F.Cu")
 		(uuid "56de795c-9f55-447c-8135-734d62098469")
-		(at 120.6375 36.45)
+		(at 111.7375 85.775)
 		(descr "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U7"
@@ -12243,7 +12307,7 @@
 	(footprint "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical"
 		(layer "F.Cu")
 		(uuid "571310bd-56a5-4aba-b8c0-79a0ddd08d21")
-		(at 136 91.5 180)
+		(at 220.5 80.5 180)
 		(descr "Molex SPOX Connector System, 5267-03A, 3 Pins per row (http://www.molex.com/pdm_docs/sd/022035035_sd.pdf), generated with kicad-footprint-generator")
 		(tags "connector Molex SPOX vertical")
 		(property "Reference" "J8"
@@ -13073,7 +13137,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "5b602b62-6c27-4803-9cfe-0f6197ef74d6")
-		(at 115.5 43)
+		(at 106.6 92.325)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP5"
@@ -17567,7 +17631,7 @@
 	(footprint "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical"
 		(layer "F.Cu")
 		(uuid "820b8f0d-a525-4a22-9a00-d06c6e1df5bb")
-		(at 124 91.5 180)
+		(at 208.5 80.5 180)
 		(descr "Molex SPOX Connector System, 5267-03A, 3 Pins per row (http://www.molex.com/pdm_docs/sd/022035035_sd.pdf), generated with kicad-footprint-generator")
 		(tags "connector Molex SPOX vertical")
 		(property "Reference" "J7"
@@ -18065,7 +18129,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "89cb2e6f-c2ad-4484-9e55-7aa0584192ae")
-		(at 122.02 34)
+		(at 113.12 83.325)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C28"
@@ -19234,7 +19298,7 @@
 	(footprint "Chromapi_FP:SAMTEC_FTSH-107-01-L-DV-K-A"
 		(layer "F.Cu")
 		(uuid "937da93d-2f82-4ed4-b23f-97a0b1298f7f")
-		(at 158.5 33.5 90)
+		(at 149.6 82.825 90)
 		(descr "translated Allegro footprint")
 		(property "Reference" "J4"
 			(at -2.201 -4.681 90)
@@ -20043,7 +20107,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "9be8cdeb-dd8c-4fa7-9732-7300ebb4fa8c")
-		(at 152.02 17)
+		(at 143.12 66.325)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C29"
@@ -20377,7 +20441,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "9c6c305d-80ba-44aa-9f9b-cd6b9f4135f4")
-		(at 137.52 34.3 180)
+		(at 128.62 83.625 180)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C21"
@@ -22560,7 +22624,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.0mm"
 		(layer "F.Cu")
 		(uuid "ad7256ce-3c3c-4594-854b-6e6a99a66963")
-		(at 127 43)
+		(at 118.1 92.325)
 		(descr "SMD pad as test Point, diameter 1.0mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP6"
@@ -24119,7 +24183,7 @@
 	(footprint "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
 		(layer "F.Cu")
 		(uuid "bf793cfe-8435-43f0-a86e-57342a2de109")
-		(at 148.5 20)
+		(at 139.6 69.325)
 		(descr "TSSOP, 14 Pin (JEDEC MO-153 variation AB-1, 1.00mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "TSSOP SO")
 		(property "Reference" "U5"
@@ -24684,7 +24748,7 @@
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "c7789cab-9410-4e11-9157-7123fa454cba")
-		(at 146.725 42)
+		(at 137.825 91.325)
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C25"
@@ -24851,7 +24915,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_4x4.5"
 		(layer "F.Cu")
 		(uuid "c82f6521-b4b5-4581-b2d7-6878b6abd42d")
-		(at 138.97 25.5 180)
+		(at 130.07 74.825 180)
 		(descr "SMD capacitor, aluminum electrolytic, Nichicon, 4.0x4.5mm")
 		(tags "capacitor electrolytic")
 		(property "Reference" "C24"
@@ -27651,7 +27715,7 @@
 	(footprint "TestPoint:TestPoint_Pad_D1.5mm"
 		(layer "F.Cu")
 		(uuid "d4ab22ad-9474-4ebf-b784-904e690959d2")
-		(at 106 42.5)
+		(at 97.1 91.825)
 		(descr "SMD pad as test Point, diameter 1.5mm")
 		(tags "test point SMD pad")
 		(property "Reference" "TP7"
@@ -30585,7 +30649,7 @@
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f0a32fba-aec1-4ee6-a3d3-94718061d14a")
-		(at 141.99 28.5 180)
+		(at 133.09 77.825 180)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R20"
@@ -31605,7 +31669,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f98b69a9-79d3-4c3b-bb30-b6407f260594")
-		(at 118 36 -90)
+		(at 109.1 85.325 -90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C27"
@@ -31772,7 +31836,7 @@
 	(footprint "Connector_Molex:Molex_SPOX_5267-03A_1x03_P2.50mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f99b6c3a-cb8e-4cda-a6ee-8a32c56d1efe")
-		(at 135.5 84.5 180)
+		(at 220 73.5 180)
 		(descr "Molex SPOX Connector System, 5267-03A, 3 Pins per row (http://www.molex.com/pdm_docs/sd/022035035_sd.pdf), generated with kicad-footprint-generator")
 		(tags "connector Molex SPOX vertical")
 		(property "Reference" "J6"
@@ -32846,7 +32910,7 @@
 			)
 		)
 		(property "Value" "RPI_Connector"
-			(at -1.27 -51.03 90)
+			(at -50.595 -59.93 90)
 			(layer "B.Fab")
 			(uuid "d4485bb4-69a9-4b9c-9c9c-ef0c5a24f6a2")
 			(effects

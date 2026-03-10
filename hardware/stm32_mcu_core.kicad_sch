@@ -12532,6 +12532,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "SN74LVC1T45DBVT"
+			(at 238.76 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Sim.Device" ""
 			(at 238.76 120.65 0)
 			(effects
@@ -12956,6 +12965,15 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "SN74AHCT125PWR"
+			(at 38.1 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "609f78a2-5b6a-42bb-9a7b-51199a59d047")
 		)
@@ -13358,6 +13376,15 @@
 			)
 		)
 		(property "Description" "Quadruple Bus Buffer Gates With 3-State Outputs"
+			(at 58.42 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "SN74AHCT125PWR"
 			(at 58.42 78.74 0)
 			(effects
 				(font
@@ -14361,6 +14388,15 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "SN74AHCT125PWR"
+			(at 78.74 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "609f78a2-5b6a-42bb-9a7b-51199a59d049")
 		)
@@ -14525,6 +14561,15 @@
 			)
 		)
 		(property "Description" "ST Debug Connector, standard ARM Cortex-M SWD and JTAG interface plus UART"
+			(at 240.03 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "FTSH-107-01-F-DV-K"
 			(at 240.03 49.53 0)
 			(effects
 				(font
@@ -15085,6 +15130,15 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 58.42 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "SN74AHCT125PWR"
 			(at 58.42 119.38 0)
 			(effects
 				(font
@@ -15750,6 +15804,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "STM32G431KBT6"
+			(at 161.29 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "Sim.Device" ""
 			(at 161.29 86.36 0)
 			(effects
@@ -15983,6 +16046,15 @@
 			)
 		)
 		(property "Description" "Quadruple Bus Buffer Gates With 3-State Outputs"
+			(at 57.15 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "SN74AHCT125PWR"
 			(at 57.15 45.72 0)
 			(effects
 				(font
