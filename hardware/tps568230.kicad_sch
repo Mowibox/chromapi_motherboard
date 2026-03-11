@@ -12301,7 +12301,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "470"
+		(property "Value" "560"
 			(at 105.918 129.286 0)
 			(effects
 				(font
@@ -12781,7 +12781,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "3.3k"
+		(property "Value" "2.7k"
 			(at 75.184 129.286 0)
 			(effects
 				(font
@@ -13376,7 +13376,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 111.76 139.7 0)
 			(effects
 				(font
@@ -13394,7 +13394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode (Blue)"
 			(at 111.76 139.7 0)
 			(effects
 				(font
@@ -13405,6 +13405,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 111.76 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "150060BS55040"
+			(at 111.76 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14082,7 +14091,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 96.52 139.7 0)
 			(effects
 				(font
@@ -14100,7 +14109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode (Green)"
 			(at 96.52 139.7 0)
 			(effects
 				(font
@@ -14111,6 +14120,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 96.52 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "150060GS55040"
+			(at 96.52 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15375,7 +15393,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 81.28 139.7 0)
 			(effects
 				(font
@@ -15393,7 +15411,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode (Red)"
 			(at 81.28 139.7 0)
 			(effects
 				(font
@@ -15404,6 +15422,15 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 81.28 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "  150060SS55040"
+			(at 81.28 139.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)

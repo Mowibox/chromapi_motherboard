@@ -15670,7 +15670,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bcab539d-6ee9-4895-b074-4a471339030b")
-		(property "Reference" "FB3"
+		(property "Reference" "FB1"
 			(at 68.326 166.37 90)
 			(effects
 				(font
@@ -15686,7 +15686,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 68.58 175.768 90)
 			(effects
 				(font
@@ -15722,7 +15722,7 @@
 		(instances
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "FB3")
+					(reference "FB1")
 					(unit 1)
 				)
 			)
