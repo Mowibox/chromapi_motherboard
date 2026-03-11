@@ -1965,6 +1965,26 @@
 		)
 		(uuid "09195c87-fc74-4492-af3e-b0fe12f50b71")
 	)
+	(text_box "4.5-18V Input, 8A\nFsw: 800kHz"
+		(exclude_from_sim no)
+		(at 139.7 66.04 0)
+		(size 21.59 6.35)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "0f86eb84-f521-4938-96fb-a151f5488d75")
+	)
 	(text_box "5V to 3.3V Voltage Regulator"
 		(exclude_from_sim no)
 		(at 152.4 104.14 0)
@@ -1984,6 +2004,26 @@
 			(justify left top)
 		)
 		(uuid "1fd1a02e-6e6a-47e3-9dad-9eb1ccd2ab35")
+	)
+	(text_box "1.5-5.5V Input, 500mA"
+		(exclude_from_sim no)
+		(at 189.23 142.24 0)
+		(size 25.4 3.81)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify top)
+		)
+		(uuid "669edef5-139b-48b4-b926-eb65c7fcf64f")
 	)
 	(text_box "7.2V to 5V Voltage Regulator"
 		(exclude_from_sim no)
@@ -11829,6 +11869,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -11961,6 +12002,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -12112,6 +12154,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -12352,6 +12395,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -13511,6 +13555,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -13577,6 +13622,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -13837,7 +13883,7 @@
 				(hide yes)
 			)
 		)
-		(property "MP" "LD39050PU33R"
+		(property "MPN" "LD39050PU33R"
 			(at 201.93 132.08 0)
 			(effects
 				(font
@@ -14386,6 +14432,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -15488,6 +15535,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -15706,6 +15754,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -16176,6 +16225,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -16242,6 +16292,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
