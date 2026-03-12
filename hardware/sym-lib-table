@@ -7,4 +7,7 @@
   (lib (name "ld39050pu33r")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/ld39050pu33r.kicad_sym")(options "")(descr ""))
   (lib (name "tps568230")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/tps568230.kicad_sym")(options "")(descr ""))
   (lib (name "chromapi_logo")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/chromapi_logo.kicad_sym")(options "")(descr ""))
+  (lib (name "sn74ahct1g125dbvr")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/SN74AHCT1G125DBVR.kicad_sym")(options "")(descr ""))
+  (lib (name "sn74lvc1g126dbvr")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/SN74LVC1G126DBVR.kicad_sym")(options "")(descr ""))
+  (lib (name "sn74lvc1g125dbvr")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/SN74LVC1G125DBVR.kicad_sym")(options "")(descr ""))
 )

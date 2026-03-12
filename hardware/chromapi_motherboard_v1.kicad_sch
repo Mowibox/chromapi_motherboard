@@ -674,7 +674,7 @@
 		)
 		(uuid "adf2ce3f-da17-40d5-a1de-7bd07a2a2904")
 	)
-	(text "List of devices:\n[Core Logic] \n- STM32G431KBT6 (MCU) & Raspberry Pi\n[Motion Control] \n- SN74LVC1T45 bus transceiver for servo communication\n[Power System] \n- TPS568230 (5V DC-DC converter) and LD39050 (3.3V LDO)\n[Battery Management] \n- CN3302 (USB-C Charger) and HY2120 (BMS)\n[Sensors] \n- BNO055 9-DOF IMU and 4x FSR contact circuits\n[Audio & Signal] \n- MAX98357A (I2S Amplifier), INMP441 (I2S Microphone),\nand 74AHCT125 (LED level shifter)"
+	(text "List of devices:\n[Core Logic] \n- STM32G431KBT6 (MCU) & Raspberry Pi\n[Motion Control] \n- SN74LVC1G126 & SN74LVC1G125 for servo communication\n[Power System] \n- TPS568230 (5V DC-DC converter) and LD39050 (3.3V LDO)\n[Battery Management] \n- CN3302 (USB-C Charger) and HY2120 (BMS)\n[Sensors] \n- BNO055 9-DOF IMU and 4x FSR contact circuits\n[Audio & Signal] \n- MAX98357A (I2S Amplifier), INMP441 (I2S Microphone),\nand SN74AHCT1G125 (LED level shifter)"
 		(exclude_from_sim no)
 		(at 13.462 173.736 0)
 		(effects
@@ -803,7 +803,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 106.68) (xy 214.63 106.68)
+			(xy 212.09 106.68) (xy 215.9 106.68)
 		)
 		(stroke
 			(width 0)
@@ -833,7 +833,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 86.36) (xy 227.33 128.27)
+			(xy 226.06 83.82) (xy 226.06 124.46)
 		)
 		(stroke
 			(width 0)
@@ -863,7 +863,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 109.22) (xy 215.9 66.04)
+			(xy 217.17 109.22) (xy 217.17 68.58)
 		)
 		(stroke
 			(width 0)
@@ -893,7 +893,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 111.76) (xy 212.09 111.76)
+			(xy 218.44 111.76) (xy 212.09 111.76)
 		)
 		(stroke
 			(width 0)
@@ -973,7 +973,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 83.82) (xy 226.06 83.82)
+			(xy 231.14 81.28) (xy 224.79 81.28)
 		)
 		(stroke
 			(width 0)
@@ -993,7 +993,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 128.27) (xy 212.09 128.27)
+			(xy 226.06 124.46) (xy 212.09 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1013,17 +1013,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 118.11) (xy 220.98 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "691df849-7b4a-4d56-ab87-5e509d657315")
-	)
-	(wire
-		(pts
-			(xy 231.14 68.58) (xy 217.17 68.58)
+			(xy 231.14 71.12) (xy 218.44 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1043,7 +1033,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 106.68) (xy 214.63 63.5)
+			(xy 215.9 106.68) (xy 215.9 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1063,7 +1053,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 68.58) (xy 217.17 111.76)
+			(xy 218.44 71.12) (xy 218.44 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1073,7 +1063,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 86.36) (xy 227.33 86.36)
+			(xy 231.14 83.82) (xy 226.06 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1093,16 +1083,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 74.93) (xy 231.14 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b0bd984-558b-4663-b219-01b50e91e137")
-	)
-	(wire
-		(pts
 			(xy 259.08 92.71) (xy 259.08 102.87)
 		)
 		(stroke
@@ -1113,7 +1093,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 130.81) (xy 228.6 88.9)
+			(xy 227.33 127) (xy 227.33 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1153,7 +1133,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 83.82) (xy 226.06 125.73)
+			(xy 224.79 81.28) (xy 224.79 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1163,7 +1143,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 81.28) (xy 231.14 81.28)
+			(xy 223.52 78.74) (xy 231.14 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1180,16 +1160,6 @@
 			(type default)
 		)
 		(uuid "9e0d4995-a08e-4805-bca1-68d77a4ddba9")
-	)
-	(wire
-		(pts
-			(xy 220.98 118.11) (xy 220.98 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a108e299-4e40-4798-a52f-66a69823027e")
 	)
 	(wire
 		(pts
@@ -1233,7 +1203,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 88.9) (xy 231.14 88.9)
+			(xy 227.33 86.36) (xy 231.14 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1243,7 +1213,7 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 63.5) (xy 231.14 63.5)
+			(xy 215.9 66.04) (xy 231.14 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1263,7 +1233,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 123.19) (xy 224.79 81.28)
+			(xy 223.52 119.38) (xy 223.52 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1273,7 +1243,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 123.19) (xy 224.79 123.19)
+			(xy 212.09 119.38) (xy 223.52 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1283,7 +1253,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 109.22) (xy 215.9 109.22)
+			(xy 212.09 109.22) (xy 217.17 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1293,7 +1263,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 66.04) (xy 231.14 66.04)
+			(xy 217.17 68.58) (xy 231.14 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1303,7 +1273,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 130.81) (xy 228.6 130.81)
+			(xy 212.09 127) (xy 227.33 127)
 		)
 		(stroke
 			(width 0)
@@ -1313,7 +1283,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 125.73) (xy 212.09 125.73)
+			(xy 224.79 121.92) (xy 212.09 121.92)
 		)
 		(stroke
 			(width 0)
@@ -10658,7 +10628,7 @@
 			)
 		)
 		(pin "FSR_TopRight" input
-			(at 212.09 125.73 0)
+			(at 212.09 121.92 0)
 			(uuid "40b86450-77be-49dc-8c26-361545e1a85f")
 			(effects
 				(font
@@ -10668,7 +10638,7 @@
 			)
 		)
 		(pin "FSR_TopLeft" input
-			(at 212.09 123.19 0)
+			(at 212.09 119.38 0)
 			(uuid "460a4ec3-05e9-4bb2-997b-e2e4eb13fa70")
 			(effects
 				(font
@@ -10688,18 +10658,8 @@
 			)
 		)
 		(pin "FSR_BotLeft" input
-			(at 212.09 128.27 0)
+			(at 212.09 124.46 0)
 			(uuid "d6851c2a-6d32-489b-8b3d-4e6efc706e45")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RGB_LED" input
-			(at 212.09 118.11 0)
-			(uuid "f2f9c677-51d1-4564-aa7c-1234e8c54eb6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10738,7 +10698,7 @@
 			)
 		)
 		(pin "FSR_BotRight" input
-			(at 212.09 130.81 0)
+			(at 212.09 127 0)
 			(uuid "d95d8d73-31e4-46e9-8a35-d816f6883015")
 			(effects
 				(font
@@ -10819,18 +10779,8 @@
 				(justify left top)
 			)
 		)
-		(pin "RGB_LED" input
-			(at 231.14 74.93 180)
-			(uuid "7255283c-8308-4d81-9301-cbe69bf777b7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "FSR_TopLeft" input
-			(at 231.14 81.28 180)
+			(at 231.14 78.74 180)
 			(uuid "446bd31e-f8cd-45de-94f2-1f7d156c14df")
 			(effects
 				(font
@@ -10850,7 +10800,7 @@
 			)
 		)
 		(pin "FSR_TopRight" input
-			(at 231.14 83.82 180)
+			(at 231.14 81.28 180)
 			(uuid "dfe45d1d-8f3a-49f3-af1e-93ea128af4ec")
 			(effects
 				(font
@@ -10860,7 +10810,7 @@
 			)
 		)
 		(pin "IMU_SCL" input
-			(at 231.14 63.5 180)
+			(at 231.14 66.04 180)
 			(uuid "0391a89b-a5cf-493f-8e59-a24526a56215")
 			(effects
 				(font
@@ -10880,7 +10830,7 @@
 			)
 		)
 		(pin "IMU_INT" input
-			(at 231.14 68.58 180)
+			(at 231.14 71.12 180)
 			(uuid "beb1fd83-1332-4726-8f7b-d833258dbb06")
 			(effects
 				(font
@@ -10890,7 +10840,7 @@
 			)
 		)
 		(pin "FSR_BotLeft" input
-			(at 231.14 86.36 180)
+			(at 231.14 83.82 180)
 			(uuid "e303472f-5f50-411c-adf9-30240b6dbddb")
 			(effects
 				(font
@@ -10900,7 +10850,7 @@
 			)
 		)
 		(pin "FSR_BotRight" input
-			(at 231.14 88.9 180)
+			(at 231.14 86.36 180)
 			(uuid "770f2f0d-8d4c-4aa9-8331-d943452cd7b5")
 			(effects
 				(font
@@ -10930,7 +10880,7 @@
 			)
 		)
 		(pin "IMU_SDA" input
-			(at 231.14 66.04 180)
+			(at 231.14 68.58 180)
 			(uuid "ab5925cf-b15a-4434-b8e5-a190d8231d90")
 			(effects
 				(font

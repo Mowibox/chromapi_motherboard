@@ -1,0 +1,47 @@
+2026-03-13 00:26:28,168 [INFO] Gpio:278 - dependency for GPIO [ADC1, ADC2]
+2026-03-13 00:26:36,294 [INFO] Gpio:278 - dependency for GPIO [ADC1, ADC2]
+2026-03-13 00:26:43,108 [INFO] Gpio:278 - dependency for GPIO [ADC1, ADC2, USART2]
+2026-03-13 00:26:59,406 [INFO] Gpio:278 - dependency for GPIO [ADC1, ADC2]
+2026-03-13 00:27:00,807 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,2,27,492x282,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-03-13 00:47:21,756 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 989495200 Bytes (1073741824)
+2026-03-13 00:47:26,024 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 598521904 Bytes (1073741824)
+2026-03-13 00:47:26,543 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 616894064 Bytes (1073741824)
+2026-03-13 00:47:27,537 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: ADC
+2026-03-13 00:47:27,537 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-03-13 00:47:27,538 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: ADC
+2026-03-13 00:47:27,538 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-03-13 00:47:27,538 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-03-13 00:47:27,539 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-03-13 00:47:27,541 [INFO] CodeGenerator:892 - code generatio: config db path: /home/mowibox/st/stm32cubeide_1.19.0/plugins/com.st.stm32cube.common.mx_6.15.0.202507011659//db/
+2026-03-13 00:47:27,920 [INFO] CodeEngine:265 - oldGeneratedFile, /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/MXTmpFiles/license.tmp_save
+2026-03-13 00:47:29,048 [INFO] CodeEngine:289 - Generated code: /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/MXTmpFiles/license.tmp
+2026-03-13 00:47:29,614 [INFO] CodeEngine:265 - oldGeneratedFile, /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/MXTmpFiles/gpio.tmp_save
+2026-03-13 00:47:29,942 [INFO] CodeEngine:289 - Generated code: /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/MXTmpFiles/gpio.tmp
+2026-03-13 00:47:30,661 [INFO] CodeEngine:265 - oldGeneratedFile, /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Src/stm32g4xx_it.c_save
+2026-03-13 00:47:30,939 [INFO] CodeEngine:289 - Generated code: /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Src/stm32g4xx_it.c
+2026-03-13 00:47:30,944 [INFO] CodeEngine:265 - oldGeneratedFile, /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Inc/stm32g4xx_it.h_save
+2026-03-13 00:47:31,116 [INFO] CodeEngine:289 - Generated code: /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Inc/stm32g4xx_it.h
+2026-03-13 00:47:31,132 [INFO] CodeEngine:265 - oldGeneratedFile, /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Src/stm32g4xx_hal_msp.c_save
+2026-03-13 00:47:31,437 [INFO] CodeEngine:289 - Generated code: /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Src/stm32g4xx_hal_msp.c
+2026-03-13 00:47:31,442 [INFO] CodeEngine:265 - oldGeneratedFile, /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/MXTmpFiles/system.tmp_save
+2026-03-13 00:47:31,597 [INFO] CodeEngine:289 - Generated code: /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/MXTmpFiles/system.tmp
+2026-03-13 00:47:31,613 [INFO] CodeEngine:321 - oldGeneratedFile, /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Inc/stm32g4xx_hal_conf.h_save
+2026-03-13 00:47:31,890 [INFO] CodeEngine:345 - Generated code: /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Inc/stm32g4xx_hal_conf.h
+2026-03-13 00:47:31,977 [WARN] IPConfigManager:3238 - Warning: the RefConfig RCC_CommonPeriphClockConfig is not available in your config.xml file
+2026-03-13 00:47:32,013 [INFO] ApiDbMcu:532 - Load IP Config File for ADC1
+2026-03-13 00:47:32,043 [INFO] ApiDbMcu:532 - Load IP Config File for ADC2
+2026-03-13 00:47:32,058 [INFO] ApiDbMcu:532 - Load IP Config File for RCC
+2026-03-13 00:47:32,075 [INFO] CodeEngine:265 - oldGeneratedFile, /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Inc/main.h_save
+2026-03-13 00:47:32,366 [INFO] CodeEngine:289 - Generated code: /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Inc/main.h
+2026-03-13 00:47:32,373 [INFO] CodeEngine:265 - oldGeneratedFile, /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Src/main.c_save
+2026-03-13 00:47:32,886 [INFO] CodeEngine:289 - Generated code: /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/Core/Src/main.c
+2026-03-13 00:47:33,415 [INFO] ProjectBuilder:3606 - Time for Copy HAL[1] : 72mS.
+2026-03-13 00:47:33,422 [INFO] ProjectBuilder:5216 - Project Generator version: 4.7.0-B52
+2026-03-13 00:47:33,901 [INFO] ConfigFileManager:1595 - The Die is : DIE468
+2026-03-13 00:47:33,927 [INFO] ApiDbMcu:532 - Load IP Config File for FATFS
+2026-03-13 00:47:33,947 [INFO] ApiDbMcu:532 - Load IP Config File for FREERTOS
+2026-03-13 00:47:33,972 [INFO] ApiDbMcu:532 - Load IP Config File for USBPD
+2026-03-13 00:47:34,000 [INFO] ApiDbMcu:532 - Load IP Config File for USB_DEVICE
+2026-03-13 00:47:37,266 [INFO] ProjectBuilder:5496 - Time for Generating toolchain IDE Files: 3843mS.
+2026-03-13 00:47:37,268 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 1mS.
+2026-03-13 00:47:37,270 [INFO] ProjectBuilder:3463 - Time for Copy CMSIS : 0mS.

@@ -18,6 +18,7 @@ CAD.formats=
 CAD.pinconfig=
 CAD.provider=
 File.Version=6
+GPIO.groupedBy=Group By Peripherals
 KeepUserPlacement=false
 Mcu.CPN=STM32G431KBT6
 Mcu.Family=STM32G4
