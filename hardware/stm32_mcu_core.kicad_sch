@@ -2864,6 +2864,28 @@
 		)
 		(uuid "e3940409-15ea-4376-a474-b594aee07e22")
 	)
+	(text_box "Correction needed"
+		(exclude_from_sim no)
+		(at 196.85 151.13 0)
+		(size 21.59 3.81)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify top)
+		)
+		(uuid "13f77b51-d0fb-46ae-a136-06474fe89dfe")
+	)
 	(text_box "STM32431KBT6 Microcontroller Core"
 		(exclude_from_sim no)
 		(at 105.41 15.24 0)
@@ -3051,10 +3073,6 @@
 	(no_connect
 		(at 173.99 96.52)
 		(uuid "23159c81-1670-4d9d-ae8e-75205abcf596")
-	)
-	(no_connect
-		(at 148.59 71.12)
-		(uuid "2daccdd7-8a7b-45f9-90ae-ace83ecb4019")
 	)
 	(no_connect
 		(at 173.99 71.12)
@@ -12046,6 +12064,16 @@
 		)
 		(uuid "13d9fab0-bb76-4f92-9658-01e550c7f91b")
 	)
+	(label "USART2_RX"
+		(at 173.99 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2381809e-590a-4735-bbeb-ce9a468b90b3")
+	)
 	(label "SWDIO"
 		(at 173.99 99.06 0)
 		(effects
@@ -12186,17 +12214,6 @@
 		)
 		(uuid "ee65505c-c538-445e-a041-32e0768083ff")
 	)
-	(hierarchical_label "FSR_TopLeft"
-		(shape input)
-		(at 173.99 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "01cd55c0-dc66-4a34-8890-c022bdaa1ef1")
-	)
 	(hierarchical_label "FSR_BotLeft"
 		(shape input)
 		(at 173.99 64.77 0)
@@ -12207,6 +12224,17 @@
 			(justify left)
 		)
 		(uuid "0733415d-501f-478b-bc56-a7f58dd07487")
+	)
+	(hierarchical_label "FSR_TopLeft"
+		(shape input)
+		(at 148.59 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0c0a4111-54df-4be5-9b93-57d2afe21ab2")
 	)
 	(hierarchical_label "SPI_MOSI"
 		(shape input)
@@ -12964,6 +12992,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -13467,6 +13496,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -13664,6 +13694,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -13730,6 +13761,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -13796,6 +13828,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -15135,6 +15168,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -15201,6 +15235,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -15400,6 +15435,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -15753,6 +15789,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -15885,6 +15922,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
