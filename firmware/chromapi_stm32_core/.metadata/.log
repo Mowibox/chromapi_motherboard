@@ -1,0 +1,31 @@
+!SESSION 2026-03-15 16:22:56.554 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-03-15 16:23:34.860
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-03-15 16:23:34.861
+!MESSAGE Log4j2 initialized with config file /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-03-15 16:23:36.767
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-03-15 16:27:14.911 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/.project
+Command-line arguments:  -os linux -ws gtk -arch x86_64 /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-03-15 16:27:23.327
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-03-15 16:27:23.328
+!MESSAGE Log4j2 initialized with config file /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-03-15 16:27:25.186
+!MESSAGE Started RMI Server, listening on port 41337
