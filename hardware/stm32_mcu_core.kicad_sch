@@ -2406,7 +2406,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U5"
+			(property "Reference" "U9"
 				(at 0 15.24 0)
 				(effects
 					(font
@@ -2432,7 +2432,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/sn74ahct1g125.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2441,7 +2441,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Single 4.5-V to 5.5-V buffer with TTL-compatible CMOS inputs and 3-state outputs"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2450,17 +2450,7 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Single 4.5-V to 5.5-V buffer with TTL-compatible CMOS inputs and 3-state outputs"
+			(property "MFR" "Texas Instruments"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2480,16 +2470,6 @@
 					(hide yes)
 				)
 			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
 			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74AHCT1G125DBVR/Texas+Instruments/view-part/?ref=snap"
 				(at 0 0 0)
 				(effects
@@ -2500,17 +2480,7 @@
 					(hide yes)
 				)
 			)
-			(property "MP" "SN74AHCT1G125DBVR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
+			(property "MPN" "SN74AHCT1G125DBVR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2642,7 +2612,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U11"
+			(property "Reference" "U8"
 				(at 0 15.24 0)
 				(effects
 					(font
@@ -2658,7 +2628,7 @@
 					)
 				)
 			)
-			(property "Footprint" "SN74LVC1G125DBVR:SOT95P280X145-5N"
+			(property "Footprint" "Chromapi_FP:SOT95P280X145-5N"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2668,7 +2638,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/sn74lvc1g125.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2677,7 +2647,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Single 1.65-V to 5.5-V buffer with 3-state outputs"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2686,17 +2656,7 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Single 1.65-V to 5.5-V buffer with 3-state outputs"
+			(property "MFR" "Texas Instruments"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2716,16 +2676,6 @@
 					(hide yes)
 				)
 			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
 			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74LVC1G125DBVR/Texas+Instruments/view-part/?ref=snap"
 				(at 0 0 0)
 				(effects
@@ -2736,17 +2686,7 @@
 					(hide yes)
 				)
 			)
-			(property "MP" "SN74LVC1G125DBVR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
+			(property "MPN" "SN74LVC1G125DBVR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2878,7 +2818,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U7"
+			(property "Reference" "U6"
 				(at 0 17.78 0)
 				(effects
 					(font
@@ -2904,7 +2844,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/sn74lvc1g126.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2913,7 +2853,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Single 1.65-V to 5.5-V buffer with 3-state outputs"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2922,17 +2862,7 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "Single 1.65-V to 5.5-V buffer with 3-state outputs"
+			(property "MFR" "Texas Instruments"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2952,16 +2882,6 @@
 					(hide yes)
 				)
 			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
 			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74LVC1G126DBVR/Texas+Instruments/view-part/?ref=snap"
 				(at 0 0 0)
 				(effects
@@ -2972,17 +2892,7 @@
 					(hide yes)
 				)
 			)
-			(property "MP" "SN74LVC1G126DBVR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
+			(property "MPN" "SN74LVC1G126DBVR"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3110,20 +3020,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "VCC"
-		(exclude_from_sim no)
-		(at 134.62 174.752 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 100 100 1)
-			)
-		)
-		(uuid "0a35b621-85fb-4c54-8c81-5634427e7983")
-	)
 	(text "VDD"
 		(exclude_from_sim no)
-		(at 83.566 175.006 0)
+		(at 91.186 175.006 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3167,7 +3066,7 @@
 	)
 	(text "VDDA\n"
 		(exclude_from_sim no)
-		(at 110.744 174.752 0)
+		(at 118.364 174.752 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3294,7 +3193,7 @@
 		(uuid "216051cd-07c4-40d6-8603-614a734d39d4")
 	)
 	(junction
-		(at 71.12 176.53)
+		(at 78.74 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2426d302-ec9e-4a2f-a147-23500e5c2cda")
@@ -3306,25 +3205,25 @@
 		(uuid "24a654cb-57d6-419d-a670-f21f0e9cef95")
 	)
 	(junction
-		(at 101.6 176.53)
+		(at 109.22 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c41aa03-e3e6-4f9b-a551-c976fc1edff4")
 	)
 	(junction
-		(at 106.68 186.69)
+		(at 114.3 186.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3990a056-af4a-4b67-bcc6-939c1adcb8c3")
 	)
 	(junction
-		(at 57.15 176.53)
+		(at 64.77 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c88569d-ef55-4f26-b895-242d4e8b4f8a")
 	)
 	(junction
-		(at 85.09 176.53)
+		(at 92.71 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "448dfbef-07fd-427c-a76e-355b9e93e8ae")
@@ -3342,7 +3241,7 @@
 		(uuid "5e3671b9-8999-4248-a922-dc6fe0fd65d8")
 	)
 	(junction
-		(at 71.12 186.69)
+		(at 78.74 186.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f5ebd50-8a69-41d8-b5a6-ad0e4bc25484")
@@ -3413,7 +3312,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 176.53) (xy 71.12 176.53)
+			(xy 64.77 176.53) (xy 78.74 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3443,7 +3342,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 176.53) (xy 71.12 177.8)
+			(xy 78.74 176.53) (xy 78.74 177.8)
 		)
 		(stroke
 			(width 0)
@@ -3493,7 +3392,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 176.53) (xy 71.12 176.53)
+			(xy 92.71 176.53) (xy 78.74 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3513,7 +3412,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 176.53) (xy 113.03 177.8)
+			(xy 120.65 176.53) (xy 120.65 177.8)
 		)
 		(stroke
 			(width 0)
@@ -3543,7 +3442,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 186.69) (xy 85.09 186.69)
+			(xy 78.74 186.69) (xy 92.71 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3613,7 +3512,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 186.69) (xy 85.09 185.42)
+			(xy 92.71 186.69) (xy 92.71 185.42)
 		)
 		(stroke
 			(width 0)
@@ -3743,7 +3642,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 176.53) (xy 113.03 176.53)
+			(xy 109.22 176.53) (xy 120.65 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3843,7 +3742,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 176.53) (xy 101.6 176.53)
+			(xy 101.6 176.53) (xy 109.22 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3893,7 +3792,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 185.42) (xy 113.03 186.69)
+			(xy 120.65 185.42) (xy 120.65 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3933,7 +3832,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 185.42) (xy 71.12 186.69)
+			(xy 78.74 185.42) (xy 78.74 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3963,7 +3862,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 185.42) (xy 57.15 186.69)
+			(xy 64.77 185.42) (xy 64.77 186.69)
 		)
 		(stroke
 			(width 0)
@@ -4003,7 +3902,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 177.8) (xy 85.09 176.53)
+			(xy 92.71 177.8) (xy 92.71 176.53)
 		)
 		(stroke
 			(width 0)
@@ -4013,7 +3912,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 186.69) (xy 106.68 186.69)
+			(xy 120.65 186.69) (xy 114.3 186.69)
 		)
 		(stroke
 			(width 0)
@@ -4093,7 +3992,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 173.99) (xy 57.15 176.53)
+			(xy 64.77 173.99) (xy 64.77 176.53)
 		)
 		(stroke
 			(width 0)
@@ -4153,7 +4052,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 186.69) (xy 106.68 187.96)
+			(xy 114.3 186.69) (xy 114.3 187.96)
 		)
 		(stroke
 			(width 0)
@@ -4163,7 +4062,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 186.69) (xy 71.12 187.96)
+			(xy 78.74 186.69) (xy 78.74 187.96)
 		)
 		(stroke
 			(width 0)
@@ -4203,7 +4102,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 176.53) (xy 88.9 176.53)
+			(xy 92.71 176.53) (xy 96.52 176.53)
 		)
 		(stroke
 			(width 0)
@@ -4253,7 +4152,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 186.69) (xy 71.12 186.69)
+			(xy 64.77 186.69) (xy 78.74 186.69)
 		)
 		(stroke
 			(width 0)
@@ -4263,7 +4162,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 186.69) (xy 101.6 185.42)
+			(xy 109.22 186.69) (xy 109.22 185.42)
 		)
 		(stroke
 			(width 0)
@@ -4273,7 +4172,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 177.8) (xy 101.6 176.53)
+			(xy 109.22 177.8) (xy 109.22 176.53)
 		)
 		(stroke
 			(width 0)
@@ -4283,7 +4182,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 186.69) (xy 101.6 186.69)
+			(xy 114.3 186.69) (xy 109.22 186.69)
 		)
 		(stroke
 			(width 0)
@@ -4313,7 +4212,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 173.99) (xy 101.6 176.53)
+			(xy 109.22 173.99) (xy 109.22 176.53)
 		)
 		(stroke
 			(width 0)
@@ -4323,7 +4222,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 176.53) (xy 57.15 177.8)
+			(xy 64.77 176.53) (xy 64.77 177.8)
 		)
 		(stroke
 			(width 0)
@@ -4340,26 +4239,6 @@
 			(type default)
 		)
 		(uuid "f308de7e-0282-458f-b84c-56e9489eb847")
-	)
-	(wire
-		(pts
-			(xy 128.27 185.42) (xy 128.27 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4922b7e-4300-4a9b-add9-018532b2f44c")
-	)
-	(wire
-		(pts
-			(xy 128.27 173.99) (xy 128.27 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8100b9b-881b-46af-8706-a860176e15ba")
 	)
 	(wire
 		(pts
@@ -12987,7 +12866,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 101.6 173.99 0)
+		(at 109.22 173.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12996,7 +12875,7 @@
 		(fields_autoplaced yes)
 		(uuid "026d2632-a953-4f5f-9616-7bb03d493a2a")
 		(property "Reference" "#PWR056"
-			(at 101.6 177.8 0)
+			(at 109.22 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13005,7 +12884,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 101.6 168.91 0)
+			(at 109.22 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13013,7 +12892,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 173.99 0)
+			(at 109.22 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13022,7 +12901,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 173.99 0)
+			(at 109.22 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13031,7 +12910,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 101.6 173.99 0)
+			(at 109.22 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13046,134 +12925,6 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
 					(reference "#PWR056")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sn74lvc1g125dbvr:SN74LVC1G125DBVR")
-		(at 81.28 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07215ad9-82f7-451f-a533-da81070ba1f2")
-		(property "Reference" "U8"
-			(at 81.28 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SN74LVC1G125DBVR"
-			(at 81.28 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SN74LVC1G125DBVR:SOT95P280X145-5N"
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/sn74lvc1g125.pdf"
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single 1.65-V to 5.5-V buffer with 3-state outputs"
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "Texas Instruments"
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "SOT-23-5 Texas Instruments"
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74LVC1G125DBVR/Texas+Instruments/view-part/?ref=snap"
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC1G125DBVR"
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SN74LVC1G125DBVR/Texas+Instruments/view-part/?ref=eda"
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4b7d0f10-37e3-419c-b21e-9db432b35ca9")
-		)
-		(pin "3"
-			(uuid "2df02fa6-d3fb-4fbb-9477-cd89a588966f")
-		)
-		(pin "5"
-			(uuid "a415e48a-3595-4bcb-b2e5-d87438753ca4")
-		)
-		(pin "1"
-			(uuid "17d5cfb3-2c8a-4221-be7e-d0a93c987e6a")
-		)
-		(pin "4"
-			(uuid "cd99ea52-d698-4680-8ab6-fb99bfb0bce6")
-		)
-		(instances
-			(project ""
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -13318,6 +13069,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 38.1 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 38.1 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 38.1 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6765ca2d-720d-480a-a67c-7cc43c4305b4")
 		)
@@ -13359,7 +13137,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 100.33 99.568 90)
 			(effects
 				(font
@@ -13379,6 +13157,33 @@
 		)
 		(property "Description" "Resistor"
 			(at 100.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 100.33 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 100.33 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 100.33 97.79 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13673,6 +13478,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 22.86 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 22.86 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 22.86 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4eef061f-6850-4b0d-af02-8dfcbb649bd7")
 		)
@@ -13690,7 +13522,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 113.03 181.61 0)
+		(at 120.65 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13699,7 +13531,7 @@
 		(fields_autoplaced yes)
 		(uuid "22704bdd-fd0c-4fa1-ac0b-c583b944369d")
 		(property "Reference" "C30"
-			(at 116.84 180.3399 0)
+			(at 124.46 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13708,7 +13540,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 116.84 182.8799 0)
+			(at 124.46 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13717,7 +13549,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 113.9952 185.42 0)
+			(at 121.6152 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13726,7 +13558,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 113.03 181.61 0)
+			(at 120.65 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13735,7 +13567,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 113.03 181.61 0)
+			(at 120.65 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13744,7 +13576,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 113.03 181.61 0)
+			(at 120.65 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13753,7 +13585,34 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 113.03 181.61 0)
+			(at 120.65 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 120.65 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 120.65 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 120.65 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13869,7 +13728,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 74.93 73.152 90)
 			(effects
 				(font
@@ -13889,6 +13748,33 @@
 		)
 		(property "Description" "Resistor"
 			(at 74.93 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 74.93 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 74.93 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 74.93 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13976,6 +13862,33 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 152.4 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 152.4 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 152.4 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 152.4 104.14 0)
 			(effects
 				(font
@@ -14139,6 +14052,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 29.21 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 29.21 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 29.21 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e254fa7e-cbbc-4811-af23-1ca2fcbe1a02")
 		)
@@ -14219,7 +14159,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 71.12 187.96 0)
+		(at 78.74 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14228,7 +14168,7 @@
 		(fields_autoplaced yes)
 		(uuid "3ef7e5f6-d52a-434b-97ed-4c0a32c14ab0")
 		(property "Reference" "#PWR062"
-			(at 71.12 194.31 0)
+			(at 78.74 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14237,7 +14177,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.12 193.04 0)
+			(at 78.74 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14246,7 +14186,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 187.96 0)
+			(at 78.74 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14255,7 +14195,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 187.96 0)
+			(at 78.74 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14264,7 +14204,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 187.96 0)
+			(at 78.74 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14357,6 +14297,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 264.16 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 264.16 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 264.16 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fccaa7b9-a0e3-4b44-bf8c-3b2835b397d7")
 		)
@@ -14406,7 +14373,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 56.642 100.33 90)
 			(effects
 				(font
@@ -14433,6 +14400,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 58.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 58.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 58.42 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dfb84762-ffd6-4723-9bc2-7d7001de4b40")
 		)
@@ -14450,7 +14444,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 106.68 187.96 0)
+		(at 114.3 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14459,7 +14453,7 @@
 		(fields_autoplaced yes)
 		(uuid "45d6aa40-42a4-405e-ab35-69a8401773f8")
 		(property "Reference" "#PWR063"
-			(at 106.68 194.31 0)
+			(at 114.3 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14468,7 +14462,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 193.04 0)
+			(at 114.3 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14477,7 +14471,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 187.96 0)
+			(at 114.3 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14486,7 +14480,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 187.96 0)
+			(at 114.3 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14495,7 +14489,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 106.68 187.96 0)
+			(at 114.3 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14510,6 +14504,161 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
 					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sn74lvc1g125dbvr:SN74LVC1G125DBVR")
+		(at 81.28 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "462b023b-662f-4d6a-ace0-e12e55951f1c")
+		(property "Reference" "U8"
+			(at 81.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74LVC1G125DBVR"
+			(at 81.28 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Chromapi_FP:SOT95P280X145-5N"
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/sn74lvc1g125.pdf"
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single 1.65-V to 5.5-V buffer with 3-state outputs"
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Texas Instruments"
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "SOT-23-5 Texas Instruments"
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74LVC1G125DBVR/Texas+Instruments/view-part/?ref=snap"
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SN74LVC1G125DBVR"
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/SN74LVC1G125DBVR/Texas+Instruments/view-part/?ref=eda"
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 81.28 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7424f652-a94b-472e-af09-dc97f27a9155")
+		)
+		(pin "5"
+			(uuid "bd08d392-d7d1-4d88-9db3-8d6a110b5f82")
+		)
+		(pin "4"
+			(uuid "f6f7131b-bae6-40c2-9cc7-2d3d08d2eb97")
+		)
+		(pin "3"
+			(uuid "61dc08b6-cb70-463e-a008-ee29bcff9a63")
+		)
+		(pin "2"
+			(uuid "7a3d9998-345c-43e0-a75b-c9106f9677cc")
+		)
+		(instances
+			(project ""
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -14650,7 +14799,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 71.12 181.61 0)
+		(at 78.74 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14659,7 +14808,7 @@
 		(fields_autoplaced yes)
 		(uuid "5845507c-2864-4ad3-9c6c-9549a178e5e8")
 		(property "Reference" "C27"
-			(at 74.93 180.3399 0)
+			(at 82.55 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14668,7 +14817,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 74.93 182.8799 0)
+			(at 82.55 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14677,7 +14826,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 72.0852 185.42 0)
+			(at 79.7052 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14686,7 +14835,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 71.12 181.61 0)
+			(at 78.74 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14695,7 +14844,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 71.12 181.61 0)
+			(at 78.74 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14704,7 +14853,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 71.12 181.61 0)
+			(at 78.74 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14713,7 +14862,34 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 71.12 181.61 0)
+			(at 78.74 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 78.74 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 78.74 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 78.74 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14875,6 +15051,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 96.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 96.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 96.52 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a9e58676-c4b1-4107-a13a-80ec13611656")
 		)
@@ -14952,6 +15155,33 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 158.75 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 158.75 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 158.75 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 158.75 181.61 0)
 			(effects
 				(font
@@ -15043,7 +15273,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 85.09 181.61 0)
+		(at 92.71 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15052,7 +15282,7 @@
 		(fields_autoplaced yes)
 		(uuid "73e6e16d-660a-4cf7-bc39-1b9f519412d7")
 		(property "Reference" "C28"
-			(at 88.9 180.3399 0)
+			(at 96.52 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15061,7 +15291,7 @@
 			)
 		)
 		(property "Value" "10µF"
-			(at 88.9 182.8799 0)
+			(at 96.52 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15070,7 +15300,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5"
-			(at 86.0552 185.42 0)
+			(at 93.6752 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15079,7 +15309,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 85.09 181.61 0)
+			(at 92.71 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15088,7 +15318,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 85.09 181.61 0)
+			(at 92.71 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15097,7 +15327,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 85.09 181.61 0)
+			(at 92.71 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15106,7 +15336,34 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 85.09 181.61 0)
+			(at 92.71 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 92.71 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 92.71 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 92.71 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15344,6 +15601,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 245.11 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 245.11 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 245.11 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "d6a3f5e4-ed11-4b20-a1c3-2622eb9f4514")
 		)
@@ -15468,6 +15752,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 143.51 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 143.51 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 143.51 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ba0773f3-a917-4085-8283-c4e7721b7219")
 		)
@@ -15485,7 +15796,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 101.6 181.61 0)
+		(at 109.22 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15494,7 +15805,7 @@
 		(fields_autoplaced yes)
 		(uuid "82735743-d9dd-434b-bc03-64f92cb9c854")
 		(property "Reference" "C29"
-			(at 105.41 180.3399 0)
+			(at 113.03 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15503,7 +15814,7 @@
 			)
 		)
 		(property "Value" "1µF"
-			(at 105.41 182.8799 0)
+			(at 113.03 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15512,7 +15823,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 102.5652 185.42 0)
+			(at 110.1852 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15521,7 +15832,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 101.6 181.61 0)
+			(at 109.22 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15530,7 +15841,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 101.6 181.61 0)
+			(at 109.22 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15539,7 +15850,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 101.6 181.61 0)
+			(at 109.22 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15548,7 +15859,34 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 101.6 181.61 0)
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 109.22 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15973,17 +16311,43 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 128.27 187.96 0)
+		(lib_id "sn74lvc1g126dbvr:SN74LVC1G126DBVR")
+		(at 45.72 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a412ad04-a17e-41bc-9a15-8784e7607581")
-		(property "Reference" "#PWR064"
-			(at 128.27 194.31 0)
+		(uuid "9575ad5b-95cb-4405-8cda-077bd133f897")
+		(property "Reference" "U6"
+			(at 45.72 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74LVC1G126DBVR"
+			(at 45.72 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Chromapi_FP:SOT95P280X145-5N"
+			(at 45.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/sn74lvc1g126.pdf"
+			(at 45.72 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15991,8 +16355,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 128.27 193.04 0)
+		(property "Description" "Single 1.65-V to 5.5-V buffer with 3-state outputs"
+			(at 45.72 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16000,8 +16364,58 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 128.27 187.96 0)
+		(property "MFR" "Texas Instruments"
+			(at 45.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "SOT-23-5 Texas Instruments"
+			(at 45.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74LVC1G126DBVR/Texas+Instruments/view-part/?ref=snap"
+			(at 45.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SN74LVC1G126DBVR"
+			(at 45.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/SN74LVC1G126DBVR/Texas+Instruments/view-part/?ref=eda"
+			(at 45.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 45.72 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16009,8 +16423,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 128.27 187.96 0)
+		(property "License" ""
+			(at 45.72 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16018,8 +16432,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 187.96 0)
+		(property "Manufacturer" ""
+			(at 45.72 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16028,100 +16442,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "32df603d-0139-43a2-939b-a82f37d5dc3b")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 128.27 181.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a9401b45-a968-49bc-81f5-72ede8bddcc1")
-		(property "Reference" "C31"
-			(at 132.08 180.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 132.08 182.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 129.2352 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 128.27 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 128.27 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 128.27 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 128.27 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+			(uuid "a60aa89f-7935-42c1-a5b3-996a5beb5a17")
 		)
 		(pin "2"
-			(uuid "93a80b28-1086-4753-8323-2f6f06393d95")
+			(uuid "8f00600d-ca2b-4b06-bf84-349948afed29")
 		)
-		(pin "1"
-			(uuid "2f430b66-dfdb-4ae0-8442-5600c123a7a3")
+		(pin "4"
+			(uuid "09a7a1d1-176b-4128-bb1f-0fbe016631a6")
+		)
+		(pin "5"
+			(uuid "da31a88d-4ae4-454a-b652-19c106f5f7d4")
+		)
+		(pin "3"
+			(uuid "520aa9c2-1a57-43f5-9f2b-413fb822c608")
 		)
 		(instances
-			(project "chromapi_motherboard_v1"
+			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "C31")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -16261,72 +16599,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 128.27 173.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b5b37cc0-e7b4-463b-9ccd-13f6d41186c2")
-		(property "Reference" "#PWR057"
-			(at 128.27 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 128.27 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 128.27 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ad550390-7a1e-4114-8176-361139835b23")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 96.52 87.63 0)
 		(unit 1)
@@ -16394,7 +16666,7 @@
 	)
 	(symbol
 		(lib_id "Device:FerriteBead_Small")
-		(at 91.44 176.53 90)
+		(at 99.06 176.53 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16402,7 +16674,7 @@
 		(dnp no)
 		(uuid "bcab539d-6ee9-4895-b074-4a471339030b")
 		(property "Reference" "FB1"
-			(at 91.186 168.91 90)
+			(at 98.806 168.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16410,7 +16682,7 @@
 			)
 		)
 		(property "Value" "FerriteBead_Small"
-			(at 91.186 171.45 90)
+			(at 98.806 171.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16418,7 +16690,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 91.44 178.308 90)
+			(at 99.06 178.308 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16427,7 +16699,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 176.53 0)
+			(at 99.06 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16436,7 +16708,34 @@
 			)
 		)
 		(property "Description" "Ferrite bead, small symbol"
-			(at 91.44 176.53 0)
+			(at 99.06 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 99.06 176.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 99.06 176.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 99.06 176.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16487,7 +16786,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 86.868 69.85 90)
 			(effects
 				(font
@@ -16514,6 +16813,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 85.09 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 85.09 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 85.09 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "fb78feb7-a32e-4602-b698-2ec1680b6616")
 		)
@@ -16524,6 +16850,161 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
 					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "sn74ahct1g125dbvr:SN74AHCT1G125DBVR")
+		(at 232.41 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5212e8f-142b-476d-9612-5afd966509fa")
+		(property "Reference" "U9"
+			(at 233.045 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74AHCT1G125DBVR"
+			(at 233.045 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Chromapi_FP:SOT95P280X145-5N"
+			(at 232.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/sn74ahct1g125.pdf"
+			(at 232.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single 4.5-V to 5.5-V buffer with TTL-compatible CMOS inputs and 3-state outputs"
+			(at 232.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "Texas Instruments"
+			(at 232.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "SOT-23-5 Texas Instruments"
+			(at 232.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74AHCT1G125DBVR/Texas+Instruments/view-part/?ref=snap"
+			(at 232.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SN74AHCT1G125DBVR"
+			(at 232.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/SN74AHCT1G125DBVR/Texas+Instruments/view-part/?ref=eda"
+			(at 232.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 232.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 232.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 232.41 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "1a1b716e-5bb1-422b-ab7a-78d2279c10db")
+		)
+		(pin "3"
+			(uuid "2b148872-4a87-4a6d-96cf-46485eee5eb7")
+		)
+		(pin "5"
+			(uuid "a4767422-c059-40ee-8991-5410ce148520")
+		)
+		(pin "1"
+			(uuid "a5d824ee-e161-499c-b3aa-82fe74c0be3a")
+		)
+		(pin "2"
+			(uuid "d2280bf9-38a7-4f24-95a7-97acc4a2275c")
+		)
+		(instances
+			(project ""
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -16658,134 +17139,6 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
 					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sn74ahct1g125dbvr:SN74AHCT1G125DBVR")
-		(at 232.41 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d086bb22-d910-47ea-9b93-74d5ecb74e2f")
-		(property "Reference" "U9"
-			(at 232.41 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SN74AHCT1G125DBVR"
-			(at 232.41 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Chromapi_FP:SOT95P280X145-5N"
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/sn74ahct1g125.pdf"
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single 4.5-V to 5.5-V buffer with TTL-compatible CMOS inputs and 3-state outputs"
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "Texas Instruments"
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "SOT-23-5 Texas Instruments"
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74AHCT1G125DBVR/Texas+Instruments/view-part/?ref=snap"
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74AHCT1G125DBVR"
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SN74AHCT1G125DBVR/Texas+Instruments/view-part/?ref=eda"
-			(at 232.41 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "24369618-a7a6-4faa-a106-5aa2f0458a95")
-		)
-		(pin "2"
-			(uuid "3e15ecb2-008f-4b8f-843c-42dbabf0b471")
-		)
-		(pin "1"
-			(uuid "1494d4c4-974e-4bc7-9508-2c0d2fa04dea")
-		)
-		(pin "5"
-			(uuid "ae563a09-49e4-4c2e-96c6-eaaee05f6bd7")
-		)
-		(pin "3"
-			(uuid "af872e32-0942-4425-8842-45013f127069")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -17007,6 +17360,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 173.99 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 173.99 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 173.99 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "19"
 			(uuid "2d177577-8ba1-47dd-8dc7-80b272acd6da")
 		)
@@ -17181,7 +17561,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 57.15 173.99 0)
+		(at 64.77 173.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17190,7 +17570,7 @@
 		(fields_autoplaced yes)
 		(uuid "db67966b-8e49-485a-9831-93ea6f5737f9")
 		(property "Reference" "#PWR055"
-			(at 57.15 177.8 0)
+			(at 64.77 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17199,7 +17579,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 57.15 168.91 0)
+			(at 64.77 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17207,7 +17587,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 173.99 0)
+			(at 64.77 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17216,7 +17596,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 173.99 0)
+			(at 64.77 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17225,7 +17605,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 57.15 173.99 0)
+			(at 64.77 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17240,134 +17620,6 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
 					(reference "#PWR055")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sn74lvc1g126dbvr:SN74LVC1G126DBVR")
-		(at 45.72 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df289857-440f-4785-b2d6-c7884cae0586")
-		(property "Reference" "U6"
-			(at 45.72 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SN74LVC1G126DBVR"
-			(at 45.72 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Chromapi_FP:SOT95P280X145-5N"
-			(at 45.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/sn74lvc1g126.pdf"
-			(at 45.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single 1.65-V to 5.5-V buffer with 3-state outputs"
-			(at 45.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "Texas Instruments"
-			(at 45.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "SOT-23-5 Texas Instruments"
-			(at 45.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SN74LVC1G126DBVR/Texas+Instruments/view-part/?ref=snap"
-			(at 45.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SN74LVC1G126DBVR"
-			(at 45.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/SN74LVC1G126DBVR/Texas+Instruments/view-part/?ref=eda"
-			(at 45.72 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "35e1b6de-0ae4-4884-9b62-037b865a1d27")
-		)
-		(pin "5"
-			(uuid "d280539a-dfe0-41c0-880c-d0a3861ab8c1")
-		)
-		(pin "4"
-			(uuid "dbcd194c-caf3-4298-9e59-7e3a10e0ae30")
-		)
-		(pin "3"
-			(uuid "f4f54a45-ccd2-46c8-838c-99b0e027f822")
-		)
-		(pin "2"
-			(uuid "b95c19eb-5ae1-435a-b59c-427e785a5e7d")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -17438,6 +17690,33 @@
 			)
 		)
 		(property "Sim.Type" ""
+			(at 264.16 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 264.16 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 264.16 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 264.16 113.03 0)
 			(effects
 				(font
@@ -17540,6 +17819,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 135.89 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 135.89 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 135.89 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "03e9ac86-c687-4f5a-8daf-fef44b173f5e")
 		)
@@ -17625,6 +17931,33 @@
 				(hide yes)
 			)
 		)
+		(property "Author" ""
+			(at 251.46 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 251.46 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 251.46 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8cb08296-6aea-4fe1-a6a9-3ad5231272f0")
 		)
@@ -17642,7 +17975,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 57.15 181.61 0)
+		(at 64.77 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17651,7 +17984,7 @@
 		(fields_autoplaced yes)
 		(uuid "f8a16d48-21d9-4803-a451-b20ce2030a69")
 		(property "Reference" "C26"
-			(at 60.96 180.3399 0)
+			(at 68.58 180.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17660,7 +17993,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 60.96 182.8799 0)
+			(at 68.58 182.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17669,7 +18002,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 58.1152 185.42 0)
+			(at 65.7352 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17678,7 +18011,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 181.61 0)
+			(at 64.77 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17687,7 +18020,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 57.15 181.61 0)
+			(at 64.77 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17696,7 +18029,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 57.15 181.61 0)
+			(at 64.77 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17705,7 +18038,34 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 57.15 181.61 0)
+			(at 64.77 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Author" ""
+			(at 64.77 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "License" ""
+			(at 64.77 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 64.77 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)

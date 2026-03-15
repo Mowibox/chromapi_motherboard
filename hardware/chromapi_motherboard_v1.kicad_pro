@@ -723,6 +723,12 @@
           "label": "MFR",
           "name": "MFR",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFN",
+          "name": "MFN",
+          "show": false
         }
       ],
       "filter_string": "",
