@@ -4345,12 +4345,6 @@
 		(uuid "bbdd9e00-02ae-46c3-82d3-4860a38ee5e8")
 	)
 	(junction
-		(at 50.8 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c2d2e464-e3a0-495c-acf4-5c7ddad0bf3b")
-	)
-	(junction
 		(at 204.47 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5188,7 +5182,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 54.61) (xy 50.8 54.61)
+			(xy 45.72 54.61) (xy 59.69 54.61)
 		)
 		(stroke
 			(width 0.381)
@@ -5385,16 +5379,6 @@
 			(type default)
 		)
 		(uuid "dc0cab31-70f0-4aad-90f0-f21ea461b96f")
-	)
-	(wire
-		(pts
-			(xy 50.8 54.61) (xy 59.69 54.61)
-		)
-		(stroke
-			(width 0.381)
-			(type default)
-		)
-		(uuid "de9ce963-525e-468c-b4b9-da14dfe6090a")
 	)
 	(wire
 		(pts
@@ -17672,72 +17656,6 @@
 			(project ""
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 50.8 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c56f23b4-0519-4845-9ef5-d5c5e049d010")
-		(property "Reference" "#FLG05"
-			(at 50.8 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 50.8 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 50.8 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "be3920cf-396a-4730-b84f-279b9bcf60c6")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "#FLG05")
 					(unit 1)
 				)
 			)

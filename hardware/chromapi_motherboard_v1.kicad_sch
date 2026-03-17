@@ -10796,7 +10796,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "tps568230.kicad_sch"
+		(property "Sheetfile" "voltage_regulation.kicad_sch"
 			(at 109.22 93.2946 0)
 			(effects
 				(font
