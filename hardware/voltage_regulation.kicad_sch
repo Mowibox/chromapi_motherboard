@@ -2150,12 +2150,6 @@
 		(uuid "bbefa3e2-3116-4531-bab9-a7cda1f2966c")
 	)
 	(junction
-		(at 116.84 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bc7259eb-2e25-48bb-91d2-2e9dd6574483")
-	)
-	(junction
 		(at 187.96 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2248,16 +2242,6 @@
 			(type default)
 		)
 		(uuid "0afef473-35bb-4098-81e3-871eed2b2061")
-	)
-	(wire
-		(pts
-			(xy 113.03 68.58) (xy 116.84 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c244132-bcc2-4a63-b0b4-bee5d05871fa")
 	)
 	(wire
 		(pts
@@ -2361,7 +2345,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 81.28) (xy 200.66 85.09)
+			(xy 200.66 81.28) (xy 200.66 82.55)
 		)
 		(stroke
 			(width 0)
@@ -11495,16 +11479,6 @@
 		)
 		(uuid "49982217-e147-459c-8067-20744f6c3f13")
 	)
-	(label "FBG"
-		(at 200.66 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8db76cba-3db5-4b8d-b249-7fd2f6b5cde0")
-	)
 	(label "EN"
 		(at 86.36 74.93 0)
 		(effects
@@ -11524,16 +11498,6 @@
 			(justify right bottom)
 		)
 		(uuid "c7856c20-bb4e-495d-b11b-dc12de30e0a5")
-	)
-	(label "FBG"
-		(at 113.03 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ea29721b-8210-4c4b-af5b-0659732fe439")
 	)
 	(hierarchical_label "V_SYS"
 		(shape input)
@@ -11594,7 +11558,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Chromapi_FP:INDM6864X300N"
+		(property "Footprint" "Chromapi_FP:IND_1040-WE-HCI_WRE"
 			(at 182.88 48.26 0)
 			(effects
 				(font
@@ -12383,7 +12347,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 75.692 82.55 90)
 			(effects
 				(font
@@ -12495,7 +12459,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 179.07 61.9252 0)
 			(effects
 				(font
@@ -13848,7 +13812,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 160.02 44.958 90)
 			(effects
 				(font
@@ -14323,6 +14287,73 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
 					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 200.66 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90d103ff-7d84-4b80-bfd8-e6d80e142e1a")
+		(property "Reference" "#PWR0116"
+			(at 200.66 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f0d7de9-e7ca-4fe9-b07f-fc3ab0a6b565")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -15878,7 +15909,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 165.1 44.1452 0)
 			(effects
 				(font
