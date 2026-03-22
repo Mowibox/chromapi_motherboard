@@ -1,11 +1,11 @@
 # chromapi_motherboard
 
-This repo contains a dedicated control shield designed to manage the high-speed motion, power distribution, and sensor fusion required for the quadruped robot Chromapi.
+This repo contains a dedicated control shield designed to manage the high-speed motion, power distribution, and sensor integration required for the quadruped robot Chromapi.
 
 ![Chromapi](https://custom-icon-badges.demolab.com/badge/Chromapi-motherboard-489648?logo=chromapi)
-![KiCad](https://img.shields.io/badge/KiCad-9.0+-2849bf?logo=kicad)
+![KiCad](https://img.shields.io/badge/KiCad-10.0+-2849bf?logo=kicad)
 ![STM32](https://img.shields.io/badge/STM32-G431-3cb4e6?)
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)](https://github.com/Mowibox/chromapi_motherboard/blob/main/LICENSE)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)](https://opensource.org/licenses/Apache-2.0)
 ![Issues](https://img.shields.io/github/issues/Mowibox/chromapi_motherboard)
 ![Stars](https://img.shields.io/github/stars/Mowibox/chromapi_motherboard?style=social)
 
@@ -13,17 +13,28 @@ This repo contains a dedicated control shield designed to manage the high-speed 
   <img alt="chromapi_motherboard" src=""/>
 </p>
 
+*Designed with KiCAD 10.*
+
 ## Table of contents
 
 | Section                               | Description                                                               |
 | ------------------------------------- | ------------------------------------------------------------------------- |
-| [Project overview](#project-overview) | General description of the mixed-signal quadruped control board           |
+| [Project overview](#project-overview) | General description of the quadruped control board                        |
 | [Authors](#authors)                   | Main contributors information                                             |
-| [Documentation](#documentation)       | Links to datasheets, BOM, and design architecture                |
+| [Documentation](#documentation)       | Links to datasheets, BOM, and design architecture                         |
 | [Contributions](#contributions)       | How to contribute to the repository                                       |
 | [License](#license)                   | Licensing information                                                     |
 
 ## Project overview
+
+## Repository structure
+
+<!-- | Resource | Description | Location | Status |
+| :--- | :--- | :--- | :--- |
+| **📐 Schematics** | KiCad source files (`.kicad_sch`). | `/Hardware/Schematics` | **Available** |
+| **⚡ PCB Layout** | 4-layer PCB layout (`.kicad_pcb`). | `/Hardware/Layout` | **WIP** |
+| **📦 Manufacturing** | Gerbers, Drill files, BOM, and CPL for assembly. | `/Hardware/Fabrication` | *Pending Routing* |
+| **💻 Firmware** | STM32 low-level drivers and communication protocol. | `/Firmware` | *Coming Soon* | -->
 
 ## Authors
 
@@ -40,4 +51,4 @@ Contributions are always welcome!
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/Mowibox/chromapi_motherboard/blob/main/LICENSE) file for more details.
+This project is licensed under the Apache 2.0 License. See the [LICENSE](https://github.com/Mowibox/chromapi_motherboard/blob/main/LICENSE) file for more details.
