@@ -38,7 +38,10 @@ This repo contains a dedicated control shield designed to manage the high-speed 
 
 ## Authors
 
-* [Ousmane THIONGANE](https://mowibox.github.io)
+| |
+| :---: |
+| <img src="https://github.com/Mowibox.png" width="100"> |
+| [**Ousmane THIONGANE**](https://mowibox.github.io) |
 
 ## Documentation
 
