@@ -2018,7 +2018,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm"
+			(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
 				(at 20.32 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2040,7 +2040,7 @@
 					)
 				)
 			)
-			(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, VSSOP-10"
+			(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2062,7 +2062,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "VSSOP*3x3mm*P0.5mm*"
+			(property "ki_fp_filters" "*TSSOP*3x3mm?P0.5mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -17244,145 +17244,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Sensor_Energy:INA226")
-		(at 234.95 49.53 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "88fe7bab-7bb1-4f96-89e4-a82f6a56d865")
-		(property "Reference" "U2"
-			(at 237.0933 34.29 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "INA226"
-			(at 237.0933 36.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:VSSOP-10_3x3mm_P0.5mm"
-			(at 255.27 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/ina226.pdf"
-			(at 243.84 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, VSSOP-10"
-			(at 234.95 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 234.95 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 234.95 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 234.95 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "e9a2e10c-33cb-4ae5-9196-54f59140a461")
-		)
-		(pin "8"
-			(uuid "200dedc3-d41b-4bb4-9415-da5aa8361aa9")
-		)
-		(pin "7"
-			(uuid "920f5f1d-fea3-4e76-a67c-f2dc0b7d327f")
-		)
-		(pin "9"
-			(uuid "eff5b1b0-ce10-49a8-96cf-150b8e01df45")
-		)
-		(pin "2"
-			(uuid "993c1654-f90f-4835-b40e-8467b59ff5d0")
-		)
-		(pin "3"
-			(uuid "e973b85f-8ec5-46cd-ba68-ab5d4992aa37")
-		)
-		(pin "10"
-			(uuid "cd0231c7-a6e9-4743-8aa3-5fadd9e4ab1d")
-		)
-		(pin "6"
-			(uuid "02f5b8cc-f3ee-4ab6-bf21-222591061a8a")
-		)
-		(pin "1"
-			(uuid "fffa278b-a237-4155-8ac9-cced8c99875d")
-		)
-		(pin "4"
-			(uuid "711ccbe0-3af4-443f-a6b3-f44b40f37a16")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "cn3302:CN3302")
 		(at 161.29 139.7 0)
 		(unit 1)
@@ -20006,6 +19867,112 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Energy:INA226")
+		(at 234.95 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f712a614-033f-4b72-a1a9-374482a5bb41")
+		(property "Reference" "U2"
+			(at 237.0933 34.29 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "INA226"
+			(at 237.0933 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
+			(at 255.27 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina226.pdf"
+			(at 243.84 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
+			(at 234.95 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4f8c232e-7753-4352-8819-144e636a6045")
+		)
+		(pin "7"
+			(uuid "2e2a6009-7016-4e15-9604-6aa9ccf3896e")
+		)
+		(pin "1"
+			(uuid "b742809b-6b6b-4e6b-9f4b-bf436735dbf7")
+		)
+		(pin "5"
+			(uuid "0d1e3f03-9692-4374-b4fc-089a35680742")
+		)
+		(pin "6"
+			(uuid "3ab1b760-b111-4de1-8f69-eb6d25f699fb")
+		)
+		(pin "10"
+			(uuid "c1ff088b-338d-4625-be7f-e30d823b3ffe")
+		)
+		(pin "8"
+			(uuid "fd7ccdf1-f55f-4a00-9c0c-0d7cb3cfad0d")
+		)
+		(pin "4"
+			(uuid "8a12e974-592d-4ba4-a097-a503bced83fd")
+		)
+		(pin "9"
+			(uuid "ed08f3a9-9d8e-4634-a28d-328a7cd060d5")
+		)
+		(pin "3"
+			(uuid "7fb9ded3-d3f9-4b84-b4cb-d1902a20b20d")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
+					(reference "U2")
 					(unit 1)
 				)
 			)

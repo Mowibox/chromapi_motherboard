@@ -2109,7 +2109,7 @@
 		)
 		(uuid "09195c87-fc74-4492-af3e-b0fe12f50b71")
 	)
-	(text_box "4.5V-24V Input, 12A\nFsw: kHz"
+	(text_box "4.5V-24V Input, 12A\nFsw: 600kHz"
 		(exclude_from_sim no)
 		(at 124.46 73.66 0)
 		(size 25.4 6.35)

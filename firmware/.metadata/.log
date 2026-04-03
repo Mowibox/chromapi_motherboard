@@ -404,3 +404,33 @@ java.lang.Exception: Resource '/chromapi_stm32_core' does not exist.
 
 !ENTRY org.eclipse.cdt.core 1 0 2026-03-15 16:29:34.728
 !MESSAGE Indexed 'chromapi_stm32_core' (23 sources, 144 headers) in 2.67 sec: 13,537 declarations; 57,424 references; 3 unresolved inclusions; 46 syntax errors; 171 unresolved names (0.24%)
+!SESSION 2026-03-23 19:14:54.440 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-03-23 19:15:06.688
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-03-23 19:15:06.689
+!MESSAGE Log4j2 initialized with config file /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-03-23 19:15:12.335
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-03-25 15:46:49.571 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-03-25 15:47:02.438
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-03-25 15:47:02.439
+!MESSAGE Log4j2 initialized with config file /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-03-25 15:47:11.597
+!MESSAGE Started RMI Server, listening on port 41337
