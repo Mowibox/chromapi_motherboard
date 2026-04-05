@@ -4517,12 +4517,6 @@
 		(uuid "4cb20f8e-4f68-40d5-bdf5-513acd953de2")
 	)
 	(junction
-		(at 50.8 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54a56909-fac7-437e-a8a9-e02eb2808c23")
-	)
-	(junction
 		(at 96.52 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4605,6 +4599,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2e41e35-4f61-40bf-989c-7cdf5e08b6c4")
+	)
+	(junction
+		(at 50.8 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b52b5156-fc18-45c6-b0cb-051e134b1e43")
 	)
 	(junction
 		(at 76.2 138.43)
@@ -4911,16 +4911,6 @@
 			(type default)
 		)
 		(uuid "288a85e4-5f91-4a74-b571-8c0d3ac6dcb7")
-	)
-	(wire
-		(pts
-			(xy 50.8 57.15) (xy 59.69 57.15)
-		)
-		(stroke
-			(width 0.381)
-			(type default)
-		)
-		(uuid "2c90b6ec-c1ea-4dec-ad66-fbb155b52d06")
 	)
 	(wire
 		(pts
@@ -5474,7 +5464,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 54.61) (xy 59.69 54.61)
+			(xy 45.72 54.61) (xy 50.8 54.61)
 		)
 		(stroke
 			(width 0.381)
@@ -5754,6 +5744,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 54.61) (xy 59.69 54.61)
+		)
+		(stroke
+			(width 0.381)
+			(type default)
+		)
+		(uuid "f01c4179-c98a-488b-83ab-a87a3f6c52e3")
+	)
+	(wire
+		(pts
 			(xy 238.76 128.27) (xy 238.76 97.79)
 		)
 		(stroke
@@ -5824,7 +5824,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 57.15) (xy 50.8 57.15)
+			(xy 45.72 57.15) (xy 59.69 57.15)
 		)
 		(stroke
 			(width 0.381)
@@ -14088,6 +14088,16 @@
 		)
 		(uuid "02514267-529d-4827-987f-a4812d478702")
 	)
+	(label "V_BATT"
+		(at 45.72 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "243fe805-b6b1-4460-9216-a42a61365972")
+	)
 	(label "B-"
 		(at 45.72 39.37 180)
 		(effects
@@ -14129,14 +14139,14 @@
 		(uuid "4323567b-c651-4631-af64-2748fcf4a688")
 	)
 	(label "B+"
-		(at 45.72 54.61 180)
+		(at 45.72 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "483e8a35-07f6-4146-aeaf-b48cc82d35de")
+		(uuid "53abdf8e-61ee-4b09-8d26-8afd0c21cb25")
 	)
 	(label "B+"
 		(at 243.84 97.79 0)
@@ -14147,16 +14157,6 @@
 			(justify left bottom)
 		)
 		(uuid "625fa66f-3430-483c-b27d-e045e2a280ec")
-	)
-	(label "V_BATT"
-		(at 45.72 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8ae5bf60-2e6e-41be-ac4c-ad8004a6d96a")
 	)
 	(label "V_BATT"
 		(at 201.93 43.18 180)
@@ -14711,6 +14711,84 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 50.8 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16194e3b-25d5-42c3-ab3a-922e86b150fd")
+		(property "Reference" "#FLG06"
+			(at 50.8 52.705 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 50.8 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 50.8 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fde71877-f03a-419c-83cf-ae4807d9357c")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -19973,84 +20051,6 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 50.8 57.15 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fb2a9f79-ad87-42df-9bd1-6ecc33673b2f")
-		(property "Reference" "#FLG06"
-			(at 50.8 59.055 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 50.8 62.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 50.8 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9e56a4db-6692-43fb-a4f1-c8b67da7b263")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "#FLG06")
 					(unit 1)
 				)
 			)

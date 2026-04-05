@@ -511,7 +511,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.4,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
@@ -541,7 +541,7 @@
         "via_drill": 0.4
       },
       {
-        "clearance": 0.5,
+        "clearance": 0.4,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
@@ -564,15 +564,15 @@
     "netclass_patterns": [
       {
         "netclass": "Power_7V2",
-        "pattern": "B+"
+        "pattern": "*B+*"
       },
       {
         "netclass": "Power_7V2",
-        "pattern": "B-"
+        "pattern": "*B-*"
       },
       {
         "netclass": "Power_7V2",
-        "pattern": "V_SYS"
+        "pattern": "*V_*"
       },
       {
         "netclass": "Audio",
@@ -892,7 +892,7 @@
         "uuid": "d1a31f26-03e0-43e1-89c1-031fe31befc5"
       }
     ],
-    "used_designators": "U2,U12",
+    "used_designators": "#FLG6,U2,U12",
     "variants": []
   },
   "sheets": [

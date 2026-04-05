@@ -2439,6 +2439,10 @@
 		(uuid "835b4779-3970-49e7-a621-8cd680ab76ed")
 	)
 	(no_connect
+		(at 142.24 123.19)
+		(uuid "895d2091-2fe1-4634-825e-962db349b7d8")
+	)
+	(no_connect
 		(at 142.24 97.79)
 		(uuid "95b17faf-c011-46f0-a3f5-e066493b4d6f")
 	)
@@ -2473,10 +2477,6 @@
 	(no_connect
 		(at 142.24 102.87)
 		(uuid "e0a16a9d-27b5-4f8b-b9d8-f734dd6c5da3")
-	)
-	(no_connect
-		(at 154.94 120.65)
-		(uuid "e9c9bd33-5e03-4167-b71d-78fd4007b8bf")
 	)
 	(no_connect
 		(at 142.24 95.25)
@@ -10932,6 +10932,17 @@
 		)
 		(uuid "e0c3838c-39be-43b7-ae60-6e6d179060bb")
 	)
+	(hierarchical_label "NRST"
+		(shape input)
+		(at 154.94 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1b7ef79f-8433-4c0d-8f93-a6cf004f9622")
+	)
 	(hierarchical_label "MIC_DOUT"
 		(shape input)
 		(at 154.94 123.19 0)
@@ -10997,17 +11008,6 @@
 			(justify left)
 		)
 		(uuid "b4c3da9a-0c61-4bb4-b84b-de0f16c53ff9")
-	)
-	(hierarchical_label "NRST"
-		(shape input)
-		(at 142.24 123.19 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "edd50782-6d95-472d-8227-af7fadf3d163")
 	)
 	(symbol
 		(lib_id "power:GND")

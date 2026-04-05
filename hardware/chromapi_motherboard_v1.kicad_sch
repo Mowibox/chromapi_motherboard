@@ -762,7 +762,7 @@
 		)
 		(uuid "adf2ce3f-da17-40d5-a1de-7bd07a2a2904")
 	)
-	(text "List of devices:\n[Core Logic] \n- STM32G431KBT6 (MCU) & Raspberry Pi\n[Motion Control] \n- SN74LVC1G126 & SN74LVC1G125 for servo communication\n[Power System] \n- TPS568230 (5V DC-DC converter), LD39050 (3.3V LDO)\nand INA226 (I2C Power Monitor)\n[Battery Management] \n- CN3302 (USB-C Charger) and HY2120 (BMS)\n[Sensors] \n- BMI088 6-DOF IMU and 4x Contact switches \n[Audio & Signal] \n- MAX98357A (I2S Amplifier), INMP441 (I2S Microphone),\nand SN74AHCT1G125 (LED level shifter)"
+	(text "List of devices:\n[Core Logic] \n- STM32G431KBT6 (MCU) & Raspberry Pi\n[Motion Control] \n- SN74LVC1G126 & SN74LVC1G125 for servo communication\n[Power System] \n- TPS51388 (5V DC-DC converter), LD39050 (3.3V LDO)\nand INA226 (I2C Power Monitor)\n[Battery Management] \n- CN3302 (USB-C Charger) and HY2120 (BMS)\n[Sensors] \n- BMI088 6-DOF IMU and 4x Contact switches \n[Audio & Signal] \n- MAX98357A (I2S Amplifier), INMP441 (I2S Microphone),\nand SN74AHCT1G125 (LED level shifter)"
 		(exclude_from_sim no)
 		(at 13.462 173.736 0)
 		(effects
