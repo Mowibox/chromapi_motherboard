@@ -154,7 +154,7 @@
           "td_onpthpad": true,
           "td_onroundshapesonly": false,
           "td_onsmdpad": true,
-          "td_ontrackend": false,
+          "td_ontrackend": true,
           "td_onvia": true
         }
       ],
@@ -194,7 +194,8 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.25
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -526,7 +527,7 @@
         "via_drill": 0.3
       },
       {
-        "clearance": 0.3,
+        "clearance": 0.25,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
