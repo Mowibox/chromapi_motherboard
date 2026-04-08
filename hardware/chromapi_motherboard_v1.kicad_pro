@@ -543,7 +543,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "bom/chromapi_motherboard_v1_bom.csv",
+    "bom_export_filename": "bom\\chromapi_motherboard_v1.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -748,6 +748,18 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFR",
+          "name": "MFR",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFN",
+          "name": "MFN",
           "show": false
         }
       ],

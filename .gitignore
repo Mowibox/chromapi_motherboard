@@ -40,7 +40,7 @@ fp-info-cache
 *.kicad_prl
 
 # History files
-.history/
+*.history/
 
 # For STM32CubeIDE: https://www.st.com/en/development-tools/stm32cubeide.html
 
@@ -106,9 +106,6 @@ types_c.taghl
 
 #CtrlP
 ctrlp.root
-
-#html
-*.html
 
 # Drivers
 Drivers/
