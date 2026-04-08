@@ -39,6 +39,8 @@ fp-info-cache
 # Local project settings
 *.kicad_prl
 
+# History files
+hardware/.history/
 
 # For STM32CubeIDE: https://www.st.com/en/development-tools/stm32cubeide.html
 
