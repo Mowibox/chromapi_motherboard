@@ -14800,7 +14800,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Chromapi_FP:VAB0013A-MFG"
+		(property "Footprint" "Chromapi_FP:TPS513885VABR"
 			(at 119.38 43.18 0)
 			(hide yes)
 			(show_name no)

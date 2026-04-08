@@ -655,7 +655,7 @@
 							)
 						)
 					)
-					(number "S1"
+					(number "SH"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -14491,6 +14491,125 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:USB_C_Receptacle_USB2.0_14P")
+		(at 76.2 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fca2fc7-9b1f-4278-8f84-f11d0743f1e5")
+		(property "Reference" "J3"
+			(at 76.2 90.17 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB_C_Receptacle_USB2.0_14P"
+			(at 76.2 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+			(at 80.01 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+			(at 80.01 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
+			(at 76.2 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "B1"
+			(uuid "b86878f9-ed08-4067-918d-8c781c03a840")
+		)
+		(pin "A1"
+			(uuid "bf2a56c1-916b-489f-8dd5-2bb10f67e3f8")
+		)
+		(pin "A7"
+			(uuid "ffdb4157-071c-4be6-909c-b3b804ac77f0")
+		)
+		(pin "A5"
+			(uuid "ae86fd42-55b2-4cce-879f-c1caf281108c")
+		)
+		(pin "A6"
+			(uuid "0c3fafb8-9d57-42af-943b-0dc3197732d3")
+		)
+		(pin "A9"
+			(uuid "75219694-5c7d-4438-accd-f39268f34b21")
+		)
+		(pin "A12"
+			(uuid "eb5d08bb-9fc2-4ff0-8ae8-91b639ef7904")
+		)
+		(pin "A4"
+			(uuid "9b63a17a-16eb-40e5-b75f-99aa615113de")
+		)
+		(pin "B5"
+			(uuid "f195b8aa-e572-4f78-9304-71059c6b343b")
+		)
+		(pin "B7"
+			(uuid "4b6a4506-2173-44df-a0a0-3427a27ba761")
+		)
+		(pin "B9"
+			(uuid "b6491015-8f3d-4398-a96d-4e9960cd7244")
+		)
+		(pin "B4"
+			(uuid "6075d4c4-de84-4c8e-bb3b-ea9bcd69bf39")
+		)
+		(pin "B12"
+			(uuid "ed711570-ee50-4ada-8819-8dc455c8a8ef")
+		)
+		(pin "B6"
+			(uuid "f2ab2017-af7c-47d0-96dc-7e6067614ef3")
+		)
+		(pin "SH"
+			(uuid "164aa3de-6d8d-4560-b8e6-fb74f1a8bcc7")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "hy2120:HY2120")
 		(at 158.75 43.18 0)
 		(unit 1)
@@ -20051,180 +20170,6 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:USB_C_Receptacle_USB2.0_14P")
-		(at 76.2 113.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc9eb44c-a144-43c4-892c-4b964e0e796b")
-		(property "Reference" "J3"
-			(at 76.2 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "USB_C_Receptacle_USB2.0_14P"
-			(at 76.2 92.71 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
-			(at 80.01 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://github.com/Mowibox/chromapi_motherboard/blob/main/docs/datasheets/usb_type-c.zip"
-			(at 80.01 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "USB 2.0-only 14P Type-C Receptacle connector"
-			(at 76.2 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 76.2 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 76.2 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 76.2 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 76.2 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 76.2 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "A4"
-			(uuid "a6d9d84e-beac-454d-9aa1-93b4f44ea7eb")
-		)
-		(pin "A12"
-			(uuid "7e565bf2-1d78-42ea-9292-e5dd40899370")
-		)
-		(pin "A1"
-			(uuid "4026bc78-7278-4660-935e-f661cd5b2098")
-		)
-		(pin "A5"
-			(uuid "1cf60348-aec1-450d-b374-b3b76da4cf29")
-		)
-		(pin "B9"
-			(uuid "7d61043a-121f-4042-be10-ffc62b22bd68")
-		)
-		(pin "A6"
-			(uuid "90b7ada4-d37e-4044-9ee3-690f4c74b270")
-		)
-		(pin "B1"
-			(uuid "10cea400-bbef-43a5-aa26-2a930129c504")
-		)
-		(pin "B6"
-			(uuid "29bce444-ac41-4645-871c-83275ec9177b")
-		)
-		(pin "B7"
-			(uuid "50b7f250-fcf9-4918-878c-333a56b197af")
-		)
-		(pin "A9"
-			(uuid "f033906d-c9dc-4aa5-a801-44fe734600a6")
-		)
-		(pin "B4"
-			(uuid "f0143a21-2d8a-4785-a166-b4260966edcb")
-		)
-		(pin "S1"
-			(uuid "e275efcc-b22b-4665-adae-b1e2142f02f1")
-		)
-		(pin "A7"
-			(uuid "3362f6e6-b75e-453c-be7e-2b5074a53605")
-		)
-		(pin "B5"
-			(uuid "b39cce8d-1507-439a-abea-dc9f4ffefbc2")
-		)
-		(pin "B12"
-			(uuid "3ccb9a17-ad84-4e38-a185-0ebb213bc703")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "J3")
 					(unit 1)
 				)
 			)
