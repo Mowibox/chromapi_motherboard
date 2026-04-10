@@ -15526,7 +15526,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 135.89 97.79 90)
+		(at 135.89 97.79 270)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15534,7 +15535,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "35282532-7ccd-40c9-94da-ae196ddabc30")
 		(property "Reference" "R9"
 			(at 135.89 91.44 90)
@@ -15556,7 +15556,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 135.89 99.568 90)
 			(hide yes)
 			(show_name no)
