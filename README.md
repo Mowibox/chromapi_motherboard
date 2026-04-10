@@ -10,7 +10,7 @@ This repo contains a dedicated control shield designed to manage the high-speed 
 ![Stars](https://img.shields.io/github/stars/Mowibox/chromapi_motherboard?style=social)
 
 <p align="center">
-  <img alt="chromapi_motherboard" src=""/>
+  <img alt="chromapi_motherboard" src="chromapi_motherboard.png"/>
 </p>
 
 *Designed with KiCAD 10.*
