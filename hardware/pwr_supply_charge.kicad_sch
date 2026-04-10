@@ -14847,7 +14847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16194e3b-25d5-42c3-ab3a-922e86b150fd")
-		(property "Reference" "#FLG06"
+		(property "Reference" "#FLG05"
 			(at 50.8 52.705 0)
 			(hide yes)
 			(show_name no)
@@ -14907,7 +14907,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "#FLG06")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -18965,7 +18965,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8391fe2-8c29-45f6-8098-8b131ab0cfb6")
-		(property "Reference" "#FLG08"
+		(property "Reference" "#FLG07"
 			(at 97.79 95.885 0)
 			(hide yes)
 			(show_name no)
@@ -19025,7 +19025,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "#FLG08")
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -19652,7 +19652,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ede1221c-f369-48c5-bffc-05d3d95bba59")
-		(property "Reference" "#FLG07"
+		(property "Reference" "#FLG06"
 			(at 204.47 65.405 0)
 			(hide yes)
 			(show_name no)
@@ -19712,7 +19712,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/2dc5047f-e6b9-4c1e-8ac3-300835122eb4"
-					(reference "#FLG07")
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
