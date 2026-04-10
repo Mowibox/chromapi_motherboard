@@ -12244,6 +12244,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 256.54 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "493d79e9-f751-4933-93fa-21c027a22bb5")
 		)
@@ -12695,6 +12706,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f9c712fe-86aa-49b6-ad30-e40b92d0afca")
 		)
@@ -12901,6 +12923,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 107.95 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 107.95 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -13172,7 +13205,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MP" "INMP441ACEZ-R7"
+		(property "MPN" "INMP441ACEZ-R7"
 			(at 212.09 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -13196,18 +13229,6 @@
 				(justify bottom)
 			)
 		)
-		(property "Availability" "In Stock"
-			(at 212.09 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "MANUFACTURER" "TDK InvenSense"
 			(at 212.09 50.8 0)
 			(hide yes)
@@ -13220,7 +13241,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "JLCPCB Part#" "C22379536"
 			(at 212.09 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -13231,40 +13252,7 @@
 				)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 212.09 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 212.09 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 212.09 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "MP" ""
 			(at 212.09 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -13433,6 +13421,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 234.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "27c07868-5a6c-40ec-a6df-156acda8c8b4")
 		)
@@ -13538,6 +13537,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 114.3 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 114.3 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -13659,6 +13669,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 238.76 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 238.76 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -13806,6 +13827,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 40.64 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f8f240cf-9aab-4e6e-a577-68799be5cbf4")
 		)
@@ -13917,6 +13949,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 247.65 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 247.65 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -14330,7 +14373,7 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "MPN" "MAX98357AETE+T"
 			(at 62.23 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -14341,7 +14384,7 @@
 				)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "JLCPCB Part#" "C910544"
 			(at 62.23 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -14352,29 +14395,7 @@
 				)
 			)
 		)
-		(property "Author" ""
-			(at 62.23 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 62.23 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "MP" ""
 			(at 62.23 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -14561,6 +14582,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 36.83 59.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 36.83 59.69 90)
 			(hide yes)
 			(show_name no)
@@ -14870,6 +14902,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 193.04 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8a4e9105-ae55-4aed-8e62-6ef5874b57d0")
 		)
@@ -15037,7 +15080,7 @@
 				)
 			)
 		)
-		(property "Author" ""
+		(property "MPN" "BMI088"
 			(at 80.01 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -15048,7 +15091,7 @@
 				)
 			)
 		)
-		(property "License" ""
+		(property "JLCPCB Part#" "C194919"
 			(at 80.01 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -15059,7 +15102,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "MP" ""
 			(at 80.01 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -15306,6 +15349,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 184.15 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "441f01fc-b9d4-4e70-8439-9b6ad148de6b")
 		)
@@ -15433,6 +15487,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 93.98 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 93.98 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15648,6 +15713,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 184.15 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c481986c-498f-4bad-a015-83c6fc382424")
 		)
@@ -15785,6 +15861,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 234.95 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7e131d71-8c05-462b-9678-71716d8b4a7e")
 		)
@@ -15912,6 +15999,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 171.45 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 171.45 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -16138,6 +16236,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 194.31 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b5c47cf6-af0c-4a71-847b-2e4cf21527eb")
 		)
@@ -16265,6 +16374,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 39.37 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 39.37 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -16726,6 +16846,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 171.45 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a2bd3540-d937-40ab-956e-583388cee102")
 		)
@@ -16863,6 +16994,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 193.04 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "87145204-50fb-4348-82f6-2e34a9798385")
 		)
@@ -16990,6 +17132,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 52.07 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 52.07 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -17275,6 +17428,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 247.65 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 247.65 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -17583,6 +17747,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 86.36 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fb6637cb-d49c-45c2-83ab-0263e7f97069")
 		)
@@ -17792,6 +17967,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 90.17 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 90.17 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -18496,6 +18682,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 256.54 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 256.54 143.51 0)
 			(hide yes)
 			(show_name no)

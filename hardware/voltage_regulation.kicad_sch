@@ -11799,51 +11799,7 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 182.88 48.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 182.88 48.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 182.88 48.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 182.88 48.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "MP" ""
 			(at 182.88 48.26 90)
 			(hide yes)
 			(show_name no)
@@ -12306,6 +12262,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 83.82 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c4340eda-c2a9-4d7d-8403-1126a010232a")
 		)
@@ -12432,6 +12399,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 111.76 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 111.76 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -12655,6 +12633,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 68.58 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "92a776d2-63ef-47cb-b6ae-e6927e4b3bc5")
 		)
@@ -12791,6 +12780,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0b212121-4c29-4187-9053-a33989b6dbb6")
 		)
@@ -12915,6 +12915,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 182.88 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 182.88 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -13061,6 +13072,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 81.28 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "09d15d28-a542-4f43-9e6b-2c3147449bff")
 		)
@@ -13187,6 +13209,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 96.52 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 96.52 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -13501,7 +13534,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Sim.Device" ""
+		(property "JLCPCB Part#" "C132827"
 			(at 201.93 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -13512,40 +13545,7 @@
 				)
 			)
 		)
-		(property "Sim.Type" ""
-			(at 201.93 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 201.93 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 201.93 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "MP" ""
 			(at 201.93 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -13704,6 +13704,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 209.55 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "74d6741e-2ab3-4a11-b0b0-979fdc24e0e1")
 		)
@@ -13838,6 +13849,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 96.52 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ba4543bc-ed96-44c1-808f-a307544bc00f")
 		)
@@ -13962,6 +13984,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 200.66 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 200.66 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -14108,6 +14141,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 177.8 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "bbde6605-43ad-454e-9447-cc62295c25f0")
 		)
@@ -14212,51 +14256,7 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 111.76 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 111.76 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 111.76 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 111.76 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "JLCPCB Part#" "C6650185"
 			(at 111.76 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -14404,6 +14404,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 200.66 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fcdf57d5-89c8-4317-bae4-3d656d81affa")
 		)
@@ -14528,6 +14539,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 160.02 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 160.02 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -14753,6 +14775,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 110.49 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "208a3038-d19a-4689-94a8-d84c973f3a5c")
 		)
@@ -14825,6 +14858,39 @@
 			)
 		)
 		(property "Description" "4.5-V to 24-V input, 12-A synchronous buck converter with adjustable output"
+			(at 119.38 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C41935536"
+			(at 119.38 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TPS513885VABR"
+			(at 119.38 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 119.38 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -14992,6 +15058,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 81.28 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 81.28 121.92 90)
 			(hide yes)
 			(show_name no)
@@ -15182,51 +15259,7 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 96.52 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 96.52 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 96.52 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 96.52 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "JLCPCB Part#" "C6041957"
 			(at 96.52 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -15373,6 +15406,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 77.47 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "304443ea-ed5f-4d86-ad07-e0fa46605ba0")
 		)
@@ -15497,6 +15541,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 111.76 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 111.76 121.92 90)
 			(hide yes)
 			(show_name no)
@@ -15710,6 +15765,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 200.66 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 200.66 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -16014,6 +16080,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 223.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a0724a6f-40d2-43f7-b6d6-d16fdcb57923")
 		)
@@ -16140,6 +16217,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 217.17 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 217.17 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -16286,6 +16374,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 90.17 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "21e30866-4d19-4e57-bc82-33931f7c7151")
 		)
@@ -16412,6 +16511,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 232.41 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -16749,7 +16859,7 @@
 				)
 			)
 		)
-		(property "MPN" "  150060SS55040"
+		(property "MPN" "150060SS55040"
 			(at 81.28 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -16760,51 +16870,7 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 81.28 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 81.28 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 81.28 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 81.28 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
+		(property "JLCPCB Part#" "C5478395"
 			(at 81.28 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -17017,6 +17083,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 168.91 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 168.91 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -17320,6 +17397,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 172.72 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a8e55c55-16a5-4439-8af1-3cdaea2f41f2")
 		)
@@ -17456,6 +17544,17 @@
 				)
 			)
 		)
+		(property "MP" ""
+			(at 71.12 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "191e08f3-6a50-461a-a39e-a530d62cf5b7")
 		)
@@ -17582,6 +17681,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 100.33 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 100.33 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -17797,6 +17907,17 @@
 			)
 		)
 		(property "Manufacturer" ""
+			(at 224.79 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
 			(at 224.79 53.34 0)
 			(hide yes)
 			(show_name no)

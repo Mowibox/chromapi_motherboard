@@ -1,6 +1,6 @@
 # chromapi_motherboard
 
-This repo contains a dedicated control shield designed to manage the high-speed motion, power distribution, and sensor integration required for the quadruped robot Chromapi.
+This repo contains a dedicated control HAT designed to manage the high-speed motion, power distribution, and sensor integration required for the quadruped robot Chromapi.
 
 ![Chromapi](https://custom-icon-badges.demolab.com/badge/Chromapi-motherboard-489648?logo=chromapi)
 ![KiCad](https://img.shields.io/badge/KiCad-10.0+-2849bf?logo=kicad)
