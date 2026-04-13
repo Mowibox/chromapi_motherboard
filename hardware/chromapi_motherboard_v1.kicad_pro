@@ -62,6 +62,14 @@
       ],
       "drc_exclusions": [
         [
+          "solder_mask_bridge|106050277|80443498|8768c7b2-e32e-427f-a46b-da5ecf894406|ae6d0eec-875e-47e8-8249-2fe9a632b784",
+          ""
+        ],
+        [
+          "solder_mask_bridge|106279991|80832749|8768c7b2-e32e-427f-a46b-da5ecf894406|ae6d0eec-875e-47e8-8249-2fe9a632b784",
+          ""
+        ],
+        [
           "solder_mask_bridge|147552500|116350000|1b7f9556-87b5-4ba1-8940-257c3a5e6a4f|d62da89b-933d-4caf-ab9e-b929faa7bf8b",
           ""
         ],
