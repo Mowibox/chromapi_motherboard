@@ -17869,6 +17869,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 156.21 182.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a13268d1-34ea-45a7-833f-19a0d125bd4b")
 		)
@@ -18016,6 +18027,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 125.73 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5"
@@ -18150,6 +18172,17 @@
 			)
 		)
 		(property "MP" ""
+			(at 149.86 182.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 149.86 182.88 90)
 			(hide yes)
 			(show_name no)
@@ -18307,6 +18340,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 120.65 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5"
@@ -18441,6 +18485,17 @@
 			)
 		)
 		(property "MP" ""
+			(at 115.57 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 115.57 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -18595,6 +18650,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 143.51 182.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "10d90fdc-e2e7-45af-b7c6-654633275804")
 		)
@@ -18718,6 +18784,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 134.62 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5"
@@ -18812,7 +18889,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -18927,6 +19004,17 @@
 			)
 		)
 		(property "MP" ""
+			(at 140.97 187.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 140.97 187.96 90)
 			(hide yes)
 			(show_name no)
@@ -19074,6 +19162,17 @@
 			)
 		)
 		(property "MP" ""
+			(at 162.56 182.88 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 162.56 182.88 90)
 			(hide yes)
 			(show_name no)

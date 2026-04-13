@@ -62,7 +62,7 @@
       ],
       "drc_exclusions": [
         [
-          "solder_mask_bridge|106050277|80443498|8768c7b2-e32e-427f-a46b-da5ecf894406|ae6d0eec-875e-47e8-8249-2fe9a632b784",
+          "solder_mask_bridge|106057182|80447335|8768c7b2-e32e-427f-a46b-da5ecf894406|ae6d0eec-875e-47e8-8249-2fe9a632b784",
           ""
         ],
         [
@@ -877,7 +877,7 @@
         "uuid": "d1a31f26-03e0-43e1-89c1-031fe31befc5"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J1-14,R1-38,#FLG1-8,D1-9,#PWR1-117,C1-43,FB1-3,FID1-3,H1-5,L1-2,M1,MK1,Q1-4,TP1-6,U1-11",
     "variants": []
   },
   "sheets": [

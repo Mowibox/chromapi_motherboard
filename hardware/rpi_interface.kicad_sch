@@ -11421,6 +11421,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 82.55 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "bdf5189e-2588-4fcd-9b93-2cf00aec3c16")
 		)
@@ -11707,7 +11718,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 210.312 111.76 90)
 			(hide yes)
 			(show_name no)
@@ -11796,6 +11807,39 @@
 			)
 		)
 		(property "MP" ""
+			(at 212.09 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW06031K00JNEAC"
+			(at 212.09 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C844135"
+			(at 212.09 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 212.09 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -12043,6 +12087,17 @@
 			)
 		)
 		(property "MP" ""
+			(at 147.32 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 147.32 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -12809,6 +12864,39 @@
 				)
 			)
 		)
+		(property "MPN" "470531000"
+			(at 222.25 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C240840"
+			(at 222.25 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
+			(at 222.25 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "54f4a187-6cba-4ac0-8381-c5c06ad8198b")
 		)
@@ -13042,7 +13130,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RVT10UF16V67RV0012"
 			(at 71.12 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -13053,7 +13141,18 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" ""
+		(property "JLCPCB Part#" "C2895275"
+			(at 71.12 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 71.12 116.84 0)
 			(hide yes)
 			(show_name no)

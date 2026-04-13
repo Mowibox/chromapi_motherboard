@@ -11832,6 +11832,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 182.88 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b4462936-df4b-4d7d-927a-650d27d476d7")
 		)
@@ -12317,6 +12328,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 83.82 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c4340eda-c2a9-4d7d-8403-1126a010232a")
 		)
@@ -12354,7 +12376,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "560"
+		(property "Value" "1k"
 			(at 105.918 129.286 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12365,7 +12387,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 113.538 128.27 90)
 			(hide yes)
 			(show_name no)
@@ -12454,6 +12476,39 @@
 			)
 		)
 		(property "MP" ""
+			(at 111.76 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW06031K00JNEAC"
+			(at 111.76 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C844135"
+			(at 111.76 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 111.76 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -12688,6 +12743,39 @@
 				)
 			)
 		)
+		(property "MPN" "CRCW0603100KFKEA"
+			(at 68.58 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C844916"
+			(at 68.58 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
+			(at 68.58 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "92a776d2-63ef-47cb-b6ae-e6927e4b3bc5")
 		)
@@ -12825,6 +12913,39 @@
 			)
 		)
 		(property "MP" ""
+			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW060368K0FKEA"
+			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C844803"
+			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 77.47 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -13002,6 +13123,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 182.88 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7a54523f-77bc-480b-bb18-62099d35234b")
 		)
@@ -13039,7 +13171,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2.7k"
+		(property "Value" "1k"
 			(at 75.184 129.286 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13050,7 +13182,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 83.058 128.27 90)
 			(hide yes)
 			(show_name no)
@@ -13149,6 +13281,39 @@
 				)
 			)
 		)
+		(property "MPN" "CRCW06031K00JNEAC"
+			(at 81.28 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" ""
+			(at 81.28 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
+			(at 81.28 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "09d15d28-a542-4f43-9e6b-2c3147449bff")
 		)
@@ -13197,7 +13362,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 98.298 128.27 90)
 			(hide yes)
 			(show_name no)
@@ -13286,6 +13451,39 @@
 			)
 		)
 		(property "MP" ""
+			(at 96.52 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW06031K00JNEAC"
+			(at 96.52 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C844135"
+			(at 96.52 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 96.52 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -13622,6 +13820,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 201.93 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fbc0b347-cbc6-4d47-acdc-218173ca6760")
 		)
@@ -13803,6 +14012,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 209.55 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "74d6741e-2ab3-4a11-b0b0-979fdc24e0e1")
 		)
@@ -13824,7 +14044,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -13938,6 +14158,39 @@
 			)
 		)
 		(property "MP" ""
+			(at 96.52 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 96.52 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" ""
+			(at 96.52 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 96.52 121.92 90)
 			(hide yes)
 			(show_name no)
@@ -14115,6 +14368,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 200.66 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7ba7a0a2-91c2-420b-971a-65592738c03f")
 		)
@@ -14262,6 +14526,39 @@
 				)
 			)
 		)
+		(property "MPN" "0603X5R105K160NT"
+			(at 177.8 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C49326357"
+			(at 177.8 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
+			(at 177.8 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "bbde6605-43ad-454e-9447-cc62295c25f0")
 		)
@@ -14367,6 +14664,17 @@
 			)
 		)
 		(property "JLCPCB Part#" "C6650185"
+			(at 111.76 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 111.76 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -14547,6 +14855,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 200.66 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fcdf57d5-89c8-4317-bae4-3d656d81affa")
 		)
@@ -14705,6 +15024,17 @@
 		)
 		(property "JLCPCB Part#" "C844915"
 			(at 160.02 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
+			(at 160.02 43.18 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14940,6 +15270,39 @@
 				)
 			)
 		)
+		(property "MPN" "CRCW0603100KFKEA"
+			(at 110.49 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C844916"
+			(at 110.49 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
+			(at 110.49 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "208a3038-d19a-4689-94a8-d84c973f3a5c")
 		)
@@ -15055,6 +15418,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 119.38 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "7"
 			(uuid "07af831e-d72d-4b80-b9e8-1f972f17a194")
 		)
@@ -15109,7 +15483,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -15223,6 +15597,39 @@
 			)
 		)
 		(property "MP" ""
+			(at 81.28 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 81.28 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" ""
+			(at 81.28 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 81.28 121.92 90)
 			(hide yes)
 			(show_name no)
@@ -15424,6 +15831,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 96.52 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7331ab6d-4cbb-44f9-886b-441f11b8bd6b")
 		)
@@ -15593,6 +16011,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 77.47 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "304443ea-ed5f-4d86-ad07-e0fa46605ba0")
 		)
@@ -15614,7 +16043,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -15728,6 +16157,17 @@
 			)
 		)
 		(property "MP" ""
+			(at 111.76 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 111.76 121.92 90)
 			(hide yes)
 			(show_name no)
@@ -15974,6 +16414,17 @@
 			)
 		)
 		(property "JLCPCB Part#" "C137797"
+			(at 200.66 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 200.66 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -16289,6 +16740,39 @@
 				)
 			)
 		)
+		(property "MPN" "0603X5R105K160NT"
+			(at 223.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C49326357"
+			(at 223.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
+			(at 223.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a0724a6f-40d2-43f7-b6d6-d16fdcb57923")
 		)
@@ -16448,6 +16932,17 @@
 			)
 		)
 		(property "JLCPCB Part#" "C49326685"
+			(at 217.17 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 217.17 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -16627,6 +17122,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 90.17 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "21e30866-4d19-4e57-bc82-33931f7c7151")
 		)
@@ -16786,6 +17292,17 @@
 			)
 		)
 		(property "JLCPCB Part#" "C49326685"
+			(at 232.41 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -17145,6 +17662,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 81.28 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "3f5c583d-03a7-480c-9dac-fed3295ac769")
 		)
@@ -17381,6 +17909,17 @@
 		)
 		(property "JLCPCB Part#" "C1591"
 			(at 168.91 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
+			(at 168.91 43.18 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17639,7 +18178,7 @@
 				)
 			)
 		)
-		(property "Sim.Type" ""
+		(property "Sim.Type" "CRCW06031K00JNEAC"
 			(at 172.72 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -17684,6 +18223,39 @@
 			)
 		)
 		(property "MP" ""
+			(at 172.72 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 172.72 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C844135"
+			(at 172.72 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 172.72 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -17863,6 +18435,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 71.12 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "191e08f3-6a50-461a-a39e-a530d62cf5b7")
 		)
@@ -18022,6 +18605,17 @@
 			)
 		)
 		(property "JLCPCB Part#" "C2167658"
+			(at 100.33 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 100.33 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -18270,6 +18864,17 @@
 			)
 		)
 		(property "JLCPCB Part#" "C49326685"
+			(at 224.79 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 224.79 53.34 0)
 			(hide yes)
 			(show_name no)

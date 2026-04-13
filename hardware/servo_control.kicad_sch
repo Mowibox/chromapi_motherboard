@@ -9354,6 +9354,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 134.62 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7eab8d96-72a6-4478-9fe1-d3d40f278d87")
 		)
@@ -9519,6 +9530,17 @@
 			)
 		)
 		(property "MP" ""
+			(at 170.18 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 170.18 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -9704,6 +9726,17 @@
 				)
 			)
 		)
+		(property "v" ""
+			(at 170.18 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3e6e799f-4a12-4e23-bafe-6ae152ab6c31")
 		)
@@ -9790,6 +9823,17 @@
 			)
 		)
 		(property "MP" ""
+			(at 134.62 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "v" ""
 			(at 134.62 90.17 0)
 			(hide yes)
 			(show_name no)
