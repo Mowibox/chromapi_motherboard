@@ -1426,183 +1426,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -12027,7 +11850,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -12793,7 +12616,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -12998,7 +12821,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "Device:C")
 		(at 71.12 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -13010,7 +12833,7 @@
 		(fields_autoplaced yes)
 		(uuid "f6729ded-7fd6-4d8d-ba8b-4e74cb15f599")
 		(property "Reference" "C42"
-			(at 74.93 114.6809 0)
+			(at 74.93 115.5699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13021,7 +12844,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 74.93 117.2209 0)
+			(at 74.93 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13031,7 +12854,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 72.0852 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -13053,7 +12876,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 71.12 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -13130,7 +12953,7 @@
 				)
 			)
 		)
-		(property "MPN" "RVT10UF16V67RV0012"
+		(property "MPN" "CL21A106MQFNNNE"
 			(at 71.12 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -13141,7 +12964,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C2895275"
+		(property "JLCPCB Part#" "C41893"
 			(at 71.12 116.84 0)
 			(hide yes)
 			(show_name no)

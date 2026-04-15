@@ -13990,7 +13990,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805X5R226M100NT"
+		(property "MPN" "CL21A226MAQNNNE"
 			(at 209.55 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -14001,7 +14001,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C49326685"
+		(property "JLCPCB Part#" "C45783"
 			(at 209.55 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -14526,7 +14526,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603X5R105K160NT"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 177.8 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -14537,7 +14537,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C49326357"
+		(property "JLCPCB Part#" "C15849"
 			(at 177.8 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -14664,17 +14664,6 @@
 			)
 		)
 		(property "JLCPCB Part#" "C6650185"
-			(at 111.76 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "v" ""
 			(at 111.76 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -15831,17 +15820,6 @@
 				)
 			)
 		)
-		(property "v" ""
-			(at 96.52 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "7331ab6d-4cbb-44f9-886b-441f11b8bd6b")
 		)
@@ -16740,7 +16718,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603X5R105K160NT"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 223.52 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -16751,7 +16729,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C49326357"
+		(property "JLCPCB Part#" "C15849"
 			(at 223.52 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -16920,7 +16898,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805X5R226M100NT"
+		(property "MPN" "CL21A226MAQNNNE"
 			(at 217.17 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -16931,7 +16909,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C49326685"
+		(property "JLCPCB Part#" "C45783"
 			(at 217.17 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -17280,7 +17258,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805X5R226M100NT"
+		(property "MPN" "CL21A226MAQNNNE"
 			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -17291,7 +17269,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C49326685"
+		(property "JLCPCB Part#" "C45783"
 			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -17652,17 +17630,6 @@
 			)
 		)
 		(property "JLCPCB Part#" "C5478395"
-			(at 81.28 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "v" ""
 			(at 81.28 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -18852,7 +18819,7 @@
 				)
 			)
 		)
-		(property "MPN" "0805X5R226M100NT"
+		(property "MPN" "CL21A226MAQNNNE"
 			(at 224.79 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -18863,7 +18830,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C49326685"
+		(property "JLCPCB Part#" "C45783"
 			(at 224.79 53.34 0)
 			(hide yes)
 			(show_name no)

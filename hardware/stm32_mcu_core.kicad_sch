@@ -644,183 +644,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:FerriteBead_Small"
 			(pin_numbers
 				(hide yes)
@@ -17165,7 +16988,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "Device:C")
 		(at 87.63 181.61 0)
 		(unit 1)
 		(body_style 1)
@@ -17177,7 +17000,7 @@
 		(fields_autoplaced yes)
 		(uuid "73e6e16d-660a-4cf7-bc39-1b9f519412d7")
 		(property "Reference" "C25"
-			(at 91.44 179.4509 0)
+			(at 91.44 180.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17188,7 +17011,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 91.44 181.9909 0)
+			(at 91.44 182.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17198,7 +17021,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 88.5952 185.42 0)
 			(hide yes)
 			(show_name no)
@@ -17220,7 +17043,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "Unpolarized capacitor"
 			(at 87.63 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -17297,7 +17120,7 @@
 				)
 			)
 		)
-		(property "MPN" "RVT10UF16V67RV0012"
+		(property "MPN" "CL21A106MQFNNNE"
 			(at 87.63 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -17308,7 +17131,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C2895275"
+		(property "JLCPCB Part#" "C41893"
 			(at 87.63 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -17508,7 +17331,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -17967,7 +17790,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603X5R105K160NT"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 104.14 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -17978,7 +17801,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C49326357"
+		(property "JLCPCB Part#" "C15849"
 			(at 104.14 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -18981,7 +18804,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "C41384131"
+		(property "Manufacturer" ""
 			(at 93.98 176.53 90)
 			(hide yes)
 			(show_name no)
@@ -19003,7 +18826,7 @@
 				)
 			)
 		)
-		(property "MPN" "XRCB2012U201-2R5TF"
+		(property "MPN" "MPZ2012S331AT000"
 			(at 93.98 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -19014,7 +18837,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" ""
+		(property "JLCPCB Part#" "C76819"
 			(at 93.98 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -19809,17 +19632,6 @@
 				)
 			)
 		)
-		(property "v" ""
-			(at 173.99 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "19"
 			(uuid "2d177577-8ba1-47dd-8dc7-80b272acd6da")
 		)
@@ -20603,7 +20415,7 @@
 				)
 			)
 		)
-		(property "MPN" "FRC0402J331 TS"
+		(property "MPN" "0402WGF3300TCE"
 			(at 251.46 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -20614,7 +20426,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C2906929"
+		(property "JLCPCB Part#" "C25104"
 			(at 251.46 113.03 0)
 			(hide yes)
 			(show_name no)

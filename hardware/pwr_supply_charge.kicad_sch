@@ -14518,7 +14518,7 @@
 				)
 			)
 		)
-		(property "MPN" "FRC0402J331 TS"
+		(property "MPN" "0402WGF3300TCE"
 			(at 129.54 35.56 90)
 			(hide yes)
 			(show_name no)
@@ -14529,7 +14529,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C2906929"
+		(property "JLCPCB Part#" "C25104"
 			(at 129.54 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -14772,7 +14772,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -15206,7 +15206,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -15840,7 +15840,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.8"
 			(at 228.2952 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -15939,7 +15939,7 @@
 				)
 			)
 		)
-		(property "MPN" "RVT22UF16V67RV0017"
+		(property "MPN" "875105359003"
 			(at 227.33 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -15950,7 +15950,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C2895280"
+		(property "JLCPCB Part#" "C5530512"
 			(at 227.33 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -16118,7 +16118,7 @@
 				)
 			)
 		)
-		(property "MPN" "CR1206FR060P05R"
+		(property "MPN" "RL1206FR-070R06L"
 			(at 135.89 97.79 90)
 			(hide yes)
 			(show_name no)
@@ -16129,7 +16129,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C175774"
+		(property "JLCPCB Part#" "C728501"
 			(at 135.89 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -16172,7 +16172,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -16818,7 +16818,7 @@
 				)
 			)
 		)
-		(property "MPN" "FRC0402J331 TS"
+		(property "MPN" "0402WGF3300TCE"
 			(at 121.92 41.91 90)
 			(hide yes)
 			(show_name no)
@@ -16829,7 +16829,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C2906929"
+		(property "JLCPCB Part#" "C25104"
 			(at 121.92 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -19011,18 +19011,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
-			(at 204.47 97.79 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part #" ""
+		(property "MPN" "IHLP2525CZER4R7M01"
 			(at 204.47 97.79 90)
 			(hide yes)
 			(show_name no)
@@ -19035,6 +19024,17 @@
 		)
 		(property "v" ""
 			(at 204.47 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part#" "C553961"
+			(at 204.47 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19272,7 +19272,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x4.5"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.8"
 			(at 117.8052 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -19371,7 +19371,7 @@
 				)
 			)
 		)
-		(property "MPN" "RVT22UF16V67RV0017"
+		(property "MPN" "875105359003"
 			(at 116.84 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -19382,7 +19382,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C2895280"
+		(property "JLCPCB Part#" "C5530512 "
 			(at 116.84 104.14 0)
 			(hide yes)
 			(show_name no)
