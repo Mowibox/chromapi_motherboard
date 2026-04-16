@@ -11821,7 +11821,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C5914133"
+		(property "JLCPCB Part #" "C5914133"
 			(at 182.88 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -11832,7 +11832,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 182.88 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 182.88 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 182.88 48.26 90)
 			(hide yes)
 			(show_name no)
@@ -12240,28 +12262,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 83.82 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 83.82 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 83.82 49.53 0)
 			(hide yes)
@@ -12317,7 +12317,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C69612"
+		(property "JLCPCB Part #" "C69612"
 			(at 83.82 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12328,7 +12328,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 83.82 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 83.82 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 83.82 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12420,28 +12442,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 111.76 128.27 0)
 			(hide yes)
@@ -12497,7 +12497,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C844135"
+		(property "JLCPCB Part #" "C844135"
 			(at 111.76 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -12508,7 +12508,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 111.76 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 111.76 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 111.76 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -12677,28 +12699,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 68.58 74.93 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 68.58 74.93 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 68.58 74.93 90)
 			(hide yes)
@@ -12754,7 +12754,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C844916"
+		(property "JLCPCB Part #" "C844916"
 			(at 68.58 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -12765,7 +12765,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 68.58 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 68.58 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 68.58 74.93 90)
 			(hide yes)
 			(show_name no)
@@ -12857,28 +12879,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 77.47 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 77.47 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 77.47 82.55 0)
 			(hide yes)
@@ -12934,7 +12934,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C844803"
+		(property "JLCPCB Part #" "C844803"
 			(at 77.47 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -12945,7 +12945,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 77.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 77.47 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -13035,28 +13057,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 182.88 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 182.88 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 182.88 60.96 90)
 			(hide yes)
@@ -13112,7 +13112,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C106211"
+		(property "JLCPCB Part #" "C106211"
 			(at 182.88 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -13123,7 +13123,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 182.88 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 182.88 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 182.88 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -13215,28 +13237,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 81.28 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 81.28 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 81.28 128.27 0)
 			(hide yes)
@@ -13292,7 +13292,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" ""
+		(property "JLCPCB Part #" ""
 			(at 81.28 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -13303,7 +13303,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 81.28 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 81.28 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 81.28 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -13395,28 +13417,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 96.52 128.27 0)
 			(hide yes)
@@ -13472,7 +13472,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C844135"
+		(property "JLCPCB Part #" "C844135"
 			(at 96.52 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -13483,7 +13483,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 96.52 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 96.52 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 96.52 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -13798,7 +13820,7 @@
 				(justify bottom)
 			)
 		)
-		(property "JLCPCB Part#" "C132827"
+		(property "JLCPCB Part #" "C132827"
 			(at 201.93 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -13820,7 +13842,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 201.93 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 201.93 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 201.93 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -13924,28 +13968,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 209.55 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 209.55 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 209.55 53.34 0)
 			(hide yes)
@@ -14001,7 +14023,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C45783"
+		(property "JLCPCB Part #" "C45783"
 			(at 209.55 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -14012,7 +14034,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 209.55 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 209.55 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 209.55 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -14102,28 +14146,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 96.52 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 96.52 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 96.52 121.92 90)
 			(hide yes)
@@ -14179,7 +14201,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" ""
+		(property "JLCPCB Part #" ""
 			(at 96.52 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -14190,7 +14212,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 96.52 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 96.52 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 96.52 121.92 90)
 			(hide yes)
 			(show_name no)
@@ -14280,28 +14324,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 200.66 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 200.66 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 200.66 77.47 0)
 			(hide yes)
@@ -14357,7 +14379,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C137784"
+		(property "JLCPCB Part #" "C137784"
 			(at 200.66 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -14368,7 +14390,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 200.66 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 200.66 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 200.66 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -14460,28 +14504,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 177.8 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 177.8 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 177.8 132.08 0)
 			(hide yes)
@@ -14537,7 +14559,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C15849"
+		(property "JLCPCB Part #" "C15849"
 			(at 177.8 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -14548,7 +14570,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 177.8 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 177.8 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 177.8 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -14641,17 +14685,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 111.76 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MPN" "150060BS55040"
 			(at 111.76 139.7 90)
 			(hide yes)
@@ -14663,7 +14696,40 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C6650185"
+		(property "JLCPCB Part #" "C6650185"
+			(at 111.76 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 111.76 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 111.76 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 111.76 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -14756,28 +14822,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 200.66 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 200.66 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 200.66 54.61 0)
 			(hide yes)
@@ -14833,7 +14877,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C844915"
+		(property "JLCPCB Part #" "C844915"
 			(at 200.66 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -14844,7 +14888,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 200.66 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 200.66 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 200.66 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -14934,28 +15000,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 160.02 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 160.02 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 160.02 43.18 90)
 			(hide yes)
@@ -15011,7 +15055,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C844915"
+		(property "JLCPCB Part #" "C844915"
 			(at 160.02 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -15022,7 +15066,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 160.02 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 160.02 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 160.02 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -15193,28 +15259,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 110.49 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 110.49 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 110.49 52.07 0)
 			(hide yes)
@@ -15270,7 +15314,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C844916"
+		(property "JLCPCB Part #" "C844916"
 			(at 110.49 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -15281,7 +15325,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 110.49 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 110.49 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 110.49 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -15374,7 +15440,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C41935536"
+		(property "JLCPCB Part #" "C41935536"
 			(at 119.38 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -15407,7 +15473,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 119.38 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 119.38 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 119.38 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -15530,28 +15618,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 81.28 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 81.28 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 81.28 121.92 90)
 			(hide yes)
@@ -15607,7 +15673,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" ""
+		(property "JLCPCB Part #" ""
 			(at 81.28 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -15618,7 +15684,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 81.28 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 81.28 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 81.28 121.92 90)
 			(hide yes)
 			(show_name no)
@@ -15787,17 +15875,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 96.52 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MPN" "150060GS55040"
 			(at 96.52 139.7 90)
 			(hide yes)
@@ -15809,7 +15886,40 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C6041957"
+		(property "JLCPCB Part #" "C6041957"
+			(at 96.52 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 96.52 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 96.52 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 96.52 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -15901,28 +16011,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 77.47 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 77.47 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 77.47 49.53 0)
 			(hide yes)
@@ -15978,7 +16066,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C69612"
+		(property "JLCPCB Part #" "C69612"
 			(at 77.47 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -15989,7 +16077,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 77.47 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 77.47 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 77.47 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -16079,28 +16189,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 111.76 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 111.76 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 111.76 121.92 90)
 			(hide yes)
@@ -16145,7 +16233,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 111.76 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 111.76 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 111.76 121.92 90)
 			(hide yes)
 			(show_name no)
@@ -16314,28 +16424,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 200.66 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 200.66 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 200.66 66.04 0)
 			(hide yes)
@@ -16391,7 +16479,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C137797"
+		(property "JLCPCB Part #" "C137797"
 			(at 200.66 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -16402,7 +16490,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 200.66 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 200.66 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 200.66 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -16652,28 +16762,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 223.52 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 223.52 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 223.52 132.08 0)
 			(hide yes)
@@ -16729,7 +16817,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C15849"
+		(property "JLCPCB Part #" "C15849"
 			(at 223.52 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -16740,7 +16828,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 223.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 223.52 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 223.52 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -16832,28 +16942,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 217.17 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 217.17 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 217.17 53.34 0)
 			(hide yes)
@@ -16909,7 +16997,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C45783"
+		(property "JLCPCB Part #" "C45783"
 			(at 217.17 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -16920,7 +17008,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 217.17 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 217.17 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 217.17 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -17012,28 +17122,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 90.17 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 90.17 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 90.17 49.53 0)
 			(hide yes)
@@ -17089,7 +17177,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C1591"
+		(property "JLCPCB Part #" "C1591"
 			(at 90.17 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -17100,7 +17188,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 90.17 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 90.17 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 90.17 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -17192,28 +17302,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 232.41 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 232.41 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 232.41 53.34 0)
 			(hide yes)
@@ -17269,7 +17357,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C45783"
+		(property "JLCPCB Part #" "C45783"
 			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -17280,7 +17368,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 232.41 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 232.41 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -17607,17 +17717,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 81.28 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MPN" "150060SS55040"
 			(at 81.28 139.7 90)
 			(hide yes)
@@ -17629,7 +17728,40 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C5478395"
+		(property "JLCPCB Part #" "C5478395"
+			(at 81.28 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 81.28 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 81.28 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 81.28 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -17797,28 +17929,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 168.91 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 168.91 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 168.91 43.18 90)
 			(hide yes)
@@ -17874,7 +17984,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C1591"
+		(property "JLCPCB Part #" "C1591"
 			(at 168.91 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -17885,7 +17995,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 168.91 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 168.91 43.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 168.91 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -18134,28 +18266,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 172.72 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "CRCW06031K00JNEAC"
-			(at 172.72 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 172.72 60.96 90)
 			(hide yes)
@@ -18211,7 +18321,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C844135"
+		(property "JLCPCB Part #" "C844135"
 			(at 172.72 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -18222,7 +18332,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 172.72 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 172.72 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 172.72 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -18314,28 +18446,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 71.12 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 71.12 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 71.12 49.53 0)
 			(hide yes)
@@ -18391,7 +18501,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C69612"
+		(property "JLCPCB Part #" "C69612"
 			(at 71.12 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -18402,7 +18512,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 71.12 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 71.12 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 71.12 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -18494,28 +18626,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 100.33 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 100.33 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 100.33 50.8 0)
 			(hide yes)
@@ -18571,7 +18681,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C2167658"
+		(property "JLCPCB Part #" "C2167658"
 			(at 100.33 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -18582,7 +18692,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 100.33 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 100.33 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 100.33 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -18753,28 +18885,6 @@
 				)
 			)
 		)
-		(property "Sim.Device" ""
-			(at 224.79 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 224.79 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Author" ""
 			(at 224.79 53.34 0)
 			(hide yes)
@@ -18830,7 +18940,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part#" "C45783"
+		(property "JLCPCB Part #" "C45783"
 			(at 224.79 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -18841,7 +18951,29 @@
 				)
 			)
 		)
-		(property "v" ""
+		(property "MANUFACTURER" ""
+			(at 224.79 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 224.79 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
 			(at 224.79 53.34 0)
 			(hide yes)
 			(show_name no)
