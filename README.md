@@ -27,14 +27,11 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 
 ## Project overview
 
-## Repository structure
-
-<!-- | Resource | Description | Location | Status |
+| Resource | Description | Location | Status |
 | :--- | :--- | :--- | :--- |
-| **📐 Schematics** | KiCad source files (`.kicad_sch`). | `/Hardware/Schematics` | **Available** |
-| **⚡ PCB Layout** | 4-layer PCB layout (`.kicad_pcb`). | `/Hardware/Layout` | **WIP** |
-| **📦 Manufacturing** | Gerbers, Drill files, BOM, and CPL for assembly. | `/Hardware/Fabrication` | *Pending Routing* |
-| **💻 Firmware** | STM32 low-level drivers and communication protocol. | `/Firmware` | *Coming Soon* | -->
+| **💻 Firmware** | STM32 low-level drivers and communication protocol. | [`/firmware`](./firmware) | *Coming Soon* |
+| **📐 Schematics** | PDF for hardware architecture | [`/hardware/schematic_pdf`](./hardware/schematic_pdf/chromapi_motherboard_v1.pdf) | **Available** |
+| **📦 Manufacturing** | Gerbers, Drill files, BOM, and CPL for assembly. | [`/hardware/production`]() | *Coming Soon* |
 
 ## Authors
 
@@ -44,6 +41,8 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 | [**Ousmane THIONGANE**](https://mowibox.github.io) |
 
 ## Documentation
+
+*Coming soon...*
 
 ## Contributions
 
