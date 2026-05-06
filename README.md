@@ -4,7 +4,7 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 
 ![Chromapi](https://custom-icon-badges.demolab.com/badge/Chromapi-motherboard-489648?logo=chromapi)
 ![KiCad](https://img.shields.io/badge/KiCad-10.0+-2849bf?logo=kicad)
-![STM32](https://img.shields.io/badge/STM32-G431-3cb4e6?)
+![STM32](https://img.shields.io/badge/STM32-G431-3cb4e6?logo=stmicroelectronics)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)](https://opensource.org/licenses/Apache-2.0)
 ![Issues](https://img.shields.io/github/issues/Mowibox/chromapi_motherboard)
 ![Stars](https://img.shields.io/github/stars/Mowibox/chromapi_motherboard?style=social)
