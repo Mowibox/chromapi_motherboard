@@ -21,7 +21,54 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <stdio.h>
+#include <string.h>
 
+#include "sts3215_hal.h"
+#include "sts3215_protocol.h"
+
+extern UART_HandleTypeDef huart2;
+
+STS3215_HAL_Handle_t hservo;
+
+static uint8_t tx_frame[STS3215_TX_BUF_SIZE];
+
+volatile int16_t g_position = 0;
+volatile uint8_t g_reply_received = 0;
+
+static void on_reply(const STS3215_Reply_t *reply,
+                     uint8_t idx,
+                     STS3215_Status_t status,
+                     void *ctx)
+{
+    (void)idx;
+    (void)ctx;
+
+    if (status == STS3215_OK)
+    {
+        if (reply->data_len >= 2)
+        {
+            g_position = STS3215_UnpackS16LE(reply->data);
+
+            printf("Servo %d position = %d steps\r\n",
+                   reply->id,
+                   g_position);
+
+            g_reply_received = 1;
+        }
+    }
+    else
+    {
+        printf("Servo fault: %d\r\n", reply->error);
+    }
+}
+
+static void on_error(STS3215_HAL_Error_t err, void *ctx)
+{
+    (void)ctx;
+
+    printf("HAL error = %d\r\n", err);
+}
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -59,7 +106,11 @@ static void MX_USART2_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+int __io_putchar(int ch)
+{
+    ITM_SendChar(ch);
+    return ch;
+}
 /* USER CODE END 0 */
 
 /**
@@ -94,13 +145,83 @@ int main(void)
   MX_DMA_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+	STS3215_HAL_Init(
+	    &hservo,
+	    &huart2,
+	    10,
+	    on_reply,
+	    on_error,
+	    NULL
+	);
 
+	STS3215_HAL_RegisterInstance(&hservo);
+
+	STS3215_MotionCmd_t cmd = {0};
+	cmd.running_time = 1500;     // servo internal speed unit
+	cmd.running_speed = 1000;
+
+	int16_t len = STS3215_BuildPing(
+	    tx_frame,
+	    sizeof(tx_frame),
+	    1
+	);
+
+	if (len > 0)
+	{
+	    STS3215_HAL_SendFrame(
+	        &hservo,
+	        tx_frame,
+	        len,
+	        false,
+	        1
+	    );
+	}
+
+	uint32_t last_move_ms = HAL_GetTick();
+	uint8_t toggle = 0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	    STS3215_HAL_Process(&hservo);
+
+	    if (STS3215_HAL_IsIdle(&hservo) &&
+	        (HAL_GetTick() - last_move_ms >= 2000U))
+	    {
+	        last_move_ms = HAL_GetTick();
+
+	        cmd.target_pos = (toggle == 0U) ? 1024 : 3072;
+	        toggle ^= 1U;
+
+	        int16_t len = STS3215_BuildMotionCmd(
+	            tx_frame,
+	            sizeof(tx_frame),
+	            1,
+	            &cmd
+	        );
+
+	        if (len > 0)
+	        {
+	            STS3215_Status_t st = STS3215_HAL_SendFrame(
+	                &hservo,
+	                tx_frame,
+	                (uint16_t)len,
+	                false,
+	                1
+	            );
+
+	            if (st != STS3215_OK)
+	            {
+	                printf("SendFrame failed: %d\r\n", st);
+	            }
+	        }
+	        else
+	        {
+	            printf("BuildMotionCmd failed: %d\r\n", len);
+	        }
+	    }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

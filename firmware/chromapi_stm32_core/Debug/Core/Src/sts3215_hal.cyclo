@@ -1,0 +1,15 @@
+../Core/Src/sts3215_hal.c:62:13:prv_start_rx	3
+../Core/Src/sts3215_hal.c:109:13:prv_parse_rx_buffer	7
+../Core/Src/sts3215_hal.c:157:6:STS3215_HAL_Init	4
+../Core/Src/sts3215_hal.c:179:6:STS3215_HAL_RegisterInstance	1
+../Core/Src/sts3215_hal.c:184:18:STS3215_HAL_SendFrame	9
+../Core/Src/sts3215_hal.c:233:6:STS3215_HAL_Process	5
+../Core/Src/sts3215_hal.c:259:6:STS3215_HAL_Abort	2
+../Core/Src/sts3215_hal.c:270:21:STS3215_HAL_GetState	2
+../Core/Src/sts3215_hal.c:275:6:STS3215_HAL_IsIdle	3
+../Core/Src/sts3215_hal.c:295:6:STS3215_HAL_TxCpltCallback	5
+../Core/Src/sts3215_hal.c:325:6:STS3215_HAL_RxEventCallback	3
+../Core/Src/sts3215_hal.c:345:6:STS3215_HAL_ErrorCallback	4
+../Core/Src/sts3215_hal.c:376:6:HAL_UART_TxCpltCallback	3
+../Core/Src/sts3215_hal.c:383:6:HAL_UARTEx_RxEventCallback	3
+../Core/Src/sts3215_hal.c:390:6:HAL_UART_ErrorCallback	3
