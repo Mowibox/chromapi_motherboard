@@ -1,20 +1,51 @@
-18:06:19 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+21:18:14 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
 make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-In file included from ../Core/Inc/sts3215_hal.h:30,
+arm-none-eabi-gcc "../Core/Src/sts3215_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sts3215_hal.d" -MT"Core/Src/sts3215_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sts3215_hal.o"
+arm-none-eabi-gcc "../Core/Src/sts3215_protocol.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sts3215_protocol.d" -MT"Core/Src/sts3215_protocol.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sts3215_protocol.o"
+In file included from ../Core/Src/sts3215_protocol.c:6:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/sts3215_hal.c:35:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+In file included from ../Core/Inc/sts3215_hal.h:10,
                  from ../Core/Src/main.c:27:
-../Core/Inc/sts3215_protocol.h:36: warning: "STS3215_TX_BUF_SIZE" redefined
-   36 | #define STS3215_TX_BUF_SIZE \
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
       | 
-In file included from ../Core/Inc/sts3215_protocol.h:19:
-../Core/Inc/sts3215_regs.h:40: note: this is the location of the previous definition
-   40 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
       | 
-../Core/Inc/sts3215_protocol.h:44: warning: "STS3215_RX_BUF_SIZE" redefined
-   44 | #define STS3215_RX_BUF_SIZE         (16U)
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
       | 
-../Core/Inc/sts3215_regs.h:48: note: this is the location of the previous definition
-   48 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
       | 
 arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: chromapi_stm32_core.elf
@@ -26,25 +57,4 @@ arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list
 Finished building: default.size.stdout
  
 Finished building: chromapi_stm32_core.list
- 
-18:06:24 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
-make -j12 all 
-arm-none-eabi-size  chromapi_stm32_core.elf 
-   text	   data	    bss	    dec	    hex	filename
-  24644	    104	   2848	  27596	   6bcc	chromapi_stm32_core.elf
-Finished building: default.size.stdout
- 
-18:10:57 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
-make -j12 all 
-arm-none-eabi-size  chromapi_stm32_core.elf 
-   text	   data	    bss	    dec	    hex	filename
-  24644	    104	   2848	  27596	   6bcc	chromapi_stm32_core.elf
-Finished building: default.size.stdout
- 
-18:14:02 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
-make -j12 all 
-arm-none-eabi-size  chromapi_stm32_core.elf 
-   text	   data	    bss	    dec	    hex	filename
-  24644	    104	   2848	  27596	   6bcc	chromapi_stm32_core.elf
-Finished building: default.size.stdout
  

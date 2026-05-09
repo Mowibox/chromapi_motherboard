@@ -42,14 +42,14 @@
  * ========================================================================= */
 
 typedef enum {
-    STS3215_OK                = 0,
-    STS3215_ERR_NULL_PTR      = -1,
-    STS3215_ERR_INVALID_PARAM = -2,  /* Argument out of valid range */
-    STS3215_ERR_BUFFER_SMALL  = -3,
-    STS3215_ERR_BAD_HEADER    = -4,
-    STS3215_ERR_BAD_CHECKSUM  = -5,
-    STS3215_ERR_SERVO_FAULT   = -6,  /* Frame valid but ERROR byte non-zero */
-    STS3215_ERR_FRAME_SHORT   = -7,  /* buf_len < expected frame length */
+	STS3215_OK                = 0,
+	STS3215_ERR_NULL_PTR      = -1,
+	STS3215_ERR_INVALID_PARAM = -2,  /* Argument out of valid range */
+	STS3215_ERR_BUFFER_SMALL  = -3,
+	STS3215_ERR_BAD_HEADER    = -4,
+	STS3215_ERR_BAD_CHECKSUM  = -5,
+	STS3215_ERR_SERVO_FAULT   = -6,  /* Frame valid but ERROR byte non-zero */
+	STS3215_ERR_FRAME_SHORT   = -7,  /* buf_len < expected frame length */
 } STS3215_Status_t;
 
 /* =========================================================================
@@ -60,28 +60,28 @@ typedef enum {
  * @brief Parsed representation of a servo reply packet.
  */
 typedef struct {
-    uint8_t id;                              
-    uint8_t error;                          
-    uint8_t data[STS3215_REPLY_DATA_MAX]; 
-    uint8_t data_len;   
+	uint8_t id;
+	uint8_t error;
+	uint8_t data[STS3215_REPLY_DATA_MAX];
+	uint8_t data_len;
 } STS3215_Reply_t;
 
 /**
  * @brief Motion command parameters
  */
 typedef struct {
-    uint8_t  acceleration;
-    int16_t  target_pos;
-    uint16_t running_time;
-    uint16_t running_speed;
+	uint8_t  acceleration;
+	int16_t  target_pos;
+	uint16_t running_time;
+	uint16_t running_speed;
 } STS3215_MotionCmd_t;
 
 /**
  * @brief One servo entry for SYNC_WRITE operations.
  */
 typedef struct {
-    uint8_t id;
-    uint8_t data[STS3215_SYNC_DATA_MAX_LEN];
+	uint8_t id;
+	uint8_t data[STS3215_SYNC_DATA_MAX_LEN];
 } STS3215_SyncEntry_t;
 
 /* =========================================================================
@@ -158,7 +158,7 @@ int16_t STS3215_BuildResetTurns(uint8_t *buf, uint16_t cap, uint8_t id);
  * @param reply    Output structure; written on OK or SERVO_FAULT
  */
 STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
-                                     STS3215_Reply_t *reply);
+		STS3215_Reply_t *reply);
 
 /* =========================================================================
  * Utility / Unit Conversion

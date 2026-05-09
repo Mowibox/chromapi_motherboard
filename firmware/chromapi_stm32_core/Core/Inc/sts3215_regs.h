@@ -173,20 +173,20 @@
  * @brief Returns the byte-width (1 or 2) of a register at compile time.
  */
 #define STS3215_REG_WIDTH(addr)  \
-    (((addr) == STS3215_REG_MIN_ANGLE         || \
-      (addr) == STS3215_REG_MAX_ANGLE         || \
-      (addr) == STS3215_REG_MAX_TORQUE        || \
-      (addr) == STS3215_REG_MIN_STARTUP       || \
-      (addr) == STS3215_REG_PROT_CURRENT      || \
-      (addr) == STS3215_REG_POS_CORRECTION    || \
-      (addr) == STS3215_REG_TARGET_POS        || \
-      (addr) == STS3215_REG_RUNNING_TIME      || \
-      (addr) == STS3215_REG_RUNNING_SPEED     || \
-      (addr) == STS3215_REG_TORQUE_LIMIT      || \
-      (addr) == STS3215_REG_CURRENT_POS       || \
-      (addr) == STS3215_REG_CURRENT_SPEED     || \
-      (addr) == STS3215_REG_CURRENT_LOAD      || \
-      (addr) == STS3215_REG_CURRENT_CURRENT)  ? 2U : 1U)
+		(((addr) == STS3215_REG_MIN_ANGLE         || \
+				(addr) == STS3215_REG_MAX_ANGLE         || \
+				(addr) == STS3215_REG_MAX_TORQUE        || \
+				(addr) == STS3215_REG_MIN_STARTUP       || \
+				(addr) == STS3215_REG_PROT_CURRENT      || \
+				(addr) == STS3215_REG_POS_CORRECTION    || \
+				(addr) == STS3215_REG_TARGET_POS        || \
+				(addr) == STS3215_REG_RUNNING_TIME      || \
+				(addr) == STS3215_REG_RUNNING_SPEED     || \
+				(addr) == STS3215_REG_TORQUE_LIMIT      || \
+				(addr) == STS3215_REG_CURRENT_POS       || \
+				(addr) == STS3215_REG_CURRENT_SPEED     || \
+				(addr) == STS3215_REG_CURRENT_LOAD      || \
+				(addr) == STS3215_REG_CURRENT_CURRENT)  ? 2U : 1U)
 
 /* =========================================================================
  * 6. DEFAULT (FACTORY) VALUES  (See Initial Value column in Memory Table)
@@ -232,41 +232,41 @@
 
 /** --- Baudrates --- */
 typedef enum {
-    STS3215_BAUD_1000000 = 0,
-    STS3215_BAUD_500000  = 1,
-    STS3215_BAUD_250000  = 2,
-    STS3215_BAUD_128000  = 3,
-    STS3215_BAUD_115200  = 4,
-    STS3215_BAUD_76800   = 5,
-    STS3215_BAUD_57600   = 6,
-    STS3215_BAUD_38400   = 7,
+	STS3215_BAUD_1000000 = 0,
+	STS3215_BAUD_500000  = 1,
+	STS3215_BAUD_250000  = 2,
+	STS3215_BAUD_128000  = 3,
+	STS3215_BAUD_115200  = 4,
+	STS3215_BAUD_76800   = 5,
+	STS3215_BAUD_57600   = 6,
+	STS3215_BAUD_38400   = 7,
 } STS3215_BaudRate_t;
 
 /* --- Reply policy --- */
 typedef enum {
-    STS3215_RESP_READ_PING_ONLY = 0, /* Reply only to READ and PING */
-    STS3215_RESP_ALL            = 1, /* Reply to every instruction */
+	STS3215_RESP_READ_PING_ONLY = 0, /* Reply only to READ and PING */
+	STS3215_RESP_ALL            = 1, /* Reply to every instruction */
 } STS3215_RespLevel_t;
 
 /* --- Control mode --- */
 typedef enum {
-    STS3215_MODE_POSITION = 0, /* Closed-loop position servo */
-    STS3215_MODE_VELOCITY = 1, /* Constant speed */
-    STS3215_MODE_PWM      = 2, /* Open-loop PWM */
-    STS3215_MODE_STEP     = 3, /* Step count */
+	STS3215_MODE_POSITION = 0, /* Closed-loop position servo */
+	STS3215_MODE_VELOCITY = 1, /* Constant speed */
+	STS3215_MODE_PWM      = 2, /* Open-loop PWM */
+	STS3215_MODE_STEP     = 3, /* Step count */
 } STS3215_OperationMode_t;
 
 /* --- Torque switch values --- */
 typedef enum {
-    STS3215_TORQUE_OFF    = 0,   
-    STS3215_TORQUE_ON     = 1,  
-    STS3215_TORQUE_CENTER = 128, /*  Force position correction to 2048 */
+	STS3215_TORQUE_OFF    = 0,
+	STS3215_TORQUE_ON     = 1,
+	STS3215_TORQUE_CENTER = 128, /*  Force position correction to 2048 */
 } STS3215_TorqueSwitch_t;
 
 /* --- EEPROM write-lock --- */
 typedef enum {
-    STS3215_LOCK_OPEN   = 0,
-    STS3215_LOCK_CLOSED = 1, 
+	STS3215_LOCK_OPEN   = 0,
+	STS3215_LOCK_CLOSED = 1,
 } STS3215_LockMark_t;
 
 /* =========================================================================
@@ -288,7 +288,7 @@ typedef enum {
 #define STS3215_STEPS_PER_REV        (4096U)
 #define STS3215_DEG_PER_STEP_F       (0.087890625f)      /* 360/4096  */
 #define STS3215_RAD_PER_STEP_F       (0.001533980787f)   /* 2π/4096 */
-#define STS3215_CENTER_POSITION      (2048U)             /* Mechanical zero */
+#define STS3215_CENTER_ POSITION      (2048U)             /* Mechanical zero */
 #define STS3215_CURRENT_LSB_MA_F     (6.5f)              /* mA per LSB */
 #define STS3215_VOLTAGE_LSB_V_F      (0.1f)              /* V per LSB */
 #define STS3215_ACCEL_LSB_STEP_SS_F  (100.0f)            /* step/s² per LSB */

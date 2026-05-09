@@ -27,25 +27,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000030  00000000  00000000  00008068  2**0
                   CONTENTS, READONLY
- 12 .debug_info   0000fb65  00000000  00000000  00008098  2**0
+ 12 .debug_info   0000fb4a  00000000  00000000  00008098  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 0000269d  00000000  00000000  00017bfd  2**0
+ 13 .debug_abbrev 0000269d  00000000  00000000  00017be2  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000c88  00000000  00000000  0001a2a0  2**3
+ 14 .debug_aranges 00000c88  00000000  00000000  0001a280  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 0000099d  00000000  00000000  0001af28  2**0
+ 15 .debug_rnglists 0000099d  00000000  00000000  0001af08  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  0001e5ac  00000000  00000000  0001b8c5  2**0
+ 16 .debug_macro  0001e596  00000000  00000000  0001b8a5  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000ee57  00000000  00000000  00039e71  2**0
+ 17 .debug_line   0000ee68  00000000  00000000  00039e3b  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000ba6dd  00000000  00000000  00048cc8  2**0
+ 18 .debug_str    000ba6d5  00000000  00000000  00048ca3  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  001033a5  2**0
+ 19 .comment      00000043  00000000  00000000  00103378  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00003a24  00000000  00000000  001033e8  2**2
+ 20 .debug_frame  00003a24  00000000  00000000  001033bc  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000079  00000000  00000000  00106e0c  2**0
+ 21 .debug_line_str 00000079  00000000  00000000  00106de0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1932,8 +1932,8 @@ void USART2_IRQHandler(void)
  8000dc4:	200002d8 	.word	0x200002d8
 
 08000dc8 <prv_start_rx>:
- *  b) UART IDLE line detected (HAL_UART_RXEVENT_IDLE) ← our main trigger
- *
+/**
+ * @brief Reset RX buffer and start DMA reception with IDLE line detection.
  * Called exclusively from STS3215_HAL_TxCpltCallback (IRQ context).
  */
 static void prv_start_rx(STS3215_HAL_Handle_t *hservo)
@@ -1942,23 +1942,19 @@ static void prv_start_rx(STS3215_HAL_Handle_t *hservo)
  8000dca:	b084      	sub	sp, #16
  8000dcc:	af00      	add	r7, sp, #0
  8000dce:	6078      	str	r0, [r7, #4]
-    memset(hservo->rx_buf, 0, STS3215_HAL_RX_BUF_SIZE);
+	memset(hservo->rx_buf, 0, STS3215_HAL_RX_BUF_SIZE);
  8000dd0:	687b      	ldr	r3, [r7, #4]
  8000dd2:	339c      	adds	r3, #156	@ 0x9c
  8000dd4:	f44f 7280 	mov.w	r2, #256	@ 0x100
  8000dd8:	2100      	movs	r1, #0
  8000dda:	4618      	mov	r0, r3
  8000ddc:	f004 fa85 	bl	80052ea <memset>
-    hservo->rx_received_len = 0U;
+	hservo->rx_received_len = 0U;
  8000de0:	687b      	ldr	r3, [r7, #4]
  8000de2:	2200      	movs	r2, #0
  8000de4:	f8a3 219e 	strh.w	r2, [r3, #414]	@ 0x19e
-     * Flush UART data register before enabling RX.
-     * During the TX phase the UART RX pin may have captured bus reflections
-     * or noise. Clear the overrun flag and DR to avoid a spurious RxEvent
-     * firing immediately.
-     */
-    __HAL_UART_FLUSH_DRREGISTER(hservo->huart);
+
+	__HAL_UART_FLUSH_DRREGISTER(hservo->huart);
  8000de8:	687b      	ldr	r3, [r7, #4]
  8000dea:	681b      	ldr	r3, [r3, #0]
  8000dec:	681b      	ldr	r3, [r3, #0]
@@ -1977,48 +1973,47 @@ static void prv_start_rx(STS3215_HAL_Handle_t *hservo)
  8000e08:	681b      	ldr	r3, [r3, #0]
  8000e0a:	f042 0210 	orr.w	r2, r2, #16
  8000e0e:	619a      	str	r2, [r3, #24]
-    __HAL_UART_CLEAR_OREFLAG(hservo->huart);
+	__HAL_UART_CLEAR_OREFLAG(hservo->huart);
  8000e10:	687b      	ldr	r3, [r7, #4]
  8000e12:	681b      	ldr	r3, [r3, #0]
  8000e14:	681b      	ldr	r3, [r3, #0]
  8000e16:	2208      	movs	r2, #8
  8000e18:	621a      	str	r2, [r3, #32]
 
-    HAL_StatusTypeDef status = HAL_UARTEx_ReceiveToIdle_DMA(
+	HAL_StatusTypeDef status = HAL_UARTEx_ReceiveToIdle_DMA(
  8000e1a:	687b      	ldr	r3, [r7, #4]
  8000e1c:	6818      	ldr	r0, [r3, #0]
-        hservo->huart,
-        hservo->rx_buf,
+			hservo->huart,
+			hservo->rx_buf,
  8000e1e:	687b      	ldr	r3, [r7, #4]
  8000e20:	339c      	adds	r3, #156	@ 0x9c
-    HAL_StatusTypeDef status = HAL_UARTEx_ReceiveToIdle_DMA(
+	HAL_StatusTypeDef status = HAL_UARTEx_ReceiveToIdle_DMA(
  8000e22:	f44f 7280 	mov.w	r2, #256	@ 0x100
  8000e26:	4619      	mov	r1, r3
  8000e28:	f004 f8a5 	bl	8004f76 <HAL_UARTEx_ReceiveToIdle_DMA>
  8000e2c:	4603      	mov	r3, r0
  8000e2e:	73fb      	strb	r3, [r7, #15]
-        STS3215_HAL_RX_BUF_SIZE
-    );
+			STS3215_HAL_RX_BUF_SIZE
+	);
 
-    if (status != HAL_OK) {
+	if (status != HAL_OK) {
  8000e30:	7bfb      	ldrb	r3, [r7, #15]
  8000e32:	2b00      	cmp	r3, #0
  8000e34:	d01a      	beq.n	8000e6c <prv_start_rx+0xa4>
-        /* DMA RX failed to start — report immediately */
-        hservo->last_error = STS3215_HAL_ERR_DMA_RX;
+		hservo->last_error = STS3215_HAL_ERR_DMA_RX;
  8000e36:	687b      	ldr	r3, [r7, #4]
  8000e38:	2203      	movs	r2, #3
  8000e3a:	f883 219d 	strb.w	r2, [r3, #413]	@ 0x19d
-        hservo->state      = STS3215_HAL_STATE_ERROR;
+		hservo->state = STS3215_HAL_STATE_ERROR;
  8000e3e:	687b      	ldr	r3, [r7, #4]
  8000e40:	2203      	movs	r2, #3
  8000e42:	f883 219c 	strb.w	r2, [r3, #412]	@ 0x19c
-        if (hservo->on_error != NULL) {
+		if (hservo->on_error != NULL) {
  8000e46:	687b      	ldr	r3, [r7, #4]
  8000e48:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  8000e4c:	2b00      	cmp	r3, #0
  8000e4e:	d008      	beq.n	8000e62 <prv_start_rx+0x9a>
-            hservo->on_error(STS3215_HAL_ERR_DMA_RX, hservo->user_ctx);
+			hservo->on_error(STS3215_HAL_ERR_DMA_RX, hservo->user_ctx);
  8000e50:	687b      	ldr	r3, [r7, #4]
  8000e52:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  8000e56:	687a      	ldr	r2, [r7, #4]
@@ -2026,22 +2021,22 @@ static void prv_start_rx(STS3215_HAL_Handle_t *hservo)
  8000e5c:	4611      	mov	r1, r2
  8000e5e:	2003      	movs	r0, #3
  8000e60:	4798      	blx	r3
-        }
-        hservo->state = STS3215_HAL_STATE_IDLE;
+		}
+		hservo->state = STS3215_HAL_STATE_IDLE;
  8000e62:	687b      	ldr	r3, [r7, #4]
  8000e64:	2200      	movs	r2, #0
  8000e66:	f883 219c 	strb.w	r2, [r3, #412]	@ 0x19c
-    } else {
-        hservo->state            = STS3215_HAL_STATE_RX_BUSY;
-        hservo->tx_timestamp_ms  = HAL_GetTick(); /* Start timeout clock */
-    }
+	} else {
+		hservo->state = STS3215_HAL_STATE_RX_BUSY;
+		hservo->tx_timestamp_ms  = HAL_GetTick();
+	}
 }
  8000e6a:	e009      	b.n	8000e80 <prv_start_rx+0xb8>
-        hservo->state            = STS3215_HAL_STATE_RX_BUSY;
+		hservo->state = STS3215_HAL_STATE_RX_BUSY;
  8000e6c:	687b      	ldr	r3, [r7, #4]
  8000e6e:	2202      	movs	r2, #2
  8000e70:	f883 219c 	strb.w	r2, [r3, #412]	@ 0x19c
-        hservo->tx_timestamp_ms  = HAL_GetTick(); /* Start timeout clock */
+		hservo->tx_timestamp_ms  = HAL_GetTick();
  8000e74:	f000 fd62 	bl	800193c <HAL_GetTick>
  8000e78:	4602      	mov	r2, r0
  8000e7a:	687b      	ldr	r3, [r7, #4]
@@ -2053,8 +2048,8 @@ static void prv_start_rx(STS3215_HAL_Handle_t *hservo)
  8000e86:	bd80      	pop	{r7, pc}
 
 08000e88 <prv_parse_rx_buffer>:
- *   total bytes  = 4 + n_data_bytes + 2 = 6 + n_data_bytes
- *
+/**
+ * @brief Parse all expected reply frames from the RX buffer.
  * Called from IRQ context (RxEventCallback).
  */
 static void prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
@@ -2065,55 +2060,54 @@ static void prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
  8000e8e:	6078      	str	r0, [r7, #4]
  8000e90:	460b      	mov	r3, r1
  8000e92:	807b      	strh	r3, [r7, #2]
-    uint16_t offset  = 0U;
+	uint16_t offset  = 0U;
  8000e94:	2300      	movs	r3, #0
  8000e96:	83fb      	strh	r3, [r7, #30]
-    uint8_t  parsed  = 0U;
+	uint8_t  parsed  = 0U;
  8000e98:	2300      	movs	r3, #0
  8000e9a:	777b      	strb	r3, [r7, #29]
 
-    while ((parsed < hservo->expected_replies) && (offset < buf_len)) {
+	while ((parsed < hservo->expected_replies) && (offset < buf_len)) {
  8000e9c:	e044      	b.n	8000f28 <prv_parse_rx_buffer+0xa0>
 
-        uint16_t remaining = buf_len - offset;
+		uint16_t remaining = buf_len - offset;
  8000e9e:	887a      	ldrh	r2, [r7, #2]
  8000ea0:	8bfb      	ldrh	r3, [r7, #30]
  8000ea2:	1ad3      	subs	r3, r2, r3
  8000ea4:	837b      	strh	r3, [r7, #26]
-        STS3215_Reply_t reply;
+		STS3215_Reply_t reply;
 
-        STS3215_Status_t status = STS3215_ParseReply(
-            &hservo->rx_buf[offset],
+		STS3215_Status_t status = STS3215_ParseReply(
+				&hservo->rx_buf[offset],
  8000ea6:	8bfb      	ldrh	r3, [r7, #30]
  8000ea8:	3398      	adds	r3, #152	@ 0x98
  8000eaa:	687a      	ldr	r2, [r7, #4]
  8000eac:	4413      	add	r3, r2
  8000eae:	3304      	adds	r3, #4
-        STS3215_Status_t status = STS3215_ParseReply(
+		STS3215_Status_t status = STS3215_ParseReply(
  8000eb0:	f107 020c 	add.w	r2, r7, #12
  8000eb4:	8b79      	ldrh	r1, [r7, #26]
  8000eb6:	4618      	mov	r0, r3
  8000eb8:	f000 fb58 	bl	800156c <STS3215_ParseReply>
  8000ebc:	4603      	mov	r3, r0
  8000ebe:	767b      	strb	r3, [r7, #25]
-            remaining,
-            &reply
-        );
+				remaining,
+				&reply
+		);
 
-        if (status == STS3215_OK || status == STS3215_ERR_SERVO_FAULT) {
+		if (status == STS3215_OK || status == STS3215_ERR_SERVO_FAULT) {
  8000ec0:	f997 3019 	ldrsb.w	r3, [r7, #25]
  8000ec4:	2b00      	cmp	r3, #0
  8000ec6:	d004      	beq.n	8000ed2 <prv_parse_rx_buffer+0x4a>
  8000ec8:	f997 3019 	ldrsb.w	r3, [r7, #25]
  8000ecc:	f113 0f06 	cmn.w	r3, #6
  8000ed0:	d11b      	bne.n	8000f0a <prv_parse_rx_buffer+0x82>
-            /* Fire user callback with reply and its index in the batch */
-            if (hservo->on_reply != NULL) {
+			if (hservo->on_reply != NULL) {
  8000ed2:	687b      	ldr	r3, [r7, #4]
  8000ed4:	f8d3 31ac 	ldr.w	r3, [r3, #428]	@ 0x1ac
  8000ed8:	2b00      	cmp	r3, #0
  8000eda:	d00b      	beq.n	8000ef4 <prv_parse_rx_buffer+0x6c>
-                hservo->on_reply(&reply, parsed, status, hservo->user_ctx);
+				hservo->on_reply(&reply, parsed, status, hservo->user_ctx);
  8000edc:	687b      	ldr	r3, [r7, #4]
  8000ede:	f8d3 41ac 	ldr.w	r4, [r3, #428]	@ 0x1ac
  8000ee2:	687b      	ldr	r3, [r7, #4]
@@ -2122,12 +2116,9 @@ static void prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
  8000eec:	7f79      	ldrb	r1, [r7, #29]
  8000eee:	f107 000c 	add.w	r0, r7, #12
  8000ef2:	47a0      	blx	r4
-            /*
-             * Advance offset by the total frame size consumed.
-             * Frame size = 6 (fixed overhead) + n_data_bytes
-             * where n_data_bytes = reply.data_len
-             */
-            offset += (uint16_t)(6U + (uint16_t)reply.data_len);
+			}
+
+			offset += (uint16_t)(6U + (uint16_t)reply.data_len);
  8000ef4:	7dbb      	ldrb	r3, [r7, #22]
  8000ef6:	461a      	mov	r2, r3
  8000ef8:	8bfb      	ldrh	r3, [r7, #30]
@@ -2135,22 +2126,19 @@ static void prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
  8000efc:	b29b      	uxth	r3, r3
  8000efe:	3306      	adds	r3, #6
  8000f00:	83fb      	strh	r3, [r7, #30]
-            parsed++;
+			parsed++;
  8000f02:	7f7b      	ldrb	r3, [r7, #29]
  8000f04:	3301      	adds	r3, #1
  8000f06:	777b      	strb	r3, [r7, #29]
  8000f08:	e00e      	b.n	8000f28 <prv_parse_rx_buffer+0xa0>
-            /*
-             * Parse failure on a frame boundary (bad header, bad checksum,
-             * or truncated frame). Fire error and stop — do not attempt to
-             * re-sync; a clean retry from the application layer is safer.
-             */
-            if (hservo->on_error != NULL) {
+
+		} else {
+			if (hservo->on_error != NULL) {
  8000f0a:	687b      	ldr	r3, [r7, #4]
  8000f0c:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  8000f10:	2b00      	cmp	r3, #0
  8000f12:	d014      	beq.n	8000f3e <prv_parse_rx_buffer+0xb6>
-                hservo->on_error(STS3215_HAL_ERR_PARSE, hservo->user_ctx);
+				hservo->on_error(STS3215_HAL_ERR_PARSE, hservo->user_ctx);
  8000f14:	687b      	ldr	r3, [r7, #4]
  8000f16:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  8000f1a:	687a      	ldr	r2, [r7, #4]
@@ -2158,13 +2146,13 @@ static void prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
  8000f20:	4611      	mov	r1, r2
  8000f22:	2004      	movs	r0, #4
  8000f24:	4798      	blx	r3
-            }
-            break;
-        }
-    }
+			}
+			break;
+		}
+	}
 }
  8000f26:	e00b      	b.n	8000f40 <prv_parse_rx_buffer+0xb8>
-    while ((parsed < hservo->expected_replies) && (offset < buf_len)) {
+	while ((parsed < hservo->expected_replies) && (offset < buf_len)) {
  8000f28:	687b      	ldr	r3, [r7, #4]
  8000f2a:	f893 31a1 	ldrb.w	r3, [r3, #417]	@ 0x1a1
  8000f2e:	7f7a      	ldrb	r2, [r7, #29]
@@ -2176,7 +2164,7 @@ static void prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
  8000f3a:	d3b0      	bcc.n	8000e9e <prv_parse_rx_buffer+0x16>
 }
  8000f3c:	e000      	b.n	8000f40 <prv_parse_rx_buffer+0xb8>
-            break;
+			break;
  8000f3e:	bf00      	nop
 }
  8000f40:	bf00      	nop
@@ -2185,11 +2173,11 @@ static void prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
  8000f46:	bd90      	pop	{r4, r7, pc}
 
 08000f48 <STS3215_HAL_Init>:
-                      UART_HandleTypeDef          *huart,
-                      uint32_t                    reply_timeout_ms,
-                      STS3215_HAL_ReplyCallback_t  on_reply,
-                      STS3215_HAL_ErrorCallback_t  on_error,
-                      void                        *user_ctx)
+		UART_HandleTypeDef *huart,
+		uint32_t reply_timeout_ms,
+		STS3215_HAL_ReplyCallback_t  on_reply,
+		STS3215_HAL_ErrorCallback_t  on_error,
+		void *user_ctx)
 {
  8000f48:	b580      	push	{r7, lr}
  8000f4a:	b084      	sub	sp, #16
@@ -2198,7 +2186,7 @@ static void prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
  8000f50:	60b9      	str	r1, [r7, #8]
  8000f52:	607a      	str	r2, [r7, #4]
  8000f54:	603b      	str	r3, [r7, #0]
-    if (hservo == NULL || huart == NULL) { return; }
+	if (hservo == NULL || huart == NULL) { return; }
  8000f56:	68fb      	ldr	r3, [r7, #12]
  8000f58:	2b00      	cmp	r3, #0
  8000f5a:	d029      	beq.n	8000fb0 <STS3215_HAL_Init+0x68>
@@ -2206,50 +2194,50 @@ static void prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
  8000f5e:	2b00      	cmp	r3, #0
  8000f60:	d026      	beq.n	8000fb0 <STS3215_HAL_Init+0x68>
 
-    memset(hservo, 0, sizeof(STS3215_HAL_Handle_t));
+	memset(hservo, 0, sizeof(STS3215_HAL_Handle_t));
  8000f62:	f44f 72dc 	mov.w	r2, #440	@ 0x1b8
  8000f66:	2100      	movs	r1, #0
  8000f68:	68f8      	ldr	r0, [r7, #12]
  8000f6a:	f004 f9be 	bl	80052ea <memset>
 
-    hservo->huart             = huart;
+	hservo->huart = huart;
  8000f6e:	68fb      	ldr	r3, [r7, #12]
  8000f70:	68ba      	ldr	r2, [r7, #8]
  8000f72:	601a      	str	r2, [r3, #0]
-    hservo->reply_timeout_ms  = (reply_timeout_ms > 0U)
-                                 ? reply_timeout_ms
-                                 : STS3215_HAL_REPLY_TIMEOUT_MS;
+	hservo->reply_timeout_ms = (reply_timeout_ms > 0U)
+                                		 ? reply_timeout_ms
+                                				 : STS3215_HAL_REPLY_TIMEOUT_MS;
  8000f74:	687b      	ldr	r3, [r7, #4]
  8000f76:	2b00      	cmp	r3, #0
  8000f78:	d001      	beq.n	8000f7e <STS3215_HAL_Init+0x36>
  8000f7a:	687b      	ldr	r3, [r7, #4]
  8000f7c:	e000      	b.n	8000f80 <STS3215_HAL_Init+0x38>
  8000f7e:	230a      	movs	r3, #10
-    hservo->reply_timeout_ms  = (reply_timeout_ms > 0U)
+	hservo->reply_timeout_ms = (reply_timeout_ms > 0U)
  8000f80:	68fa      	ldr	r2, [r7, #12]
  8000f82:	f8c2 31a8 	str.w	r3, [r2, #424]	@ 0x1a8
-    hservo->on_reply          = on_reply;
+	hservo->on_reply = on_reply;
  8000f86:	68fb      	ldr	r3, [r7, #12]
  8000f88:	683a      	ldr	r2, [r7, #0]
  8000f8a:	f8c3 21ac 	str.w	r2, [r3, #428]	@ 0x1ac
-    hservo->on_error          = on_error;
+	hservo->on_error  = on_error;
  8000f8e:	68fb      	ldr	r3, [r7, #12]
  8000f90:	69ba      	ldr	r2, [r7, #24]
  8000f92:	f8c3 21b0 	str.w	r2, [r3, #432]	@ 0x1b0
-    hservo->user_ctx          = user_ctx;
+	hservo->user_ctx = user_ctx;
  8000f96:	68fb      	ldr	r3, [r7, #12]
  8000f98:	69fa      	ldr	r2, [r7, #28]
  8000f9a:	f8c3 21b4 	str.w	r2, [r3, #436]	@ 0x1b4
-    hservo->state             = STS3215_HAL_STATE_IDLE;
+	hservo->state = STS3215_HAL_STATE_IDLE;
  8000f9e:	68fb      	ldr	r3, [r7, #12]
  8000fa0:	2200      	movs	r2, #0
  8000fa2:	f883 219c 	strb.w	r2, [r3, #412]	@ 0x19c
-    hservo->last_error        = STS3215_HAL_ERR_NONE;
+	hservo->last_error  = STS3215_HAL_ERR_NONE;
  8000fa6:	68fb      	ldr	r3, [r7, #12]
  8000fa8:	2200      	movs	r2, #0
  8000faa:	f883 219d 	strb.w	r2, [r3, #413]	@ 0x19d
  8000fae:	e000      	b.n	8000fb2 <STS3215_HAL_Init+0x6a>
-    if (hservo == NULL || huart == NULL) { return; }
+	if (hservo == NULL || huart == NULL) { return; }
  8000fb0:	bf00      	nop
 }
  8000fb2:	3710      	adds	r7, #16
@@ -2264,7 +2252,7 @@ void STS3215_HAL_RegisterInstance(STS3215_HAL_Handle_t *hservo)
  8000fba:	b083      	sub	sp, #12
  8000fbc:	af00      	add	r7, sp, #0
  8000fbe:	6078      	str	r0, [r7, #4]
-    s_instance = hservo;
+	s_instance = hservo;
  8000fc0:	4a04      	ldr	r2, [pc, #16]	@ (8000fd4 <STS3215_HAL_RegisterInstance+0x1c>)
  8000fc2:	687b      	ldr	r3, [r7, #4]
  8000fc4:	6013      	str	r3, [r2, #0]
@@ -2279,10 +2267,10 @@ void STS3215_HAL_RegisterInstance(STS3215_HAL_Handle_t *hservo)
 
 08000fd8 <STS3215_HAL_SendFrame>:
 STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
-                                        const uint8_t        *frame,
-                                        uint16_t              len,
-                                        bool                  is_broadcast,
-                                        uint8_t               expected_replies)
+		const uint8_t *frame,
+		uint16_t len,
+		bool is_broadcast,
+		uint8_t expected_replies)
 {
  8000fd8:	b580      	push	{r7, lr}
  8000fda:	b086      	sub	sp, #24
@@ -2295,7 +2283,7 @@ STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
  8000fe8:	80fb      	strh	r3, [r7, #6]
  8000fea:	4613      	mov	r3, r2
  8000fec:	717b      	strb	r3, [r7, #5]
-    if (hservo == NULL || frame == NULL) { return STS3215_ERR_NULL_PTR; }
+	if (hservo == NULL || frame == NULL) { return STS3215_ERR_NULL_PTR; }
  8000fee:	68fb      	ldr	r3, [r7, #12]
  8000ff0:	2b00      	cmp	r3, #0
  8000ff2:	d002      	beq.n	8000ffa <STS3215_HAL_SendFrame+0x22>
@@ -2305,18 +2293,18 @@ STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
  8000ffa:	f04f 33ff 	mov.w	r3, #4294967295
  8000ffe:	e060      	b.n	80010c2 <STS3215_HAL_SendFrame+0xea>
 
-    if (hservo->state != STS3215_HAL_STATE_IDLE) {
+	if (hservo->state != STS3215_HAL_STATE_IDLE) {
  8001000:	68fb      	ldr	r3, [r7, #12]
  8001002:	f893 319c 	ldrb.w	r3, [r3, #412]	@ 0x19c
  8001006:	b2db      	uxtb	r3, r3
  8001008:	2b00      	cmp	r3, #0
  800100a:	d010      	beq.n	800102e <STS3215_HAL_SendFrame+0x56>
-        if (hservo->on_error != NULL) {
+		if (hservo->on_error != NULL) {
  800100c:	68fb      	ldr	r3, [r7, #12]
  800100e:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  8001012:	2b00      	cmp	r3, #0
  8001014:	d008      	beq.n	8001028 <STS3215_HAL_SendFrame+0x50>
-            hservo->on_error(STS3215_HAL_ERR_BUSY, hservo->user_ctx);
+			hservo->on_error(STS3215_HAL_ERR_BUSY, hservo->user_ctx);
  8001016:	68fb      	ldr	r3, [r7, #12]
  8001018:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  800101c:	68fa      	ldr	r2, [r7, #12]
@@ -2324,26 +2312,22 @@ STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
  8001022:	4611      	mov	r1, r2
  8001024:	2005      	movs	r0, #5
  8001026:	4798      	blx	r3
-        }
-        return STS3215_ERR_INVALID_PARAM; /* Reuse closest error code */
+		}
+		return STS3215_ERR_INVALID_PARAM;
  8001028:	f06f 0301 	mvn.w	r3, #1
  800102c:	e049      	b.n	80010c2 <STS3215_HAL_SendFrame+0xea>
-    }
+	}
 
-    /* Guard: frame must fit in tx_buf */
-    if (len > (uint16_t)STS3215_TX_BUF_SIZE) {
+	if (len > (uint16_t)STS3215_TX_BUF_SIZE) {
  800102e:	88fb      	ldrh	r3, [r7, #6]
  8001030:	2b97      	cmp	r3, #151	@ 0x97
  8001032:	d902      	bls.n	800103a <STS3215_HAL_SendFrame+0x62>
-        return STS3215_ERR_INVALID_PARAM;
+		return STS3215_ERR_INVALID_PARAM;
  8001034:	f06f 0301 	mvn.w	r3, #1
  8001038:	e043      	b.n	80010c2 <STS3215_HAL_SendFrame+0xea>
+	}
 
-    /*
-     * Copy frame into DMA-backed tx_buf BEFORE starting DMA.
-     * This decouples the caller's buffer lifetime from the DMA transfer.
-     */
-    memcpy(hservo->tx_buf, frame, len);
+	memcpy(hservo->tx_buf, frame, len);
  800103a:	68fb      	ldr	r3, [r7, #12]
  800103c:	3304      	adds	r3, #4
  800103e:	88fa      	ldrh	r2, [r7, #6]
@@ -2351,11 +2335,11 @@ STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
  8001042:	4618      	mov	r0, r3
  8001044:	f004 f9cd 	bl	80053e2 <memcpy>
 
-    hservo->is_broadcast      = is_broadcast;
+	hservo->is_broadcast = is_broadcast;
  8001048:	68fb      	ldr	r3, [r7, #12]
  800104a:	797a      	ldrb	r2, [r7, #5]
  800104c:	f883 21a0 	strb.w	r2, [r3, #416]	@ 0x1a0
-    hservo->expected_replies  = (is_broadcast ? 0U : expected_replies);
+	hservo->expected_replies  = (is_broadcast ? 0U : expected_replies);
  8001050:	797b      	ldrb	r3, [r7, #5]
  8001052:	2b00      	cmp	r3, #0
  8001054:	d001      	beq.n	800105a <STS3215_HAL_SendFrame+0x82>
@@ -2364,45 +2348,45 @@ STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
  800105a:	f897 2020 	ldrb.w	r2, [r7, #32]
  800105e:	68fb      	ldr	r3, [r7, #12]
  8001060:	f883 21a1 	strb.w	r2, [r3, #417]	@ 0x1a1
-    hservo->state             = STS3215_HAL_STATE_TX_BUSY;
+	hservo->state = STS3215_HAL_STATE_TX_BUSY;
  8001064:	68fb      	ldr	r3, [r7, #12]
  8001066:	2201      	movs	r2, #1
  8001068:	f883 219c 	strb.w	r2, [r3, #412]	@ 0x19c
 
-    HAL_StatusTypeDef status = HAL_UART_Transmit_DMA(
+	HAL_StatusTypeDef status = HAL_UART_Transmit_DMA(
  800106c:	68fb      	ldr	r3, [r7, #12]
  800106e:	6818      	ldr	r0, [r3, #0]
-        hservo->huart,
-        hservo->tx_buf,
+			hservo->huart,
+			hservo->tx_buf,
  8001070:	68fb      	ldr	r3, [r7, #12]
  8001072:	3304      	adds	r3, #4
-    HAL_StatusTypeDef status = HAL_UART_Transmit_DMA(
+	HAL_StatusTypeDef status = HAL_UART_Transmit_DMA(
  8001074:	88fa      	ldrh	r2, [r7, #6]
  8001076:	4619      	mov	r1, r3
  8001078:	f002 fa42 	bl	8003500 <HAL_UART_Transmit_DMA>
  800107c:	4603      	mov	r3, r0
  800107e:	75fb      	strb	r3, [r7, #23]
-        len
-    );
+			len
+	);
 
-    if (status != HAL_OK) {
+	if (status != HAL_OK) {
  8001080:	7dfb      	ldrb	r3, [r7, #23]
  8001082:	2b00      	cmp	r3, #0
  8001084:	d01c      	beq.n	80010c0 <STS3215_HAL_SendFrame+0xe8>
-        hservo->state      = STS3215_HAL_STATE_ERROR;
+		hservo->state = STS3215_HAL_STATE_ERROR;
  8001086:	68fb      	ldr	r3, [r7, #12]
  8001088:	2203      	movs	r2, #3
  800108a:	f883 219c 	strb.w	r2, [r3, #412]	@ 0x19c
-        hservo->last_error = STS3215_HAL_ERR_DMA_TX;
+		hservo->last_error = STS3215_HAL_ERR_DMA_TX;
  800108e:	68fb      	ldr	r3, [r7, #12]
  8001090:	2202      	movs	r2, #2
  8001092:	f883 219d 	strb.w	r2, [r3, #413]	@ 0x19d
-        if (hservo->on_error != NULL) {
+		if (hservo->on_error != NULL) {
  8001096:	68fb      	ldr	r3, [r7, #12]
  8001098:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  800109c:	2b00      	cmp	r3, #0
  800109e:	d008      	beq.n	80010b2 <STS3215_HAL_SendFrame+0xda>
-            hservo->on_error(STS3215_HAL_ERR_DMA_TX, hservo->user_ctx);
+			hservo->on_error(STS3215_HAL_ERR_DMA_TX, hservo->user_ctx);
  80010a0:	68fb      	ldr	r3, [r7, #12]
  80010a2:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  80010a6:	68fa      	ldr	r2, [r7, #12]
@@ -2410,17 +2394,17 @@ STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
  80010ac:	4611      	mov	r1, r2
  80010ae:	2002      	movs	r0, #2
  80010b0:	4798      	blx	r3
-        }
-        hservo->state = STS3215_HAL_STATE_IDLE;
+		}
+		hservo->state = STS3215_HAL_STATE_IDLE;
  80010b2:	68fb      	ldr	r3, [r7, #12]
  80010b4:	2200      	movs	r2, #0
  80010b6:	f883 219c 	strb.w	r2, [r3, #412]	@ 0x19c
-        return STS3215_ERR_INVALID_PARAM;
+		return STS3215_ERR_INVALID_PARAM;
  80010ba:	f06f 0301 	mvn.w	r3, #1
  80010be:	e000      	b.n	80010c2 <STS3215_HAL_SendFrame+0xea>
-    }
+	}
 
-    return STS3215_OK;
+	return STS3215_OK;
  80010c0:	2300      	movs	r3, #0
 }
  80010c2:	4618      	mov	r0, r3
@@ -2436,41 +2420,36 @@ void STS3215_HAL_Process(STS3215_HAL_Handle_t *hservo)
  80010cc:	b084      	sub	sp, #16
  80010ce:	af00      	add	r7, sp, #0
  80010d0:	6078      	str	r0, [r7, #4]
-    if (hservo == NULL) { return; }
+	if (hservo == NULL) { return; }
  80010d2:	687b      	ldr	r3, [r7, #4]
  80010d4:	2b00      	cmp	r3, #0
  80010d6:	d043      	beq.n	8001160 <STS3215_HAL_Process+0x96>
-    /*
-     * Timeout guard: only relevant while waiting for a reply.
-     * HAL_GetTick() returns ms since boot; handles 32-bit rollover correctly
-     * via unsigned subtraction.
-     */
-    if (hservo->state == STS3215_HAL_STATE_RX_BUSY) {
+	if (hservo->state == STS3215_HAL_STATE_RX_BUSY) {
  80010d8:	687b      	ldr	r3, [r7, #4]
  80010da:	f893 319c 	ldrb.w	r3, [r3, #412]	@ 0x19c
  80010de:	b2db      	uxtb	r3, r3
  80010e0:	2b02      	cmp	r3, #2
  80010e2:	d13e      	bne.n	8001162 <STS3215_HAL_Process+0x98>
-        uint32_t elapsed = HAL_GetTick() - hservo->tx_timestamp_ms;
+		uint32_t elapsed = HAL_GetTick() - hservo->tx_timestamp_ms;
  80010e4:	f000 fc2a 	bl	800193c <HAL_GetTick>
  80010e8:	4602      	mov	r2, r0
  80010ea:	687b      	ldr	r3, [r7, #4]
  80010ec:	f8d3 31a4 	ldr.w	r3, [r3, #420]	@ 0x1a4
  80010f0:	1ad3      	subs	r3, r2, r3
  80010f2:	60fb      	str	r3, [r7, #12]
-        if (elapsed >= hservo->reply_timeout_ms) {
+		if (elapsed >= hservo->reply_timeout_ms) {
  80010f4:	687b      	ldr	r3, [r7, #4]
  80010f6:	f8d3 31a8 	ldr.w	r3, [r3, #424]	@ 0x1a8
  80010fa:	68fa      	ldr	r2, [r7, #12]
  80010fc:	429a      	cmp	r2, r3
  80010fe:	d330      	bcc.n	8001162 <STS3215_HAL_Process+0x98>
-            /* Stop the RX DMA cleanly */
-            HAL_UART_DMAStop(hservo->huart);
+			/* Stop the RX DMA cleanly */
+			HAL_UART_DMAStop(hservo->huart);
  8001100:	687b      	ldr	r3, [r7, #4]
  8001102:	681b      	ldr	r3, [r3, #0]
  8001104:	4618      	mov	r0, r3
  8001106:	f002 fa7b 	bl	8003600 <HAL_UART_DMAStop>
-            __HAL_UART_FLUSH_DRREGISTER(hservo->huart);
+			__HAL_UART_FLUSH_DRREGISTER(hservo->huart);
  800110a:	687b      	ldr	r3, [r7, #4]
  800110c:	681b      	ldr	r3, [r3, #0]
  800110e:	681b      	ldr	r3, [r3, #0]
@@ -2490,21 +2469,21 @@ void STS3215_HAL_Process(STS3215_HAL_Handle_t *hservo)
  800112c:	f042 0210 	orr.w	r2, r2, #16
  8001130:	619a      	str	r2, [r3, #24]
 
-            hservo->last_error = STS3215_HAL_ERR_TIMEOUT;
+			hservo->last_error = STS3215_HAL_ERR_TIMEOUT;
  8001132:	687b      	ldr	r3, [r7, #4]
  8001134:	2201      	movs	r2, #1
  8001136:	f883 219d 	strb.w	r2, [r3, #413]	@ 0x19d
-            hservo->state      = STS3215_HAL_STATE_IDLE;
+			hservo->state      = STS3215_HAL_STATE_IDLE;
  800113a:	687b      	ldr	r3, [r7, #4]
  800113c:	2200      	movs	r2, #0
  800113e:	f883 219c 	strb.w	r2, [r3, #412]	@ 0x19c
 
-            if (hservo->on_error != NULL) {
+			if (hservo->on_error != NULL) {
  8001142:	687b      	ldr	r3, [r7, #4]
  8001144:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  8001148:	2b00      	cmp	r3, #0
  800114a:	d00a      	beq.n	8001162 <STS3215_HAL_Process+0x98>
-                hservo->on_error(STS3215_HAL_ERR_TIMEOUT, hservo->user_ctx);
+				hservo->on_error(STS3215_HAL_ERR_TIMEOUT, hservo->user_ctx);
  800114c:	687b      	ldr	r3, [r7, #4]
  800114e:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  8001152:	687a      	ldr	r2, [r7, #4]
@@ -2513,11 +2492,11 @@ void STS3215_HAL_Process(STS3215_HAL_Handle_t *hservo)
  800115a:	2001      	movs	r0, #1
  800115c:	4798      	blx	r3
  800115e:	e000      	b.n	8001162 <STS3215_HAL_Process+0x98>
-    if (hservo == NULL) { return; }
+	if (hservo == NULL) { return; }
  8001160:	bf00      	nop
-            }
-        }
-    }
+			}
+		}
+	}
 }
  8001162:	3710      	adds	r7, #16
  8001164:	46bd      	mov	sp, r7
@@ -2525,7 +2504,7 @@ void STS3215_HAL_Process(STS3215_HAL_Handle_t *hservo)
 
 08001168 <STS3215_HAL_IsIdle>:
 {
-    return (hservo != NULL) ? hservo->state : STS3215_HAL_STATE_ERROR;
+	return (hservo != NULL) ? hservo->state : STS3215_HAL_STATE_ERROR;
 }
 
 bool STS3215_HAL_IsIdle(const STS3215_HAL_Handle_t *hservo)
@@ -2534,7 +2513,7 @@ bool STS3215_HAL_IsIdle(const STS3215_HAL_Handle_t *hservo)
  800116a:	b083      	sub	sp, #12
  800116c:	af00      	add	r7, sp, #0
  800116e:	6078      	str	r0, [r7, #4]
-    return (hservo != NULL) && (hservo->state == STS3215_HAL_STATE_IDLE);
+	return (hservo != NULL) && (hservo->state == STS3215_HAL_STATE_IDLE);
  8001170:	687b      	ldr	r3, [r7, #4]
  8001172:	2b00      	cmp	r3, #0
  8001174:	d007      	beq.n	8001186 <STS3215_HAL_IsIdle+0x1e>
@@ -2556,8 +2535,8 @@ bool STS3215_HAL_IsIdle(const STS3215_HAL_Handle_t *hservo)
  8001198:	4770      	bx	lr
 
 0800119a <STS3215_HAL_TxCpltCallback>:
- * prepare its response in practice).
- *
+/**
+ * @brief Called from HAL_UART_TxCpltCallback when DMA TX completes.
  * Runs in DMA IRQ context — keep processing minimal.
  */
 void STS3215_HAL_TxCpltCallback(STS3215_HAL_Handle_t *hservo)
@@ -2566,7 +2545,7 @@ void STS3215_HAL_TxCpltCallback(STS3215_HAL_Handle_t *hservo)
  800119c:	b082      	sub	sp, #8
  800119e:	af00      	add	r7, sp, #0
  80011a0:	6078      	str	r0, [r7, #4]
-    if (hservo == NULL || hservo->state != STS3215_HAL_STATE_TX_BUSY) {
+	if (hservo == NULL || hservo->state != STS3215_HAL_STATE_TX_BUSY) {
  80011a2:	687b      	ldr	r3, [r7, #4]
  80011a4:	2b00      	cmp	r3, #0
  80011a6:	d018      	beq.n	80011da <STS3215_HAL_TxCpltCallback+0x40>
@@ -2575,10 +2554,10 @@ void STS3215_HAL_TxCpltCallback(STS3215_HAL_Handle_t *hservo)
  80011ae:	b2db      	uxtb	r3, r3
  80011b0:	2b01      	cmp	r3, #1
  80011b2:	d112      	bne.n	80011da <STS3215_HAL_TxCpltCallback+0x40>
-        return;
-    }
+		return;
+	}
 
-    if (hservo->is_broadcast || hservo->expected_replies == 0U) {
+	if (hservo->is_broadcast || hservo->expected_replies == 0U) {
  80011b4:	687b      	ldr	r3, [r7, #4]
  80011b6:	f893 31a0 	ldrb.w	r3, [r3, #416]	@ 0x1a0
  80011ba:	2b00      	cmp	r3, #0
@@ -2587,30 +2566,28 @@ void STS3215_HAL_TxCpltCallback(STS3215_HAL_Handle_t *hservo)
  80011c0:	f893 31a1 	ldrb.w	r3, [r3, #417]	@ 0x1a1
  80011c4:	2b00      	cmp	r3, #0
  80011c6:	d104      	bne.n	80011d2 <STS3215_HAL_TxCpltCallback+0x38>
-        /* No reply expected — transfer complete */
-        hservo->state = STS3215_HAL_STATE_IDLE;
+		hservo->state = STS3215_HAL_STATE_IDLE;
  80011c8:	687b      	ldr	r3, [r7, #4]
  80011ca:	2200      	movs	r2, #0
  80011cc:	f883 219c 	strb.w	r2, [r3, #412]	@ 0x19c
  80011d0:	e004      	b.n	80011dc <STS3215_HAL_TxCpltCallback+0x42>
-    } else {
-        /* Flip to receive: start DMA RX with IDLE line detection */
-        prv_start_rx(hservo);
+	} else {
+		prv_start_rx(hservo);
  80011d2:	6878      	ldr	r0, [r7, #4]
  80011d4:	f7ff fdf8 	bl	8000dc8 <prv_start_rx>
  80011d8:	e000      	b.n	80011dc <STS3215_HAL_TxCpltCallback+0x42>
-        return;
+		return;
  80011da:	bf00      	nop
-    }
+	}
 }
  80011dc:	3708      	adds	r7, #8
  80011de:	46bd      	mov	sp, r7
  80011e0:	bd80      	pop	{r7, pc}
 
 080011e2 <STS3215_HAL_RxEventCallback>:
- * walks them frame-by-frame.
- *
  * Runs in DMA IRQ context.
+ *
+ * @param size  Actual number of bytes received into rx_buf.
  */
 void STS3215_HAL_RxEventCallback(STS3215_HAL_Handle_t *hservo, uint16_t size)
 {
@@ -2620,7 +2597,7 @@ void STS3215_HAL_RxEventCallback(STS3215_HAL_Handle_t *hservo, uint16_t size)
  80011e8:	6078      	str	r0, [r7, #4]
  80011ea:	460b      	mov	r3, r1
  80011ec:	807b      	strh	r3, [r7, #2]
-    if (hservo == NULL || hservo->state != STS3215_HAL_STATE_RX_BUSY) {
+	if (hservo == NULL || hservo->state != STS3215_HAL_STATE_RX_BUSY) {
  80011ee:	687b      	ldr	r3, [r7, #4]
  80011f0:	2b00      	cmp	r3, #0
  80011f2:	d013      	beq.n	800121c <STS3215_HAL_RxEventCallback+0x3a>
@@ -2629,28 +2606,26 @@ void STS3215_HAL_RxEventCallback(STS3215_HAL_Handle_t *hservo, uint16_t size)
  80011fa:	b2db      	uxtb	r3, r3
  80011fc:	2b02      	cmp	r3, #2
  80011fe:	d10d      	bne.n	800121c <STS3215_HAL_RxEventCallback+0x3a>
-        return;
-    }
+		return;
+	}
 
-    hservo->rx_received_len = size;
+	hservo->rx_received_len = size;
  8001200:	687b      	ldr	r3, [r7, #4]
  8001202:	887a      	ldrh	r2, [r7, #2]
  8001204:	f8a3 219e 	strh.w	r2, [r3, #414]	@ 0x19e
 
-    /* Parse all received frames and fire on_reply for each */
-    prv_parse_rx_buffer(hservo, size);
+	prv_parse_rx_buffer(hservo, size);
  8001208:	887b      	ldrh	r3, [r7, #2]
  800120a:	4619      	mov	r1, r3
  800120c:	6878      	ldr	r0, [r7, #4]
  800120e:	f7ff fe3b 	bl	8000e88 <prv_parse_rx_buffer>
 
-    /* Return to IDLE — ready for next command */
-    hservo->state = STS3215_HAL_STATE_IDLE;
+	hservo->state = STS3215_HAL_STATE_IDLE;
  8001212:	687b      	ldr	r3, [r7, #4]
  8001214:	2200      	movs	r2, #0
  8001216:	f883 219c 	strb.w	r2, [r3, #412]	@ 0x19c
  800121a:	e000      	b.n	800121e <STS3215_HAL_RxEventCallback+0x3c>
-        return;
+		return;
  800121c:	bf00      	nop
 }
  800121e:	3708      	adds	r7, #8
@@ -2658,8 +2633,8 @@ void STS3215_HAL_RxEventCallback(STS3215_HAL_Handle_t *hservo, uint16_t size)
  8001222:	bd80      	pop	{r7, pc}
 
 08001224 <STS3215_HAL_ErrorCallback>:
+/**
  * @brief Called from HAL_UART_ErrorCallback on DMA or UART peripheral error.
- *
  * Runs in DMA/UART IRQ context.
  */
 void STS3215_HAL_ErrorCallback(STS3215_HAL_Handle_t *hservo)
@@ -2668,17 +2643,17 @@ void STS3215_HAL_ErrorCallback(STS3215_HAL_Handle_t *hservo)
  8001226:	b084      	sub	sp, #16
  8001228:	af00      	add	r7, sp, #0
  800122a:	6078      	str	r0, [r7, #4]
-    if (hservo == NULL) { return; }
+	if (hservo == NULL) { return; }
  800122c:	687b      	ldr	r3, [r7, #4]
  800122e:	2b00      	cmp	r3, #0
  8001230:	d039      	beq.n	80012a6 <STS3215_HAL_ErrorCallback+0x82>
 
-    HAL_UART_DMAStop(hservo->huart);
+	HAL_UART_DMAStop(hservo->huart);
  8001232:	687b      	ldr	r3, [r7, #4]
  8001234:	681b      	ldr	r3, [r3, #0]
  8001236:	4618      	mov	r0, r3
  8001238:	f002 f9e2 	bl	8003600 <HAL_UART_DMAStop>
-    __HAL_UART_FLUSH_DRREGISTER(hservo->huart);
+	__HAL_UART_FLUSH_DRREGISTER(hservo->huart);
  800123c:	687b      	ldr	r3, [r7, #4]
  800123e:	681b      	ldr	r3, [r3, #0]
  8001240:	681b      	ldr	r3, [r3, #0]
@@ -2698,35 +2673,35 @@ void STS3215_HAL_ErrorCallback(STS3215_HAL_Handle_t *hservo)
  800125e:	f042 0210 	orr.w	r2, r2, #16
  8001262:	619a      	str	r2, [r3, #24]
 
-    STS3215_HAL_Error_t err = (hservo->state == STS3215_HAL_STATE_TX_BUSY)
+	STS3215_HAL_Error_t err = (hservo->state == STS3215_HAL_STATE_TX_BUSY)
  8001264:	687b      	ldr	r3, [r7, #4]
  8001266:	f893 319c 	ldrb.w	r3, [r3, #412]	@ 0x19c
  800126a:	b2db      	uxtb	r3, r3
-                               ? STS3215_HAL_ERR_DMA_TX
-                               : STS3215_HAL_ERR_DMA_RX;
+                            		   ? STS3215_HAL_ERR_DMA_TX
+                            				   : STS3215_HAL_ERR_DMA_RX;
  800126c:	2b01      	cmp	r3, #1
  800126e:	d101      	bne.n	8001274 <STS3215_HAL_ErrorCallback+0x50>
  8001270:	2302      	movs	r3, #2
  8001272:	e000      	b.n	8001276 <STS3215_HAL_ErrorCallback+0x52>
  8001274:	2303      	movs	r3, #3
-    STS3215_HAL_Error_t err = (hservo->state == STS3215_HAL_STATE_TX_BUSY)
+	STS3215_HAL_Error_t err = (hservo->state == STS3215_HAL_STATE_TX_BUSY)
  8001276:	73fb      	strb	r3, [r7, #15]
 
-    hservo->last_error = err;
+	hservo->last_error = err;
  8001278:	687b      	ldr	r3, [r7, #4]
  800127a:	7bfa      	ldrb	r2, [r7, #15]
  800127c:	f883 219d 	strb.w	r2, [r3, #413]	@ 0x19d
-    hservo->state      = STS3215_HAL_STATE_IDLE;
+	hservo->state      = STS3215_HAL_STATE_IDLE;
  8001280:	687b      	ldr	r3, [r7, #4]
  8001282:	2200      	movs	r2, #0
  8001284:	f883 219c 	strb.w	r2, [r3, #412]	@ 0x19c
 
-    if (hservo->on_error != NULL) {
+	if (hservo->on_error != NULL) {
  8001288:	687b      	ldr	r3, [r7, #4]
  800128a:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  800128e:	2b00      	cmp	r3, #0
  8001290:	d00a      	beq.n	80012a8 <STS3215_HAL_ErrorCallback+0x84>
-        hservo->on_error(err, hservo->user_ctx);
+		hservo->on_error(err, hservo->user_ctx);
  8001292:	687b      	ldr	r3, [r7, #4]
  8001294:	f8d3 31b0 	ldr.w	r3, [r3, #432]	@ 0x1b0
  8001298:	687a      	ldr	r2, [r7, #4]
@@ -2735,9 +2710,9 @@ void STS3215_HAL_ErrorCallback(STS3215_HAL_Handle_t *hservo)
  80012a0:	4610      	mov	r0, r2
  80012a2:	4798      	blx	r3
  80012a4:	e000      	b.n	80012a8 <STS3215_HAL_ErrorCallback+0x84>
-    if (hservo == NULL) { return; }
+	if (hservo == NULL) { return; }
  80012a6:	bf00      	nop
-    }
+	}
 }
  80012a8:	3710      	adds	r7, #16
  80012aa:	46bd      	mov	sp, r7
@@ -2755,7 +2730,7 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
  80012b2:	b082      	sub	sp, #8
  80012b4:	af00      	add	r7, sp, #0
  80012b6:	6078      	str	r0, [r7, #4]
-    if ((s_instance != NULL) && (s_instance->huart == huart)) {
+	if ((s_instance != NULL) && (s_instance->huart == huart)) {
  80012b8:	4b09      	ldr	r3, [pc, #36]	@ (80012e0 <HAL_UART_TxCpltCallback+0x30>)
  80012ba:	681b      	ldr	r3, [r3, #0]
  80012bc:	2b00      	cmp	r3, #0
@@ -2766,12 +2741,12 @@ void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart)
  80012c6:	687a      	ldr	r2, [r7, #4]
  80012c8:	429a      	cmp	r2, r3
  80012ca:	d104      	bne.n	80012d6 <HAL_UART_TxCpltCallback+0x26>
-        STS3215_HAL_TxCpltCallback(s_instance);
+		STS3215_HAL_TxCpltCallback(s_instance);
  80012cc:	4b04      	ldr	r3, [pc, #16]	@ (80012e0 <HAL_UART_TxCpltCallback+0x30>)
  80012ce:	681b      	ldr	r3, [r3, #0]
  80012d0:	4618      	mov	r0, r3
  80012d2:	f7ff ff62 	bl	800119a <STS3215_HAL_TxCpltCallback>
-    }
+	}
 }
  80012d6:	bf00      	nop
  80012d8:	3708      	adds	r7, #8
@@ -2790,7 +2765,7 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t size)
  80012ea:	6078      	str	r0, [r7, #4]
  80012ec:	460b      	mov	r3, r1
  80012ee:	807b      	strh	r3, [r7, #2]
-    if ((s_instance != NULL) && (s_instance->huart == huart)) {
+	if ((s_instance != NULL) && (s_instance->huart == huart)) {
  80012f0:	4b0a      	ldr	r3, [pc, #40]	@ (800131c <HAL_UARTEx_RxEventCallback+0x38>)
  80012f2:	681b      	ldr	r3, [r3, #0]
  80012f4:	2b00      	cmp	r3, #0
@@ -2801,14 +2776,14 @@ void HAL_UARTEx_RxEventCallback(UART_HandleTypeDef *huart, uint16_t size)
  80012fe:	687a      	ldr	r2, [r7, #4]
  8001300:	429a      	cmp	r2, r3
  8001302:	d106      	bne.n	8001312 <HAL_UARTEx_RxEventCallback+0x2e>
-        STS3215_HAL_RxEventCallback(s_instance, size);
+		STS3215_HAL_RxEventCallback(s_instance, size);
  8001304:	4b05      	ldr	r3, [pc, #20]	@ (800131c <HAL_UARTEx_RxEventCallback+0x38>)
  8001306:	681b      	ldr	r3, [r3, #0]
  8001308:	887a      	ldrh	r2, [r7, #2]
  800130a:	4611      	mov	r1, r2
  800130c:	4618      	mov	r0, r3
  800130e:	f7ff ff68 	bl	80011e2 <STS3215_HAL_RxEventCallback>
-    }
+	}
 }
  8001312:	bf00      	nop
  8001314:	3708      	adds	r7, #8
@@ -2825,7 +2800,7 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
  8001322:	b082      	sub	sp, #8
  8001324:	af00      	add	r7, sp, #0
  8001326:	6078      	str	r0, [r7, #4]
-    if ((s_instance != NULL) && (s_instance->huart == huart)) {
+	if ((s_instance != NULL) && (s_instance->huart == huart)) {
  8001328:	4b09      	ldr	r3, [pc, #36]	@ (8001350 <HAL_UART_ErrorCallback+0x30>)
  800132a:	681b      	ldr	r3, [r3, #0]
  800132c:	2b00      	cmp	r3, #0
@@ -2836,12 +2811,12 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
  8001336:	687a      	ldr	r2, [r7, #4]
  8001338:	429a      	cmp	r2, r3
  800133a:	d104      	bne.n	8001346 <HAL_UART_ErrorCallback+0x26>
-        STS3215_HAL_ErrorCallback(s_instance);
+		STS3215_HAL_ErrorCallback(s_instance);
  800133c:	4b04      	ldr	r3, [pc, #16]	@ (8001350 <HAL_UART_ErrorCallback+0x30>)
  800133e:	681b      	ldr	r3, [r3, #0]
  8001340:	4618      	mov	r0, r3
  8001342:	f7ff ff6f 	bl	8001224 <STS3215_HAL_ErrorCallback>
-    }
+	}
 }
  8001346:	bf00      	nop
  8001348:	3708      	adds	r7, #8
@@ -2851,11 +2826,11 @@ void HAL_UART_ErrorCallback(UART_HandleTypeDef *huart)
  8001350:	2000042c 	.word	0x2000042c
 
 08001354 <prv_checksum>:
- *
- * Uses uint32_t accumulator to safely handle overflow before masking.
+/**
+ * @brief Compute Feetech checksum (formula in Protocol Manual 1.1).
  */
 static uint8_t prv_checksum(uint8_t id, uint8_t length, uint8_t instr,
-                             const uint8_t *params, uint8_t n_params)
+		const uint8_t *params, uint8_t n_params)
 {
  8001354:	b480      	push	{r7}
  8001356:	b085      	sub	sp, #20
@@ -2867,18 +2842,18 @@ static uint8_t prv_checksum(uint8_t id, uint8_t length, uint8_t instr,
  8001362:	71bb      	strb	r3, [r7, #6]
  8001364:	4613      	mov	r3, r2
  8001366:	717b      	strb	r3, [r7, #5]
-    uint32_t sum = (uint32_t)id + (uint32_t)length + (uint32_t)instr;
+	uint32_t sum = (uint32_t)id + (uint32_t)length + (uint32_t)instr;
  8001368:	79fa      	ldrb	r2, [r7, #7]
  800136a:	79bb      	ldrb	r3, [r7, #6]
  800136c:	441a      	add	r2, r3
  800136e:	797b      	ldrb	r3, [r7, #5]
  8001370:	4413      	add	r3, r2
  8001372:	60fb      	str	r3, [r7, #12]
-    for (uint8_t i = 0U; i < n_params; i++) {
+	for (uint8_t i = 0U; i < n_params; i++) {
  8001374:	2300      	movs	r3, #0
  8001376:	72fb      	strb	r3, [r7, #11]
  8001378:	e00a      	b.n	8001390 <prv_checksum+0x3c>
-        sum += (uint32_t)params[i];
+		sum += (uint32_t)params[i];
  800137a:	7afb      	ldrb	r3, [r7, #11]
  800137c:	683a      	ldr	r2, [r7, #0]
  800137e:	4413      	add	r3, r2
@@ -2887,7 +2862,7 @@ static uint8_t prv_checksum(uint8_t id, uint8_t length, uint8_t instr,
  8001384:	68fb      	ldr	r3, [r7, #12]
  8001386:	4413      	add	r3, r2
  8001388:	60fb      	str	r3, [r7, #12]
-    for (uint8_t i = 0U; i < n_params; i++) {
+	for (uint8_t i = 0U; i < n_params; i++) {
  800138a:	7afb      	ldrb	r3, [r7, #11]
  800138c:	3301      	adds	r3, #1
  800138e:	72fb      	strb	r3, [r7, #11]
@@ -2895,8 +2870,8 @@ static uint8_t prv_checksum(uint8_t id, uint8_t length, uint8_t instr,
  8001392:	7e3b      	ldrb	r3, [r7, #24]
  8001394:	429a      	cmp	r2, r3
  8001396:	d3f0      	bcc.n	800137a <prv_checksum+0x26>
-    }
-    return (uint8_t)(~sum & 0xFFU);
+	}
+	return (uint8_t)(~sum & 0xFFU);
  8001398:	68fb      	ldr	r3, [r7, #12]
  800139a:	b2db      	uxtb	r3, r3
  800139c:	43db      	mvns	r3, r3
@@ -2913,7 +2888,7 @@ static uint8_t prv_checksum(uint8_t id, uint8_t length, uint8_t instr,
  * @return Total frame length in bytes.
  */
 static uint16_t prv_pack_frame(uint8_t *buf, uint8_t id, uint8_t instr,
-                                const uint8_t *params, uint8_t n_params)
+		const uint8_t *params, uint8_t n_params)
 {
  80013ac:	b580      	push	{r7, lr}
  80013ae:	b088      	sub	sp, #32
@@ -2924,11 +2899,11 @@ static uint16_t prv_pack_frame(uint8_t *buf, uint8_t id, uint8_t instr,
  80013b8:	72fb      	strb	r3, [r7, #11]
  80013ba:	4613      	mov	r3, r2
  80013bc:	72bb      	strb	r3, [r7, #10]
-    uint8_t length   = n_params + 2U;          /* instr byte + checksum byte */
+	uint8_t length   = n_params + 2U;          /* instr byte + checksum byte */
  80013be:	f897 3020 	ldrb.w	r3, [r7, #32]
  80013c2:	3302      	adds	r3, #2
  80013c4:	75fb      	strb	r3, [r7, #23]
-    uint8_t checksum = prv_checksum(id, length, instr, params, n_params);
+	uint8_t checksum = prv_checksum(id, length, instr, params, n_params);
  80013c6:	7aba      	ldrb	r2, [r7, #10]
  80013c8:	7df9      	ldrb	r1, [r7, #23]
  80013ca:	7af8      	ldrb	r0, [r7, #11]
@@ -2939,47 +2914,47 @@ static uint16_t prv_pack_frame(uint8_t *buf, uint8_t id, uint8_t instr,
  80013d8:	4603      	mov	r3, r0
  80013da:	75bb      	strb	r3, [r7, #22]
 
-    buf[0] = STS3215_HEADER_BYTE;
+	buf[0] = STS3215_HEADER_BYTE;
  80013dc:	68fb      	ldr	r3, [r7, #12]
  80013de:	22ff      	movs	r2, #255	@ 0xff
  80013e0:	701a      	strb	r2, [r3, #0]
-    buf[1] = STS3215_HEADER_BYTE;
+	buf[1] = STS3215_HEADER_BYTE;
  80013e2:	68fb      	ldr	r3, [r7, #12]
  80013e4:	3301      	adds	r3, #1
  80013e6:	22ff      	movs	r2, #255	@ 0xff
  80013e8:	701a      	strb	r2, [r3, #0]
-    buf[2] = id;
+	buf[2] = id;
  80013ea:	68fb      	ldr	r3, [r7, #12]
  80013ec:	3302      	adds	r3, #2
  80013ee:	7afa      	ldrb	r2, [r7, #11]
  80013f0:	701a      	strb	r2, [r3, #0]
-    buf[3] = length;
+	buf[3] = length;
  80013f2:	68fb      	ldr	r3, [r7, #12]
  80013f4:	3303      	adds	r3, #3
  80013f6:	7dfa      	ldrb	r2, [r7, #23]
  80013f8:	701a      	strb	r2, [r3, #0]
-    buf[4] = instr;
+	buf[4] = instr;
  80013fa:	68fb      	ldr	r3, [r7, #12]
  80013fc:	3304      	adds	r3, #4
  80013fe:	7aba      	ldrb	r2, [r7, #10]
  8001400:	701a      	strb	r2, [r3, #0]
 
-    if ((n_params > 0U) && (params != NULL)) {
+	if ((n_params > 0U) && (params != NULL)) {
  8001402:	f897 3020 	ldrb.w	r3, [r7, #32]
  8001406:	2b00      	cmp	r3, #0
  8001408:	d00a      	beq.n	8001420 <prv_pack_frame+0x74>
  800140a:	687b      	ldr	r3, [r7, #4]
  800140c:	2b00      	cmp	r3, #0
  800140e:	d007      	beq.n	8001420 <prv_pack_frame+0x74>
-        memcpy(&buf[5], params, n_params);
+		memcpy(&buf[5], params, n_params);
  8001410:	68fb      	ldr	r3, [r7, #12]
  8001412:	3305      	adds	r3, #5
  8001414:	f897 2020 	ldrb.w	r2, [r7, #32]
  8001418:	6879      	ldr	r1, [r7, #4]
  800141a:	4618      	mov	r0, r3
  800141c:	f003 ffe1 	bl	80053e2 <memcpy>
-    }
-    buf[5U + n_params] = checksum;
+	}
+	buf[5U + n_params] = checksum;
  8001420:	f897 3020 	ldrb.w	r3, [r7, #32]
  8001424:	3305      	adds	r3, #5
  8001426:	68fa      	ldr	r2, [r7, #12]
@@ -2987,7 +2962,7 @@ static uint16_t prv_pack_frame(uint8_t *buf, uint8_t id, uint8_t instr,
  800142a:	7dba      	ldrb	r2, [r7, #22]
  800142c:	701a      	strb	r2, [r3, #0]
 
-    return (uint16_t)(6U + n_params);
+	return (uint16_t)(6U + n_params);
  800142e:	f897 3020 	ldrb.w	r3, [r7, #32]
  8001432:	b29b      	uxth	r3, r3
  8001434:	3306      	adds	r3, #6
@@ -2999,9 +2974,9 @@ static uint16_t prv_pack_frame(uint8_t *buf, uint8_t id, uint8_t instr,
  800143e:	bd80      	pop	{r7, pc}
 
 08001440 <prv_cap_ok>:
+
 /**
- * @brief Guard: verify caller buffer fits the required frame.
- *        Required capacity = 6 (overhead) + n_params.
+ * @brief Verify caller buffer fits the required frame.
  */
 static bool prv_cap_ok(uint16_t cap, uint8_t n_params)
 {
@@ -3013,7 +2988,7 @@ static bool prv_cap_ok(uint16_t cap, uint8_t n_params)
  800144a:	80fb      	strh	r3, [r7, #6]
  800144c:	4613      	mov	r3, r2
  800144e:	717b      	strb	r3, [r7, #5]
-    return cap >= (uint16_t)(6U + (uint16_t)n_params);
+	return cap >= (uint16_t)(6U + (uint16_t)n_params);
  8001450:	797b      	ldrb	r3, [r7, #5]
  8001452:	b29b      	uxth	r3, r3
  8001454:	3306      	adds	r3, #6
@@ -3032,9 +3007,9 @@ static bool prv_cap_ok(uint16_t cap, uint8_t n_params)
  800146e:	4770      	bx	lr
 
 08001470 <STS3215_BuildPing>:
- * [Protocol Manual §1.3.1]
- * Frame: FF FF <id> 02 01 <checksum>
- * Unique behaviour: broadcast ID (0xFE) also generates a reply.
+
+/**
+ * PING — Query status (Protocol Manual 1.3.1)
  */
 int16_t STS3215_BuildPing(uint8_t *buf, uint16_t cap, uint8_t id)
 {
@@ -3046,13 +3021,13 @@ int16_t STS3215_BuildPing(uint8_t *buf, uint16_t cap, uint8_t id)
  800147a:	807b      	strh	r3, [r7, #2]
  800147c:	4613      	mov	r3, r2
  800147e:	707b      	strb	r3, [r7, #1]
-    if (buf == NULL)           { return STS3215_ERR_NULL_PTR; }
+	if (buf == NULL)           { return STS3215_ERR_NULL_PTR; }
  8001480:	687b      	ldr	r3, [r7, #4]
  8001482:	2b00      	cmp	r3, #0
  8001484:	d102      	bne.n	800148c <STS3215_BuildPing+0x1c>
  8001486:	f04f 33ff 	mov.w	r3, #4294967295
  800148a:	e017      	b.n	80014bc <STS3215_BuildPing+0x4c>
-    if (!prv_cap_ok(cap, 0U)) { return STS3215_ERR_BUFFER_SMALL; }
+	if (!prv_cap_ok(cap, 0U)) { return STS3215_ERR_BUFFER_SMALL; }
  800148c:	887b      	ldrh	r3, [r7, #2]
  800148e:	2100      	movs	r1, #0
  8001490:	4618      	mov	r0, r3
@@ -3065,7 +3040,7 @@ int16_t STS3215_BuildPing(uint8_t *buf, uint16_t cap, uint8_t id)
  80014a2:	f06f 0302 	mvn.w	r3, #2
  80014a6:	e009      	b.n	80014bc <STS3215_BuildPing+0x4c>
 
-    return (int16_t)prv_pack_frame(buf, id, STS3215_INSTR_PING, NULL, 0U);
+	return (int16_t)prv_pack_frame(buf, id, STS3215_INSTR_PING, NULL, 0U);
  80014a8:	7879      	ldrb	r1, [r7, #1]
  80014aa:	2300      	movs	r3, #0
  80014ac:	9300      	str	r3, [sp, #0]
@@ -3082,11 +3057,11 @@ int16_t STS3215_BuildPing(uint8_t *buf, uint16_t cap, uint8_t id)
  80014c2:	bd80      	pop	{r7, pc}
 
 080014c4 <STS3215_BuildMotionCmd>:
- *
- * Equivalent to Protocol Manual Example 7 (with acceleration prefix).
+ * Packs acceleration + target_pos + running_time + running_speed into a
+ * single WRITE DATA frame
  */
 int16_t STS3215_BuildMotionCmd(uint8_t *buf, uint16_t cap,
-                                uint8_t id, const STS3215_MotionCmd_t *cmd)
+		uint8_t id, const STS3215_MotionCmd_t *cmd)
 {
  80014c4:	b580      	push	{r7, lr}
  80014c6:	b08a      	sub	sp, #40	@ 0x28
@@ -3097,7 +3072,7 @@ int16_t STS3215_BuildMotionCmd(uint8_t *buf, uint16_t cap,
  80014d0:	817b      	strh	r3, [r7, #10]
  80014d2:	4613      	mov	r3, r2
  80014d4:	727b      	strb	r3, [r7, #9]
-    if (buf == NULL || cmd == NULL)  { return STS3215_ERR_NULL_PTR; }
+	if (buf == NULL || cmd == NULL)  { return STS3215_ERR_NULL_PTR; }
  80014d6:	68fb      	ldr	r3, [r7, #12]
  80014d8:	2b00      	cmp	r3, #0
  80014da:	d002      	beq.n	80014e2 <STS3215_BuildMotionCmd+0x1e>
@@ -3106,8 +3081,7 @@ int16_t STS3215_BuildMotionCmd(uint8_t *buf, uint16_t cap,
  80014e0:	d102      	bne.n	80014e8 <STS3215_BuildMotionCmd+0x24>
  80014e2:	f04f 33ff 	mov.w	r3, #4294967295
  80014e6:	e03d      	b.n	8001564 <STS3215_BuildMotionCmd+0xa0>
-    /* n_params = reg_addr(1) + accel(1) + pos(2) + time(2) + speed(2) = 8 */
-    if (!prv_cap_ok(cap, 8U))        { return STS3215_ERR_BUFFER_SMALL; }
+	if (!prv_cap_ok(cap, 8U))        { return STS3215_ERR_BUFFER_SMALL; }
  80014e8:	897b      	ldrh	r3, [r7, #10]
  80014ea:	2108      	movs	r1, #8
  80014ec:	4618      	mov	r0, r3
@@ -3120,63 +3094,62 @@ int16_t STS3215_BuildMotionCmd(uint8_t *buf, uint16_t cap,
  80014fe:	f06f 0302 	mvn.w	r3, #2
  8001502:	e02f      	b.n	8001564 <STS3215_BuildMotionCmd+0xa0>
 
-    /* Cast target_pos to uint16_t for safe bit manipulation */
-    uint16_t pos = (uint16_t)cmd->target_pos;
+	uint16_t pos = (uint16_t)cmd->target_pos;
  8001504:	687b      	ldr	r3, [r7, #4]
  8001506:	f9b3 3002 	ldrsh.w	r3, [r3, #2]
  800150a:	83fb      	strh	r3, [r7, #30]
 
-    uint8_t params[8] = {
+	uint8_t params[8] = {
  800150c:	2329      	movs	r3, #41	@ 0x29
  800150e:	753b      	strb	r3, [r7, #20]
-        STS3215_REG_ACCELERATION,
-        cmd->acceleration,
+			STS3215_REG_ACCELERATION,
+			cmd->acceleration,
  8001510:	687b      	ldr	r3, [r7, #4]
  8001512:	781b      	ldrb	r3, [r3, #0]
-    uint8_t params[8] = {
+	uint8_t params[8] = {
  8001514:	757b      	strb	r3, [r7, #21]
-        (uint8_t)(pos & 0xFFU),                          /* pos  low  */
+			(uint8_t)(pos & 0xFFU),
  8001516:	8bfb      	ldrh	r3, [r7, #30]
  8001518:	b2db      	uxtb	r3, r3
-    uint8_t params[8] = {
+	uint8_t params[8] = {
  800151a:	75bb      	strb	r3, [r7, #22]
-        (uint8_t)((pos >> 8U) & 0xFFU),                  /* pos  high */
+			(uint8_t)((pos >> 8U) & 0xFFU),
  800151c:	8bfb      	ldrh	r3, [r7, #30]
  800151e:	0a1b      	lsrs	r3, r3, #8
  8001520:	b29b      	uxth	r3, r3
  8001522:	b2db      	uxtb	r3, r3
-    uint8_t params[8] = {
+	uint8_t params[8] = {
  8001524:	75fb      	strb	r3, [r7, #23]
-        (uint8_t)(cmd->running_time & 0xFFU),             /* time low  */
+			(uint8_t)(cmd->running_time & 0xFFU),
  8001526:	687b      	ldr	r3, [r7, #4]
  8001528:	889b      	ldrh	r3, [r3, #4]
  800152a:	b2db      	uxtb	r3, r3
-    uint8_t params[8] = {
+	uint8_t params[8] = {
  800152c:	763b      	strb	r3, [r7, #24]
-        (uint8_t)((cmd->running_time >> 8U) & 0xFFU),    /* time high */
+			(uint8_t)((cmd->running_time >> 8U) & 0xFFU),
  800152e:	687b      	ldr	r3, [r7, #4]
  8001530:	889b      	ldrh	r3, [r3, #4]
  8001532:	0a1b      	lsrs	r3, r3, #8
  8001534:	b29b      	uxth	r3, r3
  8001536:	b2db      	uxtb	r3, r3
-    uint8_t params[8] = {
+	uint8_t params[8] = {
  8001538:	767b      	strb	r3, [r7, #25]
-        (uint8_t)(cmd->running_speed & 0xFFU),            /* spd  low  */
+			(uint8_t)(cmd->running_speed & 0xFFU),
  800153a:	687b      	ldr	r3, [r7, #4]
  800153c:	88db      	ldrh	r3, [r3, #6]
  800153e:	b2db      	uxtb	r3, r3
-    uint8_t params[8] = {
+	uint8_t params[8] = {
  8001540:	76bb      	strb	r3, [r7, #26]
-        (uint8_t)((cmd->running_speed >> 8U) & 0xFFU),   /* spd  high */
+			(uint8_t)((cmd->running_speed >> 8U) & 0xFFU),
  8001542:	687b      	ldr	r3, [r7, #4]
  8001544:	88db      	ldrh	r3, [r3, #6]
  8001546:	0a1b      	lsrs	r3, r3, #8
  8001548:	b29b      	uxth	r3, r3
  800154a:	b2db      	uxtb	r3, r3
-    uint8_t params[8] = {
+	uint8_t params[8] = {
  800154c:	76fb      	strb	r3, [r7, #27]
-    };
-    return (int16_t)prv_pack_frame(buf, id, STS3215_INSTR_WRITE, params, 8U);
+	};
+	return (int16_t)prv_pack_frame(buf, id, STS3215_INSTR_WRITE_DATA, params, 8U);
  800154e:	f107 0314 	add.w	r3, r7, #20
  8001552:	7a79      	ldrb	r1, [r7, #9]
  8001554:	2208      	movs	r2, #8
@@ -3193,11 +3166,11 @@ int16_t STS3215_BuildMotionCmd(uint8_t *buf, uint16_t cap,
  800156a:	bd80      	pop	{r7, pc}
 
 0800156c <STS3215_ParseReply>:
- *  STS3215_ERR_BAD_CHECKSUM → calculated != received checksum
- *  STS3215_ERR_NULL_PTR    → buf or reply is NULL
+/**
+ * @brief Parse a raw UART RX buffer into a STS3215_Reply_t
  */
 STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
-                                     STS3215_Reply_t *reply)
+		STS3215_Reply_t *reply)
 {
  800156c:	b580      	push	{r7, lr}
  800156e:	b088      	sub	sp, #32
@@ -3206,7 +3179,7 @@ STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
  8001574:	460b      	mov	r3, r1
  8001576:	607a      	str	r2, [r7, #4]
  8001578:	817b      	strh	r3, [r7, #10]
-    if (buf == NULL || reply == NULL) { return STS3215_ERR_NULL_PTR; }
+	if (buf == NULL || reply == NULL) { return STS3215_ERR_NULL_PTR; }
  800157a:	68fb      	ldr	r3, [r7, #12]
  800157c:	2b00      	cmp	r3, #0
  800157e:	d002      	beq.n	8001586 <STS3215_ParseReply+0x1a>
@@ -3215,80 +3188,70 @@ STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
  8001584:	d102      	bne.n	800158c <STS3215_ParseReply+0x20>
  8001586:	f04f 33ff 	mov.w	r3, #4294967295
  800158a:	e07b      	b.n	8001684 <STS3215_ParseReply+0x118>
-
-    /* Minimum valid reply: FF FF ID LEN ERROR CHECKSUM = 6 bytes */
-    if (buf_len < 6U) { return STS3215_ERR_FRAME_SHORT; }
+	if (buf_len < 6U) { return STS3215_ERR_FRAME_SHORT; }
  800158c:	897b      	ldrh	r3, [r7, #10]
  800158e:	2b05      	cmp	r3, #5
  8001590:	d802      	bhi.n	8001598 <STS3215_ParseReply+0x2c>
  8001592:	f06f 0306 	mvn.w	r3, #6
  8001596:	e075      	b.n	8001684 <STS3215_ParseReply+0x118>
-
-    /* Header guard */
-    if (buf[STS3215_REPLY_OFF_HEADER0] != STS3215_HEADER_BYTE ||
+	if (buf[STS3215_REPLY_OFF_HEADER0] != STS3215_HEADER_BYTE ||
  8001598:	68fb      	ldr	r3, [r7, #12]
  800159a:	781b      	ldrb	r3, [r3, #0]
  800159c:	2bff      	cmp	r3, #255	@ 0xff
  800159e:	d104      	bne.n	80015aa <STS3215_ParseReply+0x3e>
-        buf[STS3215_REPLY_OFF_HEADER1] != STS3215_HEADER_BYTE) {
+			buf[STS3215_REPLY_OFF_HEADER1] != STS3215_HEADER_BYTE) {
  80015a0:	68fb      	ldr	r3, [r7, #12]
  80015a2:	3301      	adds	r3, #1
  80015a4:	781b      	ldrb	r3, [r3, #0]
-    if (buf[STS3215_REPLY_OFF_HEADER0] != STS3215_HEADER_BYTE ||
+	if (buf[STS3215_REPLY_OFF_HEADER0] != STS3215_HEADER_BYTE ||
  80015a6:	2bff      	cmp	r3, #255	@ 0xff
  80015a8:	d002      	beq.n	80015b0 <STS3215_ParseReply+0x44>
-        return STS3215_ERR_BAD_HEADER;
+		return STS3215_ERR_BAD_HEADER;
  80015aa:	f06f 0303 	mvn.w	r3, #3
  80015ae:	e069      	b.n	8001684 <STS3215_ParseReply+0x118>
-    }
+	}
 
-    uint8_t id     = buf[STS3215_REPLY_OFF_ID];
+	uint8_t id     = buf[STS3215_REPLY_OFF_ID];
  80015b0:	68fb      	ldr	r3, [r7, #12]
  80015b2:	3302      	adds	r3, #2
  80015b4:	781b      	ldrb	r3, [r3, #0]
  80015b6:	76bb      	strb	r3, [r7, #26]
-    uint8_t length = buf[STS3215_REPLY_OFF_LENGTH]; /* = n_data + 2 */
+	uint8_t length = buf[STS3215_REPLY_OFF_LENGTH];
  80015b8:	68fb      	ldr	r3, [r7, #12]
  80015ba:	3303      	adds	r3, #3
  80015bc:	781b      	ldrb	r3, [r3, #0]
  80015be:	767b      	strb	r3, [r7, #25]
-    uint8_t error  = buf[STS3215_REPLY_OFF_ERROR];
+	uint8_t error  = buf[STS3215_REPLY_OFF_ERROR];
  80015c0:	68fb      	ldr	r3, [r7, #12]
  80015c2:	3304      	adds	r3, #4
  80015c4:	781b      	ldrb	r3, [r3, #0]
  80015c6:	763b      	strb	r3, [r7, #24]
 
-    /* length field must encode at least error byte + checksum byte */
-    if (length < 2U) { return STS3215_ERR_FRAME_SHORT; }
+
+	if (length < 2U) { return STS3215_ERR_FRAME_SHORT; }
  80015c8:	7e7b      	ldrb	r3, [r7, #25]
  80015ca:	2b01      	cmp	r3, #1
  80015cc:	d802      	bhi.n	80015d4 <STS3215_ParseReply+0x68>
  80015ce:	f06f 0306 	mvn.w	r3, #6
  80015d2:	e057      	b.n	8001684 <STS3215_ParseReply+0x118>
-
-    /* Total expected frame = header(2) + id(1) + length_field(1) + length bytes */
-    uint16_t expected_total = (uint16_t)length + 4U;
+	uint16_t expected_total = (uint16_t)length + 4U;
  80015d4:	7e7b      	ldrb	r3, [r7, #25]
  80015d6:	b29b      	uxth	r3, r3
  80015d8:	3304      	adds	r3, #4
  80015da:	82fb      	strh	r3, [r7, #22]
-    if (buf_len < expected_total) { return STS3215_ERR_FRAME_SHORT; }
+	if (buf_len < expected_total) { return STS3215_ERR_FRAME_SHORT; }
  80015dc:	897a      	ldrh	r2, [r7, #10]
  80015de:	8afb      	ldrh	r3, [r7, #22]
  80015e0:	429a      	cmp	r2, r3
  80015e2:	d202      	bcs.n	80015ea <STS3215_ParseReply+0x7e>
  80015e4:	f06f 0306 	mvn.w	r3, #6
  80015e8:	e04c      	b.n	8001684 <STS3215_ParseReply+0x118>
-    /* Checksum verification
-     *   sum  = ID + LENGTH + ERROR + data_param[0..n_data-1]
-     *   chk  = ~sum & 0xFF
-     * n_data = length - 2  (excludes error byte and checksum byte)
-     */
-    uint8_t  n_data = length - 2U;
+
+	uint8_t  n_data = length - 2U;
  80015ea:	7e7b      	ldrb	r3, [r7, #25]
  80015ec:	3b02      	subs	r3, #2
  80015ee:	757b      	strb	r3, [r7, #21]
-    uint32_t sum    = (uint32_t)id + (uint32_t)length + (uint32_t)error;
+	uint32_t sum = (uint32_t)id + (uint32_t)length + (uint32_t)error;
  80015f0:	7eba      	ldrb	r2, [r7, #26]
  80015f2:	7e7b      	ldrb	r3, [r7, #25]
  80015f4:	441a      	add	r2, r3
@@ -3296,11 +3259,11 @@ STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
  80015f8:	4413      	add	r3, r2
  80015fa:	61fb      	str	r3, [r7, #28]
 
-    for (uint8_t i = 0U; i < n_data; i++) {
+	for (uint8_t i = 0U; i < n_data; i++) {
  80015fc:	2300      	movs	r3, #0
  80015fe:	76fb      	strb	r3, [r7, #27]
  8001600:	e00b      	b.n	800161a <STS3215_ParseReply+0xae>
-        sum += (uint32_t)buf[STS3215_REPLY_OFF_DATA + i];
+		sum += (uint32_t)buf[STS3215_REPLY_OFF_DATA + i];
  8001602:	7efb      	ldrb	r3, [r7, #27]
  8001604:	3305      	adds	r3, #5
  8001606:	68fa      	ldr	r2, [r7, #12]
@@ -3310,7 +3273,7 @@ STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
  800160e:	69fb      	ldr	r3, [r7, #28]
  8001610:	4413      	add	r3, r2
  8001612:	61fb      	str	r3, [r7, #28]
-    for (uint8_t i = 0U; i < n_data; i++) {
+	for (uint8_t i = 0U; i < n_data; i++) {
  8001614:	7efb      	ldrb	r3, [r7, #27]
  8001616:	3301      	adds	r3, #1
  8001618:	76fb      	strb	r3, [r7, #27]
@@ -3318,14 +3281,14 @@ STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
  800161c:	7d7b      	ldrb	r3, [r7, #21]
  800161e:	429a      	cmp	r2, r3
  8001620:	d3ef      	bcc.n	8001602 <STS3215_ParseReply+0x96>
-    }
+	}
 
-    uint8_t expected_chk = (uint8_t)(~sum & 0xFFU);
+	uint8_t expected_chk = (uint8_t)(~sum & 0xFFU);
  8001622:	69fb      	ldr	r3, [r7, #28]
  8001624:	b2db      	uxtb	r3, r3
  8001626:	43db      	mvns	r3, r3
  8001628:	753b      	strb	r3, [r7, #20]
-    uint8_t actual_chk   = buf[STS3215_REPLY_OFF_DATA + n_data]; /* last byte */
+	uint8_t actual_chk   = buf[STS3215_REPLY_OFF_DATA + n_data];
  800162a:	7d7b      	ldrb	r3, [r7, #21]
  800162c:	3305      	adds	r3, #5
  800162e:	68fa      	ldr	r2, [r7, #12]
@@ -3333,7 +3296,7 @@ STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
  8001632:	781b      	ldrb	r3, [r3, #0]
  8001634:	74fb      	strb	r3, [r7, #19]
 
-    if (actual_chk != expected_chk) { return STS3215_ERR_BAD_CHECKSUM; }
+	if (actual_chk != expected_chk) { return STS3215_ERR_BAD_CHECKSUM; }
  8001636:	7cfa      	ldrb	r2, [r7, #19]
  8001638:	7d3b      	ldrb	r3, [r7, #20]
  800163a:	429a      	cmp	r2, r3
@@ -3341,33 +3304,32 @@ STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
  800163e:	f06f 0304 	mvn.w	r3, #4
  8001642:	e01f      	b.n	8001684 <STS3215_ParseReply+0x118>
 
-    /* Populate output — always written so caller can log on SERVO_FAULT */
-    reply->id       = id;
+	reply->id = id;
  8001644:	687b      	ldr	r3, [r7, #4]
  8001646:	7eba      	ldrb	r2, [r7, #26]
  8001648:	701a      	strb	r2, [r3, #0]
-    reply->error    = error;
+	reply->error = error;
  800164a:	687b      	ldr	r3, [r7, #4]
  800164c:	7e3a      	ldrb	r2, [r7, #24]
  800164e:	705a      	strb	r2, [r3, #1]
-    reply->data_len = n_data;
+	reply->data_len = n_data;
  8001650:	687b      	ldr	r3, [r7, #4]
  8001652:	7d7a      	ldrb	r2, [r7, #21]
  8001654:	729a      	strb	r2, [r3, #10]
 
-    if (n_data > 0U) {
+	if (n_data > 0U) {
  8001656:	7d7b      	ldrb	r3, [r7, #21]
  8001658:	2b00      	cmp	r3, #0
  800165a:	d00c      	beq.n	8001676 <STS3215_ParseReply+0x10a>
-        uint8_t copy_len = (n_data <= (uint8_t)STS3215_REPLY_DATA_MAX)
+		uint8_t copy_len = (n_data <= (uint8_t)STS3215_REPLY_DATA_MAX)
  800165c:	7d7b      	ldrb	r3, [r7, #21]
  800165e:	2b08      	cmp	r3, #8
  8001660:	bf28      	it	cs
  8001662:	2308      	movcs	r3, #8
  8001664:	74bb      	strb	r3, [r7, #18]
-                           ? n_data
-                           : (uint8_t)STS3215_REPLY_DATA_MAX;
-        memcpy(reply->data, &buf[STS3215_REPLY_OFF_DATA], copy_len);
+                        		   ? n_data
+                        				   : (uint8_t)STS3215_REPLY_DATA_MAX;
+		memcpy(reply->data, &buf[STS3215_REPLY_OFF_DATA], copy_len);
  8001666:	687b      	ldr	r3, [r7, #4]
  8001668:	1c98      	adds	r0, r3, #2
  800166a:	68fb      	ldr	r3, [r7, #12]
@@ -3375,9 +3337,9 @@ STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
  800166e:	7cba      	ldrb	r2, [r7, #18]
  8001670:	4619      	mov	r1, r3
  8001672:	f003 feb6 	bl	80053e2 <memcpy>
-    }
+	}
 
-    return (error != 0U) ? STS3215_ERR_SERVO_FAULT : STS3215_OK;
+	return (error != 0U) ? STS3215_ERR_SERVO_FAULT : STS3215_OK;
  8001676:	7e3b      	ldrb	r3, [r7, #24]
  8001678:	2b00      	cmp	r3, #0
  800167a:	d002      	beq.n	8001682 <STS3215_ParseReply+0x116>
@@ -3391,17 +3353,17 @@ STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
  800168a:	bd80      	pop	{r7, pc}
 
 0800168c <STS3215_UnpackS16LE>:
-    return (uint16_t)buf[0] | ((uint16_t)buf[1] << 8U);
+	return (uint16_t)buf[0] | ((uint16_t)buf[1] << 8U);
 }
 
-/** Unpack 2 consecutive bytes (little-endian) into int16_t (signed). */
+/* Little-endian 2 bytes -> int16_t (signed positions, speeds) */
 int16_t STS3215_UnpackS16LE(const uint8_t *buf)
 {
  800168c:	b480      	push	{r7}
  800168e:	b083      	sub	sp, #12
  8001690:	af00      	add	r7, sp, #0
  8001692:	6078      	str	r0, [r7, #4]
-    return (int16_t)((uint16_t)buf[0] | ((uint16_t)buf[1] << 8U));
+	return (int16_t)((uint16_t)buf[0] | ((uint16_t)buf[1] << 8U));
  8001694:	687b      	ldr	r3, [r7, #4]
  8001696:	781b      	ldrb	r3, [r3, #0]
  8001698:	b21a      	sxth	r2, r3

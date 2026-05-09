@@ -39,20 +39,20 @@ extern "C" {
  * @brief Internal state machine states.
  */
 typedef enum {
-    STS3215_HAL_STATE_IDLE = 0,
-    STS3215_HAL_STATE_TX_BUSY,
-    STS3215_HAL_STATE_RX_BUSY,
-    STS3215_HAL_STATE_ERROR,
+	STS3215_HAL_STATE_IDLE = 0,
+	STS3215_HAL_STATE_TX_BUSY,
+	STS3215_HAL_STATE_RX_BUSY,
+	STS3215_HAL_STATE_ERROR,
 } STS3215_HAL_State_t;
 
 /** Error sources, reported via on_error callback. */
 typedef enum {
-    STS3215_HAL_ERR_NONE = 0,
-    STS3215_HAL_ERR_TIMEOUT,        
-    STS3215_HAL_ERR_DMA_TX,         
-    STS3215_HAL_ERR_DMA_RX,         
-    STS3215_HAL_ERR_PARSE, /* STS3215_ParseReply returned error */
-    STS3215_HAL_ERR_BUSY, /* SendFrame called while not IDLE */
+	STS3215_HAL_ERR_NONE = 0,
+	STS3215_HAL_ERR_TIMEOUT,
+	STS3215_HAL_ERR_DMA_TX,
+	STS3215_HAL_ERR_DMA_RX,
+	STS3215_HAL_ERR_PARSE, /* STS3215_ParseReply returned error */
+	STS3215_HAL_ERR_BUSY, /* SendFrame called while not IDLE */
 } STS3215_HAL_Error_t;
 
 /**
@@ -84,27 +84,27 @@ typedef void (*STS3215_HAL_ErrorCallback_t)(STS3215_HAL_Error_t err, void *user_
  * Initialise with STS3215_HAL_Init() before any other call.
  */
 typedef struct {
-    UART_HandleTypeDef *huart;
+	UART_HandleTypeDef *huart;
 
-    /* Buffers — must remain valid for the full DMA transfer lifetime */
-    __attribute__((aligned(4))) uint8_t tx_buf[STS3215_TX_BUF_SIZE];
-    __attribute__((aligned(4))) uint8_t rx_buf[STS3215_HAL_RX_BUF_SIZE];
+	/* Buffers — must remain valid for the full DMA transfer lifetime */
+	__attribute__((aligned(4))) uint8_t tx_buf[STS3215_TX_BUF_SIZE];
+	__attribute__((aligned(4))) uint8_t rx_buf[STS3215_HAL_RX_BUF_SIZE];
 
-    /* State machine */
-    volatile STS3215_HAL_State_t state;
-    volatile STS3215_HAL_Error_t last_error;
-    volatile uint16_t rx_received_len; 
+	/* State machine */
+	volatile STS3215_HAL_State_t state;
+	volatile STS3215_HAL_Error_t last_error;
+	volatile uint16_t rx_received_len;
 
-    /* Transfer metadata */
-    bool is_broadcast; 
-    uint8_t expected_replies;
+	/* Transfer metadata */
+	bool is_broadcast;
+	uint8_t expected_replies;
 
-    uint32_t tx_timestamp_ms;
-    uint32_t reply_timeout_ms;
+	uint32_t tx_timestamp_ms;
+	uint32_t reply_timeout_ms;
 
-    STS3215_HAL_ReplyCallback_t on_reply;
-    STS3215_HAL_ErrorCallback_t on_error;
-    void                       *user_ctx;
+	STS3215_HAL_ReplyCallback_t on_reply;
+	STS3215_HAL_ErrorCallback_t on_error;
+	void                       *user_ctx;
 } STS3215_HAL_Handle_t;
 
 /* =========================================================================
@@ -122,11 +122,11 @@ typedef struct {
  * @param user_ctx         Forwarded as-is to callbacks (NULL if unused)
  */
 void STS3215_HAL_Init(STS3215_HAL_Handle_t       *hservo,
-                      UART_HandleTypeDef          *huart,
-                      uint32_t                    reply_timeout_ms,
-                      STS3215_HAL_ReplyCallback_t  on_reply,
-                      STS3215_HAL_ErrorCallback_t  on_error,
-                      void                        *user_ctx);
+		UART_HandleTypeDef          *huart,
+		uint32_t                    reply_timeout_ms,
+		STS3215_HAL_ReplyCallback_t  on_reply,
+		STS3215_HAL_ErrorCallback_t  on_error,
+		void                        *user_ctx);
 
 /**
  * @brief Register the instance that weak HAL callbacks route to.
@@ -151,10 +151,10 @@ void STS3215_HAL_RegisterInstance(STS3215_HAL_Handle_t *hservo);
  * @param expected_replies Number of reply frames to wait for
  */
 STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
-                                        const uint8_t        *frame,
-                                        uint16_t              len,
-                                        bool                  is_broadcast,
-                                        uint8_t               expected_replies);
+		const uint8_t        *frame,
+		uint16_t              len,
+		bool                  is_broadcast,
+		uint8_t               expected_replies);
 
 /**
  * @brief Periodic tick — call from main loop or RTOS task (not from IRQ).
