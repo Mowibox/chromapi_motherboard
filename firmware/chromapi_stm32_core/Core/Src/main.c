@@ -26,6 +26,13 @@
 
 #include "sts3215_hal.h"
 #include "sts3215_protocol.h"
+#include "ina226.h"
+
+#define INA226_I2C_ADDR    0x40
+#define SHUNT_OHMS         0.002
+#define MAX_CURRENT_A      8.0
+
+static AutoFox_INA226 gINA226;
 
 extern UART_HandleTypeDef huart2;
 
@@ -69,6 +76,17 @@ static void on_error(STS3215_HAL_Error_t err, void *ctx)
 
     printf("HAL error = %d\r\n", err);
 }
+
+/**
+ * @brief  Affiche le résultat d'un appel à la lib INA226.
+ *         Centralise le logging des erreurs pour éviter la répétition.
+ */
+static void ina226_check(status s, const char *label)
+{
+    if (s != OK) {
+        printf("[INA226] ERREUR %s : code=%d\r\n", label, (int)s);
+    }
+}
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -87,6 +105,8 @@ static void on_error(STS3215_HAL_Error_t err, void *ctx)
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
+I2C_HandleTypeDef hi2c1;
+
 UART_HandleTypeDef huart2;
 DMA_HandleTypeDef hdma_usart2_tx;
 DMA_HandleTypeDef hdma_usart2_rx;
@@ -100,16 +120,25 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_USART2_UART_Init(void);
+static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int __io_putchar(int ch)
+__attribute__((used))
+int _write(int file, char *ptr, int len)
 {
-    ITM_SendChar(ch);
-    return ch;
+    (void)file;
+    for (int i = 0; i < len; i++) {
+        if ((ITM->TCR & ITM_TCR_ITMENA_Msk) &&
+            (ITM->TER & (1UL << 0U))) {
+            ITM_SendChar((uint32_t)(uint8_t)*ptr);
+        }
+        ptr++;
+    }
+    return len;
 }
 /* USER CODE END 0 */
 
@@ -144,6 +173,7 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_USART2_UART_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 	STS3215_HAL_Init(
 	    &hservo,
@@ -179,6 +209,33 @@ int main(void)
 
 	uint32_t last_move_ms = HAL_GetTick();
 	uint8_t toggle = 0;
+
+    AutoFox_INA226_Constructor(&gINA226);
+
+    printf("\r\n[INA226] Initialisation...\r\n");
+
+    status st = AutoFox_INA226_Init(&gINA226,
+                                     INA226_I2C_ADDR,
+                                     SHUNT_OHMS,
+                                     MAX_CURRENT_A);
+    ina226_check(st, "Init");
+
+    if (st != OK) {
+        printf("[INA226] Init échouée — vérifier :\r\n");
+        printf("  1. Câblage SDA/SCL\r\n");
+        printf("  2. Adresse I2C (A0/A1 sur le module)\r\n");
+        printf("  3. Pull-up 4.7k sur SDA et SCL\r\n");
+        printf("  4. Alimentation du module INA226\r\n");
+        while (1) { HAL_Delay(1000); }
+    }
+
+    printf("[INA226] Init OK\r\n\r\n");
+
+    uint16_t config_reg = 0;
+    ina226_check(AutoFox_INA226_Debug_GetConfigRegister(&gINA226, &config_reg),
+                 "GetConfigReg");
+    printf("[INA226] Config register = 0x%04X (attendu 0x4527)\r\n", config_reg);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -222,6 +279,30 @@ int main(void)
 	            printf("BuildMotionCmd failed: %d\r\n", len);
 	        }
 	    }
+
+      int32_t bus_uV   = AutoFox_INA226_GetBusVoltage_uV(&gINA226);
+      int32_t shunt_uV = AutoFox_INA226_GetShuntVoltage_uV(&gINA226);
+      int32_t curr_uA  = AutoFox_INA226_GetCurrent_uA(&gINA226);
+      int32_t pwr_uW   = AutoFox_INA226_GetPower_uW(&gINA226);
+
+
+      int32_t bus_mV   = bus_uV   / 1000;
+      int32_t bus_uV_r = bus_uV   % 1000;
+      int32_t curr_mA  = curr_uA  / 1000;
+      int32_t curr_uA_r= curr_uA  % 1000;
+      int32_t pwr_mW   = pwr_uW   / 1000;
+      int32_t pwr_uW_r = pwr_uW   % 1000;
+
+      printf("----------------------------------------\r\n");
+      printf("[INA226] Bus voltage  : %ld.%03ld V\r\n",
+             bus_mV / 1000, bus_mV % 1000);
+      printf("[INA226] Shunt voltage: %ld uV\r\n",   shunt_uV);
+      printf("[INA226] Current      : %ld.%03ld mA\r\n",
+             curr_mA, (curr_uA_r < 0 ? -curr_uA_r : curr_uA_r));
+      printf("[INA226] Power        : %ld.%03ld mW\r\n",
+             pwr_mW, (pwr_uW_r < 0 ? -pwr_uW_r : pwr_uW_r));
+
+      HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -267,6 +348,54 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
+}
+
+/**
+  * @brief I2C1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_I2C1_Init(void)
+{
+
+  /* USER CODE BEGIN I2C1_Init 0 */
+
+  /* USER CODE END I2C1_Init 0 */
+
+  /* USER CODE BEGIN I2C1_Init 1 */
+
+  /* USER CODE END I2C1_Init 1 */
+  hi2c1.Instance = I2C1;
+  hi2c1.Init.Timing = 0x00300619;
+  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+  hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+  hi2c1.Init.OwnAddress2 = 0;
+  hi2c1.Init.OwnAddress2Masks = I2C_OA2_NOMASK;
+  hi2c1.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+  hi2c1.Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
+  if (HAL_I2C_Init(&hi2c1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Analogue filter
+  */
+  if (HAL_I2CEx_ConfigAnalogFilter(&hi2c1, I2C_ANALOGFILTER_ENABLE) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** Configure Digital filter
+  */
+  if (HAL_I2CEx_ConfigDigitalFilter(&hi2c1, 0) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN I2C1_Init 2 */
+
+  /* USER CODE END I2C1_Init 2 */
+
 }
 
 /**
@@ -402,14 +531,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : I2C_INA_SCL_Pin */
-  GPIO_InitStruct.Pin = I2C_INA_SCL_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.Alternate = GPIO_AF4_I2C1;
-  HAL_GPIO_Init(I2C_INA_SCL_GPIO_Port, &GPIO_InitStruct);
-
   /*Configure GPIO pins : SW_BotLeft_Pin SW_BotRight_Pin */
   GPIO_InitStruct.Pin = SW_BotLeft_Pin|SW_BotRight_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
@@ -423,14 +544,6 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.Alternate = GPIO_AF2_TIM4;
   HAL_GPIO_Init(RGB_LED_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : I2C_INA_SDA_Pin */
-  GPIO_InitStruct.Pin = I2C_INA_SDA_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.Alternate = GPIO_AF4_I2C1;
-  HAL_GPIO_Init(I2C_INA_SDA_GPIO_Port, &GPIO_InitStruct);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
 
