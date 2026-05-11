@@ -11,7 +11,7 @@ extern DMA_HandleTypeDef hdma_tim4_ch1;
 // LED parameters
 // #define NUM_BPP (3) // WS2812B
 #define NUM_BPP (4) // SK6812
-#define NUM_PIXELS (1)
+#define NUM_PIXELS (2)
 #define NUM_BYTES (NUM_BPP * NUM_PIXELS)
 
 // LED color buffer

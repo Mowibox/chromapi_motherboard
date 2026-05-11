@@ -145,6 +145,30 @@ int _write(int file, char *ptr, int len)
     }
     return len;
 }
+
+static void wheel(uint8_t pos, uint8_t *r, uint8_t *g, uint8_t *b)
+{
+    if(pos < 85)
+    {
+        *r = 255 - pos * 3;
+        *g = pos * 3;
+        *b = 0;
+    }
+    else if(pos < 170)
+    {
+        pos -= 85;
+        *r = 0;
+        *g = 255 - pos * 3;
+        *b = pos * 3;
+    }
+    else
+    {
+        pos -= 170;
+        *r = pos * 3;
+        *g = 0;
+        *b = 255 - pos * 3;
+    }
+}
 /* USER CODE END 0 */
 
 /**
@@ -242,8 +266,9 @@ int main(void)
                  "GetConfigReg");
     printf("[INA226] Config register = 0x%04X (attendu 0x4527)\r\n", config_reg);
 
-    led_set_all_RGB(190, 0, 255);
+    led_set_all_RGB(170, 0, 255);
     led_render();
+//    uint8_t rgb = 0;
     HAL_Delay(1000);
   /* USER CODE END 2 */
 
@@ -312,6 +337,16 @@ int main(void)
              pwr_mW, (pwr_uW_r < 0 ? -pwr_uW_r : pwr_uW_r));
 
       HAL_Delay(1000);
+//
+//	    uint8_t r, g, b;
+//
+//		wheel(rgb++, &r, &g, &b);
+//
+//		led_set_all_RGB(r, g, b);
+//
+//		led_render();
+//
+//		HAL_Delay(200);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

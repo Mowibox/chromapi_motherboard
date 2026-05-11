@@ -151,3 +151,675 @@ arm-none-eabi-size  chromapi_stm32_core.elf
   42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
 Finished building: default.size.stdout
  
+21:14:53 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:299:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  299 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+21:15:44 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/sk6812.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sk6812.d" -MT"Core/Src/sk6812.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sk6812.o"
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+21:16:37 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:299:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  299 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+21:17:09 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:299:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  299 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+21:19:34 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:299:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  299 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+21:30:47 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:299:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  299 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+21:31:35 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+21:32:09 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:299:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  299 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+21:33:45 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+21:34:39 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+21:35:50 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+21:42:24 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:300:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  300 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42848	    104	   3192	  46144	   b440	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+21:43:03 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:299:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  299 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+00:36:04 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+00:37:33 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:299:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  299 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+00:38:31 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/sk6812.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sk6812.d" -MT"Core/Src/sk6812.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sk6812.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:299:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  299 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+00:38:56 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:299:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  299 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+00:44:01 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  41816	    104	   3192	  45112	   b038	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+00:44:33 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  41816	    104	   3192	  45112	   b038	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+01:00:46 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:324:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  324 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:149:13: warning: 'wheel' defined but not used [-Wunused-function]
+  149 | static void wheel(uint8_t pos, uint8_t *r, uint8_t *g, uint8_t *b)
+      |             ^~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+01:03:22 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'hsv_to_rgb':
+../Core/Src/main.c:153:27: warning: implicit declaration of function 'fabsf' [-Wimplicit-function-declaration]
+  153 |     float x = c * (1.0f - fabsf(fmodf(h / 60.0f, 2.0f) - 1.0f));
+      |                           ^~~~~
+../Core/Src/main.c:31:1: note: include '<math.h>' or provide a declaration of 'fabsf'
+   30 | #include "sk6812.h"
+  +++ |+#include <math.h>
+   31 | 
+../Core/Src/main.c:153:27: warning: incompatible implicit declaration of built-in function 'fabsf' [-Wbuiltin-declaration-mismatch]
+  153 |     float x = c * (1.0f - fabsf(fmodf(h / 60.0f, 2.0f) - 1.0f));
+      |                           ^~~~~
+../Core/Src/main.c:153:27: note: include '<math.h>' or provide a declaration of 'fabsf'
+../Core/Src/main.c:153:33: warning: implicit declaration of function 'fmodf' [-Wimplicit-function-declaration]
+  153 |     float x = c * (1.0f - fabsf(fmodf(h / 60.0f, 2.0f) - 1.0f));
+      |                                 ^~~~~
+../Core/Src/main.c:153:33: note: include '<math.h>' or provide a declaration of 'fmodf'
+../Core/Src/main.c:153:33: warning: incompatible implicit declaration of built-in function 'fmodf' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:153:33: note: include '<math.h>' or provide a declaration of 'fmodf'
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42500	    104	   3192	  45796	   b2e4	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+01:03:52 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'hsv_to_rgb':
+../Core/Src/main.c:153:27: warning: implicit declaration of function 'fabsf' [-Wimplicit-function-declaration]
+  153 |     float x = c * (1.0f - fabsf(fmodf(h / 60.0f, 2.0f) - 1.0f));
+      |                           ^~~~~
+../Core/Src/main.c:31:1: note: include '<math.h>' or provide a declaration of 'fabsf'
+   30 | #include "sk6812.h"
+  +++ |+#include <math.h>
+   31 | 
+../Core/Src/main.c:153:27: warning: incompatible implicit declaration of built-in function 'fabsf' [-Wbuiltin-declaration-mismatch]
+  153 |     float x = c * (1.0f - fabsf(fmodf(h / 60.0f, 2.0f) - 1.0f));
+      |                           ^~~~~
+../Core/Src/main.c:153:27: note: include '<math.h>' or provide a declaration of 'fabsf'
+../Core/Src/main.c:153:33: warning: implicit declaration of function 'fmodf' [-Wimplicit-function-declaration]
+  153 |     float x = c * (1.0f - fabsf(fmodf(h / 60.0f, 2.0f) - 1.0f));
+      |                                 ^~~~~
+../Core/Src/main.c:153:33: note: include '<math.h>' or provide a declaration of 'fmodf'
+../Core/Src/main.c:153:33: warning: incompatible implicit declaration of built-in function 'fmodf' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:153:33: note: include '<math.h>' or provide a declaration of 'fmodf'
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42500	    104	   3192	  45796	   b2e4	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+01:04:33 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/sts3215_hal.h:10,
+                 from ../Core/Src/main.c:27:
+../Core/Inc/sts3215_protocol.h:31: warning: "STS3215_TX_BUF_SIZE" redefined
+   31 | #define STS3215_TX_BUF_SIZE (7U + STS3215_SYNC_MAX_SERVOS * (1U + STS3215_SYNC_DATA_MAX_LEN))
+      | 
+In file included from ../Core/Inc/sts3215_protocol.h:14:
+../Core/Inc/sts3215_regs.h:38: note: this is the location of the previous definition
+   38 | #define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
+      | 
+../Core/Inc/sts3215_protocol.h:38: warning: "STS3215_RX_BUF_SIZE" redefined
+   38 | #define STS3215_RX_BUF_SIZE (16U)
+      | 
+../Core/Inc/sts3215_regs.h:46: note: this is the location of the previous definition
+   46 | #define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
+      | 
+../Core/Src/main.c: In function 'hsv_to_rgb':
+../Core/Src/main.c:153:27: warning: implicit declaration of function 'fabsf' [-Wimplicit-function-declaration]
+  153 |     float x = c * (1.0f - fabsf(fmodf(h / 60.0f, 2.0f) - 1.0f));
+      |                           ^~~~~
+../Core/Src/main.c:31:1: note: include '<math.h>' or provide a declaration of 'fabsf'
+   30 | #include "sk6812.h"
+  +++ |+#include <math.h>
+   31 | 
+../Core/Src/main.c:153:27: warning: incompatible implicit declaration of built-in function 'fabsf' [-Wbuiltin-declaration-mismatch]
+  153 |     float x = c * (1.0f - fabsf(fmodf(h / 60.0f, 2.0f) - 1.0f));
+      |                           ^~~~~
+../Core/Src/main.c:153:27: note: include '<math.h>' or provide a declaration of 'fabsf'
+../Core/Src/main.c:153:33: warning: implicit declaration of function 'fmodf' [-Wimplicit-function-declaration]
+  153 |     float x = c * (1.0f - fabsf(fmodf(h / 60.0f, 2.0f) - 1.0f));
+      |                                 ^~~~~
+../Core/Src/main.c:153:33: note: include '<math.h>' or provide a declaration of 'fmodf'
+../Core/Src/main.c:153:33: warning: incompatible implicit declaration of built-in function 'fmodf' [-Wbuiltin-declaration-mismatch]
+../Core/Src/main.c:153:33: note: include '<math.h>' or provide a declaration of 'fmodf'
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:333:15: warning: unused variable 'bus_uV_r' [-Wunused-variable]
+  333 |       int32_t bus_uV_r = bus_uV   % 1000;
+      |               ^~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:149:13: warning: 'hsv_to_rgb' defined but not used [-Wunused-function]
+  149 | static void hsv_to_rgb(float h, float s, float v,
+      |             ^~~~~~~~~~
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  42320	    104	   3192	  45616	   b230	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
