@@ -1,3 +1,4 @@
+"./Core/Src/bmi088.o"
 "./Core/Src/bridge.o"
 "./Core/Src/ina226.o"
 "./Core/Src/main.o"

@@ -6,9 +6,11 @@
 #include "sts3215_hal.h"
 #include "ina226.h"
 #include "sk6812.h"
+#include "bmi088.h"
 
 extern STS3215_HAL_Handle_t hservo;
 extern AutoFox_INA226 gINA226;
+extern BMI088 gIMU;
 extern volatile uint8_t g_reply_received;
 extern volatile uint8_t g_reply_data_len;
 extern volatile uint8_t g_reply_data[];
@@ -131,6 +133,14 @@ static void handle_cmd_get_power(void) {
 static void handle_cmd_feedback(void) {
 	g_robot_state.bus_uV = AutoFox_INA226_GetBusVoltage_uV(&gINA226);
 	g_robot_state.current_uA = AutoFox_INA226_GetCurrent_uA(&gINA226);
+
+    BMI088_ReadAccelerometer(&gIMU);
+    BMI088_ReadGyroscope(&gIMU);
+
+    for (uint8_t i = 0; i < 3; i++) {
+        g_robot_state.imu_acc[i]  = (int16_t)(gIMU.acc_mps2[i] * 100.0f);
+        g_robot_state.imu_gyro[i] = (int16_t)(gIMU.gyr_rps[i]  * 1000.0f);
+    }
 
 	uint8_t buf[STS3215_TX_BUF_SIZE];
 

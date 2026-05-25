@@ -28,6 +28,7 @@
 #include "sts3215_protocol.h"
 #include "ina226.h"
 #include "sk6812.h"
+#include "bmi088.h"
 #include "bridge.h"
 /* USER CODE END Includes */
 
@@ -66,6 +67,7 @@ DMA_HandleTypeDef hdma_usart2_rx;
 /* USER CODE BEGIN PV */
 AutoFox_INA226 gINA226;
 STS3215_HAL_Handle_t hservo;
+BMI088 gIMU;
 
 volatile uint8_t  g_reply_received  = 0;
 volatile uint8_t  g_reply_id        = 0;
@@ -162,6 +164,11 @@ void Chromapi_SystemInit(void) {
 	AutoFox_INA226_Constructor(&gINA226);
 	AutoFox_INA226_Init(&gINA226, INA226_I2C_ADDR, SHUNT_OHMS, MAX_CURRENT_A);
 	Bridge_Init(&huart1);
+	uint8_t imu_status = BMI088_Init(
+	        &gIMU, &hspi1,
+	        SPI_CS_ACC_GPIO_Port,  SPI_CS_ACC_Pin,
+	        SPI_CS_GYRO_GPIO_Port, SPI_CS_GYRO_Pin
+	    );
 	HAL_Delay(500U);
 	printf("[SYS] System Initialized\r\n");
 }
