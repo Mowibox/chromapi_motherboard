@@ -35,15 +35,12 @@
  */
 #define STS3215_PACKET_OVERHEAD         (6U)
 #define STS3215_PARAM_MAX               (16U)
-#define STS3215_TX_BUF_SIZE             (STS3215_PACKET_OVERHEAD + STS3215_PARAM_MAX)
-
 /**
  * Reply packet overhead = Header(2) + ID(1) + Length(1) + ERROR(1) + Checksum(1)
  * Maximum feedback read: 8 bytes data (SYNC READ example) + overhead
  */
 #define STS3215_REPLY_OVERHEAD          (6U)
 #define STS3215_REPLY_DATA_MAX          (8U)
-#define STS3215_RX_BUF_SIZE             (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
 
 /** Byte offsets inside a received reply buffer */
 #define STS3215_REPLY_OFF_HEADER1       (1U)
@@ -64,8 +61,8 @@
 #define STS3215_INSTR_REG_WRITE_DATA    (0x04U)
 #define STS3215_INSTR_ACTION            (0x05U)
 #define STS3215_INSTR_RESET             (0x06U)
-#define STS3215_INSTR_SYNC_READ_DATA         (0x82U)
-#define STS3215_INSTR_SYNC_WRITE_DATA        (0x83U)
+#define STS3215_INSTR_SYNC_READ_DATA    (0x82U)
+#define STS3215_INSTR_SYNC_WRITE_DATA   (0x83U)
 
 /**
  * Clear multi-turn counter. 
@@ -147,6 +144,7 @@
 #define STS3215_REG_ACCELERATION        (0x29U) 
 #define STS3215_REG_TARGET_POS          (0x2AU) 
 #define STS3215_REG_RUNNING_TIME        (0x2CU) 
+#define STS3215_REG_RUNNING_SPEED       (0x2EU)
 
 /* --- Torque limit (read&write) --- */
 #define STS3215_REG_TORQUE_LIMIT        (0x30U)
@@ -288,7 +286,7 @@ typedef enum {
 #define STS3215_STEPS_PER_REV        (4096U)
 #define STS3215_DEG_PER_STEP_F       (0.087890625f)      /* 360/4096  */
 #define STS3215_RAD_PER_STEP_F       (0.001533980787f)   /* 2π/4096 */
-#define STS3215_CENTER_ POSITION      (2048U)             /* Mechanical zero */
+#define STS3215_CENTER_POSITION      (2048U)             /* Mechanical zero */
 #define STS3215_CURRENT_LSB_MA_F     (6.5f)              /* mA per LSB */
 #define STS3215_VOLTAGE_LSB_V_F      (0.1f)              /* V per LSB */
 #define STS3215_ACCEL_LSB_STEP_SS_F  (100.0f)            /* step/s² per LSB */

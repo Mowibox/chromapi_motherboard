@@ -1,0 +1,17 @@
+../Core/Src/bridge.c:40:16:calculate_crc	2
+../Core/Src/bridge.c:48:13:send_frame	4
+../Core/Src/bridge.c:66:13:send_ack	2
+../Core/Src/bridge.c:71:13:handle_cmd_set_positions	4
+../Core/Src/bridge.c:100:13:handle_cmd_set_led_color	2
+../Core/Src/bridge.c:112:13:handle_cmd_get_power	1
+../Core/Src/bridge.c:131:13:handle_cmd_feedback	7
+../Core/Src/bridge.c:172:13:wait_servo_idle	3
+../Core/Src/bridge.c:189:13:handle_cmd_set_servo_id	10
+../Core/Src/bridge.c:234:13:handle_cmd_ping_servo	7
+../Core/Src/bridge.c:258:13:parse_rx_buffer	15
+../Core/Src/bridge.c:294:6:Bridge_Init	1
+../Core/Src/bridge.c:301:6:Bridge_Process	2
+../Core/Src/bridge.c:310:6:Bridge_UpdateBatteryLed	12
+../Core/Src/bridge.c:359:6:Bridge_TxCpltCallback	1
+../Core/Src/bridge.c:363:6:Bridge_RxEventCallback	1
+../Core/Src/bridge.c:368:6:Bridge_ErrorCallback	1

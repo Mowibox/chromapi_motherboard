@@ -3,6 +3,6 @@
 ../Core/Src/sk6812.c:44:6:led_set_RGBW	1
 ../Core/Src/sk6812.c:52:6:led_set_all_RGB	2
 ../Core/Src/sk6812.c:57:6:led_set_all_RGBW	2
-../Core/Src/sk6812.c:62:6:led_render	13
-../Core/Src/sk6812.c:97:6:HAL_TIM_PWM_PulseFinishedHalfCpltCallback	9
-../Core/Src/sk6812.c:125:6:HAL_TIM_PWM_PulseFinishedCallback	9
+../Core/Src/sk6812.c:62:6:led_render	11
+../Core/Src/sk6812.c:97:6:HAL_TIM_PWM_PulseFinishedHalfCpltCallback	8
+../Core/Src/sk6812.c:125:6:HAL_TIM_PWM_PulseFinishedCallback	8

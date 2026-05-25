@@ -9,6 +9,8 @@
 #ifndef STS3215_PROTOCOL_H
 #define STS3215_PROTOCOL_H
 
+#define STS3215_HAL_NO_WEAK_OVERRIDE
+
 #include <stdint.h>
 #include <stdbool.h>
 #include "sts3215_regs.h"

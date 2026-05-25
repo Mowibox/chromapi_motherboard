@@ -20,10 +20,10 @@
 ../Core/Src/sts3215_protocol.c:345:9:STS3215_BuildReset	3
 ../Core/Src/sts3215_protocol.c:356:9:STS3215_BuildResetTurns	3
 ../Core/Src/sts3215_protocol.c:371:18:STS3215_ParseReply	12
-../Core/Src/sts3215_protocol.c:421:10:STS3215_UnpackU16LE	1
-../Core/Src/sts3215_protocol.c:427:9:STS3215_UnpackS16LE	1
-../Core/Src/sts3215_protocol.c:433:7:STS3215_StepsToDeg	1
-../Core/Src/sts3215_protocol.c:439:7:STS3215_StepsToRad	1
-../Core/Src/sts3215_protocol.c:445:9:STS3215_DegToSteps	1
-../Core/Src/sts3215_protocol.c:451:7:STS3215_RawToMilliamps	1
-../Core/Src/sts3215_protocol.c:457:7:STS3215_RawToVolts	1
+../Core/Src/sts3215_protocol.c:419:10:STS3215_UnpackU16LE	1
+../Core/Src/sts3215_protocol.c:425:9:STS3215_UnpackS16LE	1
+../Core/Src/sts3215_protocol.c:431:7:STS3215_StepsToDeg	1
+../Core/Src/sts3215_protocol.c:437:7:STS3215_StepsToRad	1
+../Core/Src/sts3215_protocol.c:443:9:STS3215_DegToSteps	1
+../Core/Src/sts3215_protocol.c:449:7:STS3215_RawToMilliamps	1
+../Core/Src/sts3215_protocol.c:455:7:STS3215_RawToVolts	1

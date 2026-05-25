@@ -9,8 +9,8 @@ extern DMA_HandleTypeDef hdma_tim4_ch1;
 #define PWM_LO (5)
 
 // LED parameters
-// #define NUM_BPP (3) // WS2812B
-#define NUM_BPP (4) // SK6812
+ #define NUM_BPP (3) // WS2812B
+//#define NUM_BPP (4) // SK6812
 #define NUM_PIXELS (2)
 #define NUM_BYTES (NUM_BPP * NUM_PIXELS)
 
@@ -113,7 +113,7 @@ void HAL_TIM_PWM_PulseFinishedHalfCpltCallback(TIM_HandleTypeDef *htim) {
     }
 #endif // End SK6812 WS2812B case differentiation
     wr_buf_p++;
-  } else if (wr_buf_p < NUM_PIXELS + 2) {
+  } else if (wr_buf_p < NUM_PIXELS + 6) {
     // Last two transfers are resets. SK6812: 64 * 1.25 us = 80 us == good enough reset
   	//                               WS2812B: 48 * 1.25 us = 60 us == good enough reset
     // First half reset zero fill
@@ -141,7 +141,7 @@ void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim) {
     }
 #endif // End SK6812 WS2812B case differentiation
     wr_buf_p++;
-  } else if (wr_buf_p < NUM_PIXELS + 2) {
+  } else if (wr_buf_p < NUM_PIXELS + 6) {
     // Second half reset zero fill
     for(uint8_t i = WR_BUF_LEN / 2; i < WR_BUF_LEN; ++i) wr_buf[i] = 0;
     ++wr_buf_p;

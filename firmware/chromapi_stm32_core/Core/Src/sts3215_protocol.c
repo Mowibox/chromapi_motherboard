@@ -404,9 +404,7 @@ STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
 	reply->data_len = n_data;
 
 	if (n_data > 0U) {
-		uint8_t copy_len = (n_data <= (uint8_t)STS3215_REPLY_DATA_MAX)
-                        		   ? n_data
-                        				   : (uint8_t)STS3215_REPLY_DATA_MAX;
+		uint8_t copy_len = (n_data <= (uint8_t)STS3215_REPLY_DATA_MAX) ? n_data : (uint8_t)STS3215_REPLY_DATA_MAX;
 		memcpy(reply->data, &buf[STS3215_REPLY_OFF_DATA], copy_len);
 	}
 
