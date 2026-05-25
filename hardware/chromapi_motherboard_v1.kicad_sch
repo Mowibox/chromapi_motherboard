@@ -694,6 +694,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "[todo] change the NRST label located on GPIO16 (RPI) to an available position"
+		(exclude_from_sim no)
+		(at 182.118 44.704 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "073dae72-48f1-4e01-9b20-14677a5244c8")
+	)
 	(text "Check"
 		(exclude_from_sim no)
 		(at 166.37 29.21 0)
@@ -705,12 +716,45 @@
 		)
 		(uuid "22abca54-542c-41e9-890b-dc6204ab782f")
 	)
-	(text "Initial drawing"
+	(text "[fixed] correcting the polarity of the connectors for the servomotors"
 		(exclude_from_sim no)
-		(at 181.61 35.56 0)
+		(at 181.864 41.148 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "29f1d4a1-586d-4760-851e-a9938fb1d53b")
+	)
+	(text "B1"
+		(exclude_from_sim no)
+		(at 107.696 41.91 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c35a8f3-b577-4f45-b0cb-b9b8cc21c63c")
+	)
+	(text "OT"
+		(exclude_from_sim no)
+		(at 152.4 41.91 0)
+		(effects
+			(font
+				(size 2.0066 2.0066)
+			)
+			(justify left bottom)
+		)
+		(uuid "50032e99-ff18-43cc-9b71-62f3abe92fcf")
+	)
+	(text "Initial drawing"
+		(exclude_from_sim no)
+		(at 181.864 34.798 0)
+		(effects
+			(font
+				(size 1.524 1.524)
 			)
 			(justify left bottom)
 		)
@@ -726,6 +770,17 @@
 			(justify left bottom)
 		)
 		(uuid "62fa4b00-a107-4b62-9582-30f7a7e8627f")
+	)
+	(text "XX/XX/2026"
+		(exclude_from_sim no)
+		(at 128.27 41.656 0)
+		(effects
+			(font
+				(size 2.0066 2.0066)
+			)
+			(justify left bottom)
+		)
+		(uuid "7cc6ab94-8bc4-4bd1-9215-015e84b8fe3f")
 	)
 	(text "OT"
 		(exclude_from_sim no)

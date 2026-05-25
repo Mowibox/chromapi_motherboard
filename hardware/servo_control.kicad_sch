@@ -334,86 +334,6 @@
 		)
 		(uuid "3afebd09-c4f5-4992-9520-f76ddbbef38b")
 	)
-	(wire
-		(pts
-			(xy 163.83 111.76) (xy 163.83 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01f3581f-85d7-4bd3-a498-905479617984")
-	)
-	(wire
-		(pts
-			(xy 165.1 92.71) (xy 163.83 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29e4c347-fc7d-499d-b023-0b945323ab32")
-	)
-	(wire
-		(pts
-			(xy 128.27 92.71) (xy 128.27 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f56e4f8-dfdd-483a-9d05-5e0a8aa1536a")
-	)
-	(wire
-		(pts
-			(xy 129.54 111.76) (xy 128.27 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a51ce1cd-c9ce-4d00-90c9-5b41f8e6c387")
-	)
-	(wire
-		(pts
-			(xy 165.1 111.76) (xy 163.83 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5e1f794-786e-40f6-a3d4-e0479df1b2dc")
-	)
-	(wire
-		(pts
-			(xy 129.54 92.71) (xy 128.27 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b654c38e-6f89-4de4-bd50-7928cc1390b9")
-	)
-	(wire
-		(pts
-			(xy 128.27 111.76) (xy 128.27 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d34b79ea-646f-40a9-b834-aeb6785aa4f8")
-	)
-	(wire
-		(pts
-			(xy 163.83 92.71) (xy 163.83 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e12da706-242c-43fb-a734-2696f9f4cd82")
-	)
 	(image
 		(at 275.59 173.99)
 		(scale 0.0898783)
@@ -9041,6 +8961,28 @@
 		)
 		(uuid "01ceb6f1-5ab1-47af-a655-8be9bf55c82f")
 	)
+	(hierarchical_label "SERVO_DATA"
+		(shape input)
+		(at 165.1 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0c1edab5-1178-4f2c-8362-f93ead1ef1b8")
+	)
+	(hierarchical_label "SERVO_DATA"
+		(shape input)
+		(at 129.54 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3cacddd4-7e36-4890-8cb2-8cf94c74b91b")
+	)
 	(hierarchical_label "V_SYS"
 		(shape input)
 		(at 129.54 109.22 180)
@@ -9054,25 +8996,14 @@
 	)
 	(hierarchical_label "SERVO_DATA"
 		(shape input)
-		(at 129.54 106.68 180)
+		(at 129.54 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "9d4e8658-92aa-4bc3-8282-9ebf7f5f5548")
-	)
-	(hierarchical_label "SERVO_DATA"
-		(shape input)
-		(at 129.54 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a088fc3f-779d-4c52-a44c-27789fd3833d")
+		(uuid "bddace5e-9dd1-439f-84c2-1caf2042f5d2")
 	)
 	(hierarchical_label "V_SYS"
 		(shape input)
@@ -9098,29 +9029,18 @@
 	)
 	(hierarchical_label "SERVO_DATA"
 		(shape input)
-		(at 165.1 87.63 180)
+		(at 165.1 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "f281fa1e-14f2-4eec-a24b-376e9fcfb8c2")
-	)
-	(hierarchical_label "SERVO_DATA"
-		(shape input)
-		(at 165.1 106.68 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fff3e01c-601b-4e10-af14-122f4789516e")
+		(uuid "fdd4fd2e-ba23-4ad5-8e44-552070f25467")
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 163.83 93.98 0)
+		(at 165.1 87.63 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9131,7 +9051,7 @@
 		(fields_autoplaced yes)
 		(uuid "14480971-8522-43de-8745-a50c287651e5")
 		(property "Reference" "#PWR068"
-			(at 163.83 100.33 0)
+			(at 158.75 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9142,7 +9062,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 163.83 99.06 0)
+			(at 160.02 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9153,7 +9073,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 93.98 0)
+			(at 165.1 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9164,7 +9084,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 93.98 0)
+			(at 165.1 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9175,7 +9095,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 93.98 0)
+			(at 165.1 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9199,7 +9119,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 128.27 93.98 0)
+		(at 165.1 106.68 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9208,9 +9128,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "32ceca84-84f1-4de3-b9d5-577ae3cf1857")
-		(property "Reference" "#PWR067"
-			(at 128.27 100.33 0)
+		(uuid "2eba51e1-1d8d-45d2-8138-49472f3309fc")
+		(property "Reference" "#PWR070"
+			(at 158.75 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9221,7 +9141,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 99.06 0)
+			(at 160.02 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9232,7 +9152,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 93.98 0)
+			(at 165.1 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9243,7 +9163,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 93.98 0)
+			(at 165.1 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9254,7 +9174,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 93.98 0)
+			(at 165.1 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9265,7 +9185,86 @@
 			)
 		)
 		(pin "1"
-			(uuid "9c736fe5-4c08-4f06-8ac3-b7a0d96c45e4")
+			(uuid "f136d39d-9585-4601-a567-3a95d41e3daf")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/65907df6-508b-450c-8c31-d637ad608dec"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 87.63 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3434526d-44a1-4fb8-b5e2-bc7fa7caeee1")
+		(property "Reference" "#PWR067"
+			(at 123.19 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 129.54 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7de7b064-867e-4825-90d9-44182e884f4a")
 		)
 		(instances
 			(project "chromapi_motherboard_v1"
@@ -9407,7 +9406,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 163.83 113.03 0)
+		(at 129.54 106.68 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9416,9 +9415,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6ba72cd6-c282-41ce-9837-2cd763c5293f")
-		(property "Reference" "#PWR070"
-			(at 163.83 119.38 0)
+		(uuid "6ce171a6-df48-4aff-8ee2-af55a10dc737")
+		(property "Reference" "#PWR069"
+			(at 123.19 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9429,7 +9428,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 163.83 118.11 0)
+			(at 124.46 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9440,7 +9439,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 113.03 0)
+			(at 129.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9451,7 +9450,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 113.03 0)
+			(at 129.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9462,7 +9461,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 113.03 0)
+			(at 129.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9473,12 +9472,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e5526d3b-24e8-4afc-ad69-8bdbc4d13b42")
+			(uuid "02a4aa04-bde1-49ec-9fb2-44de4aa7b825")
 		)
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/65907df6-508b-450c-8c31-d637ad608dec"
-					(reference "#PWR070")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -9608,85 +9607,6 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/65907df6-508b-450c-8c31-d637ad608dec"
 					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 128.27 113.03 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cf8bfff9-0d3e-410a-a846-d53a5421904c")
-		(property "Reference" "#PWR069"
-			(at 128.27 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 128.27 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 128.27 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 128.27 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "222d2f94-9edf-4fb9-a45d-77ac1bdd38cc")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/65907df6-508b-450c-8c31-d637ad608dec"
-					(reference "#PWR069")
 					(unit 1)
 				)
 			)
