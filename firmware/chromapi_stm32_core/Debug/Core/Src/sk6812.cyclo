@@ -1,4 +1,3 @@
-../Core/Src/sk6812.c:25:23:scale8	1
 ../Core/Src/sk6812.c:30:6:led_set_RGB	1
 ../Core/Src/sk6812.c:44:6:led_set_RGBW	1
 ../Core/Src/sk6812.c:52:6:led_set_all_RGB	2

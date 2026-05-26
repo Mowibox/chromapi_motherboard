@@ -5,8 +5,8 @@ extern DMA_HandleTypeDef hdma_tim4_ch1;
 
 #include "sk6812.h"
 
-#define PWM_HI (10)
-#define PWM_LO (5)
+#define PWM_HI (120)
+#define PWM_LO (60)
 
 // LED parameters
  #define NUM_BPP (3) // WS2812B
@@ -20,7 +20,7 @@ uint8_t rgb_arr[NUM_BYTES] = {0};
 // LED write buffer
 #define WR_BUF_LEN (NUM_BPP * 8 * 2)
 uint8_t wr_buf[WR_BUF_LEN] = {0};
-uint_fast8_t wr_buf_p = 0;
+static volatile uint_fast8_t wr_buf_p = 0;
 
 static inline uint8_t scale8(uint8_t x, uint8_t scale) {
   return ((uint16_t)x * scale) >> 8;
@@ -34,9 +34,9 @@ void led_set_RGB(uint8_t index, uint8_t r, uint8_t g, uint8_t b) {
   rgb_arr[4 * index + 2] = scale8(b, 0xF0); // b;
   rgb_arr[4 * index + 3] = 0;
 #else // WS2812B
-  rgb_arr[3 * index] = scale8(g, 0xB0); // g;
+  rgb_arr[3 * index] = g; // g;
   rgb_arr[3 * index + 1] = r;
-  rgb_arr[3 * index + 2] = scale8(b, 0xF0); // b;
+  rgb_arr[3 * index + 2] = b; // b;
 #endif // End SK6812 WS2812B case differentiation
 }
 
