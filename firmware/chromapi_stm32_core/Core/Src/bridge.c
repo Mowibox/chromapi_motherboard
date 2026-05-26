@@ -133,6 +133,7 @@ static void handle_cmd_get_power(void) {
 static void handle_cmd_feedback(void) {
 	g_robot_state.bus_uV = AutoFox_INA226_GetBusVoltage_uV(&gINA226);
 	g_robot_state.current_uA = AutoFox_INA226_GetCurrent_uA(&gINA226);
+	g_robot_state.power_uW   = AutoFox_INA226_GetPower_uW(&gINA226);
 
     BMI088_ReadAccelerometer(&gIMU);
     BMI088_ReadGyroscope(&gIMU);

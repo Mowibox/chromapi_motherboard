@@ -29,6 +29,7 @@ typedef enum {
 typedef struct __attribute__((packed)) {
 	int32_t bus_uV;
 	int32_t current_uA;
+	int32_t power_uW;
 
 	struct __attribute__((packed)) {
 		uint16_t position;

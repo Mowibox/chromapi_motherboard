@@ -164,7 +164,7 @@ void Chromapi_SystemInit(void) {
 	AutoFox_INA226_Constructor(&gINA226);
 	AutoFox_INA226_Init(&gINA226, INA226_I2C_ADDR, SHUNT_OHMS, MAX_CURRENT_A);
 	Bridge_Init(&huart1);
-	uint8_t imu_status = BMI088_Init(
+	(void)BMI088_Init(
 	        &gIMU, &hspi1,
 	        SPI_CS_ACC_GPIO_Port,  SPI_CS_ACC_Pin,
 	        SPI_CS_GYRO_GPIO_Port, SPI_CS_GYRO_Pin
