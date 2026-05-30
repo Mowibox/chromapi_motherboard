@@ -705,6 +705,17 @@
 		)
 		(uuid "073dae72-48f1-4e01-9b20-14677a5244c8")
 	)
+	(text "[todo] check SS34 footprint"
+		(exclude_from_sim no)
+		(at 182.118 48.26 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "1f946cd7-5ba7-450c-a773-206776647151")
+	)
 	(text "Check"
 		(exclude_from_sim no)
 		(at 166.37 29.21 0)
