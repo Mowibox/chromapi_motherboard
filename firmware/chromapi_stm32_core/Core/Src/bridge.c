@@ -114,8 +114,9 @@ static void handle_cmd_set_led_color(const uint8_t *payload, uint8_t len) {
 static void handle_cmd_get_power(void) {
 	int32_t bus_uV = AutoFox_INA226_GetBusVoltage_uV(&gINA226);
 	int32_t curr_uA = AutoFox_INA226_GetCurrent_uA(&gINA226);
+	int32_t power_uW = AutoFox_INA226_GetPower_uW(&gINA226);
 
-	uint8_t resp[8];
+	uint8_t resp[12];
 
 	resp[0] = (uint8_t)(bus_uV & 0xFF);
 	resp[1] = (uint8_t)((bus_uV >> 8) & 0xFF);
@@ -127,7 +128,12 @@ static void handle_cmd_get_power(void) {
 	resp[6] = (uint8_t)((curr_uA >> 16) & 0xFF);
 	resp[7] = (uint8_t)((curr_uA >> 24) & 0xFF);
 
-	send_frame(BRIDGE_POWER_READING, resp, 8);
+	resp[8] = (uint8_t)(power_uW & 0xFF);
+	resp[9] = (uint8_t)((power_uW >> 8) & 0xFF);
+	resp[10] = (uint8_t)((power_uW >> 16) & 0xFF);
+	resp[11] = (uint8_t)((power_uW >> 24) & 0xFF);
+
+	send_frame(BRIDGE_POWER_READING, resp, 12);
 }
 
 static void handle_cmd_feedback(void) {
