@@ -16,7 +16,9 @@ typedef enum {
 	GET_SERVO_INFO  = 0x05,
 	SET_SERVO_ID    = 0x06,
 	SET_LED_COLOR   = 0x07,
-	GET_POWER       = 0x08
+	GET_POWER       = 0x08,
+	WRITE_SERVO_REGISTER = 0x09,
+	READ_SERVO_REGISTER
 } Command;
 
 typedef enum {

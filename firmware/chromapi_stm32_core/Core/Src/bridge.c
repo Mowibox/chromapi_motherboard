@@ -271,6 +271,73 @@ static void handle_cmd_ping_servo(const uint8_t *payload, uint8_t len)
 	send_ack((hservo.last_error == STS3215_HAL_ERR_NONE) && (g_reply_received == 1));
 }
 
+static void handle_cmd_write_servo_register(const uint8_t *payload, uint8_t len) {
+    if (len < 5) { send_ack(false); return; }
+
+    uint8_t id = payload[0];
+    uint8_t reg = payload[1];
+    uint8_t size = payload[2];
+    uint16_t val = (uint16_t)payload[3] | ((uint16_t)payload[4] << 8);
+
+    uint8_t buf[STS3215_TX_BUF_SIZE];
+    int16_t frame_len = 0;
+
+    if (size == 1) {
+        frame_len = STS3215_BuildWrite1B(buf, sizeof(buf), id, reg, (uint8_t)val);
+    } else if (size == 2) {
+        frame_len = STS3215_BuildWrite2B(buf, sizeof(buf), id, reg, val);
+    }
+
+    if (frame_len <= 0) { send_ack(false); return; }
+
+    hservo.last_error = STS3215_HAL_ERR_NONE;
+    bool is_broadcast = (id == STS3215_BROADCAST_ID);
+    uint8_t expected_replies = is_broadcast ? 0U : 1U;
+
+    if (STS3215_HAL_SendFrame(&hservo, buf, frame_len, is_broadcast, expected_replies) != STS3215_OK) {
+        send_ack(false); return;
+    }
+
+    if (!wait_servo_idle(&hservo, 50)) {
+        send_ack(false);
+        return;
+    }
+
+    send_ack(hservo.last_error == STS3215_HAL_ERR_NONE);
+}
+
+static void handle_cmd_read_servo_register(const uint8_t *payload, uint8_t len) {
+    if (len < 3) { send_ack(false); return; }
+
+    uint8_t id = payload[0];
+    uint8_t reg = payload[1];
+    uint8_t size = payload[2];
+
+    uint8_t buf[STS3215_TX_BUF_SIZE];
+    int16_t frame_len = STS3215_BuildRead(buf, sizeof(buf), id, reg, size);
+
+    if (frame_len <= 0) { send_ack(false); return; }
+
+    g_reply_received = 0;
+    hservo.last_error = STS3215_HAL_ERR_NONE;
+
+    if (STS3215_HAL_SendFrame(&hservo, buf, frame_len, false, 1) == STS3215_OK) {
+        uint32_t t0 = HAL_GetTick();
+        while (!g_reply_received && (HAL_GetTick() - t0 < 10)) {
+            STS3215_HAL_Process(&hservo);
+        }
+
+        if (g_reply_received && g_reply_data_len >= size) {
+            send_frame(0x84, (uint8_t*)g_reply_data, size);
+        } else {
+            STS3215_HAL_Abort(&hservo);
+            send_ack(false);
+        }
+    } else {
+        send_ack(false);
+    }
+}
+
 
 static void parse_rx_buffer(void) {
 	if (rx_len < 5) return;
@@ -298,6 +365,8 @@ static void parse_rx_buffer(void) {
 					case SET_SERVO_ID:    handle_cmd_set_servo_id(payload, payload_len); break;
 					case SET_LED_COLOR:   handle_cmd_set_led_color(payload, payload_len); break;
 					case GET_POWER:       handle_cmd_get_power(); break;
+					case WRITE_SERVO_REGISTER: handle_cmd_write_servo_register(payload, payload_len); break;
+					case READ_SERVO_REGISTER: handle_cmd_read_servo_register(payload, payload_len); break;
 					default:              send_ack(false); break;
 					}
 					i += total_frame_size - 1;

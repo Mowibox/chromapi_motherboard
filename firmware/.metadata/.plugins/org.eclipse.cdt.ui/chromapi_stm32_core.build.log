@@ -1,10 +1,10 @@
-20:23:19 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+02:08:13 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
 make -j12 all 
 arm-none-eabi-size  chromapi_stm32_core.elf 
    text	   data	    bss	    dec	    hex	filename
-  65836	    468	   4212	  70516	  11374	chromapi_stm32_core.elf
+  66572	    468	   4212	  71252	  11654	chromapi_stm32_core.elf
 Finished building: default.size.stdout
  
 
-20:23:20 Build Finished. 0 errors, 0 warnings. (took 528ms)
+02:08:13 Build Finished. 0 errors, 0 warnings. (took 252ms)
 
