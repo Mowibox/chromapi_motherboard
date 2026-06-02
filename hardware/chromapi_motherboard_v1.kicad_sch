@@ -694,6 +694,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "[todo] change the connector footprint for the speaker"
+		(exclude_from_sim no)
+		(at 182.118 51.308 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left bottom)
+		)
+		(uuid "04eff71b-72f3-49e2-8bb9-f0336667f7bb")
+	)
 	(text "[todo] change the NRST label located on GPIO16 (RPI) to an available position"
 		(exclude_from_sim no)
 		(at 182.118 44.704 0)
@@ -705,7 +716,7 @@
 		)
 		(uuid "073dae72-48f1-4e01-9b20-14677a5244c8")
 	)
-	(text "[todo] check SS34 footprint"
+	(text "[todo] check SS34 footprint (SK34B are good candidates)"
 		(exclude_from_sim no)
 		(at 182.118 48.26 0)
 		(effects
