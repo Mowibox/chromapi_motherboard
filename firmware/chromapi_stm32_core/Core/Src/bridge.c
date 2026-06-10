@@ -176,10 +176,10 @@ static void handle_cmd_feedback(void) {
 		}
 	}
 
-	uint8_t tl = (HAL_GPIO_ReadPin(GPIOF, GPIO_PIN_0) == GPIO_PIN_RESET) ? 1 : 0;
-	uint8_t tr = (HAL_GPIO_ReadPin(GPIOF, GPIO_PIN_1) == GPIO_PIN_RESET) ? 1 : 0;
-	uint8_t bl = (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4) == GPIO_PIN_RESET) ? 1 : 0;
-	uint8_t br = (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5) == GPIO_PIN_RESET) ? 1 : 0;
+	uint8_t tl = (HAL_GPIO_ReadPin(GPIOF, GPIO_PIN_0) == GPIO_PIN_RESET) ? 0 : 1;
+	uint8_t tr = (HAL_GPIO_ReadPin(GPIOF, GPIO_PIN_1) == GPIO_PIN_RESET) ? 0 : 1;
+	uint8_t bl = (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4) == GPIO_PIN_RESET) ? 0 : 1;
+	uint8_t br = (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5) == GPIO_PIN_RESET) ? 0 : 1;
 
 	g_robot_state.switches_mask = (tl << 0) | (tr << 1) | (bl << 2) | (br << 3);
 

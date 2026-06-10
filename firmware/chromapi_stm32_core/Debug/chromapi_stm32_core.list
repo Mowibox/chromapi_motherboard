@@ -2906,48 +2906,48 @@ static void handle_cmd_feedback(void) {
 		}
 	}
 
-	uint8_t tl = (HAL_GPIO_ReadPin(GPIOF, GPIO_PIN_0) == GPIO_PIN_RESET) ? 1 : 0;
+	uint8_t tl = (HAL_GPIO_ReadPin(GPIOF, GPIO_PIN_0) == GPIO_PIN_RESET) ? 0 : 1;
  8001b30:	2101      	movs	r1, #1
  8001b32:	4833      	ldr	r0, [pc, #204]	@ (8001c00 <handle_cmd_feedback+0x2ac>)
  8001b34:	f003 fd98 	bl	8005668 <HAL_GPIO_ReadPin>
  8001b38:	4603      	mov	r3, r0
  8001b3a:	2b00      	cmp	r3, #0
- 8001b3c:	bf0c      	ite	eq
- 8001b3e:	2301      	moveq	r3, #1
- 8001b40:	2300      	movne	r3, #0
+ 8001b3c:	bf14      	ite	ne
+ 8001b3e:	2301      	movne	r3, #1
+ 8001b40:	2300      	moveq	r3, #0
  8001b42:	b2db      	uxtb	r3, r3
  8001b44:	f887 30a5 	strb.w	r3, [r7, #165]	@ 0xa5
-	uint8_t tr = (HAL_GPIO_ReadPin(GPIOF, GPIO_PIN_1) == GPIO_PIN_RESET) ? 1 : 0;
+	uint8_t tr = (HAL_GPIO_ReadPin(GPIOF, GPIO_PIN_1) == GPIO_PIN_RESET) ? 0 : 1;
  8001b48:	2102      	movs	r1, #2
  8001b4a:	482d      	ldr	r0, [pc, #180]	@ (8001c00 <handle_cmd_feedback+0x2ac>)
  8001b4c:	f003 fd8c 	bl	8005668 <HAL_GPIO_ReadPin>
  8001b50:	4603      	mov	r3, r0
  8001b52:	2b00      	cmp	r3, #0
- 8001b54:	bf0c      	ite	eq
- 8001b56:	2301      	moveq	r3, #1
- 8001b58:	2300      	movne	r3, #0
+ 8001b54:	bf14      	ite	ne
+ 8001b56:	2301      	movne	r3, #1
+ 8001b58:	2300      	moveq	r3, #0
  8001b5a:	b2db      	uxtb	r3, r3
  8001b5c:	f887 30a4 	strb.w	r3, [r7, #164]	@ 0xa4
-	uint8_t bl = (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4) == GPIO_PIN_RESET) ? 1 : 0;
+	uint8_t bl = (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4) == GPIO_PIN_RESET) ? 0 : 1;
  8001b60:	2110      	movs	r1, #16
  8001b62:	4828      	ldr	r0, [pc, #160]	@ (8001c04 <handle_cmd_feedback+0x2b0>)
  8001b64:	f003 fd80 	bl	8005668 <HAL_GPIO_ReadPin>
  8001b68:	4603      	mov	r3, r0
  8001b6a:	2b00      	cmp	r3, #0
- 8001b6c:	bf0c      	ite	eq
- 8001b6e:	2301      	moveq	r3, #1
- 8001b70:	2300      	movne	r3, #0
+ 8001b6c:	bf14      	ite	ne
+ 8001b6e:	2301      	movne	r3, #1
+ 8001b70:	2300      	moveq	r3, #0
  8001b72:	b2db      	uxtb	r3, r3
  8001b74:	f887 30a3 	strb.w	r3, [r7, #163]	@ 0xa3
-	uint8_t br = (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5) == GPIO_PIN_RESET) ? 1 : 0;
+	uint8_t br = (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5) == GPIO_PIN_RESET) ? 0 : 1;
  8001b78:	2120      	movs	r1, #32
  8001b7a:	4822      	ldr	r0, [pc, #136]	@ (8001c04 <handle_cmd_feedback+0x2b0>)
  8001b7c:	f003 fd74 	bl	8005668 <HAL_GPIO_ReadPin>
  8001b80:	4603      	mov	r3, r0
  8001b82:	2b00      	cmp	r3, #0
- 8001b84:	bf0c      	ite	eq
- 8001b86:	2301      	moveq	r3, #1
- 8001b88:	2300      	movne	r3, #0
+ 8001b84:	bf14      	ite	ne
+ 8001b86:	2301      	movne	r3, #1
+ 8001b88:	2300      	moveq	r3, #0
  8001b8a:	b2db      	uxtb	r3, r3
  8001b8c:	f887 30a2 	strb.w	r3, [r7, #162]	@ 0xa2
 
