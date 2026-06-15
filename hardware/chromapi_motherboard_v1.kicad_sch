@@ -696,10 +696,10 @@
 	)
 	(text "[todo] change the connector footprint for the speaker"
 		(exclude_from_sim no)
-		(at 182.118 51.308 0)
+		(at 182.118 47.498 0)
 		(effects
 			(font
-				(size 1.524 1.524)
+				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
@@ -707,21 +707,21 @@
 	)
 	(text "[todo] change the NRST label located on GPIO16 (RPI) to an available position"
 		(exclude_from_sim no)
-		(at 182.118 44.704 0)
+		(at 182.118 42.418 0)
 		(effects
 			(font
-				(size 1.524 1.524)
+				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "073dae72-48f1-4e01-9b20-14677a5244c8")
 	)
-	(text "[todo] check SS34 footprint (SK34B are good candidates)"
+	(text "[todo] check SS34 footprint (SK34B is a good candidate)"
 		(exclude_from_sim no)
-		(at 182.118 48.26 0)
+		(at 182.118 44.958 0)
 		(effects
 			(font
-				(size 1.524 1.524)
+				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
@@ -740,10 +740,10 @@
 	)
 	(text "[fixed] correcting the polarity of the connectors for the servomotors"
 		(exclude_from_sim no)
-		(at 181.864 41.148 0)
+		(at 181.864 39.878 0)
 		(effects
 			(font
-				(size 1.524 1.524)
+				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
@@ -759,6 +759,17 @@
 			(justify left bottom)
 		)
 		(uuid "3c35a8f3-b577-4f45-b0cb-b9b8cc21c63c")
+	)
+	(text "OT"
+		(exclude_from_sim no)
+		(at 166.878 35.56 0)
+		(effects
+			(font
+				(size 2.0066 2.0066)
+			)
+			(justify left bottom)
+		)
+		(uuid "489ec84f-913b-4681-901a-515f8a2520c2")
 	)
 	(text "OT"
 		(exclude_from_sim no)
@@ -803,6 +814,17 @@
 			(justify left bottom)
 		)
 		(uuid "7cc6ab94-8bc4-4bd1-9215-015e84b8fe3f")
+	)
+	(text "[todo] find an alternative to SWD for flashing the STM32"
+		(exclude_from_sim no)
+		(at 182.118 50.038 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9512a987-c4f4-4689-8573-866de99e0562")
 	)
 	(text "OT"
 		(exclude_from_sim no)
