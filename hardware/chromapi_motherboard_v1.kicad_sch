@@ -760,6 +760,17 @@
 		)
 		(uuid "3c35a8f3-b577-4f45-b0cb-b9b8cc21c63c")
 	)
+	(text "[todo] provide a hole for the CSI connector "
+		(exclude_from_sim no)
+		(at 182.118 55.118 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3fc87f60-b9ce-4ddf-8609-444b48136fba")
+	)
 	(text "OT"
 		(exclude_from_sim no)
 		(at 166.878 35.56 0)
@@ -814,6 +825,17 @@
 			(justify left bottom)
 		)
 		(uuid "7cc6ab94-8bc4-4bd1-9215-015e84b8fe3f")
+	)
+	(text "[todo] move the USB connector to one of the sides of the PCB"
+		(exclude_from_sim no)
+		(at 182.118 52.578 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "93e37d13-48b4-4cb1-a3b0-e393cdb48dde")
 	)
 	(text "[todo] find an alternative to SWD for flashing the STM32"
 		(exclude_from_sim no)
