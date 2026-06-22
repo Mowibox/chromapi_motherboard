@@ -5284,12 +5284,12 @@ void Chromapi_SystemInit(void) {
  8002c40:	4814      	ldr	r0, [pc, #80]	@ (8002c94 <Chromapi_SystemInit+0x84>)
  8002c42:	f7ff fb51 	bl	80022e8 <Bridge_Init>
 	(void)BMI088_Init(
- 8002c46:	2301      	movs	r3, #1
+ 8002c46:	2310      	movs	r3, #16
  8002c48:	9301      	str	r3, [sp, #4]
- 8002c4a:	4b13      	ldr	r3, [pc, #76]	@ (8002c98 <Chromapi_SystemInit+0x88>)
- 8002c4c:	9300      	str	r3, [sp, #0]
- 8002c4e:	2310      	movs	r3, #16
- 8002c50:	f04f 4290 	mov.w	r2, #1207959552	@ 0x48000000
+ 8002c4a:	f04f 4390 	mov.w	r3, #1207959552	@ 0x48000000
+ 8002c4e:	9300      	str	r3, [sp, #0]
+ 8002c50:	2301      	movs	r3, #1
+ 8002c52:	4a11      	ldr	r2, [pc, #68]	@ (8002c98 <Chromapi_SystemInit+0x88>)
  8002c54:	4911      	ldr	r1, [pc, #68]	@ (8002c9c <Chromapi_SystemInit+0x8c>)
  8002c56:	4812      	ldr	r0, [pc, #72]	@ (8002ca0 <Chromapi_SystemInit+0x90>)
  8002c58:	f7fe fa0a 	bl	8001070 <BMI088_Init>
@@ -5654,9 +5654,9 @@ static void MX_SPI1_Init(void)
  8002e4c:	4b11      	ldr	r3, [pc, #68]	@ (8002e94 <MX_SPI1_Init+0x74>)
  8002e4e:	f44f 7200 	mov.w	r2, #512	@ 0x200
  8002e52:	619a      	str	r2, [r3, #24]
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_8;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_32;
  8002e54:	4b0f      	ldr	r3, [pc, #60]	@ (8002e94 <MX_SPI1_Init+0x74>)
- 8002e56:	2210      	movs	r2, #16
+ 8002e56:	2220      	movs	r2, #32
  8002e58:	61da      	str	r2, [r3, #28]
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
  8002e5a:	4b0e      	ldr	r3, [pc, #56]	@ (8002e94 <MX_SPI1_Init+0x74>)
@@ -5678,9 +5678,9 @@ static void MX_SPI1_Init(void)
  8002e72:	4b08      	ldr	r3, [pc, #32]	@ (8002e94 <MX_SPI1_Init+0x74>)
  8002e74:	2200      	movs	r2, #0
  8002e76:	631a      	str	r2, [r3, #48]	@ 0x30
-  hspi1.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
+  hspi1.Init.NSSPMode = SPI_NSS_PULSE_DISABLE;
  8002e78:	4b06      	ldr	r3, [pc, #24]	@ (8002e94 <MX_SPI1_Init+0x74>)
- 8002e7a:	2208      	movs	r2, #8
+ 8002e7a:	2200      	movs	r2, #0
  8002e7c:	635a      	str	r2, [r3, #52]	@ 0x34
   if (HAL_SPI_Init(&hspi1) != HAL_OK)
  8002e7e:	4805      	ldr	r0, [pc, #20]	@ (8002e94 <MX_SPI1_Init+0x74>)
@@ -6234,15 +6234,15 @@ static void MX_GPIO_Init(void)
  80031b0:	683b      	ldr	r3, [r7, #0]
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(SPI_CS_ACC_GPIO_Port, SPI_CS_ACC_Pin, GPIO_PIN_RESET);
- 80031b2:	2200      	movs	r2, #0
+  HAL_GPIO_WritePin(SPI_CS_GYRO_GPIO_Port, SPI_CS_GYRO_Pin, GPIO_PIN_SET);
+ 80031b2:	2201      	movs	r2, #1
  80031b4:	2110      	movs	r1, #16
  80031b6:	f04f 4090 	mov.w	r0, #1207959552	@ 0x48000000
  80031ba:	f002 fa6d 	bl	8005698 <HAL_GPIO_WritePin>
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(SPI_CS_GYRO_GPIO_Port, SPI_CS_GYRO_Pin, GPIO_PIN_RESET);
- 80031be:	2200      	movs	r2, #0
+  HAL_GPIO_WritePin(SPI_CS_ACC_GPIO_Port, SPI_CS_ACC_Pin, GPIO_PIN_SET);
+ 80031be:	2201      	movs	r2, #1
  80031c0:	2101      	movs	r1, #1
  80031c2:	4826      	ldr	r0, [pc, #152]	@ (800325c <MX_GPIO_Init+0x108>)
  80031c4:	f002 fa68 	bl	8005698 <HAL_GPIO_WritePin>
@@ -6263,8 +6263,8 @@ static void MX_GPIO_Init(void)
  80031da:	4821      	ldr	r0, [pc, #132]	@ (8003260 <MX_GPIO_Init+0x10c>)
  80031dc:	f002 f8b8 	bl	8005350 <HAL_GPIO_Init>
 
-  /*Configure GPIO pin : SPI_CS_ACC_Pin */
-  GPIO_InitStruct.Pin = SPI_CS_ACC_Pin;
+  /*Configure GPIO pin : SPI_CS_GYRO_Pin */
+  GPIO_InitStruct.Pin = SPI_CS_GYRO_Pin;
  80031e0:	2310      	movs	r3, #16
  80031e2:	60fb      	str	r3, [r7, #12]
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -6276,14 +6276,14 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
  80031ec:	2300      	movs	r3, #0
  80031ee:	61bb      	str	r3, [r7, #24]
-  HAL_GPIO_Init(SPI_CS_ACC_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(SPI_CS_GYRO_GPIO_Port, &GPIO_InitStruct);
  80031f0:	f107 030c 	add.w	r3, r7, #12
  80031f4:	4619      	mov	r1, r3
  80031f6:	f04f 4090 	mov.w	r0, #1207959552	@ 0x48000000
  80031fa:	f002 f8a9 	bl	8005350 <HAL_GPIO_Init>
 
-  /*Configure GPIO pin : SPI_CS_GYRO_Pin */
-  GPIO_InitStruct.Pin = SPI_CS_GYRO_Pin;
+  /*Configure GPIO pin : SPI_CS_ACC_Pin */
+  GPIO_InitStruct.Pin = SPI_CS_ACC_Pin;
  80031fe:	2301      	movs	r3, #1
  8003200:	60fb      	str	r3, [r7, #12]
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -6295,7 +6295,7 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
  800320a:	2300      	movs	r3, #0
  800320c:	61bb      	str	r3, [r7, #24]
-  HAL_GPIO_Init(SPI_CS_GYRO_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(SPI_CS_ACC_GPIO_Port, &GPIO_InitStruct);
  800320e:	f107 030c 	add.w	r3, r7, #12
  8003212:	4619      	mov	r1, r3
  8003214:	4811      	ldr	r0, [pc, #68]	@ (800325c <MX_GPIO_Init+0x108>)
@@ -7224,8 +7224,8 @@ void HAL_SPI_MspInit(SPI_HandleTypeDef* hspi)
     GPIO_InitStruct.Pull = GPIO_NOPULL;
  80037ee:	2300      	movs	r3, #0
  80037f0:	61fb      	str	r3, [r7, #28]
-    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
- 80037f2:	2300      	movs	r3, #0
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+ 80037f2:	2302      	movs	r3, #2
  80037f4:	623b      	str	r3, [r7, #32]
     GPIO_InitStruct.Alternate = GPIO_AF5_SPI1;
  80037f6:	2305      	movs	r3, #5

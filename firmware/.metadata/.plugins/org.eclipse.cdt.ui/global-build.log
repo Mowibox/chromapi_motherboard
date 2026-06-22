@@ -1,6 +1,20 @@
-02:07:17 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+21:43:48 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/bridge.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/bridge.d" -MT"Core/Src/bridge.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bridge.o"
+arm-none-eabi-size  chromapi_stm32_core.elf 
+   text	   data	    bss	    dec	    hex	filename
+  58052	    468	   3820	  62340	   f384	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+21:44:39 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+   text	   data	    bss	    dec	    hex	filename
+  58052	    468	   3820	  62340	   f384	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+21:47:25 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: chromapi_stm32_core.elf
  
@@ -12,16 +26,102 @@ Finished building: default.size.stdout
  
 Finished building: chromapi_stm32_core.list
  
-02:08:13 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+21:47:58 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
 make -j12 all 
 arm-none-eabi-size  chromapi_stm32_core.elf 
    text	   data	    bss	    dec	    hex	filename
   66572	    468	   4212	  71252	  11654	chromapi_stm32_core.elf
 Finished building: default.size.stdout
  
-23:04:04 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+01:08:25 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/bridge.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/bridge.d" -MT"Core/Src/bridge.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/bridge.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  66572	    468	   4212	  71252	  11654	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+01:09:24 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  58052	    468	   3820	  62340	   f384	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+01:13:58 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  51328	    468	   3708	  55504	   d8d0	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+01:21:34 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  51480	    468	   3708	  55656	   d968	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+01:34:54 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g4xx_hal_msp.d" -MT"Core/Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32g4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32g4xx_it.d" -MT"Core/Src/stm32g4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32g4xx_it.o"
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  51320	    468	   3708	  55496	   d8c8	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+01:36:18 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: chromapi_stm32_core.elf
+ 
+arm-none-eabi-size  chromapi_stm32_core.elf 
+arm-none-eabi-objdump -h -S chromapi_stm32_core.elf  > "chromapi_stm32_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  51472	    468	   3708	  55648	   d960	chromapi_stm32_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: chromapi_stm32_core.list
+ 
+01:43:41 **** Incremental Build of configuration Debug for project chromapi_stm32_core ****
+make -j12 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G431xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "chromapi_stm32_core.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Workspace\Git_folders\chromapi_motherboard\firmware\chromapi_stm32_core\STM32G431KBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="chromapi_stm32_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: chromapi_stm32_core.elf
