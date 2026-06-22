@@ -960,6 +960,17 @@
 		)
 		(uuid "eb85817d-68c9-410a-9e4e-92d407e2bbe7")
 	)
+	(text "[todo] correct SPI MISO/MOSI connection mismatch"
+		(exclude_from_sim no)
+		(at 182.118 57.404 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f563ff6e-e190-4199-8bd0-7ac3b751c2fe")
+	)
 	(junction
 		(at 156.21 187.96)
 		(diameter 0)
