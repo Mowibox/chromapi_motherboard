@@ -696,7 +696,7 @@
 	)
 	(text "[todo] change the connector footprint for the speaker"
 		(exclude_from_sim no)
-		(at 182.118 44.958 0)
+		(at 182.118 42.418 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -707,7 +707,7 @@
 	)
 	(text "[todo] change the NRST label located on GPIO16 (RPI) to an available position"
 		(exclude_from_sim no)
-		(at 182.118 54.864 0)
+		(at 182.118 52.324 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -715,17 +715,6 @@
 			(justify left bottom)
 		)
 		(uuid "073dae72-48f1-4e01-9b20-14677a5244c8")
-	)
-	(text "[todo] check SS34 footprint (SK34B is also a good candidate)"
-		(exclude_from_sim no)
-		(at 182.118 42.418 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1f946cd7-5ba7-450c-a773-206776647151")
 	)
 	(text "Check"
 		(exclude_from_sim no)
@@ -762,7 +751,7 @@
 	)
 	(text "[todo] provide a hole for the CSI connector "
 		(exclude_from_sim no)
-		(at 182.118 52.578 0)
+		(at 182.118 50.038 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -828,7 +817,7 @@
 	)
 	(text "[todo] move the USB connector to one of the sides of the PCB"
 		(exclude_from_sim no)
-		(at 182.118 50.038 0)
+		(at 182.118 47.498 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -839,7 +828,7 @@
 	)
 	(text "[todo] find an alternative to SWD for flashing the STM32"
 		(exclude_from_sim no)
-		(at 182.118 47.498 0)
+		(at 182.118 44.958 0)
 		(effects
 			(font
 				(size 1.27 1.27)
