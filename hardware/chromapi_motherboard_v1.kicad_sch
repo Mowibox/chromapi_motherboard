@@ -696,7 +696,7 @@
 	)
 	(text "[todo] change the connector footprint for the speaker"
 		(exclude_from_sim no)
-		(at 182.118 47.498 0)
+		(at 182.118 44.958 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -707,7 +707,7 @@
 	)
 	(text "[todo] change the NRST label located on GPIO16 (RPI) to an available position"
 		(exclude_from_sim no)
-		(at 182.118 42.418 0)
+		(at 182.118 54.864 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -716,9 +716,9 @@
 		)
 		(uuid "073dae72-48f1-4e01-9b20-14677a5244c8")
 	)
-	(text "[todo] check SS34 footprint (SK34B is a good candidate)"
+	(text "[todo] check SS34 footprint (SK34B is also a good candidate)"
 		(exclude_from_sim no)
-		(at 182.118 44.958 0)
+		(at 182.118 42.418 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -729,7 +729,7 @@
 	)
 	(text "Check"
 		(exclude_from_sim no)
-		(at 166.37 29.21 0)
+		(at 166.37 26.67 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -740,7 +740,7 @@
 	)
 	(text "[fixed] correcting the polarity of the connectors for the servomotors"
 		(exclude_from_sim no)
-		(at 181.864 39.878 0)
+		(at 181.864 37.338 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -751,7 +751,7 @@
 	)
 	(text "B1"
 		(exclude_from_sim no)
-		(at 107.696 41.91 0)
+		(at 107.696 39.37 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -762,7 +762,7 @@
 	)
 	(text "[todo] provide a hole for the CSI connector "
 		(exclude_from_sim no)
-		(at 182.118 55.118 0)
+		(at 182.118 52.578 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -773,7 +773,7 @@
 	)
 	(text "OT"
 		(exclude_from_sim no)
-		(at 166.878 35.56 0)
+		(at 166.878 33.02 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -784,7 +784,7 @@
 	)
 	(text "OT"
 		(exclude_from_sim no)
-		(at 152.4 41.91 0)
+		(at 152.4 39.37 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -795,7 +795,7 @@
 	)
 	(text "Initial drawing"
 		(exclude_from_sim no)
-		(at 181.864 34.798 0)
+		(at 181.864 32.258 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -806,7 +806,7 @@
 	)
 	(text "Release"
 		(exclude_from_sim no)
-		(at 107.95 29.21 0)
+		(at 107.95 26.67 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -817,7 +817,7 @@
 	)
 	(text "XX/XX/2026"
 		(exclude_from_sim no)
-		(at 128.27 41.656 0)
+		(at 128.27 39.116 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -828,7 +828,7 @@
 	)
 	(text "[todo] move the USB connector to one of the sides of the PCB"
 		(exclude_from_sim no)
-		(at 182.118 52.578 0)
+		(at 182.118 50.038 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -839,7 +839,7 @@
 	)
 	(text "[todo] find an alternative to SWD for flashing the STM32"
 		(exclude_from_sim no)
-		(at 182.118 50.038 0)
+		(at 182.118 47.498 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -850,7 +850,7 @@
 	)
 	(text "OT"
 		(exclude_from_sim no)
-		(at 152.4 35.56 0)
+		(at 152.4 33.02 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -874,7 +874,7 @@
 	)
 	(text "Date"
 		(exclude_from_sim no)
-		(at 128.27 29.21 0)
+		(at 128.27 26.67 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -907,7 +907,7 @@
 	)
 	(text "15/04/2026"
 		(exclude_from_sim no)
-		(at 128.27 35.56 0)
+		(at 128.27 33.02 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -918,7 +918,7 @@
 	)
 	(text "Comments"
 		(exclude_from_sim no)
-		(at 181.61 29.21 0)
+		(at 181.61 26.67 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -929,7 +929,7 @@
 	)
 	(text "A1"
 		(exclude_from_sim no)
-		(at 107.95 35.56 0)
+		(at 107.95 33.02 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -940,7 +940,7 @@
 	)
 	(text "Designer"
 		(exclude_from_sim no)
-		(at 151.13 29.21 0)
+		(at 151.13 26.67 0)
 		(effects
 			(font
 				(size 2.0066 2.0066)
@@ -960,9 +960,9 @@
 		)
 		(uuid "eb85817d-68c9-410a-9e4e-92d407e2bbe7")
 	)
-	(text "[todo] correct SPI MISO/MOSI connection mismatch"
+	(text "[fixed] correct SPI MISO/MOSI connection mismatch"
 		(exclude_from_sim no)
-		(at 182.118 57.404 0)
+		(at 181.864 39.878 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1003,6 +1003,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 106.68) (xy 214.63 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03caa119-310d-4495-abcf-b765af437dd9")
+	)
+	(wire
+		(pts
 			(xy 156.21 115.57) (xy 165.1 115.57)
 		)
 		(stroke
@@ -1020,6 +1030,16 @@
 			(type default)
 		)
 		(uuid "08690225-baaa-4f1c-a0a9-01254768322b")
+	)
+	(wire
+		(pts
+			(xy 214.63 62.23) (xy 231.14 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0890dec5-5f02-430e-bf11-47cb2c2077b7")
 	)
 	(wire
 		(pts
@@ -1043,16 +1063,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 106.68) (xy 214.63 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12df6da8-0c8e-45a0-8dbb-c2ce1b3032bf")
-	)
-	(wire
-		(pts
 			(xy 212.09 121.92) (xy 222.25 121.92)
 		)
 		(stroke
@@ -1063,13 +1073,23 @@
 	)
 	(polyline
 		(pts
-			(xy 107.95 36.83) (xy 279.4 36.83)
+			(xy 107.95 34.29) (xy 279.4 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1d4bd7f2-b2aa-4f1f-8df7-ae78820933db")
+	)
+	(wire
+		(pts
+			(xy 215.9 64.77) (xy 231.14 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e687865-17bf-4831-9f06-28de6acc41a8")
 	)
 	(wire
 		(pts
@@ -1123,7 +1143,7 @@
 	)
 	(polyline
 		(pts
-			(xy 127 26.67) (xy 127 52.07)
+			(xy 127 24.13) (xy 127 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1193,7 +1213,7 @@
 	)
 	(polyline
 		(pts
-			(xy 107.95 30.48) (xy 279.4 30.48)
+			(xy 107.95 27.94) (xy 279.4 27.94)
 		)
 		(stroke
 			(width 0)
@@ -1203,23 +1223,13 @@
 	)
 	(polyline
 		(pts
-			(xy 149.86 26.67) (xy 149.86 52.07)
+			(xy 149.86 24.13) (xy 149.86 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "55a90e1d-49b2-415a-839e-88b4ab262ba0")
-	)
-	(wire
-		(pts
-			(xy 215.9 64.77) (xy 231.14 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57a99c90-41d7-4b3d-9fe3-f4b6116a1cce")
 	)
 	(wire
 		(pts
@@ -1363,7 +1373,7 @@
 	)
 	(polyline
 		(pts
-			(xy 165.1 26.67) (xy 165.1 52.07)
+			(xy 165.1 24.13) (xy 165.1 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1423,7 +1433,7 @@
 	)
 	(polyline
 		(pts
-			(xy 180.34 26.67) (xy 180.34 52.07)
+			(xy 180.34 24.13) (xy 180.34 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1543,6 +1553,16 @@
 	)
 	(wire
 		(pts
+			(xy 212.09 109.22) (xy 215.9 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b98ddf8e-e0ef-426b-aaf5-c7166b6a6311")
+	)
+	(wire
+		(pts
 			(xy 212.09 146.05) (xy 231.14 146.05)
 		)
 		(stroke
@@ -1550,16 +1570,6 @@
 			(type default)
 		)
 		(uuid "cb4711a3-21dd-403d-b51d-f614d221db0b")
-	)
-	(wire
-		(pts
-			(xy 214.63 62.23) (xy 231.14 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ccc0e3cf-c85c-4c47-aeab-997bc0414cf0")
 	)
 	(wire
 		(pts
@@ -1600,16 +1610,6 @@
 			(type default)
 		)
 		(uuid "ea351908-386f-4968-8346-7016e55a10df")
-	)
-	(wire
-		(pts
-			(xy 212.09 109.22) (xy 215.9 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1e74031-a358-4368-b2d2-7e84e54a94da")
 	)
 	(wire
 		(pts
@@ -19688,7 +19688,7 @@
 			)
 		)
 		(pin "SPI_MOSI" input
-			(at 212.09 106.68 0)
+			(at 212.09 109.22 0)
 			(uuid "1929a9e6-0357-4c2c-81ee-61b0523bbbda")
 			(effects
 				(font
@@ -19718,7 +19718,7 @@
 			)
 		)
 		(pin "SPI_MISO" input
-			(at 212.09 109.22 0)
+			(at 212.09 106.68 0)
 			(uuid "48614ab7-4357-4974-b697-0d85f8806acd")
 			(effects
 				(font
