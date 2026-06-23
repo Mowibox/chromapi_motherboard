@@ -694,9 +694,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "[todo] change the connector footprint for the speaker"
+	(text "[fixed] change the connector footprint for the speaker"
 		(exclude_from_sim no)
-		(at 182.118 42.418 0)
+		(at 181.864 42.418 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -826,7 +826,7 @@
 		)
 		(uuid "93e37d13-48b4-4cb1-a3b0-e393cdb48dde")
 	)
-	(text "[todo] find an alternative to SWD for flashing the STM32"
+	(text "[todo] find an alternative to SWD connector for flashing the STM32"
 		(exclude_from_sim no)
 		(at 182.118 44.958 0)
 		(effects
