@@ -565,16 +565,16 @@
       "method": 0,
       "sort_order": 1
     },
-    "bom_export_filename": "bom\\chromapi_motherboard_v1.csv",
+    "bom_export_filename": "bom\\chromapi_motherboard_v1_bom.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
-      "field_delimiter": ";",
+      "field_delimiter": ",",
       "keep_line_breaks": false,
       "keep_tabs": false,
-      "name": "Semicolons",
+      "name": "CSV",
       "ref_delimiter": ",",
       "ref_range_delimiter": "",
-      "string_delimiter": "'"
+      "string_delimiter": "\""
     },
     "bom_presets": [],
     "bom_settings": {
@@ -840,7 +840,7 @@
         "uuid": "d1a31f26-03e0-43e1-89c1-031fe31befc5"
       }
     ],
-    "used_designators": "J9",
+    "used_designators": "R24,J4,J9,TP3-4,D7,#PWR25,#PWR32,#PWR43,#PWR50",
     "variants": []
   },
   "sheets": [

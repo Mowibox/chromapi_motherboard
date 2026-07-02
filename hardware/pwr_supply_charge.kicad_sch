@@ -14265,16 +14265,6 @@
 		)
 		(uuid "02514267-529d-4827-987f-a4812d478702")
 	)
-	(label "B-"
-		(at 45.72 36.83 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2215db0b-3253-4090-bb36-f3cf2a256835")
-	)
 	(label "V_BATT"
 		(at 45.72 54.61 180)
 		(effects
@@ -14315,6 +14305,26 @@
 		)
 		(uuid "53abdf8e-61ee-4b09-8d26-8afd0c21cb25")
 	)
+	(label "B-"
+		(at 45.72 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "55230ce2-eedb-4ebb-bbe9-e339ffca7db0")
+	)
+	(label "BM"
+		(at 45.72 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "56677410-0f8e-462e-9443-895d695820b7")
+	)
 	(label "B+"
 		(at 243.84 97.79 0)
 		(effects
@@ -14344,16 +14354,6 @@
 			(justify right bottom)
 		)
 		(uuid "ee66ecbd-3a17-42d8-aa41-f7de8be98917")
-	)
-	(label "BM"
-		(at 45.72 39.37 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "fa0fee55-43c6-48a6-bcb7-4d31583c92ca")
 	)
 	(hierarchical_label "INA226_SCL"
 		(shape input)

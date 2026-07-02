@@ -2407,8 +2407,8 @@
 		(uuid "0259f4e2-f862-4e89-874c-fd6e762cd141")
 	)
 	(no_connect
-		(at 142.24 90.17)
-		(uuid "18d5ef62-2d78-443f-8004-ea6df3dad021")
+		(at 154.94 120.65)
+		(uuid "02c0d171-b5b7-414c-92aa-ce8c4d3d91ab")
 	)
 	(no_connect
 		(at 154.94 115.57)
@@ -2417,10 +2417,6 @@
 	(no_connect
 		(at 154.94 105.41)
 		(uuid "250d08bb-31ac-4133-98f2-50035ce24f6a")
-	)
-	(no_connect
-		(at 154.94 95.25)
-		(uuid "268af875-40ff-436a-b9ee-035918d69982")
 	)
 	(no_connect
 		(at 142.24 100.33)
@@ -2433,10 +2429,6 @@
 	(no_connect
 		(at 142.24 105.41)
 		(uuid "7343d793-d4da-473a-ac55-11b30e0aa237")
-	)
-	(no_connect
-		(at 142.24 92.71)
-		(uuid "835b4779-3970-49e7-a621-8cd680ab76ed")
 	)
 	(no_connect
 		(at 142.24 123.19)
@@ -2477,10 +2469,6 @@
 	(no_connect
 		(at 142.24 102.87)
 		(uuid "e0a16a9d-27b5-4f8b-b9d8-f734dd6c5da3")
-	)
-	(no_connect
-		(at 142.24 95.25)
-		(uuid "f2d6631a-0b12-4d62-82da-341fb0e64b89")
 	)
 	(no_connect
 		(at 154.94 107.95)
@@ -2625,6 +2613,16 @@
 			(type default)
 		)
 		(uuid "b3da90f3-1452-41f3-904c-2f4173cc8d36")
+	)
+	(wire
+		(pts
+			(xy 154.94 99.06) (xy 154.94 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8f448ac-8132-4449-b60c-edc7572a77af")
 	)
 	(wire
 		(pts
@@ -10923,7 +10921,7 @@
 		(uuid "9bdf5417-c9db-4755-9bec-9ba1d3a7fad7")
 	)
 	(label "Fan_Tacho"
-		(at 154.94 97.79 0)
+		(at 154.94 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10931,17 +10929,6 @@
 			(justify left bottom)
 		)
 		(uuid "e0c3838c-39be-43b7-ae60-6e6d179060bb")
-	)
-	(hierarchical_label "NRST"
-		(shape input)
-		(at 154.94 120.65 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1b7ef79f-8433-4c0d-8f93-a6cf004f9622")
 	)
 	(hierarchical_label "MIC_DOUT"
 		(shape input)
@@ -10976,6 +10963,17 @@
 		)
 		(uuid "38ff0a7e-4b8d-4ae4-bb5a-1e0c43ef9548")
 	)
+	(hierarchical_label "SWDIO"
+		(shape input)
+		(at 142.24 92.71 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4ff62c39-87ce-456b-8ef4-11dca1879f6a")
+	)
 	(hierarchical_label "LRCLK"
 		(shape input)
 		(at 142.24 120.65 180)
@@ -10998,6 +10996,17 @@
 		)
 		(uuid "763ad621-3e19-48dd-90d6-e90173ed51b4")
 	)
+	(hierarchical_label "SWCLK"
+		(shape input)
+		(at 142.24 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c390c8c-ee95-4123-9f89-bc6068cdc872")
+	)
 	(hierarchical_label "UART_TXD"
 		(shape input)
 		(at 154.94 85.09 0)
@@ -11008,6 +11017,28 @@
 			(justify left)
 		)
 		(uuid "b4c3da9a-0c61-4bb4-b84b-de0f16c53ff9")
+	)
+	(hierarchical_label "NRST"
+		(shape input)
+		(at 154.94 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d5774278-b14f-4ebc-9285-26b7f9af9c8e")
+	)
+	(hierarchical_label "BOOT"
+		(shape input)
+		(at 142.24 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e14a8699-d5f3-4402-9689-5db501a193f6")
 	)
 	(symbol
 		(lib_id "power:GND")
