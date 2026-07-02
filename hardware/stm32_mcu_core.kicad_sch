@@ -13628,7 +13628,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "15d8b30e-1bae-4f3c-9642-f8ec50ffd459")
 		(property "Reference" "#PWR058"
@@ -14843,7 +14843,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "39631a9f-710b-4b2f-a8da-b11b09ad5184")
 		(property "Reference" "#PWR059"
@@ -16558,7 +16558,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "616bbdf2-72e0-4d46-8957-f45271ce1ea6")
 		(property "Reference" "C30"
@@ -17336,7 +17336,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "7d7551ff-d0e5-48e8-9535-0642c750c490")
 		(property "Reference" "C29"
@@ -17777,7 +17777,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8c029071-d2be-41ce-b38c-cdaf355f6cea")
 		(property "Reference" "#PWR066"
@@ -18365,7 +18365,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ac1ea648-f420-4cf2-8deb-466d37aac3f4")
 		(property "Reference" "#PWR065"
