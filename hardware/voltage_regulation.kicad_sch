@@ -11623,17 +11623,6 @@
 	)
 	(hierarchical_label "V_SYS"
 		(shape input)
-		(at 95.25 118.11 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "402d11d0-73a8-44dd-87a3-84571804047e")
-	)
-	(hierarchical_label "V_SYS"
-		(shape input)
 		(at 62.23 43.18 180)
 		(effects
 			(font
@@ -11966,7 +11955,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14133420-a77e-4bdc-b837-85d43575844b")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR028"
 			(at 95.25 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -12027,7 +12016,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR030")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -12124,7 +12113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18bf3a7e-2ce3-4b71-8761-aafc53a4c4fd")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR026"
 			(at 177.8 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -12185,7 +12174,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR028")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -12462,7 +12451,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "341d2c78-4493-414e-bc30-fbb1753b23b8")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR027"
 			(at 223.52 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -12523,7 +12512,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR029")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -13087,7 +13076,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "1k"
 			(at 89.154 130.556 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13186,7 +13175,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C844135"
 			(at 95.25 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -14158,6 +14147,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 95.25 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5d454ad0-7089-49f0-ad9f-7483b0face37")
+		(property "Reference" "#PWR0112"
+			(at 95.25 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 95.25 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 95.25 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4255c27f-3a29-4892-9e49-d794f032d31a")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
+					(reference "#PWR0112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 200.66 54.61 0)
 		(mirror x)
@@ -14967,7 +15034,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "90c1a336-b89c-4e00-9eed-6af7fc3cfdd2")
-		(property "Reference" "TP2"
+		(property "Reference" "TP3"
 			(at 91.948 118.11 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15125,7 +15192,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "TP2")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -15583,7 +15650,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9e75973-bc80-44aa-8362-3cda4327f80d")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR025"
 			(at 233.68 127 0)
 			(hide yes)
 			(show_name no)
@@ -15643,7 +15710,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR027")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -16281,7 +16348,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0c0eb61-1c32-4b70-b9aa-31e44e6d5c7e")
-		(property "Reference" "TP3"
+		(property "Reference" "TP2"
 			(at 243.332 43.18 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16439,7 +16506,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "TP3")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -16637,7 +16704,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b48df8bf-d484-4329-a7ab-29f3d55b03ce")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR024"
 			(at 167.64 127 0)
 			(hide yes)
 			(show_name no)
@@ -16697,7 +16764,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR026")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -16804,7 +16871,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BATT_LED"
+		(property "Value" "3V3 LED"
 			(at 99.06 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
