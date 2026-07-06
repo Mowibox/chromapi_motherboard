@@ -2803,7 +2803,7 @@
 	)
 	(text "VCC_SN74A"
 		(exclude_from_sim no)
-		(at 152.4 174.752 0)
+		(at 153.67 173.482 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2814,7 +2814,7 @@
 	)
 	(text "VDD"
 		(exclude_from_sim no)
-		(at 100.076 175.006 0)
+		(at 101.346 173.736 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2825,7 +2825,7 @@
 	)
 	(text "VCC_SN126\n"
 		(exclude_from_sim no)
-		(at 44.196 174.752 0)
+		(at 45.466 173.482 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2836,7 +2836,7 @@
 	)
 	(text "VCC_SN125"
 		(exclude_from_sim no)
-		(at 59.436 174.752 0)
+		(at 60.706 173.482 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2847,7 +2847,7 @@
 	)
 	(text "VDDA\n"
 		(exclude_from_sim no)
-		(at 127.254 174.752 0)
+		(at 128.524 173.482 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2943,7 +2943,7 @@
 		(uuid "216051cd-07c4-40d6-8603-614a734d39d4")
 	)
 	(junction
-		(at 87.63 176.53)
+		(at 88.9 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2426d302-ec9e-4a2f-a147-23500e5c2cda")
@@ -2955,25 +2955,25 @@
 		(uuid "26261197-6b2e-4650-8136-81f5cbf79a2e")
 	)
 	(junction
-		(at 118.11 176.53)
+		(at 119.38 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2c41aa03-e3e6-4f9b-a551-c976fc1edff4")
 	)
 	(junction
-		(at 123.19 186.69)
+		(at 124.46 185.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3990a056-af4a-4b67-bcc6-939c1adcb8c3")
 	)
 	(junction
-		(at 73.66 176.53)
+		(at 74.93 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c88569d-ef55-4f26-b895-242d4e8b4f8a")
 	)
 	(junction
-		(at 101.6 176.53)
+		(at 102.87 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "448dfbef-07fd-427c-a76e-355b9e93e8ae")
@@ -2991,7 +2991,7 @@
 		(uuid "5e3671b9-8999-4248-a922-dc6fe0fd65d8")
 	)
 	(junction
-		(at 87.63 186.69)
+		(at 88.9 185.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f5ebd50-8a69-41d8-b5a6-ad0e4bc25484")
@@ -3052,7 +3052,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 176.53) (xy 87.63 176.53)
+			(xy 74.93 175.26) (xy 88.9 175.26)
 		)
 		(stroke
 			(width 0)
@@ -3072,7 +3072,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 176.53) (xy 87.63 177.8)
+			(xy 88.9 175.26) (xy 88.9 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3132,7 +3132,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 176.53) (xy 87.63 176.53)
+			(xy 102.87 175.26) (xy 88.9 175.26)
 		)
 		(stroke
 			(width 0)
@@ -3142,7 +3142,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 176.53) (xy 129.54 177.8)
+			(xy 130.81 175.26) (xy 130.81 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3162,7 +3162,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 186.69) (xy 101.6 186.69)
+			(xy 88.9 185.42) (xy 102.87 185.42)
 		)
 		(stroke
 			(width 0)
@@ -3232,7 +3232,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 186.69) (xy 101.6 185.42)
+			(xy 102.87 185.42) (xy 102.87 184.15)
 		)
 		(stroke
 			(width 0)
@@ -3242,7 +3242,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 185.42) (xy 36.83 187.96)
+			(xy 38.1 184.15) (xy 38.1 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3292,7 +3292,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 173.99) (xy 146.05 177.8)
+			(xy 147.32 172.72) (xy 147.32 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3352,7 +3352,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 176.53) (xy 129.54 176.53)
+			(xy 119.38 175.26) (xy 130.81 175.26)
 		)
 		(stroke
 			(width 0)
@@ -3432,7 +3432,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 176.53) (xy 118.11 176.53)
+			(xy 111.76 175.26) (xy 119.38 175.26)
 		)
 		(stroke
 			(width 0)
@@ -3442,7 +3442,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 173.99) (xy 52.07 177.8)
+			(xy 53.34 172.72) (xy 53.34 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3452,7 +3452,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 185.42) (xy 146.05 187.96)
+			(xy 147.32 184.15) (xy 147.32 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3492,7 +3492,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 185.42) (xy 129.54 186.69)
+			(xy 130.81 184.15) (xy 130.81 185.42)
 		)
 		(stroke
 			(width 0)
@@ -3512,7 +3512,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 173.99) (xy 36.83 177.8)
+			(xy 38.1 172.72) (xy 38.1 176.53)
 		)
 		(stroke
 			(width 0)
@@ -3522,7 +3522,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 185.42) (xy 87.63 186.69)
+			(xy 88.9 184.15) (xy 88.9 185.42)
 		)
 		(stroke
 			(width 0)
@@ -3552,7 +3552,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 185.42) (xy 73.66 186.69)
+			(xy 74.93 184.15) (xy 74.93 185.42)
 		)
 		(stroke
 			(width 0)
@@ -3602,7 +3602,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 177.8) (xy 101.6 176.53)
+			(xy 102.87 176.53) (xy 102.87 175.26)
 		)
 		(stroke
 			(width 0)
@@ -3612,7 +3612,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 186.69) (xy 123.19 186.69)
+			(xy 130.81 185.42) (xy 124.46 185.42)
 		)
 		(stroke
 			(width 0)
@@ -3662,7 +3662,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 185.42) (xy 52.07 187.96)
+			(xy 53.34 184.15) (xy 53.34 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3692,7 +3692,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 173.99) (xy 73.66 176.53)
+			(xy 74.93 172.72) (xy 74.93 175.26)
 		)
 		(stroke
 			(width 0)
@@ -3752,7 +3752,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 186.69) (xy 123.19 187.96)
+			(xy 124.46 185.42) (xy 124.46 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3762,7 +3762,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 186.69) (xy 87.63 187.96)
+			(xy 88.9 185.42) (xy 88.9 186.69)
 		)
 		(stroke
 			(width 0)
@@ -3792,7 +3792,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 176.53) (xy 105.41 176.53)
+			(xy 102.87 175.26) (xy 106.68 175.26)
 		)
 		(stroke
 			(width 0)
@@ -3852,7 +3852,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 186.69) (xy 87.63 186.69)
+			(xy 74.93 185.42) (xy 88.9 185.42)
 		)
 		(stroke
 			(width 0)
@@ -3862,7 +3862,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 186.69) (xy 118.11 185.42)
+			(xy 119.38 185.42) (xy 119.38 184.15)
 		)
 		(stroke
 			(width 0)
@@ -3872,7 +3872,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 177.8) (xy 118.11 176.53)
+			(xy 119.38 176.53) (xy 119.38 175.26)
 		)
 		(stroke
 			(width 0)
@@ -3882,7 +3882,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 186.69) (xy 118.11 186.69)
+			(xy 124.46 185.42) (xy 119.38 185.42)
 		)
 		(stroke
 			(width 0)
@@ -3922,7 +3922,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 173.99) (xy 118.11 176.53)
+			(xy 119.38 172.72) (xy 119.38 175.26)
 		)
 		(stroke
 			(width 0)
@@ -3932,7 +3932,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 176.53) (xy 73.66 177.8)
+			(xy 74.93 175.26) (xy 74.93 176.53)
 		)
 		(stroke
 			(width 0)
@@ -12508,7 +12508,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 118.11 173.99 0)
+		(at 119.38 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12518,8 +12518,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "026d2632-a953-4f5f-9616-7bb03d493a2a")
-		(property "Reference" "#PWR050"
-			(at 118.11 177.8 0)
+		(property "Reference" "#PWR049"
+			(at 119.38 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12530,7 +12530,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 118.11 168.91 0)
+			(at 119.38 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12540,7 +12540,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 173.99 0)
+			(at 119.38 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12551,7 +12551,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 173.99 0)
+			(at 119.38 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12562,7 +12562,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 118.11 173.99 0)
+			(at 119.38 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12578,7 +12578,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR050")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -12596,7 +12596,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "062b7602-d712-415e-9962-46dba91841c0")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR037"
 			(at 259.08 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -12656,7 +12656,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR036")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -12664,7 +12664,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 146.05 173.99 0)
+		(at 147.32 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12674,8 +12674,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06e624ca-6c99-4243-af60-847cac426a46")
-		(property "Reference" "#PWR051"
-			(at 146.05 177.8 0)
+		(property "Reference" "#PWR050"
+			(at 147.32 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12686,7 +12686,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 146.05 168.91 0)
+			(at 147.32 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12696,7 +12696,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 173.99 0)
+			(at 147.32 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12707,7 +12707,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 173.99 0)
+			(at 147.32 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12718,7 +12718,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 146.05 173.99 0)
+			(at 147.32 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12734,7 +12734,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR051")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -12742,7 +12742,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 52.07 181.61 0)
+		(at 53.34 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12753,7 +12753,7 @@
 		(fields_autoplaced yes)
 		(uuid "0bf0727e-2939-44a6-a858-661474608cb2")
 		(property "Reference" "C22"
-			(at 55.88 180.3399 0)
+			(at 57.15 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12764,7 +12764,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 55.88 182.8799 0)
+			(at 57.15 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12775,7 +12775,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 53.0352 185.42 0)
+			(at 54.3052 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12786,7 +12786,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 181.61 0)
+			(at 53.34 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12797,7 +12797,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 52.07 181.61 0)
+			(at 53.34 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12808,7 +12808,7 @@
 			)
 		)
 		(property "Author" ""
-			(at 52.07 181.61 0)
+			(at 53.34 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12819,7 +12819,7 @@
 			)
 		)
 		(property "License" ""
-			(at 52.07 181.61 0)
+			(at 53.34 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12830,7 +12830,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 52.07 181.61 0)
+			(at 53.34 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12841,7 +12841,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 52.07 181.61 0)
+			(at 53.34 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12852,7 +12852,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 52.07 181.61 0)
+			(at 53.34 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12863,7 +12863,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C307331"
-			(at 52.07 181.61 0)
+			(at 53.34 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12874,7 +12874,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 52.07 181.61 0)
+			(at 53.34 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12885,7 +12885,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 52.07 181.61 0)
+			(at 53.34 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12896,7 +12896,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 52.07 181.61 0)
+			(at 53.34 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13112,7 +13112,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "116931d7-f5e9-4f45-aeb6-4a06709b1ed0")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR033"
 			(at 85.09 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -13172,7 +13172,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR032")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -13190,7 +13190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14dacdc7-f5e6-44e3-9a24-e5dda221ebdd")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR030"
 			(at 142.24 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -13250,7 +13250,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR029")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -13268,7 +13268,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a1aabce-2697-459b-80c8-d247c314e771")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR040"
 			(at 247.65 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -13329,7 +13329,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR039")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -13337,7 +13337,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 36.83 181.61 0)
+		(at 38.1 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13348,7 +13348,7 @@
 		(fields_autoplaced yes)
 		(uuid "1c7f7bc6-79d5-4028-b20a-632ec956ac60")
 		(property "Reference" "C21"
-			(at 40.64 180.3399 0)
+			(at 41.91 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13359,7 +13359,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 40.64 182.8799 0)
+			(at 41.91 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13370,7 +13370,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 37.7952 185.42 0)
+			(at 39.0652 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13381,7 +13381,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 181.61 0)
+			(at 38.1 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13392,7 +13392,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 36.83 181.61 0)
+			(at 38.1 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13403,7 +13403,7 @@
 			)
 		)
 		(property "Author" ""
-			(at 36.83 181.61 0)
+			(at 38.1 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13414,7 +13414,7 @@
 			)
 		)
 		(property "License" ""
-			(at 36.83 181.61 0)
+			(at 38.1 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13425,7 +13425,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 36.83 181.61 0)
+			(at 38.1 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13436,7 +13436,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 36.83 181.61 0)
+			(at 38.1 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13447,7 +13447,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 36.83 181.61 0)
+			(at 38.1 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13458,7 +13458,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C307331"
-			(at 36.83 181.61 0)
+			(at 38.1 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13469,7 +13469,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 36.83 181.61 0)
+			(at 38.1 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13480,7 +13480,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 36.83 181.61 0)
+			(at 38.1 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13491,7 +13491,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 36.83 181.61 0)
+			(at 38.1 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13518,7 +13518,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 129.54 181.61 0)
+		(at 130.81 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13529,7 +13529,7 @@
 		(fields_autoplaced yes)
 		(uuid "22704bdd-fd0c-4fa1-ac0b-c583b944369d")
 		(property "Reference" "C27"
-			(at 133.35 180.3399 0)
+			(at 134.62 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13540,7 +13540,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 133.35 182.8799 0)
+			(at 134.62 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13551,7 +13551,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 130.5052 185.42 0)
+			(at 131.7752 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13562,7 +13562,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 181.61 0)
+			(at 130.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13573,7 +13573,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 129.54 181.61 0)
+			(at 130.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13584,7 +13584,7 @@
 			)
 		)
 		(property "Author" ""
-			(at 129.54 181.61 0)
+			(at 130.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13595,7 +13595,7 @@
 			)
 		)
 		(property "License" ""
-			(at 129.54 181.61 0)
+			(at 130.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13606,7 +13606,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 129.54 181.61 0)
+			(at 130.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13617,7 +13617,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 129.54 181.61 0)
+			(at 130.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13628,7 +13628,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 129.54 181.61 0)
+			(at 130.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13639,7 +13639,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C307331"
-			(at 129.54 181.61 0)
+			(at 130.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13650,7 +13650,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 129.54 181.61 0)
+			(at 130.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13661,7 +13661,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 129.54 181.61 0)
+			(at 130.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13672,7 +13672,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 129.54 181.61 0)
+			(at 130.81 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13709,7 +13709,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24e237f4-d0c0-44f9-a97b-f3cbaa62b915")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR035"
 			(at 60.96 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -13770,7 +13770,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR034")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -14148,7 +14148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36244b81-9a5e-43fc-92e8-895b9247a1de")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR042"
 			(at 96.52 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -14209,7 +14209,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR041")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -14227,7 +14227,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "39377e72-63e3-4c4f-9d11-3220b4ba3a0a")
-		(property "Reference" "TP5"
+		(property "Reference" "TP4"
 			(at 27.432 60.452 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14387,7 +14387,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "TP5")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -14395,7 +14395,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 87.63 187.96 0)
+		(at 88.9 186.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14405,8 +14405,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ef7e5f6-d52a-434b-97ed-4c0a32c14ab0")
-		(property "Reference" "#PWR056"
-			(at 87.63 194.31 0)
+		(property "Reference" "#PWR053"
+			(at 88.9 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14417,7 +14417,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.63 193.04 0)
+			(at 88.9 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14428,7 +14428,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 187.96 0)
+			(at 88.9 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14439,7 +14439,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 187.96 0)
+			(at 88.9 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14450,7 +14450,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 87.63 187.96 0)
+			(at 88.9 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14466,7 +14466,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR056")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -14828,7 +14828,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.19 187.96 0)
+		(at 124.46 186.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14838,8 +14838,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45d6aa40-42a4-405e-ab35-69a8401773f8")
-		(property "Reference" "#PWR057"
-			(at 123.19 194.31 0)
+		(property "Reference" "#PWR054"
+			(at 124.46 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14850,7 +14850,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 193.04 0)
+			(at 124.46 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14861,7 +14861,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 187.96 0)
+			(at 124.46 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14872,7 +14872,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 187.96 0)
+			(at 124.46 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14883,7 +14883,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 187.96 0)
+			(at 124.46 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14899,7 +14899,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR057")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -15101,7 +15101,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 146.05 187.96 0)
+		(at 147.32 186.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15111,8 +15111,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "492890a9-7342-4f20-8ded-e6dc4020f479")
-		(property "Reference" "#PWR058"
-			(at 146.05 194.31 0)
+		(property "Reference" "#PWR055"
+			(at 147.32 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15123,7 +15123,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 146.05 193.04 0)
+			(at 147.32 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15134,7 +15134,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 187.96 0)
+			(at 147.32 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15145,7 +15145,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 187.96 0)
+			(at 147.32 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15156,7 +15156,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 146.05 187.96 0)
+			(at 147.32 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15172,7 +15172,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR058")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -15180,7 +15180,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 36.83 187.96 0)
+		(at 38.1 186.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15190,8 +15190,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "550c5cc6-df21-4135-8ed8-f75dbd1c0ca5")
-		(property "Reference" "#PWR054"
-			(at 36.83 194.31 0)
+		(property "Reference" "#PWR051"
+			(at 38.1 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15202,7 +15202,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 36.83 193.04 0)
+			(at 38.1 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15213,7 +15213,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 187.96 0)
+			(at 38.1 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15224,7 +15224,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 187.96 0)
+			(at 38.1 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15235,7 +15235,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 187.96 0)
+			(at 38.1 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15251,7 +15251,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR054")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -15259,7 +15259,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 146.05 181.61 0)
+		(at 147.32 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15270,7 +15270,7 @@
 		(fields_autoplaced yes)
 		(uuid "560bd45f-d156-43e9-9a89-5e903e61a52c")
 		(property "Reference" "C28"
-			(at 149.86 180.3399 0)
+			(at 151.13 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15281,7 +15281,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 149.86 182.8799 0)
+			(at 151.13 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15292,7 +15292,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 147.0152 185.42 0)
+			(at 148.2852 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15303,7 +15303,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 181.61 0)
+			(at 147.32 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15314,7 +15314,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 146.05 181.61 0)
+			(at 147.32 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15325,7 +15325,7 @@
 			)
 		)
 		(property "Author" ""
-			(at 146.05 181.61 0)
+			(at 147.32 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15336,7 +15336,7 @@
 			)
 		)
 		(property "License" ""
-			(at 146.05 181.61 0)
+			(at 147.32 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15347,7 +15347,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 146.05 181.61 0)
+			(at 147.32 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15358,7 +15358,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 146.05 181.61 0)
+			(at 147.32 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15369,7 +15369,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 146.05 181.61 0)
+			(at 147.32 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15380,7 +15380,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C307331"
-			(at 146.05 181.61 0)
+			(at 147.32 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15391,7 +15391,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 146.05 181.61 0)
+			(at 147.32 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15402,7 +15402,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 146.05 181.61 0)
+			(at 147.32 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15413,7 +15413,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 146.05 181.61 0)
+			(at 147.32 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15440,7 +15440,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 87.63 181.61 0)
+		(at 88.9 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15451,7 +15451,7 @@
 		(fields_autoplaced yes)
 		(uuid "5845507c-2864-4ad3-9c6c-9549a178e5e8")
 		(property "Reference" "C24"
-			(at 91.44 180.3399 0)
+			(at 92.71 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15462,7 +15462,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 91.44 182.8799 0)
+			(at 92.71 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15473,7 +15473,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 88.5952 185.42 0)
+			(at 89.8652 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15484,7 +15484,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 181.61 0)
+			(at 88.9 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15495,7 +15495,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 87.63 181.61 0)
+			(at 88.9 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15506,7 +15506,7 @@
 			)
 		)
 		(property "Author" ""
-			(at 87.63 181.61 0)
+			(at 88.9 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15517,7 +15517,7 @@
 			)
 		)
 		(property "License" ""
-			(at 87.63 181.61 0)
+			(at 88.9 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15528,7 +15528,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 87.63 181.61 0)
+			(at 88.9 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15539,7 +15539,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 87.63 181.61 0)
+			(at 88.9 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15550,7 +15550,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 87.63 181.61 0)
+			(at 88.9 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15561,7 +15561,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C307331"
-			(at 87.63 181.61 0)
+			(at 88.9 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15572,7 +15572,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 87.63 181.61 0)
+			(at 88.9 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15583,7 +15583,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 87.63 181.61 0)
+			(at 88.9 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15594,7 +15594,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 87.63 181.61 0)
+			(at 88.9 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15631,7 +15631,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5af27b19-4c90-4354-87aa-475660696ac8")
-		(property "Reference" "TP6"
+		(property "Reference" "TP5"
 			(at 99.06 67.8179 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15791,7 +15791,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "TP6")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -15809,7 +15809,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60e79e29-11c8-4200-8b50-921c31567bd3")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR041"
 			(at 259.08 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15870,7 +15870,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR040")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -15888,7 +15888,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "630c43b4-008f-4ace-a2b6-80c02cbb54ab")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR031"
 			(at 171.45 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -15948,7 +15948,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR030")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -16137,7 +16137,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 101.6 181.61 0)
+		(at 102.87 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16148,7 +16148,7 @@
 		(fields_autoplaced yes)
 		(uuid "73e6e16d-660a-4cf7-bc39-1b9f519412d7")
 		(property "Reference" "C25"
-			(at 105.41 180.3399 0)
+			(at 106.68 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16159,7 +16159,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 105.41 182.8799 0)
+			(at 106.68 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16170,7 +16170,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 102.5652 185.42 0)
+			(at 103.8352 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16181,7 +16181,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 181.61 0)
+			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16192,7 +16192,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 101.6 181.61 0)
+			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16203,7 +16203,7 @@
 			)
 		)
 		(property "Author" ""
-			(at 101.6 181.61 0)
+			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16214,7 +16214,7 @@
 			)
 		)
 		(property "License" ""
-			(at 101.6 181.61 0)
+			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16225,7 +16225,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 101.6 181.61 0)
+			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16236,7 +16236,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 101.6 181.61 0)
+			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16247,7 +16247,7 @@
 			)
 		)
 		(property "MPN" "CL21A106MQFNNNE"
-			(at 101.6 181.61 0)
+			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16258,7 +16258,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C41893"
-			(at 101.6 181.61 0)
+			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16269,7 +16269,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 101.6 181.61 0)
+			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16280,7 +16280,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 101.6 181.61 0)
+			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16291,7 +16291,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 101.6 181.61 0)
+			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16328,7 +16328,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "767d90e9-8609-4554-92e3-f531d3b004c8")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR032"
 			(at 60.96 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -16388,7 +16388,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR031")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -16406,7 +16406,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7afb6b33-ca38-4ff2-a402-79e96a494758")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR043"
 			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -16467,7 +16467,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR042")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -16475,7 +16475,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 118.11 181.61 0)
+		(at 119.38 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16486,7 +16486,7 @@
 		(fields_autoplaced yes)
 		(uuid "82735743-d9dd-434b-bc03-64f92cb9c854")
 		(property "Reference" "C26"
-			(at 121.92 180.3399 0)
+			(at 123.19 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16497,7 +16497,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 121.92 182.8799 0)
+			(at 123.19 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16508,7 +16508,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 119.0752 185.42 0)
+			(at 120.3452 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16519,7 +16519,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 181.61 0)
+			(at 119.38 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16530,7 +16530,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 118.11 181.61 0)
+			(at 119.38 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16541,7 +16541,7 @@
 			)
 		)
 		(property "Author" ""
-			(at 118.11 181.61 0)
+			(at 119.38 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16552,7 +16552,7 @@
 			)
 		)
 		(property "License" ""
-			(at 118.11 181.61 0)
+			(at 119.38 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16563,7 +16563,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 118.11 181.61 0)
+			(at 119.38 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16574,7 +16574,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 118.11 181.61 0)
+			(at 119.38 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16585,7 +16585,7 @@
 			)
 		)
 		(property "MPN" "CL10A105KB8NNNC"
-			(at 118.11 181.61 0)
+			(at 119.38 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16596,7 +16596,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C15849"
-			(at 118.11 181.61 0)
+			(at 119.38 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16607,7 +16607,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 118.11 181.61 0)
+			(at 119.38 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16618,7 +16618,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 118.11 181.61 0)
+			(at 119.38 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16629,7 +16629,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 118.11 181.61 0)
+			(at 119.38 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16666,7 +16666,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83ed5b35-b7e1-4207-8f49-35e8260968be")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR034"
 			(at 135.89 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -16727,7 +16727,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR033")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -16735,7 +16735,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 52.07 187.96 0)
+		(at 53.34 186.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16745,8 +16745,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93938147-9f9b-4c7a-ab3d-07195094c383")
-		(property "Reference" "#PWR055"
-			(at 52.07 194.31 0)
+		(property "Reference" "#PWR052"
+			(at 53.34 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16757,7 +16757,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 52.07 193.04 0)
+			(at 53.34 191.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16768,7 +16768,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 187.96 0)
+			(at 53.34 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16779,7 +16779,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 187.96 0)
+			(at 53.34 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16790,7 +16790,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 52.07 187.96 0)
+			(at 53.34 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16806,7 +16806,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR055")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -16824,7 +16824,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "956e5f65-7d1c-4464-a8da-3a939936c290")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR045"
 			(at 175.26 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -16885,7 +16885,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR044")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -17087,7 +17087,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 36.83 173.99 0)
+		(at 38.1 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17097,8 +17097,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aca12b70-494b-4f82-933a-33763fd02479")
-		(property "Reference" "#PWR047"
-			(at 36.83 177.8 0)
+		(property "Reference" "#PWR046"
+			(at 38.1 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17109,7 +17109,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 36.83 168.91 0)
+			(at 38.1 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17119,7 +17119,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 173.99 0)
+			(at 38.1 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17130,7 +17130,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 173.99 0)
+			(at 38.1 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17141,7 +17141,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 36.83 173.99 0)
+			(at 38.1 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17157,7 +17157,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR047")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -17175,7 +17175,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b99ce5b3-65f2-48a6-a065-a2c41ac4fd78")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR038"
 			(at 96.52 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -17235,7 +17235,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR037")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -17243,7 +17243,7 @@
 	)
 	(symbol
 		(lib_id "Device:FerriteBead_Small")
-		(at 107.95 176.53 90)
+		(at 109.22 175.26 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17253,7 +17253,7 @@
 		(dnp no)
 		(uuid "bcab539d-6ee9-4895-b074-4a471339030b")
 		(property "Reference" "FB1"
-			(at 107.696 168.91 90)
+			(at 108.966 167.64 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17263,7 +17263,7 @@
 			)
 		)
 		(property "Value" "FerriteBead"
-			(at 107.696 171.45 90)
+			(at 108.966 170.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17273,7 +17273,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
-			(at 107.95 178.308 90)
+			(at 109.22 177.038 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17284,7 +17284,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 176.53 0)
+			(at 109.22 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17295,7 +17295,7 @@
 			)
 		)
 		(property "Description" "Ferrite bead, small symbol"
-			(at 107.95 176.53 0)
+			(at 109.22 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17306,7 +17306,7 @@
 			)
 		)
 		(property "Author" ""
-			(at 107.95 176.53 90)
+			(at 109.22 175.26 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17317,7 +17317,7 @@
 			)
 		)
 		(property "License" ""
-			(at 107.95 176.53 90)
+			(at 109.22 175.26 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17328,7 +17328,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 107.95 176.53 90)
+			(at 109.22 175.26 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17339,7 +17339,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 107.95 176.53 90)
+			(at 109.22 175.26 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17350,7 +17350,7 @@
 			)
 		)
 		(property "MPN" "MPZ2012S331AT000"
-			(at 107.95 176.53 0)
+			(at 109.22 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17361,7 +17361,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C76819"
-			(at 107.95 176.53 0)
+			(at 109.22 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17372,7 +17372,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 107.95 176.53 90)
+			(at 109.22 175.26 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17383,7 +17383,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 107.95 176.53 90)
+			(at 109.22 175.26 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17394,7 +17394,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 107.95 176.53 90)
+			(at 109.22 175.26 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17817,7 +17817,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce22cb62-5b2a-4aa2-96a6-706748aad5fe")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR039"
 			(at 213.36 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -17878,7 +17878,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR038")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -17896,7 +17896,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2e1460c-4dc0-4e05-b9e9-6560bb7b9537")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR044"
 			(at 152.4 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -17957,7 +17957,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR043")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -17975,7 +17975,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4ec9a0d-0d93-469f-a84e-4a22f130aa0c")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR036"
 			(at 247.65 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -18035,7 +18035,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR035")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -18282,7 +18282,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 73.66 173.99 0)
+		(at 74.93 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18292,8 +18292,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db67966b-8e49-485a-9831-93ea6f5737f9")
-		(property "Reference" "#PWR049"
-			(at 73.66 177.8 0)
+		(property "Reference" "#PWR048"
+			(at 74.93 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18304,7 +18304,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 73.66 168.91 0)
+			(at 74.93 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18314,7 +18314,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 173.99 0)
+			(at 74.93 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18325,7 +18325,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 173.99 0)
+			(at 74.93 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18336,7 +18336,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 73.66 173.99 0)
+			(at 74.93 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18352,7 +18352,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR049")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -18360,7 +18360,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 52.07 173.99 0)
+		(at 53.34 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18370,8 +18370,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1ad7a98-82bb-43a4-8ed7-a17f9aa76b35")
-		(property "Reference" "#PWR048"
-			(at 52.07 177.8 0)
+		(property "Reference" "#PWR047"
+			(at 53.34 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18382,7 +18382,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 52.07 168.91 0)
+			(at 53.34 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18392,7 +18392,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 173.99 0)
+			(at 53.34 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18403,7 +18403,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 173.99 0)
+			(at 53.34 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18414,7 +18414,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 52.07 173.99 0)
+			(at 53.34 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18430,7 +18430,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/bae822f9-c188-4212-9c8c-b50c99d73590"
-					(reference "#PWR048")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -18797,7 +18797,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 73.66 181.61 0)
+		(at 74.93 180.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18808,7 +18808,7 @@
 		(fields_autoplaced yes)
 		(uuid "f8a16d48-21d9-4803-a451-b20ce2030a69")
 		(property "Reference" "C23"
-			(at 77.47 180.3399 0)
+			(at 78.74 179.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18819,7 +18819,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 77.47 182.8799 0)
+			(at 78.74 181.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18830,7 +18830,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 74.6252 185.42 0)
+			(at 75.8952 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18841,7 +18841,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 181.61 0)
+			(at 74.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18852,7 +18852,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 73.66 181.61 0)
+			(at 74.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18863,7 +18863,7 @@
 			)
 		)
 		(property "Author" ""
-			(at 73.66 181.61 0)
+			(at 74.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18874,7 +18874,7 @@
 			)
 		)
 		(property "License" ""
-			(at 73.66 181.61 0)
+			(at 74.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18885,7 +18885,7 @@
 			)
 		)
 		(property "Manufacturer" ""
-			(at 73.66 181.61 0)
+			(at 74.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18896,7 +18896,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 73.66 181.61 0)
+			(at 74.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18907,7 +18907,7 @@
 			)
 		)
 		(property "MPN" "CL05B104KB54PNC"
-			(at 73.66 181.61 0)
+			(at 74.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18918,7 +18918,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C307331"
-			(at 73.66 181.61 0)
+			(at 74.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18929,7 +18929,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 73.66 181.61 0)
+			(at 74.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18940,7 +18940,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 73.66 181.61 0)
+			(at 74.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18951,7 +18951,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 73.66 181.61 0)
+			(at 74.93 180.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

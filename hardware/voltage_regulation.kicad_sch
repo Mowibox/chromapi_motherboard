@@ -2238,12 +2238,6 @@
 		(uuid "3c446b74-b62b-4ed7-b83d-5dfe1b708cb9")
 	)
 	(junction
-		(at 95.25 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3d108979-1f8e-40ed-a464-481aabd6e22b")
-	)
-	(junction
 		(at 77.47 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2314,6 +2308,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8738346d-20c2-48a3-8c1f-ec40dee6099e")
+	)
+	(junction
+		(at 64.77 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "929777b4-5768-4fad-9355-2ed57e819fa5")
 	)
 	(junction
 		(at 224.79 58.42)
@@ -3007,7 +3007,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 118.11) (xy 95.25 123.19)
+			(xy 95.25 118.11) (xy 95.25 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3034,16 +3034,6 @@
 			(type default)
 		)
 		(uuid "b70e1cc8-931e-4950-96b4-21f74f998a3a")
-	)
-	(wire
-		(pts
-			(xy 95.25 123.19) (xy 95.25 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd154d4e-b9f8-488c-9023-48c1199bd156")
 	)
 	(wire
 		(pts
@@ -11655,7 +11645,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "04df926f-9d5b-44a0-9ef1-3a0e4db11096")
-		(property "Reference" "TP4"
+		(property "Reference" "TP3"
 			(at 236.982 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11791,7 +11781,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "TP4")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -11955,7 +11945,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14133420-a77e-4bdc-b837-85d43575844b")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR029"
 			(at 95.25 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -12016,7 +12006,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR028")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -12113,7 +12103,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18bf3a7e-2ce3-4b71-8761-aafc53a4c4fd")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR027"
 			(at 177.8 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -12174,7 +12164,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR026")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -12451,7 +12441,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "341d2c78-4493-414e-bc30-fbb1753b23b8")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR028"
 			(at 223.52 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -12512,7 +12502,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR027")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -14158,7 +14148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d454ad0-7089-49f0-ad9f-7483b0face37")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR024"
 			(at 95.25 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -14218,7 +14208,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR0112")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -15024,181 +15014,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 95.25 123.19 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "90c1a336-b89c-4e00-9eed-6af7fc3cfdd2")
-		(property "Reference" "TP3"
-			(at 91.948 118.11 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TP_BATT"
-			(at 89.916 120.65 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 95.25 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 95.25 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 95.25 123.19 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 95.25 123.19 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 95.25 123.19 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 95.25 123.19 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 95.25 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part #" ""
-			(at 95.25 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 95.25 123.19 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 95.25 123.19 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 95.25 123.19 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "57048c8e-5928-4be5-8a16-d5c40cab9c51")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "TP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 200.66 82.55 0)
 		(unit 1)
@@ -15650,7 +15465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9e75973-bc80-44aa-8362-3cda4327f80d")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR026"
 			(at 233.68 127 0)
 			(hide yes)
 			(show_name no)
@@ -15710,7 +15525,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR025")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -16348,7 +16163,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b0c0eb61-1c32-4b70-b9aa-31e44e6d5c7e")
-		(property "Reference" "TP2"
+		(property "Reference" "TP1"
 			(at 243.332 43.18 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16506,7 +16321,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "TP2")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -16704,7 +16519,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b48df8bf-d484-4329-a7ab-29f3d55b03ce")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR025"
 			(at 167.64 127 0)
 			(hide yes)
 			(show_name no)
@@ -16764,7 +16579,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR024")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -17237,6 +17052,181 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 64.77 74.93 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dcda9ccc-9ecb-48a0-9d4c-fc848414062c")
+		(property "Reference" "TP2"
+			(at 60.96 79.756 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TP_BATT"
+			(at 62.992 81.788 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 59.69 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 64.77 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Author" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "License" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 64.77 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 64.77 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f7148754-25c9-42f1-80fd-5421ff10558d")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
