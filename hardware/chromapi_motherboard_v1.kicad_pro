@@ -218,6 +218,7 @@
         0.0,
         0.1,
         0.15,
+        0.2,
         0.25,
         0.35,
         0.5,
@@ -579,7 +580,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.7,
+        "track_width": 1.5,
         "tuning_profile": "",
         "via_diameter": 1.2,
         "via_drill": 0.6
@@ -602,6 +603,18 @@
       {
         "netclass": "Power_BATT",
         "pattern": "*V_*"
+      },
+      {
+        "netclass": "Power_BATT",
+        "pattern": "*B+*"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "*B-*"
+      },
+      {
+        "netclass": "Default",
+        "pattern": ""
       }
     ]
   },
@@ -900,7 +913,7 @@
         "uuid": "d1a31f26-03e0-43e1-89c1-031fe31befc5"
       }
     ],
-    "used_designators": "#PWR112-113,C43-45",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
