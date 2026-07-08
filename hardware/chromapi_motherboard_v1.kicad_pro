@@ -50,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -60,28 +76,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        [
-          "solder_mask_bridge|147552500|116350000|1b7f9556-87b5-4ba1-8940-257c3a5e6a4f|d62da89b-933d-4caf-ab9e-b929faa7bf8b",
-          ""
-        ],
-        [
-          "solder_mask_bridge|147552500|117300000|ad07995e-d0c4-427b-bf63-59c2dfe344d0|d62da89b-933d-4caf-ab9e-b929faa7bf8b",
-          ""
-        ],
-        [
-          "solder_mask_bridge|147552500|118250000|c92a2129-2a60-4f0f-8834-1c6ab16945d0|d62da89b-933d-4caf-ab9e-b929faa7bf8b",
-          ""
-        ],
-        [
-          "solder_mask_bridge|149177500|116350000|77b4da80-1f0a-4234-bfce-c011a8b75741|d62da89b-933d-4caf-ab9e-b929faa7bf8b",
-          ""
-        ],
-        [
-          "solder_mask_bridge|149177500|118250000|07603307-e35b-42f6-ae6e-1d544a6acc52|d62da89b-933d-4caf-ab9e-b929faa7bf8b",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -539,51 +534,6 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
-      },
-      {
-        "clearance": 0.3,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Power_3V3",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.4,
-        "tuning_profile": "",
-        "via_diameter": 0.8,
-        "via_drill": 0.4
-      },
-      {
-        "clearance": 0.3,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Power_5V",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
-        "tuning_profile": "",
-        "via_diameter": 1.2,
-        "via_drill": 0.6
-      },
-      {
-        "clearance": 0.3,
-        "diff_pair_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Power_BATT",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 1.5,
-        "tuning_profile": "",
-        "via_diameter": 1.2,
-        "via_drill": 0.6
       }
     ],
     "meta": {
@@ -591,32 +541,7 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "Power_3V3",
-        "pattern": "+3.3V"
-      },
-      {
-        "netclass": "Power_5V",
-        "pattern": "+5V"
-      },
-      {
-        "netclass": "Power_BATT",
-        "pattern": "*V_*"
-      },
-      {
-        "netclass": "Power_BATT",
-        "pattern": "*B+*"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "*B-*"
-      },
-      {
-        "netclass": "Default",
-        "pattern": ""
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
