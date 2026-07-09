@@ -582,9 +582,9 @@
 		)
 		(uuid "04eff71b-72f3-49e2-8bb9-f0336667f7bb")
 	)
-	(text "[todo] change the NRST label located on GPIO16 (RPI) to an available position"
+	(text "[fixed] change the NRST label located on GPIO16 (RPI) to an available position"
 		(exclude_from_sim no)
-		(at 182.118 52.324 0)
+		(at 181.864 52.324 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -626,9 +626,9 @@
 		)
 		(uuid "3c35a8f3-b577-4f45-b0cb-b9b8cc21c63c")
 	)
-	(text "[todo] provide a hole for the CSI connector "
+	(text "[fixed] provide a hole for the CSI connector "
 		(exclude_from_sim no)
-		(at 182.118 50.038 0)
+		(at 181.864 50.038 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -692,9 +692,9 @@
 		)
 		(uuid "7cc6ab94-8bc4-4bd1-9215-015e84b8fe3f")
 	)
-	(text "[todo] move the USB connector to one of the sides of the PCB"
+	(text "[fixed] move the USB connector to one of the sides of the PCB"
 		(exclude_from_sim no)
-		(at 182.118 47.498 0)
+		(at 181.864 47.498 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -703,9 +703,9 @@
 		)
 		(uuid "93e37d13-48b4-4cb1-a3b0-e393cdb48dde")
 	)
-	(text "[todo] find an alternative to SWD connector for flashing the STM32"
+	(text "[fixed] find an alternative to SWD connector for flashing the STM32"
 		(exclude_from_sim no)
-		(at 182.118 44.958 0)
+		(at 181.864 44.958 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17945,7 +17945,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "MANUFACTURER" ""
 			(at 156.21 182.88 90)
 			(hide yes)
 			(show_name no)
@@ -18103,7 +18103,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "MANUFACTURER" ""
 			(at 125.73 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -18258,7 +18258,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "MANUFACTURER" ""
 			(at 149.86 182.88 90)
 			(hide yes)
 			(show_name no)
@@ -18416,7 +18416,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "MANUFACTURER" ""
 			(at 120.65 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -18571,7 +18571,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "MANUFACTURER" ""
 			(at 115.57 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -18726,7 +18726,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "MANUFACTURER" ""
 			(at 143.51 182.88 90)
 			(hide yes)
 			(show_name no)
@@ -18882,7 +18882,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "MANUFACTURER" ""
 			(at 134.62 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -19116,7 +19116,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "MANUFACTURER" ""
 			(at 162.56 182.88 90)
 			(hide yes)
 			(show_name no)
