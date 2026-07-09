@@ -14403,17 +14403,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 129.54 35.56 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 129.54 35.56 90)
 			(hide yes)
@@ -14571,17 +14560,6 @@
 			)
 		)
 		(property "License" ""
-			(at 140.97 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 140.97 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -15240,17 +15218,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 64.77 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 64.77 54.61 0)
 			(hide yes)
@@ -15406,17 +15373,6 @@
 			)
 		)
 		(property "License" ""
-			(at 252.73 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 252.73 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -15676,17 +15632,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 148.59 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 148.59 137.16 0)
 			(hide yes)
@@ -15847,17 +15792,6 @@
 			)
 		)
 		(property "License" ""
-			(at 227.33 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 227.33 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -16036,17 +15970,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 135.89 97.79 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 135.89 97.79 90)
 			(hide yes)
@@ -16207,17 +16130,6 @@
 			)
 		)
 		(property "License" ""
-			(at 64.77 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -16458,17 +16370,6 @@
 			)
 		)
 		(property "License" ""
-			(at 129.54 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 129.54 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -16725,17 +16626,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 121.92 41.91 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 121.92 41.91 90)
 			(hide yes)
@@ -16896,17 +16786,6 @@
 			)
 		)
 		(property "License" ""
-			(at 176.53 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 176.53 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -17311,17 +17190,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 96.52 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 96.52 115.57 0)
 			(hide yes)
@@ -17636,17 +17504,6 @@
 			)
 		)
 		(property "License" ""
-			(at 210.82 57.15 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 210.82 57.15 90)
 			(hide yes)
 			(show_name no)
@@ -18044,17 +17901,6 @@
 			)
 		)
 		(property "License" ""
-			(at 262.89 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 262.89 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -18714,17 +18560,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 217.17 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 217.17 53.34 0)
 			(hide yes)
@@ -19050,17 +18885,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 204.47 97.79 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 204.47 97.79 90)
 			(hide yes)
@@ -19219,17 +19043,6 @@
 			)
 		)
 		(property "License" ""
-			(at 227.33 34.29 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 227.33 34.29 90)
 			(hide yes)
 			(show_name no)
@@ -19410,17 +19223,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 116.84 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 116.84 104.14 0)
 			(hide yes)
@@ -19579,17 +19381,6 @@
 			)
 		)
 		(property "License" ""
-			(at 210.82 49.53 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 210.82 49.53 90)
 			(hide yes)
 			(show_name no)
@@ -19996,17 +19787,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 105.41 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 105.41 115.57 0)
 			(hide yes)
@@ -20167,17 +19947,6 @@
 			)
 		)
 		(property "License" ""
-			(at 204.47 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 204.47 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -20919,17 +20688,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 137.16 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 137.16 44.45 0)
 			(hide yes)
@@ -21392,17 +21150,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 127 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 127 46.99 0)
 			(hide yes)
@@ -21735,17 +21482,6 @@
 			)
 		)
 		(property "License" ""
-			(at 148.59 147.32 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 148.59 147.32 90)
 			(hide yes)
 			(show_name no)

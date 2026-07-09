@@ -11208,18 +11208,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 82.55 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 82.55 116.84 0)
 			(hide yes)
@@ -11617,17 +11605,6 @@
 			)
 		)
 		(property "License" ""
-			(at 212.09 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 212.09 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -12974,17 +12951,6 @@
 			)
 		)
 		(property "License" ""
-			(at 71.12 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 71.12 116.84 0)
 			(hide yes)
 			(show_name no)

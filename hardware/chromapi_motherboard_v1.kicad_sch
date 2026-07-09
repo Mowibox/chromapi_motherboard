@@ -17945,17 +17945,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 156.21 182.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 156.21 182.88 90)
 			(hide yes)
@@ -18103,17 +18092,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 125.73 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 125.73 181.61 0)
 			(hide yes)
@@ -18248,17 +18226,6 @@
 			)
 		)
 		(property "License" ""
-			(at 149.86 182.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 149.86 182.88 90)
 			(hide yes)
 			(show_name no)
@@ -18416,17 +18383,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 120.65 189.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 120.65 189.23 0)
 			(hide yes)
@@ -18561,17 +18517,6 @@
 			)
 		)
 		(property "License" ""
-			(at 115.57 181.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 115.57 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -18726,17 +18671,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 143.51 182.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 143.51 182.88 90)
 			(hide yes)
@@ -18872,17 +18806,6 @@
 			)
 		)
 		(property "License" ""
-			(at 134.62 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 134.62 168.91 0)
 			(hide yes)
 			(show_name no)
@@ -19106,17 +19029,6 @@
 			)
 		)
 		(property "License" ""
-			(at 162.56 182.88 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 162.56 182.88 90)
 			(hide yes)
 			(show_name no)

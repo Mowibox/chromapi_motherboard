@@ -11720,17 +11720,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 233.68 127 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 233.68 127 90)
 			(hide yes)
@@ -12337,17 +12326,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 83.82 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 83.82 49.53 0)
 			(hide yes)
@@ -12594,17 +12572,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 68.58 74.93 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 68.58 74.93 90)
 			(hide yes)
@@ -12764,17 +12731,6 @@
 			)
 		)
 		(property "License" ""
-			(at 77.47 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 77.47 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -12952,17 +12908,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 182.88 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 182.88 60.96 90)
 			(hide yes)
@@ -13122,17 +13067,6 @@
 			)
 		)
 		(property "License" ""
-			(at 95.25 129.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 95.25 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -13394,18 +13328,6 @@
 			)
 		)
 		(property "Description_1" "Linear Voltage Regulator IC Positive Fixed 1 Output  500mA 6-DFN (3x3)"
-			(at 201.93 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "DFN-6 STMicroelectronics"
 			(at 201.93 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -13683,17 +13605,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 209.55 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 209.55 53.34 0)
 			(hide yes)
@@ -13864,17 +13775,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 200.66 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 200.66 77.47 0)
 			(hide yes)
@@ -14034,17 +13934,6 @@
 			)
 		)
 		(property "License" ""
-			(at 177.8 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 177.8 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -14303,17 +14192,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 200.66 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 200.66 54.61 0)
 			(hide yes)
@@ -14471,17 +14349,6 @@
 			)
 		)
 		(property "License" ""
-			(at 160.02 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 160.02 43.18 90)
 			(hide yes)
 			(show_name no)
@@ -14730,17 +14597,6 @@
 			)
 		)
 		(property "License" ""
-			(at 110.49 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 110.49 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -15180,17 +15036,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 77.47 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 77.47 49.53 0)
 			(hide yes)
@@ -15351,17 +15196,6 @@
 			)
 		)
 		(property "License" ""
-			(at 200.66 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 200.66 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -15699,17 +15533,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 223.52 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 223.52 132.08 0)
 			(hide yes)
@@ -15869,17 +15692,6 @@
 			)
 		)
 		(property "License" ""
-			(at 217.17 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 217.17 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -16059,17 +15871,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 90.17 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 90.17 49.53 0)
 			(hide yes)
@@ -16238,17 +16039,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 240.03 48.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 240.03 48.26 90)
 			(hide yes)
@@ -16405,17 +16195,6 @@
 			)
 		)
 		(property "License" ""
-			(at 232.41 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -16886,17 +16665,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 168.91 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 168.91 43.18 90)
 			(hide yes)
@@ -17143,17 +16911,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 64.77 74.93 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 64.77 74.93 90)
 			(hide yes)
@@ -17309,17 +17066,6 @@
 			)
 		)
 		(property "License" ""
-			(at 172.72 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 172.72 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -17499,17 +17245,6 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
-			(at 71.12 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 71.12 49.53 0)
 			(hide yes)
@@ -17669,17 +17404,6 @@
 			)
 		)
 		(property "License" ""
-			(at 100.33 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 100.33 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -17928,17 +17652,6 @@
 			)
 		)
 		(property "License" ""
-			(at 224.79 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
 			(at 224.79 53.34 0)
 			(hide yes)
 			(show_name no)
