@@ -13022,7 +13022,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 97.028 129.54 90)
 			(hide yes)
 			(show_name no)
@@ -16465,7 +16465,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "3V3 LED"
+		(property "Value" "3V3_LED"
 			(at 99.06 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
