@@ -778,6 +778,12 @@
           "label": "JLCPCB Part #",
           "name": "JLCPCB Part #",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "FT Rotation Offset",
+          "name": "FT Rotation Offset",
+          "show": true
         }
       ],
       "filter_string": "",

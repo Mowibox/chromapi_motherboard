@@ -120,6 +120,7 @@
 		)
 		(capping no)
 		(filling no)
+		(zone_defaults)
 		(grid_origin 135.2375 95.75)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
@@ -2275,7 +2276,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06031K00JNEAC"
+		(property "MPN" "0603WAF1001T5E"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2288,7 +2289,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844135"
+		(property "JLCPCB Part #" "C21190"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2566,7 +2567,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-071ML"
+		(property "MPN" "0402WGF1004TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2579,7 +2580,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C138033"
+		(property "JLCPCB Part #" "C26083"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2892,7 +2893,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2950,6 +2951,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "05419ced-2045-44dc-bf06-53b1ea400ade")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5da9622e-ec79-48af-8714-a1c2a3f0b3f2")
 			(effects
 				(font
 					(size 1 1)
@@ -5195,7 +5209,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "0603WAF0000T5E"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5208,7 +5222,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844915"
+		(property "JLCPCB Part #" "C21189"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5521,7 +5535,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5579,6 +5593,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "37f3f10c-9e99-4332-915d-c4eb39c26afe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "95a84677-e6f0-4c63-99aa-a4784b43e72d")
 			(effects
 				(font
 					(size 1 1)
@@ -5844,7 +5871,7 @@
 				)
 			)
 		)
-		(property "MPN" "875105359003"
+		(property "MPN" "EEEHB1C220R"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5857,7 +5884,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C5530512"
+		(property "JLCPCB Part #" "C336501"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5915,6 +5942,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "10788bf7-aa61-44ae-828b-2de12fcde25d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "-180"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cada642f-b797-4cd7-a3dd-3d02b178b4d6")
 			(effects
 				(font
 					(size 1 1)
@@ -6448,7 +6488,7 @@
 				)
 			)
 		)
-		(property "MPN" "875105359003"
+		(property "MPN" "EEEHB1C220R"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6461,7 +6501,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C5530512 "
+		(property "JLCPCB Part #" "C336501"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6519,6 +6559,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "453f2c1c-cf2b-4a7f-a28a-5850c9a6ee42")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "-180"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d8679e1e-e682-4cf0-bc69-b0ce0f6a6841")
 			(effects
 				(font
 					(size 1 1)
@@ -7644,7 +7697,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06035K10FKEAC"
+		(property "MPN" "0603WAF5101T5E"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7670,7 +7723,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844375 "
+		(property "JLCPCB Part #" "C23186"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9726,7 +9779,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9784,6 +9837,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e289a8aa-81d1-45ae-9762-7cf7e8368532")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "539ac2e6-52de-4523-9b47-cf6126b1151a")
 			(effects
 				(font
 					(size 1 1)
@@ -10039,7 +10105,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R71A225KE15J"
+		(property "MPN" "CL10A225KO8NNNC"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10052,7 +10118,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C2167658"
+		(property "JLCPCB Part #" "C23630"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11346,7 +11412,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0603FR-07137KL"
+		(property "MPN" "0603WAF1373T5E"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11359,7 +11425,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C137797"
+		(property "JLCPCB Part #" "C22872"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13388,7 +13454,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13401,7 +13467,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14342,7 +14408,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW0402100RFKED"
+		(property "MPN" "0402WGF1001TCE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14355,7 +14421,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C82865"
+		(property "JLCPCB Part #" "C11702"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16946,7 +17012,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06031K00JNEAC"
+		(property "MPN" "0603WAF1001T5E"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16959,7 +17025,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844135"
+		(property "JLCPCB Part #" "C21190"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17285,7 +17351,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19694,7 +19760,7 @@
 				)
 			)
 		)
-		(property "Value" "Red_LED"
+		(property "Value" "DONE_LED"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "afec7fa6-5d86-4823-a582-b6ad029ee94f")
@@ -19717,7 +19783,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode (Green)"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19820,7 +19886,7 @@
 				)
 			)
 		)
-		(property "MPN" "150060SS55040"
+		(property "MPN" "KT-0603G"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19833,7 +19899,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C5478395"
+		(property "JLCPCB Part #" "C12624"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20085,7 +20151,7 @@
 				)
 			)
 		)
-		(property "Value" "3V3_LED"
+		(property "Value" "ON_LED"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "4476d88d-1b4f-4368-93e0-9c564f09cebd")
@@ -20133,7 +20199,7 @@
 				)
 			)
 		)
-		(property "MPN" "150060BS55040"
+		(property "MPN" "KT-0603B"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20211,7 +20277,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C6650185"
+		(property "JLCPCB Part #" "C2288"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20644,6 +20710,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7eeddfca-1852-4b2b-ab98-93e111a85cdd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "180"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2326aaa8-7723-4f67-92cf-a16d3c5f9200")
 			(effects
 				(font
 					(size 1 1)
@@ -22148,6 +22227,19 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "-90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70d9d2ab-6c16-4ce0-9bc3-583accb5a6c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/bae822f9-c188-4212-9c8c-b50c99d73590/462b023b-662f-4d6a-ace0-e12e55951f1c")
 		(sheetname "/STM32 Microcontroller Core/")
 		(sheetfile "stm32_mcu_core.kicad_sch")
@@ -22518,7 +22610,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -22531,7 +22623,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23426,7 +23518,7 @@
 				)
 			)
 		)
-		(property "MPN" "C3216X5R1V226M160AC"
+		(property "MPN" "CL31A226KAHNNNE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23439,7 +23531,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C69612"
+		(property "JLCPCB Part #" "C12891"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23763,7 +23855,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A106MQFNNNE"
+		(property "MPN" "CL21A106KAYNNNE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -23776,7 +23868,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C41893"
+		(property "JLCPCB Part #" "C15850"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24377,7 +24469,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06031K00JNEAC"
+		(property "MPN" "0603WAF1001T5E"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -24390,7 +24482,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844135"
+		(property "JLCPCB Part #" "C21190"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25083,7 +25175,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A106MQFNNNE"
+		(property "MPN" "CL21A106KAYNNNE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -25096,7 +25188,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C15499"
+		(property "JLCPCB Part #" "C15850"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27351,7 +27443,7 @@
 				)
 			)
 		)
-		(property "Value" "Green_LED"
+		(property "Value" "CHG_LED"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "bc69432f-0941-4fe0-b225-fa64635dee35")
@@ -27374,7 +27466,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode (Red)"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -27477,7 +27569,7 @@
 				)
 			)
 		)
-		(property "MPN" "150060GS55040"
+		(property "MPN" "KT-0603R"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27490,7 +27582,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C6041957"
+		(property "JLCPCB Part #" "C2286"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28303,7 +28395,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28316,7 +28408,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28629,7 +28721,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "0603WAF0000T5E"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28642,7 +28734,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844915"
+		(property "JLCPCB Part #" "C21189"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29255,7 +29347,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "0603WAF0000T5E"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29268,7 +29360,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844915"
+		(property "JLCPCB Part #" "C21189"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30702,7 +30794,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06031K00JNEAC"
+		(property "MPN" "0603WAF1001T5E"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30715,7 +30807,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844135"
+		(property "JLCPCB Part #" "C21190"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31028,7 +31120,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31086,6 +31178,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d1070513-9800-4a66-aa5d-dc5eef36354f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2c18892f-944c-490e-a307-090d581faea8")
 			(effects
 				(font
 					(size 1 1)
@@ -34055,6 +34160,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b3abbd0c-0231-497e-ba62-5cbeac51151f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "-90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d4f3fc4-6961-46bb-a558-381b915962cf")
 			(effects
 				(font
 					(size 1 1)
@@ -37135,7 +37253,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A106MQFNNNE"
+		(property "MPN" "CL21A106KAYNNNE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37148,7 +37266,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C41893"
+		(property "JLCPCB Part #" "C15850"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37414,7 +37532,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -37427,7 +37545,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38041,7 +38159,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -38054,7 +38172,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -39256,7 +39374,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -39269,7 +39387,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -40775,7 +40893,7 @@
 				)
 			)
 		)
-		(property "MPN" "C3216X5R1V226M160AC"
+		(property "MPN" "CL31A226KAHNNNE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -40788,7 +40906,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C69612"
+		(property "JLCPCB Part #" "C12891"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41112,7 +41230,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41125,7 +41243,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41466,7 +41584,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C79714"
+		(property "JLCPCB Part #" "C2944310"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -41537,6 +41655,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c97fe6ab-106c-4f7a-8b0f-591013c8e612")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "-90"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3809712b-2fd4-4c15-aa81-e604820eb93d")
 			(effects
 				(font
 					(size 1 1)
@@ -42069,7 +42200,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -42082,7 +42213,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43586,7 +43717,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW04022K00JNED"
+		(property "MPN" "0402WGF2001TCE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -43599,7 +43730,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C482126"
+		(property "JLCPCB Part #" "C4109"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44195,7 +44326,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44208,7 +44339,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44495,7 +44626,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW0402100RFKED"
+		(property "MPN" "0402WGF1001TCE"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44508,7 +44639,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C82865"
+		(property "JLCPCB Part #" "C11702"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44795,7 +44926,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -44808,7 +44939,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45121,7 +45252,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06035K10FKEAC"
+		(property "MPN" "0603WAF5101T5E"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45134,7 +45265,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844375 "
+		(property "JLCPCB Part #" "C23186"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45448,7 +45579,7 @@
 				)
 			)
 		)
-		(property "MPN" "C3216X5R1V226M160AC"
+		(property "MPN" "CL31A226KAHNNNE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -45461,7 +45592,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C69612"
+		(property "JLCPCB Part #" "C12891"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46075,7 +46206,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46088,7 +46219,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -46470,6 +46601,19 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d20e6ff8-a4b0-45ce-ae4e-4bd6429f1514")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "-90"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "164aea74-717b-4b43-a4fd-6741727dc93e")
 			(effects
 				(font
 					(size 1 1)
@@ -47558,7 +47702,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "0603WAF0000T5E"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47571,7 +47715,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844915"
+		(property "JLCPCB Part #" "C21189"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47894,7 +48038,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -47907,7 +48051,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" ""
+		(property "JLCPCB Part #" "C25744"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50525,7 +50669,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0603WAF1001T5E"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50538,7 +50682,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844135"
+		(property "JLCPCB Part #" "C21190"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50825,7 +50969,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -50838,7 +50982,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51125,7 +51269,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51138,7 +51282,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -51462,7 +51606,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -51524,6 +51668,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "9e5db20f-2d86-442d-9412-ad3805c02843")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "3f532817-3476-4ef9-ba81-578e5273dc97")
 			(effects
 				(font
 					(size 1 1)
@@ -51791,7 +51949,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -51853,6 +52011,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "12132e9d-3810-470c-b77e-a912f65b76f7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "805cb59d-65b5-48e4-8b35-2e41e2cfc22a")
 			(effects
 				(font
 					(size 1 1)
@@ -52168,6 +52340,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "f5a3c7b8-b99c-401e-8aff-7c0bfcfc2b54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "FT Rotation Offset" "-180"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "b9f27efb-9129-44f3-a5aa-5f2437cc184c")
 			(effects
 				(font
 					(size 1 1)
@@ -53815,7 +54001,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -53877,6 +54063,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "9ea025bb-dd45-49c4-942c-1e828f8fd0f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "JLCPCB Part #" "C14663"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "8891053f-49cb-42e5-967d-41ade57694f9")
 			(effects
 				(font
 					(size 1 1)
@@ -54126,6 +54326,20 @@
 			(layer "B.Fab")
 			(hide yes)
 			(uuid "16850ca3-16ac-4392-aad1-d0e34874ca24")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "FT Rotation Offset" "-90"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "301bd57c-685e-486e-8395-dbef9e0cae0b")
 			(effects
 				(font
 					(size 1 1)
@@ -54595,7 +54809,7 @@
 				(justify mirror)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0603WAF1003T5E"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -54609,7 +54823,7 @@
 				(justify mirror)
 			)
 		)
-		(property "JLCPCB Part #" ""
+		(property "JLCPCB Part #" "C25803"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -65830,7 +66044,7 @@
 		(net "Net-(U6-Y)")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30163)
+		(priority 30002)
 		(attr
 			(teardrop
 				(type padvia)
@@ -65851,10 +66065,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 139.1635 105.62184) (xy 139.16832 105.629387) (xy 139.1685 105.631431) (xy 139.1685 105.908568)
-				(xy 139.165073 105.916841) (xy 139.1568 105.920268) (xy 139.154756 105.920088) (xy 138.882156 105.871713)
-				(xy 138.874609 105.866893) (xy 138.8725 105.860193) (xy 138.8725 105.679806) (xy 138.875927 105.671533)
-				(xy 138.882154 105.668286) (xy 139.154756 105.619911)
+				(xy 138.8725 105.67) (xy 138.8725 105.87) (xy 139.1685 105.922527) (xy 139.1685 105.77) (xy 139.1685 105.617472)
 			)
 		)
 	)
@@ -65929,7 +66140,7 @@
 		(net "/STM32 Microcontroller Core/USART2_DE")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30113)
+		(priority 30000)
 		(attr
 			(teardrop
 				(type padvia)
@@ -65950,15 +66161,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 139.917365 104.230891) (xy 139.920286 104.232101) (xy 139.926308 104.237749) (xy 140.062786 104.515409)
-				(xy 140.063962 104.519822) (xy 140.064146 104.522695) (xy 140.062405 104.529622) (xy 140.062303 104.529786)
-				(xy 140.061291 104.531062) (xy 140.061255 104.53117) (xy 140.061175 104.531209) (xy 140.060655 104.531866)
-				(xy 139.78243 104.811034) (xy 139.778641 104.813576) (xy 139.776996 104.814261) (xy 139.776994 104.814261)
-				(xy 139.776994 104.814262) (xy 139.772529 104.814269) (xy 139.768041 104.814278) (xy 139.76804 104.814277)
-				(xy 139.766412 104.813606) (xy 139.762583 104.811048) (xy 139.485042 104.532567) (xy 139.482512 104.528767)
-				(xy 139.481415 104.526106) (xy 139.480833 104.519012) (xy 139.480876 104.518826) (xy 139.481772 104.516306)
-				(xy 139.618259 104.238626) (xy 139.621034 104.235002) (xy 139.623412 104.232912) (xy 139.631136 104.23)
-				(xy 139.912887 104.23)
+				(xy 139.9225 104.23) (xy 139.6225 104.23) (xy 139.4775 104.525) (xy 139.7725 104.821) (xy 140.0675 104.525)
 			)
 		)
 	)
@@ -66272,7 +66475,7 @@
 		(net "/STM32 Microcontroller Core/USART2_DE")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30156)
+		(priority 30001)
 		(attr
 			(teardrop
 				(type padvia)
@@ -66293,13 +66496,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 139.158858 104.668444) (xy 139.160512 104.669113) (xy 139.166893 104.675386) (xy 139.167569 104.676978)
-				(xy 139.1685 104.681551) (xy 139.1685 104.958398) (xy 139.167609 104.962877) (xy 139.166927 104.964523)
-				(xy 139.160594 104.970854) (xy 139.158995 104.971516) (xy 139.154419 104.972406) (xy 138.886426 104.970118)
-				(xy 138.881961 104.969191) (xy 138.881463 104.96898) (xy 138.880293 104.968483) (xy 138.874031 104.96214)
-				(xy 138.873368 104.960521) (xy 138.8725 104.956097) (xy 138.8725 104.683927) (xy 138.87339 104.679452)
-				(xy 138.874083 104.677778) (xy 138.880367 104.671464) (xy 138.881976 104.670789) (xy 138.886396 104.66988)
-				(xy 139.154377 104.667591)
+				(xy 138.8725 104.67) (xy 138.8725 104.97) (xy 139.1685 104.972527) (xy 139.1685 104.82) (xy 139.1685 104.667472)
 			)
 		)
 	)
@@ -66361,14 +66558,10 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 153.347073 95.195889) (xy 153.349932 95.197074) (xy 153.35613 95.203095) (xy 153.582865 95.708629)
-				(xy 153.583885 95.71308) (xy 153.583967 95.715925) (xy 153.581963 95.722818) (xy 153.581825 95.723022)
-				(xy 153.58082 95.724185) (xy 153.58078 95.724293) (xy 153.580695 95.72433) (xy 153.580038 95.725093)
-				(xy 153.212119 96.062185) (xy 153.208219 96.064551) (xy 153.206267 96.065262) (xy 153.197788 96.065079)
-				(xy 153.196503 96.064547) (xy 153.193075 96.062365) (xy 152.825668 95.725741) (xy 152.822969 95.72206)
-				(xy 152.821766 95.719481) (xy 152.820875 95.71235) (xy 152.820921 95.712108) (xy 152.821737 95.709513)
-				(xy 153.048448 95.204033) (xy 153.051093 95.200314) (xy 153.053346 95.198189) (xy 153.061374 95.195)
-				(xy 153.342598 95.195)
+				(xy 153.353198 95.198427) (xy 153.3556 95.201912) (xy 153.583818 95.710754) (xy 153.584077 95.719705)
+				(xy 153.581047 95.724169) (xy 153.210404 96.063758) (xy 153.201989 96.06682) (xy 153.194596 96.063758)
+				(xy 152.823952 95.724169) (xy 152.820167 95.716053) (xy 152.82118 95.710756) (xy 153.0494 95.201912)
+				(xy 153.055912 95.195766) (xy 153.060075 95.195) (xy 153.344925 95.195)
 			)
 		)
 	)
@@ -67025,7 +67218,7 @@
 		(net "+3.3V")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30181)
+		(priority 30005)
 		(attr
 			(teardrop
 				(type padvia)
@@ -67046,10 +67239,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 154.432484 114.427427) (xy 154.435261 114.431853) (xy 154.497088 114.609453) (xy 154.496571 114.618393)
-				(xy 154.489885 114.62435) (xy 154.486038 114.625) (xy 154.168962 114.625) (xy 154.160689 114.621573)
-				(xy 154.157262 114.6133) (xy 154.157912 114.609453) (xy 154.219739 114.431853) (xy 154.225696 114.425167)
-				(xy 154.230789 114.424) (xy 154.424211 114.424)
+				(xy 154.1525 114.625) (xy 154.5025 114.625) (xy 154.432527 114.424) (xy 154.3275 114.424) (xy 154.222473 114.424)
 			)
 		)
 	)
@@ -67090,7 +67280,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30198)
+		(priority 30007)
 		(attr
 			(teardrop
 				(type padvia)
@@ -67111,10 +67301,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 122.035859 89.020927) (xy 122.039286 89.0292) (xy 122.039265 89.029893) (xy 122.03318 89.132493)
-				(xy 122.02927 89.140548) (xy 122.021501 89.1435) (xy 121.965 89.1435) (xy 121.908499 89.1435) (xy 121.900226 89.140073)
-				(xy 121.89682 89.132493) (xy 121.890735 89.029893) (xy 121.893666 89.021431) (xy 121.901721 89.017521)
-				(xy 121.902414 89.0175) (xy 122.027586 89.0175)
+				(xy 122.04 89.0175) (xy 121.89 89.0175) (xy 121.897473 89.1435) (xy 121.965 89.1435) (xy 122.032527 89.1435)
 			)
 		)
 	)
@@ -67122,7 +67309,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30201)
+		(priority 30010)
 		(attr
 			(teardrop
 				(type padvia)
@@ -67143,10 +67330,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 122.627392 87.793234) (xy 122.729993 87.79932) (xy 122.738048 87.80323) (xy 122.741 87.810999)
-				(xy 122.741 87.923999) (xy 122.737573 87.932272) (xy 122.729993 87.935678) (xy 122.627393 87.941764)
-				(xy 122.618931 87.938834) (xy 122.615021 87.930778) (xy 122.615 87.930085) (xy 122.615 87.804914)
-				(xy 122.618427 87.796641) (xy 122.6267 87.793214)
+				(xy 122.615 87.7925) (xy 122.615 87.9425) (xy 122.741 87.935026) (xy 122.741 87.8675) (xy 122.741 87.799973)
 			)
 		)
 	)
@@ -67275,7 +67459,7 @@
 		(net "/Peripherals (Sensors & Audio)/DIN")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30209)
+		(priority 30018)
 		(attr
 			(teardrop
 				(type padvia)
@@ -67296,10 +67480,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 123.579387 88.851569) (xy 123.667656 88.891877) (xy 123.673758 88.89843) (xy 123.674496 88.902519)
-				(xy 123.674496 89.024629) (xy 123.671069 89.032902) (xy 123.662796 89.036329) (xy 123.656901 89.034735)
-				(xy 123.555035 88.975311) (xy 123.549615 88.968182) (xy 123.549331 88.963674) (xy 123.562929 88.86068)
-				(xy 123.567409 88.852928) (xy 123.576059 88.850614)
+				(xy 123.674496 89.045) (xy 123.674496 88.895) (xy 123.565 88.845) (xy 123.548496 88.97) (xy 123.548496 88.971497)
 			)
 		)
 	)
@@ -67688,7 +67869,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30202)
+		(priority 30011)
 		(attr
 			(teardrop
 				(type padvia)
@@ -67709,10 +67890,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 123.686069 88.296166) (xy 123.689979 88.304221) (xy 123.69 88.304914) (xy 123.69 88.430085)
-				(xy 123.686573 88.438358) (xy 123.6783 88.441785) (xy 123.677607 88.441764) (xy 123.575007 88.435678)
-				(xy 123.566951 88.431768) (xy 123.564 88.423999) (xy 123.564 88.310999) (xy 123.567427 88.302726)
-				(xy 123.575006 88.29932) (xy 123.677607 88.293235)
+				(xy 123.69 88.4425) (xy 123.69 88.2925) (xy 123.564 88.299973) (xy 123.564 88.3675) (xy 123.564 88.435026)
 			)
 		)
 	)
@@ -68286,7 +68464,7 @@
 		(net "/STM32 Microcontroller Core/USART2_TX")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30120)
+		(priority 30002)
 		(attr
 			(teardrop
 				(type padvia)
@@ -68308,10 +68486,8 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 131.983069 105.508465) (xy 131.983971 105.509278) (xy 132.183847 105.709154) (xy 132.187274 105.717427)
-				(xy 132.183847 105.7257) (xy 132.183806 105.725741) (xy 131.836928 106.069193) (xy 131.830648 106.072415)
-				(xy 131.60153 106.111191) (xy 131.592801 106.109193) (xy 131.588042 106.101607) (xy 131.588331 106.09643)
-				(xy 131.748928 105.536787) (xy 131.754503 105.529782) (xy 131.758958 105.528379) (xy 131.974487 105.505914)
+				(xy 132.192162 105.717469) (xy 131.98003 105.505337) (xy 131.751106 105.529198) (xy 131.583206 106.114293)
+				(xy 131.834298 106.071798)
 			)
 		)
 	)
@@ -68887,7 +69063,7 @@
 		(net "Net-(U10-~{SD_MODE})")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30203)
+		(priority 30012)
 		(attr
 			(teardrop
 				(type padvia)
@@ -68908,13 +69084,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 123.679799 87.293994) (xy 123.68149 87.29458) (xy 123.687821 87.3002) (xy 123.688182 87.30052)
-				(xy 123.688823 87.30184) (xy 123.69 87.306952) (xy 123.69 87.427757) (xy 123.689109 87.432236) (xy 123.688427 87.433882)
-				(xy 123.682096 87.440212) (xy 123.680742 87.440773) (xy 123.675571 87.441643) (xy 123.577331 87.435815)
-				(xy 123.572917 87.434663) (xy 123.571132 87.433797) (xy 123.5653 87.427422) (xy 123.564761 87.426002)
-				(xy 123.564 87.42185) (xy 123.564 87.313326) (xy 123.564889 87.308853) (xy 123.564925 87.308764)
-				(xy 123.565648 87.307019) (xy 123.57166 87.300823) (xy 123.573048 87.300199) (xy 123.577146 87.299193)
-				(xy 123.675285 87.293372)
+				(xy 123.69 87.4425) (xy 123.69 87.2925) (xy 123.564 87.299973) (xy 123.564 87.3675) (xy 123.564 87.435026)
 			)
 		)
 	)
@@ -69086,7 +69256,7 @@
 		(net "Net-(U9-Y)")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30164)
+		(priority 30003)
 		(attr
 			(teardrop
 				(type padvia)
@@ -69107,10 +69277,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 142.900243 106.56991) (xy 143.172844 106.618286) (xy 143.180391 106.623106) (xy 143.1825 106.629806)
-				(xy 143.1825 106.810193) (xy 143.179073 106.818466) (xy 143.172844 106.821713) (xy 142.900244 106.870088)
-				(xy 142.8915 106.868159) (xy 142.88668 106.860612) (xy 142.8865 106.858568) (xy 142.8865 106.581431)
-				(xy 142.889927 106.573158) (xy 142.8982 106.569731)
+				(xy 143.1825 106.82) (xy 143.1825 106.62) (xy 142.8865 106.567472) (xy 142.8865 106.72) (xy 142.8865 106.872527)
 			)
 		)
 	)
@@ -69619,7 +69786,7 @@
 		(net "Net-(U3-HDRV)")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30155)
+		(priority 30004)
 		(attr
 			(teardrop
 				(type padvia)
@@ -69640,10 +69807,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 181.279267 102.303427) (xy 181.282692 102.311505) (xy 181.287328 102.589105) (xy 181.28404 102.597434)
-				(xy 181.275825 102.600998) (xy 181.27563 102.601) (xy 181.1325 102.601) (xy 180.98937 102.601) (xy 180.981097 102.597573)
-				(xy 180.97767 102.5893) (xy 180.977672 102.589105) (xy 180.982308 102.311505) (xy 180.985872 102.30329)
-				(xy 180.994006 102.3) (xy 181.270994 102.3)
+				(xy 181.2825 102.3) (xy 180.9825 102.3) (xy 180.977473 102.601) (xy 181.1325 102.601) (xy 181.287527 102.601)
 			)
 		)
 	)
@@ -69879,7 +70043,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30204)
+		(priority 30013)
 		(attr
 			(teardrop
 				(type padvia)
@@ -69900,10 +70064,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 122.627392 88.293234) (xy 122.729993 88.29932) (xy 122.738048 88.30323) (xy 122.741 88.310999)
-				(xy 122.741 88.423999) (xy 122.737573 88.432272) (xy 122.729993 88.435678) (xy 122.627393 88.441764)
-				(xy 122.618931 88.438834) (xy 122.615021 88.430778) (xy 122.615 88.430085) (xy 122.615 88.304914)
-				(xy 122.618427 88.296641) (xy 122.6267 88.293214)
+				(xy 122.615 88.2925) (xy 122.615 88.4425) (xy 122.741 88.435026) (xy 122.741 88.3675) (xy 122.741 88.299973)
 			)
 		)
 	)
@@ -70009,7 +70170,7 @@
 		(net "/Raspberry Pi Interface/Fan_Tacho")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30010)
+		(priority 30001)
 		(attr
 			(teardrop
 				(type padvia)
@@ -70030,10 +70191,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 134.12856 82.547592) (xy 134.13074 82.550608) (xy 134.785913 83.853396) (xy 134.786568 83.862327)
-				(xy 134.782374 83.868092) (xy 134.034414 84.415935) (xy 134.025714 84.418059) (xy 134.020586 84.415935)
-				(xy 133.272625 83.868092) (xy 133.267976 83.860439) (xy 133.269085 83.853397) (xy 133.92426 82.550608)
-				(xy 133.931039 82.544757) (xy 133.934713 82.544165) (xy 134.120287 82.544165)
+				(xy 134.1275 82.544165) (xy 133.9275 82.544165) (xy 133.264638 83.862242) (xy 134.0275 84.421) (xy 134.790362 83.862242)
 			)
 		)
 	)
@@ -70140,7 +70298,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30205)
+		(priority 30014)
 		(attr
 			(teardrop
 				(type padvia)
@@ -70161,10 +70319,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 120.811069 88.296166) (xy 120.814979 88.304221) (xy 120.815 88.304914) (xy 120.815 88.430085)
-				(xy 120.811573 88.438358) (xy 120.8033 88.441785) (xy 120.802607 88.441764) (xy 120.700007 88.435678)
-				(xy 120.691951 88.431768) (xy 120.689 88.423999) (xy 120.689 88.310999) (xy 120.692427 88.302726)
-				(xy 120.700006 88.29932) (xy 120.802607 88.293235)
+				(xy 120.815 88.4425) (xy 120.815 88.2925) (xy 120.689 88.299973) (xy 120.689 88.3675) (xy 120.689 88.435026)
 			)
 		)
 	)
@@ -70240,7 +70395,7 @@
 		(net "/STM32 Microcontroller Core/USART2_DE")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30114)
+		(priority 30001)
 		(attr
 			(teardrop
 				(type padvia)
@@ -70261,15 +70416,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 131.417365 104.280891) (xy 131.420286 104.282101) (xy 131.426308 104.287749) (xy 131.562786 104.565409)
-				(xy 131.563962 104.569822) (xy 131.564146 104.572695) (xy 131.562405 104.579622) (xy 131.562303 104.579786)
-				(xy 131.561291 104.581062) (xy 131.561255 104.58117) (xy 131.561175 104.581209) (xy 131.560655 104.581866)
-				(xy 131.28243 104.861034) (xy 131.278641 104.863576) (xy 131.276996 104.864261) (xy 131.276994 104.864261)
-				(xy 131.276994 104.864262) (xy 131.272529 104.864269) (xy 131.268041 104.864278) (xy 131.26804 104.864277)
-				(xy 131.266412 104.863606) (xy 131.262583 104.861048) (xy 130.985042 104.582567) (xy 130.982512 104.578767)
-				(xy 130.981415 104.576106) (xy 130.980833 104.569012) (xy 130.980876 104.568826) (xy 130.981772 104.566306)
-				(xy 131.118259 104.288626) (xy 131.121034 104.285002) (xy 131.123412 104.282912) (xy 131.131136 104.28)
-				(xy 131.412887 104.28)
+				(xy 131.4225 104.28) (xy 131.1225 104.28) (xy 130.9775 104.575) (xy 131.2725 104.871) (xy 131.5675 104.575)
 			)
 		)
 	)
@@ -70540,7 +70687,7 @@
 		(net "+3.3V")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30110)
+		(priority 30000)
 		(attr
 			(teardrop
 				(type padvia)
@@ -70561,11 +70708,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 134.047249 104.283427) (xy 134.050113 104.288114) (xy 134.140313 104.568209) (xy 134.139587 104.577134)
-				(xy 134.137463 104.580054) (xy 133.855787 104.862684) (xy 133.84752 104.866125) (xy 133.839241 104.862712)
-				(xy 133.839213 104.862684) (xy 133.699933 104.722933) (xy 133.557535 104.580052) (xy 133.554123 104.571775)
-				(xy 133.554685 104.568214) (xy 133.644887 104.288113) (xy 133.650685 104.281289) (xy 133.656024 104.28)
-				(xy 134.038976 104.28)
+				(xy 134.0475 104.28) (xy 133.6475 104.28) (xy 133.5525 104.575) (xy 133.8475 104.871) (xy 134.1425 104.575)
 			)
 		)
 	)
@@ -70740,7 +70883,7 @@
 		(net "Net-(U10-OUTP)")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30206)
+		(priority 30015)
 		(attr
 			(teardrop
 				(type padvia)
@@ -70761,13 +70904,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 119.852671 87.299182) (xy 119.857079 87.300332) (xy 119.858869 87.301201) (xy 119.864695 87.307566)
-				(xy 119.865236 87.308989) (xy 119.866 87.313146) (xy 119.866 87.421671) (xy 119.865109 87.426149)
-				(xy 119.86435 87.427981) (xy 119.858341 87.434173) (xy 119.856956 87.434796) (xy 119.852849 87.435805)
-				(xy 119.754716 87.441626) (xy 119.750193 87.441002) (xy 119.74851 87.440419) (xy 119.741815 87.434473)
-				(xy 119.741812 87.434468) (xy 119.741172 87.433148) (xy 119.74 87.428044) (xy 119.74 87.307241)
-				(xy 119.740889 87.302768) (xy 119.740923 87.302683) (xy 119.741571 87.30112) (xy 119.747896 87.294789)
-				(xy 119.749261 87.294224) (xy 119.754426 87.293354)
+				(xy 119.74 87.2925) (xy 119.74 87.4425) (xy 119.866 87.435026) (xy 119.866 87.3675) (xy 119.866 87.299973)
 			)
 		)
 	)
@@ -70839,7 +70976,7 @@
 		(net "/Raspberry Pi Interface/Fan_PWM")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30016)
+		(priority 30002)
 		(attr
 			(teardrop
 				(type padvia)
@@ -70861,12 +70998,8 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 131.494413 84.424063) (xy 132.241562 84.971312) (xy 132.246211 84.978965) (xy 132.244547 84.986987)
-				(xy 131.587499 86.029999) (xy 131.5875 86.029999) (xy 131.5875 86.03) (xy 131.735256 86.139187)
-				(xy 131.739873 86.14686) (xy 131.737713 86.15555) (xy 131.736576 86.15687) (xy 131.613035 86.280411)
-				(xy 131.604762 86.283838) (xy 131.59649 86.280411) (xy 131.418433 86.102355) (xy 131.415898 86.09856)
-				(xy 131.387504 86.030008) (xy 131.387496 86.029992) (xy 130.730452 84.986987) (xy 130.728941 84.978161)
-				(xy 130.733435 84.971314) (xy 131.480586 84.424063) (xy 131.489286 84.42194)
+				(xy 131.604763 86.288684) (xy 131.746184 86.147263) (xy 131.5875 86.03) (xy 132.250362 84.977758)
+				(xy 131.4875 84.419) (xy 130.724638 84.977758) (xy 131.3875 86.03) (xy 131.416789 86.100711)
 			)
 		)
 	)
@@ -70910,7 +71043,7 @@
 		(net "Net-(Q4-G)")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30117)
+		(priority 30003)
 		(attr
 			(teardrop
 				(type padvia)
@@ -70932,10 +71065,8 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 190.254886 89.843311) (xy 190.261205 89.846573) (xy 190.612425 90.197794) (xy 190.615852 90.206066)
-				(xy 190.612425 90.214339) (xy 190.412465 90.414299) (xy 190.404192 90.417726) (xy 190.403077 90.417673)
-				(xy 190.181897 90.396489) (xy 190.173988 90.392289) (xy 190.171766 90.388069) (xy 190.008332 89.818569)
-				(xy 190.009344 89.809675) (xy 190.016351 89.804099) (xy 190.021531 89.803809)
+				(xy 190.408566 90.418199) (xy 190.620698 90.206067) (xy 190.258566 89.843934) (xy 190.003206 89.800707)
+				(xy 190.173965 90.39573)
 			)
 		)
 	)
@@ -71179,7 +71310,7 @@
 		(net "GND")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30207)
+		(priority 30016)
 		(attr
 			(teardrop
 				(type padvia)
@@ -71200,10 +71331,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 123.686069 87.796166) (xy 123.689979 87.804221) (xy 123.69 87.804914) (xy 123.69 87.930085)
-				(xy 123.686573 87.938358) (xy 123.6783 87.941785) (xy 123.677607 87.941764) (xy 123.575007 87.935678)
-				(xy 123.566951 87.931768) (xy 123.564 87.923999) (xy 123.564 87.810999) (xy 123.567427 87.802726)
-				(xy 123.575006 87.79932) (xy 123.677607 87.793235)
+				(xy 123.69 87.9425) (xy 123.69 87.7925) (xy 123.564 87.799973) (xy 123.564 87.8675) (xy 123.564 87.935026)
 			)
 		)
 	)
@@ -71639,7 +71767,7 @@
 		(net "/Peripherals (Sensors & Audio)/LRCLK")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30199)
+		(priority 30008)
 		(attr
 			(teardrop
 				(type padvia)
@@ -71660,14 +71788,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 121.523649 89.96739) (xy 121.524481 89.967734) (xy 121.52548 89.968148) (xy 121.531675 89.974158)
-				(xy 121.532298 89.975545) (xy 121.533307 89.97965) (xy 121.539127 90.077781) (xy 121.538504 90.082303)
-				(xy 121.53792 90.083989) (xy 121.531978 90.090683) (xy 121.531476 90.090927) (xy 121.53066 90.091323)
-				(xy 121.525547 90.0925) (xy 121.404741 90.0925) (xy 121.400264 90.091609) (xy 121.398615 90.090926)
-				(xy 121.398372 90.090683) (xy 121.392286 90.084596) (xy 121.392035 90.083989) (xy 121.391724 90.083239)
-				(xy 121.390855 90.078074) (xy 121.396682 89.979827) (xy 121.397832 89.975421) (xy 121.398702 89.973628)
-				(xy 121.405076 89.9678) (xy 121.405474 89.967649) (xy 121.406498 89.967261) (xy 121.410647 89.9665)
-				(xy 121.519174 89.9665)
+				(xy 121.39 90.0925) (xy 121.54 90.0925) (xy 121.532527 89.9665) (xy 121.465 89.9665) (xy 121.397473 89.9665)
 			)
 		)
 	)
@@ -71675,7 +71796,7 @@
 		(net "Net-(U10-OUTN)")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30208)
+		(priority 30017)
 		(attr
 			(teardrop
 				(type padvia)
@@ -71696,10 +71817,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 119.752392 87.793234) (xy 119.854993 87.79932) (xy 119.863048 87.80323) (xy 119.866 87.810999)
-				(xy 119.866 87.923999) (xy 119.862573 87.932272) (xy 119.854993 87.935678) (xy 119.752393 87.941764)
-				(xy 119.743931 87.938834) (xy 119.740021 87.930778) (xy 119.74 87.930085) (xy 119.74 87.804914)
-				(xy 119.743427 87.796641) (xy 119.7517 87.793214)
+				(xy 119.74 87.7925) (xy 119.74 87.9425) (xy 119.866 87.935026) (xy 119.866 87.8675) (xy 119.866 87.799973)
 			)
 		)
 	)
@@ -71839,7 +71957,7 @@
 		(net "Net-(U6-Y)")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30165)
+		(priority 30003)
 		(attr
 			(teardrop
 				(type padvia)
@@ -71860,10 +71978,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 134.400243 106.61991) (xy 134.672844 106.668286) (xy 134.680391 106.673106) (xy 134.6825 106.679806)
-				(xy 134.6825 106.860193) (xy 134.679073 106.868466) (xy 134.672844 106.871713) (xy 134.400244 106.920088)
-				(xy 134.3915 106.918159) (xy 134.38668 106.910612) (xy 134.3865 106.908568) (xy 134.3865 106.631431)
-				(xy 134.389927 106.623158) (xy 134.3982 106.619731)
+				(xy 134.6825 106.87) (xy 134.6825 106.67) (xy 134.3865 106.617472) (xy 134.3865 106.77) (xy 134.3865 106.922527)
 			)
 		)
 	)
@@ -72847,7 +72962,7 @@
 		(net "+5V")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30197)
+		(priority 30006)
 		(attr
 			(teardrop
 				(type padvia)
@@ -72868,10 +72983,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 121.558175 86.145927) (xy 121.561602 86.1542) (xy 121.561232 86.15712) (xy 121.53479 86.25972)
-				(xy 121.529407 86.266876) (xy 121.52346 86.2685) (xy 121.465 86.2685) (xy 121.40654 86.2685) (xy 121.398267 86.265073)
-				(xy 121.39521 86.25972) (xy 121.368768 86.15712) (xy 121.370022 86.148253) (xy 121.377178 86.14287)
-				(xy 121.380098 86.1425) (xy 121.549902 86.1425)
+				(xy 121.565 86.1425) (xy 121.365 86.1425) (xy 121.397473 86.2685) (xy 121.465 86.2685) (xy 121.532527 86.2685)
 			)
 		)
 	)
@@ -72978,7 +73090,7 @@
 		(net "+5V")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30004)
+		(priority 30000)
 		(attr
 			(teardrop
 				(type padvia)
@@ -72999,14 +73111,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 136.574243 84.422275) (xy 137.016802 84.637256) (xy 137.384566 84.815905) (xy 137.388203 84.818661)
-				(xy 137.389835 84.820499) (xy 137.392776 84.827782) (xy 137.392811 84.828626) (xy 137.392455 84.832014)
-				(xy 137.02033 86.284782) (xy 137.018358 86.288897) (xy 137.016786 86.290994) (xy 137.010532 86.295256)
-				(xy 137.010383 86.295296) (xy 137.009949 86.295415) (xy 137.006847 86.295835) (xy 136.128908 86.295835)
-				(xy 136.124428 86.294943) (xy 136.122008 86.29394) (xy 136.116322 86.288924) (xy 136.116024 86.288401)
-				(xy 136.114856 86.285512) (xy 135.742694 84.832602) (xy 135.742445 84.828051) (xy 135.742794 84.825609)
-				(xy 135.746453 84.818657) (xy 135.747079 84.818081) (xy 135.749884 84.81617) (xy 136.560298 84.422497)
-				(xy 136.564707 84.421343) (xy 136.568441 84.421121)
+				(xy 136.1175 86.295835) (xy 137.0175 86.295835) (xy 137.395253 84.821096) (xy 136.5675 84.419) (xy 135.739747 84.821096)
 			)
 		)
 	)
@@ -73014,7 +73119,7 @@
 		(net "/Peripherals (Sensors & Audio)/BCLK")
 		(layer "F.Cu")
 		(hatch none 0.1)
-		(priority 30200)
+		(priority 30009)
 		(attr
 			(teardrop
 				(type padvia)
@@ -73035,10 +73140,7 @@
 		(filled_polygon
 			(layer "F.Cu")
 			(pts
-				(xy 122.529774 89.969927) (xy 122.53318 89.977507) (xy 122.539265 90.080107) (xy 122.536334 90.088569)
-				(xy 122.528279 90.092479) (xy 122.527586 90.0925) (xy 122.402414 90.0925) (xy 122.394141 90.089073)
-				(xy 122.390714 90.0808) (xy 122.390735 90.080107) (xy 122.39682 89.977507) (xy 122.40073 89.969452)
-				(xy 122.408499 89.9665) (xy 122.521501 89.9665)
+				(xy 122.39 90.0925) (xy 122.54 90.0925) (xy 122.532527 89.9665) (xy 122.465 89.9665) (xy 122.397473 89.9665)
 			)
 		)
 	)
@@ -76782,26 +76884,26 @@
 				(xy 158.369377 100.338436) (xy 158.369376 100.338433) (xy 158.369376 100.338431) (xy 158.368335 100.334314)
 				(xy 158.364178 100.320437) (xy 158.362693 100.313353) (xy 158.362294 100.308931) (xy 158.357998 100.290955)
 				(xy 158.357638 100.289238) (xy 158.357782 100.287412) (xy 158.355 100.263798) (xy 158.355 95.651609)
-				(xy 158.360022 95.616676) (xy 158.367434 95.591431) (xy 158.398728 95.538689) (xy 159.195655 94.741762)
-				(xy 159.19566 94.741759) (xy 159.205863 94.731555) (xy 159.205865 94.731555) (xy 159.313015 94.624405)
-				(xy 159.332836 94.59007) (xy 159.341829 94.580188) (xy 159.342979 94.579487) (xy 159.344981 94.576851)
-				(xy 159.366254 94.555144) (xy 159.390657 94.535826) (xy 159.487685 94.477172) (xy 159.607972 94.356885)
-				(xy 159.695978 94.211306) (xy 159.746586 94.048896) (xy 159.753 93.978316) (xy 159.753 93.315084)
-				(xy 159.746586 93.244504) (xy 159.695978 93.082094) (xy 159.607972 92.936515) (xy 159.60797 92.936513)
-				(xy 159.607969 92.936511) (xy 159.487688 92.81623) (xy 159.466198 92.803238) (xy 159.466197 92.803238)
-				(xy 159.466195 92.803236) (xy 159.466191 92.803234) (xy 159.438898 92.780867) (xy 159.43126 92.772526)
-				(xy 159.400501 92.709794) (xy 159.40854 92.640388) (xy 159.44276 92.598629) (xy 159.452825 92.586347)
-				(xy 159.461617 92.580349) (xy 159.485507 92.568801) (xy 159.485263 92.568258) (xy 159.492103 92.565179)
-				(xy 159.492103 92.565178) (xy 159.492106 92.565178) (xy 159.637685 92.477172) (xy 159.757972 92.356885)
-				(xy 159.845978 92.211306) (xy 159.896586 92.048896) (xy 159.903 91.978316) (xy 159.903 91.315084)
-				(xy 159.896586 91.244504) (xy 159.845978 91.082094) (xy 159.757972 90.936515) (xy 159.75797 90.936513)
-				(xy 159.757969 90.936511) (xy 159.65002 90.828562) (xy 159.647345 90.824766) (xy 159.645137 90.823391)
-				(xy 159.636829 90.812998) (xy 159.624041 90.795111) (xy 159.618104 90.778061) (xy 159.616317 90.774289)
-				(xy 159.615922 90.771797) (xy 159.601065 90.729127) (xy 159.605959 90.708787) (xy 159.605404 90.705277)
-				(xy 159.608494 90.698251) (xy 159.61741 90.661196) (xy 159.630158 90.648994) (xy 159.633534 90.64132)
-				(xy 159.648625 90.631319) (xy 159.667886 90.612885) (xy 159.667887 90.612885) (xy 159.671351 90.611091)
-				(xy 159.683685 90.608086) (xy 159.691776 90.602725) (xy 159.706546 90.602517) (xy 159.728377 90.5972)
-				(xy 160.18517 90.5972)
+				(xy 158.360022 95.616676) (xy 158.360609 95.614678) (xy 158.367434 95.591431) (xy 158.398728 95.538689)
+				(xy 159.195655 94.741762) (xy 159.19566 94.741759) (xy 159.205863 94.731555) (xy 159.205865 94.731555)
+				(xy 159.313015 94.624405) (xy 159.332836 94.59007) (xy 159.341829 94.580188) (xy 159.342979 94.579487)
+				(xy 159.344981 94.576851) (xy 159.366254 94.555144) (xy 159.390657 94.535826) (xy 159.487685 94.477172)
+				(xy 159.607972 94.356885) (xy 159.695978 94.211306) (xy 159.746586 94.048896) (xy 159.753 93.978316)
+				(xy 159.753 93.315084) (xy 159.746586 93.244504) (xy 159.695978 93.082094) (xy 159.607972 92.936515)
+				(xy 159.60797 92.936513) (xy 159.607969 92.936511) (xy 159.487688 92.81623) (xy 159.466198 92.803238)
+				(xy 159.466197 92.803238) (xy 159.466195 92.803236) (xy 159.466191 92.803234) (xy 159.438898 92.780867)
+				(xy 159.43126 92.772526) (xy 159.400501 92.709794) (xy 159.40854 92.640388) (xy 159.44276 92.598629)
+				(xy 159.452825 92.586347) (xy 159.461617 92.580349) (xy 159.485507 92.568801) (xy 159.485263 92.568258)
+				(xy 159.492103 92.565179) (xy 159.492103 92.565178) (xy 159.492106 92.565178) (xy 159.637685 92.477172)
+				(xy 159.757972 92.356885) (xy 159.845978 92.211306) (xy 159.896586 92.048896) (xy 159.903 91.978316)
+				(xy 159.903 91.315084) (xy 159.896586 91.244504) (xy 159.845978 91.082094) (xy 159.757972 90.936515)
+				(xy 159.75797 90.936513) (xy 159.757969 90.936511) (xy 159.65002 90.828562) (xy 159.647345 90.824766)
+				(xy 159.645137 90.823391) (xy 159.636829 90.812998) (xy 159.624041 90.795111) (xy 159.618104 90.778061)
+				(xy 159.616317 90.774289) (xy 159.615922 90.771797) (xy 159.601065 90.729127) (xy 159.605959 90.708787)
+				(xy 159.605404 90.705277) (xy 159.608494 90.698251) (xy 159.61741 90.661196) (xy 159.630158 90.648994)
+				(xy 159.633534 90.64132) (xy 159.648625 90.631319) (xy 159.667886 90.612885) (xy 159.667887 90.612885)
+				(xy 159.671351 90.611091) (xy 159.683685 90.608086) (xy 159.691776 90.602725) (xy 159.706546 90.602517)
+				(xy 159.728377 90.5972) (xy 160.18517 90.5972)
 			)
 		)
 		(filled_polygon
@@ -77289,11 +77391,9 @@
 			(layer "F.Cu")
 			(pts
 				(xy 152.290131 94.736241) (xy 152.407333 94.8017) (xy 152.422722 94.817386) (xy 152.441131 94.829394)
-				(xy 152.45319 94.848442) (xy 152.456264 94.851575) (xy 152.460003 94.8592) (xy 152.516504 94.985174)
-				(xy 152.531789 95.019254) (xy 152.541262 95.088478) (xy 152.531788 95.120743) (xy 152.36309 95.496876)
-				(xy 152.361414 95.500077) (xy 152.359021 95.505394) (xy 152.358152 95.508183) (xy 152.355684 95.515326)
-				(xy 152.339525 95.557853) (xy 152.339509 95.557898) (xy 152.338699 95.560474) (xy 152.326367 95.609537)
-				(xy 152.324494 95.616198) (xy 152.308411 95.667809) (xy 152.305388 95.701097) (xy 152.305388 95.701099)
+				(xy 152.45319 94.848441) (xy 152.456264 94.851575) (xy 152.46001 94.859214) (xy 152.531789 95.019254)
+				(xy 152.541263 95.088479) (xy 152.531789 95.120744) (xy 152.363088 95.496882) (xy 152.361408 95.50009)
+				(xy 152.359022 95.505392) (xy 152.308411 95.667811) (xy 152.305388 95.701097) (xy 152.305388 95.701099)
 				(xy 152.302 95.738386) (xy 152.302 96.401619) (xy 152.302584 96.408042) (xy 152.303545 96.41862)
 				(xy 152.303789 96.42131) (xy 152.307904 96.466589) (xy 152.308097 96.470859) (xy 152.30965 96.477436)
 				(xy 152.311399 96.481779) (xy 152.35902 96.634602) (xy 152.359021 96.634604) (xy 152.359022 96.634606)
@@ -81395,7 +81495,7 @@
 		(net "GND")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30009)
+		(priority 30003)
 		(attr
 			(teardrop
 				(type padvia)
@@ -81416,10 +81516,7 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 138.842274 100.172427) (xy 138.84568 100.180007) (xy 138.851765 100.282607) (xy 138.848834 100.291069)
-				(xy 138.840779 100.294979) (xy 138.840086 100.295) (xy 138.714914 100.295) (xy 138.706641 100.291573)
-				(xy 138.703214 100.2833) (xy 138.703235 100.282607) (xy 138.70932 100.180007) (xy 138.71323 100.171952)
-				(xy 138.720999 100.169) (xy 138.834001 100.169)
+				(xy 138.7025 100.295) (xy 138.8525 100.295) (xy 138.845027 100.169) (xy 138.7775 100.169) (xy 138.709973 100.169)
 			)
 		)
 	)
@@ -81427,7 +81524,7 @@
 		(net "/Peripherals (Sensors & Audio)/IMU_INT_GYRO")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30008)
+		(priority 30002)
 		(attr
 			(teardrop
 				(type padvia)
@@ -81449,14 +81546,8 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 138.747476 96.836338) (xy 138.751742 96.839372) (xy 138.880848 96.984543) (xy 138.882659 96.987268)
-				(xy 138.884035 96.990149) (xy 138.885018 96.993271) (xy 138.89838 97.073748) (xy 138.898236 97.078305)
-				(xy 138.897834 97.08004) (xy 138.895049 97.083937) (xy 138.893902 97.086326) (xy 138.893155 97.086588)
-				(xy 138.892628 97.087326) (xy 138.892619 97.087332) (xy 138.89228 97.087543) (xy 138.885453 97.089292)
-				(xy 138.885326 97.089285) (xy 138.882757 97.088853) (xy 138.663338 97.026145) (xy 138.659276 97.024056)
-				(xy 138.656762 97.022059) (xy 138.652577 97.015244) (xy 138.647063 96.988306) (xy 138.637807 96.943091)
-				(xy 138.637781 96.938528) (xy 138.638438 96.935124) (xy 138.641651 96.92907) (xy 138.731729 96.838992)
-				(xy 138.735524 96.836457) (xy 138.736201 96.836177) (xy 138.737172 96.835776) (xy 138.746118 96.835776)
+				(xy 138.742144 96.828579) (xy 138.636078 96.934645) (xy 138.654279 97.023556) (xy 138.901793 97.094294)
+				(xy 138.884194 96.988306)
 			)
 		)
 	)
@@ -81464,7 +81555,7 @@
 		(net "+3.3V")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30010)
+		(priority 30004)
 		(attr
 			(teardrop
 				(type padvia)
@@ -81485,14 +81576,7 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 139.342234 96.84589) (xy 139.342915 96.846172) (xy 139.343881 96.846572) (xy 139.34599 96.84868)
-				(xy 139.350211 96.852899) (xy 139.350213 96.852902) (xy 139.350213 96.852903) (xy 139.350774 96.854257)
-				(xy 139.351644 96.859428) (xy 139.345817 96.95767) (xy 139.344665 96.962084) (xy 139.3438 96.963867)
-				(xy 139.337432 96.969696) (xy 139.336012 96.970236) (xy 139.331853 96.971) (xy 139.2775 96.971)
-				(xy 139.223326 96.971) (xy 139.218848 96.970109) (xy 139.217016 96.96935) (xy 139.210824 96.963341)
-				(xy 139.210199 96.96195) (xy 139.209193 96.957853) (xy 139.203372 96.859713) (xy 139.203994 96.8552)
-				(xy 139.20458 96.853508) (xy 139.210523 96.846815) (xy 139.21185 96.846171) (xy 139.216953 96.845)
-				(xy 139.337759 96.845)
+				(xy 139.3525 96.845) (xy 139.2025 96.845) (xy 139.209973 96.971) (xy 139.2775 96.971) (xy 139.345027 96.971)
 			)
 		)
 	)
@@ -81613,7 +81697,7 @@
 		(net "/Peripherals (Sensors & Audio)/IMU_INT_ACC")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30006)
+		(priority 30000)
 		(attr
 			(teardrop
 				(type padvia)
@@ -81635,11 +81719,8 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 136.399172 98.406174) (xy 136.498743 98.442956) (xy 136.505316 98.449037) (xy 136.505923 98.450663)
-				(xy 136.525486 98.517914) (xy 136.570811 98.67373) (xy 136.571773 98.677035) (xy 136.570794 98.685936)
-				(xy 136.563807 98.691537) (xy 136.558981 98.691899) (xy 136.462368 98.678919) (xy 136.449868 98.677239)
-				(xy 136.442972 98.67373) (xy 136.293984 98.517913) (xy 136.290744 98.509566) (xy 136.294167 98.501556)
-				(xy 136.386847 98.408876) (xy 136.395119 98.40545)
+				(xy 136.392145 98.403579) (xy 136.286079 98.509645) (xy 136.445806 98.676694) (xy 136.576793 98.694293)
+				(xy 136.504276 98.445)
 			)
 		)
 	)
@@ -81647,7 +81728,7 @@
 		(net "/Peripherals (Sensors & Audio)/SPI_IMU_MISO")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30016)
+		(priority 30010)
 		(attr
 			(teardrop
 				(type padvia)
@@ -81668,10 +81749,7 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 139.903392 96.848427) (xy 139.906819 96.8567) (xy 139.905348 96.86238) (xy 139.848378 96.964964)
-				(xy 139.841365 96.970533) (xy 139.838055 96.970984) (xy 139.732132 96.970137) (xy 139.723887 96.966644)
-				(xy 139.720526 96.958343) (xy 139.721363 96.954092) (xy 139.762058 96.852355) (xy 139.768312 96.845946)
-				(xy 139.772921 96.845) (xy 139.895119 96.845)
+				(xy 139.915 96.845) (xy 139.765 96.845) (xy 139.715 96.97) (xy 139.84 96.971) (xy 139.845027 96.971)
 			)
 		)
 	)
@@ -81679,7 +81757,7 @@
 		(net "+3.3V")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30011)
+		(priority 30005)
 		(attr
 			(teardrop
 				(type padvia)
@@ -81700,14 +81778,7 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 138.336149 100.16989) (xy 138.336981 100.170234) (xy 138.33798 100.170648) (xy 138.344175 100.176658)
-				(xy 138.344798 100.178045) (xy 138.345807 100.18215) (xy 138.351627 100.280281) (xy 138.351004 100.284803)
-				(xy 138.35042 100.286489) (xy 138.344478 100.293183) (xy 138.343976 100.293427) (xy 138.34316 100.293823)
-				(xy 138.338047 100.295) (xy 138.217241 100.295) (xy 138.212764 100.294109) (xy 138.211115 100.293426)
-				(xy 138.210872 100.293183) (xy 138.204786 100.287096) (xy 138.204535 100.286489) (xy 138.204224 100.285739)
-				(xy 138.203355 100.280574) (xy 138.209182 100.182327) (xy 138.210332 100.177921) (xy 138.211202 100.176128)
-				(xy 138.217576 100.1703) (xy 138.217974 100.170149) (xy 138.218998 100.169761) (xy 138.223147 100.169)
-				(xy 138.331674 100.169)
+				(xy 138.2025 100.295) (xy 138.3525 100.295) (xy 138.345027 100.169) (xy 138.2775 100.169) (xy 138.209973 100.169)
 			)
 		)
 	)
@@ -81747,7 +81818,7 @@
 		(net "/Peripherals (Sensors & Audio)/SPI_CS_ACC")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30012)
+		(priority 30006)
 		(attr
 			(teardrop
 				(type padvia)
@@ -81768,10 +81839,7 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 137.848359 96.848427) (xy 137.851786 96.8567) (xy 137.851765 96.857393) (xy 137.84568 96.959993)
-				(xy 137.84177 96.968048) (xy 137.834001 96.971) (xy 137.7775 96.971) (xy 137.720999 96.971) (xy 137.712726 96.967573)
-				(xy 137.70932 96.959993) (xy 137.703235 96.857393) (xy 137.706166 96.848931) (xy 137.714221 96.845021)
-				(xy 137.714914 96.845) (xy 137.840086 96.845)
+				(xy 137.8525 96.845) (xy 137.7025 96.845) (xy 137.709973 96.971) (xy 137.7775 96.971) (xy 137.845027 96.971)
 			)
 		)
 	)
@@ -81811,7 +81879,7 @@
 		(net "/Peripherals (Sensors & Audio)/SPI_IMU_SCK")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30015)
+		(priority 30009)
 		(attr
 			(teardrop
 				(type padvia)
@@ -81832,10 +81900,7 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 141.248569 98.498666) (xy 141.252479 98.506721) (xy 141.2525 98.507414) (xy 141.2525 98.632585)
-				(xy 141.249073 98.640858) (xy 141.2408 98.644285) (xy 141.240107 98.644264) (xy 141.137507 98.638178)
-				(xy 141.129451 98.634268) (xy 141.1265 98.626499) (xy 141.1265 98.513499) (xy 141.129927 98.505226)
-				(xy 141.137506 98.50182) (xy 141.240107 98.495735)
+				(xy 141.2525 98.645) (xy 141.2525 98.495) (xy 141.1265 98.502473) (xy 141.1265 98.57) (xy 141.1265 98.637526)
 			)
 		)
 	)
@@ -81911,7 +81976,7 @@
 		(net "/Peripherals (Sensors & Audio)/SPI_CS_GYRO")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30013)
+		(priority 30007)
 		(attr
 			(teardrop
 				(type padvia)
@@ -81932,10 +81997,7 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 139.342274 100.172427) (xy 139.34568 100.180007) (xy 139.351765 100.282607) (xy 139.348834 100.291069)
-				(xy 139.340779 100.294979) (xy 139.340086 100.295) (xy 139.214914 100.295) (xy 139.206641 100.291573)
-				(xy 139.203214 100.2833) (xy 139.203235 100.282607) (xy 139.20932 100.180007) (xy 139.21323 100.171952)
-				(xy 139.220999 100.169) (xy 139.334001 100.169)
+				(xy 139.2025 100.295) (xy 139.3525 100.295) (xy 139.345027 100.169) (xy 139.2775 100.169) (xy 139.209973 100.169)
 			)
 		)
 	)
@@ -81975,7 +82037,7 @@
 		(net "GND")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30007)
+		(priority 30001)
 		(attr
 			(teardrop
 				(type padvia)
@@ -81997,10 +82059,8 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 137.892901 100.051811) (xy 137.89847 100.058824) (xy 137.898762 100.063955) (xy 137.884747 100.14836)
-				(xy 137.881948 100.154219) (xy 137.750388 100.302151) (xy 137.742329 100.306056) (xy 137.73387 100.303119)
-				(xy 137.733372 100.302649) (xy 137.640529 100.209806) (xy 137.637102 100.201533) (xy 137.637339 100.199193)
-				(xy 137.652855 100.123394) (xy 137.657871 100.115978) (xy 137.661095 100.114494) (xy 137.884006 100.050789)
+				(xy 137.636078 100.205355) (xy 137.742144 100.311421) (xy 137.884194 100.151694) (xy 137.901793 100.045706)
+				(xy 137.654279 100.116443)
 			)
 		)
 	)
@@ -82008,7 +82068,7 @@
 		(net "/Peripherals (Sensors & Audio)/SPI_IMU_MOSI")
 		(layer "B.Cu")
 		(hatch none 0.1)
-		(priority 30014)
+		(priority 30008)
 		(attr
 			(teardrop
 				(type padvia)
@@ -82029,14 +82089,7 @@
 		(filled_polygon
 			(layer "B.Cu")
 			(pts
-				(xy 140.342234 96.84589) (xy 140.342915 96.846172) (xy 140.343881 96.846572) (xy 140.34599 96.84868)
-				(xy 140.350211 96.852899) (xy 140.350213 96.852902) (xy 140.350213 96.852903) (xy 140.350774 96.854257)
-				(xy 140.351644 96.859428) (xy 140.345817 96.95767) (xy 140.344665 96.962084) (xy 140.3438 96.963867)
-				(xy 140.337432 96.969696) (xy 140.336012 96.970236) (xy 140.331853 96.971) (xy 140.2775 96.971)
-				(xy 140.223326 96.971) (xy 140.218848 96.970109) (xy 140.217016 96.96935) (xy 140.210824 96.963341)
-				(xy 140.210199 96.96195) (xy 140.209193 96.957853) (xy 140.203372 96.859713) (xy 140.203994 96.8552)
-				(xy 140.20458 96.853508) (xy 140.210523 96.846815) (xy 140.21185 96.846171) (xy 140.216953 96.845)
-				(xy 140.337759 96.845)
+				(xy 140.3525 96.845) (xy 140.2025 96.845) (xy 140.209973 96.971) (xy 140.2775 96.971) (xy 140.345027 96.971)
 			)
 		)
 	)

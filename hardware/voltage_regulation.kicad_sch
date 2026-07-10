@@ -2517,7 +2517,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 133.35) (xy 95.25 137.16)
+			(xy 95.25 132.08) (xy 95.25 135.89)
 		)
 		(stroke
 			(width 0)
@@ -2877,7 +2877,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 144.78) (xy 95.25 148.59)
+			(xy 95.25 143.51) (xy 95.25 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3007,7 +3007,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 118.11) (xy 95.25 125.73)
+			(xy 95.25 118.11) (xy 95.25 124.46)
 		)
 		(stroke
 			(width 0)
@@ -12337,7 +12337,7 @@
 				)
 			)
 		)
-		(property "MPN" "C3216X5R1V226M160AC"
+		(property "MPN" "CL31A226KAHNNNE"
 			(at 83.82 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12348,7 +12348,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C69612"
+		(property "JLCPCB Part #" "C12891"
 			(at 83.82 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12991,7 +12991,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 95.25 129.54 180)
+		(at 95.25 128.27 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13001,7 +13001,7 @@
 		(dnp no)
 		(uuid "41cdb28f-244e-4205-9ac4-582e3217e948")
 		(property "Reference" "R22"
-			(at 89.408 128.27 0)
+			(at 89.154 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13012,7 +13012,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 89.154 130.556 0)
+			(at 89.154 129.286 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13023,7 +13023,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 97.028 129.54 90)
+			(at 97.028 128.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13034,7 +13034,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 129.54 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13045,7 +13045,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 95.25 129.54 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13056,7 +13056,7 @@
 			)
 		)
 		(property "Author" ""
-			(at 95.25 129.54 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13067,7 +13067,7 @@
 			)
 		)
 		(property "License" ""
-			(at 95.25 129.54 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13078,7 +13078,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 95.25 129.54 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13088,8 +13088,8 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06031K00JNEAC"
-			(at 95.25 129.54 0)
+		(property "MPN" "0603WAF1001T5E"
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13099,8 +13099,8 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844135"
-			(at 95.25 129.54 0)
+		(property "JLCPCB Part #" "C21190"
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13111,7 +13111,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 95.25 129.54 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13122,7 +13122,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 95.25 129.54 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13133,7 +13133,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 95.25 129.54 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14203,7 +14203,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "0603WAF0000T5E"
 			(at 200.66 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -14214,7 +14214,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844915"
+		(property "JLCPCB Part #" "C21189"
 			(at 200.66 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -14370,7 +14370,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "0603WAF0000T5E"
 			(at 160.02 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -14381,7 +14381,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844915"
+		(property "JLCPCB Part #" "C21189"
 			(at 160.02 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -15047,7 +15047,7 @@
 				)
 			)
 		)
-		(property "MPN" "C3216X5R1V226M160AC"
+		(property "MPN" "CL31A226KAHNNNE"
 			(at 77.47 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -15058,7 +15058,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C69612"
+		(property "JLCPCB Part #" "C12891"
 			(at 77.47 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -15217,7 +15217,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0603FR-07137KL"
+		(property "MPN" "0603WAF1373T5E"
 			(at 200.66 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -15228,7 +15228,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C137797"
+		(property "JLCPCB Part #" "C22872"
 			(at 200.66 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -15882,7 +15882,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 90.17 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -15893,7 +15893,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 90.17 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -16444,7 +16444,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 95.25 140.97 90)
+		(at 95.25 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16455,7 +16455,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba776cbf-b560-4e49-b5c8-88ac4e61f75e")
 		(property "Reference" "D5"
-			(at 99.06 141.2874 90)
+			(at 99.06 140.0174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16465,8 +16465,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "3V3_LED"
-			(at 99.06 143.8274 90)
+		(property "Value" "ON_LED"
+			(at 99.06 142.5574 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16477,7 +16477,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 95.25 140.97 0)
+			(at 95.25 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16488,7 +16488,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 140.97 0)
+			(at 95.25 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16499,7 +16499,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode (Blue)"
-			(at 95.25 140.97 0)
+			(at 95.25 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16509,8 +16509,8 @@
 				)
 			)
 		)
-		(property "MPN" "150060BS55040"
-			(at 95.25 140.97 90)
+		(property "MPN" "KT-0603B"
+			(at 95.25 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16520,8 +16520,8 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C6650185"
-			(at 95.25 140.97 90)
+		(property "JLCPCB Part #" "C2288"
+			(at 95.25 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16532,7 +16532,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 95.25 140.97 90)
+			(at 95.25 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16543,7 +16543,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 95.25 140.97 90)
+			(at 95.25 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16554,7 +16554,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 95.25 140.97 90)
+			(at 95.25 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16687,7 +16687,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 168.91 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -17087,7 +17087,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0603WAF1001T5E"
 			(at 172.72 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -17098,7 +17098,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844135"
+		(property "JLCPCB Part #" "C21190"
 			(at 172.72 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -17256,7 +17256,7 @@
 				)
 			)
 		)
-		(property "MPN" "C3216X5R1V226M160AC"
+		(property "MPN" "CL31A226KAHNNNE"
 			(at 71.12 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -17267,7 +17267,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C69612"
+		(property "JLCPCB Part #" "C12891"
 			(at 71.12 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -17425,7 +17425,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R71A225KE15J"
+		(property "MPN" "CL10A225KO8NNNC"
 			(at 100.33 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -17436,7 +17436,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C2167658"
+		(property "JLCPCB Part #" "C23630"
 			(at 100.33 50.8 0)
 			(hide yes)
 			(show_name no)

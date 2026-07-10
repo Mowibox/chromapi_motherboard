@@ -13448,7 +13448,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW0402100RFKED"
+		(property "MPN" "0402WGF1001TCE"
 			(at 100.33 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -13459,7 +13459,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C82865"
+		(property "JLCPCB Part #" "C11702"
 			(at 100.33 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -14348,7 +14348,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW0402100RFKED"
+		(property "MPN" "0402WGF1001TCE"
 			(at 74.93 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -14359,7 +14359,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C82865"
+		(property "JLCPCB Part #" "C11702"
 			(at 74.93 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -14518,7 +14518,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-0710KL"
+		(property "MPN" "0402WGF1002TCE"
 			(at 152.4 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -14529,7 +14529,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C60490"
+		(property "JLCPCB Part #" "C25744"
 			(at 152.4 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -15013,7 +15013,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 58.42 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -15024,7 +15024,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 58.42 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -15322,6 +15322,17 @@
 			)
 		)
 		(property "PARTREV" ""
+			(at 81.28 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "-90"
 			(at 81.28 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -16360,7 +16371,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 142.24 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -16371,7 +16382,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 142.24 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -16530,7 +16541,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A106MQFNNNE"
+		(property "MPN" "CL21A106KAYNNNE"
 			(at 93.98 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -16541,7 +16552,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C41893"
+		(property "JLCPCB Part #" "C15850"
 			(at 93.98 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -17523,6 +17534,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "180"
+			(at 45.72 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a60aa89f-7935-42c1-a5b3-996a5beb5a17")
 		)
@@ -18205,7 +18227,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 85.09 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -18216,7 +18238,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 85.09 69.85 0)
 			(hide yes)
 			(show_name no)

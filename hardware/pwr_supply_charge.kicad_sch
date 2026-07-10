@@ -14505,7 +14505,7 @@
 				)
 			)
 		)
-		(property "Value" "Green_LED"
+		(property "Value" "CHG_LED"
 			(at 140.97 134.366 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14537,7 +14537,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode (Red)"
 			(at 140.97 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -14581,7 +14581,7 @@
 				)
 			)
 		)
-		(property "MPN" "150060GS55040"
+		(property "MPN" "KT-0603R"
 			(at 140.97 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -14592,7 +14592,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C6041957"
+		(property "JLCPCB Part #" "C2286"
 			(at 140.97 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -15394,7 +15394,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 252.73 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -15405,7 +15405,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 252.73 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -15643,7 +15643,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06031K00JNEAC"
+		(property "MPN" "0603WAF1001T5E"
 			(at 148.59 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -15654,7 +15654,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844135"
+		(property "JLCPCB Part #" "C21190"
 			(at 148.59 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -15813,7 +15813,7 @@
 				)
 			)
 		)
-		(property "MPN" "875105359003"
+		(property "MPN" "EEEHB1C220R"
 			(at 227.33 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -15824,7 +15824,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C5530512"
+		(property "JLCPCB Part #" "C336501"
 			(at 227.33 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -15858,6 +15858,17 @@
 			)
 		)
 		(property "PARTREV" ""
+			(at 227.33 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "-180"
 			(at 227.33 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -16391,7 +16402,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06031K00JNEAC"
+		(property "MPN" "0603WAF1001T5E"
 			(at 129.54 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -16402,7 +16413,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844135"
+		(property "JLCPCB Part #" "C21190"
 			(at 129.54 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -16807,7 +16818,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW04022K00JNED"
+		(property "MPN" "0402WGF2001TCE"
 			(at 176.53 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -16818,7 +16829,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C482126"
+		(property "JLCPCB Part #" "C4109"
 			(at 176.53 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -17201,7 +17212,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06035K10FKEAC"
+		(property "MPN" "0603WAF5101T5E"
 			(at 96.52 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -17212,7 +17223,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844375 "
+		(property "JLCPCB Part #" "C23186"
 			(at 96.52 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -17525,7 +17536,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "0603WAF0000T5E"
 			(at 210.82 57.15 90)
 			(hide yes)
 			(show_name no)
@@ -17536,7 +17547,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844915"
+		(property "JLCPCB Part #" "C21189"
 			(at 210.82 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -17922,7 +17933,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 262.89 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -17933,7 +17944,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 262.89 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -18571,7 +18582,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 217.17 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -18582,7 +18593,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 217.17 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -19064,7 +19075,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 227.33 34.29 90)
 			(hide yes)
 			(show_name no)
@@ -19075,7 +19086,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 227.33 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -19234,7 +19245,7 @@
 				)
 			)
 		)
-		(property "MPN" "875105359003"
+		(property "MPN" "EEEHB1C220R"
 			(at 116.84 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -19245,7 +19256,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C5530512 "
+		(property "JLCPCB Part #" "C336501"
 			(at 116.84 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -19279,6 +19290,17 @@
 			)
 		)
 		(property "PARTREV" ""
+			(at 116.84 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "-180"
 			(at 116.84 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -19402,7 +19424,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "0603WAF0000T5E"
 			(at 210.82 49.53 90)
 			(hide yes)
 			(show_name no)
@@ -19413,7 +19435,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844915"
+		(property "JLCPCB Part #" "C21189"
 			(at 210.82 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -19798,7 +19820,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06035K10FKEAC"
+		(property "MPN" "0603WAF5101T5E"
 			(at 105.41 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -19809,7 +19831,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844375 "
+		(property "JLCPCB Part #" "C23186"
 			(at 105.41 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -20320,6 +20342,17 @@
 			)
 		)
 		(property "PARTREV" ""
+			(at 208.28 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "-90"
 			(at 208.28 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -20973,7 +21006,7 @@
 				(justify bottom)
 			)
 		)
-		(property "JLCPCB Part #" "C79714"
+		(property "JLCPCB Part #" "C2944310"
 			(at 185.166 97.79 90)
 			(hide yes)
 			(show_name no)
@@ -21019,6 +21052,17 @@
 		)
 		(property "PARTREV" ""
 			(at 185.42 97.79 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Rotation Offset" "-90"
+			(at 185.42 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21426,7 +21470,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Red_LED"
+		(property "Value" "DONE_LED"
 			(at 152.4 150.1774 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21459,7 +21503,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "Light emitting diode (Green)"
 			(at 148.59 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -21503,7 +21547,7 @@
 				)
 			)
 		)
-		(property "MPN" "150060SS55040"
+		(property "MPN" "KT-0603G"
 			(at 148.59 147.32 90)
 			(hide yes)
 			(show_name no)
@@ -21514,7 +21558,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C5478395"
+		(property "JLCPCB Part #" "C12624"
 			(at 148.59 147.32 0)
 			(hide yes)
 			(show_name no)

@@ -11626,7 +11626,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06031K00JNEAC"
+		(property "MPN" "0603WAF1001T5E"
 			(at 212.09 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -11637,7 +11637,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844135"
+		(property "JLCPCB Part #" "C21190"
 			(at 212.09 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -12972,7 +12972,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A106MQFNNNE"
+		(property "MPN" "CL21A106KAYNNNE"
 			(at 71.12 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -12983,7 +12983,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C41893"
+		(property "JLCPCB Part #" "C15850"
 			(at 71.12 116.84 0)
 			(hide yes)
 			(show_name no)
