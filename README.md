@@ -31,7 +31,7 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 | :--- | :--- | :--- | :--- |
 | **💻 Firmware** | STM32 low-level drivers and communication protocol. | [`/firmware`](./firmware) | *Coming Soon* |
 | **📐 Schematics** | PDF for hardware architecture | [`/hardware/schematic_pdf`](./hardware/schematic_pdf/chromapi_motherboard_v1.pdf) | **Available** |
-| **📦 Manufacturing** | Gerbers, Drill files, BOM, and CPL for assembly. | [`/hardware/production`]() | *Coming Soon* |
+| **📦 Manufacturing** | Gerbers, Drill files, BOM, and CPL for assembly. | [`/hardware/production`](./hardware/production/) | **Available** |
 
 ## Authors
 

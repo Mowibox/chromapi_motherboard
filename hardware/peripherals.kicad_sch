@@ -13147,7 +13147,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0603WAF1003T5E"
 			(at 228.6 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -13158,7 +13158,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" ""
+		(property "JLCPCB Part #" "C25803"
 			(at 228.6 58.42 0)
 			(hide yes)
 			(show_name no)
