@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;chromapi_stm32_core/Core/Src/sk6812.c&apos; to &apos;ws2812b.c&apos;" description="Rename resource &apos;sk6812.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/sk6812.c" name="ws2812b.c" stamp="1783779306280" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;chromapi_stm32_core/Core/Inc/sk6812.h&apos; to &apos;ws2812b.h&apos;" description="Rename resource &apos;sk6812.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/sk6812.h" name="ws2812b.h" stamp="1783779335915" updateReferences="true"/>
+</session>

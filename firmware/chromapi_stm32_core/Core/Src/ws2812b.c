@@ -3,7 +3,7 @@
 extern TIM_HandleTypeDef htim4;
 extern DMA_HandleTypeDef hdma_tim4_ch1;
 
-#include "sk6812.h"
+#include "ws2812b.h"
 
 #define PWM_HI (120)
 #define PWM_LO (60)

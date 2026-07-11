@@ -23,11 +23,11 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include <string.h>
+#include <ws2812b.h>
 
 #include "sts3215_hal.h"
 #include "sts3215_protocol.h"
 #include "ina226.h"
-#include "sk6812.h"
 #include "bmi088.h"
 #include "bridge.h"
 /* USER CODE END Includes */
