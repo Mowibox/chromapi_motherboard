@@ -11,7 +11,7 @@ extern DMA_HandleTypeDef hdma_tim4_ch1;
 // LED parameters
  #define NUM_BPP (3) // WS2812B
 //#define NUM_BPP (4) // SK6812
-#define NUM_PIXELS (2)
+#define NUM_PIXELS  (LED_STATUS_COUNT + LED_RING_COUNT) // 1 status LED + 18 ring LEDs
 #define NUM_BYTES (NUM_BPP * NUM_PIXELS)
 
 // LED color buffer
@@ -56,6 +56,13 @@ void led_set_all_RGB(uint8_t r, uint8_t g, uint8_t b) {
 // Set all colors to RGBW
 void led_set_all_RGBW(uint8_t r, uint8_t g, uint8_t b, uint8_t w) {
   for(uint_fast8_t i = 0; i < NUM_PIXELS; ++i) led_set_RGBW(i, r, g, b, w);
+}
+
+// Custom Chromapi function to change all LEDs for the dedicated LED ring only
+void led_set_ring_all_RGB(uint8_t r, uint8_t g, uint8_t b) {
+  for (uint_fast8_t i = LED_RING_START_INDEX; i < NUM_PIXELS; ++i) {
+    led_set_RGB(i, r, g, b);
+  }
 }
 
 // Shuttle the data to the LEDs!

@@ -100,16 +100,47 @@ static void handle_cmd_set_positions(const uint8_t *payload, uint8_t len) {
 }
 
 static void handle_cmd_set_led_color(const uint8_t *payload, uint8_t len) {
-	if (len < 3) { send_ack(false); return; }
+	if (len < 1) { send_ack(false); return; }
 
-	led_set_all_RGB(payload[0], payload[1], payload[2]);
+	uint8_t target = payload[0];
+
+	switch (target) {
+	case LED_RING_ALL: {
+		if (len < 4) { send_ack(false); return; }
+		led_set_ring_all_RGB(payload[1], payload[2], payload[3]);
+		break;
+	}
+	case LED_RING_SINGLE: {
+		if (len < 5) { send_ack(false); return; }
+		uint8_t idx = payload[1];
+		if (idx >= LED_RING_COUNT) { send_ack(false); return; }
+		led_set_RGB(LED_RING_START_INDEX + idx, payload[2], payload[3], payload[4]);
+		break;
+	}
+	default:
+		send_ack(false);
+		return;
+	}
+
 	led_render();
-
 	g_led_override_until_ms = HAL_GetTick() + LED_OVERRIDE_DURATION_MS;
-
 	send_ack(true);
 }
 
+static void handle_cmd_set_led_ring_bulk(const uint8_t *payload, uint8_t len) {
+	if (len < (LED_RING_COUNT * 3)) { send_ack(false); return; }
+
+	for (uint8_t i = 0; i < LED_RING_COUNT; i++) {
+		uint8_t r = payload[i * 3 + 0];
+		uint8_t g = payload[i * 3 + 1];
+		uint8_t b = payload[i * 3 + 2];
+		led_set_RGB(LED_RING_START_INDEX + i, r, g, b);
+	}
+
+	led_render();
+	g_led_override_until_ms = HAL_GetTick() + LED_OVERRIDE_DURATION_MS;
+	send_ack(true);
+}
 
 static void handle_cmd_get_power(void) {
 	int32_t bus_uV = AutoFox_INA226_GetBusVoltage_uV(&gINA226);
@@ -357,17 +388,18 @@ static void parse_rx_buffer(void) {
 					uint8_t payload_len = expected_len - 1;
 
 					switch (cmd) {
-					case PING_BRIDGE:     send_ack(true); break;
-					case SET_POSITIONS:   handle_cmd_set_positions(payload, payload_len); break;
-					case STATE_FEEDBACK:  handle_cmd_feedback(); break;
-					case PING_SERVO:      handle_cmd_ping_servo(payload, payload_len); break;
-					case GET_SERVO_INFO:  send_ack(false); break;
-					case SET_SERVO_ID:    handle_cmd_set_servo_id(payload, payload_len); break;
-					case SET_LED_COLOR:   handle_cmd_set_led_color(payload, payload_len); break;
-					case GET_POWER:       handle_cmd_get_power(); break;
-					case WRITE_SERVO_REGISTER: handle_cmd_write_servo_register(payload, payload_len); break;
-					case READ_SERVO_REGISTER: handle_cmd_read_servo_register(payload, payload_len); break;
-					default:              send_ack(false); break;
+					case PING_BRIDGE:           send_ack(true); break;
+					case SET_POSITIONS:         handle_cmd_set_positions(payload, payload_len); break;
+					case STATE_FEEDBACK:        handle_cmd_feedback(); break;
+					case PING_SERVO:            handle_cmd_ping_servo(payload, payload_len); break;
+					case GET_SERVO_INFO:        send_ack(false); break;
+					case SET_SERVO_ID:          handle_cmd_set_servo_id(payload, payload_len); break;
+					case SET_LED_COLOR:         handle_cmd_set_led_color(payload, payload_len); break;
+					case SET_LED_RING_BULK:     handle_cmd_set_led_ring_bulk(payload, payload_len); break;
+					case GET_POWER:             handle_cmd_get_power(); break;
+					case WRITE_SERVO_REGISTER:  handle_cmd_write_servo_register(payload, payload_len); break;
+					case READ_SERVO_REGISTER:   handle_cmd_read_servo_register(payload, payload_len); break;
+					default:                    send_ack(false); break;
 					}
 					i += total_frame_size - 1;
 				}
@@ -395,9 +427,6 @@ void Bridge_Process(void) {
 
 void Bridge_UpdateBatteryLed(void)
 {
-	if ((int32_t)(HAL_GetTick() - g_led_override_until_ms) < 0)
-		return;
-
 	int32_t uV = AutoFox_INA226_GetBusVoltage_uV(&gINA226);
 
 	uint8_t r, g, b;
@@ -434,11 +463,11 @@ void Bridge_UpdateBatteryLed(void)
 		r = 50; g = 0; b = 0;
 	}
 	else {
-		uint8_t blink = (HAL_GetTick() % 600U) < 300U ? 50 : 0;
+		uint8_t blink = (HAL_GetTick() % 200U) < 100U ? 50 : 0;
 		r = blink; g = 0; b = 0;
 	}
 
-	led_set_all_RGB(r, g, b);
+	led_set_RGB(LED_STATUS_START_INDEX, r, g, b);
 	led_render();
 }
 
