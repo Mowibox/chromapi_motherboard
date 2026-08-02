@@ -46,15 +46,15 @@ The hardware development of this board relies on the resources provided by the s
 
 ### PCBWay
 
+**[PCBWay](https://www.pcbway.com)** is a global manufacturer specializing in rapid prototyping and low-volume hardware production, offering advanced PCB fabrication, turnkey assembly, CNC machining, and 3D printing.
+
 <p align="center">
   <a href="https://www.pcbway.com">
     <img src="./assets/pcbway.png" width="250" alt="PCBWay">
   </a>
 </p>
 
-**[PCBWay](https://www.pcbway.com)** is a global manufacturer specializing in rapid prototyping and low-volume hardware production, offering advanced PCB fabrication, turnkey assembly, CNC machining, and 3D printing.
-
-For this project, I utilized their sponsored PCB manufacturing and assembly (PCBA) services. Beyond fast production, their engineering team excels at detailed file reviews by cross-checking design options, BOMs, and footprints to prevent errors early. Their reliable component sourcing and rigorous verification were of great help in building a high-quality prototype for the Chromapi's motherbard.
+For this project, I utilized their sponsored [PCB manufacturing](https://www.pcbway.com/orderonline.aspx) and [assembly](https://www.pcbway.fr/pcb-assembly.html) (PCBA) services. Beyond fast production, their engineering team excels at detailed file reviews by cross-checking design options, BOMs, and footprints to prevent errors early. Their reliable component sourcing and rigorous verification were of great help in building a high-quality prototype for the Chromapi's motherbard.
 
 > Huge thanks to all the hardware folks who reviewed my schematics, or gave me layout tips. I really appreciate your time and support!
 
