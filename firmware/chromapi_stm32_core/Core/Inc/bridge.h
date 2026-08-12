@@ -53,6 +53,12 @@ typedef struct __attribute__((packed)) {
 	uint8_t switches_mask;
 } RobotFeedback_t;
 
+typedef enum {
+	SERVO_TXN_NONE = 0,
+	SERVO_TXN_POLL,
+	SERVO_TXN_COMMAND,
+} servo_txn_type_t;
+
 extern RobotFeedback_t g_robot_state;
 
 void Bridge_Init(UART_HandleTypeDef *huart);

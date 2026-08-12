@@ -26,6 +26,13 @@ extern "C" {
 #endif
 
 /**
+ * Timeout applied while a DMA TX transfer is in flight (TX_BUSY).
+ */
+#ifndef STS3215_HAL_TX_TIMEOUT_MS
+#define STS3215_HAL_TX_TIMEOUT_MS   (5U)
+#endif
+
+/**
  * RX DMA buffer: large enough for STS3215_SYNC_MAX_SERVOS full reply frames.
  * 16 servos × 16 bytes/frame = 256 bytes.
  */
@@ -52,6 +59,7 @@ typedef enum {
 	STS3215_HAL_ERR_DMA_TX,
 	STS3215_HAL_ERR_DMA_RX,
 	STS3215_HAL_ERR_PARSE, /* STS3215_ParseReply returned error */
+	STS3215_HAL_ERR_TX_TIMEOUT, /* DMA TX never completed (no TxCpltCallback) */
 	STS3215_HAL_ERR_BUSY, /* SendFrame called while not IDLE */
 } STS3215_HAL_Error_t;
 
@@ -89,17 +97,24 @@ typedef struct {
 	/* Buffers — must remain valid for the full DMA transfer lifetime */
 	__attribute__((aligned(4))) uint8_t tx_buf[STS3215_TX_BUF_SIZE];
 	__attribute__((aligned(4))) uint8_t rx_buf[STS3215_HAL_RX_BUF_SIZE];
+	__attribute__((aligned(4))) uint8_t rx_accum[STS3215_HAL_RX_BUF_SIZE];
 
 	/* State machine */
 	volatile STS3215_HAL_State_t state;
 	volatile STS3215_HAL_Error_t last_error;
 	volatile uint16_t rx_received_len;
 
+	uint16_t rx_accum_len;
+	uint16_t rx_consumed_len;
+
 	/* Transfer metadata */
 	bool is_broadcast;
 	uint8_t expected_replies;
+	uint8_t replies_parsed;
 
+	uint32_t tx_start_ms;
 	uint32_t tx_timestamp_ms;
+	uint32_t tx_timeout_ms;
 	uint32_t reply_timeout_ms;
 
 	STS3215_HAL_ReplyCallback_t on_reply;

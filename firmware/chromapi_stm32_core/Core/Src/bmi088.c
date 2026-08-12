@@ -6,9 +6,9 @@
  *
  */
 uint8_t BMI088_Init(BMI088 *imu,
-				 SPI_HandleTypeDef *spiHandle,
-				 GPIO_TypeDef *csAccPinBank, uint16_t csAccPin,
-				 GPIO_TypeDef *csGyrPinBank, uint16_t csGyrPin) {
+		SPI_HandleTypeDef *spiHandle,
+		GPIO_TypeDef *csAccPinBank, uint16_t csAccPin,
+		GPIO_TypeDef *csGyrPinBank, uint16_t csGyrPin) {
 
 	/* Store interface parameters in struct */
 	imu->spiHandle 		= spiHandle;
@@ -45,7 +45,7 @@ uint8_t BMI088_Init(BMI088 *imu,
 
 	if (chipID != 0x1E) {
 
-	//	return 0;
+		//	return 0;
 
 	}
 	HAL_Delay(10);
@@ -74,7 +74,7 @@ uint8_t BMI088_Init(BMI088 *imu,
 
 	/* Pre-compute accelerometer conversion constant (raw to m/s^2) */
 	imu->accConversion = 9.81f / 32768.0f * 2.0f * 1.5f; /* Datasheet page 27 */
-	
+
 	/* Set accelerometer TX buffer for DMA */
 	imu->accTxBuf[0] = BMI_ACC_DATA | 0x80;
 
@@ -119,7 +119,7 @@ uint8_t BMI088_Init(BMI088 *imu,
 
 	/* Pre-compute gyroscope conversion constant (raw to rad/s) */
 	imu->gyrConversion = 0.01745329251f * 1000.0f / 32768.0f; /* Datasheet page 39 */
-	
+
 	/* Set gyroscope TX buffer for DMA */
 	imu->gyrTxBuf[0] = BMI_GYR_DATA | 0x80;
 
