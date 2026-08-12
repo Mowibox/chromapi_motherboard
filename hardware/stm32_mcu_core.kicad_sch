@@ -13448,7 +13448,7 @@
 				)
 			)
 		)
-		(property "MPN" "0402WGF1001TCE"
+		(property "MPN" "0402WGF1000TCE"
 			(at 100.33 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -13459,7 +13459,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C11702"
+		(property "JLCPCB Part #" "C25076"
 			(at 100.33 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -14348,7 +14348,7 @@
 				)
 			)
 		)
-		(property "MPN" "0402WGF1001TCE"
+		(property "MPN" "0402WGF1000TCE"
 			(at 74.93 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -14359,7 +14359,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C11702"
+		(property "JLCPCB Part #" "C25076"
 			(at 74.93 74.93 0)
 			(hide yes)
 			(show_name no)
