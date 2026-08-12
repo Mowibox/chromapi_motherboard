@@ -1,0 +1,3 @@
+../Core/Src/mahony.c:7:6:Mahony_Init	1
+../Core/Src/mahony.c:15:6:Mahony_Calibrate	4
+../Core/Src/mahony.c:37:6:Mahony_Update	4

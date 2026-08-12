@@ -30,6 +30,8 @@
 #include "ina226.h"
 #include "bmi088.h"
 #include "bridge.h"
+#include "cordic_sqrt.h"
+#include "mahony.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -71,6 +73,7 @@ DMA_HandleTypeDef hdma_usart2_rx;
 AutoFox_INA226 gINA226;
 STS3215_HAL_Handle_t hservo;
 BMI088 gIMU;
+MahonyFilter_t g_mahony;
 
 volatile uint8_t  g_reply_received  = 0;
 volatile uint8_t  g_reply_id        = 0;
@@ -86,6 +89,10 @@ static volatile bool g_poll_due = false;
 
 static uint8_t active_servo_ids[12];
 static uint8_t active_servo_count = 0;
+
+static volatile bool g_imu_task_due = false;
+static uint8_t g_tim6_div = 0; // IMU ODR = 100 Hz
+static uint32_t g_imu_last_tick = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -214,16 +221,34 @@ static void scan_active_servos(void)
 	printf("[SYS] Active servos: %u/%u\r\n", active_servo_count, 12U);
 }
 
+static void Imu_Task(void) {
+	uint32_t now = HAL_GetTick();
+	float dt = (now - g_imu_last_tick) / 1000.0f;
+	g_imu_last_tick = now;
+	if (dt <= 0.0f || dt > 0.5f) dt = 0.01f;
+
+	BMI088_ReadAccelerometer(&gIMU);
+	BMI088_ReadGyroscope(&gIMU);
+	Mahony_Update(&g_mahony, gIMU.gyr_rps[0], gIMU.gyr_rps[1], gIMU.gyr_rps[2],
+			gIMU.acc_mps2[0], gIMU.acc_mps2[1], gIMU.acc_mps2[2], dt);
+}
+
 void Chromapi_SystemInit(void) {
+	if (!CordicSqrt_Init(&hcordic)) {
+		Error_Handler();
+	}
 	STS3215_HAL_Init(&hservo, &huart2, 50U, on_reply, on_error, NULL);
 	AutoFox_INA226_Constructor(&gINA226);
 	AutoFox_INA226_Init(&gINA226, INA226_I2C_ADDR, SHUNT_OHMS, MAX_CURRENT_A);
 	Bridge_Init(&huart1);
-	(void)BMI088_Init(
-			&gIMU, &hspi1,
+	(void)BMI088_Init(&gIMU, &hspi1,
 			SPI_CS_ACC_GPIO_Port,  SPI_CS_ACC_Pin,
-			SPI_CS_GYRO_GPIO_Port, SPI_CS_GYRO_Pin
-	);
+			SPI_CS_GYRO_GPIO_Port, SPI_CS_GYRO_Pin);
+
+	CordicSqrt_Init(&hcordic);
+	Mahony_Init(&g_mahony);
+	Mahony_Calibrate(&g_mahony, &gIMU);
+
 	scan_active_servos();
 	HAL_Delay(500U);
 	printf("[SYS] System Initialized\r\n");
@@ -285,6 +310,11 @@ int main(void)
 		}
 
 		Bridge_Process();
+
+		if (g_imu_task_due) {
+			g_imu_task_due = false;
+			Imu_Task();
+		}
 
 		if (g_poll_due && g_servo_txn == SERVO_TXN_NONE && STS3215_HAL_IsIdle(&hservo)) {
 			g_poll_due = false;
@@ -758,10 +788,13 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	if (htim->Instance == TIM6) {
 		g_poll_due = true;
+		if (++g_tim6_div >= 2) {
+			g_tim6_div = 0;
+			g_imu_task_due = true;
+		}
 	}
 }
 /* USER CODE END 4 */

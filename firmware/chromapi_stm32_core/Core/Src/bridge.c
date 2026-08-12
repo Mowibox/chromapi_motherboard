@@ -7,13 +7,16 @@
 #include "sts3215_hal.h"
 #include "ina226.h"
 #include "bmi088.h"
+#include "mahony.h"
 
 extern STS3215_HAL_Handle_t hservo;
 extern AutoFox_INA226 gINA226;
 extern BMI088 gIMU;
+extern MahonyFilter_t g_mahony;
 extern volatile uint8_t g_reply_received;
 extern volatile uint8_t g_reply_data_len;
 extern volatile uint8_t g_reply_data[];
+extern volatile servo_txn_type_t g_servo_txn;
 
 #define BRIDGE_RX_BUF_SIZE 256
 #define BRIDGE_TX_BUF_SIZE 256
@@ -224,6 +227,13 @@ static void handle_cmd_feedback(void) {
 		g_robot_state.imu_acc[i]  = (int16_t)(gIMU.acc_mps2[i] * 100.0f);
 		g_robot_state.imu_gyro[i] = (int16_t)(gIMU.gyr_rps[i]  * 1000.0f);
 	}
+	float q[4] = {g_mahony.q0, g_mahony.q1, g_mahony.q2, g_mahony.q3};
+	for (uint8_t i = 0; i < 4; i++) {
+		int32_t raw = (int32_t)(q[i] * 32767.0f);
+		if (raw > 32767) raw = 32767;
+		if (raw < -32768) raw = -32768;
+		g_robot_state.imu_quat[i] = (int16_t)raw;
+	}
 
 	uint8_t tl = (HAL_GPIO_ReadPin(GPIOF, GPIO_PIN_0) == GPIO_PIN_RESET) ? 0 : 1;
 	uint8_t tr = (HAL_GPIO_ReadPin(GPIOF, GPIO_PIN_1) == GPIO_PIN_RESET) ? 0 : 1;
@@ -252,7 +262,6 @@ static bool wait_servo_idle(STS3215_HAL_Handle_t *h, uint32_t timeout_ms)
 	return (h->last_error == STS3215_HAL_ERR_NONE);
 }
 
-extern volatile servo_txn_type_t g_servo_txn;
 
 static bool wait_servo_bus_idle(uint32_t timeout_ms)
 {

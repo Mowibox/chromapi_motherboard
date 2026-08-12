@@ -49,6 +49,7 @@ typedef struct __attribute__((packed)) {
 
 	int16_t imu_acc[3];
 	int16_t imu_gyro[3];
+	int16_t imu_quat[4];
 
 	uint8_t switches_mask;
 } RobotFeedback_t;
