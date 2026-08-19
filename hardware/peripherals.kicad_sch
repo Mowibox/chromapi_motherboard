@@ -11638,7 +11638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06c656ee-7d5c-416e-8913-7ad8f628da8d")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR083"
 			(at 184.15 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -11699,7 +11699,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR089")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -11794,17 +11794,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 256.54 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 256.54 109.22 0)
 			(hide yes)
@@ -11876,7 +11865,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0dfcb840-548a-403f-bf1f-0d291b9dc767")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR072"
 			(at 214.63 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11937,7 +11926,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR078")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -11954,7 +11943,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "14d375d9-fc8a-4ae4-b3eb-ae7f9d87cbc9")
-		(property "Reference" "#PWR0102"
+		(property "Reference" "#PWR096"
 			(at 25.4 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -12016,7 +12005,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR0102")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -12034,7 +12023,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1667bdbf-b73c-4bee-b93e-9542a42a52e3")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR079"
 			(at 184.15 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -12094,7 +12083,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR085")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -12112,7 +12101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "17fe9b7f-fbec-4187-ba05-242d94326d70")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR074"
 			(at 48.26 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -12173,7 +12162,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR080")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -12301,6 +12290,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "-90"
+			(at 214.63 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "5"
 			(uuid "72309d41-a150-4f90-8ab1-1ae31a2a3f11")
 		)
@@ -12340,7 +12340,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a39419c-35db-4931-93d2-357863bc6dc4")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR091"
 			(at 39.37 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -12400,7 +12400,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR097")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -12418,7 +12418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ad4c921-5afa-4503-bd5e-2e5422784e32")
-		(property "Reference" "C40"
+		(property "Reference" "C39"
 			(at 29.21 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12495,17 +12495,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 25.4 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 25.4 152.4 0)
 			(hide yes)
@@ -12517,7 +12506,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 25.4 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -12561,6 +12550,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part #" "C14663"
+			(at 25.4 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f9c712fe-86aa-49b6-ad30-e40b92d0afca")
 		)
@@ -12570,7 +12570,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "C40")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -12588,7 +12588,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b16ccc0-1338-4e0c-9a6c-d82be03ff449")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR082"
 			(at 171.45 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -12649,7 +12649,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR088")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -12667,7 +12667,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23d5854d-ed23-4b4f-b6df-d36d7189d6cb")
-		(property "Reference" "C35"
+		(property "Reference" "C34"
 			(at 111.76 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12734,17 +12734,6 @@
 			)
 		)
 		(property "License" ""
-			(at 107.95 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
 			(at 107.95 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -12830,7 +12819,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "C35")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -12854,7 +12843,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "275c2784-b7a1-4ee4-aae8-8a697a4a0946")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR085"
 			(at 247.65 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -12915,7 +12904,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR091")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -12933,7 +12922,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28dfbb42-91e3-4245-979d-b0d194833b0d")
-		(property "Reference" "C39"
+		(property "Reference" "C38"
 			(at 238.76 146.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13010,17 +12999,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 234.95 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 234.95 147.32 0)
 			(hide yes)
@@ -13032,7 +13010,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 234.95 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -13076,6 +13054,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part #" "C14663"
+			(at 234.95 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "27c07868-5a6c-40ec-a6df-156acda8c8b4")
 		)
@@ -13085,7 +13074,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "C39")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -13103,7 +13092,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ca16892-87b9-4084-956a-ad791df201b3")
-		(property "Reference" "R32"
+		(property "Reference" "R30"
 			(at 231.14 57.1499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13180,17 +13169,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 228.6 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 228.6 58.42 0)
 			(hide yes)
@@ -13202,7 +13180,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0603WAF1003T5E"
 			(at 228.6 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -13213,7 +13191,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" ""
+		(property "JLCPCB Part #" "C25803"
 			(at 228.6 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -13266,7 +13244,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "R32")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -13284,7 +13262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "362e580d-40ca-4257-917b-358710db0cf4")
-		(property "Reference" "C31"
+		(property "Reference" "C30"
 			(at 44.45 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13361,17 +13339,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 40.64 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 40.64 35.56 0)
 			(hide yes)
@@ -13383,7 +13350,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A106MQFNNNE"
+		(property "MPN" "CL21A106KAYNNNE"
 			(at 40.64 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -13394,7 +13361,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C15499"
+		(property "JLCPCB Part #" "C15850"
 			(at 40.64 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -13447,7 +13414,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "C31")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -13471,7 +13438,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3953d5da-eb2d-471c-9c9a-4c75dfdbdb38")
-		(property "Reference" "R35"
+		(property "Reference" "R33"
 			(at 250.19 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13548,17 +13515,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 247.65 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 247.65 102.87 0)
 			(hide yes)
@@ -13570,7 +13526,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 247.65 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -13581,7 +13537,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 247.65 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -13634,7 +13590,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "R35")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -13652,7 +13608,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ac954fb-a3a4-40e8-b1b3-02e4e4f7cf34")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR078"
 			(at 107.95 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -13713,7 +13669,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR084")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -13737,7 +13693,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4184d468-0c0c-42df-b450-7141fee56706")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR067"
 			(at 214.63 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -13797,7 +13753,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR071")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -13815,7 +13771,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4238ec7c-9c4f-4551-b284-c5c162ccf492")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR094"
 			(at 234.95 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -13876,7 +13832,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR0100")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -13894,7 +13850,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "452bcba6-d4d3-46d1-8a78-ab9f3c960451")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR092"
 			(at 171.45 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -13955,7 +13911,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR098")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -14094,6 +14050,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "-90"
+			(at 62.23 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "bf7d0b98-d188-473a-8796-e89b6352927f")
 		)
@@ -14172,7 +14139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4d6d4187-07b3-4320-bbcf-f0000608184c")
-		(property "Reference" "R33"
+		(property "Reference" "R31"
 			(at 36.83 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14247,17 +14214,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 36.83 59.69 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 36.83 59.69 90)
 			(hide yes)
@@ -14269,7 +14225,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0402FR-071ML"
+		(property "MPN" "0402WGF1004TCE"
 			(at 36.83 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -14280,7 +14236,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C138033"
+		(property "JLCPCB Part #" "C26083"
 			(at 36.83 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -14333,7 +14289,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "R33")
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -14357,7 +14313,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52d86ff4-f881-4922-bc00-c2d0bfd3fc35")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR081"
 			(at 77.47 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -14417,7 +14373,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR087")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -14435,7 +14391,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6894f6f6-8913-4d90-86a9-5f26bfbee5fa")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR090"
 			(at 25.4 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -14495,7 +14451,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR096")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -14590,17 +14546,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 193.04 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 193.04 143.51 0)
 			(hide yes)
@@ -14672,7 +14617,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bc31787-aa04-43c1-af7c-4fd8b5f0ff23")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR075"
 			(at 59.69 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -14733,7 +14678,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR081")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -14878,6 +14823,17 @@
 				)
 			)
 		)
+		(property "FT Rotation Offset" "-180"
+			(at 80.01 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "bcf77c5f-2f96-4878-9017-9a08a55d77d3")
 		)
@@ -14947,7 +14903,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7856745e-77e0-47a1-be1b-e623fbeef40e")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR089"
 			(at 80.01 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -15008,7 +14964,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR095")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -15026,7 +14982,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a7ea8ff-e2df-4ef1-8c65-ac0ad8407f4a")
-		(property "Reference" "R36"
+		(property "Reference" "R34"
 			(at 186.69 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15103,17 +15059,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 184.15 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 184.15 137.16 0)
 			(hide yes)
@@ -15125,7 +15070,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 184.15 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -15136,7 +15081,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 184.15 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -15189,7 +15134,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "R36")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -15207,7 +15152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "814496f9-26fb-4dae-a49b-3c5848e83180")
-		(property "Reference" "C34"
+		(property "Reference" "C33"
 			(at 97.79 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15274,17 +15219,6 @@
 			)
 		)
 		(property "License" ""
-			(at 93.98 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
 			(at 93.98 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -15370,7 +15304,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "C34")
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -15394,7 +15328,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81990949-e797-4e61-bc19-a46c3d81a848")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR065"
 			(at 29.21 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -15454,7 +15388,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR072")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -15478,7 +15412,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84ee1bed-f957-4740-80dd-2f9a70dc6557")
-		(property "Reference" "R34"
+		(property "Reference" "R32"
 			(at 186.69 101.5999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15555,17 +15489,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 184.15 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 184.15 102.87 0)
 			(hide yes)
@@ -15577,7 +15500,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 184.15 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -15588,7 +15511,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 184.15 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -15641,7 +15564,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "R34")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -15659,7 +15582,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85c7ed57-605f-46e1-87df-e671938ed232")
-		(property "Reference" "C37"
+		(property "Reference" "C36"
 			(at 238.76 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15736,17 +15659,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 234.95 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 234.95 113.03 0)
 			(hide yes)
@@ -15758,7 +15670,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 234.95 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -15802,6 +15714,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part #" "C14663"
+			(at 234.95 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7e131d71-8c05-462b-9678-71716d8b4a7e")
 		)
@@ -15811,7 +15734,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "C37")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -15829,7 +15752,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89792b6f-92a5-4c69-bf08-80dd4ec8448a")
-		(property "Reference" "C36"
+		(property "Reference" "C35"
 			(at 175.26 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15906,17 +15829,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 171.45 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 171.45 113.03 0)
 			(hide yes)
@@ -15928,7 +15840,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 171.45 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -15972,6 +15884,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part #" "C14663"
+			(at 171.45 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5c726133-a861-485d-99ed-de8158c2cecd")
 		)
@@ -15981,7 +15904,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "C36")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -15999,7 +15922,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f76e426-6a99-4c06-9b38-878256db62e1")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR073"
 			(at 228.6 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -16060,7 +15983,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR079")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -16077,20 +16000,21 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "a1215cfb-98f9-44ca-b7ce-baf0581c24e9")
-		(property "Reference" "C33"
-			(at 204.47 36.8299 0)
+		(property "Reference" "C32"
+			(at 212.09 36.8299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "100nF"
-			(at 204.47 39.3699 0)
+			(at 212.09 39.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16098,7 +16022,7 @@
 					(size 1.27 1.27)
 					(thickness 0.1588)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
@@ -16156,17 +16080,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 208.28 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 208.28 38.1 0)
 			(hide yes)
@@ -16178,7 +16091,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 208.28 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -16222,6 +16135,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part #" "C14663"
+			(at 208.28 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b5c47cf6-af0c-4a71-847b-2e4cf21527eb")
 		)
@@ -16231,7 +16155,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "C33")
+					(reference "C32")
 					(unit 1)
 				)
 			)
@@ -16249,7 +16173,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2fe71ec-26ef-4a4d-9c74-c085c2e96f32")
-		(property "Reference" "C41"
+		(property "Reference" "C40"
 			(at 43.18 151.1299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16326,17 +16250,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 39.37 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 39.37 152.4 0)
 			(hide yes)
@@ -16348,7 +16261,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 39.37 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -16392,6 +16305,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part #" "C14663"
+			(at 39.37 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "55eaf6a0-90fd-4d15-8057-ba3fb126baf3")
 		)
@@ -16401,7 +16325,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "C41")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -16419,7 +16343,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a700bb87-1b4f-4915-9920-0e3622094f59")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR093"
 			(at 184.15 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -16480,7 +16404,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR099")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -16492,7 +16416,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -16601,7 +16525,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "af96eb2f-87ae-4c1c-be4b-1e307ea6954e")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR086"
 			(at 184.15 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -16661,7 +16585,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR092")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -16679,7 +16603,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3b539ee-f357-4cfd-a12d-e8065ce9882d")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR084"
 			(at 234.95 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -16740,7 +16664,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR090")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -16758,7 +16682,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6a63595-0846-4bf6-b702-5211e030f48a")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR095"
 			(at 247.65 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -16819,7 +16743,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR0101")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -16837,7 +16761,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bab244a6-e139-454b-a258-6d058419c88c")
-		(property "Reference" "C38"
+		(property "Reference" "C37"
 			(at 175.26 146.0499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16914,17 +16838,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 171.45 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 171.45 147.32 0)
 			(hide yes)
@@ -16936,7 +16849,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 171.45 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -16980,6 +16893,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part #" "C14663"
+			(at 171.45 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a2bd3540-d937-40ab-956e-583388cee102")
 		)
@@ -16989,7 +16913,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "C38")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -17084,17 +17008,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 193.04 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 193.04 109.22 0)
 			(hide yes)
@@ -17166,7 +17079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c16ea15a-a8ce-4584-adee-d34f1638a7f1")
-		(property "Reference" "C32"
+		(property "Reference" "C31"
 			(at 55.88 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17243,17 +17156,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 52.07 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 52.07 35.56 0)
 			(hide yes)
@@ -17265,7 +17167,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 52.07 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -17276,7 +17178,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 52.07 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -17329,7 +17231,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "C32")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -17353,7 +17255,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cffb07d8-5768-4b92-84a1-f9836a4488a0")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR077"
 			(at 93.98 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -17414,7 +17316,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR083")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -17438,7 +17340,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3dcddff-69aa-4e41-9ffe-d05c024b1c2a")
-		(property "Reference" "R37"
+		(property "Reference" "R35"
 			(at 250.19 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17515,17 +17417,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 247.65 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 247.65 137.16 0)
 			(hide yes)
@@ -17537,7 +17428,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW040210K0JNED"
+		(property "MPN" "0402WGF1002TCE"
 			(at 247.65 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -17548,7 +17439,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C191984"
+		(property "JLCPCB Part #" "C25744"
 			(at 247.65 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -17601,7 +17492,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "R37")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -17619,7 +17510,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e209cee5-edc9-4e2c-98d1-7cebc180ec51")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR071"
 			(at 199.39 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -17680,7 +17571,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR077")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -17698,7 +17589,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e43a4361-1467-4fda-86ce-299ceb620ea1")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR069"
 			(at 52.07 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -17759,7 +17650,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR075")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -17847,17 +17738,6 @@
 			)
 		)
 		(property "License" ""
-			(at 86.36 49.53 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
 			(at 86.36 49.53 90)
 			(hide yes)
 			(show_name no)
@@ -17967,7 +17847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7e9055e-0fb7-4fc5-bf32-b33bc35b5566")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR088"
 			(at 64.77 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -18028,7 +17908,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR094")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -18110,17 +17990,6 @@
 			)
 		)
 		(property "License" ""
-			(at 90.17 52.07 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
 			(at 90.17 52.07 90)
 			(hide yes)
 			(show_name no)
@@ -18229,7 +18098,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ec94ffba-b6e1-4ef8-a8ff-740ba1160232")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR087"
 			(at 247.65 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -18289,7 +18158,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR093")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -18307,7 +18176,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ecd966ab-ed88-4514-8080-eaa5eb04801a")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR066"
 			(at 40.64 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -18367,7 +18236,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR073")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -18390,7 +18259,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f011ccfd-359f-4e72-ae21-80cf0649b540")
-		(property "Reference" "#PWR0103"
+		(property "Reference" "#PWR097"
 			(at 39.37 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -18452,7 +18321,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR0103")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -18470,7 +18339,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1384f99-4492-486c-a253-20399fa4d7ba")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR076"
 			(at 64.77 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -18531,7 +18400,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR082")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -18549,7 +18418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2d8128f-cf7f-4966-893e-a2e0ce0210c9")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR070"
 			(at 208.28 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -18610,7 +18479,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR076")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -18628,7 +18497,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3b1819a-49ef-4311-8e75-fd98b665aa8a")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR080"
 			(at 247.65 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -18688,7 +18557,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR086")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -18706,7 +18575,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f5cb2996-4653-4cc2-a62a-d8475a93c7a0")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR068"
 			(at 40.64 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -18767,7 +18636,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c"
-					(reference "#PWR074")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -18868,17 +18737,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 256.54 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 256.54 143.51 0)
 			(hide yes)
@@ -18943,5 +18801,4 @@
 			(page "1")
 		)
 	)
-	(embedded_fonts no)
 )

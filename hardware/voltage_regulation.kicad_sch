@@ -2238,12 +2238,6 @@
 		(uuid "3c446b74-b62b-4ed7-b83d-5dfe1b708cb9")
 	)
 	(junction
-		(at 81.28 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3d108979-1f8e-40ed-a464-481aabd6e22b")
-	)
-	(junction
 		(at 77.47 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2274,10 +2268,16 @@
 		(uuid "5c30de17-fe77-4969-8556-28bbabfd82bc")
 	)
 	(junction
-		(at 111.76 121.92)
+		(at 240.03 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5dea029b-326b-4447-a483-c20edd3dcee3")
+		(uuid "6d8a3d63-5f2b-4747-8b43-c21953875156")
+	)
+	(junction
+		(at 233.68 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70636510-27d6-4f84-9e9f-5f3ef8d9fb3f")
 	)
 	(junction
 		(at 223.52 137.16)
@@ -2308,6 +2308,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8738346d-20c2-48a3-8c1f-ec40dee6099e")
+	)
+	(junction
+		(at 64.77 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "929777b4-5768-4fad-9355-2ed57e819fa5")
 	)
 	(junction
 		(at 224.79 58.42)
@@ -2344,12 +2350,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b336256e-66fa-49bd-bc37-d3ed7f1371e2")
-	)
-	(junction
-		(at 96.52 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bbefa3e2-3116-4531-bab9-a7cda1f2966c")
 	)
 	(junction
 		(at 187.96 48.26)
@@ -2517,7 +2517,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 132.08) (xy 81.28 135.89)
+			(xy 95.25 132.08) (xy 95.25 135.89)
 		)
 		(stroke
 			(width 0)
@@ -2587,16 +2587,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 118.11) (xy 96.52 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "442899a8-6954-4f70-8853-bbc44754140d")
-	)
-	(wire
-		(pts
 			(xy 177.8 135.89) (xy 177.8 140.97)
 		)
 		(stroke
@@ -2604,16 +2594,6 @@
 			(type default)
 		)
 		(uuid "46c483c5-9340-4054-8bbc-06b7b50848e4")
-	)
-	(wire
-		(pts
-			(xy 96.52 132.08) (xy 96.52 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4aa73686-9670-46d5-b2d4-72a489b65f09")
 	)
 	(wire
 		(pts
@@ -2644,16 +2624,6 @@
 			(type default)
 		)
 		(uuid "53cab9bf-43b1-4756-b443-9793e3a8b0b6")
-	)
-	(wire
-		(pts
-			(xy 96.52 143.51) (xy 96.52 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56031aa7-b69c-48a5-afb3-c1cfa3871361")
 	)
 	(wire
 		(pts
@@ -2847,16 +2817,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 143.51) (xy 111.76 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8680880d-a1b6-4787-ab37-f13d255190bf")
-	)
-	(wire
-		(pts
 			(xy 177.8 127) (xy 177.8 128.27)
 		)
 		(stroke
@@ -2917,7 +2877,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 143.51) (xy 81.28 147.32)
+			(xy 95.25 143.51) (xy 95.25 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3047,7 +3007,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 116.84) (xy 81.28 121.92)
+			(xy 95.25 118.11) (xy 95.25 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3074,36 +3034,6 @@
 			(type default)
 		)
 		(uuid "b70e1cc8-931e-4950-96b4-21f74f998a3a")
-	)
-	(wire
-		(pts
-			(xy 111.76 132.08) (xy 111.76 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba6f2a29-faff-4e65-a223-fba750c08393")
-	)
-	(wire
-		(pts
-			(xy 96.52 121.92) (xy 96.52 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bad05b84-a295-467d-9f55-b45283397b8d")
-	)
-	(wire
-		(pts
-			(xy 81.28 121.92) (xy 81.28 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd154d4e-b9f8-488c-9023-48c1199bd156")
 	)
 	(wire
 		(pts
@@ -3434,26 +3364,6 @@
 			(type default)
 		)
 		(uuid "fe2b509a-1055-4b78-b118-222659987825")
-	)
-	(wire
-		(pts
-			(xy 111.76 118.11) (xy 111.76 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe552abb-ec9f-45df-8a7d-611a5ed3790a")
-	)
-	(wire
-		(pts
-			(xy 111.76 121.92) (xy 111.76 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff0bdd40-b6c9-41db-8655-b5322274ee27")
 	)
 	(image
 		(at 275.59 173.99)
@@ -11703,17 +11613,6 @@
 	)
 	(hierarchical_label "V_SYS"
 		(shape input)
-		(at 81.28 116.84 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "402d11d0-73a8-44dd-87a3-84571804047e")
-	)
-	(hierarchical_label "V_SYS"
-		(shape input)
 		(at 62.23 43.18 180)
 		(effects
 			(font
@@ -11733,6 +11632,149 @@
 			(justify right)
 		)
 		(uuid "e9176a39-6133-4e97-ac25-7c64fafbc393")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 233.68 127 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "04df926f-9d5b-44a0-9ef1-3a0e4db11096")
+		(property "Reference" "TP3"
+			(at 236.982 121.92 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TP_3V3"
+			(at 238.506 124.46 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 233.68 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 233.68 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Author" ""
+			(at 233.68 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "License" ""
+			(at 233.68 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 233.68 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 233.68 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 233.68 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 233.68 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b158dfa-0f8c-494e-a696-546259865abe")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:L")
@@ -11882,7 +11924,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 81.28 147.32 0)
+		(at 95.25 148.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11892,8 +11934,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14133420-a77e-4bdc-b837-85d43575844b")
-		(property "Reference" "#PWR030"
-			(at 81.28 153.67 0)
+		(property "Reference" "#PWR029"
+			(at 95.25 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11904,7 +11946,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 152.4 0)
+			(at 95.25 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11915,7 +11957,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 147.32 0)
+			(at 95.25 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11926,7 +11968,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 147.32 0)
+			(at 95.25 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11937,7 +11979,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 147.32 0)
+			(at 95.25 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11953,7 +11995,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR030")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -12050,7 +12092,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18bf3a7e-2ce3-4b71-8761-aafc53a4c4fd")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR027"
 			(at 177.8 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -12111,7 +12153,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR028")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -12284,17 +12326,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 83.82 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 83.82 49.53 0)
 			(hide yes)
@@ -12306,7 +12337,7 @@
 				)
 			)
 		)
-		(property "MPN" "C3216X5R1V226M160AC"
+		(property "MPN" "CL31A226KAHNNNE"
 			(at 83.82 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12317,7 +12348,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C69612"
+		(property "JLCPCB Part #" "C12891"
 			(at 83.82 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -12377,186 +12408,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 111.76 128.27 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2d22342b-8738-43a2-9b38-ee0f08eea029")
-		(property "Reference" "R24"
-			(at 105.918 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1k"
-			(at 105.918 129.286 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 113.538 128.27 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW06031K00JNEAC"
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part #" "C844135"
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 111.76 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4eae1afc-9233-48c5-8f57-20fb3a76ea32")
-		)
-		(pin "2"
-			(uuid "23c915bc-5716-454b-8a05-dfc74781cd51")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 223.52 140.97 0)
 		(unit 1)
@@ -12568,7 +12419,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "341d2c78-4493-414e-bc30-fbb1753b23b8")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR028"
 			(at 223.52 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -12629,7 +12480,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR029")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -12711,17 +12562,6 @@
 			)
 		)
 		(property "License" ""
-			(at 68.58 74.93 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
 			(at 68.58 74.93 90)
 			(hide yes)
 			(show_name no)
@@ -12901,17 +12741,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 77.47 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 77.47 82.55 0)
 			(hide yes)
@@ -13079,17 +12908,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 182.88 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 182.88 60.96 90)
 			(hide yes)
@@ -13173,7 +12991,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 81.28 128.27 180)
+		(at 95.25 128.27 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13183,7 +13001,7 @@
 		(dnp no)
 		(uuid "41cdb28f-244e-4205-9ac4-582e3217e948")
 		(property "Reference" "R22"
-			(at 75.438 127 0)
+			(at 89.154 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13194,7 +13012,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 75.184 129.286 0)
+			(at 89.154 129.286 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13205,7 +13023,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 83.058 128.27 90)
+			(at 97.028 128.27 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13216,7 +13034,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 128.27 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13227,7 +13045,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 81.28 128.27 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13238,7 +13056,7 @@
 			)
 		)
 		(property "Author" ""
-			(at 81.28 128.27 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13249,18 +13067,7 @@
 			)
 		)
 		(property "License" ""
-			(at 81.28 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 81.28 128.27 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13271,7 +13078,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 81.28 128.27 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13281,8 +13088,8 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06031K00JNEAC"
-			(at 81.28 128.27 0)
+		(property "MPN" "0603WAF1001T5E"
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13292,8 +13099,8 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" ""
-			(at 81.28 128.27 0)
+		(property "JLCPCB Part #" "C21190"
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13304,7 +13111,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 81.28 128.27 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13315,7 +13122,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 81.28 128.27 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13326,7 +13133,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 81.28 128.27 0)
+			(at 95.25 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13346,186 +13153,6 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
 					(reference "R22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 96.52 128.27 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "47d9f01f-4644-4ceb-aaf7-338a624a1b53")
-		(property "Reference" "R23"
-			(at 90.678 127 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1k"
-			(at 92.202 129.286 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 98.298 128.27 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW06031K00JNEAC"
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part #" "C844135"
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 96.52 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "71dbbe13-febe-454e-9fba-c1fbf1675ee5")
-		)
-		(pin "2"
-			(uuid "6523b590-fbd4-45f3-8d5f-0c8b20bf82dd")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -13701,18 +13328,6 @@
 			)
 		)
 		(property "Description_1" "Linear Voltage Regulator IC Positive Fixed 1 Output  500mA 6-DFN (3x3)"
-			(at 201.93 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PACKAGE" "DFN-6 STMicroelectronics"
 			(at 201.93 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -13990,17 +13605,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 209.55 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 209.55 53.34 0)
 			(hide yes)
@@ -14077,181 +13681,6 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
 					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 96.52 121.92 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "512e1d8a-ad25-4231-9d57-7e7d422cabff")
-		(property "Reference" "TP3"
-			(at 93.218 116.84 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TP_5V"
-			(at 92.202 119.38 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 96.52 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 96.52 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 96.52 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 96.52 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 96.52 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 96.52 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 96.52 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part #" ""
-			(at 96.52 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 96.52 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 96.52 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 96.52 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ba4543bc-ed96-44c1-808f-a307544bc00f")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -14336,17 +13765,6 @@
 			)
 		)
 		(property "License" ""
-			(at 200.66 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
 			(at 200.66 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -14526,17 +13944,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 177.8 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 177.8 132.08 0)
 			(hide yes)
@@ -14619,8 +14026,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 111.76 139.7 90)
+		(lib_id "power:+3.3V")
+		(at 95.25 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14629,31 +14036,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "62aa52fc-8ffd-4e55-9c7f-ea3f9f3b0a34")
-		(property "Reference" "D7"
-			(at 115.57 140.0174 90)
+		(uuid "5d454ad0-7089-49f0-ad9f-7483b0face37")
+		(property "Reference" "#PWR024"
+			(at 95.25 121.92 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "3V3_LED"
-			(at 115.57 142.5574 90)
+		(property "Value" "+3.3V"
+			(at 95.25 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 111.76 139.7 0)
+		(property "Footprint" ""
+			(at 95.25 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14664,7 +14070,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 139.7 0)
+			(at 95.25 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14674,8 +14080,8 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode (Blue)"
-			(at 111.76 139.7 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 95.25 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14684,72 +14090,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "MPN" "150060BS55040"
-			(at 111.76 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part #" "C6650185"
-			(at 111.76 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 111.76 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 111.76 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 111.76 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "41c6a721-3b33-4991-ace7-947d93598178")
 		)
 		(pin "1"
-			(uuid "7fb0c796-f212-4fe2-b927-64375ce1fd83")
+			(uuid "4255c27f-3a29-4892-9e49-d794f032d31a")
 		)
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "D7")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -14844,17 +14192,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 200.66 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 200.66 54.61 0)
 			(hide yes)
@@ -14866,7 +14203,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "0603WAF0000T5E"
 			(at 200.66 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -14877,7 +14214,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844915"
+		(property "JLCPCB Part #" "C21189"
 			(at 200.66 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -15022,17 +14359,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 160.02 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 160.02 43.18 90)
 			(hide yes)
@@ -15044,7 +14370,7 @@
 				)
 			)
 		)
-		(property "MPN" "CRCW06030000Z0EA"
+		(property "MPN" "0603WAF0000T5E"
 			(at 160.02 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -15055,7 +14381,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844915"
+		(property "JLCPCB Part #" "C21189"
 			(at 160.02 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -15271,17 +14597,6 @@
 			)
 		)
 		(property "License" ""
-			(at 110.49 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
 			(at 110.49 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -15555,181 +14870,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 81.28 121.92 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "90c1a336-b89c-4e00-9eed-6af7fc3cfdd2")
-		(property "Reference" "TP2"
-			(at 77.978 116.84 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TP_BATT"
-			(at 75.946 119.38 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 81.28 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 81.28 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 81.28 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 81.28 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 81.28 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 81.28 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" ""
-			(at 81.28 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part #" ""
-			(at 81.28 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 81.28 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 81.28 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 81.28 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "57048c8e-5928-4be5-8a16-d5c40cab9c51")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 200.66 82.55 0)
 		(unit 1)
@@ -15803,143 +14943,6 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
 					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 96.52 139.7 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "947bd5ed-5e45-4aca-b359-c2a5a63ff688")
-		(property "Reference" "D6"
-			(at 100.33 140.0174 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "5V_LED"
-			(at 100.33 142.5574 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 96.52 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode (Green)"
-			(at 96.52 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "150060GS55040"
-			(at 96.52 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB Part #" "C6041957"
-			(at 96.52 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 96.52 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 96.52 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 96.52 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7331ab6d-4cbb-44f9-886b-441f11b8bd6b")
-		)
-		(pin "1"
-			(uuid "dcac7c12-cf6f-4142-ae19-79db03d38888")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -16033,17 +15036,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 77.47 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 77.47 49.53 0)
 			(hide yes)
@@ -16055,7 +15047,7 @@
 				)
 			)
 		)
-		(property "MPN" "C3216X5R1V226M160AC"
+		(property "MPN" "CL31A226KAHNNNE"
 			(at 77.47 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -16066,7 +15058,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C69612"
+		(property "JLCPCB Part #" "C12891"
 			(at 77.47 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -16120,238 +15112,6 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
 					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 111.76 121.92 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9b425934-dac5-4aff-8494-1b486fccd301")
-		(property "Reference" "TP4"
-			(at 108.458 116.84 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TP_3V3"
-			(at 106.934 119.38 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-			(at 111.76 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 111.76 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Author" ""
-			(at 111.76 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "License" ""
-			(at 111.76 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 111.76 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MP" ""
-			(at 111.76 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 111.76 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 111.76 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PARTREV" ""
-			(at 111.76 121.92 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b6a16ae1-353f-4d85-8d68-395d077bcae5")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 111.76 147.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9c7428da-691f-44e3-9534-4b0546383051")
-		(property "Reference" "#PWR032"
-			(at 111.76 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 111.76 152.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "32fb127a-c8bc-477c-a249-651b58aabc28")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -16446,17 +15206,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 200.66 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 200.66 66.04 0)
 			(hide yes)
@@ -16468,7 +15217,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0603FR-07137KL"
+		(property "MPN" "0603WAF1373T5E"
 			(at 200.66 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -16479,7 +15228,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C137797"
+		(property "JLCPCB Part #" "C22872"
 			(at 200.66 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -16550,7 +15299,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9e75973-bc80-44aa-8362-3cda4327f80d")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR026"
 			(at 233.68 127 0)
 			(hide yes)
 			(show_name no)
@@ -16610,7 +15359,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR027")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -16774,17 +15523,6 @@
 			)
 		)
 		(property "License" ""
-			(at 223.52 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
 			(at 223.52 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -16964,17 +15702,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 217.17 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 217.17 53.34 0)
 			(hide yes)
@@ -17144,17 +15871,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 90.17 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 90.17 49.53 0)
 			(hide yes)
@@ -17166,7 +15882,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL10B104KB8NNNC"
+		(property "MPN" "CC0603KRX7R9BB104"
 			(at 90.17 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -17177,7 +15893,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 90.17 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -17231,6 +15947,171 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 240.03 48.26 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0c0eb61-1c32-4b70-b9aa-31e44e6d5c7e")
+		(property "Reference" "TP1"
+			(at 243.332 43.18 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TP_5V"
+			(at 244.348 45.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 240.03 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 240.03 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Author" ""
+			(at 240.03 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "License" ""
+			(at 240.03 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 240.03 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 240.03 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 240.03 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 240.03 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 240.03 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 240.03 48.26 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7392809d-05e3-4985-80fb-29ab92b9dfc1")
+		)
+		(instances
+			(project "chromapi_motherboard_v1"
+				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -17314,17 +16195,6 @@
 			)
 		)
 		(property "License" ""
-			(at 232.41 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
 			(at 232.41 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -17428,7 +16298,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b48df8bf-d484-4329-a7ab-29f3d55b03ce")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR025"
 			(at 167.64 127 0)
 			(hide yes)
 			(show_name no)
@@ -17488,7 +16358,7 @@
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR026")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -17573,86 +16443,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 111.76 118.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9af73d7-c421-4185-99f8-b6cf67fb2a5f")
-		(property "Reference" "#PWR025"
-			(at 111.76 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 111.76 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 111.76 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b87e186c-66eb-4eb2-a18b-17f95d3c63c2")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
-		(at 81.28 139.7 90)
+		(at 95.25 139.7 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17663,7 +16455,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba776cbf-b560-4e49-b5c8-88ac4e61f75e")
 		(property "Reference" "D5"
-			(at 85.09 140.0174 90)
+			(at 99.06 140.0174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17673,8 +16465,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BATT_LED"
-			(at 85.09 142.5574 90)
+		(property "Value" "ON_LED"
+			(at 99.06 142.5574 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17685,7 +16477,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 81.28 139.7 0)
+			(at 95.25 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17696,7 +16488,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 139.7 0)
+			(at 95.25 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17706,8 +16498,8 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode (Red)"
-			(at 81.28 139.7 0)
+		(property "Description" "Light emitting diode (Blue)"
+			(at 95.25 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17717,8 +16509,8 @@
 				)
 			)
 		)
-		(property "MPN" "150060SS55040"
-			(at 81.28 139.7 90)
+		(property "MPN" "KT-0603B"
+			(at 95.25 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17728,8 +16520,8 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C5478395"
-			(at 81.28 139.7 90)
+		(property "JLCPCB Part #" "C2288"
+			(at 95.25 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17740,7 +16532,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 81.28 139.7 90)
+			(at 95.25 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17751,7 +16543,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" ""
-			(at 81.28 139.7 90)
+			(at 95.25 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17762,7 +16554,7 @@
 			)
 		)
 		(property "PARTREV" ""
-			(at 81.28 139.7 90)
+			(at 95.25 139.7 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17782,84 +16574,6 @@
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 96.52 118.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be9ef2f4-493f-4927-878f-41b19661f2e1")
-		(property "Reference" "#PWR024"
-			(at 96.52 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 96.52 113.03 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 96.52 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 96.52 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9731a85d-aa2a-4f20-85e3-d2b033494e17")
-		)
-		(instances
-			(project "chromapi_motherboard_v1"
-				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -17951,17 +16665,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 168.91 43.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 168.91 43.18 90)
 			(hide yes)
@@ -17984,7 +16687,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C1591"
+		(property "JLCPCB Part #" "C14663"
 			(at 168.91 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -18123,20 +16826,18 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 96.52 147.32 0)
+		(lib_id "Connector:TestPoint")
+		(at 64.77 74.93 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d1da5d08-6491-4b52-8d7f-8633e0aa86e1")
-		(property "Reference" "#PWR031"
-			(at 96.52 153.67 0)
-			(hide yes)
+		(uuid "dcda9ccc-9ecb-48a0-9d4c-fc848414062c")
+		(property "Reference" "TP2"
+			(at 60.96 79.756 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18145,9 +16846,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 96.52 152.4 0)
-			(hide yes)
+		(property "Value" "TP_BATT"
+			(at 62.992 81.788 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18156,8 +16856,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 96.52 147.32 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 59.69 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18168,7 +16868,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 147.32 0)
+			(at 59.69 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18178,8 +16878,96 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 96.52 147.32 0)
+		(property "Description" "test point"
+			(at 64.77 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Author" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "License" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MP" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" ""
+			(at 64.77 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part #" ""
+			(at 64.77 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 64.77 74.93 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PARTREV" ""
+			(at 64.77 74.93 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18190,12 +16978,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "20df9752-15ab-4c77-8bc6-21fa5c6df783")
+			(uuid "f7148754-25c9-42f1-80fd-5421ff10558d")
 		)
 		(instances
 			(project "chromapi_motherboard_v1"
 				(path "/d1a31f26-03e0-43e1-89c1-031fe31befc5/19a2634a-eca3-4c2c-b35f-9c69362f2888"
-					(reference "#PWR031")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -18288,17 +17076,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 172.72 60.96 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 172.72 60.96 90)
 			(hide yes)
@@ -18310,7 +17087,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0603WAF1001T5E"
 			(at 172.72 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -18321,7 +17098,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C844135"
+		(property "JLCPCB Part #" "C21190"
 			(at 172.72 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -18468,17 +17245,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 71.12 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 71.12 49.53 0)
 			(hide yes)
@@ -18490,7 +17256,7 @@
 				)
 			)
 		)
-		(property "MPN" "C3216X5R1V226M160AC"
+		(property "MPN" "CL31A226KAHNNNE"
 			(at 71.12 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -18501,7 +17267,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C69612"
+		(property "JLCPCB Part #" "C12891"
 			(at 71.12 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -18648,17 +17414,6 @@
 				)
 			)
 		)
-		(property "Manufacturer" ""
-			(at 100.33 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "MP" ""
 			(at 100.33 50.8 0)
 			(hide yes)
@@ -18670,7 +17425,7 @@
 				)
 			)
 		)
-		(property "MPN" "GRM188R71A225KE15J"
+		(property "MPN" "CL10A225KO8NNNC"
 			(at 100.33 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -18681,7 +17436,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C2167658"
+		(property "JLCPCB Part #" "C23630"
 			(at 100.33 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -18897,17 +17652,6 @@
 			)
 		)
 		(property "License" ""
-			(at 224.79 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" ""
 			(at 224.79 53.34 0)
 			(hide yes)
 			(show_name no)

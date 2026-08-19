@@ -53,18 +53,19 @@ static STS3215_HAL_Handle_t *s_instance = NULL;
  * @brief Parse all expected reply frames from the RX buffer.
  * Called from IRQ context (RxEventCallback).
  */
-static void prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
+static uint8_t prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
 {
-	uint16_t offset  = 0U;
+	uint16_t offset  = hservo->rx_consumed_len;
 	uint8_t  parsed  = 0U;
+	uint8_t  budget  = (uint8_t)(hservo->expected_replies - hservo->replies_parsed);
 
-	while ((parsed < hservo->expected_replies) && (offset < buf_len)) {
+	while ((parsed < budget) && (offset < buf_len)) {
 
 		uint16_t remaining = buf_len - offset;
 		STS3215_Reply_t reply;
 
 		STS3215_Status_t status = STS3215_ParseReply(
-				&hservo->rx_buf[offset],
+				&hservo->rx_accum[offset],
 				remaining,
 				&reply
 		);
@@ -78,12 +79,17 @@ static void prv_parse_rx_buffer(STS3215_HAL_Handle_t *hservo, uint16_t buf_len)
 			parsed++;
 
 		} else {
+			if (status == STS3215_ERR_FRAME_SHORT || remaining < 6U) {
+				break;
+			}
 			if (hservo->on_error != NULL) {
 				hservo->on_error(STS3215_HAL_ERR_PARSE, hservo->user_ctx);
 			}
 			break;
 		}
 	}
+	hservo->rx_consumed_len = offset;
+	return parsed;
 }
 
 /* =========================================================================
@@ -103,8 +109,9 @@ void STS3215_HAL_Init(STS3215_HAL_Handle_t *hservo,
 
 	hservo->huart = huart;
 	hservo->reply_timeout_ms = (reply_timeout_ms > 0U)
-                                				 ? reply_timeout_ms
-                                						 : STS3215_HAL_REPLY_TIMEOUT_MS;
+                                								 ? reply_timeout_ms
+                                										 : STS3215_HAL_REPLY_TIMEOUT_MS;
+	hservo->tx_timeout_ms = STS3215_HAL_TX_TIMEOUT_MS;
 	hservo->on_reply = on_reply;
 	hservo->on_error  = on_error;
 	hservo->user_ctx = user_ctx;
@@ -140,11 +147,12 @@ STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
 
 	hservo->is_broadcast = is_broadcast;
 	hservo->expected_replies  = (is_broadcast ? 0U : expected_replies);
+	hservo->replies_parsed = 0U;
+	hservo->rx_accum_len = 0U;
+	hservo->rx_consumed_len = 0U;
 	hservo->state = STS3215_HAL_STATE_TX_BUSY;
+	hservo->tx_start_ms = HAL_GetTick();
 
-	// [CORRECTION CRITIQUE : Armement anticipé du DMA RX]
-	// Puisque le buffer U8 coupe l'écho et que le Pull-Up assure le silence,
-	// on prépare le terrain de réception AVANT de tirer la trame.
 	if (!is_broadcast && expected_replies > 0) {
 		memset(hservo->rx_buf, 0, STS3215_HAL_RX_BUF_SIZE);
 		hservo->rx_received_len = 0U;
@@ -152,6 +160,7 @@ STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
 		__HAL_UART_CLEAR_OREFLAG(hservo->huart);
 
 		HAL_UARTEx_ReceiveToIdle_DMA(hservo->huart, hservo->rx_buf, STS3215_HAL_RX_BUF_SIZE);
+		__HAL_DMA_DISABLE_IT(hservo->huart->hdmarx, DMA_IT_HT);
 	}
 
 	HAL_StatusTypeDef status = HAL_UART_Transmit_DMA(
@@ -179,10 +188,26 @@ STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
 void STS3215_HAL_Process(STS3215_HAL_Handle_t *hservo)
 {
 	if (hservo == NULL) { return; }
+	if (hservo->state == STS3215_HAL_STATE_TX_BUSY) {
+		uint32_t elapsed = HAL_GetTick() - hservo->tx_start_ms;
+		if (elapsed >= hservo->tx_timeout_ms) {
+			HAL_UART_DMAStop(hservo->huart);
+			__HAL_UART_FLUSH_DRREGISTER(hservo->huart);
+
+			hservo->last_error = STS3215_HAL_ERR_TX_TIMEOUT;
+			hservo->state      = STS3215_HAL_STATE_IDLE;
+
+			if (hservo->on_error != NULL) {
+				hservo->on_error(STS3215_HAL_ERR_TX_TIMEOUT, hservo->user_ctx);
+			}
+		}
+		return;
+
+	}
+
 	if (hservo->state == STS3215_HAL_STATE_RX_BUSY) {
 		uint32_t elapsed = HAL_GetTick() - hservo->tx_timestamp_ms;
 		if (elapsed >= hservo->reply_timeout_ms) {
-			/* Stop the RX DMA cleanly */
 			HAL_UART_DMAStop(hservo->huart);
 			__HAL_UART_FLUSH_DRREGISTER(hservo->huart);
 
@@ -253,11 +278,26 @@ void STS3215_HAL_RxEventCallback(STS3215_HAL_Handle_t *hservo, uint16_t size)
 		return;
 	}
 
-	hservo->rx_received_len = size;
+	if ((uint32_t)hservo->rx_accum_len + size <= (uint32_t)STS3215_HAL_RX_BUF_SIZE) {
+		memcpy(&hservo->rx_accum[hservo->rx_accum_len], hservo->rx_buf, size);
+		hservo->rx_accum_len += size;
+	} else {
+		hservo->last_error = STS3215_HAL_ERR_PARSE;
+		hservo->replies_parsed = hservo->expected_replies;
+	}
 
-	prv_parse_rx_buffer(hservo, size);
+	hservo->rx_received_len = hservo->rx_accum_len;
 
-	hservo->state = STS3215_HAL_STATE_IDLE;
+	uint16_t newly_parsed = prv_parse_rx_buffer(hservo, hservo->rx_accum_len);
+	hservo->replies_parsed += newly_parsed;
+
+	if (hservo->replies_parsed >= hservo->expected_replies) {
+		hservo->state = STS3215_HAL_STATE_IDLE;
+	} else {
+		memset(hservo->rx_buf, 0, STS3215_HAL_RX_BUF_SIZE);
+		HAL_UARTEx_ReceiveToIdle_DMA(hservo->huart, hservo->rx_buf, STS3215_HAL_RX_BUF_SIZE);
+		__HAL_DMA_DISABLE_IT(hservo->huart->hdmarx, DMA_IT_HT);
+	}
 }
 
 /**
@@ -272,8 +312,8 @@ void STS3215_HAL_ErrorCallback(STS3215_HAL_Handle_t *hservo)
 	__HAL_UART_FLUSH_DRREGISTER(hservo->huart);
 
 	STS3215_HAL_Error_t err = (hservo->state == STS3215_HAL_STATE_TX_BUSY)
-                            				   ? STS3215_HAL_ERR_DMA_TX
-                            						   : STS3215_HAL_ERR_DMA_RX;
+                            								   ? STS3215_HAL_ERR_DMA_TX
+                            										   : STS3215_HAL_ERR_DMA_RX;
 
 	hservo->last_error = err;
 	hservo->state      = STS3215_HAL_STATE_IDLE;

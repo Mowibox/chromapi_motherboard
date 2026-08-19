@@ -57,9 +57,9 @@ typedef struct {
  *
  */
 uint8_t BMI088_Init(BMI088 *imu,
-				 SPI_HandleTypeDef *spiHandle,
-				 GPIO_TypeDef *csAccPinBank, uint16_t csAccPin,
-				 GPIO_TypeDef *csGyrPinBank, uint16_t csGyrPin);
+		SPI_HandleTypeDef *spiHandle,
+		GPIO_TypeDef *csAccPinBank, uint16_t csAccPin,
+		GPIO_TypeDef *csGyrPinBank, uint16_t csGyrPin);
 
 /*
  *

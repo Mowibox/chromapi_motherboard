@@ -87,55 +87,55 @@ typedef enum {OK=0, FAIL=-1,
 		BusVoltageContinuous         = 6,
 		ShuntAndBusVoltageContinuous = 7}; //default
 
-		enum eAlertTrigger {ClearTriggers                = 0x0000, //default
-			ShuntVoltageOverLimit        = 0x8000,
-			ShuntVoltageUnderLimit       = 0x4000,
-			BusVoltageOverLimit          = 0x2000,
-			BusVoltageUnderLimit         = 0x1000,
-			PowerOverLimit               = 0x0800,
-			ConversionReady              = 0x0400};
+	enum eAlertTrigger {ClearTriggers                = 0x0000, //default
+		ShuntVoltageOverLimit        = 0x8000,
+		ShuntVoltageUnderLimit       = 0x4000,
+		BusVoltageOverLimit          = 0x2000,
+		BusVoltageUnderLimit         = 0x1000,
+		PowerOverLimit               = 0x0800,
+		ConversionReady              = 0x0400};
 
-		enum eAlertTriggerCause{
-			Unknown=0,
-			AlertFunctionFlag            = 0x10,
-			ConversionReadyFlag          = 0x08,
-			MathOverflowFlag             = 0x04,
-			AlertPolarityBit             = 0x02};
-		//=============================================================================
+	enum eAlertTriggerCause{
+		Unknown=0,
+		AlertFunctionFlag            = 0x10,
+		ConversionReadyFlag          = 0x08,
+		MathOverflowFlag             = 0x04,
+		AlertPolarityBit             = 0x02};
+	//=============================================================================
 
 
-		void AutoFox_INA226_Constructor(AutoFox_INA226*);
-		status AutoFox_INA226_CheckI2cAddress(uint8_t aI2C_Address);
+	void AutoFox_INA226_Constructor(AutoFox_INA226*);
+	status AutoFox_INA226_CheckI2cAddress(uint8_t aI2C_Address);
 
-		//Resets the INA226 and configures it according to the supplied parameters - should be called first.
-		//status AutoFox_INA226_Init(uint8_t aI2C_Address=0x40, double aShuntResistor_Ohms=0.1, double aMaxCurrent_Amps=3.2767);
-		status AutoFox_INA226_Init(AutoFox_INA226*,uint8_t aI2C_Address, double aShuntResistor_Ohms, double aMaxCurrent_Amps);
+	//Resets the INA226 and configures it according to the supplied parameters - should be called first.
+	//status AutoFox_INA226_Init(uint8_t aI2C_Address=0x40, double aShuntResistor_Ohms=0.1, double aMaxCurrent_Amps=3.2767);
+	status AutoFox_INA226_Init(AutoFox_INA226*,uint8_t aI2C_Address, double aShuntResistor_Ohms, double aMaxCurrent_Amps);
 
-		int32_t AutoFox_INA226_GetShuntVoltage_uV(AutoFox_INA226*);
-		int32_t AutoFox_INA226_GetBusVoltage_uV(AutoFox_INA226*);
-		int32_t AutoFox_INA226_GetCurrent_uA(AutoFox_INA226*);
-		int32_t AutoFox_INA226_GetPower_uW(AutoFox_INA226*);
+	int32_t AutoFox_INA226_GetShuntVoltage_uV(AutoFox_INA226*);
+	int32_t AutoFox_INA226_GetBusVoltage_uV(AutoFox_INA226*);
+	int32_t AutoFox_INA226_GetCurrent_uA(AutoFox_INA226*);
+	int32_t AutoFox_INA226_GetPower_uW(AutoFox_INA226*);
 
-		status AutoFox_INA226_SetOperatingMode(AutoFox_INA226*,enum eOperatingMode aOpMode);
-		status AutoFox_INA226_Hibernate(AutoFox_INA226*); //Enters a very low power mode, no voltage measurements
-		status AutoFox_INA226_Wakeup(AutoFox_INA226*);    //Wake-up and enter the last operating mode
+	status AutoFox_INA226_SetOperatingMode(AutoFox_INA226*,enum eOperatingMode aOpMode);
+	status AutoFox_INA226_Hibernate(AutoFox_INA226*); //Enters a very low power mode, no voltage measurements
+	status AutoFox_INA226_Wakeup(AutoFox_INA226*);    //Wake-up and enter the last operating mode
 
-		//The trigger value is in microwatts or microvolts, depending on the trigger
-		status AutoFox_INA226_ConfigureAlertPinTrigger(AutoFox_INA226*,enum eAlertTrigger aAlertTrigger, int32_t aValue, bool aLatching);
-		//status AutoFox_INA226_ResetAlertPin(AutoFox_INA226*);
-		status AutoFox_INA226_ResetAlertPin(AutoFox_INA226*,enum  eAlertTriggerCause* aAlertTriggerCause_p ); //provides feedback as to what caused the alert
+	//The trigger value is in microwatts or microvolts, depending on the trigger
+	status AutoFox_INA226_ConfigureAlertPinTrigger(AutoFox_INA226*,enum eAlertTrigger aAlertTrigger, int32_t aValue, bool aLatching);
+	//status AutoFox_INA226_ResetAlertPin(AutoFox_INA226*);
+	status AutoFox_INA226_ResetAlertPin(AutoFox_INA226*,enum  eAlertTriggerCause* aAlertTriggerCause_p ); //provides feedback as to what caused the alert
 
-		//The parameters for the two functions below are indices into the tables defined in the INA226 spec
-		//These tables are copied below for your information (caNumSamplesAveraged & caVoltageConvTimeMicroSecs)
-		status AutoFox_INA226_ConfigureVoltageConversionTime(AutoFox_INA226*,int aIndexToConversionTimeTable);
-		status AutoFox_INA226_ConfigureNumSampleAveraging(AutoFox_INA226*,int aIndexToSampleAverageTable);
-		status AutoFox_INA226_Debug_GetConfigRegister(AutoFox_INA226*,uint16_t* aConfigReg_p);
+	//The parameters for the two functions below are indices into the tables defined in the INA226 spec
+	//These tables are copied below for your information (caNumSamplesAveraged & caVoltageConvTimeMicroSecs)
+	status AutoFox_INA226_ConfigureVoltageConversionTime(AutoFox_INA226*,int aIndexToConversionTimeTable);
+	status AutoFox_INA226_ConfigureNumSampleAveraging(AutoFox_INA226*,int aIndexToSampleAverageTable);
+	status AutoFox_INA226_Debug_GetConfigRegister(AutoFox_INA226*,uint16_t* aConfigReg_p);
 
-		//Private functions
+	//Private functions
 
-		status AutoFox_INA226_WriteRegister(AutoFox_INA226*,uint8_t aRegister, uint16_t aValue);
-		status AutoFox_INA226_ReadRegister(AutoFox_INA226*,uint8_t aRegister, uint16_t* aValue_p);
-		status AutoFox_INA226_setupCalibration(AutoFox_INA226*,double aShuntResistor_Ohms, double aMaxCurrent_Amps);
+	status AutoFox_INA226_WriteRegister(AutoFox_INA226*,uint8_t aRegister, uint16_t aValue);
+	status AutoFox_INA226_ReadRegister(AutoFox_INA226*,uint8_t aRegister, uint16_t* aValue_p);
+	status AutoFox_INA226_setupCalibration(AutoFox_INA226*,double aShuntResistor_Ohms, double aMaxCurrent_Amps);
 
 
 

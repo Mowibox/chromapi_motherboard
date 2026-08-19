@@ -1,6 +1,6 @@
 # chromapi_motherboard
 
-This repo contains a dedicated control HAT designed to manage the high-speed motion, power distribution, and sensor integration required for the quadruped robot Chromapi.
+This repo contains a dedicated control HAT designed to manage the high-speed motion, power distribution, and sensor integration required for the quadruped robot [Chromapi](https://github.com/Mowibox/chromapi).
 
 ![Chromapi](https://custom-icon-badges.demolab.com/badge/Chromapi-motherboard-489648?logo=chromapi)
 ![KiCad](https://img.shields.io/badge/KiCad-10.0+-2849bf?logo=kicad)
@@ -10,7 +10,7 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 ![Stars](https://img.shields.io/github/stars/Mowibox/chromapi_motherboard?style=social)
 
 <p align="center">
-  <img alt="chromapi_motherboard" src="chromapi_motherboard.png"/>
+  <img alt="chromapi_motherboard" src="./assets/chromapi_motherboard.png"/>
 </p>
 
 *Designed with KiCAD 10.*
@@ -31,7 +31,7 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 | :--- | :--- | :--- | :--- |
 | **💻 Firmware** | STM32 low-level drivers and communication protocol. | [`/firmware`](./firmware) | *Coming Soon* |
 | **📐 Schematics** | PDF for hardware architecture | [`/hardware/schematic_pdf`](./hardware/schematic_pdf/chromapi_motherboard_v1.pdf) | **Available** |
-| **📦 Manufacturing** | Gerbers, Drill files, BOM, and CPL for assembly. | [`/hardware/production`]() | *Coming Soon* |
+| **📦 Manufacturing** | Gerbers, Drill files, BOM, and CPL for assembly. | [`/hardware/production`](./hardware/production/) | **Available** |
 
 ## Authors
 
@@ -39,6 +39,26 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 | :---: |
 | <img src="https://github.com/Mowibox.png" width="100"> |
 | [**Ousmane THIONGANE**](https://mowibox.github.io) |
+
+## Sponsors & Acknowledgements
+
+The hardware development of this board relies on the resources provided by the sponsors below.
+
+### PCBWay
+
+**[PCBWay](https://www.pcbway.com)** is a global manufacturer specializing in rapid prototyping and low-volume hardware production, offering advanced PCB fabrication, turnkey assembly, CNC machining, and 3D printing.
+
+<p align="center">
+  <a href="https://www.pcbway.com">
+    <img src="./assets/pcbway.png" width="250" alt="PCBWay">
+  </a>
+</p>
+
+For this project, I utilized their sponsored [PCB manufacturing](https://www.pcbway.com/orderonline.aspx) and [assembly](https://www.pcbway.fr/pcb-assembly.html) (PCBA) services. Beyond fast production, their engineering team excels at detailed file reviews by cross-checking design options, BOMs, and footprints to prevent errors early. Their reliable component sourcing and rigorous verification were of great help in building a high-quality prototype for the Chromapi's motherbard.
+
+---
+
+> Huge thanks to all the hardware folks who reviewed my schematics, or gave me layout tips. I really appreciate your time and support!
 
 ## Documentation
 

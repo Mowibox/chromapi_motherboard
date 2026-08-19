@@ -9,15 +9,16 @@
 #define BRIDGE_SYNC_2 0xAA
 
 typedef enum {
-	PING_BRIDGE    = 0x01,
-	SET_POSITIONS   = 0x02,
-	STATE_FEEDBACK  = 0x03,
-	PING_SERVO      = 0x04,
-	GET_SERVO_INFO  = 0x05,
-	SET_SERVO_ID    = 0x06,
-	SET_LED_COLOR   = 0x07,
-	GET_POWER       = 0x08,
-	WRITE_SERVO_REGISTER = 0x09,
+	PING_BRIDGE          = 0x01,
+	SET_POSITIONS        = 0x02,
+	STATE_FEEDBACK       = 0x03,
+	PING_SERVO           = 0x04,
+	GET_SERVO_INFO       = 0x05,
+	SET_SERVO_ID         = 0x06,
+	SET_LED_COLOR        = 0x07,
+	SET_LED_RING_BULK    = 0x08,
+	GET_POWER            = 0x09,
+	WRITE_SERVO_REGISTER = 0x0A,
 	READ_SERVO_REGISTER
 } Command;
 
@@ -27,6 +28,11 @@ typedef enum {
 	BRIDGE_POWER_READING   = 0x82,
 	BRIDGE_STATE_SNAPSHOT  = 0x83
 } Response;
+
+typedef enum {
+	LED_RING_ALL    = 0x01,  // r,g,b
+	LED_RING_SINGLE = 0x02,  // index,r,g,b
+} LedTarget;
 
 typedef struct __attribute__((packed)) {
 	int32_t bus_uV;
@@ -43,9 +49,16 @@ typedef struct __attribute__((packed)) {
 
 	int16_t imu_acc[3];
 	int16_t imu_gyro[3];
+	int16_t imu_quat[4];
 
 	uint8_t switches_mask;
 } RobotFeedback_t;
+
+typedef enum {
+	SERVO_TXN_NONE = 0,
+	SERVO_TXN_POLL,
+	SERVO_TXN_COMMAND,
+} servo_txn_type_t;
 
 extern RobotFeedback_t g_robot_state;
 
