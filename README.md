@@ -87,7 +87,7 @@ For this project, I utilized their sponsored [PCB manufacturing](https://www.pcb
 ```mermaid
 %%{init: {'themeVariables': {'edgeLabelBackground':'transparent'}}}%%
 flowchart TD
-    CHG[["USB-C charge<br/>CN3302"]] -.->|"charge → B+"| CELLS[("Battery<br/>18650 x2")]
+    CHG[["USB-C charge<br/>CN3302"]] -.->|"charge → B+ ≈ 7.2–8.4V"| CELLS[("Battery<br/>18650 x2")]
     CELLS -->|"B+/BM/B-"| HY["HY2120<br/>BMS protection"]
     HY -->|"B+"| SW[["Power switch"]]
 
