@@ -84,39 +84,53 @@ For this project, I utilized their sponsored [PCB manufacturing](https://www.pcb
 ### Hardware Architecture
 
 ```mermaid
+%%{init: {'themeVariables': {'edgeLabelBackground':'transparent'}}}%%
 flowchart TD
-    CHG["USB-C charge<br/>CN3302"] -.->|"B+"| CELLS["Battery<br/>18650 x2"]
+    CHG["USB-C charge<br/>CN3302"] -.->|"charge → B+"| CELLS[("Battery<br/>18650 x2")]
     CELLS -->|"B+/BM/B-"| HY["HY2120<br/>BMS protection"]
     HY -->|"B+"| SW["Power switch"]
 
     SW -->|"V_BATT ≈ 7.2–8.4V"| SHUNT["INA226 shunt sense<br/>2mΩ"]
-    SHUNT -->|"V_SYS ≈ 7.2–8.4V"| REG5["Voltage regulation<br/>TPS51388 · Fsw=600kHz"]
-    SHUNT -->|"V_SYS"| SERVOS["Servomotors x12<br/>Feetech STS3215-C001"]
+    SHUNT -->|"V_SYS ≈ 7.2–8.4V"| REG5{{"Voltage regulation<br/>TPS51388 · Fsw=600kHz"}}
+    SHUNT -->|"V_SYS"| SERVOS(["Servomotors x12<br/>Feetech STS3215-C001"])
 
     REG5 -->|"+5V"| RPI["Raspberry Pi"]
-    REG5 -->|"+5V"| FANPWR["Fan<br/>Noctua NF-A4x10"]
-    REG5 -->|"+5V"| LEDPWR["RGB LEDs<br/>WS2812B"]
-    REG5 -->|"+5V"| REG33["Voltage regulation<br/>LD390501 LDO"]
+    REG5 -->|"+5V"| FANPWR(["Fan<br/>Noctua NF-A4x10"])
+    REG5 -->|"+5V"| LEDPWR(["RGB LEDs<br/>WS2812B"])
+    REG5 -->|"+5V"| REG33{{"Voltage regulation<br/>LD39050 LDO"}}
 
     REG33 -->|"+3.3V"| MCU["MCU<br/>STM32G431KBT6"]
     REG33 -->|"+3.3V"| IMU["IMU<br/>BMI088"]
     REG33 -->|"+3.3V"| INA["Power monitor<br/>INA226"]
     REG33 -->|"+3.3V"| AUDIO["Speaker + Microphone<br/>MAX98357A / ICS-43434"]
+
+    classDef power fill:#dd2757,color:#ffffff,stroke:none
+    classDef voltreg fill:#ea684c,color:#ffffff,stroke:none
+    classDef ic fill:#25a3fe,color:#ffffff,stroke:none
+    classDef actuator fill:#c027e7,color:#ffffff,stroke:none
+    classDef sensor fill:#5c5aed,color:#ffffff,stroke:none
+
+    class CHG,CELLS,HY,SW power
+    class REG5,REG33 voltreg
+    class MCU,RPI,AUDIO ic
+    class SERVOS,FANPWR,LEDPWR actuator
+    class SHUNT,IMU,INA sensor
 ```
 
 ### Firmware Architecture
 
 ```mermaid
+%%{init: {'themeVariables': {'edgeLabelBackground':'transparent'}}}%%
 flowchart LR
     RPI["Raspberry Pi"]
     MCU["STM32G431KBT6<br/>SYSCLK · 160 MHz"]
-    SERVOS["Servomotors x12<br/>STS3215-C001"]
+    SERVOS(["Servomotors x12<br/>STS3215-C001"])
     IMU["IMU<br/>BMI088"]
     PWR["Power Monitor<br/>INA226"]
-    LED["RGB LEDs<br/>WS2812B"]
+    LED(["RGB LEDs<br/>WS2812B"])
     CAM["Wide Angle Camera<br/>IMX219-D160"]
     AUDIO["Speaker + Microphone<br/>MAX98357A / ICS-43434"]
-    FAN["Fan<br/>Noctua NF-A4x10"]
+    FAN(["Fan<br/>Noctua NF-A4x10"])
 
     RPI <-->|"Custom bridge protocol<br/>UART1 · 1 Mbps"| MCU
     MCU <-->|"RS485 half-duplex<br/>USART2 · 1 Mbps "| SERVOS
@@ -127,6 +141,14 @@ flowchart LR
     RPI -->|"CSI-2"| CAM
     RPI <-->|"I2S"| AUDIO
     RPI <-->|"PWM + Tacho"| FAN
+
+    classDef ic fill:#2563eb,color:#ffffff,stroke:none
+    classDef actuator fill:#db2777,color:#ffffff,stroke:none
+    classDef sensor fill:#7c3aed,color:#ffffff,stroke:none
+
+    class RPI,MCU,AUDIO ic
+    class SERVOS,LED,FAN actuator
+    class IMU,PWR,CAM sensor
 ```
 
 ## Contributions
