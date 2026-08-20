@@ -86,11 +86,11 @@ For this project, I utilized their sponsored [PCB manufacturing](https://www.pcb
 ```mermaid
 %%{init: {'themeVariables': {'edgeLabelBackground':'transparent'}}}%%
 flowchart TD
-    CHG["USB-C charge<br/>CN3302"] -.->|"charge → B+"| CELLS[("Battery<br/>18650 x2")]
+    CHG[["USB-C charge<br/>CN3302"]] -.->|"charge → B+"| CELLS[("Battery<br/>18650 x2")]
     CELLS -->|"B+/BM/B-"| HY["HY2120<br/>BMS protection"]
-    HY -->|"B+"| SW["Power switch"]
+    HY -->|"B+"| SW[["Power switch"]]
 
-    SW -->|"V_BATT ≈ 7.2–8.4V"| SHUNT["INA226 shunt sense<br/>2mΩ"]
+    SW -->|"V_BATT ≈ 7.2–8.4V"| SHUNT[["INA226 shunt sense<br/>2mΩ"]]
     SHUNT -->|"V_SYS ≈ 7.2–8.4V"| REG5{{"Voltage regulation<br/>TPS51388 · Fsw=600kHz"}}
     SHUNT -->|"V_SYS"| SERVOS(["Servomotors x12<br/>Feetech STS3215-C001"])
 
@@ -106,7 +106,7 @@ flowchart TD
 
     classDef power fill:#dd2757,color:#ffffff,stroke:none
     classDef voltreg fill:#ea684c,color:#ffffff,stroke:none
-    classDef ic fill:#25a3fe,color:#ffffff,stroke:none
+    classDef ic fill:#25b3ae,color:#ffffff,stroke:none
     classDef actuator fill:#c027e7,color:#ffffff,stroke:none
     classDef sensor fill:#5c5aed,color:#ffffff,stroke:none
 
@@ -142,9 +142,9 @@ flowchart LR
     RPI <-->|"I2S"| AUDIO
     RPI <-->|"PWM + Tacho"| FAN
 
-    classDef ic fill:#2563eb,color:#ffffff,stroke:none
-    classDef actuator fill:#db2777,color:#ffffff,stroke:none
-    classDef sensor fill:#7c3aed,color:#ffffff,stroke:none
+    classDef ic fill:#25b3ae,color:#ffffff,stroke:none
+    classDef actuator fill:#c027e7,color:#ffffff,stroke:none
+    classDef sensor fill:#5c5aed,color:#ffffff,stroke:none
 
     class RPI,MCU,AUDIO ic
     class SERVOS,LED,FAN actuator
