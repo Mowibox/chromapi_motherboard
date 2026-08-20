@@ -77,14 +77,12 @@ For this project, I utilized their sponsored [PCB manufacturing](https://www.pcb
 
 ## Resources & Documentation
 
-## Resources & Documentation
-
 | **⚡ Electrical Specs** | **📄 Bill of Materials** | **📡 Protocol Reference** | **🧠 Software Architecture** |
 | :---: | :---: | :---: | :---: |
 | Operating voltages, current limits, and thermal ratings. | Detailed BOM with part numbers and unit costs. | Custom UART protocol between RPi and STM32. | Firmware logic, DMA streams, and interrupt priorities. |
 | 👉 [**View Specs**]() | 👉 [**View BOM**]() | 👉 [**View Protocol**]() | 👉 [**View Architecture**]() |
 
-### Hardware Architecture
+### Power Architecture
 
 ```mermaid
 %%{init: {'themeVariables': {'edgeLabelBackground':'transparent'}}}%%
