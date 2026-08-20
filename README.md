@@ -77,10 +77,12 @@ For this project, I utilized their sponsored [PCB manufacturing](https://www.pcb
 
 ## Resources & Documentation
 
-| **📄 Bill of Materials** | **📡 Communication Protocol** | **⚙️ Servo Driver Library** |
-| :---: | :---: | :---: |
-| Detailled BOM with part numbers, suppliers, and unit costs. | Custom UART framing protocol between the Raspberry Pi and this board. | Standalone STM32 HAL library for the Feetech STS3215 bus, used by this firmware. |
-| 👉 [**View BOM**]() | 👉 [**Protocol Reference**]() | 👉 [**Mowibox/stm32-sts3215-lib**](https://github.com/Mowibox/stm32-sts3215-lib) |
+## Resources & Documentation
+
+| **⚡ Electrical Specs** | **📄 Bill of Materials** | **📡 Protocol Reference** | **🧠 Software Architecture** |
+| :---: | :---: | :---: | :---: |
+| Operating voltages, current limits, and thermal ratings. | Detailed BOM with part numbers and unit costs. | Custom UART protocol between RPi and STM32. | Firmware logic, DMA streams, and interrupt priorities. |
+| 👉 [**View Specs**]() | 👉 [**View BOM**]() | 👉 [**View Protocol**]() | 👉 [**View Architecture**]() |
 
 ### Hardware Architecture
 
@@ -118,7 +120,7 @@ flowchart TD
     class SHUNT,IMU,INA sensor
 ```
 
-### Firmware Architecture
+### Communication Architecture
 
 ```mermaid
 %%{init: {'themeVariables': {'edgeLabelBackground':'transparent'}}}%%
