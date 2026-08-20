@@ -17,13 +17,14 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 
 ## Table of contents
 
-| Section                                                | Description                                              |
-| ------------------------------------------------------ | -------------------------------------------------------- |
-| [Project overview](#project-overview)                  | General description of the quadruped control board       |
-| [Authors](#authors)                                    | Main contributors information                            |
-| [Resources & Documentation](#resources--documentation) | Links to datasheets, BOM, and design architecture        |
-| [Contributions](#contributions)                        | How to contribute to the repository                      |
-| [License](#license)                                    | Licensing information                                    |
+| Section | Description |
+| --- | --- |
+| [Project overview](https://www.google.com/search?q=%23project-overview) | General description of the quadruped control board |
+| [Authors](https://www.google.com/search?q=%23authors) | Main contributors information |
+| [Sponsors & Acknowledgements](https://www.google.com/search?q=%23sponsors--acknowledgements) | Information about project sponsors and hardware support |
+| [Resources & Documentation](https://www.google.com/search?q=%23resources--documentation) | Links to datasheets, BOM, and design architectures |
+| [Contributions](https://www.google.com/search?q=%23contributions) | How to contribute to the repository |
+| [License](https://www.google.com/search?q=%23license) | Licensing information |
 
 ## Project overview
 
