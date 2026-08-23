@@ -19,12 +19,12 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 
 | Section | Description |
 | --- | --- |
-| [Project overview](https://www.google.com/search?q=%23project-overview) | General description of the quadruped control board |
-| [Authors](https://www.google.com/search?q=%23authors) | Main contributors information |
-| [Sponsors & Acknowledgements](https://www.google.com/search?q=%23sponsors--acknowledgements) | Information about project sponsors and hardware support |
-| [Resources & Documentation](https://www.google.com/search?q=%23resources--documentation) | Links to datasheets, BOM, and design architectures |
-| [Contributions](https://www.google.com/search?q=%23contributions) | How to contribute to the repository |
-| [License](https://www.google.com/search?q=%23license) | Licensing information |
+| [Project overview](#project-overview) | General description of the quadruped control board |
+| [Authors](#authors) | Main contributors information |
+| [Sponsors & Acknowledgements](#sponsors--acknowledgements) | Information about project sponsors and hardware support |
+| [Resources & Documentation](#resources--documentation) | Links to datasheets, BOM, and design architectures |
+| [Contributions](#contributions) | How to contribute to the repository |
+| [License](#license) | Licensing information |
 
 ## Project overview
 
@@ -77,19 +77,17 @@ For this project, I utilized their sponsored [PCB manufacturing](https://www.pcb
 
 ## Resources & Documentation
 
-## Resources & Documentation
-
 | **⚡ Electrical Specs** | **📄 Bill of Materials** | **📡 Protocol Reference** | **🧠 Software Architecture** |
 | :---: | :---: | :---: | :---: |
 | Operating voltages, current limits, and thermal ratings. | Detailed BOM with part numbers and unit costs. | Custom UART protocol between RPi and STM32. | Firmware logic, DMA streams, and interrupt priorities. |
 | 👉 [**View Specs**]() | 👉 [**View BOM**]() | 👉 [**View Protocol**]() | 👉 [**View Architecture**]() |
 
-### Hardware Architecture
+### Power Architecture
 
 ```mermaid
 %%{init: {'themeVariables': {'edgeLabelBackground':'transparent'}}}%%
 flowchart TD
-    CHG[["USB-C charge<br/>CN3302"]] -.->|"charge → B+"| CELLS[("Battery<br/>18650 x2")]
+    CHG[["USB-C charge<br/>CN3302"]] -.->|"charge → B+ ≈ 7.2–8.4V"| CELLS[("Battery<br/>18650 x2")]
     CELLS -->|"B+/BM/B-"| HY["HY2120<br/>BMS protection"]
     HY -->|"B+"| SW[["Power switch"]]
 
