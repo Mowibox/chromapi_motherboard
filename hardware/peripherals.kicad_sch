@@ -11399,7 +11399,7 @@
 			"h61KGgAAAABJRU5ErkJggg=="
 		)
 	)
-	(label "SPEAKER_VO-"
+	(label "SPEAKER_VO+"
 		(at 109.22 35.56 180)
 		(effects
 			(font
@@ -11407,7 +11407,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "0f434418-21f5-41f7-aabd-3b5a190353e0")
+		(uuid "5428cf33-d4af-4f11-a23e-5834cffdb019")
 	)
 	(label "SPEAKER_VO+"
 		(at 114.3 49.53 0)
@@ -11419,7 +11419,7 @@
 		)
 		(uuid "914a6f11-06e0-4e11-9b13-91104205dca0")
 	)
-	(label "SPEAKER_VO+"
+	(label "SPEAKER_VO-"
 		(at 109.22 33.02 180)
 		(effects
 			(font
@@ -11427,7 +11427,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "bf7259f0-a683-4dcb-b0b3-6349ca345679")
+		(uuid "9b342d81-145e-4df8-833d-8db6a90bed7d")
 	)
 	(label "SPEAKER_VO-"
 		(at 114.3 52.07 0)

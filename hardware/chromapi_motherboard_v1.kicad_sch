@@ -692,6 +692,17 @@
 		)
 		(uuid "7cc6ab94-8bc4-4bd1-9215-015e84b8fe3f")
 	)
+	(text "OT"
+		(exclude_from_sim no)
+		(at 166.878 39.37 0)
+		(effects
+			(font
+				(size 2.0066 2.0066)
+			)
+			(justify left bottom)
+		)
+		(uuid "8930a200-56d7-4f0d-919d-1b022401cc56")
+	)
 	(text "[fixed] move the USB connector to one of the sides of the PCB"
 		(exclude_from_sim no)
 		(at 181.864 47.498 0)
