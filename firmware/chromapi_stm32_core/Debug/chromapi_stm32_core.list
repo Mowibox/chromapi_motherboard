@@ -37,15 +37,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00022891  00000000  00000000  0003c09d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00021ae2  00000000  00000000  0005e92e  2**0
+ 17 .debug_line   00021ae6  00000000  00000000  0005e92e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000d3bd8  00000000  00000000  00080410  2**0
+ 18 .debug_str    000d3bd8  00000000  00000000  00080414  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  00153fe8  2**0
+ 19 .comment      00000043  00000000  00000000  00153fec  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00008a40  00000000  00000000  0015402c  2**2
+ 20 .debug_frame  00008a40  00000000  00000000  00154030  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000079  00000000  00000000  0015ca6c  2**0
+ 21 .debug_line_str 00000079  00000000  00000000  0015ca70  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -4794,12 +4794,12 @@ bool CordicSqrt_Init(CORDIC_HandleTypeDef *hcordic)
  80028d2:	b08a      	sub	sp, #40	@ 0x28
  80028d4:	af00      	add	r7, sp, #0
  80028d6:	6078      	str	r0, [r7, #4]
-    g_hcordic = hcordic;
+	g_hcordic = hcordic;
  80028d8:	4a0f      	ldr	r2, [pc, #60]	@ (8002918 <CordicSqrt_Init+0x48>)
  80028da:	687b      	ldr	r3, [r7, #4]
  80028dc:	6013      	str	r3, [r2, #0]
 
-    CORDIC_ConfigTypeDef cfg = {
+	CORDIC_ConfigTypeDef cfg = {
  80028de:	4b0f      	ldr	r3, [pc, #60]	@ (800291c <CordicSqrt_Init+0x4c>)
  80028e0:	f107 040c 	add.w	r4, r7, #12
  80028e4:	461d      	mov	r5, r3
@@ -4807,12 +4807,12 @@ bool CordicSqrt_Init(CORDIC_HandleTypeDef *hcordic)
  80028e8:	c40f      	stmia	r4!, {r0, r1, r2, r3}
  80028ea:	e895 0007 	ldmia.w	r5, {r0, r1, r2}
  80028ee:	e884 0007 	stmia.w	r4, {r0, r1, r2}
-        .NbRead = CORDIC_NBREAD_1,
-        .InSize = CORDIC_INSIZE_32BITS,
-        .OutSize = CORDIC_OUTSIZE_32BITS
-    };
+			.NbRead = CORDIC_NBREAD_1,
+			.InSize = CORDIC_INSIZE_32BITS,
+			.OutSize = CORDIC_OUTSIZE_32BITS
+	};
 
-    return HAL_CORDIC_Configure(g_hcordic, &cfg) == HAL_OK;
+	return HAL_CORDIC_Configure(g_hcordic, &cfg) == HAL_OK;
  80028f2:	4b09      	ldr	r3, [pc, #36]	@ (8002918 <CordicSqrt_Init+0x48>)
  80028f4:	681b      	ldr	r3, [r3, #0]
  80028f6:	f107 020c 	add.w	r2, r7, #12
@@ -4841,7 +4841,7 @@ float CordicSqrt(float x) {
  8002922:	b086      	sub	sp, #24
  8002924:	af02      	add	r7, sp, #8
  8002926:	ed87 0a01 	vstr	s0, [r7, #4]
-    int32_t x_fixed = (int32_t)((x / 4.0f) * 2147483648.0f);
+	int32_t x_fixed = (int32_t)((x / 4.0f) * 2147483648.0f);
  800292a:	ed97 7a01 	vldr	s14, [r7, #4]
  800292e:	eef1 6a00 	vmov.f32	s13, #16	@ 0x40800000  4.0
  8002932:	eec7 7a26 	vdiv.f32	s15, s14, s13
@@ -4850,9 +4850,9 @@ float CordicSqrt(float x) {
  800293e:	eefd 7ae7 	vcvt.s32.f32	s15, s15
  8002942:	ee17 3a90 	vmov	r3, s15
  8002946:	60fb      	str	r3, [r7, #12]
-    int32_t result_fixed;
+	int32_t result_fixed;
 
-    HAL_CORDIC_Calculate(g_hcordic, &x_fixed, &result_fixed, 1, 10);
+	HAL_CORDIC_Calculate(g_hcordic, &x_fixed, &result_fixed, 1, 10);
  8002948:	4b0e      	ldr	r3, [pc, #56]	@ (8002984 <CordicSqrt+0x64>)
  800294a:	6818      	ldr	r0, [r3, #0]
  800294c:	f107 0208 	add.w	r2, r7, #8
@@ -4862,7 +4862,7 @@ float CordicSqrt(float x) {
  8002958:	2301      	movs	r3, #1
  800295a:	f003 fa37 	bl	8005dcc <HAL_CORDIC_Calculate>
 
-    return ((float)result_fixed / 2147483648.0f) * 2.0f;
+	return ((float)result_fixed / 2147483648.0f) * 2.0f;
  800295e:	68bb      	ldr	r3, [r7, #8]
  8002960:	ee07 3a90 	vmov	s15, r3
  8002964:	eeb8 7ae7 	vcvt.f32.s32	s14, s15
@@ -5519,7 +5519,7 @@ void Mahony_Init(MahonyFilter_t *f) {
  8002de2:	b083      	sub	sp, #12
  8002de4:	af00      	add	r7, sp, #0
  8002de6:	6078      	str	r0, [r7, #4]
-    f->q0 = 1.0f; f->q1 = f->q2 = f->q3 = 0.0f;
+	f->q0 = 1.0f; f->q1 = f->q2 = f->q3 = 0.0f;
  8002de8:	687b      	ldr	r3, [r7, #4]
  8002dea:	f04f 527e 	mov.w	r2, #1065353216	@ 0x3f800000
  8002dee:	601a      	str	r2, [r3, #0]
@@ -5534,7 +5534,7 @@ void Mahony_Init(MahonyFilter_t *f) {
  8002e02:	689a      	ldr	r2, [r3, #8]
  8002e04:	687b      	ldr	r3, [r7, #4]
  8002e06:	605a      	str	r2, [r3, #4]
-    f->bx = f->by = f->bz = 0.0f;
+	f->bx = f->by = f->bz = 0.0f;
  8002e08:	687b      	ldr	r3, [r7, #4]
  8002e0a:	f04f 0200 	mov.w	r2, #0
  8002e0e:	619a      	str	r2, [r3, #24]
@@ -5546,15 +5546,15 @@ void Mahony_Init(MahonyFilter_t *f) {
  8002e1a:	695a      	ldr	r2, [r3, #20]
  8002e1c:	687b      	ldr	r3, [r7, #4]
  8002e1e:	611a      	str	r2, [r3, #16]
-    f->Kp = 2.0f;
+	f->Kp = 2.0f;
  8002e20:	687b      	ldr	r3, [r7, #4]
  8002e22:	f04f 4280 	mov.w	r2, #1073741824	@ 0x40000000
  8002e26:	61da      	str	r2, [r3, #28]
-    f->Ki = 0.05f;
+	f->Ki = 0.05f;
  8002e28:	687b      	ldr	r3, [r7, #4]
  8002e2a:	4a06      	ldr	r2, [pc, #24]	@ (8002e44 <Mahony_Init+0x64>)
  8002e2c:	621a      	str	r2, [r3, #32]
-    f->cal.calibrated = 0;
+	f->cal.calibrated = 0;
  8002e2e:	687b      	ldr	r3, [r7, #4]
  8002e30:	2200      	movs	r2, #0
  8002e32:	f883 203c 	strb.w	r2, [r3, #60]	@ 0x3c
@@ -5575,7 +5575,7 @@ void Mahony_Calibrate(MahonyFilter_t *f, BMI088 *imu) {
  8002e4c:	af00      	add	r7, sp, #0
  8002e4e:	6078      	str	r0, [r7, #4]
  8002e50:	6039      	str	r1, [r7, #0]
-    float gsum[3] = {0}, asum[3] = {0};
+	float gsum[3] = {0}, asum[3] = {0};
  8002e52:	f107 0318 	add.w	r3, r7, #24
  8002e56:	2200      	movs	r2, #0
  8002e58:	601a      	str	r2, [r3, #0]
@@ -5587,21 +5587,21 @@ void Mahony_Calibrate(MahonyFilter_t *f, BMI088 *imu) {
  8002e66:	605a      	str	r2, [r3, #4]
  8002e68:	609a      	str	r2, [r3, #8]
 
-    for (int i = 0; i < CALIB_SAMPLES; i++) {
+	for (int i = 0; i < CALIB_SAMPLES; i++) {
  8002e6a:	2300      	movs	r3, #0
  8002e6c:	62fb      	str	r3, [r7, #44]	@ 0x2c
  8002e6e:	e043      	b.n	8002ef8 <Mahony_Calibrate+0xb0>
-        BMI088_ReadAccelerometer(imu);
+		BMI088_ReadAccelerometer(imu);
  8002e70:	6838      	ldr	r0, [r7, #0]
  8002e72:	f7fe fb03 	bl	800147c <BMI088_ReadAccelerometer>
-        BMI088_ReadGyroscope(imu);
+		BMI088_ReadGyroscope(imu);
  8002e76:	6838      	ldr	r0, [r7, #0]
  8002e78:	f7fe fb72 	bl	8001560 <BMI088_ReadGyroscope>
-        for (int a = 0; a < 3; a++) {
+		for (int a = 0; a < 3; a++) {
  8002e7c:	2300      	movs	r3, #0
  8002e7e:	62bb      	str	r3, [r7, #40]	@ 0x28
  8002e80:	e031      	b.n	8002ee6 <Mahony_Calibrate+0x9e>
-            gsum[a] += imu->gyr_rps[a];
+			gsum[a] += imu->gyr_rps[a];
  8002e82:	6abb      	ldr	r3, [r7, #40]	@ 0x28
  8002e84:	009b      	lsls	r3, r3, #2
  8002e86:	3330      	adds	r3, #48	@ 0x30
@@ -5622,7 +5622,7 @@ void Mahony_Calibrate(MahonyFilter_t *f, BMI088 *imu) {
  8002eaa:	443b      	add	r3, r7
  8002eac:	3b18      	subs	r3, #24
  8002eae:	edc3 7a00 	vstr	s15, [r3]
-            asum[a] += imu->acc_mps2[a];
+			asum[a] += imu->acc_mps2[a];
  8002eb2:	6abb      	ldr	r3, [r7, #40]	@ 0x28
  8002eb4:	009b      	lsls	r3, r3, #2
  8002eb6:	3330      	adds	r3, #48	@ 0x30
@@ -5642,31 +5642,31 @@ void Mahony_Calibrate(MahonyFilter_t *f, BMI088 *imu) {
  8002ed8:	443b      	add	r3, r7
  8002eda:	3b24      	subs	r3, #36	@ 0x24
  8002edc:	edc3 7a00 	vstr	s15, [r3]
-        for (int a = 0; a < 3; a++) {
+		for (int a = 0; a < 3; a++) {
  8002ee0:	6abb      	ldr	r3, [r7, #40]	@ 0x28
  8002ee2:	3301      	adds	r3, #1
  8002ee4:	62bb      	str	r3, [r7, #40]	@ 0x28
  8002ee6:	6abb      	ldr	r3, [r7, #40]	@ 0x28
  8002ee8:	2b02      	cmp	r3, #2
  8002eea:	ddca      	ble.n	8002e82 <Mahony_Calibrate+0x3a>
-        }
-        HAL_Delay(10);
+		}
+		HAL_Delay(10);
  8002eec:	200a      	movs	r0, #10
  8002eee:	f002 fedd 	bl	8005cac <HAL_Delay>
-    for (int i = 0; i < CALIB_SAMPLES; i++) {
+	for (int i = 0; i < CALIB_SAMPLES; i++) {
  8002ef2:	6afb      	ldr	r3, [r7, #44]	@ 0x2c
  8002ef4:	3301      	adds	r3, #1
  8002ef6:	62fb      	str	r3, [r7, #44]	@ 0x2c
  8002ef8:	6afb      	ldr	r3, [r7, #44]	@ 0x2c
  8002efa:	f5b3 7ffa 	cmp.w	r3, #500	@ 0x1f4
  8002efe:	dbb7      	blt.n	8002e70 <Mahony_Calibrate+0x28>
-    }
+	}
 
-    for (int a = 0; a < 3; a++) {
+	for (int a = 0; a < 3; a++) {
  8002f00:	2300      	movs	r3, #0
  8002f02:	627b      	str	r3, [r7, #36]	@ 0x24
  8002f04:	e028      	b.n	8002f58 <Mahony_Calibrate+0x110>
-        f->cal.gyro_bias[a] = gsum[a] / CALIB_SAMPLES;
+		f->cal.gyro_bias[a] = gsum[a] / CALIB_SAMPLES;
  8002f06:	6a7b      	ldr	r3, [r7, #36]	@ 0x24
  8002f08:	009b      	lsls	r3, r3, #2
  8002f0a:	3330      	adds	r3, #48	@ 0x30
@@ -5682,7 +5682,7 @@ void Mahony_Calibrate(MahonyFilter_t *f, BMI088 *imu) {
  8002f24:	4413      	add	r3, r2
  8002f26:	3304      	adds	r3, #4
  8002f28:	edc3 7a00 	vstr	s15, [r3]
-        f->cal.acc_bias[a]  = asum[a] / CALIB_SAMPLES;
+		f->cal.acc_bias[a]  = asum[a] / CALIB_SAMPLES;
  8002f2c:	6a7b      	ldr	r3, [r7, #36]	@ 0x24
  8002f2e:	009b      	lsls	r3, r3, #2
  8002f30:	3330      	adds	r3, #48	@ 0x30
@@ -5698,23 +5698,23 @@ void Mahony_Calibrate(MahonyFilter_t *f, BMI088 *imu) {
  8002f4a:	4413      	add	r3, r2
  8002f4c:	3308      	adds	r3, #8
  8002f4e:	edc3 7a00 	vstr	s15, [r3]
-    for (int a = 0; a < 3; a++) {
+	for (int a = 0; a < 3; a++) {
  8002f52:	6a7b      	ldr	r3, [r7, #36]	@ 0x24
  8002f54:	3301      	adds	r3, #1
  8002f56:	627b      	str	r3, [r7, #36]	@ 0x24
  8002f58:	6a7b      	ldr	r3, [r7, #36]	@ 0x24
  8002f5a:	2b02      	cmp	r3, #2
  8002f5c:	ddd3      	ble.n	8002f06 <Mahony_Calibrate+0xbe>
-    }
-    f->cal.acc_bias[2] -= 9.81f;
+	}
+	f->cal.acc_bias[2] += 9.81f;
  8002f5e:	687b      	ldr	r3, [r7, #4]
  8002f60:	edd3 7a0e 	vldr	s15, [r3, #56]	@ 0x38
  8002f64:	ed9f 7a08 	vldr	s14, [pc, #32]	@ 8002f88 <Mahony_Calibrate+0x140>
- 8002f68:	ee77 7ac7 	vsub.f32	s15, s15, s14
+ 8002f68:	ee77 7a87 	vadd.f32	s15, s15, s14
  8002f6c:	687b      	ldr	r3, [r7, #4]
  8002f6e:	edc3 7a0e 	vstr	s15, [r3, #56]	@ 0x38
 
-    f->cal.calibrated = 1;
+	f->cal.calibrated = 1;
  8002f72:	687b      	ldr	r3, [r7, #4]
  8002f74:	2201      	movs	r2, #1
  8002f76:	f883 203c 	strb.w	r2, [r3, #60]	@ 0x3c
@@ -5730,7 +5730,7 @@ void Mahony_Calibrate(MahonyFilter_t *f, BMI088 *imu) {
 08002f8c <Mahony_Update>:
 
 void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
-                    float ax, float ay, float az, float dt) {
+		float ax, float ay, float az, float dt) {
  8002f8c:	b580      	push	{r7, lr}
  8002f8e:	b096      	sub	sp, #88	@ 0x58
  8002f90:	af00      	add	r7, sp, #0
@@ -5743,50 +5743,50 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  8002fa8:	edc7 2a01 	vstr	s5, [r7, #4]
  8002fac:	ed87 3a00 	vstr	s6, [r7]
 
-    if (f->cal.calibrated) {
+	if (f->cal.calibrated) {
  8002fb0:	69fb      	ldr	r3, [r7, #28]
  8002fb2:	f893 303c 	ldrb.w	r3, [r3, #60]	@ 0x3c
  8002fb6:	2b00      	cmp	r3, #0
  8002fb8:	d035      	beq.n	8003026 <Mahony_Update+0x9a>
-        gx -= f->cal.gyro_bias[0];
+		gx -= f->cal.gyro_bias[0];
  8002fba:	69fb      	ldr	r3, [r7, #28]
  8002fbc:	edd3 7a09 	vldr	s15, [r3, #36]	@ 0x24
  8002fc0:	ed97 7a06 	vldr	s14, [r7, #24]
  8002fc4:	ee77 7a67 	vsub.f32	s15, s14, s15
  8002fc8:	edc7 7a06 	vstr	s15, [r7, #24]
-        gy -= f->cal.gyro_bias[1];
+		gy -= f->cal.gyro_bias[1];
  8002fcc:	69fb      	ldr	r3, [r7, #28]
  8002fce:	edd3 7a0a 	vldr	s15, [r3, #40]	@ 0x28
  8002fd2:	ed97 7a05 	vldr	s14, [r7, #20]
  8002fd6:	ee77 7a67 	vsub.f32	s15, s14, s15
  8002fda:	edc7 7a05 	vstr	s15, [r7, #20]
-        gz -= f->cal.gyro_bias[2];
+		gz -= f->cal.gyro_bias[2];
  8002fde:	69fb      	ldr	r3, [r7, #28]
  8002fe0:	edd3 7a0b 	vldr	s15, [r3, #44]	@ 0x2c
  8002fe4:	ed97 7a04 	vldr	s14, [r7, #16]
  8002fe8:	ee77 7a67 	vsub.f32	s15, s14, s15
  8002fec:	edc7 7a04 	vstr	s15, [r7, #16]
-        ax -= f->cal.acc_bias[0];
+		ax -= f->cal.acc_bias[0];
  8002ff0:	69fb      	ldr	r3, [r7, #28]
  8002ff2:	edd3 7a0c 	vldr	s15, [r3, #48]	@ 0x30
  8002ff6:	ed97 7a03 	vldr	s14, [r7, #12]
  8002ffa:	ee77 7a67 	vsub.f32	s15, s14, s15
  8002ffe:	edc7 7a03 	vstr	s15, [r7, #12]
-        ay -= f->cal.acc_bias[1];
+		ay -= f->cal.acc_bias[1];
  8003002:	69fb      	ldr	r3, [r7, #28]
  8003004:	edd3 7a0d 	vldr	s15, [r3, #52]	@ 0x34
  8003008:	ed97 7a02 	vldr	s14, [r7, #8]
  800300c:	ee77 7a67 	vsub.f32	s15, s14, s15
  8003010:	edc7 7a02 	vstr	s15, [r7, #8]
-        az -= f->cal.acc_bias[2];
+		az -= f->cal.acc_bias[2];
  8003014:	69fb      	ldr	r3, [r7, #28]
  8003016:	edd3 7a0e 	vldr	s15, [r3, #56]	@ 0x38
  800301a:	ed97 7a01 	vldr	s14, [r7, #4]
  800301e:	ee77 7a67 	vsub.f32	s15, s14, s15
  8003022:	edc7 7a01 	vstr	s15, [r7, #4]
-    }
+	}
 
-    float ax_g = ax / 9.81f, ay_g = ay / 9.81f, az_g = az / 9.81f;
+	float ax_g = ax / 9.81f, ay_g = ay / 9.81f, az_g = az / 9.81f;
  8003026:	ed97 7a03 	vldr	s14, [r7, #12]
  800302a:	eddf 6a97 	vldr	s13, [pc, #604]	@ 8003288 <Mahony_Update+0x2fc>
  800302e:	eec7 7a26 	vdiv.f32	s15, s14, s13
@@ -5799,7 +5799,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  800304a:	eddf 6a8f 	vldr	s13, [pc, #572]	@ 8003288 <Mahony_Update+0x2fc>
  800304e:	eec7 7a26 	vdiv.f32	s15, s14, s13
  8003052:	edc7 7a13 	vstr	s15, [r7, #76]	@ 0x4c
-    float norm = CordicSqrt(ax_g*ax_g + ay_g*ay_g + az_g*az_g);
+	float norm = CordicSqrt(ax_g*ax_g + ay_g*ay_g + az_g*az_g);
  8003056:	edd7 7a15 	vldr	s15, [r7, #84]	@ 0x54
  800305a:	ee27 7aa7 	vmul.f32	s14, s15, s15
  800305e:	edd7 7a14 	vldr	s15, [r7, #80]	@ 0x50
@@ -5811,13 +5811,13 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  8003076:	eeb0 0a67 	vmov.f32	s0, s15
  800307a:	f7ff fc51 	bl	8002920 <CordicSqrt>
  800307e:	ed87 0a12 	vstr	s0, [r7, #72]	@ 0x48
-    if (norm < 1e-3f) return;
+	if (norm < 1e-3f) return;
  8003082:	edd7 7a12 	vldr	s15, [r7, #72]	@ 0x48
  8003086:	ed9f 7a81 	vldr	s14, [pc, #516]	@ 800328c <Mahony_Update+0x300>
  800308a:	eef4 7ac7 	vcmpe.f32	s15, s14
  800308e:	eef1 fa10 	vmrs	APSR_nzcv, fpscr
  8003092:	f100 821f 	bmi.w	80034d4 <Mahony_Update+0x548>
-    ax_g /= norm; ay_g /= norm; az_g /= norm;
+	ax_g /= norm; ay_g /= norm; az_g /= norm;
  8003096:	edd7 6a15 	vldr	s13, [r7, #84]	@ 0x54
  800309a:	ed97 7a12 	vldr	s14, [r7, #72]	@ 0x48
  800309e:	eec6 7a87 	vdiv.f32	s15, s13, s14
@@ -5831,7 +5831,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  80030be:	eec6 7a87 	vdiv.f32	s15, s13, s14
  80030c2:	edc7 7a13 	vstr	s15, [r7, #76]	@ 0x4c
 
-    float vx = 2.0f * (f->q1*f->q3 - f->q0*f->q2);
+	float vx = 2.0f * (f->q1*f->q3 - f->q0*f->q2);
  80030c6:	69fb      	ldr	r3, [r7, #28]
  80030c8:	ed93 7a01 	vldr	s14, [r3, #4]
  80030cc:	69fb      	ldr	r3, [r7, #28]
@@ -5845,7 +5845,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  80030e6:	ee77 7a67 	vsub.f32	s15, s14, s15
  80030ea:	ee77 7aa7 	vadd.f32	s15, s15, s15
  80030ee:	edc7 7a11 	vstr	s15, [r7, #68]	@ 0x44
-    float vy = 2.0f * (f->q0*f->q1 + f->q2*f->q3);
+	float vy = 2.0f * (f->q0*f->q1 + f->q2*f->q3);
  80030f2:	69fb      	ldr	r3, [r7, #28]
  80030f4:	ed93 7a00 	vldr	s14, [r3]
  80030f8:	69fb      	ldr	r3, [r7, #28]
@@ -5859,7 +5859,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  8003112:	ee77 7a27 	vadd.f32	s15, s14, s15
  8003116:	ee77 7aa7 	vadd.f32	s15, s15, s15
  800311a:	edc7 7a10 	vstr	s15, [r7, #64]	@ 0x40
-    float vz = f->q0*f->q0 - f->q1*f->q1 - f->q2*f->q2 + f->q3*f->q3;
+	float vz = f->q0*f->q0 - f->q1*f->q1 - f->q2*f->q2 + f->q3*f->q3;
  800311e:	69fb      	ldr	r3, [r7, #28]
  8003120:	ed93 7a00 	vldr	s14, [r3]
  8003124:	69fb      	ldr	r3, [r7, #28]
@@ -5885,41 +5885,41 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  8003166:	ee77 7a27 	vadd.f32	s15, s14, s15
  800316a:	edc7 7a0f 	vstr	s15, [r7, #60]	@ 0x3c
 
-    float ex = ay_g*vz - az_g*vy;
- 800316e:	ed97 7a14 	vldr	s14, [r7, #80]	@ 0x50
- 8003172:	edd7 7a0f 	vldr	s15, [r7, #60]	@ 0x3c
+	float ex = vy * az_g - vz * ay_g;
+ 800316e:	ed97 7a10 	vldr	s14, [r7, #64]	@ 0x40
+ 8003172:	edd7 7a13 	vldr	s15, [r7, #76]	@ 0x4c
  8003176:	ee27 7a27 	vmul.f32	s14, s14, s15
- 800317a:	edd7 6a13 	vldr	s13, [r7, #76]	@ 0x4c
- 800317e:	edd7 7a10 	vldr	s15, [r7, #64]	@ 0x40
+ 800317a:	edd7 6a0f 	vldr	s13, [r7, #60]	@ 0x3c
+ 800317e:	edd7 7a14 	vldr	s15, [r7, #80]	@ 0x50
  8003182:	ee66 7aa7 	vmul.f32	s15, s13, s15
  8003186:	ee77 7a67 	vsub.f32	s15, s14, s15
  800318a:	edc7 7a0e 	vstr	s15, [r7, #56]	@ 0x38
-    float ey = az_g*vx - ax_g*vz;
- 800318e:	ed97 7a13 	vldr	s14, [r7, #76]	@ 0x4c
- 8003192:	edd7 7a11 	vldr	s15, [r7, #68]	@ 0x44
+	float ey = vz * ax_g - vx * az_g;
+ 800318e:	ed97 7a0f 	vldr	s14, [r7, #60]	@ 0x3c
+ 8003192:	edd7 7a15 	vldr	s15, [r7, #84]	@ 0x54
  8003196:	ee27 7a27 	vmul.f32	s14, s14, s15
- 800319a:	edd7 6a15 	vldr	s13, [r7, #84]	@ 0x54
- 800319e:	edd7 7a0f 	vldr	s15, [r7, #60]	@ 0x3c
+ 800319a:	edd7 6a11 	vldr	s13, [r7, #68]	@ 0x44
+ 800319e:	edd7 7a13 	vldr	s15, [r7, #76]	@ 0x4c
  80031a2:	ee66 7aa7 	vmul.f32	s15, s13, s15
  80031a6:	ee77 7a67 	vsub.f32	s15, s14, s15
  80031aa:	edc7 7a0d 	vstr	s15, [r7, #52]	@ 0x34
-    float ez = ax_g*vy - ay_g*vx;
- 80031ae:	ed97 7a15 	vldr	s14, [r7, #84]	@ 0x54
- 80031b2:	edd7 7a10 	vldr	s15, [r7, #64]	@ 0x40
+	float ez = vx * ay_g - vy * ax_g;
+ 80031ae:	ed97 7a11 	vldr	s14, [r7, #68]	@ 0x44
+ 80031b2:	edd7 7a14 	vldr	s15, [r7, #80]	@ 0x50
  80031b6:	ee27 7a27 	vmul.f32	s14, s14, s15
- 80031ba:	edd7 6a14 	vldr	s13, [r7, #80]	@ 0x50
- 80031be:	edd7 7a11 	vldr	s15, [r7, #68]	@ 0x44
+ 80031ba:	edd7 6a10 	vldr	s13, [r7, #64]	@ 0x40
+ 80031be:	edd7 7a15 	vldr	s15, [r7, #84]	@ 0x54
  80031c2:	ee66 7aa7 	vmul.f32	s15, s13, s15
  80031c6:	ee77 7a67 	vsub.f32	s15, s14, s15
  80031ca:	edc7 7a0c 	vstr	s15, [r7, #48]	@ 0x30
 
-    if (f->Ki > 0.0f) {
+	if (f->Ki > 0.0f) {
  80031ce:	69fb      	ldr	r3, [r7, #28]
  80031d0:	edd3 7a08 	vldr	s15, [r3, #32]
  80031d4:	eef5 7ac0 	vcmpe.f32	s15, #0.0
  80031d8:	eef1 fa10 	vmrs	APSR_nzcv, fpscr
  80031dc:	dd58      	ble.n	8003290 <Mahony_Update+0x304>
-        f->bx += f->Ki * ex * dt;
+		f->bx += f->Ki * ex * dt;
  80031de:	69fb      	ldr	r3, [r7, #28]
  80031e0:	ed93 7a04 	vldr	s14, [r3, #16]
  80031e4:	69fb      	ldr	r3, [r7, #28]
@@ -5931,7 +5931,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  80031fa:	ee77 7a27 	vadd.f32	s15, s14, s15
  80031fe:	69fb      	ldr	r3, [r7, #28]
  8003200:	edc3 7a04 	vstr	s15, [r3, #16]
-        f->by += f->Ki * ey * dt;
+		f->by += f->Ki * ey * dt;
  8003204:	69fb      	ldr	r3, [r7, #28]
  8003206:	ed93 7a05 	vldr	s14, [r3, #20]
  800320a:	69fb      	ldr	r3, [r7, #28]
@@ -5943,7 +5943,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  8003220:	ee77 7a27 	vadd.f32	s15, s14, s15
  8003224:	69fb      	ldr	r3, [r7, #28]
  8003226:	edc3 7a05 	vstr	s15, [r3, #20]
-        f->bz += f->Ki * ez * dt;
+		f->bz += f->Ki * ez * dt;
  800322a:	69fb      	ldr	r3, [r7, #28]
  800322c:	ed93 7a06 	vldr	s14, [r3, #24]
  8003230:	69fb      	ldr	r3, [r7, #28]
@@ -5955,7 +5955,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  8003246:	ee77 7a27 	vadd.f32	s15, s14, s15
  800324a:	69fb      	ldr	r3, [r7, #28]
  800324c:	edc3 7a06 	vstr	s15, [r3, #24]
-        gx += f->bx; gy += f->by; gz += f->bz;
+		gx += f->bx; gy += f->by; gz += f->bz;
  8003250:	69fb      	ldr	r3, [r7, #28]
  8003252:	edd3 7a04 	vldr	s15, [r3, #16]
  8003256:	ed97 7a06 	vldr	s14, [r7, #24]
@@ -5974,9 +5974,9 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  8003286:	e003      	b.n	8003290 <Mahony_Update+0x304>
  8003288:	411cf5c3 	.word	0x411cf5c3
  800328c:	3a83126f 	.word	0x3a83126f
-    }
+	}
 
-    gx += f->Kp * ex;
+	gx += f->Kp * ex;
  8003290:	69fb      	ldr	r3, [r7, #28]
  8003292:	ed93 7a07 	vldr	s14, [r3, #28]
  8003296:	edd7 7a0e 	vldr	s15, [r7, #56]	@ 0x38
@@ -5984,7 +5984,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  800329e:	ed97 7a06 	vldr	s14, [r7, #24]
  80032a2:	ee77 7a27 	vadd.f32	s15, s14, s15
  80032a6:	edc7 7a06 	vstr	s15, [r7, #24]
-    gy += f->Kp * ey;
+	gy += f->Kp * ey;
  80032aa:	69fb      	ldr	r3, [r7, #28]
  80032ac:	ed93 7a07 	vldr	s14, [r3, #28]
  80032b0:	edd7 7a0d 	vldr	s15, [r7, #52]	@ 0x34
@@ -5992,7 +5992,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  80032b8:	ed97 7a05 	vldr	s14, [r7, #20]
  80032bc:	ee77 7a27 	vadd.f32	s15, s14, s15
  80032c0:	edc7 7a05 	vstr	s15, [r7, #20]
-    gz += f->Kp * ez;
+	gz += f->Kp * ez;
  80032c4:	69fb      	ldr	r3, [r7, #28]
  80032c6:	ed93 7a07 	vldr	s14, [r3, #28]
  80032ca:	edd7 7a0c 	vldr	s15, [r7, #48]	@ 0x30
@@ -6001,7 +6001,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  80032d6:	ee77 7a27 	vadd.f32	s15, s14, s15
  80032da:	edc7 7a04 	vstr	s15, [r7, #16]
 
-    float q0 = f->q0, q1 = f->q1, q2 = f->q2, q3 = f->q3;
+	float q0 = f->q0, q1 = f->q1, q2 = f->q2, q3 = f->q3;
  80032de:	69fb      	ldr	r3, [r7, #28]
  80032e0:	681b      	ldr	r3, [r3, #0]
  80032e2:	62fb      	str	r3, [r7, #44]	@ 0x2c
@@ -6014,7 +6014,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  80032f0:	69fb      	ldr	r3, [r7, #28]
  80032f2:	68db      	ldr	r3, [r3, #12]
  80032f4:	623b      	str	r3, [r7, #32]
-    f->q0 += (-q1*gx - q2*gy - q3*gz) * 0.5f * dt;
+	f->q0 += (-q1*gx - q2*gy - q3*gz) * 0.5f * dt;
  80032f6:	69fb      	ldr	r3, [r7, #28]
  80032f8:	ed93 7a00 	vldr	s14, [r3]
  80032fc:	edd7 7a0a 	vldr	s15, [r7, #40]	@ 0x28
@@ -6036,7 +6036,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  800333c:	ee77 7a27 	vadd.f32	s15, s14, s15
  8003340:	69fb      	ldr	r3, [r7, #28]
  8003342:	edc3 7a00 	vstr	s15, [r3]
-    f->q1 += ( q0*gx + q2*gz - q3*gy) * 0.5f * dt;
+	f->q1 += ( q0*gx + q2*gz - q3*gy) * 0.5f * dt;
  8003346:	69fb      	ldr	r3, [r7, #28]
  8003348:	ed93 7a01 	vldr	s14, [r3, #4]
  800334c:	edd7 6a0b 	vldr	s13, [r7, #44]	@ 0x2c
@@ -6057,7 +6057,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  8003388:	ee77 7a27 	vadd.f32	s15, s14, s15
  800338c:	69fb      	ldr	r3, [r7, #28]
  800338e:	edc3 7a01 	vstr	s15, [r3, #4]
-    f->q2 += ( q0*gy - q1*gz + q3*gx) * 0.5f * dt;
+	f->q2 += ( q0*gy - q1*gz + q3*gx) * 0.5f * dt;
  8003392:	69fb      	ldr	r3, [r7, #28]
  8003394:	ed93 7a02 	vldr	s14, [r3, #8]
  8003398:	edd7 6a0b 	vldr	s13, [r7, #44]	@ 0x2c
@@ -6078,7 +6078,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  80033d4:	ee77 7a27 	vadd.f32	s15, s14, s15
  80033d8:	69fb      	ldr	r3, [r7, #28]
  80033da:	edc3 7a02 	vstr	s15, [r3, #8]
-    f->q3 += ( q0*gz + q1*gy - q2*gx) * 0.5f * dt;
+	f->q3 += ( q0*gz + q1*gy - q2*gx) * 0.5f * dt;
  80033de:	69fb      	ldr	r3, [r7, #28]
  80033e0:	ed93 7a03 	vldr	s14, [r3, #12]
  80033e4:	edd7 6a0b 	vldr	s13, [r7, #44]	@ 0x2c
@@ -6100,7 +6100,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  8003424:	69fb      	ldr	r3, [r7, #28]
  8003426:	edc3 7a03 	vstr	s15, [r3, #12]
 
-    norm = CordicSqrt(f->q0*f->q0 + f->q1*f->q1 + f->q2*f->q2 + f->q3*f->q3);
+	norm = CordicSqrt(f->q0*f->q0 + f->q1*f->q1 + f->q2*f->q2 + f->q3*f->q3);
  800342a:	69fb      	ldr	r3, [r7, #28]
  800342c:	ed93 7a00 	vldr	s14, [r3]
  8003430:	69fb      	ldr	r3, [r7, #28]
@@ -6127,7 +6127,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  8003476:	eeb0 0a67 	vmov.f32	s0, s15
  800347a:	f7ff fa51 	bl	8002920 <CordicSqrt>
  800347e:	ed87 0a12 	vstr	s0, [r7, #72]	@ 0x48
-    f->q0 /= norm; f->q1 /= norm; f->q2 /= norm; f->q3 /= norm;
+	f->q0 /= norm; f->q1 /= norm; f->q2 /= norm; f->q3 /= norm;
  8003482:	69fb      	ldr	r3, [r7, #28]
  8003484:	edd3 6a00 	vldr	s13, [r3]
  8003488:	ed97 7a12 	vldr	s14, [r7, #72]	@ 0x48
@@ -6153,7 +6153,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
  80034cc:	69fb      	ldr	r3, [r7, #28]
  80034ce:	edc3 7a03 	vstr	s15, [r3, #12]
  80034d2:	e000      	b.n	80034d6 <Mahony_Update+0x54a>
-    if (norm < 1e-3f) return;
+	if (norm < 1e-3f) return;
  80034d4:	bf00      	nop
 }
  80034d6:	3758      	adds	r7, #88	@ 0x58
@@ -6810,7 +6810,7 @@ static void Imu_Task(void) {
  800394e:	eeb0 0a67 	vmov.f32	s0, s15
  8003952:	4807      	ldr	r0, [pc, #28]	@ (8003970 <Imu_Task+0xbc>)
  8003954:	f7ff fb1a 	bl	8002f8c <Mahony_Update>
-	              gIMU.acc_mps2[0], gIMU.acc_mps2[1], gIMU.acc_mps2[2], dt);
+			gIMU.acc_mps2[0], gIMU.acc_mps2[1], gIMU.acc_mps2[2], dt);
 }
  8003958:	bf00      	nop
  800395a:	3708      	adds	r7, #8
@@ -6829,7 +6829,7 @@ void Chromapi_SystemInit(void) {
  8003978:	b580      	push	{r7, lr}
  800397a:	b082      	sub	sp, #8
  800397c:	af02      	add	r7, sp, #8
-    if (!CordicSqrt_Init(&hcordic)) {
+	if (!CordicSqrt_Init(&hcordic)) {
  800397e:	4826      	ldr	r0, [pc, #152]	@ (8003a18 <Chromapi_SystemInit+0xa0>)
  8003980:	f7fe ffa6 	bl	80028d0 <CordicSqrt_Init>
  8003984:	4603      	mov	r3, r0
@@ -6837,9 +6837,9 @@ void Chromapi_SystemInit(void) {
  800398a:	b2db      	uxtb	r3, r3
  800398c:	2b00      	cmp	r3, #0
  800398e:	d001      	beq.n	8003994 <Chromapi_SystemInit+0x1c>
-        Error_Handler();
+		Error_Handler();
  8003990:	f000 fc16 	bl	80041c0 <Error_Handler>
-    }
+	}
 	STS3215_HAL_Init(&hservo, &huart2, 50U, on_reply, on_error, NULL);
  8003994:	2300      	movs	r3, #0
  8003996:	9301      	str	r3, [sp, #4]
@@ -6872,8 +6872,8 @@ void Chromapi_SystemInit(void) {
  80039d2:	4919      	ldr	r1, [pc, #100]	@ (8003a38 <Chromapi_SystemInit+0xc0>)
  80039d4:	4819      	ldr	r0, [pc, #100]	@ (8003a3c <Chromapi_SystemInit+0xc4>)
  80039d6:	f7fd fb4b 	bl	8001070 <BMI088_Init>
-	        SPI_CS_ACC_GPIO_Port,  SPI_CS_ACC_Pin,
-	        SPI_CS_GYRO_GPIO_Port, SPI_CS_GYRO_Pin);
+			SPI_CS_ACC_GPIO_Port,  SPI_CS_ACC_Pin,
+			SPI_CS_GYRO_GPIO_Port, SPI_CS_GYRO_Pin);
 
 	CordicSqrt_Init(&hcordic);
  80039da:	480f      	ldr	r0, [pc, #60]	@ (8003a18 <Chromapi_SystemInit+0xa0>)
@@ -7004,11 +7004,11 @@ int main(void)
  8003aae:	b2db      	uxtb	r3, r3
  8003ab0:	2b00      	cmp	r3, #0
  8003ab2:	d004      	beq.n	8003abe <main+0x76>
-		    g_imu_task_due = false;
+			g_imu_task_due = false;
  8003ab4:	4b2b      	ldr	r3, [pc, #172]	@ (8003b64 <main+0x11c>)
  8003ab6:	2200      	movs	r2, #0
  8003ab8:	701a      	strb	r2, [r3, #0]
-		    Imu_Task();
+			Imu_Task();
  8003aba:	f7ff fefb 	bl	80038b4 <Imu_Task>
 		}
 

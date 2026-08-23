@@ -29,7 +29,7 @@ void Mahony_Calibrate(MahonyFilter_t *f, BMI088 *imu) {
 		f->cal.gyro_bias[a] = gsum[a] / CALIB_SAMPLES;
 		f->cal.acc_bias[a]  = asum[a] / CALIB_SAMPLES;
 	}
-	f->cal.acc_bias[2] -= 9.81f;
+	f->cal.acc_bias[2] += 9.81f;
 
 	f->cal.calibrated = 1;
 }
@@ -55,9 +55,9 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
 	float vy = 2.0f * (f->q0*f->q1 + f->q2*f->q3);
 	float vz = f->q0*f->q0 - f->q1*f->q1 - f->q2*f->q2 + f->q3*f->q3;
 
-	float ex = ay_g*vz - az_g*vy;
-	float ey = az_g*vx - ax_g*vz;
-	float ez = ax_g*vy - ay_g*vx;
+	float ex = vy * az_g - vz * ay_g;
+	float ey = vz * ax_g - vx * az_g;
+	float ez = vx * ay_g - vy * ax_g;
 
 	if (f->Ki > 0.0f) {
 		f->bx += f->Ki * ex * dt;
