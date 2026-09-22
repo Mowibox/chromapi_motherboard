@@ -65,6 +65,8 @@ extern RobotFeedback_t g_robot_state;
 void Bridge_Init(UART_HandleTypeDef *huart);
 void Bridge_Process(void);
 void Bridge_UpdateBatteryLed(void);
+void Bridge_DispatchPendingPositions(void);
+void Bridge_UpdateCachedPower(void);
 
 void Bridge_TxCpltCallback(void);
 void Bridge_RxEventCallback(uint16_t size);

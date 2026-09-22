@@ -48,6 +48,12 @@ static uint8_t  frame_buf[BRIDGE_FRAME_BUF_SIZE];
 static uint16_t frame_buf_len = 0;
 
 static bool wait_servo_bus_idle(uint32_t timeout_ms);
+static void build_and_send_state_snapshot(void);
+static volatile bool s_pending_positions_valid = false;
+static uint8_t s_pending_positions_raw[24];
+static int32_t s_cached_bus_uV = 0;
+static int32_t s_cached_current_uA = 0;
+static int32_t s_cached_power_uW = 0;
 
 RobotFeedback_t g_robot_state = {0};
 
@@ -116,21 +122,28 @@ static void send_ack(bool ok) {
 static void handle_cmd_set_positions(const uint8_t *payload, uint8_t len) {
 	if (len < 24) { send_ack(false); return; } // 12 * uint16_t = 24 bytes
 
-	if (!wait_servo_bus_idle(55)) {
-		send_ack(false);
-		return;
-	}
+	memcpy(s_pending_positions_raw, payload, sizeof(s_pending_positions_raw));
+	s_pending_positions_valid = true;
+
+	build_and_send_state_snapshot();
+}
+
+void Bridge_DispatchPendingPositions(void) {
+	if (!s_pending_positions_valid) return;
+	if (g_servo_txn != SERVO_TXN_NONE || !STS3215_HAL_IsIdle(&hservo)) return;
+
+	uint8_t raw[sizeof(s_pending_positions_raw)];
+	memcpy(raw, s_pending_positions_raw, sizeof(raw));
+	s_pending_positions_valid = false;
 
 	STS3215_SyncEntry_t entries[12];
-
 	for (uint8_t i = 0; i < 12; i++) {
 		entries[i].id = i + 1;
-		entries[i].data[0] = payload[i * 2];
-		entries[i].data[1] = payload[i * 2 + 1];
+		entries[i].data[0] = raw[i * 2];
+		entries[i].data[1] = raw[i * 2 + 1];
 	}
 
 	uint8_t sync_tx_buf[STS3215_TX_BUF_SIZE];
-
 	int16_t frame_len = STS3215_BuildSyncWrite(
 			sync_tx_buf,
 			sizeof(sync_tx_buf),
@@ -139,12 +152,12 @@ static void handle_cmd_set_positions(const uint8_t *payload, uint8_t len) {
 			entries,
 			12
 	);
+	if (frame_len <= 0) return;
 
-	bool sent_ok = false;
-	if (frame_len > 0) {
-		sent_ok = (STS3215_HAL_SendFrame(&hservo, sync_tx_buf, frame_len, true, 0) == STS3215_OK);
+	g_servo_txn = SERVO_TXN_COMMAND;
+	if (STS3215_HAL_SendFrame(&hservo, sync_tx_buf, frame_len, true, 0) != STS3215_OK) {
+		g_servo_txn = SERVO_TXN_NONE;
 	}
-	send_ack(sent_ok);
 }
 
 static void handle_cmd_set_led_color(const uint8_t *payload, uint8_t len) {
@@ -190,38 +203,37 @@ static void handle_cmd_set_led_ring_bulk(const uint8_t *payload, uint8_t len) {
 	send_ack(true);
 }
 
-static void handle_cmd_get_power(void) {
-	int32_t bus_uV = AutoFox_INA226_GetBusVoltage_uV(&gINA226);
-	int32_t curr_uA = AutoFox_INA226_GetCurrent_uA(&gINA226);
-	int32_t power_uW = AutoFox_INA226_GetPower_uW(&gINA226);
+void Bridge_UpdateCachedPower(void) {
+	s_cached_bus_uV     = AutoFox_INA226_GetBusVoltage_uV(&gINA226);
+	s_cached_current_uA = AutoFox_INA226_GetCurrent_uA(&gINA226);
+	s_cached_power_uW   = AutoFox_INA226_GetPower_uW(&gINA226);
+}
 
+static void handle_cmd_get_power(void) {
 	uint8_t resp[12];
 
-	resp[0] = (uint8_t)(bus_uV & 0xFF);
-	resp[1] = (uint8_t)((bus_uV >> 8) & 0xFF);
-	resp[2] = (uint8_t)((bus_uV >> 16) & 0xFF);
-	resp[3] = (uint8_t)((bus_uV >> 24) & 0xFF);
+	resp[0] = (uint8_t)(s_cached_bus_uV & 0xFF);
+	resp[1] = (uint8_t)((s_cached_bus_uV >> 8) & 0xFF);
+	resp[2] = (uint8_t)((s_cached_bus_uV >> 16) & 0xFF);
+	resp[3] = (uint8_t)((s_cached_bus_uV >> 24) & 0xFF);
 
-	resp[4] = (uint8_t)(curr_uA & 0xFF);
-	resp[5] = (uint8_t)((curr_uA >> 8) & 0xFF);
-	resp[6] = (uint8_t)((curr_uA >> 16) & 0xFF);
-	resp[7] = (uint8_t)((curr_uA >> 24) & 0xFF);
+	resp[4] = (uint8_t)(s_cached_current_uA & 0xFF);
+	resp[5] = (uint8_t)((s_cached_current_uA >> 8) & 0xFF);
+	resp[6] = (uint8_t)((s_cached_current_uA >> 16) & 0xFF);
+	resp[7] = (uint8_t)((s_cached_current_uA >> 24) & 0xFF);
 
-	resp[8] = (uint8_t)(power_uW & 0xFF);
-	resp[9] = (uint8_t)((power_uW >> 8) & 0xFF);
-	resp[10] = (uint8_t)((power_uW >> 16) & 0xFF);
-	resp[11] = (uint8_t)((power_uW >> 24) & 0xFF);
+	resp[8] = (uint8_t)(s_cached_power_uW & 0xFF);
+	resp[9] = (uint8_t)((s_cached_power_uW >> 8) & 0xFF);
+	resp[10] = (uint8_t)((s_cached_power_uW >> 16) & 0xFF);
+	resp[11] = (uint8_t)((s_cached_power_uW >> 24) & 0xFF);
 
 	send_frame(BRIDGE_POWER_READING, resp, 12);
 }
 
-static void handle_cmd_feedback(void) {
-	g_robot_state.bus_uV     = AutoFox_INA226_GetBusVoltage_uV(&gINA226);
-	g_robot_state.current_uA = AutoFox_INA226_GetCurrent_uA(&gINA226);
-	g_robot_state.power_uW   = AutoFox_INA226_GetPower_uW(&gINA226);
-
-	BMI088_ReadAccelerometer(&gIMU);
-	BMI088_ReadGyroscope(&gIMU);
+static void build_and_send_state_snapshot(void) {
+	g_robot_state.bus_uV     = s_cached_bus_uV;
+	g_robot_state.current_uA = s_cached_current_uA;
+	g_robot_state.power_uW   = s_cached_power_uW;
 
 	for (uint8_t i = 0; i < 3; i++) {
 		g_robot_state.imu_acc[i]  = (int16_t)(gIMU.acc_mps2[i] * 100.0f);
@@ -243,6 +255,10 @@ static void handle_cmd_feedback(void) {
 	g_robot_state.switches_mask = (tl << 0) | (tr << 1) | (bl << 2) | (br << 3);
 
 	send_frame(BRIDGE_STATE_SNAPSHOT, (uint8_t*)&g_robot_state, sizeof(RobotFeedback_t));
+}
+
+static void handle_cmd_feedback(void) {
+	build_and_send_state_snapshot();
 }
 
 static bool wait_servo_idle(STS3215_HAL_Handle_t *h, uint32_t timeout_ms)

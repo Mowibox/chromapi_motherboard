@@ -404,3 +404,18 @@ org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of 
 	at com.st.stm32cube.ide.mpu.remote.serial.internal.SerialPortProviderWindows.run(SerialPortProviderWindows.java:127)
 	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
 	at java.base/java.util.TimerThread.run(Timer.java:516)
+!SESSION 2026-09-22 22:41:40.114 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-09-22 22:41:47.626
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-09-22 22:41:47.629
+!MESSAGE Log4j2 initialized with config file /home/mowibox/Documents/WorkspaceU/Git_folders/chromapi_motherboard/firmware/chromapi_stm32_core/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-09-22 22:41:52.730
+!MESSAGE Started RMI Server, listening on port 41337

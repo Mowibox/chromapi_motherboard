@@ -91,7 +91,10 @@ static uint8_t active_servo_ids[12];
 static uint8_t active_servo_count = 0;
 
 static volatile bool g_imu_task_due = false;
-static uint8_t g_tim6_div = 0; // IMU ODR = 100 Hz
+static volatile bool g_power_task_due = false;
+
+static uint8_t g_tim6_div = 0; // servo poll ODR = 200 Hz (TIM6 base is 400 Hz)
+static uint8_t g_tim6_power_div = 0; // INA226 refresh ODR = 10 Hz (400 Hz / 40)
 static uint32_t g_imu_last_tick = 0;
 /* USER CODE END PV */
 
@@ -249,24 +252,20 @@ void Chromapi_SystemInit(void) {
 	Mahony_Init(&g_mahony);
 	Mahony_Calibrate(&g_mahony, &gIMU);
 
+	Bridge_UpdateCachedPower();
+
 	scan_active_servos();
 	HAL_Delay(500U);
 	printf("[SYS] System Initialized\r\n");
 }
 /* USER CODE END 0 */
 
-/**
- * @brief  The application entry point.
- * @retval int
- */
 int main(void)
 {
 
 	/* USER CODE BEGIN 1 */
 
 	/* USER CODE END 1 */
-
-	/* MCU Configuration--------------------------------------------------------*/
 
 	/* Reset of all peripherals, Initializes the Flash interface and the Systick. */
 	HAL_Init();
@@ -310,10 +309,16 @@ int main(void)
 		}
 
 		Bridge_Process();
+		Bridge_DispatchPendingPositions();
 
 		if (g_imu_task_due) {
 			g_imu_task_due = false;
 			Imu_Task();
+		}
+
+		if (g_power_task_due) {
+			g_power_task_due = false;
+			Bridge_UpdateCachedPower();
 		}
 
 		if (g_poll_due && g_servo_txn == SERVO_TXN_NONE && STS3215_HAL_IsIdle(&hservo)) {
@@ -584,7 +589,7 @@ static void MX_TIM6_Init(void)
 	htim6.Instance = TIM6;
 	htim6.Init.Prescaler = 160-1;
 	htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
-	htim6.Init.Period = 4999;
+	htim6.Init.Period = 2499;
 	htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
 	if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
 	{
@@ -716,7 +721,7 @@ static void MX_DMA_Init(void)
 	HAL_NVIC_SetPriority(DMA1_Channel2_IRQn, 5, 0);
 	HAL_NVIC_EnableIRQ(DMA1_Channel2_IRQn);
 	/* DMA1_Channel3_IRQn interrupt configuration */
-	HAL_NVIC_SetPriority(DMA1_Channel3_IRQn, 7, 0);
+	HAL_NVIC_SetPriority(DMA1_Channel3_IRQn, 5, 0);
 	HAL_NVIC_EnableIRQ(DMA1_Channel3_IRQn);
 	/* DMA1_Channel4_IRQn interrupt configuration */
 	HAL_NVIC_SetPriority(DMA1_Channel4_IRQn, 5, 0);
@@ -790,10 +795,15 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
 	if (htim->Instance == TIM6) {
-		g_poll_due = true;
-		if (++g_tim6_div >= 2) {
+		g_imu_task_due = true;
+
+		if (++g_tim6_div >= 2) {  // 400 Hz / 2 = 200 Hz
 			g_tim6_div = 0;
-			g_imu_task_due = true;
+			g_poll_due = true;
+		}
+		if (++g_tim6_power_div >= 40) {  // 400 Hz / 40
+			g_tim6_power_div = 0;
+			g_power_task_due = true;
 		}
 	}
 }

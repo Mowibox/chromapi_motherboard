@@ -1,4 +1,4 @@
-#include "BMI088.h"
+#include "bmi088.h"
 
 /*
  *
@@ -51,7 +51,7 @@ uint8_t BMI088_Init(BMI088 *imu,
 	HAL_Delay(10);
 
 	/* Configure accelerometer  */
-	status += BMI088_WriteAccRegister(imu, BMI_ACC_CONF, 0xA8); /* (no oversampling, ODR = 100 Hz, BW = 40 Hz) */
+	status += BMI088_WriteAccRegister(imu, BMI_ACC_CONF, 0xAA); /* (no oversampling, ODR = 400 Hz, BW = 145 Hz) */
 	HAL_Delay(10);
 
 	status += BMI088_WriteAccRegister(imu, BMI_ACC_RANGE, 0x00); /* +- 3g range */
@@ -104,7 +104,7 @@ uint8_t BMI088_Init(BMI088 *imu,
 	status += BMI088_WriteGyrRegister(imu, BMI_GYR_RANGE, 0x01); /* +- 1000 deg/s */
 	HAL_Delay(10);
 
-	status += BMI088_WriteGyrRegister(imu, BMI_GYR_BANDWIDTH, 0x07); /* ODR = 100 Hz, Filter bandwidth = 32 Hz */
+	status += BMI088_WriteGyrRegister(imu, BMI_GYR_BANDWIDTH, 0x03); /* ODR = 400 Hz, Filter bandwidth = 47 Hz */
 	HAL_Delay(10);
 
 	/* Enable gyroscope data ready interrupt */
