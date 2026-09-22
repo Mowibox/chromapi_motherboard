@@ -133,10 +133,10 @@ flowchart LR
     AUDIO["Speaker + Microphone<br/>MAX98357A / ICS-43434"]
     FAN(["Fan<br/>Noctua NF-A4x10"])
 
-    RPI <-->|"Custom bridge protocol<br/>UART1 · 1 Mbps"| MCU
-    MCU <-->|"RS485 half-duplex<br/>USART2 · 1 Mbps "| SERVOS
-    MCU <-->|"SPI1 · 5 MHz"| IMU
-    MCU <-->|"I2C1 · 400 kHz"| PWR
+    RPI <-->|"Custom bridge protocol<br/>UART1 · 1 Mbps · 100 Hz control loop"| MCU
+    MCU <-->|"RS485 half-duplex<br/>USART2 · 1 Mbps · 200 Hz poll"| SERVOS
+    MCU <-->|"SPI1 · 5 MHz · 400 Hz ODR"| IMU
+    MCU <-->|"I2C1 · 400 kHz · 10 Hz poll"| PWR
     MCU -->|"PWM+DMA · 800 kHz"| LED
 
     RPI -->|"CSI-2"| CAM
