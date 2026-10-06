@@ -427,6 +427,14 @@ int16_t STS3215_UnpackS16LE(const uint8_t *buf)
 	return (int16_t)((uint16_t)buf[0] | ((uint16_t)buf[1] << 8U));
 }
 
+/* Little-endian 2 bytes, sign-magnitude -> int16_t */
+int16_t STS3215_UnpackSignMag16LE(const uint8_t *buf, uint8_t sign_bit)
+{
+	uint16_t raw = (uint16_t)buf[0] | ((uint16_t)buf[1] << 8U);
+	uint16_t mag = raw & (uint16_t)((1U << sign_bit) - 1U);
+	return (raw & (uint16_t)(1U << sign_bit)) ? (int16_t)(-(int16_t)mag) : (int16_t)mag;
+}
+
 /* Steps -> degrees */
 float STS3215_StepsToDeg(int16_t steps)
 {

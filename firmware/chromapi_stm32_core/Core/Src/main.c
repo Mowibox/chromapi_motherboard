@@ -85,6 +85,7 @@ uint32_t last_led_update = 0;
 
 volatile servo_txn_type_t g_servo_txn = SERVO_TXN_NONE;
 static volatile bool g_poll_due = false;
+static uint8_t g_poll_count = 0;
 #define SERVO_POLL_PERIOD_MS 5U  // 200 Hz
 
 static uint8_t active_servo_ids[12];
@@ -122,10 +123,14 @@ static void on_reply(const STS3215_Reply_t *reply, uint8_t idx, STS3215_Status_t
 				reply->data_len >= 8U) {
 			uint8_t i = reply->id - 1U;
 			g_robot_state.servos[i].position    = (uint16_t)STS3215_UnpackS16LE(&reply->data[0]);
-			g_robot_state.servos[i].speed       = STS3215_UnpackS16LE(&reply->data[2]);
-			g_robot_state.servos[i].load        = STS3215_UnpackS16LE(&reply->data[4]);
+			g_robot_state.servos[i].speed       = STS3215_UnpackSignMag16LE(&reply->data[2], 15U);
+			g_robot_state.servos[i].load        = STS3215_UnpackSignMag16LE(&reply->data[4], 10U);
 			g_robot_state.servos[i].voltage     = reply->data[6];
 			g_robot_state.servos[i].temperature = reply->data[7];
+		} else if (reply->id >= 1 && reply->id <= 12 &&
+				(status == STS3215_OK || status == STS3215_ERR_SERVO_FAULT) &&
+				reply->data_len == 2U) {
+			g_robot_state.servo_current[reply->id - 1U] = (int16_t)STS3215_UnpackU16LE(&reply->data[0]);
 		}
 		return;
 	}
@@ -325,8 +330,10 @@ int main(void)
 			g_poll_due = false;
 			if (active_servo_count > 0) {
 				uint8_t buf[STS3215_TX_BUF_SIZE];
+				bool current_turn = ((++g_poll_count & 3U) == 0U);
 				int16_t frame_len = STS3215_BuildSyncRead(buf, sizeof(buf),
-						STS3215_REG_CURRENT_POS, 8U,
+						current_turn ? STS3215_REG_CURRENT_CURRENT : STS3215_REG_CURRENT_POS,
+						current_turn ? 2U : 8U,
 						active_servo_ids, active_servo_count);
 				if (frame_len > 0) {
 					g_servo_txn = SERVO_TXN_POLL;

@@ -239,6 +239,9 @@ static void build_and_send_state_snapshot(void) {
 		g_robot_state.imu_acc[i]  = (int16_t)(gIMU.acc_mps2[i] * 100.0f);
 		g_robot_state.imu_gyro[i] = (int16_t)(gIMU.gyr_rps[i]  * 1000.0f);
 	}
+	g_robot_state.imu_gyro_corr[0] = (int16_t)(g_mahony.wx * 1000.0f);
+	g_robot_state.imu_gyro_corr[1] = (int16_t)(g_mahony.wy * 1000.0f);
+	g_robot_state.imu_gyro_corr[2] = (int16_t)(g_mahony.wz * 1000.0f);
 	float q[4] = {g_mahony.q0, g_mahony.q1, g_mahony.q2, g_mahony.q3};
 	for (uint8_t i = 0; i < 4; i++) {
 		int32_t raw = (int32_t)(q[i] * 32767.0f);
@@ -475,7 +478,7 @@ static void parse_rx_buffer(void) {
 		}
 
 		if (i + total_frame_size > frame_buf_len) {
-			break; /* trame réellement incomplète : on attend l'IDLE suivant */
+			break;
 		}
 
 		uint8_t received_crc = frame_buf[i + total_frame_size - 1];

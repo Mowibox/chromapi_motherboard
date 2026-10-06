@@ -12,6 +12,7 @@ typedef struct {
 typedef struct {
 	float q0, q1, q2, q3;
 	float bx, by, bz;
+	float wx, wy, wz;  // bias-corrected angular rate (rad/s), without the Kp term
 	float Kp, Ki;
 	ImuCalibration_t cal;
 } MahonyFilter_t;

@@ -52,6 +52,10 @@ typedef struct __attribute__((packed)) {
 	int16_t imu_quat[4];
 
 	uint8_t switches_mask;
+
+	int16_t imu_gyro_corr[3];  // bias-corrected gyro, rad/s * 1000
+
+	int16_t servo_current[12]; // polled at 50 Hz
 } RobotFeedback_t;
 
 typedef enum {

@@ -7,8 +7,9 @@
 void Mahony_Init(MahonyFilter_t *f) {
 	f->q0 = 1.0f; f->q1 = f->q2 = f->q3 = 0.0f;
 	f->bx = f->by = f->bz = 0.0f;
-	f->Kp = 2.0f;
-	f->Ki = 0.05f;
+	f->wx = f->wy = f->wz = 0.0f;
+	f->Kp = 1.0f;
+	f->Ki = 0.01f;
 	f->cal.calibrated = 0;
 }
 
@@ -45,6 +46,10 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
 		ay -= f->cal.acc_bias[1];
 		az -= f->cal.acc_bias[2];
 	}
+
+	f->wx = gx + f->bx;
+	f->wy = gy + f->by;
+	f->wz = gz + f->bz;
 
 	float ax_g = ax / 9.81f, ay_g = ay / 9.81f, az_g = az / 9.81f;
 	float norm = CordicSqrt(ax_g*ax_g + ay_g*ay_g + az_g*az_g);
