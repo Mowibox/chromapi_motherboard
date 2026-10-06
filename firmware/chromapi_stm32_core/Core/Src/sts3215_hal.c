@@ -171,7 +171,7 @@ STS3215_Status_t STS3215_HAL_SendFrame(STS3215_HAL_Handle_t *hservo,
 
 	if (status != HAL_OK) {
 		if (!is_broadcast && expected_replies > 0) {
-			HAL_UART_DMAStop(hservo->huart); // Annuler le RX si le TX échoue
+			HAL_UART_DMAStop(hservo->huart);
 		}
 		hservo->state = STS3215_HAL_STATE_ERROR;
 		hservo->last_error = STS3215_HAL_ERR_DMA_TX;
@@ -259,8 +259,6 @@ void STS3215_HAL_TxCpltCallback(STS3215_HAL_Handle_t *hservo)
 	if (hservo->is_broadcast || hservo->expected_replies == 0U) {
 		hservo->state = STS3215_HAL_STATE_IDLE;
 	} else {
-		// [CORRECTION CRITIQUE] Le DMA RX est déjà actif.
-		// On bascule simplement la machine à états et on arme le Timeout.
 		hservo->state = STS3215_HAL_STATE_RX_BUSY;
 		hservo->tx_timestamp_ms = HAL_GetTick();
 	}

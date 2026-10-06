@@ -172,7 +172,7 @@ uint16_t STS3215_UnpackU16LE(const uint8_t *buf);
 /* Little-endian 2 bytes -> int16_t (signed positions, speeds) */
 int16_t STS3215_UnpackS16LE(const uint8_t *buf);
 
-/* Little-endian 2 bytes, sign-magnitude (direction on bit sign_bit) -> int16_t
+/* Little-endian 2 bytes, sign-magnitude (direction on bit sign_bit) -> int16_t */
 int16_t STS3215_UnpackSignMag16LE(const uint8_t *buf, uint8_t sign_bit);
 
 /* Steps -> degrees */
