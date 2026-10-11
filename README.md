@@ -38,13 +38,13 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 
 * **🧠 The Brain**: The STM32G431KBT6 MCU handles real-time tasks: servo control, IMU fusion, and power monitoring. The Raspberry Pi runs high-level control, vision, and the Python SDK. They communicate through a custom UART bridge at 1 Mbps.
 
-* **💪 The Muscles**: The SN74LVC1G126 and SN74LVC1G125 buffer the half-duplex RS485 bus for 12 Feetech STS3215 servos. The STM32 polls servo positions at 200 Hz.
+* **💪 The Muscles**: The SN74LVC1G126 and SN74LVC1G125 buffer the half-duplex TTL serial bus for 12 Feetech STS3215 servos; USART2 switches their direction with its RS485 driver-enable mode. The STM32 polls the bus at 200 Hz: positions three polls out of four (150 Hz), currents one poll out of four (50 Hz).
 
 * **❤️ The Heart**: The TPS51388 converts the 18650 2S battery voltage to 5V. The LD39050 generates the 3.3V rail. The INA226 monitors voltage, current, and power via I2C.
 
 * **🛡️ The Immune System**: The CN3302 charges the two 18650 Li-ion cells through USB-C. The HY2120 provides protection against over-discharge, over-current, and short circuits.
 
-* **👁️ The Senses & Balance**: The BMI088 IMU gives acceleration and angular velocity data with SPI. A Mahony filter runs at 100 Hz and outputs orientation as a quaternion. Four foot switches detect ground contact for gait timing.
+* **👁️ The Senses & Balance**: The BMI088 IMU gives acceleration and angular velocity data with SPI. A Mahony filter runs at 400 Hz and outputs orientation as a quaternion. Four GPIO inputs (SW_TopLeft, SW_TopRight, SW_BotLeft, SW_BotRight) are reserved for foot switches; they are not wired on the current robot, so ground contact is not sensed.
 
 * **🗣️ The Voice & Expression**: The MAX98357A drives the speaker via I2S communication. The ICS-43434 microphone captures audio through I2S. And the SN74AHCT1G125 level-shifts the 3.3V signal to 5V for the WS2812B RGB LEDs.
 
@@ -134,7 +134,7 @@ flowchart LR
     FAN(["Fan<br/>Noctua NF-A4x10"])
 
     RPI <-->|"Custom bridge protocol<br/>UART1 · 1 Mbps · 100 Hz control loop"| MCU
-    MCU <-->|"RS485 half-duplex<br/>USART2 · 1 Mbps · 200 Hz poll"| SERVOS
+    MCU <-->|"TTL half-duplex<br/>USART2 · 1 Mbps · 200 Hz poll"| SERVOS
     MCU <-->|"SPI1 · 5 MHz · 400 Hz ODR"| IMU
     MCU <-->|"I2C1 · 400 kHz · 10 Hz poll"| PWR
     MCU -->|"PWM+DMA · 800 kHz"| LED
