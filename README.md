@@ -85,7 +85,7 @@ For this project, I utilized their sponsored [PCB manufacturing](https://www.pcb
 ### Power Architecture
 
 ```mermaid
-%%{init: {'themeVariables': {'edgeLabelBackground':'transparent'}}}%%
+%%{init: {'themeCSS': '.edgeLabel, .edgeLabel p, .labelBkg { background-color: transparent !important; } .edgeLabel rect { fill: transparent !important; }'}}%%
 flowchart TD
     CHG[["USB-C charge<br/>CN3302"]] -.->|"charge → B+ ≈ 7.2–8.4V"| CELLS[("Battery<br/>18650 x2")]
     CELLS -->|"B+/BM/B-"| HY["HY2120<br/>BMS protection"]
@@ -121,7 +121,7 @@ flowchart TD
 ### Communication Architecture
 
 ```mermaid
-%%{init: {'themeVariables': {'edgeLabelBackground':'transparent'}}}%%
+%%{init: {'themeCSS': '.edgeLabel, .edgeLabel p, .labelBkg { background-color: transparent !important; } .edgeLabel rect { fill: transparent !important; }'}}%%
 flowchart LR
     RPI["Raspberry Pi"]
     MCU["STM32G431KBT6<br/>SYSCLK · 160 MHz"]
@@ -133,9 +133,10 @@ flowchart LR
     AUDIO["Speaker + Microphone<br/>MAX98357A / ICS-43434"]
     FAN(["Fan<br/>Noctua NF-A4x10"])
 
-    RPI <-->|"Custom bridge protocol<br/>UART1 · 1 Mbps · 100 Hz control loop"| MCU
-    MCU <-->|"RS485 half-duplex<br/>USART2 · 1 Mbps · 200 Hz poll"| SERVOS
-    MCU <-->|"SPI1 · 5 MHz · 400 Hz ODR"| IMU
+    RPI -->|"Custom bridge protocol<br/>UART1 · 2 Mbps · 100 Hz control loop"| MCU
+    MCU -->|"State snapshot @ 200 Hz"| RPI
+    MCU <-->|"Half-duplex serial<br/>USART2 · 1 Mbps · 200 Hz"| SERVOS
+    MCU <-->|"SPI1 · 5 MHz · 400 Hz (Mahony AHRS)"| IMU
     MCU <-->|"I2C1 · 400 kHz · 10 Hz poll"| PWR
     MCU -->|"PWM+DMA · 800 kHz"| LED
 

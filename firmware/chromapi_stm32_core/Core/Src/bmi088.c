@@ -104,7 +104,7 @@ uint8_t BMI088_Init(BMI088 *imu,
 	status += BMI088_WriteGyrRegister(imu, BMI_GYR_RANGE, 0x01); /* +- 1000 deg/s */
 	HAL_Delay(10);
 
-	status += BMI088_WriteGyrRegister(imu, BMI_GYR_BANDWIDTH, 0x03); /* ODR = 400 Hz, Filter bandwidth = 47 Hz */
+	status += BMI088_WriteGyrRegister(imu, BMI_GYR_BANDWIDTH, 0x02); /* ODR = 1000 Hz, Filter bandwidth = 116 Hz (less group delay than 0x03 = 400 Hz / 47 Hz) */
 	HAL_Delay(10);
 
 	/* Enable gyroscope data ready interrupt */

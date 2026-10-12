@@ -37,10 +37,10 @@
 #define STS3215_PARAM_MAX               (16U)
 /**
  * Reply packet overhead = Header(2) + ID(1) + Length(1) + ERROR(1) + Checksum(1)
- * Maximum feedback read: 8 bytes data (SYNC READ example) + overhead
+ * Maximum feedback read: 16 bytes data (0x38..0x46 poll = 15 B) + overhead
  */
 #define STS3215_REPLY_OVERHEAD          (6U)
-#define STS3215_REPLY_DATA_MAX          (8U)
+#define STS3215_REPLY_DATA_MAX          (16U)
 
 /** Byte offsets inside a received reply buffer */
 #define STS3215_REPLY_OFF_HEADER1       (1U)

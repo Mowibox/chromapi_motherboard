@@ -35,9 +35,9 @@
 /**
  * RX buffer per reply frame:
  *   header(2) + id(1) + len(1) + error(1) + data(N) + checksum(1)
- * Sized for largest single-servo read (full feedback block = 8B data).
+ * Sized for largest single-servo read (STS3215_REPLY_DATA_MAX data bytes).
  */
-#define STS3215_RX_BUF_SIZE (16U)
+#define STS3215_RX_BUF_SIZE (STS3215_REPLY_OVERHEAD + STS3215_REPLY_DATA_MAX)
 
 /* =========================================================================
  * Status / Error Codes

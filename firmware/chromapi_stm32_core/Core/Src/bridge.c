@@ -20,7 +20,7 @@ extern volatile servo_txn_type_t g_servo_txn;
 
 #define BRIDGE_RX_BUF_SIZE 256
 #define BRIDGE_TX_BUF_SIZE 256
-#define BRIDGE_TX_QUEUE_LEN 3
+#define BRIDGE_TX_QUEUE_LEN 4
 
 #define BRIDGE_MAX_FRAME_SIZE  64U
 #define BRIDGE_FRAME_BUF_SIZE  (BRIDGE_RX_BUF_SIZE + BRIDGE_MAX_FRAME_SIZE)
@@ -33,24 +33,23 @@ typedef struct {
 } bridge_tx_frame_t;
 
 static bridge_tx_frame_t tx_queue[BRIDGE_TX_QUEUE_LEN];
-static volatile uint8_t  tx_queue_head  = 0;
-static volatile uint8_t  tx_queue_tail  = 0;
-static volatile uint8_t  tx_queue_count = 0;
+static volatile uint8_t tx_head = 0;
+static volatile uint8_t tx_tail = 0;
+static volatile bool    tx_busy = false;
 
 volatile uint32_t g_bridge_tx_overflow_count = 0;
-
-static volatile bool rx_ready = false;
-static volatile uint16_t rx_len = 0;
-static volatile bool tx_busy = false;
 static volatile uint32_t g_bridge_tx_dma_fail_count = 0;
+
+static volatile uint16_t rx_head = 0;
+static uint16_t rx_tail = 0;
 
 static uint8_t  frame_buf[BRIDGE_FRAME_BUF_SIZE];
 static uint16_t frame_buf_len = 0;
 
-static bool wait_servo_bus_idle(uint32_t timeout_ms);
-static void build_and_send_state_snapshot(void);
-static volatile bool s_pending_positions_valid = false;
+static bool s_pending_positions_valid = false;
 static uint8_t s_pending_positions_raw[24];
+static uint16_t s_pending_torque_mask = 0;
+static uint16_t s_pending_torque_on = 0;
 static int32_t s_cached_bus_uV = 0;
 static int32_t s_cached_current_uA = 0;
 static int32_t s_cached_power_uW = 0;
@@ -68,55 +67,61 @@ static uint32_t g_led_override_until_ms = 0;
 
 #define LED_OVERRIDE_DURATION_MS  5000U
 
-static uint8_t calculate_crc(const uint8_t *data, uint16_t len) {
-	uint8_t crc = 0;
-	for (uint16_t i = 0; i < len; i++) {
-		crc ^= data[i];
+// CRC-16/CCITT-FALSE, matches Python's binascii.crc_hqx(data, 0xFFFF).
+static uint16_t crc16(const uint8_t *data, uint16_t len) {
+	uint16_t crc = 0xFFFF;
+	while (len--) {
+		crc ^= (uint16_t)(*data++) << 8;
+		for (uint8_t b = 0; b < 8; b++) {
+			crc = (crc & 0x8000U) ? (uint16_t)((crc << 1) ^ 0x1021U) : (uint16_t)(crc << 1);
+		}
 	}
 	return crc;
 }
 
-static void tx_queue_start_next(void) {
-	if (tx_queue_count == 0) return;
+static void tx_start_next(void) {
+	if (tx_head == tx_tail) {
+		tx_busy = false;
+		return;
+	}
 	tx_busy = true;
-	if (HAL_UART_Transmit_DMA(bridge_uart,
-			tx_queue[tx_queue_head].data,
-			tx_queue[tx_queue_head].len) != HAL_OK) {
+	if (HAL_UART_Transmit_DMA(bridge_uart, tx_queue[tx_head].data, tx_queue[tx_head].len) != HAL_OK) {
 		tx_busy = false;
 		g_bridge_tx_dma_fail_count++;
 	}
 }
 
 static void send_frame(uint8_t cmd, const uint8_t *payload, uint8_t payload_len) {
-	if (tx_queue_count >= BRIDGE_TX_QUEUE_LEN) {
+	uint8_t next = (uint8_t)((tx_tail + 1U) % BRIDGE_TX_QUEUE_LEN);
+	if (next == tx_head) {
 		g_bridge_tx_overflow_count++;
 		return;
 	}
 
-	bridge_tx_frame_t *slot = &tx_queue[tx_queue_tail];
-	slot->data[0] = BRIDGE_SYNC_1;
-	slot->data[1] = BRIDGE_SYNC_2;
-	slot->data[2] = payload_len + 1;
-	slot->data[3] = cmd;
-
+	uint8_t *d = tx_queue[tx_tail].data;
+	d[0] = BRIDGE_SYNC_1;
+	d[1] = BRIDGE_SYNC_2;
+	d[2] = payload_len + 1;
+	d[3] = cmd;
 	if (payload_len > 0 && payload != NULL) {
-		memcpy(&slot->data[4], payload, payload_len);
+		memcpy(&d[4], payload, payload_len);
 	}
+	uint16_t crc = crc16(&d[2], payload_len + 2U);
+	d[4 + payload_len] = (uint8_t)(crc & 0xFF);
+	d[5 + payload_len] = (uint8_t)(crc >> 8);
+	tx_queue[tx_tail].len = payload_len + 6U;
 
-	slot->data[4 + payload_len] = calculate_crc(&slot->data[2], payload_len + 2);
-	slot->len = payload_len + 5;
-
-	tx_queue_tail = (tx_queue_tail + 1) % BRIDGE_TX_QUEUE_LEN;
-	tx_queue_count++;
-
+	uint32_t primask = __get_PRIMASK();
+	__disable_irq();
+	tx_tail = next;
 	if (!tx_busy) {
-		tx_queue_start_next();
+		tx_start_next();
 	}
+	__set_PRIMASK(primask);
 }
 
 static void send_ack(bool ok) {
-	uint8_t status = ok ? BRIDGE_OK : BRIDGE_ERROR;
-	send_frame(status, NULL, 0);
+	send_frame(ok ? BRIDGE_OK : BRIDGE_ERROR, NULL, 0);
 }
 
 static void handle_cmd_set_positions(const uint8_t *payload, uint8_t len) {
@@ -124,40 +129,55 @@ static void handle_cmd_set_positions(const uint8_t *payload, uint8_t len) {
 
 	memcpy(s_pending_positions_raw, payload, sizeof(s_pending_positions_raw));
 	s_pending_positions_valid = true;
-
-	build_and_send_state_snapshot();
 }
 
-void Bridge_DispatchPendingPositions(void) {
-	if (!s_pending_positions_valid) return;
-	if (g_servo_txn != SERVO_TXN_NONE || !STS3215_HAL_IsIdle(&hservo)) return;
+static void handle_cmd_set_torque(const uint8_t *payload, uint8_t len) {
+	if (len < 4) { send_ack(false); return; }
 
-	uint8_t raw[sizeof(s_pending_positions_raw)];
-	memcpy(raw, s_pending_positions_raw, sizeof(raw));
-	s_pending_positions_valid = false;
+	uint16_t mask = (uint16_t)(payload[0] | (payload[1] << 8)) & 0x0FFFU;
+	uint16_t on   = (uint16_t)(payload[2] | (payload[3] << 8));
+	s_pending_torque_on   = (uint16_t)((s_pending_torque_on & ~mask) | (on & mask));
+	s_pending_torque_mask |= mask;
+}
 
+bool Bridge_DispatchPendingWrites(void) {
 	STS3215_SyncEntry_t entries[12];
-	for (uint8_t i = 0; i < 12; i++) {
-		entries[i].id = i + 1;
-		entries[i].data[0] = raw[i * 2];
-		entries[i].data[1] = raw[i * 2 + 1];
+	uint8_t n = 0;
+	uint8_t reg, len;
+
+	if (s_pending_positions_valid) {
+		s_pending_positions_valid = false;
+		for (uint8_t i = 0; i < 12; i++, n++) {
+			entries[n].id = i + 1;
+			entries[n].data[0] = s_pending_positions_raw[i * 2];
+			entries[n].data[1] = s_pending_positions_raw[i * 2 + 1];
+		}
+		reg = STS3215_REG_TARGET_POS;
+		len = 2;
+	} else if (s_pending_torque_mask != 0U) {
+		for (uint8_t i = 0; i < 12; i++) {
+			if (s_pending_torque_mask & (1U << i)) {
+				entries[n].id = i + 1;
+				entries[n].data[0] = (uint8_t)((s_pending_torque_on >> i) & 1U);
+				n++;
+			}
+		}
+		s_pending_torque_mask = 0;
+		reg = STS3215_REG_TORQUE_SWITCH;
+		len = 1;
+	} else {
+		return false;
 	}
 
 	uint8_t sync_tx_buf[STS3215_TX_BUF_SIZE];
-	int16_t frame_len = STS3215_BuildSyncWrite(
-			sync_tx_buf,
-			sizeof(sync_tx_buf),
-			STS3215_REG_TARGET_POS,
-			2,
-			entries,
-			12
-	);
-	if (frame_len <= 0) return;
-
-	g_servo_txn = SERVO_TXN_COMMAND;
-	if (STS3215_HAL_SendFrame(&hservo, sync_tx_buf, frame_len, true, 0) != STS3215_OK) {
-		g_servo_txn = SERVO_TXN_NONE;
+	int16_t frame_len = STS3215_BuildSyncWrite(sync_tx_buf, sizeof(sync_tx_buf), reg, len, entries, n);
+	if (frame_len > 0) {
+		g_servo_txn = SERVO_TXN_COMMAND;
+		if (STS3215_HAL_SendFrame(&hservo, sync_tx_buf, frame_len, true, 0) != STS3215_OK) {
+			g_servo_txn = SERVO_TXN_NONE;
+		}
 	}
+	return true;
 }
 
 static void handle_cmd_set_led_color(const uint8_t *payload, uint8_t len) {
@@ -209,28 +229,11 @@ void Bridge_UpdateCachedPower(void) {
 	s_cached_power_uW   = AutoFox_INA226_GetPower_uW(&gINA226);
 }
 
-static void handle_cmd_get_power(void) {
-	uint8_t resp[12];
+void Bridge_SendStateSnapshot(uint32_t t_us, uint16_t cycle_us) {
+	g_robot_state.seq++;
+	g_robot_state.t_us     = t_us;
+	g_robot_state.cycle_us = cycle_us;
 
-	resp[0] = (uint8_t)(s_cached_bus_uV & 0xFF);
-	resp[1] = (uint8_t)((s_cached_bus_uV >> 8) & 0xFF);
-	resp[2] = (uint8_t)((s_cached_bus_uV >> 16) & 0xFF);
-	resp[3] = (uint8_t)((s_cached_bus_uV >> 24) & 0xFF);
-
-	resp[4] = (uint8_t)(s_cached_current_uA & 0xFF);
-	resp[5] = (uint8_t)((s_cached_current_uA >> 8) & 0xFF);
-	resp[6] = (uint8_t)((s_cached_current_uA >> 16) & 0xFF);
-	resp[7] = (uint8_t)((s_cached_current_uA >> 24) & 0xFF);
-
-	resp[8] = (uint8_t)(s_cached_power_uW & 0xFF);
-	resp[9] = (uint8_t)((s_cached_power_uW >> 8) & 0xFF);
-	resp[10] = (uint8_t)((s_cached_power_uW >> 16) & 0xFF);
-	resp[11] = (uint8_t)((s_cached_power_uW >> 24) & 0xFF);
-
-	send_frame(BRIDGE_POWER_READING, resp, 12);
-}
-
-static void build_and_send_state_snapshot(void) {
 	g_robot_state.bus_uV     = s_cached_bus_uV;
 	g_robot_state.current_uA = s_cached_current_uA;
 	g_robot_state.power_uW   = s_cached_power_uW;
@@ -260,29 +263,7 @@ static void build_and_send_state_snapshot(void) {
 	send_frame(BRIDGE_STATE_SNAPSHOT, (uint8_t*)&g_robot_state, sizeof(RobotFeedback_t));
 }
 
-static void handle_cmd_feedback(void) {
-	build_and_send_state_snapshot();
-}
-
-static bool wait_servo_idle(STS3215_HAL_Handle_t *h, uint32_t timeout_ms)
-{
-	uint32_t t0 = HAL_GetTick();
-
-	while (!STS3215_HAL_IsIdle(h))
-	{
-		STS3215_HAL_Process(h);
-
-		if ((HAL_GetTick() - t0) > timeout_ms)
-		{
-			STS3215_HAL_Abort(h);
-			return false;
-		}
-	}
-	return (h->last_error == STS3215_HAL_ERR_NONE);
-}
-
-
-static bool wait_servo_bus_idle(uint32_t timeout_ms)
+static bool wait_servo_idle(uint32_t timeout_ms)
 {
 	uint32_t t0 = HAL_GetTick();
 	while (!STS3215_HAL_IsIdle(&hservo)) {
@@ -292,96 +273,60 @@ static bool wait_servo_bus_idle(uint32_t timeout_ms)
 			return false;
 		}
 	}
+	return true;
+}
+
+static bool claim_servo_bus(void)
+{
+	if (!wait_servo_idle(55)) return false;
 	hservo.last_error = STS3215_HAL_ERR_NONE;
 	g_servo_txn = SERVO_TXN_COMMAND;
 	return true;
 }
 
+static bool servo_txn(const uint8_t *buf, int16_t frame_len, bool broadcast, uint8_t replies, uint32_t timeout_ms)
+{
+	if (frame_len <= 0) return false;
+	hservo.last_error = STS3215_HAL_ERR_NONE;
+	if (STS3215_HAL_SendFrame(&hservo, buf, frame_len, broadcast, replies) != STS3215_OK) return false;
+	return wait_servo_idle(timeout_ms) && hservo.last_error == STS3215_HAL_ERR_NONE;
+}
+
 static void handle_cmd_set_servo_id(const uint8_t *payload, uint8_t len)
 {
-	if (len < 2) { send_ack(false); return; }
-
-	if (!wait_servo_bus_idle(55)) {
-		send_ack(false);
-		return;
-	}
+	if (len < 2 || !claim_servo_bus()) { send_ack(false); return; }
 
 	uint8_t old_id = payload[0];
 	uint8_t new_id = payload[1];
 	uint8_t buf[STS3215_TX_BUF_SIZE];
-	int16_t frame_len;
+	bool bcast = (old_id == STS3215_BROADCAST_ID);
 
-	const uint8_t target_id = (old_id == STS3215_BROADCAST_ID) ? STS3215_BROADCAST_ID : old_id;
-
-	frame_len = STS3215_BuildUnlockEEPROM(buf, sizeof(buf), target_id);
-	hservo.last_error = STS3215_HAL_ERR_NONE;
-	if (STS3215_HAL_SendFrame(&hservo, buf, frame_len, (target_id == STS3215_BROADCAST_ID), 0) != STS3215_OK) {
-		send_ack(false); return;
+	if (!servo_txn(buf, STS3215_BuildUnlockEEPROM(buf, sizeof(buf), old_id), bcast, 0, 50) ||
+	    !servo_txn(buf, STS3215_BuildWrite1B(buf, sizeof(buf), old_id, STS3215_REG_ID, new_id), bcast, 0, 50) ||
+	    !servo_txn(buf, STS3215_BuildLockEEPROM(buf, sizeof(buf), STS3215_BROADCAST_ID), true, 0, 20)) {
+		send_ack(false);
+		return;
 	}
-	if (!wait_servo_idle(&hservo, 50)) { send_ack(false); return; }
-
-	frame_len = STS3215_BuildWrite1B(buf, sizeof(buf), target_id, STS3215_REG_ID, new_id);
-	hservo.last_error = STS3215_HAL_ERR_NONE;
-	if (STS3215_HAL_SendFrame(&hservo, buf, frame_len, (target_id == STS3215_BROADCAST_ID), 0) != STS3215_OK) {
-		send_ack(false); return;
-	}
-	if (!wait_servo_idle(&hservo, 50)) { send_ack(false); return; }
-
-	frame_len = STS3215_BuildLockEEPROM(buf, sizeof(buf), STS3215_BROADCAST_ID);
-	hservo.last_error = STS3215_HAL_ERR_NONE;
-	if (STS3215_HAL_SendFrame(&hservo, buf, frame_len, true, 0) != STS3215_OK) {
-		send_ack(false); return;
-	}
-	if (!wait_servo_idle(&hservo, 20)) { send_ack(false); return; }
 
 	HAL_Delay(20);
 
 	g_reply_received = 0;
-	frame_len = STS3215_BuildPing(buf, sizeof(buf), new_id);
-	hservo.last_error = STS3215_HAL_ERR_NONE;
-	if (STS3215_HAL_SendFrame(&hservo, buf, frame_len, false, 1) != STS3215_OK) {
-		send_ack(false); return;
-	}
-	if (!wait_servo_idle(&hservo, 30)) { send_ack(false); return; }
-
-	send_ack(g_reply_received == 1);
+	bool ok = servo_txn(buf, STS3215_BuildPing(buf, sizeof(buf), new_id), false, 1, 30);
+	send_ack(ok && g_reply_received == 1);
 }
 
 static void handle_cmd_ping_servo(const uint8_t *payload, uint8_t len)
 {
-	if (len < 1) { send_ack(false); return; }
-
-	if (!wait_servo_bus_idle(55)) {
-		send_ack(false);
-		return;
-	}
+	if (len < 1 || !claim_servo_bus()) { send_ack(false); return; }
 
 	uint8_t buf[STS3215_TX_BUF_SIZE];
-	int16_t frame_len = STS3215_BuildPing(buf, sizeof(buf), payload[0]);
-	if (frame_len <= 0) { send_ack(false); return; }
-
 	g_reply_received = 0;
-	hservo.last_error = STS3215_HAL_ERR_NONE;
-
-	if (STS3215_HAL_SendFrame(&hservo, buf, frame_len, false, 1) != STS3215_OK) {
-		send_ack(false); return;
-	}
-
-	if (!wait_servo_idle(&hservo, 20)) {
-		send_ack(false);
-		return;
-	}
-
-	send_ack((hservo.last_error == STS3215_HAL_ERR_NONE) && (g_reply_received == 1));
+	bool ok = servo_txn(buf, STS3215_BuildPing(buf, sizeof(buf), payload[0]), false, 1, 20);
+	send_ack(ok && g_reply_received == 1);
 }
 
 static void handle_cmd_write_servo_register(const uint8_t *payload, uint8_t len) {
-	if (len < 5) { send_ack(false); return; }
-
-	if (!wait_servo_bus_idle(55)) {
-		send_ack(false);
-		return;
-	}
+	if (len < 5 || !claim_servo_bus()) { send_ack(false); return; }
 
 	uint8_t id = payload[0];
 	uint8_t reg = payload[1];
@@ -390,35 +335,18 @@ static void handle_cmd_write_servo_register(const uint8_t *payload, uint8_t len)
 
 	uint8_t buf[STS3215_TX_BUF_SIZE];
 	int16_t frame_len = 0;
-
 	if (size == 1) {
 		frame_len = STS3215_BuildWrite1B(buf, sizeof(buf), id, reg, (uint8_t)val);
 	} else if (size == 2) {
 		frame_len = STS3215_BuildWrite2B(buf, sizeof(buf), id, reg, val);
 	}
 
-	if (frame_len <= 0) { send_ack(false); return; }
-
-	hservo.last_error = STS3215_HAL_ERR_NONE;
 	bool is_broadcast = (id == STS3215_BROADCAST_ID);
-	uint8_t expected_replies = is_broadcast ? 0U : 1U;
-
-	if (STS3215_HAL_SendFrame(&hservo, buf, frame_len, is_broadcast, expected_replies) != STS3215_OK) {
-		send_ack(false); return;
-	}
-
-	if (!wait_servo_idle(&hservo, 50)) {
-		send_ack(false);
-		return;
-	}
-
-	send_ack(hservo.last_error == STS3215_HAL_ERR_NONE);
+	send_ack(servo_txn(buf, frame_len, is_broadcast, is_broadcast ? 0U : 1U, 50));
 }
 
 static void handle_cmd_read_servo_register(const uint8_t *payload, uint8_t len) {
-	if (len < 3) { send_ack(false); return; }
-
-	if (!wait_servo_bus_idle(55)) {
+	if (len < 3 || payload[2] == 0 || payload[2] > STS3215_REPLY_DATA_MAX || !claim_servo_bus()) {
 		send_ack(false);
 		return;
 	}
@@ -428,25 +356,11 @@ static void handle_cmd_read_servo_register(const uint8_t *payload, uint8_t len) 
 	uint8_t size = payload[2];
 
 	uint8_t buf[STS3215_TX_BUF_SIZE];
-	int16_t frame_len = STS3215_BuildRead(buf, sizeof(buf), id, reg, size);
-
-	if (frame_len <= 0) { send_ack(false); return; }
-
 	g_reply_received = 0;
-	hservo.last_error = STS3215_HAL_ERR_NONE;
+	bool ok = servo_txn(buf, STS3215_BuildRead(buf, sizeof(buf), id, reg, size), false, 1, 10);
 
-	if (STS3215_HAL_SendFrame(&hservo, buf, frame_len, false, 1) == STS3215_OK) {
-		uint32_t t0 = HAL_GetTick();
-		while (!g_reply_received && (HAL_GetTick() - t0 < 10)) {
-			STS3215_HAL_Process(&hservo);
-		}
-
-		if (g_reply_received && g_reply_data_len >= size) {
-			send_frame(0x84, (uint8_t*)g_reply_data, size);
-		} else {
-			STS3215_HAL_Abort(&hservo);
-			send_ack(false);
-		}
+	if (ok && g_reply_received && g_reply_data_len >= size) {
+		send_frame(BRIDGE_SERVO_REG_VALUE, (uint8_t*)g_reply_data, size);
 	} else {
 		send_ack(false);
 	}
@@ -470,9 +384,9 @@ static void parse_rx_buffer(void) {
 		}
 
 		uint8_t  expected_len     = frame_buf[i+2];
-		uint16_t total_frame_size = 4U + (uint16_t)expected_len;
+		uint16_t total_frame_size = 5U + (uint16_t)expected_len;
 
-		if (total_frame_size > BRIDGE_MAX_FRAME_SIZE) {
+		if (expected_len == 0 || total_frame_size > BRIDGE_MAX_FRAME_SIZE) {
 			i++;
 			continue;
 		}
@@ -481,10 +395,10 @@ static void parse_rx_buffer(void) {
 			break;
 		}
 
-		uint8_t received_crc = frame_buf[i + total_frame_size - 1];
-		uint8_t calc_crc     = calculate_crc(&frame_buf[i+2], expected_len + 1);
+		uint16_t received_crc = (uint16_t)frame_buf[i + total_frame_size - 2]
+		                      | ((uint16_t)frame_buf[i + total_frame_size - 1] << 8);
 
-		if (received_crc == calc_crc) {
+		if (received_crc == crc16(&frame_buf[i+2], expected_len + 1U)) {
 			uint8_t cmd = frame_buf[i+3];
 			const uint8_t *payload = &frame_buf[i+4];
 			uint8_t payload_len = expected_len - 1;
@@ -492,13 +406,11 @@ static void parse_rx_buffer(void) {
 			switch (cmd) {
 			case PING_BRIDGE:           send_ack(true); break;
 			case SET_POSITIONS:         handle_cmd_set_positions(payload, payload_len); break;
-			case STATE_FEEDBACK:        handle_cmd_feedback(); break;
+			case SET_TORQUE:            handle_cmd_set_torque(payload, payload_len); break;
 			case PING_SERVO:            handle_cmd_ping_servo(payload, payload_len); break;
-			case GET_SERVO_INFO:        send_ack(false); break;
 			case SET_SERVO_ID:          handle_cmd_set_servo_id(payload, payload_len); break;
 			case SET_LED_COLOR:         handle_cmd_set_led_color(payload, payload_len); break;
 			case SET_LED_RING_BULK:     handle_cmd_set_led_ring_bulk(payload, payload_len); break;
-			case GET_POWER:             handle_cmd_get_power(); break;
 			case WRITE_SERVO_REGISTER:  handle_cmd_write_servo_register(payload, payload_len); break;
 			case READ_SERVO_REGISTER:   handle_cmd_read_servo_register(payload, payload_len); break;
 			default:                    send_ack(false); break;
@@ -516,43 +428,38 @@ static void parse_rx_buffer(void) {
 	frame_buf_len = remaining;
 }
 
+static void start_rx(void) {
+	rx_head = 0;
+	rx_tail = 0;
+	__HAL_UART_CLEAR_FLAG(bridge_uart, UART_CLEAR_FEF | UART_CLEAR_NEF | UART_CLEAR_OREF);
+	HAL_UARTEx_ReceiveToIdle_DMA(bridge_uart, rx_buf, BRIDGE_RX_BUF_SIZE);
+	CLEAR_BIT(bridge_uart->Instance->CR3, USART_CR3_EIE);
+}
 
 void Bridge_Init(UART_HandleTypeDef *huart) {
 	bridge_uart = huart;
 	tx_busy = false;
-	rx_ready = false;
 	frame_buf_len = 0;
-	HAL_UARTEx_ReceiveToIdle_DMA(bridge_uart, rx_buf, BRIDGE_RX_BUF_SIZE);
+	start_rx();
 }
 
 void Bridge_Process(void) {
-	if (!rx_ready) return;
+	uint16_t head = rx_head;
+	if (head == rx_tail) return;
 
-	uint16_t n = rx_len;
-
-	if (frame_buf_len + n <= BRIDGE_FRAME_BUF_SIZE) {
-		memcpy(&frame_buf[frame_buf_len], rx_buf, n);
-		frame_buf_len += n;
-	} else {
-		frame_buf_len = 0;
+	while (rx_tail != head) {
+		if (frame_buf_len >= BRIDGE_FRAME_BUF_SIZE) frame_buf_len = 0;
+		frame_buf[frame_buf_len++] = rx_buf[rx_tail];
+		rx_tail = (uint16_t)((rx_tail + 1U) % BRIDGE_RX_BUF_SIZE);
 	}
-
-	rx_ready = false;
-
-	HAL_UARTEx_ReceiveToIdle_DMA(bridge_uart, rx_buf, BRIDGE_RX_BUF_SIZE);
-	__HAL_DMA_DISABLE_IT(bridge_uart->hdmarx, DMA_IT_HT);
 
 	parse_rx_buffer();
-
-	if (!tx_busy && tx_queue_count > 0) {
-		tx_queue_start_next();
-	}
 }
 
 
 void Bridge_UpdateBatteryLed(void)
 {
-	int32_t uV = AutoFox_INA226_GetBusVoltage_uV(&gINA226);
+	int32_t uV = s_cached_bus_uV;  // refreshed at 10 Hz
 
 	uint8_t r, g, b;
 
@@ -597,22 +504,16 @@ void Bridge_UpdateBatteryLed(void)
 }
 
 void Bridge_TxCpltCallback(void) {
-	tx_queue_head = (tx_queue_head + 1) % BRIDGE_TX_QUEUE_LEN;
-	if (tx_queue_count > 0) {
-		tx_queue_count--;
-	}
-	tx_busy = false;
-	tx_queue_start_next();
+	tx_head = (uint8_t)((tx_head + 1U) % BRIDGE_TX_QUEUE_LEN);
+	tx_start_next();
 }
 
 void Bridge_RxEventCallback(uint16_t size) {
-	rx_len = size;
-	rx_ready = true;
+	rx_head = (size >= BRIDGE_RX_BUF_SIZE) ? 0U : size;
 }
 
 void Bridge_ErrorCallback(void) {
 	HAL_UART_DMAStop(bridge_uart);
-	rx_ready = false;
 	tx_busy = false;
-	HAL_UARTEx_ReceiveToIdle_DMA(bridge_uart, rx_buf, BRIDGE_RX_BUF_SIZE);
+	start_rx();
 }
