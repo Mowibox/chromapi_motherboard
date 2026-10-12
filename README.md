@@ -36,7 +36,7 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 
 ### Chromapi's Anatomy
 
-* **🧠 The Brain**: The STM32G431KBT6 MCU handles real-time tasks: servo control, IMU fusion, and power monitoring. The Raspberry Pi runs high-level control, vision, and the Python SDK. They communicate through a custom UART bridge at 1 Mbps.
+* **🧠 The Brain**: The STM32G431KBT6 MCU handles real-time tasks: servo control, IMU fusion, and power monitoring. The Raspberry Pi runs high-level control, vision, and the Python SDK. They communicate through a custom UART bridge at 2 Mbps.
 
 * **💪 The Muscles**: The SN74LVC1G126 and SN74LVC1G125 buffer the half-duplex RS485 bus for 12 Feetech STS3215 servos. The STM32 polls servo positions at 200 Hz.
 
@@ -133,7 +133,7 @@ flowchart LR
     AUDIO["Speaker + Microphone<br/>MAX98357A / ICS-43434"]
     FAN(["Fan<br/>Noctua NF-A4x10"])
 
-    RPI -->|"Custom bridge protocol<br/>UART1 · 2 Mbps · 100 Hz control loop"| MCU
+    RPI <-->|"Custom bridge protocol<br/>UART1 · 2 Mbps · 100 Hz control loop"| MCU
     MCU <-->|"Half-duplex serial<br/>USART2 · 1 Mbps · 200 Hz"| SERVOS
     MCU <-->|"SPI1 · 5 MHz · 400 Hz (Mahony AHRS)"| IMU
     MCU <-->|"I2C1 · 400 kHz · 10 Hz poll"| PWR
