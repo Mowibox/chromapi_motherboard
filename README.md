@@ -134,7 +134,6 @@ flowchart LR
     FAN(["Fan<br/>Noctua NF-A4x10"])
 
     RPI -->|"Custom bridge protocol<br/>UART1 · 2 Mbps · 100 Hz control loop"| MCU
-    MCU -->|"State snapshot @ 200 Hz"| RPI
     MCU <-->|"Half-duplex serial<br/>USART2 · 1 Mbps · 200 Hz"| SERVOS
     MCU <-->|"SPI1 · 5 MHz · 400 Hz (Mahony AHRS)"| IMU
     MCU <-->|"I2C1 · 400 kHz · 10 Hz poll"| PWR
