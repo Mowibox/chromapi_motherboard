@@ -201,6 +201,16 @@ uint8_t BMI088_WriteGyrRegister(BMI088 *imu, uint8_t regAddr, uint8_t data) {
 
 
 /*
+ * MOUNTING: Since the IMU sits on the PCB bottom, its (x, y, z) axes are the robot's (left, forward, down)
+ * This function allows conversion to Onshape's definition of the robot's body frame, which is (x, y, z) = (forward, left, up)
+ */
+static void prv_to_body(float out[3], float conversion, int16_t x, int16_t y, int16_t z) {
+	out[0] = conversion * y;
+	out[1] = conversion * x;
+	out[2] = -(conversion * z);
+}
+
+/*
  *
  * POLLING
  *
@@ -220,10 +230,8 @@ uint8_t BMI088_ReadAccelerometer(BMI088 *imu) {
 	int16_t accY = (int16_t) ((rxBuf[5] << 8) | rxBuf[4]);
 	int16_t accZ = (int16_t) ((rxBuf[7] << 8) | rxBuf[6]);
 
-	/* Convert to m/s^2 */
-	imu->acc_mps2[0] = imu->accConversion * accX;
-	imu->acc_mps2[1] = imu->accConversion * accY;
-	imu->acc_mps2[2] = imu->accConversion * accZ;
+	/* Convert to m/s^2, body frame */
+	prv_to_body(imu->acc_mps2, imu->accConversion, accX, accY, accZ);
 
 	return status;
 
@@ -244,10 +252,8 @@ uint8_t BMI088_ReadGyroscope(BMI088 *imu) {
 	int16_t gyrY = (int16_t) ((rxBuf[4] << 8) | rxBuf[3]);
 	int16_t gyrZ = (int16_t) ((rxBuf[6] << 8) | rxBuf[5]);
 
-	/* Convert to rad/s */
-	imu->gyr_rps[0] = imu->gyrConversion * gyrX;
-	imu->gyr_rps[1] = imu->gyrConversion * gyrY;
-	imu->gyr_rps[2] = imu->gyrConversion * gyrZ;
+	/* Convert to rad/s, body frame */
+	prv_to_body(imu->gyr_rps, imu->gyrConversion, gyrX, gyrY, gyrZ);
 
 	return status;
 
@@ -285,10 +291,8 @@ void BMI088_ReadAccelerometerDMA_Complete(BMI088 *imu) {
 	int16_t accY = (int16_t) ((imu->accRxBuf[5] << 8) | imu->accRxBuf[4]);
 	int16_t accZ = (int16_t) ((imu->accRxBuf[7] << 8) | imu->accRxBuf[6]);
 
-	/* Convert to m/s^2 */
-	imu->acc_mps2[0] = imu->accConversion * accX;
-	imu->acc_mps2[1] = imu->accConversion * accY;
-	imu->acc_mps2[2] = imu->accConversion * accZ;
+	/* Convert to m/s^2, body frame */
+	prv_to_body(imu->acc_mps2, imu->accConversion, accX, accY, accZ);
 
 }
 
@@ -319,9 +323,7 @@ void BMI088_ReadGyroscopeDMA_Complete(BMI088 *imu) {
 	int16_t gyrY = (int16_t) ((imu->gyrRxBuf[4] << 8) | imu->gyrRxBuf[3]);
 	int16_t gyrZ = (int16_t) ((imu->gyrRxBuf[6] << 8) | imu->gyrRxBuf[5]);
 
-	/* Convert to deg/s */
-	imu->gyr_rps[0] = imu->gyrConversion * gyrX;
-	imu->gyr_rps[1] = imu->gyrConversion * gyrY;
-	imu->gyr_rps[2] = imu->gyrConversion * gyrZ;
+	/* Convert to rad/s, body frame */
+	prv_to_body(imu->gyr_rps, imu->gyrConversion, gyrX, gyrY, gyrZ);
 
 }
