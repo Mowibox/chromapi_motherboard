@@ -14,7 +14,7 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
   <img alt="chromapi_motherboard" src="./assets/chromapi_motherboard.png"/>
 </p>
 
-*Designed with KiCAD 10.*
+*Designed with KiCad 10.*
 
 ## Table of contents
 
@@ -45,7 +45,7 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 
 * **🛡️ The Immune System**: The CN3302 charges the two 18650 Li-ion cells through USB-C. The HY2120 provides protection against over-discharge, over-current, and short circuits.
 
-* **👁️ The Senses & Balance**: The BMI088 IMU gives acceleration and angular velocity data with SPI. A Mahony filter runs at 100 Hz and outputs orientation as a quaternion. Four foot switches detect ground contact for gait timing.
+* **👁️ The Senses & Balance**: The BMI088 IMU gives acceleration and angular velocity data with SPI. A Mahony filter runs at 400 Hz and outputs orientation as a quaternion. Four foot switches detect ground contact for gait timing.
 
 * **🗣️ The Voice & Expression**: The MAX98357A drives the speaker via I2S communication. The ICS-43434 microphone captures audio through I2S. And the SN74AHCT1G125 level-shifts the 3.3V signal to 5V for the WS2812B RGB LEDs.
 
@@ -70,7 +70,7 @@ The hardware development of this board relies on the resources provided by the s
   </a>
 </p>
 
-For this project, I utilized their sponsored [PCB manufacturing](https://www.pcbway.com/orderonline.aspx) and [assembly](https://www.pcbway.fr/pcb-assembly.html) (PCBA) services. Beyond fast production, their engineering team excels at detailed file reviews by cross-checking design options, BOMs, and footprints to prevent errors early. Their reliable component sourcing and rigorous verification were of great help in building a high-quality prototype for the Chromapi's motherbard.
+For this project, I utilized their sponsored [PCB manufacturing](https://www.pcbway.com/orderonline.aspx) and [assembly](https://www.pcbway.fr/pcb-assembly.html) (PCBA) services. Beyond fast production, their engineering team excels at detailed file reviews by cross-checking design options, BOMs, and footprints to prevent errors early. Their reliable component sourcing and rigorous verification were of great help in building a high-quality prototype for Chromapi's motherboard.
 
 ---
 
@@ -78,10 +78,10 @@ For this project, I utilized their sponsored [PCB manufacturing](https://www.pcb
 
 ## Resources & Documentation
 
-| **⚡ Electrical Specs** | **📄 Bill of Materials** | **📡 Protocol Reference** | **🧠 Software Architecture** |
-| :---: | :---: | :---: | :---: |
-| Operating voltages, current limits, and thermal ratings. | Detailed BOM with part numbers and unit costs. | Custom UART protocol between RPi and STM32. | Firmware logic, DMA streams, and interrupt priorities. |
-| 👉 [**View Specs**]() | 👉 [**View BOM**]() | 👉 [**View Protocol**]() | 👉 [**View Architecture**]() |
+| **⚡ Specifications** | **📄 Bill of Materials** | **📡 Protocol Reference** |
+| :---: | :---: | :---: |
+| Operating voltages, current limits, and thermal ratings. | Detailed BOM with part numbers and unit costs. | Custom UART protocol between RPi and STM32. |
+| 👉 [**View Specs**](https://mowibox.github.io/chroma/en/chromapi/specifications/general/) | 👉 [**View BOM**](https://mowibox.github.io/chroma/en/chromapi/bom/pcb_bom/) | 👉 [**View Protocol**](https://mowibox.github.io/chroma/en/chromapi/documentation/protocol/) |
 
 ### Power Architecture
 
@@ -170,4 +170,4 @@ This repository is multi-licensed:
 | Hardware (schematics, PCB, footprints, symbols, fabrication files) | [`/hardware`](./hardware/) | [CC BY-NC-SA 4.0](./hardware/LICENSE) |
 | Documentation and media (README, images, renders) | [`/assets`](./assets/), this README | [CC BY-NC-SA 4.0](./hardware/LICENSE) |
 
-**Third-party content keeps its own license:** STM32CubeMX-generated files (`main.c`, `stm32g4xx_*`, `syscalls.c`, `sysmem.c`, `system_stm32g4xx.c`, startup and linker files) belong to STMicroelectronics; `ina226.[ch]` is Apache 2.0 by AutoFox; `bmi088.[ch]` is adapted from [pms67/LittleBrain-STM32F4-Sensorboard](https://github.com/pms67/LittleBrain-STM32F4-Sensorboard) and `ws2812b.[ch]` from [hey-frnk/STM32_HAL_NeoPixel](https://github.com/hey-frnk/STM32_HAL_NeoPixel); datasheets in [`/docs`](./docs/) and 3D models in [`/hardware/3d_models`](./hardware/3d_models/) belong to their respective manufacturers.
+**Third-party content keeps its own license:** the STM32G4 HAL and CMSIS in [`/firmware/chromapi_stm32_core/Drivers`](./firmware/chromapi_stm32_core/Drivers/) (see their `LICENSE.txt`) and STM32CubeMX-generated files (`main.c`, `stm32g4xx_*`, `syscalls.c`, `sysmem.c`, `system_stm32g4xx.c`, startup and linker files) belong to STMicroelectronics; `ina226.[ch]` is Apache 2.0 by AutoFox; `bmi088.[ch]` is adapted from [pms67/LittleBrain-STM32F4-Sensorboard](https://github.com/pms67/LittleBrain-STM32F4-Sensorboard) and `ws2812b.[ch]` from [hey-frnk/STM32_HAL_NeoPixel](https://github.com/hey-frnk/STM32_HAL_NeoPixel); datasheets in [`/docs`](./docs/) and 3D models in [`/hardware/3d_models`](./hardware/3d_models/) belong to their respective manufacturers; the PCBWay logo (`assets/pcbway.png`) belongs to PCBWay.
