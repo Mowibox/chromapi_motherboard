@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 #ifndef BRIDGE_H
 #define BRIDGE_H
 

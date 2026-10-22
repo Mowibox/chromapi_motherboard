@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 /**
  * @file    sts3215_protocol.c
  * @brief   Pure STS3215 C protocol implementation

@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 /**
  * @file    sts3215_regs.h
  * @brief   STS3215 Feetech Servo — Complete Register Map & Protocol Constants

@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 #ifndef CORDIC_SQRT_H
 #define CORDIC_SQRT_H
 

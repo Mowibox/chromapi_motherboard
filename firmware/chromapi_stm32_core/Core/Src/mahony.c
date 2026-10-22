@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 #include "mahony.h"
 #include "cordic_sqrt.h"
 #include "stm32g4xx_hal.h"

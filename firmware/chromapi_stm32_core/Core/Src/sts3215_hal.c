@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 /**
  * @file    sts3215_hal.c
  * @brief   STS3215 — STM32 HAL layer implementation

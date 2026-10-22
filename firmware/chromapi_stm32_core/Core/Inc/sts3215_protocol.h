@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 /**
  * @file    sts3215_protocol.h
  * @brief   STS3215 — Pure C protocol layer (packet builders + reply parser)

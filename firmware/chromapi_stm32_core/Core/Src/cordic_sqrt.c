@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: Apache-2.0 */
 #include "cordic_sqrt.h"
 
 static CORDIC_HandleTypeDef *g_hcordic = NULL;

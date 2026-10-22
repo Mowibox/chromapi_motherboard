@@ -5,7 +5,8 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 ![Chromapi](https://custom-icon-badges.demolab.com/badge/Chromapi-motherboard-489648?logo=chromapi)
 ![KiCad](https://img.shields.io/badge/KiCad-10.0+-2849bf?logo=kicad)
 ![STM32](https://img.shields.io/badge/STM32-G431-3cb4e6?logo=stmicroelectronics)
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-lightgrey.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Firmware: Apache 2.0](https://img.shields.io/badge/Firmware-Apache%202.0-lightgrey.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Hardware: CC BY-NC-SA 4.0](https://img.shields.io/badge/Hardware-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 ![Issues](https://img.shields.io/github/issues/Mowibox/chromapi_motherboard)
 ![Stars](https://img.shields.io/github/stars/Mowibox/chromapi_motherboard?style=social)
 
@@ -161,4 +162,12 @@ Contributions are always welcome!
 
 ## License
 
-This project is licensed under the Apache 2.0 License. See the [LICENSE](https://github.com/Mowibox/chromapi_motherboard/blob/main/LICENSE) file for more details.
+This repository is multi-licensed:
+
+| Part | Path | License |
+| :--- | :--- | :--- |
+| Firmware (own code) | [`/firmware`](./firmware/) | [Apache 2.0](./LICENSE) |
+| Hardware (schematics, PCB, footprints, symbols, fabrication files) | [`/hardware`](./hardware/) | [CC BY-NC-SA 4.0](./hardware/LICENSE) |
+| Documentation and media (README, images, renders) | [`/assets`](./assets/), this README | [CC BY-NC-SA 4.0](./hardware/LICENSE) |
+
+**Third-party content keeps its own license:** STM32CubeMX-generated files (`main.c`, `stm32g4xx_*`, `syscalls.c`, `sysmem.c`, `system_stm32g4xx.c`, startup and linker files) belong to STMicroelectronics; `ina226.[ch]` is Apache 2.0 by AutoFox; `bmi088.[ch]` is adapted from [pms67/LittleBrain-STM32F4-Sensorboard](https://github.com/pms67/LittleBrain-STM32F4-Sensorboard) and `ws2812b.[ch]` from [hey-frnk/STM32_HAL_NeoPixel](https://github.com/hey-frnk/STM32_HAL_NeoPixel); datasheets in [`/docs`](./docs/) and 3D models in [`/hardware/3d_models`](./hardware/3d_models/) belong to their respective manufacturers.
