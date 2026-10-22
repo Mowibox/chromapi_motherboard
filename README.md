@@ -171,3 +171,5 @@ This repository is multi-licensed:
 | Documentation and media (README, images, renders) | [`/assets`](./assets/), this README | [CC BY-NC-SA 4.0](./hardware/LICENSE) |
 
 **Third-party content keeps its own license:** the STM32G4 HAL and CMSIS in [`/firmware/chromapi_stm32_core/Drivers`](./firmware/chromapi_stm32_core/Drivers/) (see their `LICENSE.txt`) and STM32CubeMX-generated files (`main.c`, `stm32g4xx_*`, `syscalls.c`, `sysmem.c`, `system_stm32g4xx.c`, startup and linker files) belong to STMicroelectronics; `ina226.[ch]` is Apache 2.0 by AutoFox; `bmi088.[ch]` is adapted from [pms67/LittleBrain-STM32F4-Sensorboard](https://github.com/pms67/LittleBrain-STM32F4-Sensorboard) and `ws2812b.[ch]` from [hey-frnk/STM32_HAL_NeoPixel](https://github.com/hey-frnk/STM32_HAL_NeoPixel); datasheets in [`/docs`](./docs/) and 3D models in [`/hardware/3d_models`](./hardware/3d_models/) belong to their respective manufacturers; the PCBWay logo (`assets/pcbway.png`) belongs to PCBWay.
+
+[![CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
