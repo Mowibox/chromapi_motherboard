@@ -21,6 +21,7 @@ uint8_t rgb_arr[NUM_BYTES] = {0};
 #define WR_BUF_LEN (NUM_BPP * 8 * 2)
 uint8_t wr_buf[WR_BUF_LEN] = {0};
 static volatile uint_fast8_t wr_buf_p = 0;
+static volatile uint8_t render_pending = 0;  // render asked while a transfer was running
 
 static inline uint8_t scale8(uint8_t x, uint8_t scale) {
 	return ((uint16_t)x * scale) >> 8;
@@ -68,12 +69,11 @@ void led_set_ring_all_RGB(uint8_t r, uint8_t g, uint8_t b) {
 // Shuttle the data to the LEDs!
 void led_render() {
 	if(wr_buf_p != 0 || hdma_tim4_ch1.State != HAL_DMA_STATE_READY) {
-		// Ongoing transfer, cancel!
-		for(uint8_t i = 0; i < WR_BUF_LEN; ++i) wr_buf[i] = 0;
-		wr_buf_p = 0;
-		HAL_TIM_PWM_Stop_DMA(&htim4, TIM_CHANNEL_1);
+		// Ongoing transfer: let it finish, it re-renders with the latest colors when done
+		render_pending = 1;
 		return;
 	}
+	render_pending = 0;
 	// Ooh boi the first data buffer half (and the second!)
 #if (NUM_BPP == 4) // SK6812
 	for(uint_fast8_t i = 0; i < 8; ++i) {
@@ -156,5 +156,6 @@ void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim) {
 		// We're done. Lean back and until next time!
 		wr_buf_p = 0;
 		HAL_TIM_PWM_Stop_DMA(&htim4, TIM_CHANNEL_1);
+		if (render_pending) led_render();
 	}
 }
