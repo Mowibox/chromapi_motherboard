@@ -8,29 +8,26 @@
  *  [IDLE]
  *    │  SendFrame()
  *    │  ├─ copy frame → tx_buf
+ *    │  ├─ replies expected: flush RDR, arm HAL_UARTEx_ReceiveToIdle_DMA *before* the TX,
+ *    │  │  so that a servo answering right after the last stop bit is not missed
+ *    │  │  (the RX line is held high by the bus buffer + pull-up while DE is asserted)
  *    │  └─ HAL_UART_Transmit_DMA()
  *    ▼
- *  [TX_BUSY]
+ *  [TX_BUSY]   Process(): no TxCplt within tx_timeout_ms → DMAStop, on_error(TX_TIMEOUT), IDLE
  *    │  HAL_UART_TxCpltCallback → STS3215_HAL_TxCpltCallback()
- *    │  ├─ is_broadcast == true  → state = IDLE (done)
- *    │  └─ is_broadcast == false
- *    │       ├─ flush UART DR register (clear RX noise from TX phase)
- *    │       └─ HAL_UARTEx_ReceiveToIdle_DMA(rx_buf, RX_BUF_SIZE)
+ *    │  ├─ broadcast / no reply expected → IDLE (done)
+ *    │  └─ otherwise → RX_BUSY, tx_timestamp_ms = now
  *    ▼
  *  [RX_BUSY]
- *    │  tx_timestamp_ms set for timeout guard in Process()
+ *    ├─ HAL_UARTEx_RxEventCallback(size) → STS3215_HAL_RxEventCallback()   (IDLE line, one per reply)
+ *    │    ├─ append rx_buf → rx_accum, parse the complete replies → on_reply() each
+ *    │    ├─ all expected replies parsed → IDLE
+ *    │    └─ otherwise re-arm the DMA for the next servo's reply
  *    │
- *    ├─ HAL_UARTEx_RxEventCallback(size) → STS3215_HAL_RxEventCallback()
- *    │    ├─ for each expected reply: STS3215_ParseReply() → on_reply()
- *    │    └─ state = IDLE
- *    │
- *    └─ Process(): HAL_GetTick() > tx_timestamp_ms + reply_timeout_ms
- *         ├─ HAL_UART_DMAStop()
- *         ├─ on_error(STS3215_HAL_ERR_TIMEOUT)
- *         └─ state = IDLE
+ *    └─ Process(): HAL_GetTick() - tx_timestamp_ms >= reply_timeout_ms
+ *         └─ DMAStop, on_error(TIMEOUT), IDLE
  *
- *  [ERROR]  (DMA error path)
- *    │  STS3215_HAL_ErrorCallback() → on_error() → state = IDLE
+ *  Any state: HAL_UART_ErrorCallback → STS3215_HAL_ErrorCallback() → DMAStop, on_error(), IDLE
  */
 
 #include "sts3215_hal.h"
@@ -127,8 +124,8 @@ void STS3215_HAL_Init(STS3215_HAL_Handle_t *hservo,
 
 	hservo->huart = huart;
 	hservo->reply_timeout_ms = (reply_timeout_ms > 0U)
-                                										 ? reply_timeout_ms
-                                												 : STS3215_HAL_REPLY_TIMEOUT_MS;
+                                												 ? reply_timeout_ms
+                                														 : STS3215_HAL_REPLY_TIMEOUT_MS;
 	hservo->tx_timeout_ms = STS3215_HAL_TX_TIMEOUT_MS;
 	hservo->on_reply = on_reply;
 	hservo->on_error  = on_error;
@@ -323,8 +320,8 @@ void STS3215_HAL_ErrorCallback(STS3215_HAL_Handle_t *hservo)
 	__HAL_UART_FLUSH_DRREGISTER(hservo->huart);
 
 	STS3215_HAL_Error_t err = (hservo->state == STS3215_HAL_STATE_TX_BUSY)
-                            										   ? STS3215_HAL_ERR_DMA_TX
-                            												   : STS3215_HAL_ERR_DMA_RX;
+                            												   ? STS3215_HAL_ERR_DMA_TX
+                            														   : STS3215_HAL_ERR_DMA_RX;
 
 	hservo->last_error = err;
 	hservo->state      = STS3215_HAL_STATE_IDLE;

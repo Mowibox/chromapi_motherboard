@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: Apache-2.0 */
 /**
  * @file    sts3215_hal.h
- * @brief   STS3215 — STM32 HAL layer (DMA TX/RX + RS485 + IDLE line)
+ * @brief   STS3215 — STM32 HAL layer (DMA TX/RX + hardware DE half-duplex + IDLE line)
  */
 
 #ifndef STS3215_HAL_H

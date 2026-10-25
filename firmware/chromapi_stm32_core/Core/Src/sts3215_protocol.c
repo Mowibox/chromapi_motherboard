@@ -385,6 +385,9 @@ STS3215_Status_t STS3215_ParseReply(const uint8_t *buf, uint16_t buf_len,
 
 
 	if (length < 2U) { return STS3215_ERR_FRAME_SHORT; }
+	/* A corrupted LENGTH is not an incomplete frame: reporting it as short would make the caller
+	 * wait for bytes that never come instead of resyncing on the next header. */
+	if (length > STS3215_REPLY_DATA_MAX + 2U) { return STS3215_ERR_BAD_HEADER; }
 	uint16_t expected_total = (uint16_t)length + 4U;
 	if (buf_len < expected_total) { return STS3215_ERR_FRAME_SHORT; }
 
