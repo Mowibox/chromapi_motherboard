@@ -39,7 +39,7 @@ This repo contains a dedicated control HAT designed to manage the high-speed mot
 
 * **🧠 The Brain**: The STM32G431KBT6 MCU handles real-time tasks: servo control, IMU fusion, and power monitoring. The Raspberry Pi runs high-level control, vision, and the Python SDK. They communicate through a custom UART bridge at 2 Mbps.
 
-* **💪 The Muscles**: The SN74LVC1G126 and SN74LVC1G125 buffer the half-duplex RS485 bus for 12 Feetech STS3215 servos. The STM32 polls servo positions at 200 Hz.
+* **💪 The Muscles**: The SN74LVC1G126 and SN74LVC1G125 buffer the half-duplex TTL serial bus (a single data wire, its direction switched by the USART hardware DE signal) for 12 Feetech STS3215 servos. The STM32 polls servo positions at 200 Hz.
 
 * **❤️ The Heart**: The TPS51388 converts the 18650 2S battery voltage to 5V. The LD39050 generates the 3.3V rail. The INA226 monitors voltage, current, and power via I2C.
 

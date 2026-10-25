@@ -55,9 +55,10 @@ struct INA226_Registers;
 struct INA226_HardCodedChipConst;
 struct INA226_DefaultSettings;
 
-static const int INA226_I2C_TIMEOUT = 1000;
+// [ms] Called from the main loop: a stuck bus must cost a few ms, not stall the servo cycle.
+static const int INA226_I2C_TIMEOUT = 2;
 
-//Most functions will return an error status
+// Most functions will return an error status
 typedef enum {OK=0, FAIL=-1,
 	INA226_TI_ID_MISMATCH = -2,
 	INA226_DIE_ID_MISMATCH =-3,

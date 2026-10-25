@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: Apache-2.0 */
 #include "mahony.h"
-#include "cordic_sqrt.h"
+#include <math.h>
 #include "stm32g4xx_hal.h"
 
 #define CALIB_SAMPLES 500
@@ -53,7 +53,7 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
 	f->wz = gz + f->bz;
 
 	float ax_g = ax / 9.81f, ay_g = ay / 9.81f, az_g = az / 9.81f;
-	float norm = CordicSqrt(ax_g*ax_g + ay_g*ay_g + az_g*az_g);
+	float norm = sqrtf(ax_g*ax_g + ay_g*ay_g + az_g*az_g);
 	if (norm < 1e-3f) return;
 	ax_g /= norm; ay_g /= norm; az_g /= norm;
 
@@ -82,6 +82,6 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
 	f->q2 += ( q0*gy - q1*gz + q3*gx) * 0.5f * dt;
 	f->q3 += ( q0*gz + q1*gy - q2*gx) * 0.5f * dt;
 
-	norm = CordicSqrt(f->q0*f->q0 + f->q1*f->q1 + f->q2*f->q2 + f->q3*f->q3);
+	norm = sqrtf(f->q0*f->q0 + f->q1*f->q1 + f->q2*f->q2 + f->q3*f->q3);
 	f->q0 /= norm; f->q1 /= norm; f->q2 /= norm; f->q3 /= norm;
 }

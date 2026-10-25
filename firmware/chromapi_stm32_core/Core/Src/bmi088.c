@@ -1,5 +1,8 @@
 #include "bmi088.h"
 
+/* [ms] A transfer of a few bytes at 5 MHz takes µs: a stuck SPI must not stall the main loop */
+#define BMI088_SPI_TIMEOUT_MS 2U
+
 /*
  *
  * INITIALISATION
@@ -39,14 +42,14 @@ uint8_t BMI088_Init(BMI088 *imu,
 	status += BMI088_WriteAccRegister(imu, BMI_ACC_SOFTRESET, 0xB6);
 	HAL_Delay(50);
 
-	/* Check chip ID */
-	uint8_t chipID;
+	/* Check chip ID. The soft reset puts the accelerometer back in I2C mode: the first read only
+	 * provides the CSB rising edge that switches it to SPI, its result is not valid. */
+	uint8_t chipID = 0;
+	(void)BMI088_ReadAccRegister(imu, BMI_ACC_CHIP_ID, &chipID);
 	status += BMI088_ReadAccRegister(imu, BMI_ACC_CHIP_ID, &chipID);
 
 	if (chipID != 0x1E) {
-
-		//	return 0;
-
+		return 0;
 	}
 	HAL_Delay(10);
 
@@ -91,12 +94,11 @@ uint8_t BMI088_Init(BMI088 *imu,
 	HAL_Delay(250);
 
 	/* Check chip ID */
+	chipID = 0;
 	status += BMI088_ReadGyrRegister(imu, BMI_GYR_CHIP_ID, &chipID);
 
 	if (chipID != 0x0F) {
-
-		//return 0;
-
+		return 0;
 	}
 	HAL_Delay(10);
 
@@ -140,7 +142,7 @@ uint8_t BMI088_ReadAccRegister(BMI088 *imu, uint8_t regAddr, uint8_t *data) {
 	uint8_t rxBuf[3];
 
 	HAL_GPIO_WritePin(imu->csAccPinBank, imu->csAccPin, GPIO_PIN_RESET);
-	uint8_t status = (HAL_SPI_TransmitReceive(imu->spiHandle, txBuf, rxBuf, 3, HAL_MAX_DELAY) == HAL_OK);
+	uint8_t status = (HAL_SPI_TransmitReceive(imu->spiHandle, txBuf, rxBuf, 3, BMI088_SPI_TIMEOUT_MS) == HAL_OK);
 	HAL_GPIO_WritePin(imu->csAccPinBank, imu->csAccPin, GPIO_PIN_SET);
 
 	if (status == 1) {
@@ -159,7 +161,7 @@ uint8_t BMI088_ReadGyrRegister(BMI088 *imu, uint8_t regAddr, uint8_t *data) {
 	uint8_t rxBuf[2];
 
 	HAL_GPIO_WritePin(imu->csGyrPinBank, imu->csGyrPin, GPIO_PIN_RESET);
-	uint8_t status = (HAL_SPI_TransmitReceive(imu->spiHandle, txBuf, rxBuf, 2, HAL_MAX_DELAY) == HAL_OK);
+	uint8_t status = (HAL_SPI_TransmitReceive(imu->spiHandle, txBuf, rxBuf, 2, BMI088_SPI_TIMEOUT_MS) == HAL_OK);
 	HAL_GPIO_WritePin(imu->csGyrPinBank, imu->csGyrPin, GPIO_PIN_SET);
 
 	if (status == 1) {
@@ -177,8 +179,7 @@ uint8_t BMI088_WriteAccRegister(BMI088 *imu, uint8_t regAddr, uint8_t data) {
 	uint8_t txBuf[2] = {regAddr, data};
 
 	HAL_GPIO_WritePin(imu->csAccPinBank, imu->csAccPin, GPIO_PIN_RESET);
-	uint8_t status = (HAL_SPI_Transmit(imu->spiHandle, txBuf, 2, HAL_MAX_DELAY) == HAL_OK);
-	while(HAL_SPI_GetState(imu->spiHandle) != HAL_SPI_STATE_READY);
+	uint8_t status = (HAL_SPI_Transmit(imu->spiHandle, txBuf, 2, BMI088_SPI_TIMEOUT_MS) == HAL_OK);
 	HAL_GPIO_WritePin(imu->csAccPinBank, imu->csAccPin, GPIO_PIN_SET);
 
 	return status;
@@ -190,8 +191,7 @@ uint8_t BMI088_WriteGyrRegister(BMI088 *imu, uint8_t regAddr, uint8_t data) {
 	uint8_t txBuf[2] = {regAddr, data};
 
 	HAL_GPIO_WritePin(imu->csGyrPinBank, imu->csGyrPin, GPIO_PIN_RESET);
-	uint8_t status = (HAL_SPI_Transmit(imu->spiHandle, txBuf, 2, HAL_MAX_DELAY) == HAL_OK);
-	while(HAL_SPI_GetState(imu->spiHandle) != HAL_SPI_STATE_READY);
+	uint8_t status = (HAL_SPI_Transmit(imu->spiHandle, txBuf, 2, BMI088_SPI_TIMEOUT_MS) == HAL_OK);
 	HAL_GPIO_WritePin(imu->csGyrPinBank, imu->csGyrPin, GPIO_PIN_SET);
 
 	return status;
@@ -222,7 +222,7 @@ uint8_t BMI088_ReadAccelerometer(BMI088 *imu) {
 	uint8_t rxBuf[8];
 
 	HAL_GPIO_WritePin(imu->csAccPinBank, imu->csAccPin, GPIO_PIN_RESET);
-	uint8_t status = (HAL_SPI_TransmitReceive(imu->spiHandle, txBuf, rxBuf, 8, HAL_MAX_DELAY) == HAL_OK);
+	uint8_t status = (HAL_SPI_TransmitReceive(imu->spiHandle, txBuf, rxBuf, 8, BMI088_SPI_TIMEOUT_MS) == HAL_OK);
 	HAL_GPIO_WritePin(imu->csAccPinBank, imu->csAccPin, GPIO_PIN_SET);
 
 	/* Form signed 16-bit integers */
@@ -244,7 +244,7 @@ uint8_t BMI088_ReadGyroscope(BMI088 *imu) {
 	uint8_t rxBuf[7];
 
 	HAL_GPIO_WritePin(imu->csGyrPinBank, imu->csGyrPin, GPIO_PIN_RESET);
-	uint8_t status = (HAL_SPI_TransmitReceive(imu->spiHandle, txBuf, rxBuf, 7, HAL_MAX_DELAY) == HAL_OK);
+	uint8_t status = (HAL_SPI_TransmitReceive(imu->spiHandle, txBuf, rxBuf, 7, BMI088_SPI_TIMEOUT_MS) == HAL_OK);
 	HAL_GPIO_WritePin(imu->csGyrPinBank, imu->csGyrPin, GPIO_PIN_SET);
 
 	/* Form signed 16-bit integers */

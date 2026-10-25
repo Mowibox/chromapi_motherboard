@@ -93,51 +93,6 @@ void HAL_MspInit(void)
 }
 
 /**
-  * @brief CORDIC MSP Initialization
-  * This function configures the hardware resources used in this example
-  * @param hcordic: CORDIC handle pointer
-  * @retval None
-  */
-void HAL_CORDIC_MspInit(CORDIC_HandleTypeDef* hcordic)
-{
-  if(hcordic->Instance==CORDIC)
-  {
-    /* USER CODE BEGIN CORDIC_MspInit 0 */
-
-    /* USER CODE END CORDIC_MspInit 0 */
-    /* Peripheral clock enable */
-    __HAL_RCC_CORDIC_CLK_ENABLE();
-    /* USER CODE BEGIN CORDIC_MspInit 1 */
-
-    /* USER CODE END CORDIC_MspInit 1 */
-
-  }
-
-}
-
-/**
-  * @brief CORDIC MSP De-Initialization
-  * This function freeze the hardware resources used in this example
-  * @param hcordic: CORDIC handle pointer
-  * @retval None
-  */
-void HAL_CORDIC_MspDeInit(CORDIC_HandleTypeDef* hcordic)
-{
-  if(hcordic->Instance==CORDIC)
-  {
-    /* USER CODE BEGIN CORDIC_MspDeInit 0 */
-
-    /* USER CODE END CORDIC_MspDeInit 0 */
-    /* Peripheral clock disable */
-    __HAL_RCC_CORDIC_CLK_DISABLE();
-    /* USER CODE BEGIN CORDIC_MspDeInit 1 */
-
-    /* USER CODE END CORDIC_MspDeInit 1 */
-  }
-
-}
-
-/**
   * @brief I2C MSP Initialization
   * This function configures the hardware resources used in this example
   * @param hi2c: I2C handle pointer
@@ -325,9 +280,6 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* htim_base)
 
     __HAL_LINKDMA(htim_base,hdma[TIM_DMA_ID_CC1],hdma_tim4_ch1);
 
-    /* TIM4 interrupt Init */
-    HAL_NVIC_SetPriority(TIM4_IRQn, 7, 0);
-    HAL_NVIC_EnableIRQ(TIM4_IRQn);
     /* USER CODE BEGIN TIM4_MspInit 1 */
 
     /* USER CODE END TIM4_MspInit 1 */
@@ -393,9 +345,6 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* htim_base)
 
     /* TIM4 DMA DeInit */
     HAL_DMA_DeInit(htim_base->hdma[TIM_DMA_ID_CC1]);
-
-    /* TIM4 interrupt DeInit */
-    HAL_NVIC_DisableIRQ(TIM4_IRQn);
     /* USER CODE BEGIN TIM4_MspDeInit 1 */
 
     /* USER CODE END TIM4_MspDeInit 1 */

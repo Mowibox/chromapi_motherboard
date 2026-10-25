@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "stm32g4xx_hal.h"
+#include "mahony.h"
 
 #define BRIDGE_SYNC_1 0x55
 #define BRIDGE_SYNC_2 0xAA
@@ -60,20 +61,18 @@ typedef struct __attribute__((packed)) {
 	uint16_t servo_fresh_mask; // bit i set = servo i+1 answered this cycle
 } RobotFeedback_t;
 
-typedef enum {
-	SERVO_TXN_NONE = 0,
-	SERVO_TXN_POLL,
-	SERVO_TXN_COMMAND,
-} servo_txn_type_t;
-
-extern RobotFeedback_t g_robot_state;
+// Power reading streamed in the snapshot (INA226, refreshed by the application at 10 Hz)
+typedef struct {
+	int32_t bus_uV;
+	int32_t current_uA;
+	int32_t power_uW;
+} PowerReading_t;
 
 void Bridge_Init(UART_HandleTypeDef *huart);
 void Bridge_Process(void);
-void Bridge_UpdateBatteryLed(void);
-bool Bridge_DispatchPendingWrites(void);
-void Bridge_UpdateCachedPower(void);
-void Bridge_SendStateSnapshot(uint32_t t_us, uint16_t cycle_us);
+void Bridge_CheckLink(void);
+void Bridge_SendStateSnapshot(uint32_t t_us, uint16_t cycle_us,
+		const BMI088 *imu, const MahonyFilter_t *ahrs, const PowerReading_t *power);
 
 void Bridge_TxCpltCallback(void);
 void Bridge_RxEventCallback(uint16_t size);
