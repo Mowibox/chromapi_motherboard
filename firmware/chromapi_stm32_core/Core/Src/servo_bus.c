@@ -55,7 +55,6 @@ static volatile bool    s_reply_received = false;
 static volatile uint8_t s_reply_len = 0;
 static volatile uint8_t s_reply_data[STS3215_REPLY_DATA_MAX];
 
-// Per-error counters for CubeIDE Live Expressions (index = STS3215_HAL_Error_t).
 volatile uint32_t g_servo_err_count[8] = {0};
 
 static void on_reply(const STS3215_Reply_t *reply, uint8_t idx, STS3215_Status_t status, void *ctx) {

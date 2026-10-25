@@ -3,9 +3,6 @@
  * @file    servo_bus.h
  * @brief   The 12-servo bus: the only owner of the STS3215 handle.
  *
- * Runs the fixed-rate bus cycle (pending SyncWrite, then one SyncRead of every present servo),
- * tracks which servos answer, and serializes the blocking configuration commands relayed from
- * the Raspberry Pi with that cycle.
  */
 #ifndef SERVO_BUS_H
 #define SERVO_BUS_H
