@@ -44,11 +44,12 @@ static uint8_t  s_miss[SERVO_BUS_COUNT];
 static uint8_t  s_rescan_id = 0;
 static uint32_t s_rescan_last_ms = 0;
 
-// Pending writes, dispatched at the start of the next cycle (positions first, then torque)
+// Pending writes, dispatched at the start of the next cycle (positions, then torque, then min voltage)
 static bool     s_pending_positions_valid = false;
 static uint8_t  s_pending_positions_raw[2U * SERVO_BUS_COUNT];
 static uint16_t s_pending_torque_mask = 0;
 static uint16_t s_pending_torque_on = 0;
+static uint8_t  s_pending_min_voltage = 0;  // 0 = none
 
 // Reply to the last configuration command (on_reply() outside a poll or rescan)
 static volatile bool    s_reply_received = false;
@@ -156,6 +157,14 @@ static bool dispatch_pending_writes(void) {
 		s_pending_torque_mask = 0;
 		reg = STS3215_REG_TORQUE_SWITCH;
 		len = 1;
+	} else if (s_pending_min_voltage != 0U) {
+		for (uint8_t i = 0; i < SERVO_BUS_COUNT; i++, n++) {
+			entries[n].id = i + 1;
+			entries[n].data[0] = s_pending_min_voltage;
+		}
+		s_pending_min_voltage = 0;
+		reg = STS3215_REG_MIN_VOLTAGE;
+		len = 1;
 	} else {
 		return false;
 	}
@@ -252,6 +261,10 @@ void ServoBus_SetTorque(uint16_t mask, uint16_t on) {
 	mask &= ALL_SERVOS_MASK;
 	s_pending_torque_on   = (uint16_t)((s_pending_torque_on & ~mask) | (on & mask));
 	s_pending_torque_mask |= mask;
+}
+
+void ServoBus_SetMinVoltage(uint8_t decivolts) {
+	s_pending_min_voltage = decivolts;
 }
 
 void ServoBus_ReleaseAll(void) {

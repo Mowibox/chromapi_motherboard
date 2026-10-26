@@ -79,12 +79,20 @@ static uint8_t g_tim6_power_div = 0; // INA226 refresh ODR = 10 Hz (400 Hz / 40)
 static uint32_t g_imu_last_us = 0;
 static bool g_imu_ok = false;
 
-#define VBAT_MAX_UV      8400000L   // 8.4V
-#define VBAT_GREEN_UV    7800000L   // 7.8V
-#define VBAT_YELLOW_UV   7400000L   // 7.4V
-#define VBAT_ORANGE_UV   7000000L   // 7.0V
-#define VBAT_RED_UV      6800000L   // 6.8V
-#define VBAT_CRIT_UV     6600000L   // < 6.6V
+// Battery charge from V + I·R, smoothed over 10 s, as the SDK does (chromapi config.yaml, battery:).
+// The thresholds are open-circuit voltages from that table: keep them in sync with it.
+#define BATT_R_MOHM          245L      // [mΩ] cells + BMS + shunt + wires
+#define BATT_EMA_DIV         100L      // 10 Hz readings, 10 s smoothing
+#define OCV_FULL_UV          8257000L  // 100 %
+#define OCV_GREEN_UV         7668000L  // 60 %
+#define OCV_YELLOW_UV        7253000L  // 30 %: SDK "low"
+#define OCV_ORANGE_UV        7125000L  // 20 %
+#define OCV_CRITICAL_UV      6958000L  // 10 %: SDK "critical", ~10 min of trot left: status and servo LEDs blink
+#define SERVO_MIN_VOLTAGE    60U       // [0.1 V] as written by 'chromapi motors setup'
+#define SERVO_ALARM_VOLTAGE  90U       // [0.1 V] over any battery voltage: voltage alarm, servo LED on
+static int32_t g_ocv_uV = 0;  // [µV] 0 until the first INA226 reading
+static bool g_batt_critical = false;
+static bool g_blink_on = false;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -162,48 +170,55 @@ static void Power_Task(void) {
 	g_power.bus_uV     = AutoFox_INA226_GetBusVoltage_uV(&gINA226);
 	g_power.current_uA = AutoFox_INA226_GetCurrent_uA(&gINA226);
 	g_power.power_uW   = AutoFox_INA226_GetPower_uW(&gINA226);
+	if (g_power.bus_uV <= 0) return;
+
+	int32_t ocv = g_power.bus_uV + (g_power.current_uA / 1000L) * BATT_R_MOHM;  // mA·mΩ = µV
+	if (g_ocv_uV == 0) g_ocv_uV = ocv;
+	else g_ocv_uV += (ocv - g_ocv_uV) / BATT_EMA_DIV;
 }
 
+// Called every 500 ms.
 static void Battery_Led_Update(void)
 {
-	int32_t uV = g_power.bus_uV;  // refreshed at 10 Hz
+	int32_t uV = g_ocv_uV;
+	if (uV == 0) return;  // no INA226 reading yet
 
 	uint8_t r, g, b;
 
-	if (uV >= VBAT_GREEN_UV) {
-		int32_t ratio = ((uV - VBAT_GREEN_UV) * 50L) / (VBAT_MAX_UV - VBAT_GREEN_UV);
+	// Latched until reset: the charge does not come back while running, and the blink must not flicker.
+	if (uV < OCV_CRITICAL_UV) g_batt_critical = true;
+
+	if (g_batt_critical) {
+		g_blink_on = !g_blink_on;  // 1 Hz, status LED and the 12 servo LEDs together
+		r = g_blink_on ? 50 : 0;
+		g = 0;
+		b = 0;
+		ServoBus_SetMinVoltage(g_blink_on ? SERVO_ALARM_VOLTAGE : SERVO_MIN_VOLTAGE);
+	}
+	else if (uV >= OCV_GREEN_UV) {
+		int32_t ratio = ((uV - OCV_GREEN_UV) * 50L) / (OCV_FULL_UV - OCV_GREEN_UV);
 		if (ratio > 50) ratio = 50;
 		r = 0;
 		g = 50;
 		b = (uint8_t)ratio;
 	}
-	else if (uV >= VBAT_YELLOW_UV) {
-		int32_t ratio = ((uV - VBAT_YELLOW_UV) * 50L) / (VBAT_GREEN_UV - VBAT_YELLOW_UV);
-		if (ratio > 50) ratio = 50;
+	else if (uV >= OCV_YELLOW_UV) {
+		int32_t ratio = ((uV - OCV_YELLOW_UV) * 50L) / (OCV_GREEN_UV - OCV_YELLOW_UV);
 		r = (uint8_t)(50L - ratio);
 		g = 50;
 		b = 0;
 	}
-	else if (uV >= VBAT_ORANGE_UV) {
-		int32_t ratio = ((uV - VBAT_ORANGE_UV) * 50L) / (VBAT_YELLOW_UV - VBAT_ORANGE_UV);
-		if (ratio > 50) ratio = 50;
+	else if (uV >= OCV_ORANGE_UV) {
+		int32_t ratio = ((uV - OCV_ORANGE_UV) * 50L) / (OCV_YELLOW_UV - OCV_ORANGE_UV);
 		r = 50;
 		g = (uint8_t)(15L + ratio * 35L / 50L);
 		b = 0;
 	}
-	else if (uV >= VBAT_RED_UV) {
-		int32_t ratio = ((uV - VBAT_RED_UV) * 50L) / (VBAT_ORANGE_UV - VBAT_RED_UV);
-		if (ratio > 50) ratio = 50;
+	else {
+		int32_t ratio = ((uV - OCV_CRITICAL_UV) * 50L) / (OCV_ORANGE_UV - OCV_CRITICAL_UV);
 		r = 50;
 		g = (uint8_t)(ratio * 15L / 50L);
 		b = 0;
-	}
-	else if (uV >= VBAT_CRIT_UV) {
-		r = 50; g = 0; b = 0;
-	}
-	else {
-		uint8_t blink = (HAL_GetTick() % 200U) < 100U ? 50 : 0;
-		r = blink; g = 0; b = 0;
 	}
 
 	led_set_RGB(LED_STATUS_START_INDEX, r, g, b);

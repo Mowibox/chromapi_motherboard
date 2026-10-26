@@ -44,6 +44,9 @@ void ServoBus_SetTargets(const uint8_t raw_le[2U * SERVO_BUS_COUNT]);
 void ServoBus_SetTorque(uint16_t mask, uint16_t on);
 /* Drop the pending targets and release all 12 servos on the next cycle. */
 void ServoBus_ReleaseAll(void);
+/* Min_Voltage (0x0F) of all 12 servos [0.1 V], in RAM only (EEPROM locked): over the bus voltage, the
+   voltage alarm lights the servo LED. Never cuts the torque while Unload_Condition (0x13) bit 0 is clear. */
+void ServoBus_SetMinVoltage(uint8_t decivolts);
 
 /* Blocking configuration commands (wait for the bus, run one transaction): up to ~225 ms. */
 bool ServoBus_Ping(uint8_t id);
