@@ -35,7 +35,7 @@ typedef enum {
 	BRIDGE_ERROR           = 0x81,
 	BRIDGE_STATE_SNAPSHOT  = 0x83,
 	BRIDGE_SERVO_REG_VALUE = 0x84,
-	BRIDGE_VERSION         = 0x85,  // u8 protocol, u8 major, u8 minor, u8 patch
+	BRIDGE_VERSION         = 0x85,  // protocol, major, minor, patch
 } Response;
 
 typedef enum {
