@@ -3,7 +3,9 @@
 #include <math.h>
 #include "stm32g4xx_hal.h"
 
-#define CALIB_SAMPLES 500
+#define CALIB_WINDOW       100     // samples per stillness check, 10 ms apart: 1 s
+#define CALIB_MAX_WINDOWS  5       // after 5 s of motion, give up: Ki learns the bias instead
+#define CALIB_STILL_SPREAD 0.02f   // rad/s, max - min of each gyro axis over a window (~1.1 deg/s)
 
 void Mahony_Init(MahonyFilter_t *f) {
 	f->q0 = 1.0f; f->q1 = f->q2 = f->q3 = 0.0f;
@@ -14,26 +16,48 @@ void Mahony_Init(MahonyFilter_t *f) {
 	f->cal.calibrated = 0;
 }
 
+static void init_attitude_from_accel(MahonyFilter_t *f, const float a[3]) {
+	if (a[0] * a[0] + a[1] * a[1] + a[2] * a[2] < 1.0f) return;  // no gravity reading: stay level
+	float roll  = atan2f(a[1], a[2]);
+	float pitch = atan2f(-a[0], sqrtf(a[1] * a[1] + a[2] * a[2]));
+	float cr = cosf(0.5f * roll), sr = sinf(0.5f * roll);
+	float cp = cosf(0.5f * pitch), sp = sinf(0.5f * pitch);
+	f->q0 = cr * cp;
+	f->q1 = sr * cp;
+	f->q2 = cr * sp;
+	f->q3 = -sr * sp;
+}
+
 void Mahony_Calibrate(MahonyFilter_t *f, BMI088 *imu) {
-	float gsum[3] = {0}, asum[3] = {0};
+	float acc[3] = {0};
 
-	for (int i = 0; i < CALIB_SAMPLES; i++) {
-		BMI088_ReadAccelerometer(imu);
-		BMI088_ReadGyroscope(imu);
-		for (int a = 0; a < 3; a++) {
-			gsum[a] += imu->gyr_rps[a];
-			asum[a] += imu->acc_mps2[a];
+	for (int w = 0; w < CALIB_MAX_WINDOWS && !f->cal.calibrated; w++) {
+		float gsum[3] = {0}, gmin[3] = {0}, gmax[3] = {0}, asum[3] = {0};
+		for (int i = 0; i < CALIB_WINDOW; i++) {
+			BMI088_ReadAccelerometer(imu);
+			BMI088_ReadGyroscope(imu);
+			for (int a = 0; a < 3; a++) {
+				float g = imu->gyr_rps[a];
+				gsum[a] += g;
+				if (i == 0 || g < gmin[a]) gmin[a] = g;
+				if (i == 0 || g > gmax[a]) gmax[a] = g;
+				asum[a] += imu->acc_mps2[a];
+			}
+			HAL_Delay(10);
 		}
-		HAL_Delay(10);
+
+		uint8_t still = 1;
+		for (int a = 0; a < 3; a++) {
+			acc[a] = asum[a] / CALIB_WINDOW;
+			if (gmax[a] - gmin[a] > CALIB_STILL_SPREAD) still = 0;
+		}
+		if (still) {
+			for (int a = 0; a < 3; a++) f->cal.gyro_bias[a] = gsum[a] / CALIB_WINDOW;
+			f->cal.calibrated = 1;
+		}
 	}
 
-	for (int a = 0; a < 3; a++) {
-		f->cal.gyro_bias[a] = gsum[a] / CALIB_SAMPLES;
-		f->cal.acc_bias[a]  = asum[a] / CALIB_SAMPLES;
-	}
-	f->cal.acc_bias[2] -= 9.81f;
-
-	f->cal.calibrated = 1;
+	init_attitude_from_accel(f, acc);
 }
 
 void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
@@ -43,9 +67,6 @@ void Mahony_Update(MahonyFilter_t *f, float gx, float gy, float gz,
 		gx -= f->cal.gyro_bias[0];
 		gy -= f->cal.gyro_bias[1];
 		gz -= f->cal.gyro_bias[2];
-		ax -= f->cal.acc_bias[0];
-		ay -= f->cal.acc_bias[1];
-		az -= f->cal.acc_bias[2];
 	}
 
 	f->wx = gx + f->bx;

@@ -5,9 +5,8 @@
 #include "bmi088.h"
 
 typedef struct {
-	float gyro_bias[3]; // rad/s
-	float acc_bias[3];  // m/s^2
-	uint8_t calibrated;
+	float gyro_bias[3];  // rad/s
+	uint8_t calibrated;  // 1 once the gyro bias was measured on a still robot
 } ImuCalibration_t;
 
 typedef struct {

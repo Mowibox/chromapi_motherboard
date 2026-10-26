@@ -10,6 +10,13 @@
 #define BRIDGE_SYNC_1 0x55
 #define BRIDGE_SYNC_2 0xAA
 
+// Answered by GET_VERSION. Bump BRIDGE_PROTOCOL_VERSION whenever a frame layout or a command's
+// meaning changes: the SDK refuses to drive a firmware speaking another protocol.
+#define BRIDGE_PROTOCOL_VERSION 1
+#define FIRMWARE_VERSION_MAJOR  1
+#define FIRMWARE_VERSION_MINOR  1
+#define FIRMWARE_VERSION_PATCH  0
+
 typedef enum {
 	PING_BRIDGE          = 0x01,
 	SET_POSITIONS        = 0x02,
@@ -20,6 +27,7 @@ typedef enum {
 	SET_LED_RING_BULK    = 0x08,
 	WRITE_SERVO_REGISTER = 0x0A,
 	READ_SERVO_REGISTER  = 0x0B,
+	GET_VERSION          = 0x0C,  // -> BRIDGE_VERSION
 } Command;
 
 typedef enum {
@@ -27,6 +35,7 @@ typedef enum {
 	BRIDGE_ERROR           = 0x81,
 	BRIDGE_STATE_SNAPSHOT  = 0x83,
 	BRIDGE_SERVO_REG_VALUE = 0x84,
+	BRIDGE_VERSION         = 0x85,  // u8 protocol, u8 major, u8 minor, u8 patch
 } Response;
 
 typedef enum {

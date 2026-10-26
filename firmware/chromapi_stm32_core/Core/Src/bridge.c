@@ -226,6 +226,12 @@ static void handle_cmd_read_servo_register(const uint8_t *payload, uint8_t len) 
 	}
 }
 
+static void handle_cmd_get_version(void) {
+	const uint8_t version[4] = {BRIDGE_PROTOCOL_VERSION, FIRMWARE_VERSION_MAJOR,
+			FIRMWARE_VERSION_MINOR, FIRMWARE_VERSION_PATCH};
+	send_frame(BRIDGE_VERSION, version, sizeof version);
+}
+
 static void parse_rx_buffer(void) {
 	uint16_t i = 0;
 	if (frame_buf_len < 2) {
@@ -274,6 +280,7 @@ static void parse_rx_buffer(void) {
 			case SET_LED_RING_BULK:     handle_cmd_set_led_ring_bulk(payload, payload_len); break;
 			case WRITE_SERVO_REGISTER:  handle_cmd_write_servo_register(payload, payload_len); break;
 			case READ_SERVO_REGISTER:   handle_cmd_read_servo_register(payload, payload_len); break;
+			case GET_VERSION:           handle_cmd_get_version(); break;
 			default:                    send_ack(false); break;
 			}
 			i += total_frame_size;
