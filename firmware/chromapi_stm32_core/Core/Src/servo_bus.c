@@ -19,11 +19,8 @@ typedef enum {
 _Static_assert(POLL_LEN <= STS3215_REPLY_DATA_MAX, "servo reply buffer too small for the poll");
 _Static_assert(SERVO_BUS_READ_MAX <= STS3215_REPLY_DATA_MAX, "servo reply buffer too small for a register read");
 
-// Servos in the SyncRead (bit i = ID i+1). One that misses SERVO_MISS_LIMIT polls in a row leaves
-// it, so a dropped servo costs 3 reply timeouts instead of one per cycle forever. Absent servos
-// are pinged again, one per SERVO_RESCAN_MS, at the end of a cycle.
-#define SERVO_MISS_LIMIT  3U
-#define SERVO_RESCAN_MS   1000U
+#define SERVO_MISS_LIMIT  20U
+#define SERVO_RESCAN_MS   20U
 #define ALL_SERVOS_MASK   0x0FFFU
 
 // A configuration command waits at most this long for the cycle's transaction to end.
