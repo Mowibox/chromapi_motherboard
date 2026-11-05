@@ -10,11 +10,9 @@
 #define BRIDGE_SYNC_1 0x55
 #define BRIDGE_SYNC_2 0xAA
 
-// Answered by GET_VERSION. Bump BRIDGE_PROTOCOL_VERSION whenever a frame layout or a command's
-// meaning changes: the SDK refuses to drive a firmware speaking another protocol.
 #define BRIDGE_PROTOCOL_VERSION 1
-#define FIRMWARE_VERSION_MAJOR  1
-#define FIRMWARE_VERSION_MINOR  1
+#define FIRMWARE_VERSION_MAJOR  2
+#define FIRMWARE_VERSION_MINOR  0
 #define FIRMWARE_VERSION_PATCH  0
 
 typedef enum {

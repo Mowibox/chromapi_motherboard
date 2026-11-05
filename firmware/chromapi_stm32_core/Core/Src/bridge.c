@@ -39,8 +39,7 @@ static uint16_t frame_buf_len = 0;
 
 static RobotFeedback_t s_snapshot = {0};
 
-// Link watchdog: the Pi streams targets at 100 Hz, so 100 ms of silence = 10 lost frames.
-#define BRIDGE_LINK_TIMEOUT_MS  100U
+#define BRIDGE_LINK_TIMEOUT_MS  60000U
 static bool     s_link_up = false;
 static uint32_t s_last_rx_ms = 0;
 volatile uint32_t g_bridge_link_lost_count = 0;
@@ -342,6 +341,7 @@ void Bridge_Process(void) {
 
 // No valid frame from the Pi for BRIDGE_LINK_TIMEOUT_MS: drop the pending targets and release
 // all 12 servos on the next bus cycle, instead of holding the last pose under torque forever.
+// Shorter silences need nothing: no new target, so each servo holds its last one.
 void Bridge_CheckLink(void) {
 	if (!s_link_up || (HAL_GetTick() - s_last_rx_ms) < BRIDGE_LINK_TIMEOUT_MS) return;
 
