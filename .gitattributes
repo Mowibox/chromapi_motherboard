@@ -2,3 +2,4 @@
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.html linguist-detectable=false
+firmware/chromapi_stm32_core/Drivers/** linguist-vendored
