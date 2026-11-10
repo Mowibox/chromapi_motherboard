@@ -14505,7 +14505,7 @@
 				)
 			)
 		)
-		(property "Value" "CHG_LED"
+		(property "Value" "DONE_LED"
 			(at 140.97 134.366 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14537,7 +14537,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode (Red)"
+		(property "Description" "Light emitting diode (Green)"
 			(at 140.97 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -14581,7 +14581,7 @@
 				)
 			)
 		)
-		(property "MPN" "KT-0603R"
+		(property "MPN" "KT-0603G"
 			(at 140.97 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -14592,7 +14592,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C2286"
+		(property "JLCPCB Part #" "C12624"
 			(at 140.97 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -21470,7 +21470,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DONE_LED"
+		(property "Value" "CHG_LED"
 			(at 152.4 150.1774 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21503,7 +21503,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode (Green)"
+		(property "Description" "Light emitting diode (Red)"
 			(at 148.59 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -21547,7 +21547,7 @@
 				)
 			)
 		)
-		(property "MPN" "KT-0603G"
+		(property "MPN" "KT-0603R"
 			(at 148.59 147.32 90)
 			(hide yes)
 			(show_name no)
@@ -21558,7 +21558,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part #" "C12624"
+		(property "JLCPCB Part #" "C2286"
 			(at 148.59 147.32 0)
 			(hide yes)
 			(show_name no)

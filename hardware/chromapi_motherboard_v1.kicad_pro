@@ -306,7 +306,16 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|800100|1244600|701b2fb6-6611-4d83-a5c9-4a7ad729f3ed|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "pin_to_pin|647700|698500|9a7b76f4-7199-4025-9d43-729f9b95ff8e|43381cbd-be42-481b-ada5-d900a2a5963f|/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c|/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c|/d1a31f26-03e0-43e1-89c1-031fe31befc5/e7c408c3-7bc5-47c0-a90d-18a385ee9c4c",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -576,7 +585,7 @@
       "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "chromapi_motherboard_v1.step",
       "svg": "",
       "vrml": ""
     },
