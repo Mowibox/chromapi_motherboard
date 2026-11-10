@@ -14657,7 +14657,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -14716,6 +14716,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part #" "C165948"
+			(at 76.2 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TYPE-C-31-M-12"
+			(at 76.2 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "MP" ""
 			(at 76.2 113.03 0)
 			(hide yes)
@@ -14727,7 +14749,7 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
+		(property "MANUFACTURER" "Korean Hroparts Elec"
 			(at 76.2 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -15135,7 +15157,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -15196,6 +15218,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part #" "C158012"
+			(at 64.77 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Author" ""
 			(at 64.77 54.61 0)
 			(hide yes)
@@ -15229,7 +15262,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B2B-XH-A(LF)(SN)"
 			(at 64.77 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -15240,7 +15273,7 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
+		(property "MANUFACTURER" "JST"
 			(at 64.77 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -16068,7 +16101,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -16129,6 +16162,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part #" "C144394"
+			(at 64.77 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Author" ""
 			(at 64.77 36.83 0)
 			(hide yes)
@@ -16162,7 +16206,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B3B-XH-A(LF)(SN)"
 			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -16173,7 +16217,7 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
+		(property "MANUFACTURER" "JST"
 			(at 64.77 36.83 0)
 			(hide yes)
 			(show_name no)

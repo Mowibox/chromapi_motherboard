@@ -11858,7 +11858,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -11928,7 +11928,7 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
+		(property "MANUFACTURER" "Samtec"
 			(at 147.32 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -11961,7 +11961,7 @@
 				)
 			)
 		)
-		(property "MPN" "ESQ-120-13-G-D "
+		(property "MPN" "ESQ-120-13-G-D"
 			(at 147.32 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -12668,7 +12668,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -12739,7 +12739,7 @@
 				)
 			)
 		)
-		(property "MPN" "470531000"
+		(property "MPN" "47053-1000"
 			(at 222.25 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -12761,7 +12761,7 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
+		(property "MANUFACTURER" "Molex"
 			(at 222.25 120.65 0)
 			(hide yes)
 			(show_name no)

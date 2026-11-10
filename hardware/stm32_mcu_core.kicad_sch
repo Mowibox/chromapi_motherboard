@@ -15452,7 +15452,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
@@ -15513,6 +15513,17 @@
 				)
 			)
 		)
+		(property "JLCPCB Part #" "C144394"
+			(at 246.38 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Author" ""
 			(at 246.38 114.3 0)
 			(hide yes)
@@ -15546,7 +15557,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "B3B-XH-A(LF)(SN)"
 			(at 246.38 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -15557,7 +15568,7 @@
 				)
 			)
 		)
-		(property "MANUFACTURER" ""
+		(property "MANUFACTURER" "JST"
 			(at 246.38 114.3 0)
 			(hide yes)
 			(show_name no)
